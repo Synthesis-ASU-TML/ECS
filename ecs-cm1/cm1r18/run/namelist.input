@@ -7,7 +7,7 @@
  nodey        =       6,
  ppnode       =       1,
  timeformat   =       2,
- timestats    =       1,
+ timestats    =       2,
  terrain_flag = .false.,
  procfiles    = .false.,
  /
