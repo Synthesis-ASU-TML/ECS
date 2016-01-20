@@ -18,11 +18,11 @@
  dz     =   500.0,
  dtl    =   7.500,
  timax  =  7200.0,
- run_time =  -999.9,
- tapfrq =   900.0,
+ run_time =  750.0,
+ tapfrq =   9000.0,
  rstfrq = -3600.0,
- statfrq =   60.0,
- prclfrq =   60.0,
+ statfrq =   6000.0,
+ prclfrq =   6000.0,
  /
 
  &param2
