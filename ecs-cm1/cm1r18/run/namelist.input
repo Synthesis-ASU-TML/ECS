@@ -3,7 +3,7 @@
  nx           =      60,
  ny           =      60,
  nz           =      40,
- nodex        =       3,
+ nodex        =       4,
  nodey        =       3,
  ppnode       =       1,
  timeformat   =       2,
