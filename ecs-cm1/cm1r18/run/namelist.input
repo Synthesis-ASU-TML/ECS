@@ -4,7 +4,7 @@
  ny           =      60,
  nz           =      40,
  nodex        =       4,
- nodey        =       3,
+ nodey        =       4,
  ppnode       =       1,
  timeformat   =       2,
  timestats    =       2,
