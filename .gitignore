@@ -1,0 +1,5 @@
+*.o
+*.exe
+ecs-cm1/cm1r18/run/*.dat
+ecs-cm1/cm1r18/run/*.ctl
+ecs-cm1/cm1r18/run/onefile.F
