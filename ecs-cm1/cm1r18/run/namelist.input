@@ -3,11 +3,11 @@
  nx           =      60,
  ny           =      60,
  nz           =      40,
- nodex        =       3,
+ nodex        =       6,
  nodey        =       4,
  ppnode       =       1,
  timeformat   =       2,
- timestats    =       0,
+ timestats    =       1,
  terrain_flag = .false.,
  procfiles    = .false.,
  /
