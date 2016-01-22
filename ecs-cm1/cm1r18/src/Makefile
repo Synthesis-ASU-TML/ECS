@@ -106,7 +106,7 @@ AR      = ar cru
 all : cm1
 
 cm1:		$(OBJS)
-			$(FC) $(OBJS) $(FFLAGS) $(OUTPUTINC) $(OUTPUTLIB) $(LINKOPTS) -o ../run/cm1.exe
+			$(FC) $(OBJS) $(FFLAGS) $(OUTPUTINC) $(OUTPUTLIB) $(LINKOPTS) -o ../run/cm1
 			$(AR) onefile.F $(SRC)
 			mv onefile.F ../run
 
