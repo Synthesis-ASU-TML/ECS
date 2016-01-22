@@ -1,4 +1,5 @@
-*.o
+ecs-cm1/cm1r18/src/*.o
+ecs-cm1/cm1r18/src/*.mod
 ecs-cm1/cm1r18/run/cm1
 ecs-cm1/cm1r18/run/*.dat
 ecs-cm1/cm1r18/run/*.ctl
