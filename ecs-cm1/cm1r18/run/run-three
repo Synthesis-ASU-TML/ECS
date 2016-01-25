@@ -1,3 +1,0 @@
-#!/bin/bash
-
-mpirun --prefix /usr/local --hostfile hosts-three.txt -np $1 cm1

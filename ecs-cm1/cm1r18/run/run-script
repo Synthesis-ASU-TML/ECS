@@ -1,0 +1,4 @@
+#!/bin/bash
+
+function join { local IFS="$1"; shift; echo "$*"; }
+mpirun --prefix /usr/local --host `join , ${@:2}` -np $1 cm1
