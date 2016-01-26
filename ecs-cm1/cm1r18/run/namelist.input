@@ -21,8 +21,8 @@
  run_time =  7500.0,
  tapfrq =   9000.0,
  rstfrq = -3600.0,
- statfrq =   6000.0,
- prclfrq =   6000.0,
+ statfrq =   9000.0,
+ prclfrq =   9000.0,
  /
 
  &param2

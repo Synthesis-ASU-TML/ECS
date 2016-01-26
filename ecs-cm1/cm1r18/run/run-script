@@ -12,4 +12,10 @@ do
 	echo -e "\t$h"
 done
 
+echo "Copying namelist.input to hosts."
+for h in $@
+do
+	scp namelist.input $h:`pwd`/namelist.input
+done
+
 mpirun --prefix /usr/local --host `join , $@` -np $((NX * NY)) cm1
