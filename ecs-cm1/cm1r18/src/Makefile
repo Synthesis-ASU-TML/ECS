@@ -24,7 +24,7 @@ OUTPUTINC = -I/usr/local/include
 OUTPUTLIB = -L/usr/local/lib
 #OUTPUTOPT = -DHDFOUT
 #LINKOPTS  = -lhdf5hl_fortran -lhdf5_hl -lhdf5_fortran -lhdf5 -lsz -lz -lm
-LINKOPTS = -lsz -lz -lm -lmpi
+LINKOPTS = -lsz -lz -lm -lmpi -lfortrancl -framework OpenCL
 #-----------------------------------------------------------------------------
 
 
