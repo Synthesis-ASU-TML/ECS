@@ -31,7 +31,6 @@ LINKOPTS = -lsz -lz -lm -lmpi -lfortrancl -framework OpenCL
 #-----------------------------------------------------------------------------
 # ADDED BY BRANDON MECHTLEY - GFORTRAN
 #--------
-FC   = /usr/local/bin/gfortran
 OPTS = -ffree-form -ffree-line-length-none -I../include -O2
 #--------
 # OpenMP
