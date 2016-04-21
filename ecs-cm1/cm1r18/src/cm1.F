@@ -1542,17 +1542,17 @@ print *, 'numprocs (final): ', numprocs
 
       rtime=sngl(mtime)
       if(myid.eq.0)then
-        if(timeformat.eq.1)then
-          write(6,110) nstep,rtime,' sec '
-        elseif(timeformat.eq.2)then
-          write(6,110) nstep,rtime/60.0,' min '
-        elseif(timeformat.eq.3)then
-          write(6,110) nstep,rtime/3600.0,' hour'
-        elseif(timeformat.eq.4)then
-          write(6,110) nstep,rtime/86400.0,' day '
-        else
-          write(6,110) nstep,rtime,' sec'
-        endif
+!        if(timeformat.eq.1)then
+!          write(6,110) nstep,rtime,' sec '
+!        elseif(timeformat.eq.2)then
+!          write(6,110) nstep,rtime/60.0,' min '
+!        elseif(timeformat.eq.3)then
+!          write(6,110) nstep,rtime/3600.0,' hour'
+!        elseif(timeformat.eq.4)then
+!          write(6,110) nstep,rtime/86400.0,' day '
+!        else
+!          write(6,110) nstep,rtime,' sec'
+!        endif
 110     format(2x,i12,4x,f18.6,a5)
       endif
 
