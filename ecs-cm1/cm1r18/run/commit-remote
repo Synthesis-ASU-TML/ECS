@@ -1,6 +1,0 @@
-#!/bin/bash
-
-git commit . -m "$@"
-git push origin master
-ssh istage-2 'cd synthesis-git/ECM && git pull' 
-ssh istage-3 'cd synthesis-git/ECM && git pull'

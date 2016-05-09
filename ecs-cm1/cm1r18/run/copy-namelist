@@ -1,6 +1,0 @@
-#!/bin/bash
-
-for loc in "$@"
-do
-	scp namelist.input synthesis@$loc:~/synthesis-git/ECM/ecs-cm1/cm1r18/run/
-done
