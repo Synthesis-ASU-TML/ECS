@@ -9,9 +9,9 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 233.0, 377.0, 1130.0, 928.0 ],
+		"rect" : [ 786.0, 274.0, 1150.0, 928.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -37,6 +37,22 @@
 		"style" : "default",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-125",
+					"linecount" : 43,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1757.5, 131.75, 162.0, 583.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 23,
+					"presentation_rect" : [ 665.0, 87.887512, 348.0, 315.0 ],
+					"style" : "",
+					"text" : "Instructions for Use\n---------------------------\n\n1. Choose a fluid map and a collision mask for the fluid by pressing read under each. A variety of useful map and masks can be found in the media folder in this project's directory. For no collision bodies, select ColMaskBlank.\n\n2. Set the values for time steps, dissipation, attraction point, rejection point, and strength if you don't want the defaults.\n\n3. If you want to control the attraction point's position with the mouse, toggle on the mouse controlled attraction point.\n\n4. To turn on the fluid sim, turn the camera on, go fullscreen, and press the initiate world data button.\n\n5. There are potential issues jumping between fullscreen and windowed mode in the same \"run\", so turn the sim off and on\nagain and reinitiate the world data to jump between the two.\n\n6. If pressing initiate to load in new fluid data does not initially do something, press it several times."
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-95",
 					"linecount" : 22,
@@ -71,40 +87,16 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-119",
-					"linecount" : 5,
+					"linecount" : 9,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1589.5, 610.575073, 151.0, 74.0 ],
+					"patching_rect" : [ 1589.5, 610.575073, 151.0, 127.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 3,
-					"presentation_rect" : [ 26.5, 793.75, 237.0, 47.0 ],
+					"presentation_linecount" : 5,
+					"presentation_rect" : [ 26.5, 793.75, 237.0, 74.0 ],
 					"style" : "",
-					"text" : "Attraction Strength and Rejection Strength are best at 0.001, rejection can also be lower if it over takes the fluid too much."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bubblesize" : 32,
-					"id" : "obj-69",
-					"maxclass" : "preset",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "preset", "int", "preset", "int" ],
-					"patching_rect" : [ 1030.75, 638.021973, 400.0, 112.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 299.0, 428.25, 220.0, 185.0 ],
-					"preset_data" : [ 						{
-							"number" : 1,
-							"data" : [ 5, "obj-11", "toggle", "int", 0, 5, "obj-97", "radiogroup", "int", 1, 5, "obj-90", "toggle", "int", 0, 5, "obj-42", "flonum", "float", 0.0, 5, "obj-20", "flonum", "float", 0.125, 5, "obj-39", "flonum", "float", 0.99999, 5, "obj-55", "flonum", "float", 0.125, 5, "obj-58", "flonum", "float", 0.99, 5, "obj-61", "number", "int", 1 ]
-						}
-, 						{
-							"number" : 2,
-							"data" : [ 5, "obj-11", "toggle", "int", 0, 5, "obj-97", "radiogroup", "int", 1, 5, "obj-90", "toggle", "int", 0, 5, "obj-42", "flonum", "float", 0.0, 5, "obj-20", "flonum", "float", 0.3, 5, "obj-39", "flonum", "float", 0.99999, 5, "obj-55", "flonum", "float", 0.125, 5, "obj-58", "flonum", "float", 0.99, 5, "obj-61", "number", "int", 2 ]
-						}
- ],
-					"style" : ""
+					"text" : "Attraction Strength and Rejection Strength are best at 0.001, rejection can also be lower if it over takes the fluid too much. Negating attraction creates rejection and negating rejection creates attraction."
 				}
 
 			}
@@ -117,7 +109,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1589.5, 562.0, 150.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 299.0, 669.75, 175.0, 20.0 ],
+					"presentation_rect" : [ 299.0, 422.75, 175.0, 20.0 ],
 					"style" : "",
 					"text" : "Mouse Control Attraction Point"
 				}
@@ -159,7 +151,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 882.5, 660.575073, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 299.0, 697.5, 110.0, 110.0 ],
+					"presentation_rect" : [ 299.0, 450.5, 110.0, 110.0 ],
 					"style" : ""
 				}
 
@@ -1982,129 +1974,6 @@
 					"patching_rect" : [ 502.5, 892.150085, 296.0, 22.0 ],
 					"style" : "",
 					"text" : "jit.gl.pix GPUFluids @gen attractReject @type float32"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-77",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1589.5, 373.924988, 81.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 525.25, 535.924988, 81.0, 20.0 ],
-					"style" : "",
-					"text" : "Save Presets"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-74",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1160.375, 545.000061, 24.0, 24.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 525.25, 557.924988, 50.0, 50.0 ],
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-72",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1281.449951, 545.000061, 60.0, 22.0 ],
-					"style" : "",
-					"text" : "loadbang"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-71",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1117.375, 588.675049, 151.0, 22.0 ],
-					"style" : "",
-					"text" : "write gpuFluid.maxpresets"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-63",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1281.75, 588.675049, 149.0, 22.0 ],
-					"style" : "",
-					"text" : "read gpuFluid.maxpresets"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-52",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1030.75, 588.675049, 76.0, 22.0 ],
-					"style" : "",
-					"text" : "pack store 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-68",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1589.5, 346.625, 81.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 525.25, 428.25, 81.0, 20.0 ],
-					"style" : "",
-					"text" : "Set Preset"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-65",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1030.75, 545.000061, 24.0, 24.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 525.25, 480.012512, 50.0, 50.0 ],
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-61",
-					"maxclass" : "number",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 1087.75, 545.000061, 50.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 525.25, 453.012512, 50.0, 22.0 ],
-					"style" : ""
 				}
 
 			}
@@ -28179,7 +28048,7 @@
 					"presentation_rect" : [ 177.5, 268.25, 18.0, 130.0 ],
 					"size" : 8,
 					"style" : "",
-					"value" : 1
+					"value" : 0
 				}
 
 			}
@@ -29360,15 +29229,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-69", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-52", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-270", 2 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -29450,15 +29310,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-52", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-61", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-35", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -29477,46 +29328,10 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-69", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-63", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-52", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-65", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-70", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-69", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-71", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-63", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-72", 0 ]
 				}
 
 			}
@@ -29527,15 +29342,6 @@
 					"hidden" : 0,
 					"midpoints" : [ 710.5625, 882.0, 512.0, 882.0 ],
 					"source" : [ "obj-73", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-71", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-74", 0 ]
 				}
 
 			}
@@ -29726,85 +29532,85 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "rgb2luma.genjit",
-				"bootpath" : "/Volumes/Untitled/Synthesis/GPUFluids1.3 for Laptop/code",
+				"bootpath" : "~/synthesis-git/ECM/GPUFluids1.3 for Laptop/code",
 				"type" : "gJIT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "hsflow.genjit",
-				"bootpath" : "/Volumes/Untitled/Synthesis/GPUFluids1.3 for Laptop/code",
+				"bootpath" : "~/synthesis-git/ECM/GPUFluids1.3 for Laptop/code",
 				"type" : "gJIT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "hsflowgain.genjit",
-				"bootpath" : "/Volumes/Untitled/Synthesis/GPUFluids1.3 for Laptop/code",
+				"bootpath" : "~/synthesis-git/ECM/GPUFluids1.3 for Laptop/code",
 				"type" : "gJIT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fluid.advect.genjit",
-				"bootpath" : "/Volumes/Untitled/Synthesis/GPUFluids1.3 for Laptop/code",
+				"bootpath" : "~/synthesis-git/ECM/GPUFluids1.3 for Laptop/code",
 				"type" : "gJIT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "add.genjit",
-				"bootpath" : "/Volumes/Untitled/Synthesis/GPUFluids1.3 for Laptop/code",
+				"bootpath" : "~/synthesis-git/ECM/GPUFluids1.3 for Laptop/code",
 				"type" : "gJIT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mix2.genjit",
-				"bootpath" : "/Volumes/Untitled/Synthesis/GPUFluids1.3 for Laptop/code",
+				"bootpath" : "~/synthesis-git/ECM/GPUFluids1.3 for Laptop/code",
 				"type" : "gJIT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "hflip.genjit",
-				"bootpath" : "/Volumes/Untitled/Synthesis/GPUFluids1.3 for Laptop/code",
+				"bootpath" : "~/synthesis-git/ECM/GPUFluids1.3 for Laptop/code",
 				"type" : "gJIT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "attractReject.genjit",
-				"bootpath" : "/Volumes/Untitled/Synthesis/GPUFluids1.3 for Laptop/code",
+				"bootpath" : "~/synthesis-git/ECM/GPUFluids1.3 for Laptop/code",
 				"type" : "gJIT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fluid.divergence.genjit",
-				"bootpath" : "/Volumes/Untitled/Synthesis/GPUFluids1.3 for Laptop/code",
+				"bootpath" : "~/synthesis-git/ECM/GPUFluids1.3 for Laptop/code",
 				"type" : "gJIT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fluid.subtractgradient.genjit",
-				"bootpath" : "/Volumes/Untitled/Synthesis/GPUFluids1.3 for Laptop/code",
+				"bootpath" : "~/synthesis-git/ECM/GPUFluids1.3 for Laptop/code",
 				"type" : "gJIT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fluid.buoyancy.genjit",
-				"bootpath" : "/Volumes/Untitled/Synthesis/GPUFluids1.3 for Laptop/code",
+				"bootpath" : "~/synthesis-git/ECM/GPUFluids1.3 for Laptop/code",
 				"type" : "gJIT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jacobi_iterations10.maxpat",
-				"bootpath" : "/Volumes/Untitled/Synthesis/GPUFluids1.3 for Laptop/patchers",
+				"bootpath" : "~/synthesis-git/ECM/GPUFluids1.3 for Laptop/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fluid.jacobi.genjit",
-				"bootpath" : "/Volumes/Untitled/Synthesis/GPUFluids1.3 for Laptop/code",
+				"bootpath" : "~/synthesis-git/ECM/GPUFluids1.3 for Laptop/code",
 				"type" : "gJIT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jacobi_iterations20.maxpat",
-				"bootpath" : "/Volumes/Untitled/Synthesis/GPUFluids1.3 for Laptop/patchers",
+				"bootpath" : "~/synthesis-git/ECM/GPUFluids1.3 for Laptop/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}

@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 2,
-			"revision" : 1,
+			"minor" : 1,
+			"revision" : 0,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
@@ -39,7 +39,7 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"code" : "Param AttractPoint(0.,0.);\r\nParam AttractStrength(1.);\r\nParam RejectPoint(1.,1.);\r\nParam RejectStrength(1.);\r\n\r\n//Vector pointing to attracter and away from rejecter\r\ndistToAttract = vec((AttractPoint.x - norm.x) * 1.6, (AttractPoint.y - norm.y) * 0.9);\r\ndistToReject = vec((norm.x - RejectPoint.x) * 1.6, (norm.y - RejectPoint.y) * 0.9);\r\n\r\n//Magitude and normalization of above vectors\r\nmagnitudeAttract = 0.;\r\nnormalizedAttract = vec(0., 0.);\r\nmagnitudeReject = 0;\r\nnormalizedReject = vec(0., 0.);\r\n\r\nif (distToAttract.x != 0. || distToAttract.y != 0.)\r\n{\r\n\tmagnitudeAttract = sqrt((distToAttract.x * distToAttract.x) + (distToAttract.y * distToAttract.y));\r\n\tnormalizedAttract = vec(distToAttract.x / magnitudeAttract, distToAttract.y / magnitudeAttract);\r\n}\r\n\r\nif (distToReject.x != 0. || distToReject.y != 0.)\r\n{\r\n\tmagnitudeReject = sqrt((distToReject.x * distToReject.x) + (distToReject.y * distToReject.y));\r\n\tnormalizedReject = vec(distToReject.x / magnitudeReject, distToReject.y / magnitudeReject);\r\n}\r\n\r\n//Find the finaal strength, which is the strength of the distance squared\r\nattractFinal = 0.;\r\nrejectFinal = 0.;\r\n\r\nif (magnitudeAttract != 0.)\r\n\tattractFinal = AttractStrength / (magnitudeAttract * magnitudeAttract);\r\n\r\nif (magnitudeReject != 0.)\r\n\trejectFinal = RejectStrength / (magnitudeReject * magnitudeReject);\r\n\r\n//Normalized vector times final strength plus velocity\r\noutVecX = in1.x + attractFinal*normalizedAttract.x + rejectFinal*normalizedReject.x;\r\noutVecY = in1.y + attractFinal*normalizedAttract.y + rejectFinal*normalizedReject.y;\r\n\r\nout1 = vec(outVecX, outVecY, 0., 0.);",
+					"code" : "Param AttractPoint(0.1,0.5);\r\nParam AttractStrength(0.);\r\nParam RejectPoint(0.9,0.5);\r\nParam RejectStrength(0.);\r\n\r\n//Vector pointing to attracter and away from rejecter\r\ndistToAttract = vec((AttractPoint.x - norm.x) * 1.6, (AttractPoint.y - norm.y) * 0.9);\r\ndistToReject = vec((norm.x - RejectPoint.x) * 1.6, (norm.y - RejectPoint.y) * 0.9);\r\n\r\n//Magitude and normalization of above vectors\r\nmagnitudeAttract = 0.;\r\nnormalizedAttract = vec(0., 0.);\r\nmagnitudeReject = 0;\r\nnormalizedReject = vec(0., 0.);\r\n\r\nif (distToAttract.x != 0. || distToAttract.y != 0.)\r\n{\r\n\tmagnitudeAttract = sqrt((distToAttract.x * distToAttract.x) + (distToAttract.y * distToAttract.y));\r\n\tnormalizedAttract = vec(distToAttract.x / magnitudeAttract, distToAttract.y / magnitudeAttract);\r\n}\r\n\r\nif (distToReject.x != 0. || distToReject.y != 0.)\r\n{\r\n\tmagnitudeReject = sqrt((distToReject.x * distToReject.x) + (distToReject.y * distToReject.y));\r\n\tnormalizedReject = vec(distToReject.x / magnitudeReject, distToReject.y / magnitudeReject);\r\n}\r\n\r\n//Find the finaal strength, which is the strength of the distance squared\r\nattractFinal = 0.;\r\nrejectFinal = 0.;\r\n\r\nif (magnitudeAttract != 0.)\r\n\tattractFinal = AttractStrength / (magnitudeAttract * magnitudeAttract);\r\n\r\nif (magnitudeReject != 0.)\r\n\trejectFinal = RejectStrength / (magnitudeReject * magnitudeReject);\r\n\r\n//Normalized vector times final strength plus velocity\r\noutVecX = in1.x + attractFinal*normalizedAttract.x + rejectFinal*normalizedReject.x;\r\noutVecY = in1.y + attractFinal*normalizedAttract.y + rejectFinal*normalizedReject.y;\r\n\r\nout1 = vec(outVecX, outVecY, 0., 0.);",
 					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
