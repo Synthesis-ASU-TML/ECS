@@ -1,0 +1,103 @@
+{
+	"patcher" : 	{
+		"fileversion" : 1,
+		"appversion" : 		{
+			"major" : 7,
+			"minor" : 1,
+			"revision" : 0,
+			"architecture" : "x86",
+			"modernui" : 1
+		}
+,
+		"rect" : [ 501.0, 117.0, 1377.0, 811.0 ],
+		"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
+		"bglocked" : 0,
+		"openinpresentation" : 0,
+		"default_fontsize" : 12.0,
+		"default_fontface" : 0,
+		"default_fontname" : "Arial",
+		"gridonopen" : 1,
+		"gridsize" : [ 15.0, 15.0 ],
+		"gridsnaponopen" : 1,
+		"objectsnaponopen" : 1,
+		"statusbarvisible" : 2,
+		"toolbarvisible" : 1,
+		"lefttoolbarpinned" : 0,
+		"toptoolbarpinned" : 0,
+		"righttoolbarpinned" : 0,
+		"bottomtoolbarpinned" : 0,
+		"toolbars_unpinned_last_save" : 0,
+		"tallnewobj" : 0,
+		"boxanimatetime" : 200,
+		"enablehscroll" : 1,
+		"enablevscroll" : 1,
+		"devicewidth" : 0.0,
+		"description" : "",
+		"digest" : "",
+		"tags" : "",
+		"style" : "",
+		"subpatcher_template" : "",
+		"boxes" : [ 			{
+				"box" : 				{
+					"code" : "Param AttractPoint(0.1,0.5);\r\nParam AttractStrength(0.);\r\nParam RejectPoint(0.9,0.5);\r\nParam RejectStrength(0.);\r\n\r\n//Vector pointing to attracter and away from rejecter\r\ndistToAttract = vec((AttractPoint.x - norm.x) * 1.6, (AttractPoint.y - norm.y) * 0.9);\r\ndistToReject = vec((norm.x - RejectPoint.x) * 1.6, (norm.y - RejectPoint.y) * 0.9);\r\n\r\n//Magitude and normalization of above vectors\r\nmagnitudeAttract = 0.;\r\nnormalizedAttract = vec(0., 0.);\r\nmagnitudeReject = 0;\r\nnormalizedReject = vec(0., 0.);\r\n\r\nif (distToAttract.x != 0. || distToAttract.y != 0.)\r\n{\r\n\tmagnitudeAttract = sqrt((distToAttract.x * distToAttract.x) + (distToAttract.y * distToAttract.y));\r\n\tnormalizedAttract = vec(distToAttract.x / magnitudeAttract, distToAttract.y / magnitudeAttract);\r\n}\r\n\r\nif (distToReject.x != 0. || distToReject.y != 0.)\r\n{\r\n\tmagnitudeReject = sqrt((distToReject.x * distToReject.x) + (distToReject.y * distToReject.y));\r\n\tnormalizedReject = vec(distToReject.x / magnitudeReject, distToReject.y / magnitudeReject);\r\n}\r\n\r\n//Find the finaal strength, which is the strength of the distance squared\r\nattractFinal = 0.;\r\nrejectFinal = 0.;\r\n\r\nif (magnitudeAttract != 0.)\r\n\tattractFinal = AttractStrength / (magnitudeAttract * magnitudeAttract);\r\n\r\nif (magnitudeReject != 0.)\r\n\trejectFinal = RejectStrength / (magnitudeReject * magnitudeReject);\r\n\r\n//Normalized vector times final strength plus velocity\r\noutVecX = in1.x + attractFinal*normalizedAttract.x + rejectFinal*normalizedReject.x;\r\noutVecY = in1.y + attractFinal*normalizedAttract.y + rejectFinal*normalizedReject.y;\r\n\r\nout1 = vec(outVecX, outVecY, 0., 0.);",
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-5",
+					"maxclass" : "codebox",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 50.0, 83.0, 1057.0, 595.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 50.0, 14.0, 30.0, 22.0 ],
+					"style" : "",
+					"text" : "in 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 50.0, 734.0, 37.0, 22.0 ],
+					"style" : "",
+					"text" : "out 1"
+				}
+
+			}
+ ],
+		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+ ]
+	}
+
+}
