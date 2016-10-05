@@ -1,0 +1,28 @@
+{
+	"pattrstorage" : 	{
+		"name" : "ecsparams",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"buoyancy-ambient-temperature" : [ 0.0 ],
+					"buoyancy-buoyancy" : [ 0.0 ],
+					"buoyancy-weight" : [ 0.0 ],
+					"cellsize" : [ 1.25 ],
+					"density-dissipation" : [ 1.0 ],
+					"diffusion-c" : [ 1.1 ],
+					"diffusion-viscosity" : [ 0.1 ],
+					"hsflow-gain" : [ 0.1 ],
+					"jacobi-beta" : [ 4.0 ],
+					"temperature-dissipation" : [ 1.0 ],
+					"timestep" : [ 0.125 ],
+					"velocity-dissipation" : [ 1.0 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}
