@@ -6,17 +6,19 @@
 				"id" : 1,
 				"data" : 				{
 					"buoyancy-ambient-temperature" : [ 0.0 ],
-					"buoyancy-buoyancy" : [ 0.0 ],
-					"buoyancy-weight" : [ 0.0 ],
+					"buoyancy-buoyancy" : [ 0.05 ],
+					"buoyancy-weight" : [ 0.05 ],
 					"cellsize" : [ 1.25 ],
 					"density-dissipation" : [ 1.0 ],
-					"diffusion-c" : [ 1.1 ],
 					"diffusion-viscosity" : [ 0.1 ],
-					"hsflow-gain" : [ 0.1 ],
-					"jacobi-beta" : [ 4.0 ],
-					"temperature-dissipation" : [ 1.0 ],
+					"hsflow-flip" : [ 0 ],
+					"hsflow-gain" : [ 1.0 ],
+					"hsflow-lambda" : [ 0.1 ],
+					"temperature-dissipation" : [ 0.999 ],
 					"timestep" : [ 0.125 ],
-					"velocity-dissipation" : [ 1.0 ]
+					"velocity-dissipation" : [ 0.995 ],
+					"visualization-gain" : [ 1.0 ],
+					"vorticity-vorticityConfinementScale" : [ 0.6 ]
 				}
 
 			}
