@@ -1,3 +1,4 @@
+*.DS_Store
 ecs-cm1/cm1r18/src/*.o
 ecs-cm1/cm1r18/src/*.mod
 ecs-cm1/cm1r18/run/cm1

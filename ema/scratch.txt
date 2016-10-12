@@ -1,8 +1,0 @@
-ofxFlowTools
-ofxGui
-ofxKinect
-ofxNetwork
-ofxOpenCv
-ofxOsc
-ofxVectorGraphics
-ofxXmlSettings
