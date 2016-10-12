@@ -5,11 +5,11 @@
 			"major" : 7,
 			"minor" : 2,
 			"revision" : 5,
-			"architecture" : "x86",
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 672.0, 150.0, 544.0, 433.0 ],
+		"rect" : [ 1931.0, -93.0, 274.0, 433.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -55,9 +55,9 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 18.0, 281.0, 237.0, 22.0 ],
+					"patching_rect" : [ 18.0, 278.0, 159.0, 22.0 ],
 					"style" : "",
-					"text" : "jit.gl.pix #1 @gen ecs.jacobi @type float32"
+					"text" : "jit.gl.pix #1 @gen ecs.jacobi"
 				}
 
 			}
@@ -68,9 +68,9 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 18.0, 240.0, 237.0, 22.0 ],
+					"patching_rect" : [ 18.0, 240.0, 159.0, 22.0 ],
 					"style" : "",
-					"text" : "jit.gl.pix #1 @gen ecs.jacobi @type float32"
+					"text" : "jit.gl.pix #1 @gen ecs.jacobi"
 				}
 
 			}
@@ -81,9 +81,9 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 18.0, 201.0, 237.0, 22.0 ],
+					"patching_rect" : [ 18.0, 202.0, 159.0, 22.0 ],
 					"style" : "",
-					"text" : "jit.gl.pix #1 @gen ecs.jacobi @type float32"
+					"text" : "jit.gl.pix #1 @gen ecs.jacobi"
 				}
 
 			}
@@ -94,9 +94,9 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 18.0, 165.0, 237.0, 22.0 ],
+					"patching_rect" : [ 18.0, 164.0, 159.0, 22.0 ],
 					"style" : "",
-					"text" : "jit.gl.pix #1 @gen ecs.jacobi @type float32"
+					"text" : "jit.gl.pix #1 @gen ecs.jacobi"
 				}
 
 			}
@@ -107,9 +107,9 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 18.0, 126.0, 237.0, 22.0 ],
+					"patching_rect" : [ 18.0, 126.0, 159.0, 22.0 ],
 					"style" : "",
-					"text" : "jit.gl.pix #1 @gen ecs.jacobi @type float32"
+					"text" : "jit.gl.pix #1 @gen ecs.jacobi"
 				}
 
 			}
@@ -122,7 +122,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 218.0, 29.0, 30.0, 30.0 ],
+					"patching_rect" : [ 218.0, 74.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -135,8 +135,8 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 18.0, 29.0, 30.0, 30.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 18.0, 74.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
