@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 1931.0, -93.0, 274.0, 433.0 ],
+		"rect" : [ 484.0, 79.0, 762.0, 433.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -55,9 +55,9 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 18.0, 278.0, 159.0, 22.0 ],
+					"patching_rect" : [ 18.0, 278.0, 296.0, 22.0 ],
 					"style" : "",
-					"text" : "jit.gl.pix #1 @gen ecs.jacobi"
+					"text" : "jit.gl.pix #1 @gen ecs.jacobi @out_name #0_jacobi_5"
 				}
 
 			}
@@ -68,9 +68,9 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 18.0, 240.0, 159.0, 22.0 ],
+					"patching_rect" : [ 18.0, 240.0, 296.0, 22.0 ],
 					"style" : "",
-					"text" : "jit.gl.pix #1 @gen ecs.jacobi"
+					"text" : "jit.gl.pix #1 @gen ecs.jacobi @out_name #0_jacobi_4"
 				}
 
 			}
@@ -81,9 +81,9 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 18.0, 202.0, 159.0, 22.0 ],
+					"patching_rect" : [ 18.0, 202.0, 296.0, 22.0 ],
 					"style" : "",
-					"text" : "jit.gl.pix #1 @gen ecs.jacobi"
+					"text" : "jit.gl.pix #1 @gen ecs.jacobi @out_name #0_jacobi_3"
 				}
 
 			}
@@ -94,9 +94,9 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 18.0, 164.0, 159.0, 22.0 ],
+					"patching_rect" : [ 18.0, 164.0, 296.0, 22.0 ],
 					"style" : "",
-					"text" : "jit.gl.pix #1 @gen ecs.jacobi"
+					"text" : "jit.gl.pix #1 @gen ecs.jacobi @out_name #0_jacobi_2"
 				}
 
 			}
@@ -107,9 +107,9 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 18.0, 126.0, 159.0, 22.0 ],
+					"patching_rect" : [ 18.0, 127.0, 296.0, 22.0 ],
 					"style" : "",
-					"text" : "jit.gl.pix #1 @gen ecs.jacobi"
+					"text" : "jit.gl.pix #1 @gen ecs.jacobi @out_name #0_jacobi_1"
 				}
 
 			}
@@ -122,7 +122,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 218.0, 74.0, 30.0, 30.0 ],
+					"patching_rect" : [ 347.0, 74.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -135,7 +135,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "jit_gl_texture" ],
 					"patching_rect" : [ 18.0, 74.0, 30.0, 30.0 ],
 					"style" : ""
 				}

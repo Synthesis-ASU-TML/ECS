@@ -5,11 +5,11 @@
 			"major" : 7,
 			"minor" : 2,
 			"revision" : 5,
-			"architecture" : "x86",
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 454.0, 208.0, 970.0, 614.0 ],
+		"rect" : [ 276.0, 134.0, 970.0, 614.0 ],
 		"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -96,9 +96,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 273.0, 97.0, 29.0, 22.0 ],
+					"patching_rect" : [ 273.0, 97.0, 28.0, 22.0 ],
 					"style" : "",
-					"text" : "* -1"
+					"text" : "!- 0"
 				}
 
 			}
@@ -148,7 +148,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 213.5, 97.0, 29.5, 22.0 ],
+					"patching_rect" : [ 222.5, 97.0, 29.5, 22.0 ],
 					"style" : "",
 					"text" : "+"
 				}
@@ -174,7 +174,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 224.0, 15.0, 38.0, 22.0 ],
+					"patching_rect" : [ 233.0, 15.0, 38.0, 22.0 ],
 					"style" : "",
 					"text" : "norm"
 				}
@@ -187,9 +187,9 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 26.0, 53.0, 217.0, 22.0 ],
+					"patching_rect" : [ 26.0, 53.0, 226.0, 22.0 ],
 					"style" : "",
-					"text" : "gen @gen ecs.maskNearestNeighbors"
+					"text" : "gen @gen ecs.mask_nearest_neighbors"
 				}
 
 			}
@@ -200,7 +200,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 125.0, 15.0, 84.0, 22.0 ],
+					"patching_rect" : [ 129.5, 15.0, 84.0, 22.0 ],
 					"style" : "",
 					"text" : "in 3 obstacles"
 				}
