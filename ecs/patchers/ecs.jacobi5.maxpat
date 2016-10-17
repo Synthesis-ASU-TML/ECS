@@ -55,7 +55,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 18.0, 278.0, 296.0, 22.0 ],
+					"patching_rect" : [ 18.0, 278.0, 310.0, 22.0 ],
 					"style" : "",
 					"text" : "jit.gl.pix #1 @gen ecs.jacobi @out_name #0_jacobi_5"
 				}
@@ -68,7 +68,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 18.0, 240.0, 296.0, 22.0 ],
+					"patching_rect" : [ 18.0, 240.0, 310.0, 22.0 ],
 					"style" : "",
 					"text" : "jit.gl.pix #1 @gen ecs.jacobi @out_name #0_jacobi_4"
 				}
@@ -81,7 +81,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 18.0, 202.0, 296.0, 22.0 ],
+					"patching_rect" : [ 18.0, 202.0, 310.0, 22.0 ],
 					"style" : "",
 					"text" : "jit.gl.pix #1 @gen ecs.jacobi @out_name #0_jacobi_3"
 				}
@@ -94,7 +94,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 18.0, 164.0, 296.0, 22.0 ],
+					"patching_rect" : [ 18.0, 164.0, 310.0, 22.0 ],
 					"style" : "",
 					"text" : "jit.gl.pix #1 @gen ecs.jacobi @out_name #0_jacobi_2"
 				}
@@ -107,7 +107,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 18.0, 127.0, 296.0, 22.0 ],
+					"patching_rect" : [ 18.0, 127.0, 310.0, 22.0 ],
 					"style" : "",
 					"text" : "jit.gl.pix #1 @gen ecs.jacobi @out_name #0_jacobi_1"
 				}
@@ -122,7 +122,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 347.0, 74.0, 30.0, 30.0 ],
+					"patching_rect" : [ 339.0, 74.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -135,7 +135,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "jit_gl_texture" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 18.0, 74.0, 30.0, 30.0 ],
 					"style" : ""
 				}
