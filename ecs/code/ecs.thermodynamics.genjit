@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 1314.0, -293.0, 1372.0, 787.0 ],
+		"rect" : [ 73.0, 93.0, 249.0, 577.0 ],
 		"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -39,14 +39,17 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"color" : [ 0.485368, 0.706563, 0.767416, 1.0 ],
 					"id" : "obj-26",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 495.0, 86.0, 253.0, 22.0 ],
+					"patching_rect" : [ 211.0, 86.0, 253.0, 22.0 ],
 					"style" : "",
-					"text" : "param specific_heat_capacity @default 1.035"
+					"text" : "param specific_heat_capacity @default 1.035",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -57,7 +60,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 502.0, 110.0, 288.0, 234.0 ],
+					"patching_rect" : [ 211.0, 110.0, 288.0, 234.0 ],
 					"style" : "",
 					"text" : "Compute thermodynamics equation to update potential temperature according to air saturation.\n\n\\kappa=\\frac{R_d}{c_p} = \\frac{c_p - c_v}{c_p}\n\\Pi = \\frac{p}{p_0)^-\\kappa\n\\theta = \\theta' + \\frac{L}{c_p \\Pi} \\delta C\n\nc_p: specific temperature of air at constant pressure\nc_v: specific temperature of air at constant volume\n\\theta: updated potential temperature (K)\n\\theta': advected potential temperature (K)\nL: latent heat vaporization, released heat from evaporation of condensed water.\n\\delta C: change in rate of condensation\n\n\\kappa is computed out of this function since it is a constant."
 				}
@@ -65,13 +68,16 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"color" : [ 0.650963, 0.655203, 0.777106, 1.0 ],
 					"id" : "obj-23",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 288.0, 184.0, 27.0, 22.0 ],
+					"patching_rect" : [ 28.0, 232.0, 27.0, 22.0 ],
 					"style" : "",
-					"text" : "out"
+					"text" : "out",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -82,7 +88,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 288.0, 160.0, 29.5, 22.0 ],
+					"patching_rect" : [ 28.0, 208.0, 29.5, 22.0 ],
 					"style" : "",
 					"text" : "+"
 				}
@@ -95,7 +101,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 298.5, 134.0, 29.5, 22.0 ],
+					"patching_rect" : [ 38.5, 182.0, 29.5, 22.0 ],
 					"style" : "",
 					"text" : "*"
 				}
@@ -108,7 +114,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 309.0, 110.0, 138.0, 22.0 ],
+					"patching_rect" : [ 49.0, 158.0, 138.0, 22.0 ],
 					"style" : "",
 					"text" : "/ specific_heat_capacity"
 				}
@@ -121,7 +127,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 309.0, 86.0, 149.0, 22.0 ],
+					"patching_rect" : [ 49.0, 134.0, 149.0, 22.0 ],
 					"style" : "",
 					"text" : "* latent_heat_vaporization"
 				}
@@ -129,14 +135,17 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"color" : [ 0.650963, 0.655203, 0.777106, 1.0 ],
 					"id" : "obj-16",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 309.0, 14.0, 80.0, 22.0 ],
+					"patching_rect" : [ 49.0, 62.0, 80.0, 22.0 ],
 					"style" : "",
-					"text" : "in 3 pressure"
+					"text" : "in 3 pressure",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -147,7 +156,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 309.0, 62.0, 69.0, 22.0 ],
+					"patching_rect" : [ 49.0, 110.0, 69.0, 22.0 ],
 					"style" : "",
 					"text" : "pow kappa"
 				}
@@ -160,7 +169,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 309.0, 38.0, 97.0, 22.0 ],
+					"patching_rect" : [ 49.0, 86.0, 97.0, 22.0 ],
 					"style" : "",
 					"text" : "/ base_pressure"
 				}
@@ -168,66 +177,81 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"color" : [ 0.485368, 0.706563, 0.767416, 1.0 ],
 					"id" : "obj-13",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 495.0, 62.0, 205.0, 22.0 ],
+					"patching_rect" : [ 211.0, 62.0, 205.0, 22.0 ],
 					"style" : "",
-					"text" : "param base_pressure @default 100."
+					"text" : "param base_pressure @default 100.",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"color" : [ 0.485368, 0.706563, 0.767416, 1.0 ],
 					"id" : "obj-10",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 495.0, 38.0, 165.0, 22.0 ],
+					"patching_rect" : [ 211.0, 38.0, 165.0, 22.0 ],
 					"style" : "",
-					"text" : "param kappa @default 0.286"
+					"text" : "param kappa @default 0.286",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"color" : [ 0.485368, 0.706563, 0.767416, 1.0 ],
 					"id" : "obj-9",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 495.0, 14.0, 264.0, 22.0 ],
+					"patching_rect" : [ 211.0, 14.0, 264.0, 22.0 ],
 					"style" : "",
-					"text" : "param latent_heat_vaporization @default 2.501"
+					"text" : "param latent_heat_vaporization @default 2.501",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"color" : [ 0.650963, 0.655203, 0.777106, 1.0 ],
 					"id" : "obj-8",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 202.0, 14.0, 105.0, 22.0 ],
+					"patching_rect" : [ 28.0, 38.0, 105.0, 22.0 ],
 					"style" : "",
-					"text" : "in 2 condensation"
+					"text" : "in 2 condensation",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"color" : [ 0.650963, 0.655203, 0.777106, 1.0 ],
 					"id" : "obj-1",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 50.0, 14.0, 150.0, 22.0 ],
+					"patching_rect" : [ 14.0, 14.0, 150.0, 22.0 ],
 					"style" : "",
-					"text" : "in 1 potential_temperature"
+					"text" : "in 1 potential_temperature",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}

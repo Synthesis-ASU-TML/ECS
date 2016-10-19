@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 476.0, 152.0, 600.0, 450.0 ],
+		"rect" : [ 74.0, 152.0, 500.0, 450.0 ],
 		"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -39,6 +39,8 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"color" : [ 0.485368, 0.706563, 0.767416, 1.0 ],
 					"id" : "obj-56",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -46,7 +48,8 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 344.0, 58.0, 287.0, 22.0 ],
 					"style" : "",
-					"text" : "param ground_potential_temperature @default 280."
+					"text" : "param ground_potential_temperature @default 280.",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -76,13 +79,16 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"color" : [ 0.650963, 0.655203, 0.777106, 1.0 ],
 					"id" : "obj-51",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 40.0, 257.0, 27.0, 22.0 ],
 					"style" : "",
-					"text" : "out"
+					"text" : "out",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -101,14 +107,17 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"color" : [ 0.650963, 0.655203, 0.777106, 1.0 ],
 					"id" : "obj-49",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 257.0, 34.0, 61.0, 22.0 ],
+					"patching_rect" : [ 257.0, 33.0, 61.0, 22.0 ],
 					"style" : "",
-					"text" : "in 2 liquid"
+					"text" : "in 2 liquid",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -179,6 +188,8 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"color" : [ 0.650963, 0.655203, 0.777106, 1.0 ],
 					"id" : "obj-27",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -186,12 +197,15 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 40.0, 34.0, 150.0, 22.0 ],
 					"style" : "",
-					"text" : "in 1 potential_temperature"
+					"text" : "in 1 potential_temperature",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"color" : [ 0.650963, 0.655203, 0.777106, 1.0 ],
 					"id" : "obj-24",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -199,7 +213,8 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 192.0, 33.0, 63.0, 22.0 ],
 					"style" : "",
-					"text" : "in 3 vapor"
+					"text" : "in 3 vapor",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -218,6 +233,8 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"color" : [ 0.485368, 0.706563, 0.767416, 1.0 ],
 					"id" : "obj-20",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -225,7 +242,8 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 344.0, 34.0, 192.0, 22.0 ],
 					"style" : "",
-					"text" : "param gravity @default 0. -0.0098"
+					"text" : "param gravity @default 0. -0.0098",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -311,8 +329,7 @@
 				}
 
 			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }

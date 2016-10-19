@@ -5,7 +5,7 @@
 			"major" : 7,
 			"minor" : 2,
 			"revision" : 5,
-			"architecture" : "x86",
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
@@ -95,7 +95,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 429.5, 330.0, 38.5, 20.0 ],
+					"patching_rect" : [ 367.75, 226.0, 38.5, 20.0 ],
 					"style" : "",
 					"text" : "Mask",
 					"textjustification" : 2
@@ -135,7 +135,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 315.0, 324.0, 68.5, 22.0 ],
+					"patching_rect" : [ 315.0, 324.0, 133.5, 22.0 ],
 					"style" : "",
 					"text" : "vec 0 0"
 				}
@@ -169,18 +169,23 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.682353, 0.705882, 0.776471, 0.0 ],
+					"color" : [ 0.650963, 0.655203, 0.777106, 1.0 ],
 					"id" : "obj-45",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 304.5, 586.0, 27.0, 22.0 ],
 					"style" : "",
-					"text" : "out"
+					"text" : "out",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.682353, 0.705882, 0.776471, 0.0 ],
+					"color" : [ 0.650963, 0.655203, 0.777106, 1.0 ],
 					"id" : "obj-43",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -188,7 +193,8 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 62.0, 412.0, 73.0, 22.0 ],
 					"style" : "",
-					"text" : "in 1 velocity"
+					"text" : "in 1 velocity",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -207,6 +213,8 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"color" : [ 0.485368, 0.706563, 0.767416, 1.0 ],
 					"id" : "obj-41",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -214,7 +222,8 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 148.291672, 378.0, 172.0, 22.0 ],
 					"style" : "",
-					"text" : "param cell_size @default 1.25"
+					"text" : "param cell_size @default 1.25",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -428,6 +437,8 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"color" : [ 0.941176, 0.690196, 0.196078, 1.0 ],
 					"id" : "obj-12",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -435,7 +446,8 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 135.25, 55.0, 144.0, 22.0 ],
 					"style" : "",
-					"text" : "gen @gen ecs.neighbors"
+					"text" : "gen @gen ecs.neighbors",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -454,6 +466,8 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"color" : [ 0.941176, 0.690196, 0.196078, 1.0 ],
 					"id" : "obj-9",
 					"maxclass" : "newobj",
 					"numinlets" : 5,
@@ -461,12 +475,15 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 315.0, 123.0, 144.0, 22.0 ],
 					"style" : "",
-					"text" : "gen @gen ecs.nearest4"
+					"text" : "gen @gen ecs.nearest4",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"color" : [ 0.941176, 0.690196, 0.196078, 1.0 ],
 					"id" : "obj-8",
 					"maxclass" : "newobj",
 					"numinlets" : 5,
@@ -474,12 +491,15 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 92.0, 123.0, 187.25, 22.0 ],
 					"style" : "",
-					"text" : "gen @gen ecs.nearest4"
+					"text" : "gen @gen ecs.nearest4",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.682353, 0.705882, 0.776471, 0.0 ],
+					"color" : [ 0.650963, 0.655203, 0.777106, 1.0 ],
 					"id" : "obj-5",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -487,12 +507,15 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 315.0, 15.0, 84.0, 22.0 ],
 					"style" : "",
-					"text" : "in 3 obstacles"
+					"text" : "in 3 obstacles",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.682353, 0.705882, 0.776471, 0.0 ],
+					"color" : [ 0.650963, 0.655203, 0.777106, 1.0 ],
 					"id" : "obj-2",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -500,7 +523,8 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 92.0, 15.0, 80.0, 22.0 ],
 					"style" : "",
-					"text" : "in 2 pressure"
+					"text" : "in 2 pressure",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
