@@ -5,7 +5,7 @@
 			"major" : 7,
 			"minor" : 2,
 			"revision" : 5,
-			"architecture" : "x64",
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
@@ -68,13 +68,14 @@
 					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
 					"color" : [ 0.485368, 0.706563, 0.767416, 1.0 ],
 					"id" : "obj-15",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 273.0, 193.0, 191.0, 22.0 ],
+					"patching_rect" : [ 273.0, 193.0, 171.0, 35.0 ],
 					"style" : "",
-					"text" : "param inverse_beta @deault 0.25",
+					"text" : "param inverse_beta @default 0.25",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
