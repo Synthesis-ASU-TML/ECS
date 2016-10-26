@@ -3,9 +3,9 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 2,
-			"revision" : 5,
-			"architecture" : "x64",
+			"minor" : 3,
+			"revision" : 1,
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
@@ -57,9 +57,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 13.0, 56.0, 30.0, 22.0 ],
+					"patching_rect" : [ 13.0, 56.0, 29.5, 22.0 ],
 					"style" : "",
-					"text" : "min"
+					"text" : "*"
 				}
 
 			}
@@ -72,7 +72,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 146.0, 14.0, 135.0, 22.0 ],
+					"patching_rect" : [ 150.0, 14.0, 135.0, 22.0 ],
 					"style" : "",
 					"text" : "param gain @default 1.",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -88,9 +88,9 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 13.0, 14.0, 67.0, 22.0 ],
+					"patching_rect" : [ 13.0, 14.0, 69.0, 22.0 ],
 					"style" : "",
-					"text" : "in 1 hsflow",
+					"text" : "in 1 source",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -104,7 +104,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 82.0, 14.0, 62.0, 22.0 ],
+					"patching_rect" : [ 86.0, 14.0, 62.0, 22.0 ],
 					"style" : "",
 					"text" : "in 2 mask",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]

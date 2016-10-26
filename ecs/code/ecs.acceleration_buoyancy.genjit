@@ -3,9 +3,9 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 2,
-			"revision" : 5,
-			"architecture" : "x64",
+			"minor" : 3,
+			"revision" : 1,
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
@@ -195,7 +195,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 40.0, 34.0, 150.0, 22.0 ],
+					"patching_rect" : [ 40.0, 33.0, 150.0, 22.0 ],
 					"style" : "",
 					"text" : "in 1 potential_temperature",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
