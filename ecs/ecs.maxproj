@@ -1,9 +1,9 @@
 {
 	"name" : "ecs",
 	"version" : 1,
-	"creationdate" : -740679152,
-	"modificationdate" : -734107982,
-	"viewrect" : [ 0.0, 45.0, 230.0, 721.0 ],
+	"creationdate" : -740679394,
+	"modificationdate" : 3560897562,
+	"viewrect" : [ 4.0, 45.0, 230.0, 721.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -59,15 +59,15 @@
 				"kind" : "patcher",
 				"local" : 1
 			}
+,
+			"ecs.ema.readme-todo.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
 
 		}
 ,
 		"code" : 		{
-			"ecs.vissigned.genjit" : 			{
-				"kind" : "genjit",
-				"local" : 1
-			}
-,
 			"ecs.water_continuity.genjit" : 			{
 				"kind" : "genjit",
 				"local" : 1
@@ -138,12 +138,7 @@
 				"local" : 1
 			}
 ,
-			"hflip.genjit" : 			{
-				"kind" : "genjit",
-				"local" : 1
-			}
-,
-			"ecs.rgb2luma.genjit" : 			{
+			"ecs.pressure_environmental.genjit" : 			{
 				"kind" : "genjit",
 				"local" : 1
 			}
@@ -153,7 +148,17 @@
 				"local" : 1
 			}
 ,
-			"ecs.pressure_environmental.genjit" : 			{
+			"ecs.vissigned.genjit" : 			{
+				"kind" : "genjit",
+				"local" : 1
+			}
+,
+			"hflip.genjit" : 			{
+				"kind" : "genjit",
+				"local" : 1
+			}
+,
+			"ecs.rgb2luma.genjit" : 			{
 				"kind" : "genjit",
 				"local" : 1
 			}

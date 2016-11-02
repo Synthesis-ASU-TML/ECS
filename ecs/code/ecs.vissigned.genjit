@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 246.0, 115.0, 1000.0, 622.0 ],
+		"rect" : [ 22.0, 228.0, 1000.0, 622.0 ],
 		"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -64,7 +64,7 @@
 			}
 , 			{
 				"box" : 				{
-					"code" : "Param signmag(0);\r\n\r\nix = in1.x;\r\niy = in1.y;\r\n\r\nif (signmag == 0) {\r\n\tout1 = in1;\r\n} else if (signmag == 1) {\r\n\tout1 = sqrt(in.y * in.y + in.x * in.x) / sqrt(2);\r\n} else {\r\n\tc = vec(\r\n\t\t(atan2(in.y, in.x) + pi) / (2 * pi),\r\n\t\tsqrt(in.y * in.y + in.x * in.x) ,\r\n\t \t1.0\r\n\t); \r\n\t\r\n\tk = vec(1.0, 2.0 / 3.0, 1.0 / 3.0, 3.0);\r\n\tp = abs(fract(c.xxx + k.xyz) * 6.0 - k.www);\r\n\t\r\n\tout1 = c.z * mix(k.xxx, clamp(p - k.xxx, 0.0, 1.0), c.y);\r\n}",
+					"code" : "Param signmag(0);\r\n\r\nix = in1.x;\r\niy = in1.y;\r\n\r\nif (signmag == 0) {\r\n\tout1 = in1;\r\n} else if (signmag == 1) {\r\n\tm = sqrt(iy * iy + ix * ix);\r\n\tout1 = vec(m, m, m, 1);\r\n} else {\r\n\tc = vec(\r\n\t\t(atan2(iy, ix) + pi) / (2 * pi),\r\n\t\tsqrt(iy * iy + ix * ix),\r\n\t \t1.0\r\n\t); \r\n\t\r\n\tk = vec(1.0, 2.0 / 3.0, 1.0 / 3.0, 3.0);\r\n\tp = abs(fract(c.xxx + k.xyz) * 6.0 - k.www);\r\n\t\r\n\tout1 = c.z * mix(k.xxx, clamp(p - k.xxx, 0.0, 1.0), c.y);\r\n}",
 					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
