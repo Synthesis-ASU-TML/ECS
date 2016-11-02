@@ -6,22 +6,23 @@
 				"id" : 1,
 				"data" : 				{
 					"cellsize" : [ 1.25 ],
-					"env-groundPressure" : [ 100.0 ],
-					"env-lapseRate" : [ 10.0 ],
-					"hsflow-flip" : [ 0 ],
-					"hsflow-gain" : [ 1.0 ],
-					"visualization-gain" : [ 1.0 ],
-					"thermo-cv" : [ 716.496521 ],
-					"thermo-cp" : [ 1003.496521 ],
+					"cfd-potential-temperature-dissipation" : [ 0.0 ],
 					"cfd-velocity-dissipation" : [ 1.0 ],
-					"cfd-temperature-dissipation" : [ 1.0 ],
-					"cfd-density-dissipation" : [ 1.0 ],
-					"cfd-vapor-dissipation" : [ 1.0 ],
 					"cfd-vorticity" : [ 0.6 ],
-					"speed" : [ 20.0 ],
+					"cfd-water-liquid-dissipation" : [ 0.0 ],
+					"cfd-water-vapor-dissipation" : [ 0.0 ],
+					"env-groundPressure" : [ 100.0 ],
 					"env-groundTemperature" : [ 280.0 ],
+					"env-lapseRate" : [ 10.0 ],
+					"hsflow-sensitivity" : [ 0.01 ],
+					"speed" : [ 20.0 ],
 					"thermo-condensationHeat" : [ 2.501 ],
-					"hsflow-sensitivity" : [ 0.01 ]
+					"thermo-cp" : [ 1003.496521 ],
+					"thermo-cv" : [ 716.496521 ],
+					"hsflow-texture" : [ "camera" ],
+					"render-context" : [ "sc-ecs-ema" ],
+					"udp-host" : [ "127.0.0.1" ],
+					"udp-port" : [ 10001 ]
 				}
 
 			}

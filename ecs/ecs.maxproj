@@ -1,9 +1,9 @@
 {
 	"name" : "ecs",
 	"version" : 1,
-	"creationdate" : 3554288144,
-	"modificationdate" : 3560323127,
-	"viewrect" : [ 29.0, 69.0, 300.0, 500.0 ],
+	"creationdate" : -740679152,
+	"modificationdate" : -734107982,
+	"viewrect" : [ 0.0, 45.0, 230.0, 721.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -44,10 +44,30 @@
 				"kind" : "patcher",
 				"local" : 1
 			}
+,
+			"ecs.ema.video-input.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ecs.ema.video-output.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ecs.ema.transport.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
 
 		}
 ,
 		"code" : 		{
+			"ecs.vissigned.genjit" : 			{
+				"kind" : "genjit",
+				"local" : 1
+			}
+,
 			"ecs.water_continuity.genjit" : 			{
 				"kind" : "genjit",
 				"local" : 1
@@ -93,11 +113,6 @@
 				"local" : 1
 			}
 ,
-			"ecs.advect.genjit" : 			{
-				"kind" : "genjit",
-				"local" : 1
-			}
-,
 			"ecs.thermodynamics.genjit" : 			{
 				"kind" : "genjit",
 				"local" : 1
@@ -123,13 +138,9 @@
 				"local" : 1
 			}
 ,
-			"ecs.vissigned.genjit" : 			{
+			"hflip.genjit" : 			{
 				"kind" : "genjit",
 				"local" : 1
-			}
-,
-			"hflip.genjit" : 			{
-				"kind" : "genjit"
 			}
 ,
 			"ecs.rgb2luma.genjit" : 			{
