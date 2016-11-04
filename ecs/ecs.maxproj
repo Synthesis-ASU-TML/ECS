@@ -1,8 +1,8 @@
 {
 	"name" : "ecs",
 	"version" : 1,
-	"creationdate" : -740679394,
-	"modificationdate" : 3560897562,
+	"creationdate" : -740679636,
+	"modificationdate" : 3561065413,
 	"viewrect" : [ 4.0, 45.0, 230.0, 721.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -32,12 +32,14 @@
 ,
 			"ecs.ema.parameters.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1
+				"local" : 1,
+				"toplevel" : 1
 			}
 ,
 			"ecs.ema.simulation.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1
+				"local" : 1,
+				"toplevel" : 1
 			}
 ,
 			"ecs.o.rp.maxpat" : 			{
@@ -45,19 +47,27 @@
 				"local" : 1
 			}
 ,
-			"ecs.ema.video-input.maxpat" : 			{
+			"ecs.ema.add_with_gain.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
+			}
+,
+			"ecs.ema.video-input.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1,
+				"toplevel" : 1
 			}
 ,
 			"ecs.ema.video-output.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1
+				"local" : 1,
+				"toplevel" : 1
 			}
 ,
 			"ecs.ema.transport.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1
+				"local" : 1,
+				"toplevel" : 1
 			}
 ,
 			"ecs.ema.readme-todo.maxpat" : 			{
@@ -113,6 +123,11 @@
 				"local" : 1
 			}
 ,
+			"ecs.advect.genjit" : 			{
+				"kind" : "genjit",
+				"local" : 1
+			}
+,
 			"ecs.thermodynamics.genjit" : 			{
 				"kind" : "genjit",
 				"local" : 1
@@ -159,6 +174,11 @@
 			}
 ,
 			"ecs.rgb2luma.genjit" : 			{
+				"kind" : "genjit",
+				"local" : 1
+			}
+,
+			"ecs.ball.genjit" : 			{
 				"kind" : "genjit",
 				"local" : 1
 			}

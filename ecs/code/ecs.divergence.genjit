@@ -5,11 +5,11 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 1,
-			"architecture" : "x86",
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 718.0, 91.0, 642.0, 612.0 ],
+		"rect" : [ 586.0, 242.0, 328.0, 393.0 ],
 		"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
