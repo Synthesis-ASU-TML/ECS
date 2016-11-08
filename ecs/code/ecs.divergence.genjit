@@ -5,11 +5,11 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 1,
-			"architecture" : "x64",
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 586.0, 242.0, 328.0, 393.0 ],
+		"rect" : [ 1815.0, -114.0, 328.0, 393.0 ],
 		"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -44,7 +44,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 100.861084, 262.0, 61.0, 22.0 ],
+					"patching_rect" : [ 8.611084, 271.0, 61.0, 22.0 ],
 					"style" : "",
 					"text" : "swiz xxxx"
 				}
@@ -125,7 +125,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 67.111084, 109.0, 29.5, 22.0 ],
+					"patching_rect" : [ 8.611084, 109.0, 29.5, 22.0 ],
 					"style" : "",
 					"text" : "-"
 				}
@@ -138,7 +138,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 100.861084, 149.0, 29.5, 22.0 ],
+					"patching_rect" : [ 8.611084, 148.0, 29.5, 22.0 ],
 					"style" : "",
 					"text" : "+"
 				}
@@ -151,7 +151,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 100.861084, 217.0, 29.5, 22.0 ],
+					"patching_rect" : [ 8.611084, 232.0, 29.5, 22.0 ],
 					"style" : "",
 					"text" : "/"
 				}
@@ -177,7 +177,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 142.861084, 180.0, 29.0, 22.0 ],
+					"patching_rect" : [ 77.611084, 187.0, 29.0, 22.0 ],
 					"style" : "",
 					"text" : "* 2."
 				}
@@ -192,7 +192,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 142.861084, 149.0, 172.0, 22.0 ],
+					"patching_rect" : [ 77.611084, 148.0, 172.0, 22.0 ],
 					"style" : "",
 					"text" : "param cell_size @default 1.25",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -252,7 +252,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 100.861084, 307.0, 27.0, 22.0 ],
+					"patching_rect" : [ 8.611084, 310.0, 27.0, 22.0 ],
 					"style" : "",
 					"text" : "out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]

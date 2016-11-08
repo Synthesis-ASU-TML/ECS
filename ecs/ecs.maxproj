@@ -2,7 +2,7 @@
 	"name" : "ecs",
 	"version" : 1,
 	"creationdate" : -740679636,
-	"modificationdate" : 3561065413,
+	"modificationdate" : -733560332,
 	"viewrect" : [ 4.0, 45.0, 230.0, 721.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -34,6 +34,16 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"toplevel" : 1
+			}
+,
+			"ecs.o.nodepack.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"ecs.o.ambipack.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
 			}
 ,
 			"ecs.ema.simulation.maxpat" : 			{
@@ -158,6 +168,11 @@
 				"local" : 1
 			}
 ,
+			"ecs.ball.genjit" : 			{
+				"kind" : "genjit",
+				"local" : 1
+			}
+,
 			"ecs.hsflow.genjit" : 			{
 				"kind" : "genjit",
 				"local" : 1
@@ -169,16 +184,10 @@
 			}
 ,
 			"hflip.genjit" : 			{
-				"kind" : "genjit",
-				"local" : 1
+				"kind" : "genjit"
 			}
 ,
 			"ecs.rgb2luma.genjit" : 			{
-				"kind" : "genjit",
-				"local" : 1
-			}
-,
-			"ecs.ball.genjit" : 			{
 				"kind" : "genjit",
 				"local" : 1
 			}

@@ -3,13 +3,13 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 2,
-			"revision" : 5,
-			"architecture" : "x64",
+			"minor" : 3,
+			"revision" : 1,
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 464.0, 113.0, 697.0, 577.0 ],
+		"rect" : [ 1617.0, -134.0, 697.0, 577.0 ],
 		"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -43,7 +43,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 172.0, 110.0, 125.0, 20.0 ],
+					"patching_rect" : [ 172.0, 170.0, 125.0, 20.0 ],
 					"style" : "",
 					"text" : "kappa = (cp - cv) / cp"
 				}
@@ -56,7 +56,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 151.0, 86.0, 191.0, 22.0 ],
+					"patching_rect" : [ 151.0, 131.0, 191.0, 22.0 ],
 					"style" : "",
 					"text" : "/ specific_heat_capacity_pressure"
 				}
@@ -69,7 +69,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 151.0, 62.0, 184.0, 22.0 ],
+					"patching_rect" : [ 151.0, 92.0, 184.0, 22.0 ],
 					"style" : "",
 					"text" : "- specific_heat_capacity_volume"
 				}
@@ -82,7 +82,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 151.0, 38.0, 222.0, 22.0 ],
+					"patching_rect" : [ 151.0, 53.0, 222.0, 22.0 ],
 					"style" : "",
 					"text" : "param specific_heat_capacity_pressure"
 				}
@@ -97,7 +97,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 380.0, 86.0, 307.0, 22.0 ],
+					"patching_rect" : [ 380.0, 131.0, 307.0, 22.0 ],
 					"style" : "",
 					"text" : "param specific_heat_capacity_pressure @default 1.035",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -107,13 +107,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-25",
-					"linecount" : 17,
+					"linecount" : 14,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 380.0, 110.0, 288.0, 234.0 ],
+					"patching_rect" : [ 380.0, 170.0, 288.0, 194.0 ],
 					"style" : "",
-					"text" : "Compute thermodynamics equation to update potential temperature according to air saturation.\n\n\\kappa=\\frac{R_d}{c_p} = \\frac{c_p - c_v}{c_p}\n\\Pi = \\frac{p}{p_0)^-\\kappa\n\\theta = \\theta' + \\frac{L}{c_p \\Pi} \\delta C\n\nc_p: specific temperature of air at constant pressure\nc_v: specific temperature of air at constant volume\n\\theta: updated potential temperature (K)\n\\theta': advected potential temperature (K)\nL: latent heat vaporization, released heat from evaporation of condensed water.\n\\delta C: change in rate of condensation\n\n\\kappa is computed out of this function since it is a constant."
+					"text" : "Compute thermodynamics equation to update potential temperature according to air saturation.\n\n\\kappa=\\frac{R_d}{c_p} = \\frac{c_p - c_v}{c_p}\n\\Pi = \\frac{p}{p_0)^-\\kappa\n\\theta = \\theta' + \\frac{L}{c_p \\Pi} \\delta C\n\nc_p: specific temperature of air at constant pressure\nc_v: specific temperature of air at constant volume\n\\theta: updated potential temperature (K)\n\\theta': advected potential temperature (K)\nL: latent heat vaporization, released heat from evaporation of condensed water.\n\\delta C: change in rate of condensation"
 				}
 
 			}
@@ -125,7 +125,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 28.0, 232.0, 27.0, 22.0 ],
+					"patching_rect" : [ 15.0, 365.0, 27.0, 22.0 ],
 					"style" : "",
 					"text" : "out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -139,7 +139,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 28.0, 208.0, 29.5, 22.0 ],
+					"patching_rect" : [ 15.0, 326.0, 32.0, 22.0 ],
 					"style" : "",
 					"text" : "+"
 				}
@@ -152,7 +152,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 38.5, 182.0, 29.5, 22.0 ],
+					"patching_rect" : [ 28.0, 287.0, 40.0, 22.0 ],
 					"style" : "",
 					"text" : "*"
 				}
@@ -165,7 +165,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 49.0, 134.0, 193.0, 22.0 ],
+					"patching_rect" : [ 49.0, 209.0, 193.0, 22.0 ],
 					"style" : "",
 					"text" : "* specific_heat_capacity_pressure"
 				}
@@ -178,7 +178,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 49.0, 158.0, 151.0, 22.0 ],
+					"patching_rect" : [ 49.0, 248.0, 151.0, 22.0 ],
 					"style" : "",
 					"text" : "!/ latent_heat_vaporization"
 				}
@@ -193,7 +193,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 49.0, 62.0, 80.0, 22.0 ],
+					"patching_rect" : [ 49.0, 92.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "in 3 pressure",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -207,7 +207,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 49.0, 110.0, 121.0, 22.0 ],
+					"patching_rect" : [ 49.0, 170.0, 121.0, 22.0 ],
 					"style" : "",
 					"text" : "pow"
 				}
@@ -220,7 +220,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 49.0, 86.0, 97.0, 22.0 ],
+					"patching_rect" : [ 49.0, 131.0, 97.0, 22.0 ],
 					"style" : "",
 					"text" : "/ base_pressure"
 				}
@@ -235,7 +235,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 380.0, 38.0, 205.0, 22.0 ],
+					"patching_rect" : [ 380.0, 53.0, 205.0, 22.0 ],
 					"style" : "",
 					"text" : "param base_pressure @default 100.",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -251,9 +251,9 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 379.0, 62.0, 319.0, 22.0 ],
+					"patching_rect" : [ 380.0, 92.0, 331.0, 22.0 ],
 					"style" : "",
-					"text" : "param specific_heat_capacity_volume @default 716.4965",
+					"text" : "param specific_heat_capacity_volume @default 716.496521",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -283,7 +283,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 28.0, 38.0, 105.0, 22.0 ],
+					"patching_rect" : [ 28.0, 53.0, 105.0, 22.0 ],
 					"style" : "",
 					"text" : "in 2 condensation",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
