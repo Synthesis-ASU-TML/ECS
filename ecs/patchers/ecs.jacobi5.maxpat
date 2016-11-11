@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 1,
-			"revision" : 0,
+			"minor" : 3,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -46,7 +46,6 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "jit_gl_texture", "jit_gl_texture", "jit_gl_texture", "" ],
 					"patching_rect" : [ 93.0, 291.0, 470.0, 22.0 ],
-					"presentation_rect" : [ 86.0, 293.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "jit.gl.pix #1 @gen ecs.jacobi @colormode argb @type float32 @thru 1",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -61,7 +60,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 47.0, 206.0, 24.0, 22.0 ],
-					"presentation_rect" : [ 48.0, 206.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "t b"
 				}
@@ -76,7 +74,6 @@
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 19.0, 229.0, 24.0, 24.0 ],
-					"presentation_rect" : [ 20.0, 229.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -117,7 +114,6 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "jit_gl_texture", "jit_gl_texture", "jit_gl_texture", "" ],
 					"patching_rect" : [ 93.0, 494.0, 470.0, 22.0 ],
-					"presentation_rect" : [ 93.0, 494.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "jit.gl.pix #1 @gen ecs.jacobi @colormode argb @type float32 @thru 1",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -134,7 +130,6 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "jit_gl_texture", "jit_gl_texture", "jit_gl_texture", "" ],
 					"patching_rect" : [ 93.0, 452.0, 470.0, 22.0 ],
-					"presentation_rect" : [ 96.0, 452.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "jit.gl.pix #1 @gen ecs.jacobi @colormode argb @type float32 @thru 1",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -151,7 +146,6 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "jit_gl_texture", "jit_gl_texture", "jit_gl_texture", "" ],
 					"patching_rect" : [ 93.0, 391.0, 470.0, 22.0 ],
-					"presentation_rect" : [ 95.0, 391.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "jit.gl.pix #1 @gen ecs.jacobi @colormode argb @type float32 @thru 1",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -168,7 +162,6 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "jit_gl_texture", "jit_gl_texture", "jit_gl_texture", "" ],
 					"patching_rect" : [ 93.0, 338.0, 470.0, 22.0 ],
-					"presentation_rect" : [ 93.0, 338.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "jit.gl.pix #1 @gen ecs.jacobi @colormode argb @type float32 @thru 1",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -196,20 +189,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 0.0, 0.0, 50.0, 22.0 ],
 					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-66",
-					"linecount" : 3,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 346.0, 184.0, 50.0, 49.0 ],
-					"style" : "",
-					"text" : "param cell_size 1.25"
 				}
 
 			}
@@ -504,15 +483,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-55", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-52", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-66", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-52", 1 ]

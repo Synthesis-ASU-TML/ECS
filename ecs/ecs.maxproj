@@ -1,8 +1,8 @@
 {
 	"name" : "ecs",
 	"version" : 1,
-	"creationdate" : -740679636,
-	"modificationdate" : -733560332,
+	"creationdate" : -740679878,
+	"modificationdate" : 3561642282,
 	"viewrect" : [ 4.0, 45.0, 230.0, 721.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -32,12 +32,6 @@
 ,
 			"ecs.ema.parameters.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1,
-				"toplevel" : 1
-			}
-,
-			"ecs.o.nodepack.maxpat" : 			{
-				"kind" : "patcher",
 				"local" : 1
 			}
 ,
@@ -46,10 +40,14 @@
 				"local" : 1
 			}
 ,
+			"ecs.o.nodepack.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
 			"ecs.ema.simulation.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1,
-				"toplevel" : 1
+				"local" : 1
 			}
 ,
 			"ecs.o.rp.maxpat" : 			{
@@ -64,25 +62,38 @@
 ,
 			"ecs.ema.video-input.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1,
-				"toplevel" : 1
+				"local" : 1
 			}
 ,
 			"ecs.ema.video-output.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1,
-				"toplevel" : 1
+				"local" : 1
 			}
 ,
 			"ecs.ema.transport.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1,
-				"toplevel" : 1
+				"local" : 1
 			}
 ,
 			"ecs.ema.readme-todo.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
+			}
+,
+			"ecs.ema.overview.maxpat" : 			{
+				"kind" : "patcher"
+			}
+,
+			"ecs.ema.simulation_testing.maxpat" : 			{
+				"kind" : "patcher"
+			}
+,
+			"ecs.jacobi5_testing.maxpat" : 			{
+				"kind" : "patcher"
+			}
+,
+			"ecs.ema.add_with_gain_testing.maxpat" : 			{
+				"kind" : "patcher"
 			}
 
 		}

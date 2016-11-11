@@ -5,11 +5,11 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 1,
-			"architecture" : "x86",
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 1961.0, -150.0, 640.0, 480.0 ],
+		"rect" : [ 496.0, 377.0, 640.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -67,7 +67,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "FullPacket" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 167.0, 267.0, 211.0, 22.0 ],
 					"style" : "",
 					"text" : "o.pack #2"
@@ -81,7 +81,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 167.0, 232.0, 55.0, 22.0 ],
+					"patching_rect" : [ 167.0, 232.0, 67.0, 22.0 ],
 					"style" : "",
 					"text" : "route #1"
 				}

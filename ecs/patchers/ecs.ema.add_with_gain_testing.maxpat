@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 558.0, 531.0, 910.0, 480.0 ],
+		"rect" : [ 737.0, 365.0, 1149.0, 617.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -191,19 +191,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-11",
-					"maxclass" : "led",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 7.0, 55.0, 24.0, 24.0 ],
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"comment" : "",
 					"id" : "obj-14",
 					"maxclass" : "inlet",
@@ -299,7 +286,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 33.0, 56.0, 24.0, 22.0 ],
+					"patching_rect" : [ 33.0, 63.0, 24.0, 22.0 ],
 					"style" : "",
 					"text" : "t b"
 				}
@@ -351,9 +338,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 749.0, 48.0, 215.0, 22.0 ],
+					"patching_rect" : [ 749.0, 48.0, 161.0, 22.0 ],
 					"style" : "",
-					"text" : "o.route #4"
+					"text" : "o.route #2"
 				}
 
 			}
@@ -729,15 +716,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-6", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-11", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-65", 0 ]
 				}
 
 			}
