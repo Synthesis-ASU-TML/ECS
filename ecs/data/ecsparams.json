@@ -5,14 +5,14 @@
 			"1" : 			{
 				"id" : 1,
 				"data" : 				{
-					"boundary-init-liquid" : [ 0.0, 0.527772, 0.380606, 1 ],
-					"boundary-init-obs" : [ 0.462264, 0.514146, 0.051321, 1 ],
-					"boundary-init-vapor" : [ 0.367925, 0.287731, 0.241111, 1 ],
+					"boundary-init-liquid" : [ 0.311321, 0.47641, 0.135323, 1 ],
+					"boundary-init-obs" : [ 0.716981, 0.495278, 0.089057, 1 ],
+					"boundary-init-vapor" : [ 0.301887, 0.47641, 0.241111, 1 ],
 					"cfd-jacobi-iterations" : [ 1 ],
 					"cfd-liquid-dissipation" : [ 1.0 ],
 					"cfd-temp-dissipation" : [ 1.0 ],
 					"cfd-vapor-dissipation" : [ 1.0 ],
-					"cfd-velocity-dissipation" : [ 1.0 ],
+					"cfd-velocity-dissipation" : [ 0.98 ],
 					"cfd-vorticity" : [ 0.6 ],
 					"env-K0" : [ 280.0 ],
 					"env-lapse-rate" : [ 10.0 ],
@@ -29,7 +29,7 @@
 					"helper-wind-box-x2" : [ 0.06 ],
 					"helper-wind-box-y1" : [ 0.2 ],
 					"helper-wind-box-y2" : [ 0.8 ],
-					"sim-cell-size" : [ 1.25 ],
+					"sim-cell-size" : [ 1.0 ],
 					"sim-manual-timestep" : [ 1 ],
 					"sim-speed" : [ 20.0 ],
 					"sim-timestep" : [ 1.0 ],
@@ -38,8 +38,8 @@
 					"thermo-cv" : [ 716.496521 ],
 					"udp-host" : [ "127.0.0.1" ],
 					"udp-port" : [ 10001 ],
-					"adv-params::u084029750" : [ 1.0 ],
-					"env-pressure-params::u920028475" : [ 0 ]
+					"adv-params::u726024734" : [ 0.98 ],
+					"env-pressure-params::u633023465" : [ 0 ]
 				}
 
 			}

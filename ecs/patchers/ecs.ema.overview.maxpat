@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 1157.0, 79.0, 170.0, 116.0 ],
+		"rect" : [ 1261.0, 45.0, 167.0, 109.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -42,7 +42,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 5.0, 84.0, 155.0, 22.0 ],
+					"patching_rect" : [ 6.0, 78.0, 155.0, 22.0 ],
 					"style" : "",
 					"text" : "ecs.ema.video-output"
 				}
@@ -54,7 +54,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 5.0, 12.0, 155.0, 22.0 ],
+					"patching_rect" : [ 6.0, 6.0, 155.0, 22.0 ],
 					"style" : "",
 					"text" : "ecs.ema.transport",
 					"varname" : "ecs.ema.parameters[2]"
@@ -67,7 +67,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 5.0, 60.0, 155.0, 22.0 ],
+					"patching_rect" : [ 6.0, 54.0, 155.0, 22.0 ],
 					"style" : "",
 					"text" : "ecs.ema.simulation_testing",
 					"varname" : "ecs.ema.parameters[1]"
@@ -80,7 +80,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 5.0, 36.0, 155.0, 22.0 ],
+					"patching_rect" : [ 6.0, 30.0, 155.0, 22.0 ],
 					"style" : "",
 					"text" : "ecs.ema.parameters",
 					"varname" : "ecs.ema.parameters"
@@ -204,13 +204,13 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "ecs.mask_nearest_neighbors.genjit",
-				"bootpath" : "~/synthesis-git/ECM/ecs/code",
-				"type" : "gJIT",
+				"name" : "ecs.jacobi5_testing.maxpat",
+				"bootpath" : "~/synthesis-git/ECM/ecs/patchers",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "ecs.jacobi5_testing.maxpat",
+				"name" : "ecs.jacobi-iteration.maxpat",
 				"bootpath" : "~/synthesis-git/ECM/ecs/patchers",
 				"type" : "JSON",
 				"implicit" : 1
@@ -231,12 +231,6 @@
 				"name" : "ecs.ball.genjit",
 				"bootpath" : "~/synthesis-git/ECM/ecs/code",
 				"type" : "gJIT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ecs.ema.add_with_gain_testing.maxpat",
-				"bootpath" : "~/synthesis-git/ECM/ecs/patchers",
-				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
@@ -270,7 +264,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.collect.mxo",
+				"name" : "o.print.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -283,6 +277,10 @@
 			}
 , 			{
 				"name" : "o.union.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.collect.mxo",
 				"type" : "iLaX"
 			}
 , 			{

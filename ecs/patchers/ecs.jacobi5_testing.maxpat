@@ -5,11 +5,11 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 1,
-			"architecture" : "x86",
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 298.0, 111.0, 992.0, 655.0 ],
+		"rect" : [ 520.0, 112.0, 596.0, 655.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,12 +38,39 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"comment" : "pressure texture",
+					"id" : "obj-3",
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 374.0, 90.0, 30.0, 30.0 ],
+					"presentation_rect" : [ 376.0, 87.0, 0.0, 0.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 374.0, 141.0, 135.0, 22.0 ],
+					"style" : "",
+					"text" : "routepass jit_gl_texture"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"comment" : "",
 					"id" : "obj-194",
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 417.0, 129.0, 30.0, 30.0 ],
+					"patching_rect" : [ 614.0, 122.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -55,7 +82,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 417.0, 90.0, 78.0, 22.0 ],
+					"patching_rect" : [ 614.0, 83.0, 78.0, 22.0 ],
 					"style" : "",
 					"text" : "r  #0-jc-out"
 				}
@@ -2139,13 +2166,13 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "obstacles texture",
 					"id" : "obj-1",
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 231.0, 90.0, 30.0, 30.0 ],
+					"patching_rect" : [ 528.0, 90.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -2204,8 +2231,8 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "divergence",
-					"comment" : "divergence",
+					"annotation" : "",
+					"comment" : "divergence texture",
 					"id" : "obj-4",
 					"maxclass" : "inlet",
 					"numinlets" : 0,
@@ -3461,6 +3488,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-29", 2 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-30", 3 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -3498,6 +3534,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-29", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-3", 0 ]
 				}
 
 			}
@@ -3786,15 +3831,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-50", 3 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-29", 2 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-52", 0 ]
 				}
 
 			}

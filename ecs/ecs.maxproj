@@ -1,9 +1,9 @@
 {
 	"name" : "ecs",
 	"version" : 1,
-	"creationdate" : -740679878,
-	"modificationdate" : 3561642282,
-	"viewrect" : [ 4.0, 45.0, 230.0, 721.0 ],
+	"creationdate" : -740679999,
+	"modificationdate" : 3562064017,
+	"viewrect" : [ 1.0, 45.0, 230.0, 721.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -92,6 +92,10 @@
 				"kind" : "patcher"
 			}
 ,
+			"ecs.jacobi-iteration.maxpat" : 			{
+				"kind" : "patcher"
+			}
+,
 			"ecs.ema.add_with_gain_testing.maxpat" : 			{
 				"kind" : "patcher"
 			}
@@ -99,6 +103,16 @@
 		}
 ,
 		"code" : 		{
+			"ecs.hsflow.genjit" : 			{
+				"kind" : "genjit",
+				"local" : 1
+			}
+,
+			"ecs.vissigned.genjit" : 			{
+				"kind" : "genjit",
+				"local" : 1
+			}
+,
 			"ecs.water_continuity.genjit" : 			{
 				"kind" : "genjit",
 				"local" : 1
@@ -180,16 +194,6 @@
 			}
 ,
 			"ecs.ball.genjit" : 			{
-				"kind" : "genjit",
-				"local" : 1
-			}
-,
-			"ecs.hsflow.genjit" : 			{
-				"kind" : "genjit",
-				"local" : 1
-			}
-,
-			"ecs.vissigned.genjit" : 			{
 				"kind" : "genjit",
 				"local" : 1
 			}
