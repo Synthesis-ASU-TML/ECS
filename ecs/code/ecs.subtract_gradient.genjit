@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 586.0, 97.0, 900.0, 687.0 ],
+		"rect" : [ 346.0, 97.0, 900.0, 687.0 ],
 		"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -193,7 +193,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 38.0, 478.0, 73.0, 22.0 ],
 					"style" : "",
-					"text" : "in 1 velocity",
+					"text" : "in 2 velocity",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -484,7 +484,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 30.0, 15.0, 80.0, 22.0 ],
 					"style" : "",
-					"text" : "in 2 pressure",
+					"text" : "in 1 pressure",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
