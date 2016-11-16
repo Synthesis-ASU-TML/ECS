@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 210.0, 79.0, 838.0, 963.0 ],
+		"rect" : [ 150.0, 80.0, 838.0, 963.0 ],
 		"bgcolor" : [ 0.88, 0.88, 0.8624, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -244,7 +244,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 71.0, 743.0, 293.0, 22.0 ],
-									"restore" : [ 0.566038, 0.485844, 0.135323, 1 ],
+									"restore" : [ 0.311321, 0.47641, 0.135323, 1 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0
 									}
@@ -289,7 +289,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 372.0, 680.0, 295.0, 22.0 ],
-									"restore" : [ 0.528302, 0.47641, 0.241111, 1 ],
+									"restore" : [ 0.301887, 0.47641, 0.241111, 1 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0
 									}
@@ -308,7 +308,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 71.0, 680.0, 284.0, 22.0 ],
-									"restore" : [ 0.320755, 0.797165, 0.155095, 1 ],
+									"restore" : [ 0.358491, 0.485844, 0.089057, 1 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0
 									}
@@ -776,7 +776,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 86.0, 71.0, 305.0, 22.0 ],
-									"restore" : [ 0.43 ],
+									"restore" : [ 0.27 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0
 									}
@@ -22925,8 +22925,8 @@
 					"presentation_rect" : [ 220.0, 753.500549, 106.0, 106.0 ],
 					"style" : "",
 					"varname" : "boundary-init-liquid",
-					"xplace" : [ 0.566038 ],
-					"yplace" : [ 0.485844 ]
+					"xplace" : [ 0.311321 ],
+					"yplace" : [ 0.47641 ]
 				}
 
 			}
@@ -22944,7 +22944,7 @@
 					"presentation_rect" : [ 112.0, 753.500549, 106.0, 106.0 ],
 					"style" : "",
 					"varname" : "boundary-init-vapor",
-					"xplace" : [ 0.528302 ],
+					"xplace" : [ 0.301887 ],
 					"yplace" : [ 0.47641 ]
 				}
 
@@ -22953,7 +22953,7 @@
 				"box" : 				{
 					"id" : "obj-80",
 					"maxclass" : "nodes",
-					"nsize" : [ 0.155095 ],
+					"nsize" : [ 0.089057 ],
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
@@ -22963,8 +22963,8 @@
 					"presentation_rect" : [ 4.0, 753.500549, 106.0, 106.0 ],
 					"style" : "",
 					"varname" : "boundary-init-obs",
-					"xplace" : [ 0.320755 ],
-					"yplace" : [ 0.797165 ]
+					"xplace" : [ 0.358491 ],
+					"yplace" : [ 0.485844 ]
 				}
 
 			}
@@ -25123,7 +25123,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 85.0, 330.0, 258.0, 22.0 ],
-									"restore" : [ 1.0 ],
+									"restore" : [ 1.25 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0
 									}
@@ -25911,7 +25911,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 1005.0, 79.0, 880.0, 687.0 ],
+						"rect" : [ 1335.0, 89.0, 880.0, 687.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -25938,7 +25938,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-17",
@@ -26565,15 +26564,15 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 244.0, 76.999878, 58.0, 22.0 ],
 					"restore" : 					{
-						"boundary-init-liquid" : [ 0.566038, 0.485844, 0.135323, 1 ],
-						"boundary-init-obs" : [ 0.320755, 0.797165, 0.155095, 1 ],
-						"boundary-init-vapor" : [ 0.528302, 0.47641, 0.241111, 1 ],
+						"boundary-init-liquid" : [ 0.311321, 0.47641, 0.135323, 1 ],
+						"boundary-init-obs" : [ 0.358491, 0.485844, 0.089057, 1 ],
+						"boundary-init-vapor" : [ 0.301887, 0.47641, 0.241111, 1 ],
 						"cfd-jacobi-iterations" : [ 1 ],
 						"cfd-liquid-dissipation" : [ 1.0 ],
 						"cfd-temp-dissipation" : [ 1.0 ],
 						"cfd-vapor-dissipation" : [ 1.0 ],
 						"cfd-velocity-dissipation" : [ 1.0 ],
-						"cfd-vorticity" : [ 0.6 ],
+						"cfd-vorticity" : [ 0.0 ],
 						"env-K0" : [ 280.0 ],
 						"env-lapse-rate" : [ 10.0 ],
 						"env-p0" : [ 100.0 ],
@@ -26583,13 +26582,13 @@
 						"external-potential-temperature-texture" : [ "<empty>" ],
 						"external-vapor-gain" : [ 0.0 ],
 						"external-vapor-texture" : [ "<empty>" ],
-						"external-velocity-gain" : [ 0.43 ],
+						"external-velocity-gain" : [ 0.27 ],
 						"external-velocity-texture" : [ "constant_flow" ],
 						"helper-wind-box-x1" : [ 0.0 ],
 						"helper-wind-box-x2" : [ 0.06 ],
 						"helper-wind-box-y1" : [ 0.2 ],
 						"helper-wind-box-y2" : [ 0.8 ],
-						"sim-cell-size" : [ 1.0 ],
+						"sim-cell-size" : [ 1.25 ],
 						"sim-manual-timestep" : [ 1 ],
 						"sim-speed" : [ 20.0 ],
 						"sim-timestep" : [ 1.0 ],
@@ -26673,7 +26672,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 384.0, 567.0, 329.0, 146.0 ],
+						"rect" : [ 384.0, 567.0, 528.0, 279.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -26822,7 +26821,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 772.0, 363.0, 336.0, 288.0 ],
+						"rect" : [ 1126.0, 471.0, 336.0, 288.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -26857,7 +26856,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 4.0, 4.999756, 252.0, 22.0 ],
-									"restore" : [ 0.6 ],
+									"restore" : [ 0.0 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0
 									}
@@ -26887,9 +26886,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "FullPacket" ],
-									"patching_rect" : [ 4.0, 28.999756, 153.0, 22.0 ],
+									"patching_rect" : [ 4.0, 28.999756, 118.0, 22.0 ],
 									"style" : "",
-									"text" : "o.pack /confinement_scale"
+									"text" : "o.pack /confinement"
 								}
 
 							}
