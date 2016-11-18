@@ -39,13 +39,25 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 400.0, 47.0, 84.0, 22.0 ],
+					"style" : "",
+					"text" : "in 3 obstacles"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-5",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 234.25, 102.0, 43.0, 22.0 ],
-					"presentation_rect" : [ 234.666672, 103.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "swiz x"
 				}
@@ -59,7 +71,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 176.666672, 102.0, 43.0, 22.0 ],
-					"presentation_rect" : [ 177.333344, 104.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "swiz x"
 				}
@@ -73,7 +84,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 119.333336, 102.0, 43.0, 22.0 ],
-					"presentation_rect" : [ 121.0, 103.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "swiz x"
 				}
@@ -236,12 +246,12 @@
 					"color" : [ 0.941176, 0.690196, 0.196078, 1.0 ],
 					"id" : "obj-8",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
+					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 62.0, 63.0, 191.0, 22.0 ],
+					"patching_rect" : [ 62.0, 63.0, 226.0, 22.0 ],
 					"style" : "",
-					"text" : "gen @gen ecs.nearest_neighbors",
+					"text" : "gen @gen ecs.mask_nearest_neighbors",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -386,6 +396,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-54", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 2 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-6", 0 ]
 				}
 
 			}
