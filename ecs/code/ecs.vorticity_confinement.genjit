@@ -5,7 +5,7 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 1,
-			"architecture" : "x86",
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
@@ -62,9 +62,9 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 310.5, 53.0, 213.0, 22.0 ],
+					"patching_rect" : [ 310.5, 53.0, 153.0, 22.0 ],
 					"style" : "",
-					"text" : "param confinement_scale @default 1.",
+					"text" : "param vorticity @default 1.",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -132,9 +132,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 125.166672, 443.0, 119.0, 22.0 ],
+					"patching_rect" : [ 125.166672, 443.0, 59.0, 22.0 ],
 					"style" : "",
-					"text" : "* confinement_scale"
+					"text" : "* vorticity"
 				}
 
 			}

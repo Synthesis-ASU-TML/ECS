@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 244.0, 107.0, 915.0, 601.0 ],
+		"rect" : [ 1314.0, -294.0, 806.0, 787.0 ],
 		"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -46,23 +46,10 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 344.0, 77.0, 172.0, 22.0 ],
+					"patching_rect" : [ 329.0, 77.0, 172.0, 22.0 ],
 					"style" : "",
 					"text" : "param cell_size @default 1.25",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-11",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 92.0, 268.0, 53.0, 22.0 ],
-					"style" : "",
-					"text" : "- gravity"
 				}
 
 			}
@@ -73,9 +60,9 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 92.0, 244.0, 77.0, 22.0 ],
+					"patching_rect" : [ 50.5, 269.0, 83.0, 22.0 ],
 					"style" : "",
-					"text" : "param origin"
+					"text" : "param gravity"
 				}
 
 			}
@@ -88,7 +75,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 344.0, 5.0, 155.0, 22.0 ],
+					"patching_rect" : [ 329.0, 5.0, 155.0, 22.0 ],
 					"style" : "",
 					"text" : "param origin @default 0. 0.",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -172,6 +159,8 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"color" : [ 0.650963, 0.655203, 0.777106, 1.0 ],
 					"id" : "obj-1",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -179,7 +168,8 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 40.0, 5.0, 89.0, 22.0 ],
 					"style" : "",
-					"text" : "in 1 watertemp"
+					"text" : "in 1 watertemp",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -192,7 +182,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 344.0, 53.0, 287.0, 22.0 ],
+					"patching_rect" : [ 329.0, 53.0, 287.0, 22.0 ],
 					"style" : "",
 					"text" : "param ground_potential_temperature @default 280.",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -323,7 +313,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 344.0, 133.0, 287.0, 234.0 ],
+					"patching_rect" : [ 329.0, 133.0, 289.0, 234.0 ],
 					"style" : "",
 					"text" : "Compute acceleration due to buoyant force. As temperature increases, particles will gain lift. However, they also gravitate toward the ground.\n    \n    \\theta_v = \\theta (1 + 0.61 q_v)\n    B = g (\\frac{\\theta_v, \\theta_{v0}) - q_H)\n\n    \\theta_v: virtaul potential temperature (K), \n        potential temperature of dry air if pressure / \n        densty equal to a parcel of moist air.\n    \\theta: advected potential temperature (K)\n    q_v: mass mixing ratio of water vapor.\n    B: Acceleration due to buoyant force (N)\n    g: Acceleration due to gravity (km/s^2)\n    \\theta_{v0}: potential temperature at ground (K)\n    q_H: mass mixing ratio of hydrometers, i.e. all air \n        particles except vapor (liquid)."
 				}
@@ -338,7 +328,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 344.0, 29.0, 192.0, 22.0 ],
+					"patching_rect" : [ 329.0, 29.0, 192.0, 22.0 ],
 					"style" : "",
 					"text" : "param gravity @default 0. -0.0098",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -377,19 +367,10 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-11", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-10", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-50", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-11", 0 ]
+					"source" : [ "obj-10", 0 ]
 				}
 
 			}
