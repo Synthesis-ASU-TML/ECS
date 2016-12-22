@@ -46,7 +46,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 303.0, 1067.0, 169.0, 22.0 ],
 					"style" : "",
-					"text" : "param threshold @default 0.1"
+					"text" : "param threshold @default 0.2"
 				}
 
 			}
@@ -84,7 +84,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 292.0, 997.0, 44.0, 22.0 ],
-					"presentation_rect" : [ 286.0, 995.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "switch"
 				}
@@ -98,7 +97,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 292.0, 961.0, 70.0, 22.0 ],
-					"presentation_rect" : [ 300.0, 960.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "> threshold"
 				}
@@ -943,7 +941,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 215.5, 14.0, 155.0, 22.0 ],
 					"style" : "",
-					"text" : "param offset @default 0. 0.",
+					"text" : "param offset @default 1. 1.",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -973,9 +971,9 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 404.25, 402.5, 159.25, 22.0 ],
+					"patching_rect" : [ 404.25, 402.5, 152.0, 22.0 ],
 					"style" : "",
-					"text" : "param lambda @default 0.",
+					"text" : "param lambda @default 1.",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 

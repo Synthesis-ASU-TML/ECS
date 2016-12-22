@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 2017.0, 54.0, 167.0, 136.0 ],
+		"rect" : [ 2382.0, 55.0, 167.0, 136.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -20,7 +20,7 @@
 		"gridsnaponopen" : 1,
 		"objectsnaponopen" : 1,
 		"statusbarvisible" : 2,
-		"toolbarvisible" : 1,
+		"toolbarvisible" : 0,
 		"lefttoolbarpinned" : 0,
 		"toptoolbarpinned" : 0,
 		"righttoolbarpinned" : 0,
@@ -57,7 +57,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 6.0, 78.0, 155.0, 22.0 ],
 					"style" : "",
-					"text" : "ecs.ema.video-output"
+					"text" : "ecs.ema.video-output",
+					"varname" : "ecs.ema.video-output"
 				}
 
 			}
@@ -268,6 +269,12 @@
 				"name" : "ecs.vissigned.genjit",
 				"bootpath" : "~/synthesis-git/ECS/ecs/code",
 				"type" : "gJIT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ecsvis.json",
+				"bootpath" : "~/synthesis-git/ECS/ecs/data",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{

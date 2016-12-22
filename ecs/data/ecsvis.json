@@ -1,0 +1,193 @@
+{
+	"pattrstorage" : 	{
+		"name" : "ecs-vis-params",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"vis-context" : [ "sc-ecs-ema" ],
+					"vis-mode" : [ 3 ],
+					"vis-texture" : [ "watertemp" ],
+					"vis-window-name" : [ "sc-ecs-ema" ],
+					"vis-low-x" : [ 0.0 ],
+					"vis-low-y" : [ 0.0 ],
+					"vis-low-z" : [ 100.0 ],
+					"vis-low-w" : [ 0.0 ],
+					"vis-high-x" : [ 1.0 ],
+					"vis-high-y" : [ 1.0 ],
+					"vis-high-z" : [ 500.0 ],
+					"vis-high-w" : [ 1.0 ],
+					"vis-contrast-x" : [ 1.0 ],
+					"vis-contrast-y" : [ 1.0 ],
+					"vis-contrast-z" : [ 1.0 ],
+					"vis-contrast-w" : [ 1.0 ]
+				}
+
+			}
+,
+			"2" : 			{
+				"id" : 2,
+				"data" : 				{
+					"vis-context" : [ "sc-ecs-ema" ],
+					"vis-mode" : [ 2 ],
+					"vis-texture" : [ "velocity" ],
+					"vis-window-name" : [ "sc-ecs-ema" ],
+					"vis-low-x" : [ 0.0 ],
+					"vis-low-y" : [ 0.0 ],
+					"vis-low-z" : [ 0.0 ],
+					"vis-low-w" : [ 0.0 ],
+					"vis-high-x" : [ 1.0 ],
+					"vis-high-y" : [ 1.0 ],
+					"vis-high-z" : [ 1.0 ],
+					"vis-high-w" : [ 1.0 ],
+					"vis-contrast-x" : [ 1.0 ],
+					"vis-contrast-y" : [ 1.0 ],
+					"vis-contrast-z" : [ 1.0 ],
+					"vis-contrast-w" : [ 1.0 ]
+				}
+
+			}
+,
+			"3" : 			{
+				"id" : 3,
+				"data" : 				{
+					"vis-context" : [ "sc-ecs-ema" ],
+					"vis-mode" : [ 1 ],
+					"vis-texture" : [ "vorticity" ],
+					"vis-window-name" : [ "sc-ecs-ema" ],
+					"vis-low-x" : [ 0.0 ],
+					"vis-low-y" : [ 0.0 ],
+					"vis-low-z" : [ 0.0 ],
+					"vis-low-w" : [ 0.0 ],
+					"vis-high-x" : [ 1.0 ],
+					"vis-high-y" : [ 1.0 ],
+					"vis-high-z" : [ 1.0 ],
+					"vis-high-w" : [ 1.0 ],
+					"vis-contrast-x" : [ 1.0 ],
+					"vis-contrast-y" : [ 1.0 ],
+					"vis-contrast-z" : [ 1.0 ],
+					"vis-contrast-w" : [ 1.0 ]
+				}
+
+			}
+,
+			"4" : 			{
+				"id" : 4,
+				"data" : 				{
+					"vis-context" : [ "sc-ecs-ema" ],
+					"vis-mode" : [ 1 ],
+					"vis-texture" : [ "pressure" ],
+					"vis-window-name" : [ "sc-ecs-ema" ],
+					"vis-low-x" : [ 0.0 ],
+					"vis-low-y" : [ 0.0 ],
+					"vis-low-z" : [ 0.0 ],
+					"vis-low-w" : [ 0.0 ],
+					"vis-high-x" : [ 1.0 ],
+					"vis-high-y" : [ 1.0 ],
+					"vis-high-z" : [ 1.0 ],
+					"vis-high-w" : [ 1.0 ],
+					"vis-contrast-x" : [ 1.0 ],
+					"vis-contrast-y" : [ 1.0 ],
+					"vis-contrast-z" : [ 1.0 ],
+					"vis-contrast-w" : [ 1.0 ]
+				}
+
+			}
+,
+			"5" : 			{
+				"id" : 5,
+				"data" : 				{
+					"vis-context" : [ "sc-ecs-ema" ],
+					"vis-mode" : [ 1 ],
+					"vis-texture" : [ "divergence" ],
+					"vis-window-name" : [ "sc-ecs-ema" ],
+					"vis-low-x" : [ 0.0 ],
+					"vis-low-y" : [ 0.0 ],
+					"vis-low-z" : [ 0.0 ],
+					"vis-low-w" : [ 0.0 ],
+					"vis-high-x" : [ 1.0 ],
+					"vis-high-y" : [ 1.0 ],
+					"vis-high-z" : [ 1.0 ],
+					"vis-high-w" : [ 1.0 ],
+					"vis-contrast-x" : [ 1.0 ],
+					"vis-contrast-y" : [ 1.0 ],
+					"vis-contrast-z" : [ 1.0 ],
+					"vis-contrast-w" : [ 1.0 ]
+				}
+
+			}
+,
+			"6" : 			{
+				"id" : 6,
+				"data" : 				{
+					"vis-context" : [ "sc-ecs-ema" ],
+					"vis-mode" : [ 1 ],
+					"vis-texture" : [ "hsflow" ],
+					"vis-window-name" : [ "sc-ecs-ema" ],
+					"vis-low-x" : [ 0.0 ],
+					"vis-low-y" : [ 0.0 ],
+					"vis-low-z" : [ 0.0 ],
+					"vis-low-w" : [ 0.0 ],
+					"vis-high-x" : [ 0.01 ],
+					"vis-high-y" : [ 0.01 ],
+					"vis-high-z" : [ 0.01 ],
+					"vis-high-w" : [ 1.0 ],
+					"vis-contrast-x" : [ 1.0 ],
+					"vis-contrast-y" : [ 1.0 ],
+					"vis-contrast-z" : [ 1.0 ],
+					"vis-contrast-w" : [ 1.0 ]
+				}
+
+			}
+,
+			"7" : 			{
+				"id" : 7,
+				"data" : 				{
+					"vis-context" : [ "sc-ecs-ema" ],
+					"vis-mode" : [ 0 ],
+					"vis-texture" : [ "camera" ],
+					"vis-window-name" : [ "sc-ecs-ema" ],
+					"vis-low-x" : [ 0.0 ],
+					"vis-low-y" : [ 0.0 ],
+					"vis-low-z" : [ 0.0 ],
+					"vis-low-w" : [ 0.0 ],
+					"vis-high-x" : [ 1.0 ],
+					"vis-high-y" : [ 1.0 ],
+					"vis-high-z" : [ 1.0 ],
+					"vis-high-w" : [ 1.0 ],
+					"vis-contrast-x" : [ 1.0 ],
+					"vis-contrast-y" : [ 1.0 ],
+					"vis-contrast-z" : [ 1.0 ],
+					"vis-contrast-w" : [ 1.0 ]
+				}
+
+			}
+,
+			"8" : 			{
+				"id" : 8,
+				"data" : 				{
+					"vis-context" : [ "sc-ecs-ema" ],
+					"vis-mode" : [ 1 ],
+					"vis-texture" : [ "obstacles" ],
+					"vis-window-name" : [ "sc-ecs-ema" ],
+					"vis-low-x" : [ 1.0 ],
+					"vis-low-y" : [ 1.0 ],
+					"vis-low-z" : [ 1.0 ],
+					"vis-low-w" : [ 1.0 ],
+					"vis-high-x" : [ 0.0 ],
+					"vis-high-y" : [ 0.0 ],
+					"vis-high-z" : [ 0.0 ],
+					"vis-high-w" : [ 0.0 ],
+					"vis-contrast-x" : [ 1.0 ],
+					"vis-contrast-y" : [ 1.0 ],
+					"vis-contrast-z" : [ 1.0 ],
+					"vis-contrast-w" : [ 1.0 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}
