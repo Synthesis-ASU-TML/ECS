@@ -1,208 +1,169 @@
 {
 	"name" : "ecs",
 	"version" : 1,
-	"creationdate" : -740679999,
-	"modificationdate" : 3562064017,
-	"viewrect" : [ 1.0, 45.0, 230.0, 721.0 ],
+	"creationdate" : -740680362,
+	"modificationdate" : 3572428276,
+	"viewrect" : [ 1.0, 46.0, 349.0, 721.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
 	"autolocalize" : 0,
 	"contents" : 	{
 		"patchers" : 		{
-			"ecs.o.params.maxpat" : 			{
+			"sc.pattr.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"ecs.advect.maxpat" : 			{
+			"sc.o.nodepack.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"ecs.jacobi5.maxpat" : 			{
+			"sc.clouds.overview.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"ecs.ema.add_quantity.maxpat" : 			{
+			"sc.clouds.transport.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"ecs.ema.parameters.maxpat" : 			{
+			"sc.clouds.parameters.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"ecs.o.ambipack.maxpat" : 			{
+			"sc.o.ambipack.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"ecs.o.nodepack.maxpat" : 			{
+			"sc.clouds.video-input.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"ecs.ema.simulation.maxpat" : 			{
+			"sc.clouds.video-output.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"ecs.o.rp.maxpat" : 			{
+			"sc.clouds.simulation.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"ecs.ema.add_with_gain.maxpat" : 			{
+			"sc.o.rp.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"ecs.ema.video-input.maxpat" : 			{
+			"sc.clouds.jacobi.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"ecs.ema.video-output.maxpat" : 			{
+			"sc.clouds.jacobi-iteration.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
-			}
-,
-			"ecs.ema.transport.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ecs.ema.readme-todo.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ecs.ema.overview.maxpat" : 			{
-				"kind" : "patcher"
-			}
-,
-			"ecs.ema.simulation_testing.maxpat" : 			{
-				"kind" : "patcher"
-			}
-,
-			"ecs.jacobi5_testing.maxpat" : 			{
-				"kind" : "patcher"
-			}
-,
-			"ecs.jacobi-iteration.maxpat" : 			{
-				"kind" : "patcher"
-			}
-,
-			"ecs.ema.add_with_gain_testing.maxpat" : 			{
-				"kind" : "patcher"
 			}
 
 		}
 ,
 		"code" : 		{
-			"ecs.hsflow.genjit" : 			{
+			"sc.clouds.hsflow.genjit" : 			{
 				"kind" : "genjit",
 				"local" : 1
 			}
 ,
-			"ecs.vissigned.genjit" : 			{
+			"sc.clouds.vissigned.genjit" : 			{
 				"kind" : "genjit",
 				"local" : 1
 			}
 ,
-			"ecs.water_continuity.genjit" : 			{
+			"sc.clouds.water_continuity.genjit" : 			{
 				"kind" : "genjit",
 				"local" : 1
 			}
 ,
-			"ecs.calculate_vorticity.genjit" : 			{
+			"sc.clouds.calculate_vorticity.genjit" : 			{
 				"kind" : "genjit",
 				"local" : 1
 			}
 ,
-			"ecs.split.genjit" : 			{
+			"sc.clouds.vorticity_confinement.genjit" : 			{
 				"kind" : "genjit",
 				"local" : 1
 			}
 ,
-			"ecs.nearest4.genjit" : 			{
+			"sc.clouds.acceleration_buoyancy.genjit" : 			{
 				"kind" : "genjit",
 				"local" : 1
 			}
 ,
-			"ecs.neighbors.genjit" : 			{
+			"sc.clouds.masked_gain.genjit" : 			{
 				"kind" : "genjit",
 				"local" : 1
 			}
 ,
-			"ecs.vorticity_confinement.genjit" : 			{
+			"sc.clouds.advect.genjit" : 			{
 				"kind" : "genjit",
 				"local" : 1
 			}
 ,
-			"ecs.nearest_neighbors.genjit" : 			{
+			"sc.clouds.mask_nearest_neighbors.genjit" : 			{
 				"kind" : "genjit",
 				"local" : 1
 			}
 ,
-			"ecs.acceleration_buoyancy.genjit" : 			{
+			"sc.clouds.thermodynamics.genjit" : 			{
 				"kind" : "genjit",
 				"local" : 1
 			}
 ,
-			"ecs.masked_gain.genjit" : 			{
+			"sc.clouds.subtract_gradient.genjit" : 			{
 				"kind" : "genjit",
 				"local" : 1
 			}
 ,
-			"ecs.advect.genjit" : 			{
+			"sc.clouds.divergence.genjit" : 			{
 				"kind" : "genjit",
 				"local" : 1
 			}
 ,
-			"ecs.thermodynamics.genjit" : 			{
+			"sc.clouds.ball.genjit" : 			{
 				"kind" : "genjit",
 				"local" : 1
 			}
 ,
-			"ecs.subtract_gradient.genjit" : 			{
+			"sc.clouds.nearest_neighbors.genjit" : 			{
 				"kind" : "genjit",
 				"local" : 1
 			}
 ,
-			"ecs.divergence.genjit" : 			{
+			"sc.clouds.jacobi.genjit" : 			{
 				"kind" : "genjit",
 				"local" : 1
 			}
 ,
-			"ecs.mask_nearest_neighbors.genjit" : 			{
+			"sc.clouds.pressure_environmental.genjit" : 			{
 				"kind" : "genjit",
 				"local" : 1
 			}
 ,
-			"ecs.jacobi.genjit" : 			{
+			"sc.clouds.split.genjit" : 			{
 				"kind" : "genjit",
 				"local" : 1
 			}
 ,
-			"ecs.pressure_environmental.genjit" : 			{
+			"sc.clouds.nearest4.genjit" : 			{
 				"kind" : "genjit",
 				"local" : 1
 			}
 ,
-			"ecs.ball.genjit" : 			{
-				"kind" : "genjit",
-				"local" : 1
-			}
-,
-			"hflip.genjit" : 			{
-				"kind" : "genjit"
-			}
-,
-			"ecs.rgb2luma.genjit" : 			{
+			"sc.clouds.neighbors.genjit" : 			{
 				"kind" : "genjit",
 				"local" : 1
 			}
@@ -210,7 +171,12 @@
 		}
 ,
 		"data" : 		{
-			"ecsparams.json" : 			{
+			"sc.clouds.vis.json" : 			{
+				"kind" : "json",
+				"local" : 1
+			}
+,
+			"sc.clouds.params.json" : 			{
 				"kind" : "json",
 				"local" : 1
 			}
@@ -235,5 +201,6 @@
 	"amxdtype" : 1633771873,
 	"readonly" : 0,
 	"devpathtype" : 0,
-	"devpath" : "."
+	"devpath" : ".",
+	"sortmode" : 0
 }
