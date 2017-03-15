@@ -1,12 +1,12 @@
 {
 	"pattrstorage" : 	{
-		"name" : "ecs-vis-params[1]",
+		"name" : "ecs-vis-params",
 		"slots" : 		{
 			"1" : 			{
 				"id" : 1,
 				"name" : "clouds",
 				"data" : 				{
-					"vis-context" : [ "sc-ecs-ema" ],
+					"vis-context" : [ "sc-clouds" ],
 					"vis-contrast-w" : [ 1.0 ],
 					"vis-contrast-x" : [ 1.0 ],
 					"vis-contrast-y" : [ 1.0 ],
@@ -21,7 +21,7 @@
 					"vis-low-z" : [ 100.0 ],
 					"vis-mode" : [ 3 ],
 					"vis-texture" : [ "watertemp" ],
-					"vis-window-name" : [ "sc-ecs-ema" ]
+					"vis-window-name" : [ "sc-clouds" ]
 				}
 
 			}
@@ -30,7 +30,7 @@
 				"id" : 2,
 				"name" : "velocity",
 				"data" : 				{
-					"vis-context" : [ "sc-ecs-ema" ],
+					"vis-context" : [ "sc-clouds" ],
 					"vis-contrast-w" : [ 1.0 ],
 					"vis-contrast-x" : [ 1.0 ],
 					"vis-contrast-y" : [ 1.0 ],
@@ -45,7 +45,7 @@
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 2 ],
 					"vis-texture" : [ "velocity" ],
-					"vis-window-name" : [ "sc-ecs-ema" ]
+					"vis-window-name" : [ "sc-clouds" ]
 				}
 
 			}
@@ -54,7 +54,7 @@
 				"id" : 3,
 				"name" : "vorticity",
 				"data" : 				{
-					"vis-context" : [ "sc-ecs-ema" ],
+					"vis-context" : [ "sc-clouds" ],
 					"vis-contrast-w" : [ 1.0 ],
 					"vis-contrast-x" : [ 1.0 ],
 					"vis-contrast-y" : [ 1.0 ],
@@ -69,7 +69,7 @@
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 1 ],
 					"vis-texture" : [ "vorticity" ],
-					"vis-window-name" : [ "sc-ecs-ema" ]
+					"vis-window-name" : [ "sc-clouds" ]
 				}
 
 			}
@@ -78,7 +78,7 @@
 				"id" : 4,
 				"name" : "pressure",
 				"data" : 				{
-					"vis-context" : [ "sc-ecs-ema" ],
+					"vis-context" : [ "sc-clouds" ],
 					"vis-contrast-w" : [ 1.0 ],
 					"vis-contrast-x" : [ 1.0 ],
 					"vis-contrast-y" : [ 1.0 ],
@@ -93,7 +93,7 @@
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 1 ],
 					"vis-texture" : [ "pressure" ],
-					"vis-window-name" : [ "sc-ecs-ema" ]
+					"vis-window-name" : [ "sc-clouds" ]
 				}
 
 			}
@@ -102,7 +102,7 @@
 				"id" : 5,
 				"name" : "divergence",
 				"data" : 				{
-					"vis-context" : [ "sc-ecs-ema" ],
+					"vis-context" : [ "sc-clouds" ],
 					"vis-contrast-w" : [ 1.0 ],
 					"vis-contrast-x" : [ 1.0 ],
 					"vis-contrast-y" : [ 1.0 ],
@@ -117,7 +117,7 @@
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 1 ],
 					"vis-texture" : [ "divergence" ],
-					"vis-window-name" : [ "sc-ecs-ema" ]
+					"vis-window-name" : [ "sc-clouds" ]
 				}
 
 			}
@@ -126,7 +126,7 @@
 				"id" : 6,
 				"name" : "hsflow",
 				"data" : 				{
-					"vis-context" : [ "sc-ecs-ema" ],
+					"vis-context" : [ "sc-clouds" ],
 					"vis-contrast-w" : [ 1.0 ],
 					"vis-contrast-x" : [ 1.0 ],
 					"vis-contrast-y" : [ 1.0 ],
@@ -141,7 +141,7 @@
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 1 ],
 					"vis-texture" : [ "hsflow" ],
-					"vis-window-name" : [ "sc-ecs-ema" ]
+					"vis-window-name" : [ "sc-clouds" ]
 				}
 
 			}
@@ -150,7 +150,7 @@
 				"id" : 7,
 				"name" : "camera",
 				"data" : 				{
-					"vis-context" : [ "sc-ecs-ema" ],
+					"vis-context" : [ "sc-clouds" ],
 					"vis-contrast-w" : [ 1.0 ],
 					"vis-contrast-x" : [ 1.0 ],
 					"vis-contrast-y" : [ 1.0 ],
@@ -165,7 +165,7 @@
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 0 ],
 					"vis-texture" : [ "camera" ],
-					"vis-window-name" : [ "sc-ecs-ema" ]
+					"vis-window-name" : [ "sc-clouds" ]
 				}
 
 			}
@@ -174,7 +174,7 @@
 				"id" : 8,
 				"name" : "obstacles",
 				"data" : 				{
-					"vis-context" : [ "sc-ecs-ema" ],
+					"vis-context" : [ "sc-clouds" ],
 					"vis-contrast-w" : [ 1.0 ],
 					"vis-contrast-x" : [ 1.0 ],
 					"vis-contrast-y" : [ 1.0 ],
@@ -189,7 +189,7 @@
 					"vis-low-z" : [ 1.0 ],
 					"vis-mode" : [ 1 ],
 					"vis-texture" : [ "obstacles" ],
-					"vis-window-name" : [ "sc-ecs-ema" ]
+					"vis-window-name" : [ "sc-clouds" ]
 				}
 
 			}
