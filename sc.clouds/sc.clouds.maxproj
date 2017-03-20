@@ -1,28 +1,19 @@
 {
-	"name" : "ecs",
+	"name" : "sc.clouds",
 	"version" : 1,
-	"creationdate" : -740680362,
-	"modificationdate" : 3572428276,
-	"viewrect" : [ 1.0, 46.0, 349.0, 721.0 ],
+	"creationdate" : 3572506642,
+	"modificationdate" : 3572506863,
+	"viewrect" : [ 15.0, 26.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
 	"autolocalize" : 0,
 	"contents" : 	{
 		"patchers" : 		{
-			"sc.pattr.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"sc.o.nodepack.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
 			"sc.clouds.overview.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1
+				"local" : 1,
+				"toplevel" : 1
 			}
 ,
 			"sc.clouds.transport.maxpat" : 			{
@@ -40,12 +31,22 @@
 				"local" : 1
 			}
 ,
+			"sc.o.nodepack.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
 			"sc.clouds.video-input.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
 			"sc.clouds.video-output.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"sc.pattr.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -93,7 +94,27 @@
 				"local" : 1
 			}
 ,
+			"sc.clouds.split.genjit" : 			{
+				"kind" : "genjit",
+				"local" : 1
+			}
+,
+			"sc.clouds.nearest4.genjit" : 			{
+				"kind" : "genjit",
+				"local" : 1
+			}
+,
+			"sc.clouds.neighbors.genjit" : 			{
+				"kind" : "genjit",
+				"local" : 1
+			}
+,
 			"sc.clouds.vorticity_confinement.genjit" : 			{
+				"kind" : "genjit",
+				"local" : 1
+			}
+,
+			"sc.clouds.nearest_neighbors.genjit" : 			{
 				"kind" : "genjit",
 				"local" : 1
 			}
@@ -133,16 +154,6 @@
 				"local" : 1
 			}
 ,
-			"sc.clouds.ball.genjit" : 			{
-				"kind" : "genjit",
-				"local" : 1
-			}
-,
-			"sc.clouds.nearest_neighbors.genjit" : 			{
-				"kind" : "genjit",
-				"local" : 1
-			}
-,
 			"sc.clouds.jacobi.genjit" : 			{
 				"kind" : "genjit",
 				"local" : 1
@@ -153,17 +164,7 @@
 				"local" : 1
 			}
 ,
-			"sc.clouds.split.genjit" : 			{
-				"kind" : "genjit",
-				"local" : 1
-			}
-,
-			"sc.clouds.nearest4.genjit" : 			{
-				"kind" : "genjit",
-				"local" : 1
-			}
-,
-			"sc.clouds.neighbors.genjit" : 			{
+			"sc.clouds.ball.genjit" : 			{
 				"kind" : "genjit",
 				"local" : 1
 			}
