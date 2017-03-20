@@ -1,6 +1,6 @@
 {
 	"pattrstorage" : 	{
-		"name" : "ecs-vis-params",
+		"name" : "sc-clouds-vis-params",
 		"slots" : 		{
 			"1" : 			{
 				"id" : 1,
@@ -189,6 +189,54 @@
 					"vis-low-z" : [ 1.0 ],
 					"vis-mode" : [ 1 ],
 					"vis-texture" : [ "obstacles" ],
+					"vis-window-name" : [ "sc-clouds" ]
+				}
+
+			}
+,
+			"9" : 			{
+				"id" : 9,
+				"name" : "background",
+				"data" : 				{
+					"vis-context" : [ "sc-clouds" ],
+					"vis-contrast-w" : [ 1.0 ],
+					"vis-contrast-x" : [ 1.0 ],
+					"vis-contrast-y" : [ 1.0 ],
+					"vis-contrast-z" : [ 1.0 ],
+					"vis-high-w" : [ 1.0 ],
+					"vis-high-x" : [ 1.0 ],
+					"vis-high-y" : [ 1.0 ],
+					"vis-high-z" : [ 1.0 ],
+					"vis-low-w" : [ 0.0 ],
+					"vis-low-x" : [ 0.0 ],
+					"vis-low-y" : [ 0.0 ],
+					"vis-low-z" : [ 0.0 ],
+					"vis-mode" : [ 0 ],
+					"vis-texture" : [ "bgmask" ],
+					"vis-window-name" : [ "sc-clouds" ]
+				}
+
+			}
+,
+			"10" : 			{
+				"id" : 10,
+				"name" : "bgsub",
+				"data" : 				{
+					"vis-context" : [ "sc-clouds" ],
+					"vis-contrast-w" : [ 1.0 ],
+					"vis-contrast-x" : [ 1.0 ],
+					"vis-contrast-y" : [ 1.0 ],
+					"vis-contrast-z" : [ 1.0 ],
+					"vis-high-w" : [ 1.0 ],
+					"vis-high-x" : [ 1.0 ],
+					"vis-high-y" : [ 1.0 ],
+					"vis-high-z" : [ 1.0 ],
+					"vis-low-w" : [ 0.0 ],
+					"vis-low-x" : [ 0.0 ],
+					"vis-low-y" : [ 0.0 ],
+					"vis-low-z" : [ 0.0 ],
+					"vis-mode" : [ 0 ],
+					"vis-texture" : [ "bgsub" ],
 					"vis-window-name" : [ "sc-clouds" ]
 				}
 
