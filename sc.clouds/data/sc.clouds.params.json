@@ -2,6 +2,51 @@
 	"pattrstorage" : 	{
 		"name" : "sc-clouds-params",
 		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"boundary-init-liquid" : [ 0.507793, 0.505684, 0.154835, 1 ],
+					"boundary-init-obs" : [ 0.671698, 0.519993, 0.175609, 1 ],
+					"boundary-init-vapor" : [ 0.584926, 0.525196, 0.322412, 1 ],
+					"cfd-jacobi-accum" : [ 1 ],
+					"cfd-jacobi-iterations" : [ 1 ],
+					"cfd-liquid-dissipation" : [ 1.0 ],
+					"cfd-temp-dissipation" : [ 1.0 ],
+					"cfd-vapor-dissipation" : [ 1.0 ],
+					"cfd-velocity-dissipation" : [ 1.0 ],
+					"cfd-vorticity" : [ 0.0 ],
+					"env-K0" : [ 281.5 ],
+					"env-L" : [ 2.501 ],
+					"env-cp" : [ 1003.0 ],
+					"env-cv" : [ 716.0 ],
+					"env-gravity-magnitude" : [ 0.1 ],
+					"env-lapse-rate" : [ 6.5 ],
+					"env-molar-mass" : [ 0.029 ],
+					"env-origin" : [ 0.0, 1.0, 0.169414, 1 ],
+					"env-p0" : [ 101.300003 ],
+					"external-liquid-gain" : [ 500000.0 ],
+					"external-liquid-texture" : [ "hsflow" ],
+					"external-potential-temperature-gain" : [ 0.0 ],
+					"external-potential-temperature-texture" : [ "<empty>" ],
+					"external-vapor-gain" : [ 100.0 ],
+					"external-vapor-texture" : [ "hsflow" ],
+					"external-velocity-gain" : [ 100.0 ],
+					"external-velocity-texture" : [ "hsflow" ],
+					"helper-wind-box-x1" : [ 0.0 ],
+					"helper-wind-box-x2" : [ 0.06 ],
+					"helper-wind-box-y1" : [ 0.2 ],
+					"helper-wind-box-y2" : [ 0.8 ],
+					"sim-cell-size" : [ 3.0 ],
+					"sim-height" : [ 720 ],
+					"sim-manual-timestep" : [ 1 ],
+					"sim-speed" : [ 19.0 ],
+					"sim-timestep" : [ 1.501 ],
+					"sim-width" : [ 1280 ],
+					"udp-host" : [ "127.0.0.1" ],
+					"udp-port" : [ 10001 ]
+				}
+
+			}
 
 		}
 
