@@ -241,6 +241,30 @@
 				}
 
 			}
+,
+			"11" : 			{
+				"id" : 11,
+				"name" : "staticvideo",
+				"data" : 				{
+					"vis-context" : [ "sc-clouds" ],
+					"vis-contrast-w" : [ 1.0 ],
+					"vis-contrast-x" : [ 1.0 ],
+					"vis-contrast-y" : [ 1.0 ],
+					"vis-contrast-z" : [ 1.0 ],
+					"vis-high-w" : [ 1.0 ],
+					"vis-high-x" : [ 1.0 ],
+					"vis-high-y" : [ 1.0 ],
+					"vis-high-z" : [ 1.0 ],
+					"vis-low-w" : [ 0.0 ],
+					"vis-low-x" : [ 0.0 ],
+					"vis-low-y" : [ 0.0 ],
+					"vis-low-z" : [ 0.0 ],
+					"vis-mode" : [ 0 ],
+					"vis-texture" : [ "static_video" ],
+					"vis-window-name" : [ "sc-clouds" ]
+				}
+
+			}
 
 		}
 
