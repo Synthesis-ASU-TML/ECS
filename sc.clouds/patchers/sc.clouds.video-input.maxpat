@@ -575,7 +575,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 459.5, 257.0, 56.0, 56.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1.0, 277.0, 241.0, 4.0 ],
+					"presentation_rect" : [ 1.0, 276.0, 241.0, 4.0 ],
 					"proportion" : 0.39,
 					"rounded" : 0,
 					"style" : ""
@@ -1850,7 +1850,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 401.5, 257.0, 56.0, 56.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1.0, 172.0, 241.0, 4.0 ],
+					"presentation_rect" : [ 1.0, 170.0, 241.0, 4.0 ],
 					"proportion" : 0.39,
 					"rounded" : 0,
 					"style" : ""
@@ -2786,6 +2786,7 @@
 					"embed" : 1,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
+					"hidden" : 1,
 					"id" : "obj-152",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
@@ -46706,7 +46707,6 @@
 					"embed" : 1,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
-					"hidden" : 1,
 					"id" : "obj-150",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",

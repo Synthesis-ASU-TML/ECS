@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 384.0, 29.0, 1461.0, 1049.0 ],
+		"rect" : [ 388.0, 56.0, 1461.0, 1049.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -50,7 +50,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 749.0, 47.0, 692.0, 988.0 ],
+					"patching_rect" : [ 749.0, 47.0, 692.0, 907.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -223,7 +223,7 @@
 					"mode" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 746.0, 18.0, 699.0, 1021.0 ],
+					"patching_rect" : [ 746.0, 18.0, 699.0, 939.0 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
