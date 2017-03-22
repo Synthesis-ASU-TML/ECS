@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 1,
-			"architecture" : "x64",
+			"revision" : 3,
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 388.0, 56.0, 1461.0, 1049.0 ],
+		"rect" : [ 622.0, 120.0, 1461.0, 1049.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -69,7 +69,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 21.0, 620.0, 242.0, 267.0 ],
+					"patching_rect" : [ 21.0, 515.0, 242.0, 267.0 ],
 					"varname" : "sc.clouds.video-output",
 					"viewvisibility" : 1
 				}
@@ -90,7 +90,8 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 21.0, 158.0, 242.0, 403.0 ],
+					"patching_rect" : [ 21.0, 158.0, 242.0, 293.0 ],
+					"varname" : "sc.clouds.video-input",
 					"viewvisibility" : 1
 				}
 
@@ -166,7 +167,7 @@
 					"mode" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 18.0, 129.0, 249.0, 438.0 ],
+					"patching_rect" : [ 18.0, 129.0, 249.0, 326.0 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -185,7 +186,7 @@
 					"mode" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 18.0, 591.0, 249.0, 299.0 ],
+					"patching_rect" : [ 18.0, 486.0, 249.0, 299.0 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -270,7 +271,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 18.0, 591.0, 249.0, 27.0 ],
+					"patching_rect" : [ 18.0, 486.0, 249.0, 27.0 ],
 					"style" : "",
 					"text" : "Video Output",
 					"textjustification" : 1
@@ -339,12 +340,6 @@
 				"name" : "sc.clouds.video-input.maxpat",
 				"bootpath" : "~/synthesis-git/ecs/sc.clouds/patchers",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "sc.clouds.hsflow.genjit",
-				"bootpath" : "~/synthesis-git/ecs/sc.clouds/code",
-				"type" : "gJIT",
 				"implicit" : 1
 			}
 , 			{
@@ -493,6 +488,12 @@
 			}
 , 			{
 				"name" : "sc.clouds.ball.genjit",
+				"bootpath" : "~/synthesis-git/ecs/sc.clouds/code",
+				"type" : "gJIT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "sc.clouds.hsflow.genjit",
 				"bootpath" : "~/synthesis-git/ecs/sc.clouds/code",
 				"type" : "gJIT",
 				"implicit" : 1
