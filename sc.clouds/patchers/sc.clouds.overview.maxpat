@@ -4,8 +4,8 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 3,
-			"architecture" : "x86",
+			"revision" : 1,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
@@ -321,6 +321,12 @@
 , 			{
 				"name" : "sc.clouds.parameters.maxpat",
 				"bootpath" : "~/synthesis-git/ecs/sc.clouds/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "sc.clouds.params.json",
+				"bootpath" : "~/synthesis-git/ecs/sc.clouds/data",
 				"type" : "JSON",
 				"implicit" : 1
 			}
