@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 122.0, 264.0, 667.0, 743.0 ],
+		"rect" : [ 18.0, 26.0, 1206.0, 995.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,7 +39,7 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"bgmode" : 0,
-					"border" : 0,
+					"border" : 1,
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
@@ -49,8 +49,8 @@
 					"name" : "sc.clouds.simulation.maxpat",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 749.0, 47.0, 692.0, 907.0 ],
+					"offset" : [ 2.0, 1.0 ],
+					"patching_rect" : [ 737.5, 47.0, 692.0, 876.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -58,7 +58,7 @@
 , 			{
 				"box" : 				{
 					"bgmode" : 0,
-					"border" : 0,
+					"border" : 1,
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
@@ -68,8 +68,8 @@
 					"name" : "sc.clouds.video-output.maxpat",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 21.0, 650.0, 242.0, 298.0 ],
+					"offset" : [ 2.0, 2.0 ],
+					"patching_rect" : [ 21.0, 620.0, 248.0, 303.0 ],
 					"varname" : "sc.clouds.video-output",
 					"viewvisibility" : 1
 				}
@@ -78,7 +78,7 @@
 , 			{
 				"box" : 				{
 					"bgmode" : 0,
-					"border" : 0,
+					"border" : 1,
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
@@ -88,9 +88,9 @@
 					"name" : "sc.clouds.video-input.maxpat",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
+					"offset" : [ 2.0, 2.0 ],
 					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 21.0, 300.0, 242.0, 293.0 ],
+					"patching_rect" : [ 21.0, 285.0, 248.0, 293.0 ],
 					"varname" : "sc.clouds.video-input",
 					"viewvisibility" : 1
 				}
@@ -99,7 +99,7 @@
 , 			{
 				"box" : 				{
 					"bgmode" : 0,
-					"border" : 0,
+					"border" : 1,
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
@@ -109,8 +109,8 @@
 					"name" : "sc.clouds.parameters.maxpat",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 291.0, 47.0, 429.0, 907.0 ],
+					"offset" : [ 2.0, 0.0 ],
+					"patching_rect" : [ 288.0, 47.0, 432.5, 763.0 ],
 					"varname" : "sc.clouds.parameters",
 					"viewvisibility" : 1
 				}
@@ -119,7 +119,7 @@
 , 			{
 				"box" : 				{
 					"bgmode" : 0,
-					"border" : 0,
+					"border" : 1,
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
@@ -129,104 +129,9 @@
 					"name" : "sc.clouds.transport.maxpat",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 21.0, 47.0, 242.0, 195.0 ],
+					"offset" : [ 2.0, 4.0 ],
+					"patching_rect" : [ 21.0, 47.0, 248.0, 199.0 ],
 					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"angle" : 270.0,
-					"background" : 1,
-					"border" : 1,
-					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"grad1" : [ 0.376471, 0.384314, 0.4, 0.0 ],
-					"grad2" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
-					"id" : "obj-13",
-					"maxclass" : "panel",
-					"mode" : 1,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 18.0, 18.0, 249.0, 230.0 ],
-					"proportion" : 0.39,
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"angle" : 270.0,
-					"background" : 1,
-					"border" : 1,
-					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"grad1" : [ 0.376471, 0.384314, 0.4, 0.0 ],
-					"grad2" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
-					"id" : "obj-14",
-					"maxclass" : "panel",
-					"mode" : 1,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 18.0, 271.0, 249.0, 326.0 ],
-					"proportion" : 0.39,
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"angle" : 270.0,
-					"background" : 1,
-					"border" : 1,
-					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"grad1" : [ 0.376471, 0.384314, 0.4, 0.0 ],
-					"grad2" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
-					"id" : "obj-15",
-					"maxclass" : "panel",
-					"mode" : 1,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 18.0, 621.0, 249.0, 336.0 ],
-					"proportion" : 0.39,
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"angle" : 270.0,
-					"background" : 1,
-					"border" : 1,
-					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"grad1" : [ 0.376471, 0.384314, 0.4, 0.0 ],
-					"grad2" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
-					"id" : "obj-16",
-					"maxclass" : "panel",
-					"mode" : 1,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 288.0, 18.0, 435.0, 939.0 ],
-					"proportion" : 0.39,
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"angle" : 270.0,
-					"background" : 1,
-					"border" : 1,
-					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"grad1" : [ 0.376471, 0.384314, 0.4, 0.0 ],
-					"grad2" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
-					"id" : "obj-17",
-					"maxclass" : "panel",
-					"mode" : 1,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 746.0, 18.0, 699.0, 939.0 ],
-					"proportion" : 0.39,
-					"style" : ""
 				}
 
 			}
@@ -239,7 +144,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 18.0, 18.0, 249.0, 27.0 ],
+					"patching_rect" : [ 21.0, 18.0, 248.0, 27.0 ],
 					"style" : "",
 					"text" : "Control",
 					"textjustification" : 1
@@ -255,7 +160,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 18.0, 271.0, 249.0, 27.0 ],
+					"patching_rect" : [ 21.0, 256.0, 248.0, 27.0 ],
 					"style" : "",
 					"text" : "Camera Input",
 					"textjustification" : 1
@@ -271,7 +176,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 18.0, 621.0, 249.0, 27.0 ],
+					"patching_rect" : [ 21.0, 591.0, 248.0, 27.0 ],
 					"style" : "",
 					"text" : "Video Output",
 					"textjustification" : 1
@@ -287,7 +192,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 288.0, 18.0, 435.0, 27.0 ],
+					"patching_rect" : [ 288.0, 18.0, 432.5, 27.0 ],
 					"style" : "",
 					"text" : "Simulation Parameters",
 					"textjustification" : 1
@@ -303,7 +208,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 746.0, 18.0, 699.0, 27.0 ],
+					"patching_rect" : [ 737.5, 18.0, 692.0, 27.0 ],
 					"style" : "",
 					"text" : "Simulation Status",
 					"textjustification" : 1
@@ -331,13 +236,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "sc.o.ambipack.maxpat",
-				"bootpath" : "~/Dropbox/Development/github/ECS/sc.clouds/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "sc.o.nodepack.maxpat",
+				"name" : "sc.pattr.maxpat",
 				"bootpath" : "~/Dropbox/Development/github/ECS/sc.clouds/patchers",
 				"type" : "JSON",
 				"implicit" : 1
@@ -358,12 +257,6 @@
 				"name" : "sc.clouds.vissigned.genjit",
 				"bootpath" : "~/Dropbox/Development/github/ECS/sc.clouds/code",
 				"type" : "gJIT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "sc.pattr.maxpat",
-				"bootpath" : "~/Dropbox/Development/github/ECS/sc.clouds/patchers",
-				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
@@ -427,19 +320,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "sc.clouds.mask_nearest_neighbors.genjit",
-				"bootpath" : "~/Dropbox/Development/github/ECS/sc.clouds/code",
-				"type" : "gJIT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "sc.clouds.divergence.genjit",
-				"bootpath" : "~/Dropbox/Development/github/ECS/sc.clouds/code",
-				"type" : "gJIT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "sc.clouds.nearest_neighbors.genjit",
 				"bootpath" : "~/Dropbox/Development/github/ECS/sc.clouds/code",
 				"type" : "gJIT",
 				"implicit" : 1
@@ -469,18 +350,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "sc.o.rp.maxpat",
-				"bootpath" : "~/Dropbox/Development/github/ECS/sc.clouds/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "sc.clouds.ball.genjit",
-				"bootpath" : "~/Dropbox/Development/github/ECS/sc.clouds/code",
-				"type" : "gJIT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "sc.clouds.hsflow.genjit",
 				"bootpath" : "~/Dropbox/Development/github/ECS/sc.clouds/code",
 				"type" : "gJIT",
@@ -499,19 +368,15 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "jit.gl.syphonclient.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "o.route.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "jit.gl.syphonserver.mxo",
+				"name" : "jit.gl.syphonclient.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.dict.mxo",
+				"name" : "jit.gl.syphonserver.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -527,7 +392,17 @@
 				"type" : "iLaX"
 			}
  ],
-		"autosave" : 0
+		"autosave" : 0,
+		"styles" : [ 			{
+				"name" : "Jamoma_highlighted_orange",
+				"default" : 				{
+					"accentcolor" : [ 1.0, 0.5, 0.0, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+ ]
 	}
 
 }
