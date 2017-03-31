@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 18.0, 26.0, 1206.0, 995.0 ],
+		"rect" : [ 107.0, 62.0, 1404.0, 995.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -69,7 +69,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 2.0, 2.0 ],
-					"patching_rect" : [ 21.0, 620.0, 248.0, 303.0 ],
+					"patching_rect" : [ 21.0, 620.0, 248.0, 316.0 ],
 					"varname" : "sc.clouds.video-output",
 					"viewvisibility" : 1
 				}
@@ -219,139 +219,139 @@
 		"lines" : [  ],
 		"dependency_cache" : [ 			{
 				"name" : "sc.clouds.transport.maxpat",
-				"bootpath" : "~/Dropbox/Development/github/ECS/sc.clouds/patchers",
+				"bootpath" : "~/synthesis-git/ecs/sc.clouds/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sc.clouds.parameters.maxpat",
-				"bootpath" : "~/Dropbox/Development/github/ECS/sc.clouds/patchers",
+				"bootpath" : "~/synthesis-git/ecs/sc.clouds/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sc.clouds.params.json",
-				"bootpath" : "~/Dropbox/Development/github/ECS/sc.clouds/data",
+				"bootpath" : "~/synthesis-git/ecs/sc.clouds/data",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sc.pattr.maxpat",
-				"bootpath" : "~/Dropbox/Development/github/ECS/sc.clouds/patchers",
+				"bootpath" : "~/synthesis-git/ecs/sc.clouds/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sc.clouds.video-input.maxpat",
-				"bootpath" : "~/Dropbox/Development/github/ECS/sc.clouds/patchers",
+				"bootpath" : "~/synthesis-git/ecs/sc.clouds/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sc.clouds.video-output.maxpat",
-				"bootpath" : "~/Dropbox/Development/github/ECS/sc.clouds/patchers",
+				"bootpath" : "~/synthesis-git/ecs/sc.clouds/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sc.clouds.vissigned.genjit",
-				"bootpath" : "~/Dropbox/Development/github/ECS/sc.clouds/code",
+				"bootpath" : "~/synthesis-git/ecs/sc.clouds/code",
 				"type" : "gJIT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sc.clouds.vis.json",
-				"bootpath" : "~/Dropbox/Development/github/ECS/sc.clouds/data",
+				"bootpath" : "~/synthesis-git/ecs/sc.clouds/data",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sc.clouds.simulation.maxpat",
-				"bootpath" : "~/Dropbox/Development/github/ECS/sc.clouds/patchers",
+				"bootpath" : "~/synthesis-git/ecs/sc.clouds/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sc.clouds.water_continuity.genjit",
-				"bootpath" : "~/Dropbox/Development/github/ECS/sc.clouds/code",
+				"bootpath" : "~/synthesis-git/ecs/sc.clouds/code",
 				"type" : "gJIT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sc.clouds.calculate_vorticity.genjit",
-				"bootpath" : "~/Dropbox/Development/github/ECS/sc.clouds/code",
+				"bootpath" : "~/synthesis-git/ecs/sc.clouds/code",
 				"type" : "gJIT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sc.clouds.vorticity_confinement.genjit",
-				"bootpath" : "~/Dropbox/Development/github/ECS/sc.clouds/code",
+				"bootpath" : "~/synthesis-git/ecs/sc.clouds/code",
 				"type" : "gJIT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sc.clouds.acceleration_buoyancy.genjit",
-				"bootpath" : "~/Dropbox/Development/github/ECS/sc.clouds/code",
+				"bootpath" : "~/synthesis-git/ecs/sc.clouds/code",
 				"type" : "gJIT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sc.clouds.masked_gain.genjit",
-				"bootpath" : "~/Dropbox/Development/github/ECS/sc.clouds/code",
+				"bootpath" : "~/synthesis-git/ecs/sc.clouds/code",
 				"type" : "gJIT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sc.clouds.advect.genjit",
-				"bootpath" : "~/Dropbox/Development/github/ECS/sc.clouds/code",
+				"bootpath" : "~/synthesis-git/ecs/sc.clouds/code",
 				"type" : "gJIT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sc.clouds.thermodynamics.genjit",
-				"bootpath" : "~/Dropbox/Development/github/ECS/sc.clouds/code",
+				"bootpath" : "~/synthesis-git/ecs/sc.clouds/code",
 				"type" : "gJIT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sc.clouds.subtract_gradient.genjit",
-				"bootpath" : "~/Dropbox/Development/github/ECS/sc.clouds/code",
+				"bootpath" : "~/synthesis-git/ecs/sc.clouds/code",
 				"type" : "gJIT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sc.clouds.divergence.genjit",
-				"bootpath" : "~/Dropbox/Development/github/ECS/sc.clouds/code",
+				"bootpath" : "~/synthesis-git/ecs/sc.clouds/code",
 				"type" : "gJIT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sc.clouds.jacobi.maxpat",
-				"bootpath" : "~/Dropbox/Development/github/ECS/sc.clouds/patchers",
+				"bootpath" : "~/synthesis-git/ecs/sc.clouds/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sc.clouds.jacobi-iteration.maxpat",
-				"bootpath" : "~/Dropbox/Development/github/ECS/sc.clouds/patchers",
+				"bootpath" : "~/synthesis-git/ecs/sc.clouds/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sc.clouds.jacobi.genjit",
-				"bootpath" : "~/Dropbox/Development/github/ECS/sc.clouds/code",
+				"bootpath" : "~/synthesis-git/ecs/sc.clouds/code",
 				"type" : "gJIT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sc.clouds.pressure_environmental.genjit",
-				"bootpath" : "~/Dropbox/Development/github/ECS/sc.clouds/code",
+				"bootpath" : "~/synthesis-git/ecs/sc.clouds/code",
 				"type" : "gJIT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sc.clouds.hsflow.genjit",
-				"bootpath" : "~/Dropbox/Development/github/ECS/sc.clouds/code",
+				"bootpath" : "~/synthesis-git/ecs/sc.clouds/code",
 				"type" : "gJIT",
 				"implicit" : 1
 			}
