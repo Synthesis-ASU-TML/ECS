@@ -112,21 +112,26 @@ class Field:
 
 		return tex, cl_buffer
 
-	def __init__(self, context, program, data):
+	def __init__(self, data, context=None, queue=None, program=None, copy_kernel=None):
 		self.context = context
 		self.program = program
+		self.queue = queue
 		self.data = data
+		self.copy_kernel = copy_kernel
 		self.texin, self.clin = Field.make_gl_texture_and_cl_buffer(context, data, mf.READ_WRITE)
 		self.texout, self.clout = Field.make_gl_texture_and_cl_buffer(context, data, mf.READ_WRITE)
 
 	def bind(self):
 		glBindTexture(GL_TEXTURE_2D, self.texout)
 
-	def enqueue_swap(self, queue):
-		cl.enqueue_acquire_gl_objects(queue, [self.clout, self.clin])
-		self.program.copy(queue, SCREEN_SIZE, None, self.clout, self.clin)
-		cl.enqueue_release_gl_objects(queue, [self.clout, self.clin])
+	def enqueue_swap(self):
+		cl.enqueue_acquire_gl_objects(self.queue, [self.clout, self.clin])
+		self.copy_kernel.set_args(self.clout, self.clin)
+		event = cl.enqueue_nd_range_kernel(self.queue, self.copy_kernel, SCREEN_SIZE, None)
+		cl.enqueue_release_gl_objects(self.queue, [self.clout, self.clin])
 
+		return event
+	
 	def show(self):
 		self.bind()
 
@@ -181,121 +186,212 @@ class EMA:
 
 	def init_buffers(self):
 		'''Initialize OpenCL buffers for all fields.'''
+
+		# Initial central blob of condensed water within blob of vapor.
 		im = Image.open("blob-%s.png" % str(SCREEN_SIZE[0]))
-		blob = np.array(im.getdata(), dtype=np.float32).reshape(im.size[0], im.size[1], 4) / 255.
+		blob = np.array(im.getdata(), dtype=np.float32).reshape(
+			im.size[0], im.size[1], 4
+		) / 255.
 		blob[:,:,2] = 280
 		zeros = np.zeros(SCREEN_SIZE + (4,), dtype=np.float32)
 
+		# Initial smaller obstacles blob on the right side of domain.
 		im = Image.open("obstacles-%s.png" % str(SCREEN_SIZE[0]))
-		obsblob = np.array(im.getdata(), dtype=np.float32).reshape(im.size[0], im.size[1], 4) / 255.
+		obsblob = np.array(im.getdata(), dtype=np.float32).reshape(
+			im.size[0], im.size[1], 4
+		) / 255.
 		obsblob[:,:,3] = 1
 
 		vel = np.array(zeros)
 		vel[:,:] = [1, 0, 0, 1]
 		vel[:,:,3] = 1
 
-		wtemp = np.array(np.random.rand(SCREEN_SIZE[0], SCREEN_SIZE[1], 4), dtype=np.float32)
+		wtemp = np.array(np.random.rand(
+			SCREEN_SIZE[0], SCREEN_SIZE[1], 4
+		), dtype=np.float32)
 		wtemp[::2,:,:] = 0
 		wtemp[:,:,3] = 1
 
-		self.velocity = Field(self.context, self.program, vel)
-		self.wtemp = Field(self.context, self.program, np.array(blob))
-		self.buoyancy = Field(self.context, self.program, np.array(zeros))
-		self.divergence = Field(self.context, self.program, np.array(zeros))
-		self.vorticity = Field(self.context, self.program, np.array(zeros))
-		self.vorticity_confinement_force = Field(self.context, self.program, np.array(zeros))
-		self.pressure = Field(self.context, self.program, np.array(zeros))
-		self.obstacles = Field(self.context, self.program, np.array(obsblob))
-		self.output = Field(self.context, self.program, np.array(zeros))
+		self.copy_kernel = self.program.copy
+
+		cl_objects = dict(
+			context=self.context, 
+			queue=self.queue, 
+			program=self.program, 
+			copy_kernel = self.copy_kernel
+		)
+
+		self.velocity = Field(vel, **cl_objects)
+		self.wtemp = Field(np.array(blob), **cl_objects)
+		self.buoyancy = Field(np.array(zeros), **cl_objects)
+		self.divergence = Field(np.array(zeros), **cl_objects)
+		self.vorticity = Field(np.array(zeros), **cl_objects)
+		self.vorticity_confinement_force = Field(np.array(zeros), **cl_objects)
+		self.pressure = Field(np.array(zeros), **cl_objects)
+		self.obstacles = Field(np.array(obsblob), **cl_objects)
+		self.output = Field(np.array(zeros), **cl_objects)
+
+
+		self.advect_kernel = self.program.advect
+		self.buoyancy_force_kernel = self.program.buoyancy_force
+		self.add_force_kernel = self.program.add_force
+		self.vorticity_kernel = self.program.vorticity
+		self.vorticity_confinement_force_kernel = self.program.vorticity_confinement_force
+		self.divergence_kernel = self.program.divergence 
+		self.jacobi_kernel = self.program.jacobi
+		self.subtract_pressure_gradient_kernel = self.program.subtract_pressure_gradient
+
+	def enqueue_kernel(self, kernel, gl_objects, params):
+		cl.enqueue_acquire_gl_objects(self.queue, gl_objects)
+		kernel.set_args(*params)
+		event = cl.enqueue_nd_range_kernel(
+			self.queue, kernel, SCREEN_SIZE, None
+		)
+		cl.enqueue_release_gl_objects(self.queue, gl_objects)
+
+		return event
 
 	# Simulation operations.
 	def enqueue_advect(self, source):
-		gl_objects = [self.velocity.clin, source.clin, self.obstacles.clin, source.clout]
-		cl.enqueue_acquire_gl_objects(self.queue, gl_objects)
-		self.program.advect(
-			self.queue, SCREEN_SIZE, None, 
-			self.velocity.clin, source.clin, self.obstacles.clin, source.clout, 
-			np.float32(self.dt), np.float32(self.dx)
+		return self.enqueue_kernel(
+			self.advect_kernel,
+			[
+				self.velocity.clin, 
+				source.clin, 
+				self.obstacles.clin, 
+				source.clout
+			],
+			(
+				self.velocity.clin, 
+				source.clin, 
+				self.obstacles.clin, 
+				source.clout, 
+				np.float32(self.dt), 
+				np.float32(self.dx)
+			)
 		)
-		return cl.enqueue_release_gl_objects(self.queue, gl_objects)
 
 	def enqueue_buoyancy_force(self):
-		gl_objects = [self.wtemp.clin, self.buoyancy.clout]
-		cl.enqueue_acquire_gl_objects(self.queue, gl_objects)
-		self.program.buoyancy_force(
-			self.queue, SCREEN_SIZE, None, 
-			self.wtemp.clin, self.buoyancy.clout, 
-			np.float32(self.gravity), np.float32(self.origin), np.float32(self.p0)
+		return self.enqueue_kernel(
+			self.buoyancy_force_kernel,
+			[
+				self.wtemp.clin, 
+				self.buoyancy.clout
+			],
+			(
+				self.wtemp.clin, 
+				self.buoyancy.clout, 
+				np.float32(self.gravity), 
+				np.float32(self.origin), 
+				np.float32(self.p0)
+			)
 		)
-		return cl.enqueue_release_gl_objects(self.queue, gl_objects)
 
 	def enqueue_add_force(self, force_buffer):
-		gl_objects = [self.velocity.clin, force_buffer, self.velocity.clout]
-		cl.enqueue_acquire_gl_objects(self.queue, gl_objects)
-		self.program.add_force(
-			self.queue, SCREEN_SIZE, None,
-			self.velocity.clin, force_buffer, self.velocity.clout,
-			np.float32(self.dt)
+		return self.enqueue_kernel(
+			self.add_force_kernel,
+			[
+				self.velocity.clin, 
+				force_buffer, 
+				self.velocity.clout
+			],
+			(
+				self.velocity.clin, 
+				force_buffer, 
+				self.velocity.clout,
+				np.float32(self.dt)
+			)
 		)
-		return cl.enqueue_release_gl_objects(self.queue, gl_objects)
 
 	def enqueue_compute_vorticity(self):
-		gl_objects = [self.velocity.clin, self.obstacles.clin, self.vorticity.clout]
-		cl.enqueue_acquire_gl_objects(self.queue, gl_objects)
-		self.program.vorticity(
-			self.queue, SCREEN_SIZE, None,
-			self.velocity.clin, self.obstacles.clin, self.vorticity.clout
+		return self.enqueue_kernel(
+			self.vorticity_kernel,
+			[
+				self.velocity.clin, 
+				self.obstacles.clin, 
+				self.vorticity.clout
+			],
+			(
+				self.velocity.clin, 
+				self.obstacles.clin, 
+				self.vorticity.clout
+			)
 		)
-		return cl.enqueue_release_gl_objects(self.queue, gl_objects)
 
 	def enqueue_vorticity_confinement_force(self):
-		gl_objects = [self.vorticity.clout, self.vorticity_confinement_force.clout]
-		cl.enqueue_acquire_gl_objects(self.queue, gl_objects)
-		self.program.vorticity_confinement_force(
-			self.queue, SCREEN_SIZE, None,
-			self.vorticity.clin, self.vorticity_confinement_force.clout,
-			np.float32(self.vorticity_confinement_scale), 
-			np.float32(self.dt), 
-			np.float32(self.dx)
+		return self.enqueue_kernel(
+			self.vorticity_confinement_force_kernel,
+			[
+				self.vorticity.clout, 
+				self.vorticity_confinement_force.clout
+			],
+			(
+				self.vorticity.clin, 
+				self.vorticity_confinement_force.clout,
+				np.float32(self.vorticity_confinement_scale), 
+				np.float32(self.dt), 
+				np.float32(self.dx)
+			)
 		)
-		return cl.enqueue_release_gl_objects(self.queue, gl_objects)
 
 	def enqueue_compute_divergence(self):
-		gl_objects = [self.velocity.clout, self.obstacles.clin, self.divergence.clout]
-		cl.enqueue_acquire_gl_objects(self.queue, gl_objects)
-		self.program.divergence(
-			self.queue, SCREEN_SIZE, None,
-			self.velocity.clout, self.obstacles.clin, self.divergence.clout, 
-			np.float32(self.dx)
+		return self.enqueue_kernel(
+			self.divergence_kernel,
+			[
+				self.velocity.clout, 
+				self.obstacles.clin, 
+				self.divergence.clout
+			],
+			(
+				self.velocity.clout, 
+				self.obstacles.clin, 
+				self.divergence.clout, 
+				np.float32(self.dx)
+			)
 		)
-		return cl.enqueue_release_gl_objects(self.queue, gl_objects)
 
 	def enqueue_jacobi_iteration(self, div_buffer, prs_buffer):
-		gl_objects = [prs_buffer, div_buffer, self.obstacles.clin, self.pressure.clout]
-		cl.enqueue_acquire_gl_objects(self.queue, gl_objects)
-		self.program.jacobi(
-			self.queue, SCREEN_SIZE, None,
-			prs_buffer, div_buffer, self.obstacles.clin, self.pressure.clout, 
-			np.float32(self.alpha)
+		return self.enqueue_kernel(
+			self.jacobi_kernel,
+			[
+				prs_buffer, 
+				div_buffer, 
+				self.obstacles.clin, 
+				self.pressure.clout
+			],
+			(
+				prs_buffer, 
+				div_buffer, 
+				self.obstacles.clin, 
+				self.pressure.clout, 
+				np.float32(self.alpha)
+			)
 		)
-		return cl.enqueue_release_gl_objects(self.queue, gl_objects)
 
 	def enqueue_subtract_pressure_gradient(self):
-		gl_objects = [self.velocity.clin, self.pressure.clin, self.obstacles.clin, self.velocity.clout]
-		cl.enqueue_acquire_gl_objects(self.queue, gl_objects)
-		self.program.subtract_pressure_gradient(
-			self.queue, SCREEN_SIZE, None,
-			self.velocity.clin, self.pressure.clin, self.obstacles.clin, self.velocity.clout, 
-			np.float32(self.dx)
+		return self.enqueue_kernel(
+			self.subtract_pressure_gradient_kernel,
+			[
+				self.velocity.clin, 
+				self.pressure.clin, 
+				self.obstacles.clin, 
+				self.velocity.clout
+			],
+			(
+				self.velocity.clin, 
+				self.pressure.clin, 
+				self.obstacles.clin, 
+				self.velocity.clout, 
+				np.float32(self.dx)
+			)
 		)
-		return cl.enqueue_release_gl_objects(self.queue, gl_objects)
 	
 	def timestep(self):
 		# Advect water and temperature.
 		self.enqueue_advect(self.wtemp)
 		self.enqueue_advect(self.velocity)
-		self.wtemp.enqueue_swap(self.queue)
-		self.velocity.enqueue_swap(self.queue)
+		self.wtemp.enqueue_swap()
+		self.velocity.enqueue_swap()
 
 		# Compute buoyancy.
 		self.enqueue_buoyancy_force()
@@ -314,6 +410,7 @@ class EMA:
 		# Add external forces to velocity.
 		e = self.enqueue_add_force(self.buoyancy.clout)
 		e.wait()
+		self.velocity.enqueue_swap()
 		e = self.enqueue_add_force(self.vorticity_confinement_force.clout)
 		#self.velocity.enqueue_swap(self.queue)
 		e.wait()
@@ -327,11 +424,11 @@ class EMA:
 
 		for i in range(self.jacobi_iterations):
 			self.enqueue_jacobi_iteration(self.divergence.clout, self.pressure.clin)
-			self.pressure.enqueue_swap(self.queue)
+			self.pressure.enqueue_swap()
 
 		# TODO: Subtract pressure gradient from velocity.
 		self.enqueue_subtract_pressure_gradient()
-		self.velocity.enqueue_swap(self.queue)
+		self.velocity.enqueue_swap()
 		
 		self.queue.finish()
 		glFlush()
