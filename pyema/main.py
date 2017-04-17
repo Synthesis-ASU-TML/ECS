@@ -131,7 +131,7 @@ class Field:
 		cl.enqueue_release_gl_objects(self.queue, [self.clout, self.clin])
 
 		return event
-	
+
 	def show(self):
 		self.bind()
 
@@ -181,6 +181,8 @@ class EMA:
 					devices=[platform.get_devices()[0]]
 				)
 
+		print self.context.devices
+		exit(-1)
 		self.queue = cl.CommandQueue(self.context)
 		self.program = cl.Program(self.context, open('program.cl', 'r').read()).build()
 
