@@ -1,10 +1,12 @@
+import os, sys
 import numpy as np
-from OpenGL.GL import *
-from OpenGL.GLUT import *
 import pyopencl as cl
 mf = cl.mem_flags
 from PIL import Image
-import os, sys
+
+from OpenGL.GL import *
+from OpenGL.GLUT import *
+
 from pyopencl.tools import get_gl_sharing_context_properties
 
 import pygame
@@ -53,16 +55,16 @@ def runloop():
 		#ema.wtemp.show()
 
 		gl_objects = [ema.vorticity.clin, ema.output.clout]
-		cl.enqueue_acquire_gl_objects(ema.queue, gl_objects)
+		cl.enqueue_acquire_gl_objects(ema.queues[0], gl_objects)
 		
 		ema.program.visscale(
-			ema.queue, SCREEN_SIZE, None, 
+			ema.queues[0], SCREEN_SIZE, None, 
 			ema.wtemp.clin, ema.output.clout,
 			np.array((0, 0, 0, 0), dtype=np.float32),
 			np.array((1, 1, 1, 1), dtype=np.float32)
 		)
 		
-		cl.enqueue_release_gl_objects(ema.queue, gl_objects), 'on_display, release'
+		cl.enqueue_release_gl_objects(ema.queues[0], gl_objects), 'on_display, release'
 		ema.output.show()
 
 		pygame.display.set_caption('FPS: {0:.2f} Playtime: {1:.2f}'.format(clock.get_fps(), playtime))
@@ -125,7 +127,7 @@ class Field:
 		glBindTexture(GL_TEXTURE_2D, self.texout)
 
 	def enqueue_swap(self, queue=None):
-		if queue == None: queue = self.queue
+		if queue is None: queue = self.queue
 
 		cl.enqueue_acquire_gl_objects(queue, [self.clout, self.clin])
 		self.copy_kernel.set_args(self.clout, self.clin)
@@ -241,7 +243,6 @@ class EMA:
 		self.obstacles = Field(np.array(obsblob), **cl_objects)
 		self.output = Field(np.array(zeros), **cl_objects)
 
-
 		self.advect_kernel = self.program.advect
 		self.buoyancy_force_kernel = self.program.buoyancy_force
 		self.add_force_kernel = self.program.add_force
@@ -252,7 +253,7 @@ class EMA:
 		self.subtract_pressure_gradient_kernel = self.program.subtract_pressure_gradient
 
 	def enqueue_kernel(self, kernel, gl_objects, params, queue=None):
-		if queue == None: queue = self.queue
+		if queue is None: queue = self.queues[0]
 
 		cl.enqueue_acquire_gl_objects(queue, gl_objects)
 		kernel.set_args(*params)
@@ -284,7 +285,7 @@ class EMA:
 			queue=queue
 		)
 
-	def enqueue_buoyancy_force(self):
+	def enqueue_buoyancy_force(self, queue=None):
 		return self.enqueue_kernel(
 			self.buoyancy_force_kernel,
 			[
@@ -301,7 +302,7 @@ class EMA:
 			queue=queue
 		)
 
-	def enqueue_add_force(self, force_buffer):
+	def enqueue_add_force(self, force_buffer, queue=None):
 		return self.enqueue_kernel(
 			self.add_force_kernel,
 			[
@@ -318,7 +319,7 @@ class EMA:
 			queue=queue
 		)
 
-	def enqueue_compute_vorticity(self):
+	def enqueue_compute_vorticity(self, queue=None):
 		return self.enqueue_kernel(
 			self.vorticity_kernel,
 			[
@@ -334,7 +335,7 @@ class EMA:
 			queue=queue
 		)
 
-	def enqueue_vorticity_confinement_force(self):
+	def enqueue_vorticity_confinement_force(self, queue=None):
 		return self.enqueue_kernel(
 			self.vorticity_confinement_force_kernel,
 			[
@@ -351,7 +352,7 @@ class EMA:
 			queue=queue
 		)
 
-	def enqueue_compute_divergence(self):
+	def enqueue_compute_divergence(self, queue=None):
 		return self.enqueue_kernel(
 			self.divergence_kernel,
 			[
@@ -368,7 +369,7 @@ class EMA:
 			queue=queue
 		)
 
-	def enqueue_jacobi_iteration(self, prs_buffer, div_buffer):
+	def enqueue_jacobi_iteration(self, prs_buffer, div_buffer, queue=None):
 		return self.enqueue_kernel(
 			self.jacobi_kernel,
 			[
@@ -387,7 +388,7 @@ class EMA:
 			queue=queue
 		)
 
-	def enqueue_subtract_pressure_gradient(self):
+	def enqueue_subtract_pressure_gradient(self, queue=None):
 		return self.enqueue_kernel(
 			self.subtract_pressure_gradient_kernel,
 			[
@@ -450,7 +451,9 @@ class EMA:
 		self.enqueue_subtract_pressure_gradient().wait()
 		self.velocity.enqueue_swap().wait()
 		
-		self.queue.finish()
+		for q in self.queues:
+			q.finish()
+		
 		glFlush()
 
 # Main.
