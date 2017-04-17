@@ -124,11 +124,13 @@ class Field:
 	def bind(self):
 		glBindTexture(GL_TEXTURE_2D, self.texout)
 
-	def enqueue_swap(self):
-		cl.enqueue_acquire_gl_objects(self.queue, [self.clout, self.clin])
+	def enqueue_swap(self, queue=None):
+		if queue == None: queue = self.queue
+
+		cl.enqueue_acquire_gl_objects(queue, [self.clout, self.clin])
 		self.copy_kernel.set_args(self.clout, self.clin)
-		event = cl.enqueue_nd_range_kernel(self.queue, self.copy_kernel, SCREEN_SIZE, None)
-		cl.enqueue_release_gl_objects(self.queue, [self.clout, self.clin])
+		event = cl.enqueue_nd_range_kernel(queue, self.copy_kernel, SCREEN_SIZE, None)
+		cl.enqueue_release_gl_objects(queue, [self.clout, self.clin])
 
 		return event
 
@@ -166,23 +168,30 @@ class EMA:
 		gl_props = get_gl_sharing_context_properties()
 
 		devices = self.platform.get_devices()
-		print '\n'.join(['(%d) %s' % (i, device) for i, device in enumerate(devices)])
+		print 'Available devices:\n', '\n'.join(
+			['\t(%d) %s' % (i, d) for i, d in enumerate(devices)]
+		)
+
 		print 'Choose devices (comma-separated):'
 		devstr = raw_input()
-		userdevices = [devices[int(i)] for i in devstr.split(',')]
-		print userdevices
+		self.devices = [devices[int(i)] for i in devstr.split(',')]
+
+		print 'Selected devices:\n', '\n'.join(
+			['\t(%d) %s' % (i, d) for i, d in enumerate(self.devices)]
+		)
 
 		if sys.platform == 'darwin':
-			self.context = cl.Context(properties=gl_props, devices=userdevices)
+			self.context = cl.Context(properties=gl_props, devices=self.devices)
 		else:
 			gl_props = [(cl.context_properties.PLATFORM, self.platform)] + gl_props
 		
 			try:
 				self.context = cl.Context(properties=gl_props)
 			except:
-				self.context = cl.Context(properties=gl_props, devices=userdevices)
+				self.context = cl.Context(properties=gl_props, devices=self.devices)
 
-		self.queue = cl.CommandQueue(self.context)
+		print self.devices
+		self.queues = [cl.CommandQueue(self.context, device=dev) for dev in self.devices] 
 		self.program = cl.Program(self.context, open('program.cl', 'r').read()).build()
 
 	def init_buffers(self):
@@ -217,7 +226,7 @@ class EMA:
 
 		cl_objects = dict(
 			context=self.context, 
-			queue=self.queue, 
+			queue=self.queues[0], 
 			program=self.program, 
 			copy_kernel = self.copy_kernel
 		)
@@ -242,18 +251,20 @@ class EMA:
 		self.jacobi_kernel = self.program.jacobi
 		self.subtract_pressure_gradient_kernel = self.program.subtract_pressure_gradient
 
-	def enqueue_kernel(self, kernel, gl_objects, params):
-		cl.enqueue_acquire_gl_objects(self.queue, gl_objects)
+	def enqueue_kernel(self, kernel, gl_objects, params, queue=None):
+		if queue == None: queue = self.queue
+
+		cl.enqueue_acquire_gl_objects(queue, gl_objects)
 		kernel.set_args(*params)
 		event = cl.enqueue_nd_range_kernel(
-			self.queue, kernel, SCREEN_SIZE, None
+			queue, kernel, SCREEN_SIZE, None
 		)
-		cl.enqueue_release_gl_objects(self.queue, gl_objects)
+		cl.enqueue_release_gl_objects(queue, gl_objects)
 
 		return event
 
 	# Simulation operations.
-	def enqueue_advect(self, source):
+	def enqueue_advect(self, source, queue=None):
 		return self.enqueue_kernel(
 			self.advect_kernel,
 			[
@@ -269,7 +280,8 @@ class EMA:
 				source.clout, 
 				np.float32(self.dt), 
 				np.float32(self.dx)
-			)
+			),
+			queue=queue
 		)
 
 	def enqueue_buoyancy_force(self):
@@ -285,7 +297,8 @@ class EMA:
 				np.float32(self.gravity), 
 				np.float32(self.origin), 
 				np.float32(self.p0)
-			)
+			),
+			queue=queue
 		)
 
 	def enqueue_add_force(self, force_buffer):
@@ -301,7 +314,8 @@ class EMA:
 				force_buffer, 
 				self.velocity.clout,
 				np.float32(self.dt)
-			)
+			),
+			queue=queue
 		)
 
 	def enqueue_compute_vorticity(self):
@@ -316,7 +330,8 @@ class EMA:
 				self.velocity.clin, 
 				self.obstacles.clout, 
 				self.vorticity.clout
-			)
+			),
+			queue=queue
 		)
 
 	def enqueue_vorticity_confinement_force(self):
@@ -332,7 +347,8 @@ class EMA:
 				np.float32(self.vorticity_confinement_scale), 
 				np.float32(self.dt), 
 				np.float32(self.dx)
-			)
+			),
+			queue=queue
 		)
 
 	def enqueue_compute_divergence(self):
@@ -348,7 +364,8 @@ class EMA:
 				self.obstacles.clout, 
 				self.divergence.clout, 
 				np.float32(self.dx)
-			)
+			),
+			queue=queue
 		)
 
 	def enqueue_jacobi_iteration(self, prs_buffer, div_buffer):
@@ -366,7 +383,8 @@ class EMA:
 				self.obstacles.clout, 
 				self.pressure.clout, 
 				np.float32(self.alpha)
-			)
+			),
+			queue=queue
 		)
 
 	def enqueue_subtract_pressure_gradient(self):
@@ -384,29 +402,30 @@ class EMA:
 				self.obstacles.clout, 
 				self.velocity.clout, 
 				np.float32(self.dx)
-			)
+			),
+			queue=queue
 		)
 	
 	def timestep(self):
 		# Advect water and temperature.
-		e_advwtemp = self.enqueue_advect(self.wtemp)
-		e_advvel = self.enqueue_advect(self.velocity)
+		e_advwtemp = self.enqueue_advect(self.wtemp, queue=self.queues[0])
+		e_advvel = self.enqueue_advect(self.velocity, queue=self.queues[-1])
 
 		e_advwtemp.wait()
 		e_advvel.wait()
 
-		e_swapwtemp = self.wtemp.enqueue_swap()
-		e_swapvel = self.velocity.enqueue_swap()
+		e_swapwtemp = self.wtemp.enqueue_swap(queue=self.queues[0])
+		e_swapvel = self.velocity.enqueue_swap(queue=self.queues[-1])
 
 		e_swapwtemp.wait()
 		e_swapvel.wait()
 
 		# Compute external forces.
-		e_buoyancy = self.enqueue_buoyancy_force()
+		e_buoyancy = self.enqueue_buoyancy_force(queue=self.queues[0])
 
-		e_vorticity = self.enqueue_compute_vorticity()
+		e_vorticity = self.enqueue_compute_vorticity(queue=self.queues[-1])
 		e_vorticity.wait()
-		self.enqueue_vorticity_confinement_force()
+		self.enqueue_vorticity_confinement_force(queue=self.queues[-1])
 
 		e_buoyancy.wait()
 
