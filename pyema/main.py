@@ -24,7 +24,7 @@ def profile_event(event, name):
 
 def runloop():
 	playtime = 0
-	
+
 	while True:
 		for event in pygame.event.get():
 			if event.type == QUIT:
@@ -151,7 +151,7 @@ class EMA:
 
 		self.alpha = 0
 		self.vorticity_confinement_scale = 3
-		self.jacobi_iterations = 10
+		self.jacobi_iterations = 1
 		self.dissipation = np.array([1, 1, 1, 1])
 
 		self.frames = 0
