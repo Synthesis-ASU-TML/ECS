@@ -23,6 +23,8 @@ def profile_event(event, name):
 	print name, event.profile.end-event.profile.start * 1e-9
 
 def runloop():
+	playtime = 0
+	
 	while True:
 		for event in pygame.event.get():
 			if event.type == QUIT:
@@ -31,8 +33,7 @@ def runloop():
 				return
 
 		time_passed = clock.tick()
-		time_passed_seconds = time_passed / 1000.
-
+		playtime += time_passed / 1000.0
 		pressed = pygame.key.get_pressed()
 
 		ema.timestep()
@@ -64,6 +65,7 @@ def runloop():
 		cl.enqueue_release_gl_objects(ema.queue, gl_objects), 'on_display, release'
 		ema.output.show()
 
+		pygame.display.set_caption('FPS: {0:.2f} Playtime: {1:.2f}'.format(clock.get_fps(), playtime))
 		pygame.display.flip()
 		
 
