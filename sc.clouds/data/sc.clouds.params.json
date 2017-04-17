@@ -18,11 +18,8 @@
 					"cfd-vorticity" : [ 0.0 ],
 					"env-K0" : [ 281.5 ],
 					"env-L" : [ 2.501 ],
-					"env-cp" : [ 1003.0 ],
-					"env-cv" : [ 716.0 ],
 					"env-gravity-magnitude" : [ 0.1 ],
 					"env-lapse-rate" : [ 6.5 ],
-					"env-molar-mass" : [ 0.029 ],
 					"env-origin" : [ 0.0, 1.0, 0.169414, 1 ],
 					"env-p0" : [ 101.300003 ],
 					"external-liquid-gain" : [ 1.0 ],
@@ -44,7 +41,12 @@
 					"sim-timestep" : [ 0.9 ],
 					"sim-width" : [ 640 ],
 					"udp-host" : [ "127.0.0.1" ],
-					"udp-port" : [ 10001 ]
+					"udp-port" : [ 10001 ],
+					"env-dry-cp" : [  ],
+					"env-dry-cv" : [  ],
+					"env-vapor-cp" : [  ],
+					"env-vapor-cv" : [  ],
+					"env-z0" : [  ]
 				}
 
 			}
@@ -66,11 +68,8 @@
 					"cfd-vorticity" : [ 3.0 ],
 					"env-K0" : [ 281.5 ],
 					"env-L" : [ 2.501 ],
-					"env-cp" : [ 1003.0 ],
-					"env-cv" : [ 716.0 ],
 					"env-gravity-magnitude" : [ 0.1 ],
 					"env-lapse-rate" : [ 6.5 ],
-					"env-molar-mass" : [ 0.029 ],
 					"env-origin" : [ 0.0, 1.0, 0.169414, 1 ],
 					"env-p0" : [ 101.300003 ],
 					"external-liquid-gain" : [ 10.0 ],
@@ -92,7 +91,12 @@
 					"sim-timestep" : [ 0.9 ],
 					"sim-width" : [ 640 ],
 					"udp-host" : [ "127.0.0.1" ],
-					"udp-port" : [ 10001 ]
+					"udp-port" : [ 10001 ],
+					"env-dry-cp" : [  ],
+					"env-dry-cv" : [  ],
+					"env-vapor-cp" : [  ],
+					"env-vapor-cv" : [  ],
+					"env-z0" : [  ]
 				}
 
 			}
@@ -114,11 +118,8 @@
 					"cfd-vorticity" : [ 1.0 ],
 					"env-K0" : [ 281.5 ],
 					"env-L" : [ 2.501 ],
-					"env-cp" : [ 1003.0 ],
-					"env-cv" : [ 716.0 ],
 					"env-gravity-magnitude" : [ 0.1 ],
 					"env-lapse-rate" : [ 6.5 ],
-					"env-molar-mass" : [ 0.029 ],
 					"env-origin" : [ 0.0, 1.0, 0.169414, 1 ],
 					"env-p0" : [ 101.300003 ],
 					"external-liquid-gain" : [ 10.0 ],
@@ -140,7 +141,62 @@
 					"sim-timestep" : [ 1.05 ],
 					"sim-width" : [ 1280 ],
 					"udp-host" : [ "127.0.0.1" ],
-					"udp-port" : [ 10001 ]
+					"udp-port" : [ 10001 ],
+					"env-dry-cp" : [  ],
+					"env-dry-cv" : [  ],
+					"env-vapor-cp" : [  ],
+					"env-vapor-cv" : [  ],
+					"env-z0" : [  ]
+				}
+
+			}
+,
+			"4" : 			{
+				"id" : 4,
+				"name" : "istage-floor",
+				"data" : 				{
+					"bgsub-blur" : [ 0.3 ],
+					"bgsub-postalpha" : [ 0.3 ],
+					"bgsub-prealpha" : [ 0.007 ],
+					"bgsub-threshold" : [ 0.83 ],
+					"cfd-jacobi-accum" : [ 1 ],
+					"cfd-jacobi-iterations" : [ 1 ],
+					"cfd-liquid-dissipation" : [ 0.999 ],
+					"cfd-temp-dissipation" : [ 0.999 ],
+					"cfd-vapor-dissipation" : [ 0.999 ],
+					"cfd-velocity-dissipation" : [ 0.95 ],
+					"cfd-vorticity" : [ 2.39 ],
+					"env-K0" : [ 281.5 ],
+					"env-L" : [ 2.501 ],
+					"env-gravity-magnitude" : [ 0.1 ],
+					"env-lapse-rate" : [ -6.5 ],
+					"env-origin" : [ 0.0, 1.0, 0.169414, 1 ],
+					"env-p0" : [ 101.300003 ],
+					"external-liquid-gain" : [ 15.0 ],
+					"external-liquid-texture" : [ "hsflow" ],
+					"external-temp-gain" : [ 0.0 ],
+					"external-temp-texture" : [ "<empty>" ],
+					"external-vapor-gain" : [ 2.5 ],
+					"external-vapor-texture" : [ "hsflow" ],
+					"external-velocity-gain" : [ 39.26 ],
+					"external-velocity-texture" : [ "hsflow" ],
+					"hsflow-blur" : [ 2.0 ],
+					"hsflow-lambda" : [ 0.0 ],
+					"hsflow-scale" : [ 0.3 ],
+					"hsflow-threshold" : [ 0.0 ],
+					"sim-cell-size" : [ 0.8 ],
+					"sim-height" : [ 720 ],
+					"sim-manual-timestep" : [ 1 ],
+					"sim-speed" : [ 19.0 ],
+					"sim-timestep" : [ 0.931 ],
+					"sim-width" : [ 1280 ],
+					"udp-host" : [ "127.0.0.1" ],
+					"udp-port" : [ 10001 ],
+					"env-dry-cp" : [ 1003.0 ],
+					"env-dry-cv" : [ 716.0 ],
+					"env-vapor-cp" : [ 1003.0 ],
+					"env-vapor-cv" : [ 716.0 ],
+					"env-z0" : [ 0.0 ]
 				}
 
 			}

@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 107.0, 62.0, 1404.0, 995.0 ],
+		"rect" : [ 389.0, 143.0, 1447.0, 945.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -50,7 +50,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 2.0, 1.0 ],
-					"patching_rect" : [ 737.5, 47.0, 692.0, 876.0 ],
+					"patching_rect" : [ 737.5, 47.0, 693.0, 876.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -110,7 +110,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 2.0, 0.0 ],
-					"patching_rect" : [ 288.0, 47.0, 432.5, 763.0 ],
+					"patching_rect" : [ 288.0, 47.0, 432.5, 844.0 ],
 					"varname" : "sc.clouds.parameters",
 					"viewvisibility" : 1
 				}
@@ -208,7 +208,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 737.5, 18.0, 692.0, 27.0 ],
+					"patching_rect" : [ 737.5, 18.0, 693.0, 27.0 ],
 					"style" : "",
 					"text" : "Simulation Status",
 					"textjustification" : 1
