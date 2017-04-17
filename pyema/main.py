@@ -156,10 +156,8 @@ class EMA:
 
 		self.alpha = 0
 		self.vorticity_confinement_scale = 3
-		self.jacobi_iterations = 1
+		self.jacobi_iterations = 2
 		self.dissipation = np.array([1, 1, 1, 1])
-
-		self.frames = 0
 
 	def init_cl(self):
 		'''Initialize OpenCL context, queue, and program.'''
@@ -172,7 +170,8 @@ class EMA:
 		print 'Choose devices (comma-separated):'
 		devstr = raw_input()
 		userdevices = [devices[int(i)] for i in devstr.split(',')]
-		
+		print userdevices
+
 		if sys.platform == 'darwin':
 			self.context = cl.Context(properties=gl_props, devices=userdevices)
 		else:
@@ -260,13 +259,13 @@ class EMA:
 			[
 				self.velocity.clin, 
 				source.clin, 
-				self.obstacles.clin, 
+				self.obstacles.clout, 
 				source.clout
 			],
 			(
 				self.velocity.clin, 
 				source.clin, 
-				self.obstacles.clin, 
+				self.obstacles.clout, 
 				source.clout, 
 				np.float32(self.dt), 
 				np.float32(self.dx)
@@ -277,11 +276,11 @@ class EMA:
 		return self.enqueue_kernel(
 			self.buoyancy_force_kernel,
 			[
-				self.wtemp.clin, 
+				self.wtemp.clout, 
 				self.buoyancy.clout
 			],
 			(
-				self.wtemp.clin, 
+				self.wtemp.clout, 
 				self.buoyancy.clout, 
 				np.float32(self.gravity), 
 				np.float32(self.origin), 
@@ -310,12 +309,12 @@ class EMA:
 			self.vorticity_kernel,
 			[
 				self.velocity.clin, 
-				self.obstacles.clin, 
+				self.obstacles.clout, 
 				self.vorticity.clout
 			],
 			(
 				self.velocity.clin, 
-				self.obstacles.clin, 
+				self.obstacles.clout, 
 				self.vorticity.clout
 			)
 		)
@@ -328,7 +327,7 @@ class EMA:
 				self.vorticity_confinement_force.clout
 			],
 			(
-				self.vorticity.clin, 
+				self.vorticity.clout, 
 				self.vorticity_confinement_force.clout,
 				np.float32(self.vorticity_confinement_scale), 
 				np.float32(self.dt), 
@@ -341,30 +340,30 @@ class EMA:
 			self.divergence_kernel,
 			[
 				self.velocity.clout, 
-				self.obstacles.clin, 
+				self.obstacles.clout, 
 				self.divergence.clout
 			],
 			(
 				self.velocity.clout, 
-				self.obstacles.clin, 
+				self.obstacles.clout, 
 				self.divergence.clout, 
 				np.float32(self.dx)
 			)
 		)
 
-	def enqueue_jacobi_iteration(self, div_buffer, prs_buffer):
+	def enqueue_jacobi_iteration(self, prs_buffer, div_buffer):
 		return self.enqueue_kernel(
 			self.jacobi_kernel,
 			[
 				prs_buffer, 
 				div_buffer, 
-				self.obstacles.clin, 
+				self.obstacles.clout, 
 				self.pressure.clout
 			],
 			(
 				prs_buffer, 
 				div_buffer, 
-				self.obstacles.clin, 
+				self.obstacles.clout, 
 				self.pressure.clout, 
 				np.float32(self.alpha)
 			)
@@ -375,14 +374,14 @@ class EMA:
 			self.subtract_pressure_gradient_kernel,
 			[
 				self.velocity.clin, 
-				self.pressure.clin, 
-				self.obstacles.clin, 
+				self.pressure.clout, 
+				self.obstacles.clout, 
 				self.velocity.clout
 			],
 			(
 				self.velocity.clin, 
-				self.pressure.clin, 
-				self.obstacles.clin, 
+				self.pressure.clout, 
+				self.obstacles.clout, 
 				self.velocity.clout, 
 				np.float32(self.dx)
 			)
@@ -390,47 +389,47 @@ class EMA:
 	
 	def timestep(self):
 		# Advect water and temperature.
-		self.enqueue_advect(self.wtemp)
-		self.enqueue_advect(self.velocity)
-		self.wtemp.enqueue_swap()
-		self.velocity.enqueue_swap()
+		e_advwtemp = self.enqueue_advect(self.wtemp)
+		e_advvel = self.enqueue_advect(self.velocity)
 
-		# Compute buoyancy.
-		self.enqueue_buoyancy_force()
-		#self.buoyancy.enqueue_swap(self.queue)
+		e_advwtemp.wait()
+		e_advvel.wait()
 
-		# Compute vorticity.
-		e = self.enqueue_compute_vorticity()
-		#self.vorticity.enqueue_swap(self.queue);
-		e.wait()
+		e_swapwtemp = self.wtemp.enqueue_swap()
+		e_swapvel = self.velocity.enqueue_swap()
 
-		# Compute vorticity confinement force.
+		e_swapwtemp.wait()
+		e_swapvel.wait()
+
+		# Compute external forces.
+		e_buoyancy = self.enqueue_buoyancy_force()
+
+		e_vorticity = self.enqueue_compute_vorticity()
+		e_vorticity.wait()
 		self.enqueue_vorticity_confinement_force()
-		#self.vorticity_confinement_force.enqueue_swap(self.queue);
-		e.wait()
 
-		# Add external forces to velocity.
-		e = self.enqueue_add_force(self.buoyancy.clout)
-		e.wait()
-		self.velocity.enqueue_swap()
-		e = self.enqueue_add_force(self.vorticity_confinement_force.clout)
-		#self.velocity.enqueue_swap(self.queue)
-		e.wait()
-		# TODO: Compute divergence.
-		e = self.enqueue_compute_divergence()
-		e.wait()
-		#self.divergence.enqueue_swap(self.queue)
+		e_buoyancy.wait()
 
-		# TODO: Estimate pressure.
-		self.enqueue_jacobi_iteration(self.pressure.clin, self.divergence.clout)
+		self.enqueue_add_force(self.buoyancy.clout).wait()
+		self.velocity.enqueue_swap().wait()
+		self.enqueue_add_force(self.vorticity_confinement_force.clout).wait()
+		self.velocity.enqueue_swap().wait()
+
+		# Estimate pressure.
+		self.enqueue_compute_divergence().wait()
 
 		for i in range(self.jacobi_iterations):
-			self.enqueue_jacobi_iteration(self.divergence.clout, self.pressure.clin)
-			self.pressure.enqueue_swap()
+			if i == 0:
+				self.enqueue_jacobi_iteration(self.divergence.clout, self.divergence.clout).wait()		
+			else:
+				self.enqueue_jacobi_iteration(self.pressure.clin, self.divergence.clout).wait()
 
-		# TODO: Subtract pressure gradient from velocity.
-		self.enqueue_subtract_pressure_gradient()
-		self.velocity.enqueue_swap()
+			if i < self.jacobi_iterations - 1:
+				self.pressure.enqueue_swap().wait()
+
+		# Subtract pressure gradient from velocity.
+		self.enqueue_subtract_pressure_gradient().wait()
+		self.velocity.enqueue_swap().wait()
 		
 		self.queue.finish()
 		glFlush()
@@ -441,10 +440,11 @@ if __name__ == '__main__':
 	
 	pygame.init()
 	screen = pygame.display.set_mode(SCREEN_SIZE, HWSURFACE|OPENGL|DOUBLEBUF)
-	resize(*SCREEN_SIZE)
-	clock = pygame.time.Clock()
 
 	ema.init_cl()
 	ema.init_buffers()
+
+	resize(*SCREEN_SIZE)
+	clock = pygame.time.Clock()
 
 	runloop()
