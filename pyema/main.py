@@ -163,26 +163,26 @@ class EMA:
 
 	def init_cl(self):
 		'''Initialize OpenCL context, queue, and program.'''
-
 		self.platform = cl.get_platforms()[0]
 		
 		gl_props = get_gl_sharing_context_properties()
 
+		devices = self.platform.get_devices()
+		print '\n'.join(['(%d) %s' % (i, device) for i, device in enumerate(devices)])
+		print 'Choose devices (comma-separated):'
+		devstr = raw_input()
+		userdevices = [devices[int(i)] for i in devstr.split(',')]
+		
 		if sys.platform == 'darwin':
-			self.context = cl.Context(properties=gl_props, devices=[])
+			self.context = cl.Context(properties=gl_props, devices=userdevices)
 		else:
 			gl_props = [(cl.context_properties.PLATFORM, self.platform)] + gl_props
-
+		
 			try:
 				self.context = cl.Context(properties=gl_props)
 			except:
-				self.context = cl.Context(
-					properties=gl_props, 
-					devices=[platform.get_devices()[0]]
-				)
+				self.context = cl.Context(properties=gl_props, devices=userdevices)
 
-		print self.context.devices
-		exit(-1)
 		self.queue = cl.CommandQueue(self.context)
 		self.program = cl.Program(self.context, open('program.cl', 'r').read()).build()
 
