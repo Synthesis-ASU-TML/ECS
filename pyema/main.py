@@ -10,7 +10,7 @@ from pyopencl.tools import get_gl_sharing_context_properties
 import pygame
 from pygame.locals import *
 
-SCREEN_SIZE = (512, 512)
+SCREEN_SIZE = (1024, 1024)
 time_step = 0.005
 mouse_down = False
 mouse_old = dict(x=0, y=0)
