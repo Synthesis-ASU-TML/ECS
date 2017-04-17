@@ -7,8 +7,10 @@ from PIL import Image
 import os, sys
 from pyopencl.tools import get_gl_sharing_context_properties
 
-width = 512
-height = 512
+import pygame
+from pygame.locals import *
+
+SCREEN_SIZE = (512, 512)
 time_step = 0.005
 mouse_down = False
 mouse_old = dict(x=0, y=0)
@@ -20,42 +22,50 @@ def profile_event(event, name):
 	event.wait()
 	print name, event.profile.end-event.profile.start * 1e-9
 
-def on_display():
-	ema.timestep()
+def runloop():
+	while True:
+		for event in pygame.event.get():
+			if event.type == QUIT:
+				return
+			if event.type == KEYUP and event.key == K_ESCAPE:
+				return
 
-	glClearColor(0,0,0,0)
-	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
-	glMatrixMode(GL_MODELVIEW)
-	glLoadIdentity()
+		time_passed = clock.tick()
+		time_passed_seconds = time_passed / 1000.
 
-	# TODO: This is a little messy. Should probably just render with a fragment shader.
-	# Relies on wtemp having been swapped before render and not being swapped after
-	# render.
-	#gl_objects = [ema.wtemp.clin, ema.wtemp.clout]
-	#cl.enqueue_acquire_gl_objects(ema.queue, gl_objects)
-	#ema.program.vissky(ema.queue, (width, height), None, ema.wtemp.clin, ema.wtemp.clout)
-	#cl.enqueue_release_gl_objects(ema.queue, gl_objects)
-	#ema.wtemp.show()
-	ema.frames += 1
+		pressed = pygame.key.get_pressed()
 
-	if (ema.frames == 2):
-		sys.exit(-1)
+		ema.timestep()
 
-	gl_objects = [ema.vorticity.clin, ema.output.clout]
-	profile_event(cl.enqueue_acquire_gl_objects(ema.queue, gl_objects), 'on_display, acquire')
-	
-	profile_event(ema.program.visscale(
-		ema.queue, (width, height), None, 
-		ema.wtemp.clin, ema.output.clout,
-		np.array((0, 0, 0, 0), dtype=np.float32),
-		np.array((1, 1, 1, 1), dtype=np.float32)
-	), 'on_display, visscale')
-	
-	profile_event(cl.enqueue_release_gl_objects(ema.queue, gl_objects), 'on_display, release')
-	ema.output.show()
+		glClearColor(0,0,0,0)
+		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
+		glMatrixMode(GL_MODELVIEW)
+		glLoadIdentity()
 
-	glutSwapBuffers()
-	
+		# TODO: This is a little messy. Should probably just render with a fragment shader.
+		# Relies on wtemp having been swapped before render and not being swapped after
+		# render.
+		#gl_objects = [ema.wtemp.clin, ema.wtemp.clout]
+		#cl.enqueue_acquire_gl_objects(ema.queue, gl_objects)
+		#ema.program.vissky(ema.queue, (width, height), None, ema.wtemp.clin, ema.wtemp.clout)
+		#cl.enqueue_release_gl_objects(ema.queue, gl_objects)
+		#ema.wtemp.show()
+
+		gl_objects = [ema.vorticity.clin, ema.output.clout]
+		cl.enqueue_acquire_gl_objects(ema.queue, gl_objects)
+		
+		ema.program.visscale(
+			ema.queue, SCREEN_SIZE, None, 
+			ema.wtemp.clin, ema.output.clout,
+			np.array((0, 0, 0, 0), dtype=np.float32),
+			np.array((1, 1, 1, 1), dtype=np.float32)
+		)
+		
+		cl.enqueue_release_gl_objects(ema.queue, gl_objects), 'on_display, release'
+		ema.output.show()
+
+		pygame.display.flip()
+		
 
 def on_key(*args):
 	if args[0] == '\033' or args[0] == 'q':
@@ -73,27 +83,13 @@ def on_timer(t):
 	glutTimerFunc(t, on_timer, t)
 	glutPostRedisplay()
 
-def glut_window():
-	glutInit(sys.argv)
-	glutInitDisplayMode(GLUT_RGBA | GLUT_DOUBLE | GLUT_DEPTH)
-	glutInitWindowSize(width, height)
-	glutInitWindowPosition(0, 0)
-	window = glutCreateWindow("sc.clouds")
-
-	glutDisplayFunc(on_display)
-	glutKeyboardFunc(on_key)
-	glutMouseFunc(on_click)
-	glutMotionFunc(on_mouse_move)
-	glutTimerFunc(10, on_timer, 10)
-
+def resize(width, height):
 	glViewport(0, 0, width, height)
 	glMatrixMode(GL_PROJECTION)
 	glOrtho(-1, 1, -1, 1, 0, 1)
 	glEnable(GL_TEXTURE_2D)
 	glShadeModel(GL_FLAT)
 	glEnable(GL_BLEND)
-
-	return(window)
 
 # Buffers.
 
@@ -107,7 +103,7 @@ class Field:
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE)
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST)
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST)
-		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA32F, width, height, 0, GL_RGBA, GL_FLOAT, data)
+		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA32F, SCREEN_SIZE[0], SCREEN_SIZE[1], 0, GL_RGBA, GL_FLOAT, data)
 		glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_DECAL)
 
 		cl_buffer = cl.GLTexture(cl_context, mode, GL_TEXTURE_2D, 0, tex, 2)
@@ -126,7 +122,7 @@ class Field:
 
 	def enqueue_swap(self, queue):
 		cl.enqueue_acquire_gl_objects(queue, [self.clout, self.clin])
-		self.program.copy(queue, (width, height), None, self.clout, self.clin)
+		self.program.copy(queue, SCREEN_SIZE, None, self.clout, self.clin)
 		cl.enqueue_release_gl_objects(queue, [self.clout, self.clin])
 
 	def show(self):
@@ -186,7 +182,7 @@ class EMA:
 		im = Image.open("blob.png")
 		blob = np.array(im.getdata(), dtype=np.float32).reshape(im.size[0], im.size[1], 4) / 255.
 		blob[:,:,2] = 280
-		zeros = np.zeros((width, height, 4), dtype=np.float32)
+		zeros = np.zeros(SCREEN_SIZE + (4,), dtype=np.float32)
 
 		im = Image.open("obstacles.png")
 		obsblob = np.array(im.getdata(), dtype=np.float32).reshape(im.size[0], im.size[1], 4) / 255.
@@ -196,7 +192,7 @@ class EMA:
 		vel[:,:] = [1, 0, 0, 1]
 		vel[:,:,3] = 1
 
-		wtemp = np.array(np.random.rand(width, height, 4), dtype=np.float32)
+		wtemp = np.array(np.random.rand(SCREEN_SIZE[0], SCREEN_SIZE[1], 4), dtype=np.float32)
 		wtemp[::2,:,:] = 0
 		wtemp[:,:,3] = 1
 
@@ -215,7 +211,7 @@ class EMA:
 		gl_objects = [self.velocity.clin, source.clin, self.obstacles.clin, source.clout]
 		cl.enqueue_acquire_gl_objects(self.queue, gl_objects)
 		self.program.advect(
-			self.queue, (width, height), None, 
+			self.queue, SCREEN_SIZE, None, 
 			self.velocity.clin, source.clin, self.obstacles.clin, source.clout, 
 			np.float32(self.dt), np.float32(self.dx)
 		)
@@ -225,7 +221,7 @@ class EMA:
 		gl_objects = [self.wtemp.clin, self.buoyancy.clout]
 		cl.enqueue_acquire_gl_objects(self.queue, gl_objects)
 		self.program.buoyancy_force(
-			self.queue, (width, height), None, 
+			self.queue, SCREEN_SIZE, None, 
 			self.wtemp.clin, self.buoyancy.clout, 
 			np.float32(self.gravity), np.float32(self.origin), np.float32(self.p0)
 		)
@@ -235,7 +231,7 @@ class EMA:
 		gl_objects = [self.velocity.clin, force.clin, self.velocity.clout]
 		cl.enqueue_acquire_gl_objects(self.queue, gl_objects)
 		self.program.add_force(
-			self.queue, (width, height), None,
+			self.queue, SCREEN_SIZE, None,
 			self.velocity.clin, force.clin, self.velocity.clout,
 			np.float32(self.dt)
 		)
@@ -245,7 +241,7 @@ class EMA:
 		gl_objects = [self.velocity.clin, self.obstacles.clin, self.vorticity.clout]
 		cl.enqueue_acquire_gl_objects(self.queue, gl_objects)
 		self.program.vorticity(
-			self.queue, (width, height), None,
+			self.queue, SCREEN_SIZE, None,
 			self.velocity.clin, self.obstacles.clin, self.vorticity.clout
 		)
 		cl.enqueue_release_gl_objects(self.queue, gl_objects)
@@ -254,7 +250,7 @@ class EMA:
 		gl_objects = [self.vorticity.clin, self.vorticity_confinement_force.clout]
 		cl.enqueue_acquire_gl_objects(self.queue, gl_objects)
 		self.program.vorticity_confinement_force(
-			self.queue, (width, height), None,
+			self.queue, SCREEN_SIZE, None,
 			self.vorticity.clin, self.vorticity_confinement_force.clout,
 			np.float32(self.vorticity_confinement_scale), 
 			np.float32(self.dt), 
@@ -266,7 +262,7 @@ class EMA:
 		gl_objects = [self.velocity.clin, self.obstacles.clin, self.divergence.clout]
 		cl.enqueue_acquire_gl_objects(self.queue, gl_objects)
 		self.program.divergence(
-			self.queue, (width, height), None,
+			self.queue, SCREEN_SIZE, None,
 			self.velocity.clin, self.obstacles.clin, self.divergence.clout, 
 			np.float32(self.dx)
 		)
@@ -276,7 +272,7 @@ class EMA:
 		gl_objects = [prs.clin, div.clin, self.obstacles.clin, self.pressure.clout]
 		cl.enqueue_acquire_gl_objects(self.queue, gl_objects)
 		self.program.jacobi(
-			self.queue, (width, height), None,
+			self.queue, SCREEN_SIZE, None,
 			prs.clin, div.clin, self.obstacles.clin, self.pressure.clout, 
 			np.float32(self.alpha)
 		)
@@ -286,7 +282,7 @@ class EMA:
 		gl_objects = [self.velocity.clin, self.pressure.clin, self.obstacles.clin, self.velocity.clout]
 		cl.enqueue_acquire_gl_objects(self.queue, gl_objects)
 		self.program.subtract_pressure_gradient(
-			self.queue, (width, height), None,
+			self.queue, SCREEN_SIZE, None,
 			self.velocity.clin, self.pressure.clin, self.obstacles.clin, self.velocity.clout, 
 			np.float32(self.dx)
 		)
@@ -337,9 +333,13 @@ class EMA:
 # Main.
 if __name__ == '__main__':
 	ema = EMA()
-	window = glut_window()
+	
+	pygame.init()
+	screen = pygame.display.set_mode(SCREEN_SIZE, HWSURFACE|OPENGL|DOUBLEBUF)
+	resize(*SCREEN_SIZE)
+	clock = pygame.time.Clock()
+
 	ema.init_cl()
 	ema.init_buffers()
-	glutMainLoop()
 
-	
+	runloop()
