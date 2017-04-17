@@ -181,12 +181,12 @@ class EMA:
 
 	def init_buffers(self):
 		'''Initialize OpenCL buffers for all fields.'''
-		im = Image.open("blob.png")
+		im = Image.open("blob-%s.png" % str(SCREEN_SIZE[0]))
 		blob = np.array(im.getdata(), dtype=np.float32).reshape(im.size[0], im.size[1], 4) / 255.
 		blob[:,:,2] = 280
 		zeros = np.zeros(SCREEN_SIZE + (4,), dtype=np.float32)
 
-		im = Image.open("obstacles.png")
+		im = Image.open("obstacles-%s.png" % str(SCREEN_SIZE[0]))
 		obsblob = np.array(im.getdata(), dtype=np.float32).reshape(im.size[0], im.size[1], 4) / 255.
 		obsblob[:,:,3] = 1
 
