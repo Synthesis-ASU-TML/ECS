@@ -90,7 +90,7 @@
 			}
 , 			{
 				"box" : 				{
-					"code" : "Param signmag(0.);\r\nParam contrast(1., 1., 1., 1.);\r\nParam high(1., 1., 500., 1.);\r\nParam low(0., 0., 100., 0.);\r\n\r\nval = in1;\r\nval = (val - low) / (high - low);\r\nval = pow(val, contrast);\r\n//val = pow(val, contrast);\r\n\r\nif (signmag == 0) {\r\n\tout1 = val;\r\n} else if (signmag == 1) {\r\n\tout1 = sample(in2, val.xx);\r\n} else if (signmag == 2) {\r\n\tout1 = sample(in3, val);\r\n} else if (signmag == 3) {\r\n\tbg = vec(val.z, 0, 0.3, 1.);\r\n\tvap = vec(0, val.y / 1.25, val.y, 1.);\r\n\tliq = val.xxx;\r\n\t\r\n\tsky = bg + vap + liq;\r\n\tsky = clamp(sky, 0, 1);\r\n\t\r\n\tout1 = sky;\r\n}",
+					"code" : "Param signmag(0.);\r\nParam contrast(1., 1., 1., 1.);\r\nParam high(1., 1., 500., 1.);\r\nParam low(0., 0., 100., 0.);\r\nParam gain(1.0);\r\n\r\nval = in1;\r\nval = (val - low) / (high - low);\r\nval = pow(val, contrast);\r\n//val = pow(val, contrast);\r\n\r\nif (signmag == 0) {\r\n\tout1 = val * gain;\r\n} else if (signmag == 1) {\r\n\tout1 = sample(in2, val.xx) * gain;\r\n} else if (signmag == 2) {\r\n\tout1 = sample(in3, val) * gain;\r\n} else if (signmag == 3) {\r\n\tbg = vec(val.z, 0, 0.3, 1.);\r\n\tvap = vec(0, val.y / 1.25, val.y, 1.);\r\n\tliq = val.xxx;\r\n\t\r\n\tsky = bg + vap + liq;\r\n\tsky = clamp(sky, 0, 1);\r\n\t\r\n\tout1 = sky * gain;\r\n}",
 					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,

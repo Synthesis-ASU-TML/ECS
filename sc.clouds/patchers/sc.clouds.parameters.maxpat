@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 483.0, 197.0, 1713.0, 1098.0 ],
+		"rect" : [ 1255.0, 219.0, 851.0, 1098.0 ],
 		"bgcolor" : [ 0.88, 0.88, 0.8624, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -51,7 +51,8 @@
 					"presentation_rect" : [ 256.307709, 22.0, 96.916702, 40.0 ],
 					"style" : "",
 					"text" : "Reset",
-					"texton" : "Reset"
+					"texton" : "Reset",
+					"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
 			}
@@ -69,13 +70,14 @@
 					"presentation_rect" : [ 156.0, 22.0, 97.0, 40.0 ],
 					"style" : "",
 					"text" : "Run",
-					"texton" : "Run"
+					"texton" : "Run",
+					"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.621573, 0.81763, 0.73251, 1.0 ],
+					"bgcolor" : [ 0.592157, 0.556863, 0.470588, 1.0 ],
 					"fontface" : 1,
 					"id" : "obj-1",
 					"maxclass" : "comment",
@@ -237,7 +239,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.875034, 0.886275, 0.690563, 1.0 ],
+					"bgcolor" : [ 0.830167, 0.817442, 0.760077, 1.0 ],
 					"fontface" : 1,
 					"id" : "obj-102",
 					"maxclass" : "comment",
@@ -254,7 +256,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.875034, 0.886275, 0.690563, 1.0 ],
+					"bgcolor" : [ 0.830167, 0.817442, 0.760077, 1.0 ],
 					"fontface" : 1,
 					"id" : "obj-101",
 					"maxclass" : "comment",
@@ -271,7 +273,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.875034, 0.886275, 0.690563, 1.0 ],
+					"bgcolor" : [ 0.830167, 0.817442, 0.760077, 1.0 ],
 					"fontface" : 1,
 					"id" : "obj-99",
 					"maxclass" : "comment",
@@ -288,7 +290,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.875034, 0.886275, 0.690563, 1.0 ],
+					"bgcolor" : [ 0.830167, 0.817442, 0.760077, 1.0 ],
 					"fontface" : 1,
 					"id" : "obj-98",
 					"maxclass" : "comment",
@@ -305,7 +307,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.875034, 0.886275, 0.690563, 1.0 ],
+					"bgcolor" : [ 0.830167, 0.817442, 0.760077, 1.0 ],
 					"fontface" : 1,
 					"id" : "obj-97",
 					"maxclass" : "comment",
@@ -384,7 +386,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.875034, 0.886275, 0.690563, 1.0 ],
+					"bgcolor" : [ 0.830167, 0.817442, 0.760077, 1.0 ],
 					"fontface" : 1,
 					"id" : "obj-44",
 					"maxclass" : "comment",
@@ -401,7 +403,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.875034, 0.886275, 0.690563, 1.0 ],
+					"bgcolor" : [ 0.830167, 0.817442, 0.760077, 1.0 ],
 					"fontface" : 1,
 					"id" : "obj-39",
 					"maxclass" : "comment",
@@ -418,7 +420,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.6232, 0.82, 0.73472, 1.0 ],
+					"bgcolor" : [ 0.592157, 0.556863, 0.470588, 1.0 ],
 					"fontface" : 1,
 					"id" : "obj-89",
 					"maxclass" : "comment",
@@ -823,7 +825,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 19.0, 12.0, 275.0, 22.0 ],
-									"restore" : [ 0.007 ],
+									"restore" : [ 0.03 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0
 									}
@@ -22490,7 +22492,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.875034, 0.886275, 0.690563, 1.0 ],
+					"bgcolor" : [ 0.830167, 0.817442, 0.760077, 1.0 ],
 					"fontface" : 1,
 					"id" : "obj-56",
 					"maxclass" : "comment",
@@ -22743,7 +22745,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.875034, 0.886275, 0.690563, 1.0 ],
+					"bgcolor" : [ 0.830167, 0.817442, 0.760077, 1.0 ],
 					"fontface" : 1,
 					"id" : "obj-21",
 					"maxclass" : "comment",
@@ -44950,7 +44952,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.875034, 0.886275, 0.690563, 1.0 ],
+					"bgcolor" : [ 0.830167, 0.817442, 0.760077, 1.0 ],
 					"fontface" : 1,
 					"id" : "obj-23",
 					"maxclass" : "comment",
@@ -71090,7 +71092,7 @@
 					"restore" : 					{
 						"bgsub-blur" : [ 0.3 ],
 						"bgsub-postalpha" : [ 0.3 ],
-						"bgsub-prealpha" : [ 0.007 ],
+						"bgsub-prealpha" : [ 0.03 ],
 						"bgsub-threshold" : [ 0.83 ],
 						"cfd-jacobi-accum" : [ 1 ],
 						"cfd-jacobi-iterations" : [ 1 ],
@@ -71149,7 +71151,7 @@
 					"saved_object_attributes" : 					{
 						"client_rect" : [ 4, 44, 358, 172 ],
 						"parameter_enable" : 0,
-						"storage_rect" : [ 365, 44, 899, 429 ]
+						"storage_rect" : [ 1313, 93, 2383, 696 ]
 					}
 ,
 					"style" : "",
@@ -71224,7 +71226,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.875034, 0.886275, 0.690563, 1.0 ],
+					"bgcolor" : [ 0.830167, 0.817442, 0.760077, 1.0 ],
 					"fontface" : 1,
 					"id" : "obj-87",
 					"maxclass" : "comment",
@@ -71241,7 +71243,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.875034, 0.886275, 0.690563, 1.0 ],
+					"bgcolor" : [ 0.830167, 0.817442, 0.760077, 1.0 ],
 					"fontface" : 1,
 					"id" : "obj-31",
 					"maxclass" : "comment",
@@ -71258,7 +71260,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.621573, 0.81763, 0.73251, 1.0 ],
+					"bgcolor" : [ 0.592157, 0.556863, 0.470588, 1.0 ],
 					"fontface" : 1,
 					"id" : "obj-30",
 					"maxclass" : "comment",
@@ -71275,7 +71277,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.6232, 0.82, 0.73472, 1.0 ],
+					"bgcolor" : [ 0.592157, 0.556863, 0.470588, 1.0 ],
 					"fontface" : 1,
 					"id" : "obj-131",
 					"maxclass" : "comment",
@@ -71292,7 +71294,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.623529, 0.815686, 0.732418, 1.0 ],
+					"bgcolor" : [ 0.592157, 0.556863, 0.470588, 1.0 ],
 					"fontface" : 1,
 					"id" : "obj-78",
 					"maxclass" : "comment",

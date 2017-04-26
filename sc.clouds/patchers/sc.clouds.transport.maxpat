@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 59.0, 574.0, 1005.0, 958.0 ],
+		"rect" : [ 59.0, 478.0, 1005.0, 958.0 ],
 		"bgcolor" : [ 0.88, 0.88, 0.864286, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -41,8 +41,8 @@
 				"box" : 				{
 					"angle" : 270.0,
 					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"grad1" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"grad2" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"grad1" : [ 0.592157, 0.556863, 0.470588, 1.0 ],
+					"grad2" : [ 0.592157, 0.556863, 0.470588, 1.0 ],
 					"id" : "obj-25",
 					"maxclass" : "panel",
 					"mode" : 1,
@@ -431,7 +431,8 @@
 					"presentation_rect" : [ 0.0, 0.0, 244.0, 20.0 ],
 					"style" : "",
 					"text" : "render (space)",
-					"texton" : "render (space)"
+					"texton" : "render (space)",
+					"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
 			}

@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 461.0, 117.0, 1399.0, 1184.0 ],
+		"rect" : [ 412.0, 86.0, 1390.0, 1072.0 ],
 		"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
 		"editing_bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
 		"bglocked" : 0,
@@ -41,7 +41,7 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"bgcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-					"bgmode" : 2,
+					"bgmode" : 1,
 					"border" : 1,
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
@@ -61,7 +61,7 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-					"bgmode" : 2,
+					"bgmode" : 1,
 					"border" : 1,
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
@@ -83,7 +83,7 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-					"bgmode" : 2,
+					"bgmode" : 1,
 					"border" : 1,
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
@@ -105,7 +105,7 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-					"bgmode" : 2,
+					"bgmode" : 1,
 					"border" : 1,
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
@@ -126,7 +126,7 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-					"bgmode" : 2,
+					"bgmode" : 1,
 					"border" : 1,
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
@@ -147,7 +147,7 @@
 , 			{
 				"box" : 				{
 					"background" : 1,
-					"bgcolor" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 					"fontsize" : 18.0,
 					"id" : "obj-2",
 					"maxclass" : "comment",
@@ -156,6 +156,7 @@
 					"patching_rect" : [ 21.0, 18.0, 248.0, 27.0 ],
 					"style" : "",
 					"text" : "Control",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textjustification" : 1
 				}
 
@@ -163,7 +164,7 @@
 , 			{
 				"box" : 				{
 					"background" : 1,
-					"bgcolor" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 					"fontsize" : 18.0,
 					"id" : "obj-3",
 					"maxclass" : "comment",
@@ -179,7 +180,7 @@
 , 			{
 				"box" : 				{
 					"background" : 1,
-					"bgcolor" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 					"fontsize" : 18.0,
 					"id" : "obj-4",
 					"maxclass" : "comment",
@@ -188,6 +189,7 @@
 					"patching_rect" : [ 21.0, 606.0, 248.0, 27.0 ],
 					"style" : "",
 					"text" : "Video Output",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textjustification" : 1
 				}
 
@@ -195,7 +197,7 @@
 , 			{
 				"box" : 				{
 					"background" : 1,
-					"bgcolor" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 					"fontsize" : 18.0,
 					"id" : "obj-5",
 					"maxclass" : "comment",
@@ -204,6 +206,7 @@
 					"patching_rect" : [ 286.0, 18.0, 371.5, 27.0 ],
 					"style" : "",
 					"text" : "Simulation Parameters",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textjustification" : 1
 				}
 
@@ -211,7 +214,7 @@
 , 			{
 				"box" : 				{
 					"background" : 1,
-					"bgcolor" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
+					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 					"fontsize" : 18.0,
 					"id" : "obj-11",
 					"maxclass" : "comment",
@@ -220,6 +223,7 @@
 					"patching_rect" : [ 674.5, 18.0, 693.0, 27.0 ],
 					"style" : "",
 					"text" : "Simulation Status",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textjustification" : 1
 				}
 
