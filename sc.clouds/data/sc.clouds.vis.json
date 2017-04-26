@@ -20,6 +20,7 @@
 					"vis-low-y" : [ 0.0 ],
 					"vis-low-z" : [ 100.0 ],
 					"vis-mode" : [ 3 ],
+					"vis-syphon-servername" : [  ],
 					"vis-texture" : [ "watertemp" ],
 					"vis-window-name" : [ "sc-clouds" ]
 				}
@@ -36,14 +37,15 @@
 					"vis-contrast-y" : [ 1.0 ],
 					"vis-contrast-z" : [ 1.0 ],
 					"vis-high-w" : [ 1.0 ],
-					"vis-high-x" : [ 1.0 ],
-					"vis-high-y" : [ 1.0 ],
+					"vis-high-x" : [ 4.0 ],
+					"vis-high-y" : [ 4.0 ],
 					"vis-high-z" : [ 1.0 ],
 					"vis-low-w" : [ 0.0 ],
-					"vis-low-x" : [ 0.0 ],
-					"vis-low-y" : [ 0.0 ],
+					"vis-low-x" : [ -4.0 ],
+					"vis-low-y" : [ -4.0 ],
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 2 ],
+					"vis-syphon-servername" : [ "sc.clouds.clouds" ],
 					"vis-texture" : [ "velocity" ],
 					"vis-window-name" : [ "sc-clouds" ]
 				}
@@ -59,15 +61,16 @@
 					"vis-contrast-x" : [ 1.0 ],
 					"vis-contrast-y" : [ 1.0 ],
 					"vis-contrast-z" : [ 1.0 ],
-					"vis-high-w" : [ 1.0 ],
-					"vis-high-x" : [ 1.0 ],
-					"vis-high-y" : [ 1.0 ],
-					"vis-high-z" : [ 1.0 ],
-					"vis-low-w" : [ 0.0 ],
-					"vis-low-x" : [ 0.0 ],
-					"vis-low-y" : [ 0.0 ],
-					"vis-low-z" : [ 0.0 ],
-					"vis-mode" : [ 1 ],
+					"vis-high-w" : [ 2.0 ],
+					"vis-high-x" : [ 2.0 ],
+					"vis-high-y" : [ 2.0 ],
+					"vis-high-z" : [ 2.0 ],
+					"vis-low-w" : [ -2.0 ],
+					"vis-low-x" : [ -2.0 ],
+					"vis-low-y" : [ -2.0 ],
+					"vis-low-z" : [ -2.0 ],
+					"vis-mode" : [ 2 ],
+					"vis-syphon-servername" : [ "sc.clouds.clouds" ],
 					"vis-texture" : [ "vorticity" ],
 					"vis-window-name" : [ "sc-clouds" ]
 				}
@@ -80,11 +83,11 @@
 				"data" : 				{
 					"vis-context" : [ "sc-clouds" ],
 					"vis-contrast-w" : [ 1.0 ],
-					"vis-contrast-x" : [ 1.0 ],
-					"vis-contrast-y" : [ 1.0 ],
+					"vis-contrast-x" : [ 0.5 ],
+					"vis-contrast-y" : [ 0.0 ],
 					"vis-contrast-z" : [ 1.0 ],
 					"vis-high-w" : [ 1.0 ],
-					"vis-high-x" : [ 1.0 ],
+					"vis-high-x" : [ 8.0 ],
 					"vis-high-y" : [ 1.0 ],
 					"vis-high-z" : [ 1.0 ],
 					"vis-low-w" : [ 0.0 ],
@@ -92,6 +95,7 @@
 					"vis-low-y" : [ 0.0 ],
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 1 ],
+					"vis-syphon-servername" : [ "sc.clouds.clouds" ],
 					"vis-texture" : [ "pressure" ],
 					"vis-window-name" : [ "sc-clouds" ]
 				}
@@ -116,6 +120,7 @@
 					"vis-low-y" : [ 0.0 ],
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 1 ],
+					"vis-syphon-servername" : [  ],
 					"vis-texture" : [ "divergence" ],
 					"vis-window-name" : [ "sc-clouds" ]
 				}
@@ -140,6 +145,7 @@
 					"vis-low-y" : [ 0.0 ],
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 1 ],
+					"vis-syphon-servername" : [  ],
 					"vis-texture" : [ "hsflow" ],
 					"vis-window-name" : [ "sc-clouds" ]
 				}
@@ -156,7 +162,7 @@
 					"vis-contrast-y" : [ 1.0 ],
 					"vis-contrast-z" : [ 1.0 ],
 					"vis-high-w" : [ 1.0 ],
-					"vis-high-x" : [ 1.0 ],
+					"vis-high-x" : [ 1.0001 ],
 					"vis-high-y" : [ 1.0 ],
 					"vis-high-z" : [ 1.0 ],
 					"vis-low-w" : [ 0.0 ],
@@ -164,6 +170,7 @@
 					"vis-low-y" : [ 0.0 ],
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 0 ],
+					"vis-syphon-servername" : [ "sc.clouds.clouds" ],
 					"vis-texture" : [ "camera" ],
 					"vis-window-name" : [ "sc-clouds" ]
 				}
@@ -180,7 +187,7 @@
 					"vis-contrast-y" : [ 1.0 ],
 					"vis-contrast-z" : [ 1.0 ],
 					"vis-high-w" : [ 0.0 ],
-					"vis-high-x" : [ 0.0 ],
+					"vis-high-x" : [ -0.01 ],
 					"vis-high-y" : [ 0.0 ],
 					"vis-high-z" : [ 0.0 ],
 					"vis-low-w" : [ 1.0 ],
@@ -188,6 +195,7 @@
 					"vis-low-y" : [ 1.0 ],
 					"vis-low-z" : [ 1.0 ],
 					"vis-mode" : [ 1 ],
+					"vis-syphon-servername" : [ "sc.clouds.clouds" ],
 					"vis-texture" : [ "obstacles" ],
 					"vis-window-name" : [ "sc-clouds" ]
 				}
@@ -212,6 +220,7 @@
 					"vis-low-y" : [ 0.0 ],
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 0 ],
+					"vis-syphon-servername" : [  ],
 					"vis-texture" : [ "bgmask" ],
 					"vis-window-name" : [ "sc-clouds" ]
 				}
@@ -227,15 +236,16 @@
 					"vis-contrast-x" : [ 1.0 ],
 					"vis-contrast-y" : [ 1.0 ],
 					"vis-contrast-z" : [ 1.0 ],
-					"vis-high-w" : [ 1.0 ],
-					"vis-high-x" : [ 1.0 ],
-					"vis-high-y" : [ 1.0 ],
-					"vis-high-z" : [ 1.0 ],
+					"vis-high-w" : [ 0.4 ],
+					"vis-high-x" : [ 0.4 ],
+					"vis-high-y" : [ 0.4 ],
+					"vis-high-z" : [ 0.4 ],
 					"vis-low-w" : [ 0.0 ],
 					"vis-low-x" : [ 0.0 ],
 					"vis-low-y" : [ 0.0 ],
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 0 ],
+					"vis-syphon-servername" : [ "sc.clouds.clouds" ],
 					"vis-texture" : [ "bgsub" ],
 					"vis-window-name" : [ "sc-clouds" ]
 				}
@@ -260,6 +270,7 @@
 					"vis-low-y" : [ 0.0 ],
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 0 ],
+					"vis-syphon-servername" : [  ],
 					"vis-texture" : [ "static_video" ],
 					"vis-window-name" : [ "sc-clouds" ]
 				}
