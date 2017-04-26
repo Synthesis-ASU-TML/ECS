@@ -54,7 +54,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 580.0, 1196.0, 80.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 183.0, 103.0, 59.0, 35.0 ],
+					"presentation_rect" : [ 183.0, 230.0, 59.0, 35.0 ],
 					"style" : "",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -75,7 +75,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 498.0, 1196.0, 80.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 122.0, 103.0, 59.0, 35.0 ],
+					"presentation_rect" : [ 122.0, 230.0, 59.0, 35.0 ],
 					"style" : "",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -97,7 +97,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 410.0, 1196.0, 81.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 103.0, 59.0, 35.0 ],
+					"presentation_rect" : [ 0.0, 230.0, 59.0, 35.0 ],
 					"style" : "",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -745,26 +745,6 @@
 					"patching_rect" : [ 271.5, 885.0, 72.0, 22.0 ],
 					"style" : "",
 					"text" : "loadmess 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"angle" : 270.0,
-					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"grad1" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"grad2" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"id" : "obj-5",
-					"maxclass" : "panel",
-					"mode" : 1,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 312.0, 322.0, 56.0, 56.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 140.0, 242.0, 5.0 ],
-					"proportion" : 0.39,
-					"rounded" : 0,
-					"style" : ""
 				}
 
 			}
@@ -1446,7 +1426,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 322.0, 1196.0, 80.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 61.0, 103.0, 59.0, 35.0 ],
+					"presentation_rect" : [ 61.0, 230.0, 59.0, 35.0 ],
 					"style" : "",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -2425,7 +2405,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 100.0, 354.0, 200.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 145.0, 242.0, 24.0 ],
+					"presentation_rect" : [ 0.0, 103.0, 242.0, 24.0 ],
 					"style" : "default",
 					"tabcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 					"tabs" : [ "camera", "syphon", "movie" ],
@@ -24374,7 +24354,7 @@
 ,
 					"patching_rect" : [ 639.0, 726.0, 250.0, 77.283325 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 171.0, 242.0, 48.0 ],
+					"presentation_rect" : [ 0.0, 129.0, 242.0, 48.0 ],
 					"varname" : "movie_input",
 					"viewvisibility" : 1
 				}
@@ -24389,6 +24369,7 @@
 					"embed" : 1,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
+					"hidden" : 1,
 					"id" : "obj-151",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
@@ -46472,7 +46453,7 @@
 ,
 					"patching_rect" : [ 100.0, 725.0, 250.0, 77.283325 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 171.0, 242.0, 99.0 ],
+					"presentation_rect" : [ 0.0, 129.0, 242.0, 99.0 ],
 					"varname" : "camera_input",
 					"viewvisibility" : 1
 				}
@@ -46487,7 +46468,6 @@
 					"embed" : 1,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
-					"hidden" : 1,
 					"id" : "obj-150",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
@@ -46673,7 +46653,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-52",
-									"items" : "<empty>",
+									"items" : [ "Black Syphon", ",", "Max", ",", "Max", ",", "Max", ",", "Max" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -46775,7 +46755,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-40",
-									"items" : "<empty>",
+									"items" : [ "UltraStudio Express", ",", "", ",", "", ",", "", ",", "" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -68432,7 +68412,7 @@
 ,
 					"patching_rect" : [ 366.5, 725.0, 250.0, 77.283325 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 171.0, 242.0, 99.0 ],
+					"presentation_rect" : [ 0.0, 129.0, 242.0, 99.0 ],
 					"varname" : "syphon_input",
 					"viewvisibility" : 1
 				}
