@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 806.0, 642.0, 837.0, 694.0 ],
+		"rect" : [ 134.0, 534.0, 837.0, 694.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,14 +38,26 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-67",
-					"linecount" : 2,
+					"id" : "obj-4",
+					"linecount" : 7,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 56.5, 507.0, 238.0, 33.0 ],
+					"patching_rect" : [ 412.5, 499.0, 46.0, 100.0 ],
 					"style" : "",
-					"text" : "TODO: UDP send to lights computer . . .\nMay need to re-order indices."
+					"text" : "red\nlime\namber\ngreen\ncyan\nblue\nindigo"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 56.5, 620.0, 160.0, 22.0 ],
+					"style" : "",
+					"text" : "udpsend 2.78.21.100 10000"
 				}
 
 			}
@@ -56,7 +68,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 56.5, 462.0, 107.0, 22.0 ],
+					"patching_rect" : [ 56.5, 581.0, 107.0, 22.0 ],
 					"style" : "",
 					"text" : "o.prepend /s4LED"
 				}
@@ -80,13 +92,13 @@
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-55",
-					"linecount" : 11,
+					"linecount" : 19,
 					"maxclass" : "o.expr.codebox",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 56.5, 277.0, 395.0, 168.0 ],
-					"text" : "map(\n    lambda(\n        [r, g, b, i], \n        assign(\"/\"+i+\"/color/rgb\", [r,g,b]) \n    ), \n    /r, /g, /b,  \n    aseq(1, length(/r)) \n),\ndelete(/r),\ndelete(/g),\ndelete(/b)",
+					"patching_rect" : [ 56.5, 283.0, 339.0, 281.0 ],
+					"text" : "map(\n    lambda(\n        [r, g, b, i], \n        assign(\"/\"+i+\"/color/rgb\", [r,g,b]) \n    ), \n    /r, /g, /b, \n    [3, 6, 9, 12, 2, 5, 8, 11, 1, 3, 7, 10]\n),\nmap(\n\t    lambda(\n        [r, g, b, i],\n        assign(\"/\"+i+\"/int\", div(r+g+b,3.0))\n    ),\n    /r, /g, /b, \n    [3, 6, 9, 12, 2, 5, 8, 11, 1, 3, 7, 10]\n),\ndelete(/r),\ndelete(/g),\ndelete(/b)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -149,9 +161,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 56.5, 136.0, 112.0, 22.0 ],
+					"patching_rect" : [ 56.5, 136.0, 122.0, 22.0 ],
 					"style" : "",
-					"text" : "jit.matrix 4 char 4 3"
+					"text" : "jit.matrix a 4 char 4 3"
 				}
 
 			}
@@ -162,9 +174,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 56.5, 97.0, 304.0, 22.0 ],
+					"patching_rect" : [ 56.5, 97.0, 249.0, 22.0 ],
 					"style" : "",
-					"text" : "jit.gl.texture sc-clouds @dim 4 3 @name downsampled"
+					"text" : "jit.gl.texture sc-clouds @name downsampled"
 				}
 
 			}
@@ -201,7 +213,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 455.0, 277.0, 268.0, 199.0 ]
+					"patching_rect" : [ 412.5, 283.0, 268.0, 199.0 ]
 				}
 
 			}
@@ -261,7 +273,7 @@
 					"destination" : [ "obj-3", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 66.0, 177.0, 464.5, 177.0 ],
+					"midpoints" : [ 66.0, 177.0, 422.0, 177.0 ],
 					"order" : 0,
 					"source" : [ "obj-14", 0 ]
 				}
@@ -281,6 +293,7 @@
 					"destination" : [ "obj-56", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 169.0, 231.0, 98.0, 231.0 ],
 					"source" : [ "obj-28", 0 ]
 				}
 
@@ -290,6 +303,7 @@
 					"destination" : [ "obj-56", 2 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 269.0, 231.0, 130.0, 231.0 ],
 					"source" : [ "obj-29", 0 ]
 				}
 
@@ -309,6 +323,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-56", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-64", 0 ]
 				}
 
 			}
