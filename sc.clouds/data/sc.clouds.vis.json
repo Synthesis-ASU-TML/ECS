@@ -20,9 +20,11 @@
 					"vis-low-y" : [ 0.0 ],
 					"vis-low-z" : [ 100.0 ],
 					"vis-mode" : [ 3 ],
+					"vis-output-texture" : [ "ema-output" ],
 					"vis-syphon-servername" : [  ],
 					"vis-texture" : [ "watertemp" ],
-					"vis-window-name" : [ "sc-clouds" ]
+					"vis-window-name" : [ "sc-clouds" ],
+					"cycletime" : [ 30000 ]
 				}
 
 			}
@@ -45,9 +47,11 @@
 					"vis-low-y" : [ -4.0 ],
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 2 ],
+					"vis-output-texture" : [ "ema-output" ],
 					"vis-syphon-servername" : [ "sc.clouds.clouds" ],
 					"vis-texture" : [ "velocity" ],
-					"vis-window-name" : [ "sc-clouds" ]
+					"vis-window-name" : [ "sc-clouds" ],
+					"cycletime" : [ 5000 ]
 				}
 
 			}
@@ -70,9 +74,11 @@
 					"vis-low-y" : [ -2.0 ],
 					"vis-low-z" : [ -2.0 ],
 					"vis-mode" : [ 2 ],
+					"vis-output-texture" : [ "ema-output" ],
 					"vis-syphon-servername" : [ "sc.clouds.clouds" ],
 					"vis-texture" : [ "vorticity" ],
-					"vis-window-name" : [ "sc-clouds" ]
+					"vis-window-name" : [ "sc-clouds" ],
+					"cycletime" : [ 0 ]
 				}
 
 			}
@@ -95,9 +101,11 @@
 					"vis-low-y" : [ 0.0 ],
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 1 ],
+					"vis-output-texture" : [ "ema-output" ],
 					"vis-syphon-servername" : [ "sc.clouds.clouds" ],
 					"vis-texture" : [ "pressure" ],
-					"vis-window-name" : [ "sc-clouds" ]
+					"vis-window-name" : [ "sc-clouds" ],
+					"cycletime" : [ 0 ]
 				}
 
 			}
@@ -120,9 +128,11 @@
 					"vis-low-y" : [ 0.0 ],
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 1 ],
+					"vis-output-texture" : [ "ema-output" ],
 					"vis-syphon-servername" : [  ],
 					"vis-texture" : [ "divergence" ],
-					"vis-window-name" : [ "sc-clouds" ]
+					"vis-window-name" : [ "sc-clouds" ],
+					"cycletime" : [ 0 ]
 				}
 
 			}
@@ -145,9 +155,11 @@
 					"vis-low-y" : [ 0.0 ],
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 1 ],
+					"vis-output-texture" : [ "ema-output" ],
 					"vis-syphon-servername" : [  ],
 					"vis-texture" : [ "hsflow" ],
-					"vis-window-name" : [ "sc-clouds" ]
+					"vis-window-name" : [ "sc-clouds" ],
+					"cycletime" : [ 5000 ]
 				}
 
 			}
@@ -170,9 +182,11 @@
 					"vis-low-y" : [ 0.0 ],
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 0 ],
+					"vis-output-texture" : [ "ema-output" ],
 					"vis-syphon-servername" : [ "sc.clouds.clouds" ],
 					"vis-texture" : [ "camera" ],
-					"vis-window-name" : [ "sc-clouds" ]
+					"vis-window-name" : [ "sc-clouds" ],
+					"cycletime" : [ 5000 ]
 				}
 
 			}
@@ -195,9 +209,11 @@
 					"vis-low-y" : [ 1.0 ],
 					"vis-low-z" : [ 1.0 ],
 					"vis-mode" : [ 1 ],
+					"vis-output-texture" : [ "ema-output" ],
 					"vis-syphon-servername" : [ "sc.clouds.clouds" ],
 					"vis-texture" : [ "obstacles" ],
-					"vis-window-name" : [ "sc-clouds" ]
+					"vis-window-name" : [ "sc-clouds" ],
+					"cycletime" : [ 5000 ]
 				}
 
 			}
@@ -220,9 +236,11 @@
 					"vis-low-y" : [ 0.0 ],
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 0 ],
+					"vis-output-texture" : [ "ema-output" ],
 					"vis-syphon-servername" : [  ],
 					"vis-texture" : [ "bgmask" ],
-					"vis-window-name" : [ "sc-clouds" ]
+					"vis-window-name" : [ "sc-clouds" ],
+					"cycletime" : [ 0 ]
 				}
 
 			}
@@ -245,9 +263,11 @@
 					"vis-low-y" : [ 0.0 ],
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 0 ],
+					"vis-output-texture" : [ "ema-output" ],
 					"vis-syphon-servername" : [ "sc.clouds.clouds" ],
 					"vis-texture" : [ "bgsub" ],
-					"vis-window-name" : [ "sc-clouds" ]
+					"vis-window-name" : [ "sc-clouds" ],
+					"cycletime" : [ 5000 ]
 				}
 
 			}
@@ -270,9 +290,11 @@
 					"vis-low-y" : [ 0.0 ],
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 0 ],
+					"vis-output-texture" : [ "ema-output" ],
 					"vis-syphon-servername" : [  ],
 					"vis-texture" : [ "static_video" ],
-					"vis-window-name" : [ "sc-clouds" ]
+					"vis-window-name" : [ "sc-clouds" ],
+					"cycletime" : [ 10000 ]
 				}
 
 			}
