@@ -54,7 +54,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 580.0, 1196.0, 80.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 185.0, 230.0, 59.0, 35.0 ],
+					"presentation_rect" : [ 185.0, 225.0, 59.0, 35.0 ],
 					"style" : "",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -76,7 +76,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 498.0, 1196.0, 80.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 123.333336, 230.0, 59.0, 35.0 ],
+					"presentation_rect" : [ 123.333336, 225.0, 59.0, 35.0 ],
 					"style" : "",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -98,7 +98,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 410.0, 1196.0, 81.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 230.0, 59.0, 35.0 ],
+					"presentation_rect" : [ 0.0, 225.0, 59.0, 35.0 ],
 					"style" : "",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -1425,7 +1425,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 322.0, 1196.0, 80.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 61.666668, 230.0, 59.0, 35.0 ],
+					"presentation_rect" : [ 61.666668, 225.0, 59.0, 35.0 ],
 					"style" : "",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -2422,6 +2422,7 @@
 					"embed" : 1,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
+					"hidden" : 1,
 					"id" : "obj-152",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
@@ -46452,7 +46453,7 @@
 ,
 					"patching_rect" : [ 418.5, 725.0, 247.5, 97.283325 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 129.0, 244.0, 99.0 ],
+					"presentation_rect" : [ 0.0, 129.0, 244.0, 94.0 ],
 					"varname" : "camera_input",
 					"viewvisibility" : 1
 				}
@@ -46467,7 +46468,6 @@
 					"embed" : 1,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
-					"hidden" : 1,
 					"id" : "obj-150",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
@@ -68412,7 +68412,7 @@
 ,
 					"patching_rect" : [ 100.0, 725.0, 247.0, 97.283325 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 129.0, 244.0, 99.0 ],
+					"presentation_rect" : [ 0.0, 129.0, 244.0, 94.0 ],
 					"varname" : "syphon_input",
 					"viewvisibility" : 1
 				}

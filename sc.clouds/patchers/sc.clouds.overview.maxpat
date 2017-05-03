@@ -53,7 +53,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 2.0, 2.0 ],
-					"patching_rect" : [ 712.5, 47.0, 689.0, 1031.0 ],
+					"patching_rect" : [ 712.5, 47.0, 689.0, 971.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -74,7 +74,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 2.0, 2.0 ],
 					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 21.0, 633.0, 248.0, 445.0 ],
+					"patching_rect" : [ 21.0, 573.0, 248.0, 445.0 ],
 					"varname" : "sc.clouds.video-output",
 					"viewvisibility" : 1
 				}
@@ -96,7 +96,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 2.0, 2.0 ],
 					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 21.0, 317.0, 248.0, 270.0 ],
+					"patching_rect" : [ 21.0, 265.0, 248.0, 265.0 ],
 					"varname" : "sc.clouds.video-input",
 					"viewvisibility" : 1
 				}
@@ -117,7 +117,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 2.0, 2.0 ],
-					"patching_rect" : [ 287.0, 47.0, 408.5, 1031.0 ],
+					"patching_rect" : [ 286.0, 47.0, 409.5, 971.0 ],
 					"varname" : "sc.clouds.parameters",
 					"viewvisibility" : 1
 				}
@@ -139,7 +139,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 2.0, 2.0 ],
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 21.0, 47.0, 248.0, 224.0 ],
+					"patching_rect" : [ 21.0, 47.0, 248.0, 175.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -148,12 +148,12 @@
 				"box" : 				{
 					"background" : 1,
 					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"fontsize" : 18.0,
+					"fontsize" : 16.0,
 					"id" : "obj-2",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 21.0, 18.0, 248.0, 27.0 ],
+					"patching_rect" : [ 21.0, 21.0, 248.0, 24.0 ],
 					"style" : "",
 					"text" : "Control",
 					"textjustification" : 1
@@ -164,12 +164,12 @@
 				"box" : 				{
 					"background" : 1,
 					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"fontsize" : 18.0,
+					"fontsize" : 16.0,
 					"id" : "obj-3",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 21.0, 288.0, 248.0, 27.0 ],
+					"patching_rect" : [ 21.0, 239.0, 248.0, 24.0 ],
 					"style" : "",
 					"text" : "Camera Input",
 					"textjustification" : 1
@@ -180,12 +180,12 @@
 				"box" : 				{
 					"background" : 1,
 					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"fontsize" : 18.0,
+					"fontsize" : 16.0,
 					"id" : "obj-4",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 21.0, 604.0, 248.0, 27.0 ],
+					"patching_rect" : [ 21.0, 547.0, 248.0, 24.0 ],
 					"style" : "",
 					"text" : "Video Output",
 					"textjustification" : 1
@@ -196,12 +196,12 @@
 				"box" : 				{
 					"background" : 1,
 					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"fontsize" : 18.0,
+					"fontsize" : 16.0,
 					"id" : "obj-5",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 286.0, 18.0, 409.5, 27.0 ],
+					"patching_rect" : [ 286.0, 21.0, 409.5, 24.0 ],
 					"style" : "",
 					"text" : "Simulation Parameters",
 					"textjustification" : 1
@@ -212,12 +212,12 @@
 				"box" : 				{
 					"background" : 1,
 					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"fontsize" : 18.0,
+					"fontsize" : 16.0,
 					"id" : "obj-11",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 712.5, 18.0, 689.0, 27.0 ],
+					"patching_rect" : [ 712.5, 21.0, 689.0, 24.0 ],
 					"style" : "",
 					"text" : "Simulation Status",
 					"textjustification" : 1
