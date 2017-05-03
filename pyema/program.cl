@@ -1,21 +1,6 @@
 void coords_dim_uv_px(int2* coords, int2* dim, float2* uv, float2* px);
-void directions(float2* left, float2* right, float2* up, float2* down, float2 px);
 void read_neighbors(image2d_t source, float2 uv, float2 px, float4* left, float4* right, float4* up, float4* down);
 void read_masked_neighbors(image2d_t source, image2d_t mask, float2 uv, float2 px, float4* left, float4* right, float4* up, float4* down);
-
-// Make vectors for neighboring pixels.
-void directions(
-	float2* left, 
-	float2* right, 
-	float2* up, 
-	float2* down, 
-	float2 px
-) {
-	(*left).xy = (float2)(-px.x, 0);
-	(*right).xy = (float2)(px.x, 0);
-	(*up).xy = (float2)(-px.y, 0);
-	(*down).xy = (float2)(px.y, 0);
-}
 
 // Get neighboring pixel values.
 void read_neighbors(
@@ -30,14 +15,11 @@ void read_neighbors(
 	const sampler_t sampler = CLK_NORMALIZED_COORDS_TRUE | 
 		CLK_ADDRESS_REPEAT | 
 		CLK_FILTER_LINEAR;
-
-	float2 l, r, u, d;
-	directions(&l, &r, &u, &d, px);
-
-	(*left) = read_imagef(source, sampler, l + uv);
-	(*right) = read_imagef(source, sampler, r + uv);
-	(*up) = read_imagef(source, sampler, u + uv);
-	(*down) = read_imagef(source, sampler, d + uv);
+	
+	(*left) = read_imagef(source, sampler, uv + (float2)(-px.x, 0));
+	(*right) = read_imagef(source, sampler, uv + (float2)(px.x, 0));
+	(*up) = read_imagef(source, sampler, uv + (float2)(0, -px.y));
+	(*down) = read_imagef(source, sampler, uv + (float2)(0, px.y));
 }
 
 // Get neighboring pixel values, masked by a binary image.
@@ -87,7 +69,8 @@ __kernel void advect(
 	read_only image2d_t obstacles,
 	write_only image2d_t source_out, 
 	const float dt, 
-	const float dx
+	const float dx,
+	const float4 boundaries
 ) {
 	const sampler_t sampler = CLK_NORMALIZED_COORDS_TRUE | 
 		CLK_ADDRESS_REPEAT | 
@@ -97,16 +80,30 @@ __kernel void advect(
 	coords_dim_uv_px(&coords, &dim, &uv, &px);
 
 	float2 srcuv = read_imagef(velocity_in, sampler, uv).xy;
-	srcuv = uv - srcuv * (float2)(dt);
+	srcuv = uv - srcuv * (float2)dt * (px / (float2)dx);
+	
+	if (boundaries.x == 0) {
+		srcuv.x = max(0.0f, srcuv.x);
+	}
+	
+	if (boundaries.y == 0) {
+		srcuv.x = min(1.0f, srcuv.x);
+	}
+
+	if (boundaries.z == 0) {
+		srcuv.y = max(0.0f, srcuv.y);
+	}
+
+	if (boundaries.w == 0) {
+		srcuv.y = min(1.0f, srcuv.y);
+	}
 
 	float4 srcval = read_imagef(source_in, sampler, srcuv);
 	float4 src_up, src_down, src_left, src_right;
 	read_masked_neighbors(source_in, obstacles, srcuv, px, &src_left, &src_right, &src_up, &src_down);
 	
 	write_imagef(
-		source_out, coords, (
-			0.25f * (src_up + src_down + src_left + src_right)
-		) * read_imagef(obstacles, sampler, uv)
+		source_out, coords, srcval * read_imagef(obstacles, sampler, uv)
 	);
 }
 
@@ -116,7 +113,7 @@ __kernel void buoyancy_force(
 	write_only image2d_t force_out, 
 	const float2 g, 
 	const float2 o, 
-	const float p0
+	const float t0
 ) {
 	const sampler_t sampler = CLK_NORMALIZED_COORDS_FALSE | 
 		CLK_ADDRESS_REPEAT | 
@@ -130,7 +127,7 @@ __kernel void buoyancy_force(
 	float vapor = wtemp[0];
 	
 	float4 force = (float4)(0, 0, 0, 0);
-	force.xy = g * (float2)(ptemp * (1 + 0.61 * vapor) / p0 - liquid);
+	force.xy = g * (float2)(ptemp / t0 + 0.61 * vapor - liquid);
 
 	write_imagef(force_out, coords, force);
 }
@@ -253,33 +250,39 @@ __kernel void divergence(
 
 // Compute pressure via jacobi iteration.
 __kernel void jacobi(
-	read_only image2d_t pressure, 
-	read_only image2d_t divergence, 
+	read_only image2d_t x, 
+	read_only image2d_t b, 
 	read_only image2d_t obstacles, 
-	write_only image2d_t pressure_out, 
-	float dx
+	write_only image2d_t x_out, 
+	float alpha,
+	float beta,
+	int iteration
 ) {
 	const sampler_t sampler = CLK_NORMALIZED_COORDS_TRUE | 
 		CLK_ADDRESS_REPEAT | 
 		CLK_FILTER_LINEAR;
-
+	
 	int2 coords, dim; float2 uv, px;
-	float4 pl, pr, pu, pd, ol, or, ou, od;
+	float4 xl, xr, xu, xd, ol, or, ou, od;
 	coords_dim_uv_px(&coords, &dim, &uv, &px);
 	
-	read_neighbors(pressure, uv, px, &pl, &pr, &pu, &pd);
+	read_neighbors(x, uv, px, &xl, &xr, &xu, &xd);
 	read_neighbors(obstacles, uv, px, &ol, &or, &ou, &od);
-	float pc = read_imagef(pressure, sampler, uv).x;
-	float div = read_imagef(divergence, sampler, uv).x;
-
-	pl = ol.x * pl.x + (1.0f - ol.x) * pc;
-	pr = or.x * pr.x + (1.0f - or.x) * pc;
-	pu = ou.x * pu.x + (1.0f - ou.x) * pc;
-	pd = od.x * pd.x + (1.0f - od.x) * pc;
-
+	float4 xc = read_imagef(x, sampler, uv);
+	float4 bc = read_imagef(b, sampler, uv);
+	
+	if (iteration != 0) {
+		xl = ol.x * xl.x + (1.0f - ol.x) * xc.x;
+		xr = or.x * xr.x + (1.0f - or.x) * xc.x;
+		xu = ou.x * xu.x + (1.0f - ou.x) * xc.x;
+		xd = od.x * xd.x + (1.0f - od.x) * xc.x;
+	} else {
+		xl = xr = xu = xd = 0;
+	}
+	
 	write_imagef(
-		pressure_out, coords, 
-		(float4)((pl.x + pr.x + pu.x + pd.x - (dx * dx) * div) / 4.0f, 0, 0, 1)
+		x_out, coords, 
+		(float4)((xl.x + xr.x + xu.x + xd.x + alpha * bc.x) / beta, 0, 0, 1)
 	);
 }
 

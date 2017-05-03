@@ -14,7 +14,7 @@ from pyopencl.tools import get_gl_sharing_context_properties
 import pygame
 from pygame.locals import *
 
-SCREEN_SIZE = (1024, 1024)
+SCREEN_SIZE = (1024,1024)
 time_step = 0.005
 mouse_down = False
 mouse_old = dict(x=0, y=0)
@@ -44,6 +44,18 @@ def runloop():
 				return
 			if event.type == KEYUP and event.key == K_ESCAPE:
 				return
+			if event.type == KEYUP and event.key == K_1:
+				ema.dt /= 2
+			if event.type == KEYUP and event.key == K_2:
+				ema.dt *= 2
+			if event.type == KEYUP and event.key == K_3:
+				ema.dx /= 2
+			if event.type == KEYUP and event.key == K_4:
+				ema.dx *= 2
+			if event.type == KEYUP and event.key == K_5:
+				ema.vorticity_confinement_scale *= 1.5
+			if event.type == KEYUP and event.key == K_6:
+				ema.vorticity_confinement_scale /= 1.5
 
 		time_passed = clock.tick()
 		playtime += time_passed / 1000.0
@@ -71,11 +83,6 @@ def runloop():
 		)
 		pygame.display.flip()
 		
-
-def on_key(*args):
-	if args[0] == '\033' or args[0] == 'q':
-		sys.exit()
-
 def on_click(button, state, x, y):
     mouse_old['x'] = x
     mouse_old['y'] = y
@@ -157,17 +164,19 @@ class Field:
 
 class EMA:	
 	def __init__(self):
-		self.dt = .01							# s / frame
-		self.dx = .1							# Km / px
+		self.dt = .025							# s / frame
+		self.dx = .025							# Km / px
 
 		self.origin = np.array([0, 0])
-		self.gravity = np.array([0, -0.0098])	# Km / s
-		
-		self.p0 = 280							# kPa
+		self.gravity = np.array([-0.0098,0])#, -0.0098])	# Km / s
+		self.boundaries = np.array([1,1,0,0], dtype=np.float32)
 
-		self.alpha = 0
+		self.p0 = 115							# kPa
+		self.t0 = 280
+
 		self.vorticity_confinement_scale = 10
-		self.jacobi_iterations = 20
+		self.jacobi_iterations = 20#20#20#0#20
+		self.diffusion_iterations = 0
 		self.dissipation = np.array([1, 1, 1, 1])
 
 		self.vortmin = np.array((0,0), dtype=np.float32)
@@ -178,6 +187,14 @@ class EMA:
 
 		self.pressuremin = np.array((-1,-1), dtype=np.float32)
 		self.pressuremax = np.array((1,1), dtype=np.float32)
+
+		self.viscosity = 1
+
+		self.jacobi_alpha_diffusion = (self.dx * self.dx) / (self.viscosity * self.dt)
+		self.jacobi_beta_diffusion = 4 + self.jacobi_alpha_diffusion
+
+		self.jacobi_alpha_pressure = -(self.dx * self.dx)
+		self.jacobi_beta_pressure = 4
 
 	def init_cl(self):
 		'''Initialize OpenCL context, queue, and program.'''
@@ -218,7 +235,7 @@ class EMA:
 		cl_objects = dict(
 			context=self.context, 
 			queue=self.queues[0], 
-			program=self.program, 
+			program=self.program
 		)
 
 		# Final output GL/CL buffer that gets rendered.
@@ -240,6 +257,10 @@ class EMA:
 			self.context, np.float32(pp.cm.get_cmap('BrBG')(vals)), 4
 		)
 		
+		self.grayscale = cl.image_from_array(
+			self.context, np.float32(pp.cm.get_cmap('plasma')(vals)), 4
+		)
+
 		# External force is a small rectangle on left side that forces right.
 		force = np.array(zeros)
 		force[256:-256,10:100] = [1, 0, 0, 0]
@@ -249,27 +270,29 @@ class EMA:
 
 		# Initial velocity field points to the right.
 		vel = np.array(zeros)
-		self.velocity = Field(vel, vismin=(-1,-1), vismax=(1,1), **cl_objects)
+		self.velocity = Field(vel, vismin=(-20,-20), vismax=(20,20), **cl_objects)
 
 		# Initial densities set to central condensed blob within vapor blob.
 		im = Image.new("RGBA", SCREEN_SIZE, "black")
 		draw_ellipse(im, .5, .5, im.size[1] / im.size[0] * .25, .25, 'green')
 		draw_ellipse(im, .5, .5, im.size[1] / im.size[0] * .125, .125, 'red')
 		data = np.float32(im.getdata()).reshape(im.size + (4,)) / 255.
-		data[:,:,3] = 280
+		data[:,:,3] = self.t0
 		self.wtemp = Field(data, **cl_objects)
 
 		# Boundaries set to small circle in the middle of the right side.
 		im = Image.new("RGBA", SCREEN_SIZE, "white")
 		draw_ellipse(
-			im, .75, .5, 
-			im.size[1] / im.size[0] * .125, .125, 
+			im, .25, .5, 
+			im.size[1] / im.size[0] * .075, .075, 
 			(0, 0, 0, 0)
 		)
-		self.obstacles = Field(
-			np.float32(im.getdata()).reshape(im.size + (4,)) / 255., 
-			**cl_objects
-		)
+		obsarr = np.float32(im.getdata()).reshape(im.size + (4,)) / 255.
+		if self.boundaries[0] == 0: obsarr[:,0] = 0
+		if self.boundaries[1] == 0: obsarr[:,-1] = 0
+		if self.boundaries[2] == 0: obsarr[0,:] = 0
+		if self.boundaries[3] == 0: obsarr[-1,:] = 0
+		self.obstacles = Field(obsarr, **cl_objects)
 
 		# Other fields.
 		self.buoyancy = Field(np.array(zeros), **cl_objects)
@@ -312,7 +335,10 @@ class EMA:
 		)
 
 	def show(self):
-		return self.show_field_out_xfer(self.pressure, self.xfer_1d_unsigned)
+		#return self.show_field_out_xfer(self.divergence, self.grayscale)
+		#return self.show_field_out_xfer(self.velocity, self.xfer_2d_signed)
+		#return self.show_field_out_xfer(self.obstacles, self.grayscale)
+		return self.show_clouds()
 
 	def enqueue_kernel(self, kernel, gl_objects, params, queue=None):
 		if queue is None: queue = self.queues[0]
@@ -338,7 +364,8 @@ class EMA:
 				self.obstacles.clout, 
 				source.clout, 
 				np.float32(self.dt), 
-				np.float32(self.dx)
+				np.float32(self.dx),
+				self.boundaries
 			),
 			queue=queue
 		)
@@ -352,7 +379,7 @@ class EMA:
 				self.buoyancy.clout, 
 				np.float32(self.gravity), 
 				np.float32(self.origin), 
-				np.float32(self.p0)
+				np.float32(self.t0)
 			),
 			queue=queue
 		)
@@ -409,26 +436,28 @@ class EMA:
 			queue=queue
 		)
 
-	def enqueue_jacobi_iteration(self, prs_buffer, div_buffer, queue=None):
+	def enqueue_jacobi_iteration(self, x_buffer, b_buffer, out_buffer, alpha=0, beta=0, iteration=0, queue=None):
 		return self.enqueue_kernel(
 			self.jacobi_kernel,
 			[
-				prs_buffer, div_buffer, 
-				self.obstacles.clout, self.pressure.clout
+				x_buffer, b_buffer, 
+				self.obstacles.clout, out_buffer
 			],
 			(
-				prs_buffer, 
-				div_buffer, 
+				x_buffer, 
+				b_buffer, 
 				self.obstacles.clout, 
-				self.pressure.clout, 
-				np.float32(self.dx)
+				out_buffer, 
+				np.float32(alpha),
+				np.float32(beta),
+				np.int8(iteration)
 			),
 			queue=queue
 		)
 
-	def enqueue_subtract_pressure_gradient(self, queue=None):
+	def enqueue_subtract_gradient(self, queue=None):
 		return self.enqueue_kernel(
-			self.subtract_pressure_gradient_kernel,
+			self.subtract_gradient_kernel,
 			[
 				self.velocity.clin, self.pressure.clout, 
 				self.obstacles.clout, self.velocity.clout
@@ -454,24 +483,30 @@ class EMA:
 		self.wtemp.swap()
 		self.velocity.swap()
 
+		for i in range(self.diffusion_iterations):
+			self.enqueue_jacobi_iteration(
+				self.velocity.clin, self.velocity.clin, self.velocity.clout,
+				alpha=self.jacobi_alpha_diffusion, beta=self.jacobi_beta_diffusion, iteration=i+1
+			)
+
+			self.velocity.swap()
+
 		# Compute external forces.
-		#e_buoyancy = self.enqueue_buoyancy_force(queue=self.queues[0])
-		#e_vorticity = self.enqueue_compute_vorticity(queue=self.queues[-1])
-		#e_vorticity.wait()
-		#self.enqueue_vorticity_force(queue=self.queues[-1])
+		e_buoyancy = self.enqueue_buoyancy_force(queue=self.queues[0])
+		e_vorticity = self.enqueue_compute_vorticity(queue=self.queues[-1])
+		e_vorticity.wait()
+		self.enqueue_vorticity_force(queue=self.queues[-1])
 
-		#e_buoyancy.wait()
+		e_buoyancy.wait()
 
-		self.enqueue_add_force(self.ext_force_cl).wait()
+		#self.enqueue_add_force(self.ext_force_cl).wait()
+		#self.velocity.swap()
+
+		self.enqueue_add_force(self.buoyancy.clout).wait()
 		self.velocity.swap()
-
-		#self.enqueue_add_force(self.buoyancy.clout).wait()
-		#self.velocity.swap()
-		#self.velocity.enqueue_swap().wait()
-		#self.enqueue_add_force(self.vorticity_force.clout).wait()
-		#self.velocity.swap()
-		#self.velocity.enqueue_swap().wait()
-
+		self.enqueue_add_force(self.vorticity_force.clout).wait()
+		self.velocity.swap()
+		
 		# Estimate pressure.
 		self.enqueue_compute_divergence().wait()
 
@@ -479,12 +514,13 @@ class EMA:
 			self.pressure.swap()
 
 			self.enqueue_jacobi_iteration(
-				self.pressure.clin, self.divergence.clout
+				self.pressure.clin, self.divergence.clout, self.pressure.clout,
+				alpha=self.jacobi_alpha_pressure, beta=self.jacobi_beta_pressure, iteration=i
 			).wait()
 
 		# Subtract pressure gradient from velocity.
-		#self.enqueue_subtract_pressure_gradient().wait()
-		#self.velocity.swap()
+		self.enqueue_subtract_gradient().wait()
+		self.velocity.swap()
 		
 		for q in self.queues:
 			q.finish()
