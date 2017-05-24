@@ -68,13 +68,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-38",
-					"linecount" : 33,
+					"linecount" : 31,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 466.0, 25.5, 419.0, 449.0 ],
+					"patching_rect" : [ 466.0, 25.5, 446.0, 422.0 ],
 					"style" : "",
-					"text" : "Air pressure decreases with altitude. Calculate pressure of undisturbed air as a function of altitude.\n\n    p(z) = p_0 (1- \\frac{z \\Gamma}{T_0})^\\frac{g}{\\Gamma R_d}\n    \n    p(z): Pressure as a function of altitude (kPa)\n    p_0: Pressure at ground level (kPa)\n    z: Altitude (m)\n    \\Gamma: Dry adiabatic lapse rate (K / m)\n    T_0: Standard temperature at ground level (K)\n    g: Magnitude of gravity (m / s²)\n    R_d: Gas constant for dry air (J / kg K)\n\nThis component takes in an \"origin\" point that represents the ground and a vector that represents the direction of the gravity. The magnitude of the gravity vector is used for g.\n\nSee Harris (2003) Simulation of cloud dynamics on graphics hardware, Graphics Hardware, Eurographics Association, pp. 92-102\n\nTODO: This uses specific heat capacities and lapse rates for dry air, which does not necessarily apply to cloudy/moist air. A more accurate equation that would need to be computed at runtime might be based off the mixing ratios as in Stull (2015) Meteorology for Scientists and Engineers Ch. 4, p. 102. \n\n    /Gamma_s = \\frac{\\|g\\|, c_{ps}} \\frac{\n        1 + \\frac{q_v L_v}{R_d T}\n    }{\n        1 + \\frac{L_v^2 q_v \\frac{R_d}{R_v}}{c_{pv} R_d T^2}\n    }.\n\n    c_{pv}: specific heat capacity at constant volume for moist air.\n    R_v: gas constant for moist air (c_{ps} - c_{vs})"
+					"text" : "Air pressure decreases with altitude. Calculate pressure of undisturbed air as a function of altitude. See Harris (2003) Simulation of cloud dynamics on graphics hardware, Graphics Hardware, Eurographics Association, pp. 92-102\n\n    p(z) = p_0 (1- \\frac{z \\Gamma}{T_0})^\\frac{g}{\\Gamma R_d}\n    \n    p(z): Pressure as a function of altitude (kPa)\n    p_0: Pressure at ground level (kPa)\n    z: Altitude (m)\n    \\Gamma: Dry adiabatic lapse rate (K / m)\n    T_0: Standard temperature at ground level (K)\n    g: Magnitude of gravity (m / s²)\n    R_d: Gas constant for dry air (J / kg K)\n\nThis component takes in an \"origin\" point that represents the ground and a vector that represents the direction of the gravity. The magnitude of the gravity vector is used for g.\n\nTODO: This uses specific heat capacities and lapse rates for dry air, which does not necessarily apply to cloudy/moist air. A more accurate equation that would need to be computed at runtime might be based off the mixing ratios as in Stull (2015) Meteorology for Scientists and Engineers Ch. 4, p. 102. \n\n    /Gamma_s = \\frac{\\|g\\|, c_{ps}} \\frac{\n        1 + \\frac{q_v L_v}{R_d T}\n    }{\n        1 + \\frac{L_v^2 q_v \\frac{R_d}{R_v}}{c_{pv} R_d T^2}\n    }.\n\n    c_{pv}: specific heat capacity at constant volume for moist air.\n    R_v: gas constant for moist air (c_{ps} - c_{vs})"
 				}
 
 			}

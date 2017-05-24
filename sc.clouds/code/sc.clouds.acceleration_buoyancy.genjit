@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 1071.0, 214.0, 797.0, 585.0 ],
+		"rect" : [ 1127.0, 214.0, 519.0, 585.0 ],
 		"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -39,7 +39,7 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"code" : "Param gravity(0, -0.0098);\r\nParam origin(0, 0);\r\nParam base_potential_temperature(280);\r\n\r\nptemp = in1.z;\r\nvapor = in1.y;\r\nliquid = in1.x;\r\n\r\nforce = gravity * ((1 + 0.61 * vapor) - liquid);\r\n//force = gravity * (ptemp * (1 + 0.61 * vapor) / base_potential_temperature - liquid);\r\n\r\nout1 = vec(force.x, force.y, 0, 0);",
+					"code" : "Param gravity(0, -9.8);\t\t\t\t\t\t\t\t// m / s^2\r\nParam origin(0, 0);\t\t\t\t\t\t\t\t\t// ([0,1], [0,1])\r\nParam base_potential_temperature(288.15);\t\t\t// K\r\n\r\nptemp = in1.z;\r\nqv = in1.y;\r\nql = in1.x;\r\n\r\ng = gravity / 1000;\t\t\t\t\t\t\t\t\t// km / s^2\r\nT0 = base_potential_temperature;\t\t\t\t\t// K\r\n\r\naccel = g * (ptemp * (1 + 0.61 * qv) / T0 - ql);\t// km / s^2\r\n\r\nout1 = vec(accel, 0, 0);",
 					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -48,7 +48,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 40.0, 44.0, 605.0, 207.0 ],
+					"patching_rect" : [ 10.0, 44.0, 499.0, 234.0 ],
 					"style" : ""
 				}
 
@@ -62,7 +62,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 40.0, 5.0, 89.0, 22.0 ],
+					"patching_rect" : [ 10.0, 5.0, 89.0, 22.0 ],
 					"style" : "",
 					"text" : "in 1 watertemp",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -75,7 +75,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 69.0, 268.0, 245.0, 20.0 ],
+					"patching_rect" : [ 39.0, 295.0, 245.0, 20.0 ],
 					"style" : "",
 					"text" : "acceleration due to buoyant force (km/s^2)"
 				}
@@ -89,7 +89,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 40.0, 268.0, 27.0, 22.0 ],
+					"patching_rect" : [ 10.0, 295.0, 27.0, 22.0 ],
 					"style" : "",
 					"text" : "out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -99,13 +99,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-13",
-					"linecount" : 14,
+					"linecount" : 17,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 40.0, 292.0, 671.0, 194.0 ],
+					"patching_rect" : [ 10.0, 334.0, 499.0, 234.0 ],
 					"style" : "",
-					"text" : "Compute acceleration due to buoyant force. As temperature increases, dense parcels will be forced downward and less dense particles will gain lift.\n    \n    \\theta_v = \\theta (1 + 0.61 q_v)\n    B = g (\\frac{\\theta_v, \\theta_{v0}) - q_H)\n\n    \\theta_v: virtaul potential temperature (K), potential temperature of dry air if pressure densty equal to a parcel \n        of moist air.\n    \\theta: advected potential temperature (K)\n    q_v: mass mixing ratio of water vapor.\n    B: Acceleration due to buoyant force (N)\n    g: Acceleration due to gravity (km/s^2)\n    \\theta_{v0}: potential temperature at ground (K)\n    q_H: mass mixing ratio of hydrometers, i.e. all air particles except vapor (liquid)."
+					"text" : "Compute acceleration due to buoyant force. As temperature increases, dense parcels will be forced downward and less dense particles will be forced upward.\n    \n    \\theta_v = \\theta (1 + 0.61 q_v)\n    B = g (\\frac{\\theta_v, \\theta_{v0}) - q_H)\n    q_H = q_v + q_l\n\n    \\theta_v: virtual potential temperature (K), potential temperature of dry air if pressure densty equal to a parcel \n        of moist air.\n    \\theta: advected potential temperature (K)\n    q_v: mass mixing ratio of water vapor.\n    B: Acceleration due to buoyant force (km / s^2)\n    g: Acceleration due to gravity (km / s^2)\n    \\theta_{v0}: potential temperature at ground (K)\n    q_H: mass mixing ratio of hydrometers, i.e. all air particles except vapor (liquid).\n    q_v, q_l: mass mixing ratio of water vapor and liquid water"
 				}
 
 			}
