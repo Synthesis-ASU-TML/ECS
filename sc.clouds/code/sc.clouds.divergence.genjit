@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 654.0, 103.0, 581.0, 436.0 ],
+		"rect" : [ 504.0, 124.0, 533.0, 375.0 ],
 		"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 37.611084, 332.0, 113.0, 20.0 ],
+					"style" : "",
+					"text" : "Divergence (px / s)"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
 					"color" : [ 0.650963, 0.655203, 0.777106, 1.0 ],
 					"id" : "obj-8",
@@ -55,7 +67,7 @@
 			}
 , 			{
 				"box" : 				{
-					"code" : "Param cell_size(1.25);\r\n\r\npx = 1 / dim;\r\n\r\nleft = norm + vec(-px.x, 0);\r\nup = norm + vec(0, -px.y);\r\ndown = norm + vec(0, px.y);\r\nright = norm + vec(px.x, 0);\r\n\r\nleft = vec(wrap(left.x,0,1),wrap(left.y,0,1));\r\nup = vec(wrap(up.x,0,1),wrap(up.y,0,1));\r\ndown = vec(wrap(down.x,0,1),wrap(down.y,0,1));\r\nright = vec(wrap(right.x,0,1),wrap(right.y,0,1));\r\n\r\nvel_l = sample(in1, left);\r\nvel_r = sample(in1, right);\r\nvel_u = sample(in1, down);\r\nvel_d = sample(in1, up);\r\n\r\ndiv = (vel_r.x - vel_l.x) + (vel_d.y - vel_u.y) / (2 * cell_size);\r\n\r\nout1 = (div * in2).x;",
+					"code" : "// Parameters.\r\nParam cell_size(0.005);\t\t\t\t\t\t// km / px\r\ndx = cell_size;\t\t\t\t\t\t\t\t// km / px\r\npx = 1 / dim;\t\t\t\t\t\t\t\t// px / uv\r\n\r\n// \"Axis-aligned\" neighboring velocity.\r\nvl = sample(in1, norm + vec(-px.x, 0), boundmode=\"wrap\");\r\nvr = sample(in1, norm + vec(px.x, 0), boundmode=\"wrap\");\r\nvu = sample(in1, norm + vec(0, -px.y), boundmode=\"wrap\");\r\nvd = sample(in1, norm + vec(0, px.y), boundmode=\"wrap\");\r\n\r\n// Divergence: km/s / km/px = px/s\r\ndiv = (vr.x - vl.x) + (vd.y - vu.y) / (2 * dx);\r\n\r\n// Output diveregence, masked by obstacles.\r\nout1 = div * in2.x;",
 					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -64,7 +76,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 8.611084, 48.0, 480.0, 338.0 ],
+					"patching_rect" : [ 8.611084, 47.0, 421.0, 268.0 ],
 					"style" : ""
 				}
 
@@ -78,7 +90,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 469.611084, 9.0, 84.0, 22.0 ],
+					"patching_rect" : [ 410.611084, 9.0, 84.0, 22.0 ],
 					"style" : "",
 					"text" : "in 2 obstacles",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -93,7 +105,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 8.611084, 403.0, 27.0, 22.0 ],
+					"patching_rect" : [ 8.611084, 332.0, 27.0, 22.0 ],
 					"style" : "",
 					"text" : "out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]

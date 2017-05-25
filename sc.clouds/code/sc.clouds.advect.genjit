@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 529.0, 359.0, 613.0, 609.0 ],
+		"rect" : [ 529.0, 359.0, 603.0, 350.0 ],
 		"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -39,7 +39,7 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"code" : "Param dissipation(1, 1, 1, 1);\r\nParam timestep(0.125);\r\nParam cell_size(1.25);\r\n\r\npx = 1 / dim;\r\n\r\ncoord = norm - (timestep / cell_size) * (in2.xy / dim);\r\n\r\n//left = coord + vec(-px.x, 0);\r\n//right = coord + vec(px.x, 0);\r\n//up = coord + vec(0, -px.y);\r\n//down = coord + vec(0, px.y);\r\n\r\n//coord = vec(wrap(coord.x, 0, 1), wrap(coord.y, 0, 1));\r\n//left = vec(wrap(left.x, 0, 1), wrap(left.y, 0, 1));\r\n//up = vec(wrap(up.x, 0, 1), wrap(up.y, 0, 1));\r\n//right = vec(wrap(right.x, 0, 1), wrap(right.y, 0, 1));\r\n//down = vec(wrap(down.x, 0, 1), wrap(down.y, 0, 1));\r\n\r\n//mask_l = sample(in3, left);\r\n//mask_r = sample(in3, right);\r\n//mask_u = sample(in3, up);\r\n//mask_d = sample(in3, down);\r\nmask_c = sample(in3, coord);\r\nmask_pt = sample(in3, norm);\r\n\r\n//src_l = sample(in1, left) * mask_l;\r\n//src_r = sample(in1, right) * mask_r;\r\n//src_u = sample(in1, up) * mask_u;\r\n//src_d = sample(in1, down) * mask_d;\r\nsrc_c = sample(in1, coord) * mask_c;\r\n\r\nblend = src_c;//(src_l + src_r + src_u + src_d) / 4;\r\nout1 = blend * dissipation * mask_pt;// * mask_pt * dissipation;//dissipation * mask_pt * src_c;",
+					"code" : "Param dissipation(1, 1, 1, 1);\t\t\t\t\t\t\t\t// / frame\r\nParam timestep(0.125);\t\t\t\t\t\t\t\t\t\t// s / frame\r\nParam cell_size(1.25);\t\t\t\t\t\t\t\t\t\t// km / px\r\n\r\npx = 1 / dim;\t\t\t\t\t\t\t\t\t\t\t\t// px / uv\r\n\r\n// uv - uv s px km / frame km s px = uv - uv / frame\r\nsrc_coord = norm - (timestep / cell_size) * (in2.xy / dim);\r\nsrc_mask = sample(in3, src_coord);\r\nsrc_val = sample(in1, src_coord);\r\n\r\npt_mask = sample(in3, norm);\r\n\r\nout1 = src_val * src_mask * pt_mask * dissipation;",
 					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -48,7 +48,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 43.666687, 66.999992, 564.333374, 429.333374 ],
+					"patching_rect" : [ 13.666687, 51.999992, 508.333374, 239.333374 ],
 					"style" : ""
 				}
 
@@ -61,7 +61,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 43.666664, 509.333313, 27.0, 22.0 ],
+					"patching_rect" : [ 13.666687, 308.333374, 27.0, 22.0 ],
 					"style" : "",
 					"text" : "out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -77,7 +77,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 589.000061, 34.999992, 84.0, 22.0 ],
+					"patching_rect" : [ 503.000061, 19.999992, 84.0, 22.0 ],
 					"style" : "",
 					"text" : "in 3 obstacles",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -93,7 +93,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 316.333344, 34.999992, 73.0, 22.0 ],
+					"patching_rect" : [ 258.333374, 19.999992, 73.0, 22.0 ],
 					"style" : "",
 					"text" : "in 2 velocity",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -109,7 +109,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 43.666664, 34.999992, 69.0, 22.0 ],
+					"patching_rect" : [ 13.666664, 19.999992, 69.0, 22.0 ],
 					"style" : "",
 					"text" : "in 1 source",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -118,6 +118,15 @@
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
 					"disabled" : 0,
@@ -132,6 +141,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 2 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-7", 0 ]
 				}
 
 			}
