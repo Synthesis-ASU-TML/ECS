@@ -1,9 +1,9 @@
 {
 	"name" : "sc.clouds",
 	"version" : 1,
-	"creationdate" : -722460775,
-	"modificationdate" : -718129895,
-	"viewrect" : [ 2.0, 45.0, 300.0, 500.0 ],
+	"creationdate" : -722460896,
+	"modificationdate" : 3579612369,
+	"viewrect" : [ 1.0, 45.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -161,6 +161,20 @@
 			"sc.clouds.ball.genjit" : 			{
 				"kind" : "genjit",
 				"local" : 1
+			}
+,
+			"mask_neighbors_replace.genjit" : 			{
+				"kind" : "genjit",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Dropbox/Development/github/ecs/sc.clouds/code",
+					"projectrelativepath" : "./code"
+				}
+
+			}
+,
+			"sample_neighbors.genjit" : 			{
+				"kind" : "genjit"
 			}
 
 		}

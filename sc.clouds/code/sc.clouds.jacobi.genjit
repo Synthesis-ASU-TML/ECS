@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 950.0, 194.0, 665.0, 688.0 ],
+		"rect" : [ 464.0, 129.0, 698.0, 724.0 ],
 		"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -43,8 +43,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 555.5, 645.0, 94.0, 20.0 ],
-					"presentation_rect" : [ 555.5, 663.0, 0.0, 0.0 ],
+					"patching_rect" : [ 534.5, 483.0, 94.0, 20.0 ],
 					"style" : "",
 					"text" : "Pass obstacles"
 				}
@@ -56,8 +55,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 306.5, 645.0, 107.0, 20.0 ],
-					"presentation_rect" : [ 305.0, 664.0, 0.0, 0.0 ],
+					"patching_rect" : [ 296.0, 483.0, 107.0, 20.0 ],
 					"style" : "",
 					"text" : "Pass divergence"
 				}
@@ -69,7 +67,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 64.0, 646.0, 190.0, 20.0 ],
+					"patching_rect" : [ 64.0, 483.0, 190.0, 20.0 ],
 					"style" : "",
 					"text" : "Updated pressure (1 / (px s^2)?)"
 				}
@@ -83,7 +81,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 510.0, 645.0, 41.0, 22.0 ],
+					"patching_rect" : [ 489.0, 483.0, 41.0, 22.0 ],
 					"style" : "",
 					"text" : "out 3",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -92,7 +90,7 @@
 			}
 , 			{
 				"box" : 				{
-					"code" : "// Parameters.\r\nParam cell_size(0.005);\t// km / px\r\nParam iteration(0);\t\t// int\r\nParam savepressure(0);\t// bool\r\n\r\npx = 1 / dim;\t\t\t// px / uv\r\ndx = cell_size;\t\t\t// km / px\r\n\r\ntotal_p = 0;\r\n\r\nif ((savepressure == 1) || (iteration != 1)) {\t\r\n\t// Neighboring coordinates.\r\n\tleft = norm + vec(-px.x, 0);\r\n\tright = norm + vec(px.x, 0);\r\n\tup = norm + vec(0, -px.y);\r\n\tdown = norm + vec(0, px.y);\r\n\t\r\n\t// Neighboring obstacle mask.\r\n\to_l = sample(in3, left, boundmode=\"wrap\").x;\r\n\to_r = sample(in3, right, boundmode=\"wrap\").x;\r\n\to_u = sample(in3, up, boundmode=\"wrap\").x;\r\n\to_d = sample(in3, down, boundmode=\"wrap\").x;\r\n\t\r\n\t// Neighboring pressures. Replace masked with center pressure.\r\n\tp_c = sample(in1, norm);\r\n\tp_l = (1 - o_l) * p_c + o_l * sample(in1, left, boundmode=\"wrap\");\r\n\tp_r = (1 - o_r) * p_c + o_r * sample(in1, right, boundmode=\"wrap\");\r\n\tp_u = (1 - o_u) * p_c + o_u * sample(in1, up, boundmode=\"wrap\");\r\n\tp_d = (1 - o_d) * p_c + o_d * sample(in1, down, boundmode=\"wrap\");\r\n\t\r\n\t// Total pressure from neighboring pixels.\r\n\ttotal_p = p_l.x + p_r.x + p_u.x + p_d.x;\r\n}\r\n\r\n// Outputs.\r\n// (km^2 / px^2) * (px / s) = km^2 / px s. TODO: Is this ACTUALLY Pa?\r\n// Gradient subtraction later is (km^2 / px s) / (km / px) = km / s.\r\nout1 = (total_p - (dx * dx) * in2.x) / 4;\t// New pressure.\r\nout2 = in2;\t\t\t\t\t\t\t\t\t// Divergence.\r\nout3 = in3;\t\t\t\t\t\t\t\t\t// Obstacle mask.",
+					"code" : "Param dx(0.005);\t\t// m / px\r\nParam iteration(0);\t\t// int\r\nParam savepressure(0);\t// bool\r\npx = 1 / dim;\t\t\t// px / uv\r\n\r\nptot = 0;\r\n\r\nif ((savepressure == 1) || (iteration != 1)) {\t\r\n\t// Neighboring coordinates.\r\n\tleft = norm + vec(-px.x, 0);\r\n\tright = norm + vec(px.x, 0);\r\n\tup = norm + vec(0, -px.y);\r\n\tdown = norm + vec(0, px.y);\r\n\t\r\n\t// Neighboring pressures. Replace masked with center pressure.\r\n\tpl, pr, pu, pd = mask_neighbors_replace(in1, in3);\r\n\t\r\n\t// Total pressure from neighboring pixels.\r\n\tptot = pl.x + pr.x + pu.x + pd.x;\r\n}\r\n\r\n// Outputs.\r\n// (m^2 / px^2) * (px / s) = m^2 / px s. TODO: Is this ACTUALLY Pa?\r\n// Gradient subtraction later is (m^2 / px s) / (m / px) = m / s.\r\nout1 = (ptot - (dx * dx) * in2.x) / 4;\t// New pressure.\r\nout2 = in2;\t\t\t\t\t\t\t\t// Divergence.\r\nout3 = in3;\t\t\t\t\t\t\t\t// Obstacle mask.",
 					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -101,7 +99,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 25.0, 57.0, 504.0, 571.0 ],
+					"patching_rect" : [ 25.0, 57.0, 483.0, 408.0 ],
 					"style" : ""
 				}
 
@@ -114,7 +112,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 267.5, 645.0, 37.0, 22.0 ],
+					"patching_rect" : [ 257.0, 483.0, 37.0, 22.0 ],
 					"style" : "",
 					"text" : "out 2",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -130,7 +128,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 267.5, 19.0, 92.0, 22.0 ],
+					"patching_rect" : [ 257.0, 19.0, 92.0, 22.0 ],
 					"style" : "",
 					"text" : "in 2 divergence",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -145,7 +143,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 25.0, 645.0, 37.0, 22.0 ],
+					"patching_rect" : [ 25.0, 482.0, 37.0, 22.0 ],
 					"style" : "",
 					"text" : "out 1",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -161,7 +159,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 510.0, 19.0, 111.0, 22.0 ],
+					"patching_rect" : [ 489.0, 19.0, 111.0, 22.0 ],
 					"style" : "",
 					"text" : "in 3 obstacles",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]

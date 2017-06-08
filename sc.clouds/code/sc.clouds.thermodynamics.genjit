@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 437.0, 168.0, 690.0, 633.0 ],
+		"rect" : [ 437.0, 168.0, 440.0, 604.0 ],
 		"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -39,7 +39,7 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"code" : "// Parameters.\r\nParam dry_cp(1003);\t\t\t\t\t\t// J / kg K\r\nParam dry_cv(716);\t\t\t\t\t\t// J / kg K\r\nParam base_pressure(101.3);\t\t\t\t// kPa\r\nParam latent_heat_vaporization(2.5E6);\t// J / kg\r\n\r\np0 = base_pressure;\t\t\t\t\t\t// kPa\r\nRd = dry_cp - dry_cv;\t\t\t\t\t// J / kg K\r\nLv = latent_heat_vaporization;\t\t\t// J / kg\r\n\r\n// Variables.\r\nptemp = in1.z;\t\t\t\t\t\t\t// K\r\nC = in2.x;\t\t\t\t\t\t\t\t// 0-1\r\np = in3.x;\t\t\t\t\t\t\t\t// kPa\r\n\r\n// Compute.\r\nexner = pow(p / p0, -(Rd / dry_cp));\r\nptemp += (Lv * C) / (dry_cp * exner);\r\n\r\n// Output: qc, qv, potential temperature \r\nout1 = vec(in1.x, in1.y, ptemp);",
+					"code" : "// Parameters.\r\nParam dry_cp(1003);\t\t// J / kg K\r\nParam dry_cv(716);\t\t// J / kg K\r\nParam p0(101.3);\t\t// kPa\r\nParam Lv(2.5E6);\t\t// J / kg\r\nRd = dry_cp - dry_cv;\t// J / kg K\r\n\r\n// Variables.\r\nptemp = in1.z;\t\t\t// K\r\nC = in2.x;\t\t\t\t// 0-1\r\np = in3.x;\t\t\t\t// kPa\r\n\r\n// Compute.\r\nexner = pow(p / p0, -(Rd / dry_cp));\r\nptemp += (Lv * C) / (dry_cp * exner);\r\n\r\n// Output: qc, qv, potential temperature \r\nout1 = vec(in1.x, in1.y, ptemp);",
 					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -48,7 +48,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 22.0, 54.0, 382.0, 325.0 ],
+					"patching_rect" : [ 22.0, 54.0, 320.0, 292.0 ],
 					"style" : ""
 				}
 
@@ -56,11 +56,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-25",
-					"linecount" : 12,
+					"linecount" : 13,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 22.0, 435.0, 443.0, 167.0 ],
+					"patching_rect" : [ 22.0, 404.0, 381.0, 181.0 ],
 					"style" : "",
 					"text" : "Compute thermodynamics equation to update potential temperature according to air saturation.\n\n\\Pi = \\frac{p}{p_0)^\\frac{Rd}{c_{pd}}\n\\theta = \\theta' + \\frac{L}{c_{pd} \\Pi} C\n\nc_p: specific temperature of dry air at constant pressure (J / kg K)\nc_v: specific temperature of dry air at constant volume (J / kg K)\n\\theta: updated potential temperature (K)\n\\theta': advected potential temperature (K)\nL: latent heat vaporization, released heat from evaporation of condensed water.\nC: condensation rate"
 				}
@@ -74,7 +74,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 22.0, 396.0, 27.0, 22.0 ],
+					"patching_rect" : [ 22.0, 365.0, 27.0, 22.0 ],
 					"style" : "",
 					"text" : "out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -90,7 +90,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 385.0, 15.0, 80.0, 22.0 ],
+					"patching_rect" : [ 323.0, 15.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "in 3 pressure",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -106,7 +106,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 203.5, 15.0, 105.0, 22.0 ],
+					"patching_rect" : [ 172.5, 15.0, 105.0, 22.0 ],
 					"style" : "",
 					"text" : "in 2 condensation",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]

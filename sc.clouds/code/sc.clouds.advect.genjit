@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 529.0, 359.0, 603.0, 350.0 ],
+		"rect" : [ 34.0, 78.0, 485.0, 358.0 ],
 		"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -39,7 +39,19 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"code" : "// Parameters.\r\nParam dissipation(1, 1, 1, 1);\t\t\t\t\t\t\t\t// / frame\r\nParam timestep(0.125);\t\t\t\t\t\t\t\t\t\t// s / frame\r\nParam cell_size(0.05);\t\t\t\t\t\t\t\t\t\t// km / px\r\n\r\npx = 1 / dim;\t\t\t\t\t\t\t\t\t\t\t\t// px / uv\r\n\r\n// uv - uv s px km / frame km s px = uv - uv / frame\r\nsrc_coord = norm - (timestep / cell_size) * (in2.xy / dim);\r\nsrc_mask = sample(in3, src_coord);\r\nsrc_val = sample(in1, src_coord);\r\npt_mask = sample(in3, norm);\r\n\r\n// Output.\r\nout1 = src_val * src_mask * pt_mask * dissipation;",
+					"id" : "obj-4",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 272.833374, 12.999992, 37.0, 20.0 ],
+					"style" : "",
+					"text" : "m / s"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"code" : "// Parameters.\r\nParam dissipation(1, 1, 1, 1);\t// / frame\r\nParam dt(0.125);\t\t\t\t// s / frame\r\nParam dx(0.05);\t\t\t\t\t// m / px\r\n\r\npx = 1 / dim;\t\t\t\t\t// px / uv\r\n\r\n// uv - uv s px m / frame m s px = uv - uv / frame\r\nsrc_coord = norm - (dt / dx) * (in2.xy / dim);\r\nsrc_mask = sample(in3, src_coord);\r\nsrc_val = sample(in1, src_coord);\r\npt_mask = sample(in3, norm);\r\n\r\n// Output.\r\nout1 = src_val * src_mask * pt_mask * dissipation;",
 					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -48,7 +60,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 13.666687, 51.999992, 516.333374, 252.333374 ],
+					"patching_rect" : [ 13.666687, 51.999992, 387.333374, 249.333374 ],
 					"style" : ""
 				}
 
@@ -77,7 +89,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 511.000092, 12.999992, 84.0, 22.0 ],
+					"patching_rect" : [ 382.000061, 12.999992, 84.0, 22.0 ],
 					"style" : "",
 					"text" : "in 3 obstacles",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -93,7 +105,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 262.333405, 12.999992, 73.0, 22.0 ],
+					"patching_rect" : [ 197.833374, 12.999992, 73.0, 22.0 ],
 					"style" : "",
 					"text" : "in 2 velocity",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]

@@ -6,7 +6,6 @@
 				"id" : 1,
 				"name" : "clouds",
 				"data" : 				{
-					"vis-context" : [ "sc-clouds" ],
 					"vis-contrast-w" : [ 1.0 ],
 					"vis-contrast-x" : [ 1.0 ],
 					"vis-contrast-y" : [ 1.0 ],
@@ -20,19 +19,13 @@
 					"vis-low-y" : [ 0.0 ],
 					"vis-low-z" : [ 100.0 ],
 					"vis-mode" : [ 3 ],
-					"vis-output-texture" : [ "ema-output" ],
-					"vis-syphon-servername" : [  ],
-					"vis-texture" : [ "watertemp" ],
-					"vis-window-name" : [ "sc-cloud-world" ]
+					"vis-texture" : [ "watertemp" ]
 				}
-
-			}
-,
+			},
 			"2" : 			{
 				"id" : 2,
 				"name" : "velocity",
 				"data" : 				{
-					"vis-context" : [ "sc-clouds" ],
 					"vis-contrast-w" : [ 1.0 ],
 					"vis-contrast-x" : [ 1.0 ],
 					"vis-contrast-y" : [ 1.0 ],
@@ -46,19 +39,13 @@
 					"vis-low-y" : [ -4.0 ],
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 2 ],
-					"vis-output-texture" : [ "ema-output" ],
-					"vis-syphon-servername" : [ "sc.clouds.clouds" ],
-					"vis-texture" : [ "velocity" ],
-					"vis-window-name" : [ "sc-cloud-world" ]
+					"vis-texture" : [ "velocity" ]
 				}
-
-			}
-,
+			},
 			"3" : 			{
 				"id" : 3,
 				"name" : "vorticity",
 				"data" : 				{
-					"vis-context" : [ "sc-clouds" ],
 					"vis-contrast-w" : [ 1.0 ],
 					"vis-contrast-x" : [ 1.0 ],
 					"vis-contrast-y" : [ 1.0 ],
@@ -72,19 +59,13 @@
 					"vis-low-y" : [ -2.0 ],
 					"vis-low-z" : [ -2.0 ],
 					"vis-mode" : [ 2 ],
-					"vis-output-texture" : [ "ema-output" ],
-					"vis-syphon-servername" : [ "sc.clouds.clouds" ],
-					"vis-texture" : [ "vorticity" ],
-					"vis-window-name" : [ "sc-cloud-world" ]
+					"vis-texture" : [ "vorticity" ]
 				}
-
-			}
-,
+			},
 			"4" : 			{
 				"id" : 4,
 				"name" : "pressure",
 				"data" : 				{
-					"vis-context" : [ "sc-clouds" ],
 					"vis-contrast-w" : [ 1.0 ],
 					"vis-contrast-x" : [ 0.5 ],
 					"vis-contrast-y" : [ 0.0 ],
@@ -98,19 +79,13 @@
 					"vis-low-y" : [ 0.0 ],
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 1 ],
-					"vis-output-texture" : [ "ema-output" ],
-					"vis-syphon-servername" : [ "sc.clouds.clouds" ],
-					"vis-texture" : [ "pressure" ],
-					"vis-window-name" : [ "sc-cloud-world" ]
+					"vis-texture" : [ "pressure" ]
 				}
-
-			}
-,
+			},
 			"5" : 			{
 				"id" : 5,
 				"name" : "divergence",
 				"data" : 				{
-					"vis-context" : [ "sc-clouds" ],
 					"vis-contrast-w" : [ 1.0 ],
 					"vis-contrast-x" : [ 1.0 ],
 					"vis-contrast-y" : [ 1.0 ],
@@ -124,19 +99,13 @@
 					"vis-low-y" : [ 0.0 ],
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 1 ],
-					"vis-output-texture" : [ "ema-output" ],
-					"vis-syphon-servername" : [  ],
-					"vis-texture" : [ "divergence" ],
-					"vis-window-name" : [ "sc-cloud-world" ]
+					"vis-texture" : [ "divergence" ]
 				}
-
-			}
-,
+			},
 			"6" : 			{
 				"id" : 6,
 				"name" : "hsflow",
 				"data" : 				{
-					"vis-context" : [ "sc-clouds" ],
 					"vis-contrast-w" : [ 1.0 ],
 					"vis-contrast-x" : [ 1.0 ],
 					"vis-contrast-y" : [ 1.0 ],
@@ -150,19 +119,13 @@
 					"vis-low-y" : [ 0.0 ],
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 1 ],
-					"vis-output-texture" : [ "ema-output" ],
-					"vis-syphon-servername" : [  ],
-					"vis-texture" : [ "hsflow" ],
-					"vis-window-name" : [ "sc-cloud-world" ]
+					"vis-texture" : [ "hsflow" ]
 				}
-
-			}
-,
+			},
 			"7" : 			{
 				"id" : 7,
 				"name" : "camera",
 				"data" : 				{
-					"vis-context" : [ "sc-clouds" ],
 					"vis-contrast-w" : [ 1.0 ],
 					"vis-contrast-x" : [ 1.0 ],
 					"vis-contrast-y" : [ 1.0 ],
@@ -176,19 +139,13 @@
 					"vis-low-y" : [ 0.0 ],
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 0 ],
-					"vis-output-texture" : [ "ema-output" ],
-					"vis-syphon-servername" : [ "sc.clouds.clouds" ],
-					"vis-texture" : [ "camera" ],
-					"vis-window-name" : [ "sc-cloud-world" ]
+					"vis-texture" : [ "camera" ]
 				}
-
-			}
-,
+			},
 			"8" : 			{
 				"id" : 8,
 				"name" : "obstacles",
 				"data" : 				{
-					"vis-context" : [ "sc-clouds" ],
 					"vis-contrast-w" : [ 1.0 ],
 					"vis-contrast-x" : [ 1.0 ],
 					"vis-contrast-y" : [ 1.0 ],
@@ -202,19 +159,13 @@
 					"vis-low-y" : [ 1.0 ],
 					"vis-low-z" : [ 1.0 ],
 					"vis-mode" : [ 1 ],
-					"vis-output-texture" : [ "ema-output" ],
-					"vis-syphon-servername" : [ "sc.clouds.clouds" ],
-					"vis-texture" : [ "obstacles" ],
-					"vis-window-name" : [ "sc-cloud-world" ]
+					"vis-texture" : [ "obstacles" ]
 				}
-
-			}
-,
+			},
 			"9" : 			{
 				"id" : 9,
 				"name" : "background",
 				"data" : 				{
-					"vis-context" : [ "sc-clouds" ],
 					"vis-contrast-w" : [ 1.0 ],
 					"vis-contrast-x" : [ 1.0 ],
 					"vis-contrast-y" : [ 1.0 ],
@@ -228,19 +179,13 @@
 					"vis-low-y" : [ 0.0 ],
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 0 ],
-					"vis-output-texture" : [ "ema-output" ],
-					"vis-syphon-servername" : [  ],
-					"vis-texture" : [ "bgmask" ],
-					"vis-window-name" : [ "sc-cloud-world" ]
+					"vis-texture" : [ "bgmask" ]
 				}
-
-			}
-,
+			},
 			"10" : 			{
 				"id" : 10,
 				"name" : "bgsub",
 				"data" : 				{
-					"vis-context" : [ "sc-clouds" ],
 					"vis-contrast-w" : [ 1.0 ],
 					"vis-contrast-x" : [ 1.0 ],
 					"vis-contrast-y" : [ 1.0 ],
@@ -254,19 +199,13 @@
 					"vis-low-y" : [ 0.0 ],
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 0 ],
-					"vis-output-texture" : [ "ema-output" ],
-					"vis-syphon-servername" : [ "sc.clouds.clouds" ],
-					"vis-texture" : [ "bgsub" ],
-					"vis-window-name" : [ "sc-cloud-world" ]
+					"vis-texture" : [ "bgsub" ]
 				}
-
-			}
-,
+			},
 			"11" : 			{
 				"id" : 11,
 				"name" : "staticvideo",
 				"data" : 				{
-					"vis-context" : [ "sc-clouds" ],
 					"vis-contrast-w" : [ 1.0 ],
 					"vis-contrast-x" : [ 1.0 ],
 					"vis-contrast-y" : [ 1.0 ],
@@ -280,16 +219,9 @@
 					"vis-low-y" : [ 0.0 ],
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 0 ],
-					"vis-output-texture" : [ "ema-output" ],
-					"vis-syphon-servername" : [  ],
-					"vis-texture" : [ "static_video" ],
-					"vis-window-name" : [ "sc-clouds" ]
+					"vis-texture" : [ "static_video" ]
 				}
-
 			}
-
 		}
-
 	}
-
 }

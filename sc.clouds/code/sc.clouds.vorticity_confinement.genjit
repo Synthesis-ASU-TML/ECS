@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 291.0, 414.0, 504.0, 539.0 ],
+		"rect" : [ 1172.0, 319.0, 401.0, 420.0 ],
 		"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -26,7 +26,7 @@
 		"toptoolbarpinned" : 0,
 		"righttoolbarpinned" : 0,
 		"bottomtoolbarpinned" : 0,
-		"toolbars_unpinned_last_save" : 0,
+		"toolbars_unpinned_last_save" : 1,
 		"tallnewobj" : 0,
 		"boxanimatetime" : 200,
 		"enablehscroll" : 1,
@@ -39,7 +39,7 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"code" : "Param epsilon(0.00001);\t\t\t\t\t// Very small number.\r\nParam vorticity(1.0); \t\t\t\t\t// Confinement scale.\r\nParam cell_size(0.005);\t\t\t\t\t// km / px\r\npx = 1. / dim;\r\ndx = cell_size;\r\n\r\nleft = norm + vec(-px.x, 0);\r\nup = norm + vec(0, -px.y);\r\ndown = norm + vec(0, px.y);\r\nright = norm + vec(px.x, 0);\r\n\r\nleft = vec(wrap(left.x,0,1),wrap(left.y,0,1));\r\nup = vec(wrap(up.x,0,1),wrap(up.y,0,1));\r\ndown = vec(wrap(down.x,0,1),wrap(down.y,0,1));\r\nright = vec(wrap(right.x,0,1),wrap(right.y,0,1));\r\n\r\nvort_l = abs(sample(in1, left).x);\r\nvort_r = abs(sample(in1, right).x);\r\nvort_u = abs(sample(in1, up).x);\r\nvort_d = abs(sample(in1, down).x);\r\nvort_c = abs(in1.x);\r\n\r\ngradv = vec(vort_d - vort_u, vort_r - vort_l) / 2;\r\nnormv = gradv / max(epsilon, length(gradv));\r\n\r\naccel = vorticity * normv * vort_c * vec(1,-1) / dx;\r\n\r\nout1 = vec(accel, 0, 0);",
+					"code" : "Param epsilon(0.00001);\t// Very small number.\r\nParam vorticity(1.0); \t// Confinement scale.\r\nParam dx(0.005);\t\t// m / px\r\npx = 1. / dim;\r\n\r\n// Neighboring vorticity values.\r\nvtl, vtr, vtu, vtd = sample_neighbors(in1);\r\nvtl = abs(vtl.x); vtr = abs(vtr.x); \r\nvtu = abs(vtu.x); vtd = abs(vtd.x);\r\nvtc = in1.x;\t\t\t\t\t\t// m / s\r\n\r\n// Normalized vorticity gradient, transposed.\r\neta_t = vec(vtd - vtu, vtr - vtl); \t// m / s\r\nN_t = normalize(eta_t);\t\t\t\t// 1 / 1\r\n\r\n// m / s * px / m = px / s, so don't * by dx\r\n// Output additional velocity. m / s\r\nvel = vorticity * N_t * vtc * vec(1, -1);\r\nout1 = vec(vel, 0, 0);",
 					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -48,7 +48,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 28.833328, 53.0, 446.0, 419.0 ],
+					"patching_rect" : [ 28.833328, 53.0, 347.0, 304.0 ],
 					"style" : ""
 				}
 
@@ -59,7 +59,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 72.833328, 503.0, 107.0, 20.0 ],
+					"patching_rect" : [ 72.833328, 376.0, 107.0, 20.0 ],
 					"style" : "",
 					"text" : "2D velocity output"
 				}
@@ -73,7 +73,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 28.833328, 501.0, 27.0, 22.0 ],
+					"patching_rect" : [ 28.833328, 374.0, 27.0, 22.0 ],
 					"style" : "",
 					"text" : "out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]

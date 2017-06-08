@@ -39,7 +39,7 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"code" : "Param cell_size(0.005);\t\t\t\t\t\t// km\r\nParam base_potential_temperature(288.15);\t// K\r\nParam lapse_rate(10);\t\t\t\t\t\t// K / km\r\nParam gravity(0, -9.8);\t\t\t\t    \t// m / s^2\r\nParam origin(0, 0);\t\t\t\t\t\t\t// ([0-1], [0-1])\r\nParam dry_cp(1003);\t\t\t\t\t\t\t// J / kg K\r\nParam dry_cv(716);\t\t\t\t\t\t\t// J / kg K\r\nParam base_pressure(101.325);\t\t\t\t// kPa\r\n\r\np0 = base_pressure;\t\t\t\t\t\t\t// kPa\r\ng = gravity; \t\t\t\t\t\t\t\t// m / s^2\r\nlapse = lapse_rate / 1000;\t\t\t\t\t// K / m \r\nT0 = base_potential_temperature;\t\t\t// K\r\nRd = dry_cp - dry_cv;\t\t\t\t\t\t// J / kg K\r\n\r\ndx = cell_size * 1000;\t\t\t\t\t\t// m / px\r\nopx = origin * dim;\t\t\t\t\t\t\t// (px, px)\r\nnpx = norm * dim;\t\t\t\t\t\t\t// (px, px)\r\n\r\nz = dot(\t\t\t\t\t\t\t\t\t// m\r\n\t(norm - origin) * dim, \r\n\tnormalize(origin - g)\r\n) * dx;\r\n\r\nout1 = p0 * pow(\t\t\t\t\t\t\t// kPa\r\n\t1 - (z * lapse) / T0, \r\n\tlength(g) / (lapse * Rd)\r\n);",
+					"code" : "Param dx(0.005);\t\t\t\t\t// m\r\nParam T0(288.15);\t\t\t\t\t// K\r\nParam lapse_rate(10);\t\t\t\t// K / m\r\nParam gravity(0, -9.8);\t\t\t\t// m / s^2\r\nParam origin(0, 0);\t\t\t\t\t// ([0-1], [0-1])\r\nParam dry_cp(1003);\t\t\t\t\t// J / kg K\r\nParam dry_cv(716);\t\t\t\t\t// J / kg K\r\nParam p0(101.325);\t\t\t\t\t// kPa\r\n\r\ng = gravity; \t\t\t\t\t\t// m / s^2\r\nRd = dry_cp - dry_cv;\t\t\t\t// J / kg K\r\n\r\nopx = origin * dim;\t\t\t\t\t// (px, px)\r\nnpx = norm * dim;\t\t\t\t\t// (px, px)\r\n\r\nz = dot(\t\t\t\t\t\t\t// m\r\n\t(norm - origin) * dim, \r\n\tnormalize(origin - g)\r\n) * dx;\r\n\r\nout1 = p0 * pow(\t\t\t\t\t// kPa\r\n\t1 - (z * lapse_rate) / T0, \r\n\tlength(g) / (lapse_rate * Rd)\r\n);",
 					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -48,7 +48,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 15.0, 25.5, 443.0, 417.0 ],
+					"patching_rect" : [ 15.0, 25.5, 397.0, 376.0 ],
 					"style" : ""
 				}
 
@@ -59,7 +59,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 44.0, 459.5, 254.75, 20.0 ],
+					"patching_rect" : [ 44.0, 418.5, 254.75, 20.0 ],
 					"style" : "",
 					"text" : "Undisturbed, environmental air pressure (kPa)"
 				}
@@ -72,7 +72,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 466.0, 25.5, 446.0, 422.0 ],
+					"patching_rect" : [ 416.0, 25.5, 446.0, 422.0 ],
 					"style" : "",
 					"text" : "Air pressure decreases with altitude. Calculate pressure of undisturbed air as a function of altitude. See Harris (2003) Simulation of cloud dynamics on graphics hardware, Graphics Hardware, Eurographics Association, pp. 92-102\n\n    p(z) = p_0 (1- \\frac{z \\Gamma}{T_0})^\\frac{g}{\\Gamma R_d}\n    \n    p(z): Pressure as a function of altitude (kPa)\n    p_0: Pressure at ground level (kPa)\n    z: Altitude (m)\n    \\Gamma: Dry adiabatic lapse rate (K / m)\n    T_0: Standard temperature at ground level (K)\n    g: Magnitude of gravity (m / s²)\n    R_d: Gas constant for dry air (J / kg K)\n\nThis component takes in an \"origin\" point that represents the ground and a vector that represents the direction of the gravity. The magnitude of the gravity vector is used for g.\n\nTODO: This uses specific heat capacities and lapse rates for dry air, which does not necessarily apply to cloudy/moist air. A more accurate equation that would need to be computed at runtime might be based off the mixing ratios as in Stull (2015) Meteorology for Scientists and Engineers Ch. 4, p. 102. \n\n    /Gamma_s = \\frac{\\|g\\|, c_{ps}} \\frac{\n        1 + \\frac{q_v L_v}{R_d T}\n    }{\n        1 + \\frac{L_v^2 q_v \\frac{R_d}{R_v}}{c_{pv} R_d T^2}\n    }.\n\n    c_{pv}: specific heat capacity at constant volume for moist air.\n    R_v: gas constant for moist air (c_{ps} - c_{vs})"
 				}
@@ -86,7 +86,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 459.5, 27.0, 22.0 ],
+					"patching_rect" : [ 15.0, 418.5, 27.0, 22.0 ],
 					"style" : "",
 					"text" : "out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]

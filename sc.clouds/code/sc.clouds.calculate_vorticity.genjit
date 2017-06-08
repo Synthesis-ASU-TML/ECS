@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 862.0, 135.0, 558.0, 551.0 ],
+		"rect" : [ 426.0, 78.0, 472.0, 398.0 ],
 		"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -39,7 +39,7 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"code" : "px = 1. / dim;\r\n\r\nleft = norm + vec(-px.x, 0);\r\nup = norm + vec(0, -px.y);\r\ndown = norm + vec(0, px.y);\r\nright = norm + vec(px.x, 0);\r\n\r\n//left = vec(wrap(left.x,0,1),wrap(left.y,0,1));\r\n//up = vec(wrap(up.x,0,1),wrap(up.y,0,1));\r\n//down = vec(wrap(down.x,0,1),wrap(down.y,0,1));\r\n//right = vec(wrap(right.x,0,1),wrap(right.y,0,1));\r\n\r\nobs_r = sample(in2, right).x;\r\nobs_l = sample(in2, left).x;\r\nobs_u = sample(in2, up).x;\r\nobs_d = sample(in2, down).x;\r\n\r\nvel_r = sample(in1, right);\r\nvel_l = sample(in1, left);\r\nvel_u = sample(in1, up);\r\nvel_d = sample(in1, down);\r\n\r\nvel_c = sample(in1, norm);\r\n\r\nvel_l = vel_c * (1 - obs_l) + vel_l * obs_l;\r\nvel_r = vel_c * (1 - obs_r) + vel_r * obs_r;\r\nvel_d = vel_c * (1 - obs_d) + vel_d * obs_d;\r\nvel_u = vel_c * (1 - obs_u) + vel_u * obs_u;\r\n\r\nout1 = 0.5 * ((vel_r.y - vel_l.y) - (vel_d.x - vel_u.x));\r\n",
+					"code" : "px = 1. / dim;\r\n\r\n// Neighboring obstacle mask.\r\nobl, obr, obu, obd = sample_neighbors(in2);\r\nobl = obl.x; obr = obr.x; obu = obu.x; obd = obd.x;\r\n\r\n// Neighboring velocity.\r\nvl, vr, vu, vd = sample_neighbors(in1);\r\nvc = sample(in1, norm, boundmode=\"wrap\");\r\n\r\n// Replace masked neighbors with center velocity.\r\nvl = vc * (1 - obl) + vl * obl;\r\nvr = vc * (1 - obr) + vr * obr;\r\nvd = vc * (1 - obd) + vd * obd;\r\nvu = vc * (1 - obu) + vu * obu;\r\n\r\n// Output vorticity, m / s\r\nout1 = ((vr.y - vl.y) - (vd.x - vu.x)) / 2;",
 					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -48,7 +48,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 16.75, 59.0, 419.0, 395.0 ],
+					"patching_rect" : [ 16.75, 60.0, 386.0, 288.0 ],
 					"style" : ""
 				}
 
@@ -61,7 +61,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 16.75, 471.0, 27.0, 22.0 ],
+					"patching_rect" : [ 16.75, 365.0, 27.0, 22.0 ],
 					"style" : "",
 					"text" : "out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -77,7 +77,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 416.75, 20.0, 78.0, 22.0 ],
+					"patching_rect" : [ 383.75, 20.0, 78.0, 22.0 ],
 					"style" : "",
 					"text" : "in 2 obstacle",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -125,6 +125,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-8", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-55", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "", -1 ]
 				}
 
 			}

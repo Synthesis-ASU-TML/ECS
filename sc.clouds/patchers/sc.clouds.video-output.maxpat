@@ -76,7 +76,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 581.0, -131.0, 95.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 587.0, -227.5, 62.8125, 20.0 ],
+					"presentation_rect" : [ -0.000008, 88.0, 62.8125, 20.0 ],
 					"style" : "default",
 					"text" : "Syphon:"
 				}
@@ -380,12 +380,11 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 581.0, -225.0, 115.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 587.0, -205.5, 179.0, 20.0 ],
+					"presentation_rect" : [ 64.812492, 88.0, 179.0, 20.0 ],
 					"style" : "default",
 					"tabmode" : 0,
 					"text" : "sc.clouds.clouds",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"varname" : "vis-syphon-servername[1]",
 					"wordwrap" : 0
 				}
 
@@ -481,7 +480,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 751.0, 155.0, 137.5, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 102.0, 243.8125, 20.0 ],
+					"presentation_rect" : [ -0.000008, 0.0, 243.8125, 20.0 ],
 					"style" : "",
 					"text" : "Rendering options"
 				}
@@ -497,7 +496,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 751.0, 179.5, 137.5, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 284.0, 243.8125, 20.0 ],
+					"presentation_rect" : [ -0.000008, 182.0, 243.8125, 20.0 ],
 					"style" : "",
 					"text" : "Texture to draw"
 				}
@@ -1099,7 +1098,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 766.0, -289.0, 244.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 260.0, 122.0, 22.0 ],
+					"presentation_rect" : [ -0.000008, 158.0, 122.0, 22.0 ],
 					"style" : "",
 					"text_width" : 99.0
 				}
@@ -1115,7 +1114,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 766.0, -265.0, 244.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 123.333336, 260.0, 121.0, 22.0 ],
+					"presentation_rect" : [ 123.333336, 158.0, 121.0, 22.0 ],
 					"style" : "",
 					"text_width" : 98.666664
 				}
@@ -1223,7 +1222,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 910.0, -81.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 154.354172, 0.0, 89.645828, 100.0 ],
+					"presentation_rect" : [ 154.354172, 204.0, 89.645828, 100.0 ],
 					"style" : "",
 					"text" : "render (space)",
 					"texton" : "render (space)",
@@ -1256,7 +1255,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 766.0, -217.0, 244.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 236.0, 121.0, 22.0 ],
+					"presentation_rect" : [ -0.000008, 134.0, 121.0, 22.0 ],
 					"style" : "",
 					"text_width" : 99.0
 				}
@@ -1272,7 +1271,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 766.0, -193.0, 244.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 123.333336, 236.0, 121.0, 22.0 ],
+					"presentation_rect" : [ 123.333336, 134.0, 121.0, 22.0 ],
 					"style" : "",
 					"text_width" : 98.666664
 				}
@@ -1567,7 +1566,6 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 261.5, 549.0, 58.0, 22.0 ],
 					"restore" : 					{
-						"vis-context" : [ "sc-clouds" ],
 						"vis-contrast-w" : [ 1.0 ],
 						"vis-contrast-x" : [ 1.0 ],
 						"vis-contrast-y" : [ 1.0 ],
@@ -1581,10 +1579,7 @@
 						"vis-low-y" : [ 0.0 ],
 						"vis-low-z" : [ 100.0 ],
 						"vis-mode" : [ 3 ],
-						"vis-output-texture" : [ "ema-output" ],
-						"vis-syphon-servername[1]" : [ "sc.clouds.clouds" ],
-						"vis-texture" : [ "watertemp" ],
-						"vis-window-name" : [ "sc-cloud-world" ]
+						"vis-texture" : [ "watertemp" ]
 					}
 ,
 					"style" : "",
@@ -2159,12 +2154,11 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 450.501709, -225.0, 115.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 64.8125, 124.0, 179.0, 20.0 ],
+					"presentation_rect" : [ 64.812492, 22.0, 179.0, 20.0 ],
 					"style" : "default",
 					"tabmode" : 0,
 					"text" : "ema-output",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"varname" : "vis-output-texture",
 					"wordwrap" : 0
 				}
 
@@ -2177,7 +2171,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 450.501709, -131.0, 115.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 124.0, 62.8125, 20.0 ],
+					"presentation_rect" : [ -0.000008, 22.0, 62.8125, 20.0 ],
 					"style" : "default",
 					"text" : "Tex. out:"
 				}
@@ -2500,7 +2494,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 766.0, -241.0, 244.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 212.0, 244.0, 22.0 ],
+					"presentation_rect" : [ -0.000008, 110.0, 244.0, 22.0 ],
 					"style" : "",
 					"text_width" : 65.0
 				}
@@ -2602,7 +2596,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 99.0, 549.0, 156.0, 103.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 153.0, 100.0 ],
+					"presentation_rect" : [ -0.000008, 204.0, 153.0, 100.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -3354,12 +3348,11 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 184.0, -225.0, 115.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 64.8125, 168.0, 179.0, 20.0 ],
+					"presentation_rect" : [ 64.812492, 66.0, 179.0, 20.0 ],
 					"style" : "default",
 					"tabmode" : 0,
 					"text" : "sc-cloud-world",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"varname" : "vis-window-name",
 					"wordwrap" : 0
 				}
 
@@ -3372,7 +3365,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 184.0, -131.0, 115.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ -0.000004, 168.0, 62.8125, 20.0 ],
+					"presentation_rect" : [ -0.000008, 66.0, 62.8125, 20.0 ],
 					"style" : "default",
 					"text" : "Window:"
 				}
@@ -4042,7 +4035,7 @@
 					"style" : "default",
 					"tabmode" : 0,
 					"text" : "watertemp",
-					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"textcolor" : [ 1.0, 0.75, 0.75, 1.0 ],
 					"varname" : "vis-texture",
 					"wordwrap" : 0
 				}
@@ -4138,12 +4131,11 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 51.0, -225.0, 115.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 64.8125, 146.0, 179.0, 20.0 ],
+					"presentation_rect" : [ 64.812492, 44.0, 179.0, 20.0 ],
 					"style" : "default",
 					"tabmode" : 0,
 					"text" : "sc-clouds",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"varname" : "vis-context",
 					"wordwrap" : 0
 				}
 
@@ -4172,7 +4164,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 51.0, -131.0, 115.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ -0.000004, 146.0, 62.8125, 20.0 ],
+					"presentation_rect" : [ -0.000008, 44.0, 62.8125, 20.0 ],
 					"style" : "default",
 					"text" : "Context:"
 				}
@@ -4926,7 +4918,7 @@
 					"destination" : [ "obj-17", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 108.5, 696.0, 84.5, 696.0, 84.5, 543.0, 108.5, 543.0 ],
+					"midpoints" : [ 108.5, 717.0, 84.0, 717.0, 84.0, 543.0, 108.5, 543.0 ],
 					"source" : [ "obj-22", 0 ]
 				}
 

@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 504.0, 124.0, 533.0, 375.0 ],
+		"rect" : [ 504.0, 124.0, 453.0, 301.0 ],
 		"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -43,7 +43,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 37.611084, 332.0, 113.0, 20.0 ],
+					"patching_rect" : [ 37.611084, 261.0, 113.0, 20.0 ],
 					"style" : "",
 					"text" : "Divergence (px / s)"
 				}
@@ -67,7 +67,7 @@
 			}
 , 			{
 				"box" : 				{
-					"code" : "// Parameters.\r\nParam cell_size(0.005);\t\t\t\t\t\t// km / px\r\ndx = cell_size;\t\t\t\t\t\t\t\t// km / px\r\npx = 1 / dim;\t\t\t\t\t\t\t\t// px / uv\r\n\r\n// \"Axis-aligned\" neighboring velocity.\r\nvl = sample(in1, norm + vec(-px.x, 0), boundmode=\"wrap\");\r\nvr = sample(in1, norm + vec(px.x, 0), boundmode=\"wrap\");\r\nvu = sample(in1, norm + vec(0, -px.y), boundmode=\"wrap\");\r\nvd = sample(in1, norm + vec(0, px.y), boundmode=\"wrap\");\r\n\r\n// Divergence: km/s / km/px = px/s\r\ndiv = (vr.x - vl.x) + (vd.y - vu.y) / (2 * dx);\r\n\r\n// Output diveregence, masked by obstacles.\r\nout1 = div * in2.x;",
+					"code" : "Param dx(0.005);\t// m / px\r\npx = 1 / dim;\t\t// px / uv\r\n\r\n// Neighboring velocity.\r\nvl, vr, vu, vd = sample_neighbors(in1);\r\n\r\n// Divergence: m/s / m/px = px/s\r\ndiv = (vr.x - vl.x) + (vd.y - vu.y) / (2 * dx);\r\n\r\n// Output diveregence, masked by obstacles.\r\nout1 = div * in2.x;",
 					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -76,7 +76,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 8.611084, 47.0, 421.0, 268.0 ],
+					"patching_rect" : [ 8.611084, 47.0, 358.0, 197.0 ],
 					"style" : ""
 				}
 
@@ -90,7 +90,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 410.611084, 9.0, 84.0, 22.0 ],
+					"patching_rect" : [ 347.611084, 9.0, 84.0, 22.0 ],
 					"style" : "",
 					"text" : "in 2 obstacles",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -105,7 +105,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 8.611084, 332.0, 27.0, 22.0 ],
+					"patching_rect" : [ 8.611084, 261.0, 27.0, 22.0 ],
 					"style" : "",
 					"text" : "out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
