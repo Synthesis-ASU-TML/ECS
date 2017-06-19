@@ -1,0 +1,8 @@
+ml, mr, mu, md = sample_neighbors(in2);
+l, r, u, d = sample_neighbors(in1);
+c = sample(in1, norm, boundmode="wrap");
+
+out1 = (1 - obl) * c + ml * l;
+out2 = (1 - obr) * c + mr * r;
+out3 = (1 - obu) * c + mu * u;
+out4 = (1 - obd) * c + md * d;
