@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 3,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 489.0, 110.0, 533.0, 647.0 ],
+		"rect" : [ 489.0, 110.0, 533.0, 301.0 ],
 		"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -43,7 +43,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 50.25, 597.0, 99.0, 20.0 ],
+					"patching_rect" : [ 50.25, 255.0, 99.0, 20.0 ],
 					"style" : "",
 					"text" : "Velocity (km / s)"
 				}
@@ -51,7 +51,7 @@
 			}
 , 			{
 				"box" : 				{
-					"code" : "// Parameters.\r\nParam dx(0.005);\t// m / px\r\npx = 1 / dim;\t\t// px / uv\r\n\r\n// Neighboring coordinates.\r\nleft = norm + vec(-px.x, 0);\r\nup = norm + vec(0, -px.y);\r\ndown = norm + vec(0, px.y);\r\nright = norm + vec(px.x, 0);\r\n\r\n// Neighboring pressure.\r\npl = sample(in1, left, boundmode=\"wrap\").x;\r\npr = sample(in1, right, boundmode=\"wrap\").x;\r\npu = sample(in1, up, boundmode=\"wrap\").x;\r\npd = sample(in1, down, boundmode=\"wrap\").x;\r\npc = sample(in1, norm, boundmode=\"wrap\").x;\r\n\r\n// Neighboring obstacle mask.\r\nobl = sample(in3, left, boundmode=\"wrap\").x;\r\nobr = sample(in3, right, boundmode=\"wrap\").x;\r\nobu = sample(in3, up, boundmode=\"wrap\").x;\r\nobd = sample(in3, down, boundmode=\"wrap\").x;\r\n\r\n// If pressure is masked, replace with center pressure.\r\npl = (1 - obl) * pc + obl * pl;\r\npr = (1 - obr) * pc + obr * pr;\r\npu = (1 - obu) * pc + obu * pu;\r\npd = (1 - obd) * pc + obd * pd;\r\n\r\n// Pressure gradient.\r\ngrad = vec(pr.x - pl.x, pd.x - pu.x) / (2 * dx);\r\n\r\n// Subtract pressure gradient from velocity.\r\n// m/s / m/px -> px/s, m/s - m^2/(px s) / m/px -> m/s - m/s\r\nout1 = (in2 - grad) * in3.x;",
+					"code" : "require(\"sc.clouds.helpers\");\r\nParam dx(0.005);\t// m / px\r\n\r\n// Pressure gradient.\r\npl, pr, pu, pd = mask_neighbors_replace(in1, in3);\r\ngrad = vec(pr.x - pl.x, pd.x - pu.x) / (2 * dx);\r\n\r\n// Subtract pressure gradient from velocity.\r\n// m/s / m/px -> px/s, m/s - m^2/(px s) / m/px -> m/s - m/s\r\nout1 = (in2 - grad) * in3.x;",
 					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -60,7 +60,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 21.25, 59.0, 434.0, 520.0 ],
+					"patching_rect" : [ 21.25, 59.0, 434.0, 178.0 ],
 					"style" : ""
 				}
 
@@ -89,7 +89,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 21.25, 596.0, 27.0, 22.0 ],
+					"patching_rect" : [ 21.25, 254.0, 27.0, 22.0 ],
 					"style" : "",
 					"text" : "out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -132,8 +132,6 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -141,8 +139,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-43", 0 ]
 				}
 
@@ -150,8 +146,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 2 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-6", 0 ]
 				}
 
@@ -159,13 +153,12 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-45", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-7", 0 ]
 				}
 
 			}
- ]
+ ],
+		"autosave" : 0
 	}
 
 }
