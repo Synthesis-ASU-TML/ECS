@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 504.0, 124.0, 453.0, 301.0 ],
+		"rect" : [ 782.0, 209.0, 453.0, 301.0 ],
 		"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -67,7 +67,7 @@
 			}
 , 			{
 				"box" : 				{
-					"code" : "require(\"sc.clouds.helpers\");\r\nParam dx(0.005);\t// m / px\r\n\r\n// Divergence: m/s / m/px = px/s\r\nvl, vr, vu, vd = sample_neighbors(in1);\r\ndiv = (vr.x - vl.x) + (vd.y - vu.y) / (2 * dx);\r\n\r\n// Output diveregence, masked by obstacles.\r\nout1 = div * in2.x;",
+					"code" : "require(\"sc.clouds.helpers\");\r\nParam dx(0.005);\t// m / px\r\n\r\n// Divergence: m/s / m/px = px/s\r\nvl, vr, vu, vd = sample_neighbors(in1, norm);\r\ndiv = (vr.x - vl.x + vd.y - vu.y) / (2 * dx);\r\n\r\n// Output diveregence, masked by obstacles.d\r\nout1 = div * in2.x;// * in2.x;//a",
 					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -134,8 +134,7 @@
 				}
 
 			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }

@@ -74,7 +74,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "jit_gl_texture", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 86.5, 273.0, 237.0, 22.0 ],
+					"patching_rect" : [ 86.5, 273.0, 273.0, 22.0 ],
 					"style" : "",
 					"text" : "jit.gl.pix #1 @gen sc.clouds.jacobi @thru 0",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -206,7 +206,7 @@
 				"box" : 				{
 					"comment" : "pressure",
 					"id" : "obj-14",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -251,6 +251,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-3",
+					"int" : 1,
 					"maxclass" : "gswitch2",
 					"numinlets" : 2,
 					"numoutlets" : 2,
@@ -278,7 +279,7 @@
 				"box" : 				{
 					"comment" : "divergence",
 					"id" : "obj-19",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -292,7 +293,7 @@
 				"box" : 				{
 					"comment" : "obstacles",
 					"id" : "obj-20",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -306,7 +307,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-24",
-					"index" : 0,
+					"index" : 4,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -319,7 +320,7 @@
 				"box" : 				{
 					"comment" : "pressure",
 					"id" : "obj-25",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -332,7 +333,7 @@
 				"box" : 				{
 					"comment" : "divergence",
 					"id" : "obj-26",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -345,7 +346,7 @@
 				"box" : 				{
 					"comment" : "obstacles",
 					"id" : "obj-27",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -488,7 +489,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-25", 0 ],
+					"destination" : [ "obj-30", 0 ],
 					"source" : [ "obj-6", 0 ]
 				}
 
@@ -500,23 +501,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "sc.clouds.jacobi.genjit",
-				"bootpath" : "~/Dropbox/Development/github/ecs/sc.clouds/code",
-				"patcherrelativepath" : "../code",
-				"type" : "gJIT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "sc.clouds.helpers.genexpr",
-				"bootpath" : "~/Dropbox/Development/github/ecs/sc.clouds/other",
-				"patcherrelativepath" : "../other",
-				"type" : "GenX",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }

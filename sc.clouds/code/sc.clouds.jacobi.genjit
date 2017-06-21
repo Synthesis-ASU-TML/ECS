@@ -90,7 +90,7 @@
 			}
 , 			{
 				"box" : 				{
-					"code" : "require(\"sc.clouds.helpers\");\r\n\r\nParam dx(0.005);\t\t// m / px\r\nParam iteration(0);\t\t// int\r\nParam savepressure(0);\t// bool\r\n\r\nptot = 0;\r\n\r\nif ((savepressure == 1) || (iteration != 1)) {\t\r\n\t// Total pressure from neighboring pixels.\r\n\tpl, pr, pu, pd = mask_neighbors_replace(in1, in3);\t\r\n\tptot = pl.x + pr.x + pu.x + pd.x;\r\n}\r\n\r\n// (m^2 / px^2) * (px / s) = m^2 / px s. TODO: Is this ACTUALLY Pa?\r\n// Gradient subtraction later is (m^2 / px s) / (m / px) = m / s.\r\nout1 = (ptot - (dx * dx) * in2.x) / 4;\t// New pressure.\r\nout2 = in2;\t\t\t\t\t\t\t\t// Divergence.\r\nout3 = in3;\t\t\t\t\t\t\t\t// Obstacle mask.",
+					"code" : "require(\"sc.clouds.helpers\");\r\n\r\nParam dx(0.005);\t\t// m / px\r\nParam iteration(0);\t\t// int\r\nParam savepressure(0);\t// bool\r\n\r\nptot = 0;\r\n\r\nif ((savepressure == 1) || (iteration != 1)) {\t\r\n\t// Total pressure from neighboring pixels.\r\n\tpl, pr, pu, pd = mask_neighbors_replace(in1, in3, norm);\t\r\n\tptot = pl.x + pr.x + pu.x + pd.x;\r\n}\r\n\r\n// (m^2 / px^2) * (px / s) = m^2 / px s. TODO: Is this ACTUALLY Pa?\r\n// Gradient subtraction later is (m^2 / px s) / (m / px) = m / s.\r\nout1 = (ptot - (dx * dx) * in2.x) / 4;\t// New pressure.\r\nout2 = in2;\t\t\t\t\t\t\t\t// Divergence.\r\nout3 = in3;\t\t\t\t\t\t\t\t// Obstacle mask.",
 					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,

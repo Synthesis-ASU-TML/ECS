@@ -1,17 +1,17 @@
-sample_neighbors(tex) { 
+sample_neighbors(tex, coord) { 
 	px = 1 / dim;
-	l = sample(in1, norm - vec(-px.x, 0), boundmode="wrap");
-	r = sample(in2, norm + vec(px.x, 0), boundmode="wrap");
-	u = sample(in3, norm - vec(0, -px.y), boundmode="wrap");
-	d = sample(in4, norm + vec(0, px.y), boundmode="wrap");
+	l = sample(tex, coord - vec(px.x, 0), boundmode="wrap");
+	r = sample(tex, coord + vec(px.x, 0), boundmode="wrap");
+	u = sample(tex, coord - vec(0, px.y), boundmode="wrap");
+	d = sample(tex, coord + vec(0, px.y), boundmode="wrap");
 
 	return l, r, u, d;
 }
 
-mask_neighbors_replace(tex, mask) {
-	ml, mr, mu, md = sample_neighbors(mask);
-	l, r, u, d = sample_neighbors(tex);
-	c = sample(tex, norm, boundmode="wrap");
+mask_neighbors_replace(tex, mask, coord) {
+	ml, mr, mu, md = sample_neighbors(mask, coord);
+	l, r, u, d = sample_neighbors(tex, coord);
+	c = sample(tex, coord, boundmode="wrap");
 
 	l = (1 - ml) * c + ml * l;
 	r = (1 - mr) * c + mr * r;

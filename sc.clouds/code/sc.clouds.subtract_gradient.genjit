@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 489.0, 110.0, 533.0, 301.0 ],
+		"rect" : [ 1113.0, 233.0, 533.0, 301.0 ],
 		"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -51,7 +51,7 @@
 			}
 , 			{
 				"box" : 				{
-					"code" : "require(\"sc.clouds.helpers\");\r\nParam dx(0.005);\t// m / px\r\n\r\n// Pressure gradient.\r\npl, pr, pu, pd = mask_neighbors_replace(in1, in3);\r\ngrad = vec(pr.x - pl.x, pd.x - pu.x) / (2 * dx);\r\n\r\n// Subtract pressure gradient from velocity.\r\n// m/s / m/px -> px/s, m/s - m^2/(px s) / m/px -> m/s - m/s\r\nout1 = (in2 - grad) * in3.x;",
+					"code" : "require(\"sc.clouds.helpers\");\r\nParam dx(0.005);\t// m / px\r\n\r\n// Pressure gradient.\r\npl, pr, pu, pd = mask_neighbors_replace(in1, in3, norm);\r\ngrad = vec(pr.x - pl.x, pd.x - pu.x) / (2 * dx);\r\n\r\n// Subtract pressure gradient from velocity.\r\n// m/s / m/px -> px/s, m/s - m^2/(px s) / m/px -> m/s - m/s\r\nout1 = (in2 - grad) * in3.x;",
 					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -157,8 +157,7 @@
 				}
 
 			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }

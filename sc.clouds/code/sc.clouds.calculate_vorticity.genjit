@@ -39,7 +39,7 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"code" : "require(\"sc.clouds.helpers\");\r\n\r\nvl, vr, vu, vd = mask_neighbors_replace(in1, in2);\r\nout1 = ((vr.y - vl.y) - (vd.x - vu.x)) / 2; // m / s",
+					"code" : "require(\"sc.clouds.helpers\");\r\n\r\nvl, vr, vu, vd = mask_neighbors_replace(in1, in2, norm);\r\nout1 = ((vr.y - vl.y) - (vd.x - vu.x)) / 2; // m / s",
 					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -48,7 +48,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 16.75, 59.0, 378.0, 105.0 ],
+					"patching_rect" : [ 16.75, 59.0, 412.0, 104.0 ],
 					"style" : ""
 				}
 
@@ -77,7 +77,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 375.75, 20.0, 78.0, 22.0 ],
+					"patching_rect" : [ 409.75, 20.0, 78.0, 22.0 ],
 					"style" : "",
 					"text" : "in 2 obstacle",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
