@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 78.0, 485.0, 358.0 ],
+		"rect" : [ 34.0, 78.0, 983.0, 703.0 ],
 		"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -43,7 +43,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 272.833374, 12.999992, 37.0, 20.0 ],
+					"patching_rect" : [ 319.333374, 12.999992, 37.0, 20.0 ],
 					"style" : "",
 					"text" : "m / s"
 				}
@@ -51,7 +51,7 @@
 			}
 , 			{
 				"box" : 				{
-					"code" : "require(\"sc.clouds.helpers\");\r\nParam dissipation(1, 1, 1, 1);\t// / frame\r\nParam dt(0.125);\t\t\t\t// s / frame\r\nParam dx(0.05);\t\t\t\t\t// m / px\r\n\r\n// uv - uv s px m / frame m s px = uv - uv / frame\r\nsrc_coord = norm - (dt / dx) * (in2.xy / dim);\r\nsrc_mask = sample(in3, src_coord);\r\nl,r,u,d = sample_neighbors(in1, src_coord);\r\n//src_val = sample(in1,src_coord);\r\nsrc_val = (l+r+u+d) / 4;// + sample(in1, src_coord) * (3/4);\r\npt_mask = sample(in3, norm);\r\n\r\n// Output.\r\nout1 = src_val * src_mask * pt_mask * dissipation;",
+					"code" : "require(\"sc.clouds.helpers\");\r\nParam dissipation(1, 1, 1, 1);\t// / frame\r\nParam dt(0.125);\t\t\t\t// s / frame\r\nParam dx(0.05);\t\t\t\t\t// m / px\r\n\r\n// left, right, up, down\r\n// 0: none (periodic), 1: free slip, 2: no slip\r\nParam boundary(0, 0, 0, 0);\r\n\r\nif (norm.x == 0 || norm.y == 0 || norm.x == 1 || norm.y == 1) {\r\n\tout1 = in1;\r\n} else {\r\n\t// uv - uv s px m / frame m s px = uv - uv / frame\r\n\tsrc_coord = norm - (dt / dx) * (in2.xy / dim);\r\n\t\r\n\t// The source texture has a 1px boundary that defines the\r\n\t// input boundaries for non-periodic boundary conditions.\r\n\tscx = boundary.x == 0 ? src_coord.x : clamp(src_coord.x, 0, 1);\r\n\tscy = boundary.y == 0 ? src_coord.y : clamp(src_coord.y, 0, 1);\r\n\tsrc_coord = vec(scx, scy);\r\n\t\r\n\tsrc_mask = sample(in3, src_coord);\r\n\tl, r, u, d = sample_neighbors(in1, src_coord);\r\n\tsrc_val = (l + r + u + d) / 4; //sample(in1, src_coord)\r\n\tpt_mask = sample(in3, norm);\r\n\t\r\n\t// Output.\r\n\tout1 = src_val * src_mask * pt_mask * dissipation;\r\n}",
 					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -60,7 +60,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 13.666687, 51.999992, 387.333374, 249.333374 ],
+					"patching_rect" : [ 13.666687, 51.999992, 480.333374, 433.333374 ],
 					"style" : ""
 				}
 
@@ -73,7 +73,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 13.666687, 322.333374, 27.0, 22.0 ],
+					"patching_rect" : [ 13.666687, 502.333374, 27.0, 22.0 ],
 					"style" : "",
 					"text" : "out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -89,7 +89,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 382.000061, 12.999992, 84.0, 22.0 ],
+					"patching_rect" : [ 475.000061, 12.999992, 84.0, 22.0 ],
 					"style" : "",
 					"text" : "in 3 obstacles",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -105,7 +105,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 197.833374, 12.999992, 73.0, 22.0 ],
+					"patching_rect" : [ 244.333374, 12.999992, 73.0, 22.0 ],
 					"style" : "",
 					"text" : "in 2 velocity",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
