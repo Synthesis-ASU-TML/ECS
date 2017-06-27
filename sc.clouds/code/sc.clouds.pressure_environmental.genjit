@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 3,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -39,7 +39,7 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"code" : "Param dx(0.005);\t\t\t\t\t// m\r\nParam T0(288.15);\t\t\t\t\t// K\r\nParam lapse_rate(10);\t\t\t\t// K / m\r\nParam gravity(0, -9.8);\t\t\t\t// m / s^2\r\nParam origin(0, 0);\t\t\t\t\t// ([0-1], [0-1])\r\nParam dry_cp(1003);\t\t\t\t\t// J / kg K\r\nParam dry_cv(716);\t\t\t\t\t// J / kg K\r\nParam p0(101.325);\t\t\t\t\t// kPa\r\n\r\ng = gravity; \t\t\t\t\t\t// m / s^2\r\nRd = dry_cp - dry_cv;\t\t\t\t// J / kg K\r\n\r\nopx = origin * dim;\t\t\t\t\t// (px, px)\r\nnpx = norm * dim;\t\t\t\t\t// (px, px)\r\n\r\nz = dot(\t\t\t\t\t\t\t// m\r\n\t(norm - origin) * dim, \r\n\tnormalize(origin - g)\r\n) * dx;\r\n\r\nout1 = p0 * pow(\t\t\t\t\t// kPa\r\n\t1 - (z * lapse_rate) / T0, \r\n\tlength(g) / (lapse_rate * Rd)\r\n);",
+					"code" : "Param dx(0.005);\t\t\t\t\t// m\r\nParam T0(288.15);\t\t\t\t\t// K\r\nParam lapse_rate(10);\t\t\t\t// K / m\r\nParam gravity(0, -9.8);\t\t\t\t// m / s^2\r\nParam origin(0, 0);\t\t\t\t\t// ([0-1], [0-1])\r\nParam dry_cp(1003);\t\t\t\t\t// J / kg K\r\nParam dry_cv(716);\t\t\t\t\t// J / kg K\r\nParam p0(101.325);\t\t\t\t\t// kPa\r\n\r\ng = gravity; \t\t\t\t\t\t// m / s^2\r\nRd = dry_cp - dry_cv;\t\t\t\t// J / kg K\r\n\r\nz = dot(\t\t\t\t\t\t\t// m\r\n\t(norm - origin) * dim, \r\n\tnormalize(origin - g)\r\n) * dx;\r\n\r\nout1 = p0 * pow(\t\t\t\t\t// kPa\r\n\t1 - (z * lapse_rate) / T0, \r\n\tlength(g) / (lapse_rate * Rd)\r\n);",
 					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -48,7 +48,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 15.0, 25.5, 397.0, 376.0 ],
+					"patching_rect" : [ 15.0, 25.5, 393.0, 330.0 ],
 					"style" : ""
 				}
 
@@ -59,7 +59,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 44.0, 418.5, 254.75, 20.0 ],
+					"patching_rect" : [ 44.0, 372.5, 254.75, 20.0 ],
 					"style" : "",
 					"text" : "Undisturbed, environmental air pressure (kPa)"
 				}
@@ -86,7 +86,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 418.5, 27.0, 22.0 ],
+					"patching_rect" : [ 15.0, 372.5, 27.0, 22.0 ],
 					"style" : "",
 					"text" : "out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -97,8 +97,6 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-28", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-11", 0 ]
 				}
 
