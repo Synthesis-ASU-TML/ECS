@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 3,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -39,7 +39,7 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"code" : "Param gravity(0, -9.8);\t\t\t\t\t\t\t\t\t// m / s^2\r\nParam origin(0, 0);\t\t\t\t\t\t\t\t\t\t// ([0,1], [0,1])\r\nParam T0(288.15);\t\t\t\t\t\t\t\t\t\t// K\r\n\r\nql, qv, ptemp = in1.xyz;\t\t\t\t\t\t\t\t// 0-1, 0-1, K\r\n\r\n// Output acceleration from buoyancy: m/s^2 * K/K -> m/s^2\r\naccel = gravity * (ptemp * (1 + 0.61 * qv) / T0 - ql);\t// m / s^2\r\nout1 = accel;",
+					"code" : "Param gravity(0, -9.8);\t\t\t\t\t\t\t\t\t// m / s^2\r\nParam origin(0, 0);\t\t\t\t\t\t\t\t\t\t// ([0,1], [0,1])\r\nParam T0(288.15);\t\t\t\t\t\t\t\t\t\t// K\r\n\r\nif (norm.x == 0 || norm.x == 1 || norm.y == 0 || norm.y == 1) {\r\n\tout1 = 0;\r\n} else {\r\n\tql, qv, ptemp = in1.xyz;\t\t\t\t\t\t\t// 0-1, 0-1, K\r\n\r\n\t// Output acceleration from buoyancy: m/s^2 * K/K -> m/s^2\r\n\taccel = gravity * (ptemp * (1 + 0.61 * qv) / T0 - ql);\t// m / s^2\r\n\tout1 = accel;\r\n}",
 					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -48,7 +48,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 10.0, 44.0, 518.0, 210.0 ],
+					"patching_rect" : [ 10.0, 44.0, 518.0, 223.0 ],
 					"style" : ""
 				}
 
@@ -75,7 +75,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 39.0, 271.0, 245.0, 20.0 ],
+					"patching_rect" : [ 39.0, 286.0, 245.0, 20.0 ],
 					"style" : "",
 					"text" : "acceleration due to buoyant force (km/s^2)"
 				}
@@ -89,7 +89,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 10.0, 271.0, 27.0, 22.0 ],
+					"patching_rect" : [ 10.0, 286.0, 27.0, 22.0 ],
 					"style" : "",
 					"text" : "out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -103,7 +103,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 10.0, 311.0, 518.0, 234.0 ],
+					"patching_rect" : [ 10.0, 326.0, 518.0, 234.0 ],
 					"style" : "",
 					"text" : "Compute acceleration due to buoyant force. As temperature increases, dense parcels will be forced downward and less dense particles will be forced upward.\n    \n    \\theta_v = \\theta (1 + 0.61 q_v)\n    B = g (\\frac{\\theta_v, \\theta_{v0}) - q_H)\n    q_H = q_v + q_l\n\n    \\theta_v: virtual potential temperature (K), potential temperature of dry air if pressure densty equal to a parcel \n        of moist air.\n    \\theta: advected potential temperature (K)\n    q_v: mass mixing ratio of water vapor.\n    B: Acceleration due to buoyant force (km / s^2)\n    g: Acceleration due to gravity (km / s^2)\n    \\theta_{v0}: potential temperature at ground (K)\n    q_H: mass mixing ratio of hydrometers, i.e. all air particles except vapor (liquid).\n    q_v, q_l: mass mixing ratio of water vapor and liquid water"
 				}
@@ -113,8 +113,6 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -122,8 +120,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-51", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-5", 0 ]
 				}
 
