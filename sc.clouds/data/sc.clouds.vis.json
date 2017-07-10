@@ -21,7 +21,9 @@
 					"vis-mode" : [ 3 ],
 					"vis-texture" : [ "watertemp" ]
 				}
-			},
+
+			}
+,
 			"2" : 			{
 				"id" : 2,
 				"name" : "velocity",
@@ -41,7 +43,9 @@
 					"vis-mode" : [ 2 ],
 					"vis-texture" : [ "velocity" ]
 				}
-			},
+
+			}
+,
 			"3" : 			{
 				"id" : 3,
 				"name" : "vorticity",
@@ -61,7 +65,9 @@
 					"vis-mode" : [ 2 ],
 					"vis-texture" : [ "vorticity" ]
 				}
-			},
+
+			}
+,
 			"4" : 			{
 				"id" : 4,
 				"name" : "pressure",
@@ -81,7 +87,9 @@
 					"vis-mode" : [ 1 ],
 					"vis-texture" : [ "pressure" ]
 				}
-			},
+
+			}
+,
 			"5" : 			{
 				"id" : 5,
 				"name" : "divergence",
@@ -101,7 +109,9 @@
 					"vis-mode" : [ 1 ],
 					"vis-texture" : [ "divergence" ]
 				}
-			},
+
+			}
+,
 			"6" : 			{
 				"id" : 6,
 				"name" : "hsflow",
@@ -111,17 +121,19 @@
 					"vis-contrast-y" : [ 1.0 ],
 					"vis-contrast-z" : [ 1.0 ],
 					"vis-high-w" : [ 1.0 ],
-					"vis-high-x" : [ 0.01 ],
-					"vis-high-y" : [ 0.01 ],
-					"vis-high-z" : [ 0.01 ],
+					"vis-high-x" : [ 0.5 ],
+					"vis-high-y" : [ 0.5 ],
+					"vis-high-z" : [ 1.0 ],
 					"vis-low-w" : [ 0.0 ],
-					"vis-low-x" : [ 0.0 ],
-					"vis-low-y" : [ 0.0 ],
+					"vis-low-x" : [ -0.5 ],
+					"vis-low-y" : [ -0.5 ],
 					"vis-low-z" : [ 0.0 ],
-					"vis-mode" : [ 1 ],
+					"vis-mode" : [ 2 ],
 					"vis-texture" : [ "hsflow" ]
 				}
-			},
+
+			}
+,
 			"7" : 			{
 				"id" : 7,
 				"name" : "camera",
@@ -141,7 +153,9 @@
 					"vis-mode" : [ 0 ],
 					"vis-texture" : [ "camera" ]
 				}
-			},
+
+			}
+,
 			"8" : 			{
 				"id" : 8,
 				"name" : "obstacles",
@@ -151,7 +165,7 @@
 					"vis-contrast-y" : [ 1.0 ],
 					"vis-contrast-z" : [ 1.0 ],
 					"vis-high-w" : [ 0.0 ],
-					"vis-high-x" : [ -0.01 ],
+					"vis-high-x" : [ 0.0 ],
 					"vis-high-y" : [ 0.0 ],
 					"vis-high-z" : [ 0.0 ],
 					"vis-low-w" : [ 1.0 ],
@@ -161,7 +175,9 @@
 					"vis-mode" : [ 1 ],
 					"vis-texture" : [ "obstacles" ]
 				}
-			},
+
+			}
+,
 			"9" : 			{
 				"id" : 9,
 				"name" : "background",
@@ -181,7 +197,9 @@
 					"vis-mode" : [ 0 ],
 					"vis-texture" : [ "bgmask" ]
 				}
-			},
+
+			}
+,
 			"10" : 			{
 				"id" : 10,
 				"name" : "bgsub",
@@ -201,7 +219,9 @@
 					"vis-mode" : [ 0 ],
 					"vis-texture" : [ "bgsub" ]
 				}
-			},
+
+			}
+,
 			"11" : 			{
 				"id" : 11,
 				"name" : "staticvideo",
@@ -221,7 +241,11 @@
 					"vis-mode" : [ 0 ],
 					"vis-texture" : [ "static_video" ]
 				}
+
 			}
+
 		}
+
 	}
+
 }

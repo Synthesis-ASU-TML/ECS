@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 737.0, 401.0, 865.0, 804.0 ],
+		"rect" : [ 1184.0, 522.0, 524.0, 804.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -58,7 +58,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 5118.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 5088.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -73,7 +73,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 135.0, 9981.0, 80.0, 22.0 ],
+					"patching_rect" : [ 135.0, 9951.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -89,7 +89,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 9942.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 9912.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 80",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -105,7 +105,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 9903.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 9873.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -120,7 +120,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 135.0, 9858.0, 80.0, 22.0 ],
+					"patching_rect" : [ 135.0, 9828.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -136,7 +136,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 9820.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 9790.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 79",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -152,7 +152,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 9780.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 9750.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -167,7 +167,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 135.0, 9735.0, 80.0, 22.0 ],
+					"patching_rect" : [ 135.0, 9705.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -183,7 +183,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 9696.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 9666.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 78",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -199,7 +199,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 9657.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 9627.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -214,7 +214,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 135.0, 9612.0, 80.0, 22.0 ],
+					"patching_rect" : [ 135.0, 9582.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -230,7 +230,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 9573.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 9543.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 77",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -246,7 +246,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 9534.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 9504.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -261,7 +261,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 135.0, 9489.0, 80.0, 22.0 ],
+					"patching_rect" : [ 135.0, 9459.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -277,7 +277,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 9450.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 9420.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 76",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -293,7 +293,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 9411.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 9381.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -308,7 +308,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 135.0, 9366.0, 80.0, 22.0 ],
+					"patching_rect" : [ 135.0, 9336.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -324,7 +324,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 9328.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 9298.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 75",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -340,7 +340,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 9288.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 9258.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -355,7 +355,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 135.0, 9243.0, 80.0, 22.0 ],
+					"patching_rect" : [ 135.0, 9213.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -371,7 +371,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 9204.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 9174.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 74",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -387,7 +387,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 9165.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 9135.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -402,7 +402,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 135.0, 9120.0, 80.0, 22.0 ],
+					"patching_rect" : [ 135.0, 9090.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -418,7 +418,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 9081.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 9051.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 73",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -434,7 +434,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 9042.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 9012.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -449,7 +449,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 135.0, 8997.0, 80.0, 22.0 ],
+					"patching_rect" : [ 135.0, 8967.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -465,7 +465,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 8958.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 8928.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 72",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -481,7 +481,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 8919.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 8889.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -496,7 +496,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 134.0, 8874.0, 80.0, 22.0 ],
+					"patching_rect" : [ 134.0, 8844.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -512,7 +512,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 8835.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 8805.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 71",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -527,7 +527,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 135.0, 8756.0, 80.0, 22.0 ],
+					"patching_rect" : [ 135.0, 8726.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -543,7 +543,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 8718.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 8688.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 70",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -559,7 +559,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 8678.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 8648.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -574,7 +574,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 128.0, 8633.0, 80.0, 22.0 ],
+					"patching_rect" : [ 128.0, 8603.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -590,7 +590,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 8594.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 8564.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 69",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -606,7 +606,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 8555.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 8525.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -621,7 +621,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 128.0, 8510.0, 80.0, 22.0 ],
+					"patching_rect" : [ 128.0, 8480.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -637,7 +637,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 8470.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 8440.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 68",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -653,7 +653,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 8432.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 8402.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -668,7 +668,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 128.0, 8387.0, 80.0, 22.0 ],
+					"patching_rect" : [ 128.0, 8357.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -684,7 +684,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 8348.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 8318.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 67",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -700,7 +700,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 8309.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 8279.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -715,7 +715,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 128.0, 8264.0, 80.0, 22.0 ],
+					"patching_rect" : [ 128.0, 8234.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -731,7 +731,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 8225.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 8195.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 66",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -747,7 +747,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 8186.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 8156.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -762,7 +762,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 128.0, 8141.0, 80.0, 22.0 ],
+					"patching_rect" : [ 128.0, 8111.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -778,7 +778,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 8102.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 8072.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 65",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -794,7 +794,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 8063.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 8033.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -809,7 +809,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 128.0, 8018.0, 80.0, 22.0 ],
+					"patching_rect" : [ 128.0, 7988.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -825,7 +825,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 7979.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 7949.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 64",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -841,7 +841,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 7940.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 7910.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -856,7 +856,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 128.0, 7895.0, 80.0, 22.0 ],
+					"patching_rect" : [ 128.0, 7865.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -872,7 +872,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 7856.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 7826.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 63",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -888,7 +888,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 7817.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 7787.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -903,7 +903,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 128.0, 7772.0, 80.0, 22.0 ],
+					"patching_rect" : [ 128.0, 7742.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -919,7 +919,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 7734.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 7704.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 62",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -935,7 +935,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 7694.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 7664.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -950,7 +950,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 132.0, 7649.0, 80.0, 22.0 ],
+					"patching_rect" : [ 132.0, 7619.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -966,7 +966,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 7610.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 7580.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 61",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -981,7 +981,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 135.0, 7528.0, 80.0, 22.0 ],
+					"patching_rect" : [ 135.0, 7498.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -997,7 +997,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 7489.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 7459.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 60",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1013,7 +1013,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 7450.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 7420.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1028,7 +1028,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 135.0, 7405.0, 80.0, 22.0 ],
+					"patching_rect" : [ 135.0, 7375.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1044,7 +1044,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 7366.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 7336.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 59",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1060,7 +1060,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 7327.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 7297.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1075,7 +1075,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 135.0, 7282.0, 80.0, 22.0 ],
+					"patching_rect" : [ 135.0, 7252.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1091,7 +1091,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 7243.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 7213.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 58",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1107,7 +1107,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 7204.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 7174.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1122,7 +1122,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 135.0, 7159.0, 80.0, 22.0 ],
+					"patching_rect" : [ 135.0, 7129.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1138,7 +1138,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 7120.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 7090.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 57",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1154,7 +1154,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 7081.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 7051.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1169,7 +1169,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 135.0, 7036.0, 80.0, 22.0 ],
+					"patching_rect" : [ 135.0, 7006.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1185,7 +1185,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 6997.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 6967.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 56",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1201,7 +1201,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 6958.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 6928.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1216,7 +1216,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 135.0, 6913.0, 80.0, 22.0 ],
+					"patching_rect" : [ 135.0, 6883.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1232,7 +1232,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 6875.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 6845.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 55",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1248,7 +1248,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 6835.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 6805.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1263,7 +1263,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 135.0, 6790.0, 80.0, 22.0 ],
+					"patching_rect" : [ 135.0, 6760.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1279,7 +1279,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 6751.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 6721.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 54",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1295,7 +1295,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 6712.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 6682.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1310,7 +1310,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 135.0, 6667.0, 80.0, 22.0 ],
+					"patching_rect" : [ 135.0, 6637.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1326,7 +1326,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 6628.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 6598.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 53",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1342,7 +1342,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 6589.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 6559.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1357,7 +1357,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 135.0, 6544.0, 80.0, 22.0 ],
+					"patching_rect" : [ 135.0, 6514.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1373,7 +1373,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 6505.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 6475.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 52",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1389,7 +1389,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 6466.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 6436.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1404,7 +1404,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 134.0, 6421.0, 80.0, 22.0 ],
+					"patching_rect" : [ 134.0, 6391.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1420,7 +1420,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 6382.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 6352.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 51",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1435,7 +1435,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 135.0, 6303.0, 80.0, 22.0 ],
+					"patching_rect" : [ 135.0, 6273.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1451,7 +1451,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 6264.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 6234.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 50",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1467,7 +1467,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 6225.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 6195.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1482,7 +1482,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 128.0, 6180.0, 80.0, 22.0 ],
+					"patching_rect" : [ 128.0, 6150.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1498,7 +1498,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 6141.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 6111.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 49",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1514,7 +1514,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 6102.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 6072.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1529,7 +1529,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 128.0, 6057.0, 80.0, 22.0 ],
+					"patching_rect" : [ 128.0, 6027.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1545,7 +1545,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 6017.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 5987.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 48",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1561,7 +1561,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 5979.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 5949.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1576,7 +1576,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 128.0, 5934.0, 80.0, 22.0 ],
+					"patching_rect" : [ 128.0, 5904.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1592,7 +1592,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 5895.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 5865.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 47",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1608,7 +1608,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 5856.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 5826.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1623,7 +1623,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 128.0, 5811.0, 80.0, 22.0 ],
+					"patching_rect" : [ 128.0, 5781.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1639,7 +1639,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 5772.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 5742.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 46",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1655,7 +1655,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 5733.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 5703.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1670,7 +1670,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 128.0, 5688.0, 80.0, 22.0 ],
+					"patching_rect" : [ 128.0, 5658.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1686,7 +1686,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 5649.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 5619.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 45",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1702,7 +1702,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 5610.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 5580.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1717,7 +1717,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 128.0, 5565.0, 80.0, 22.0 ],
+					"patching_rect" : [ 128.0, 5535.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1733,7 +1733,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 5526.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 5496.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 44",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1749,7 +1749,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 5487.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 5457.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1764,7 +1764,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 128.0, 5442.0, 80.0, 22.0 ],
+					"patching_rect" : [ 128.0, 5412.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1780,7 +1780,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 5403.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 5373.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 43",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1796,7 +1796,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 5364.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 5334.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1811,7 +1811,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 128.0, 5319.0, 80.0, 22.0 ],
+					"patching_rect" : [ 128.0, 5289.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1827,7 +1827,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 5281.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 5251.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 42",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1843,7 +1843,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 5241.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 5211.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1858,7 +1858,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 132.0, 5196.0, 80.0, 22.0 ],
+					"patching_rect" : [ 132.0, 5166.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1874,7 +1874,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 5157.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 5127.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 41",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1889,7 +1889,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 135.0, 5058.0, 80.0, 22.0 ],
+					"patching_rect" : [ 135.0, 5028.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1905,7 +1905,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 5019.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 4989.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 40",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1921,7 +1921,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 4980.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 4950.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1936,7 +1936,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 135.0, 4935.0, 80.0, 22.0 ],
+					"patching_rect" : [ 135.0, 4905.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1952,7 +1952,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 4897.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 4867.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 39",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1968,7 +1968,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 4857.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 4827.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1983,7 +1983,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 135.0, 4812.0, 80.0, 22.0 ],
+					"patching_rect" : [ 135.0, 4782.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1999,7 +1999,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 4773.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 4743.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 38",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2015,7 +2015,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 4734.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 4704.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2030,7 +2030,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 135.0, 4689.0, 80.0, 22.0 ],
+					"patching_rect" : [ 135.0, 4659.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2046,7 +2046,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 4650.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 4620.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 37",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2062,7 +2062,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 4611.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 4581.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2077,7 +2077,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 135.0, 4566.0, 80.0, 22.0 ],
+					"patching_rect" : [ 135.0, 4536.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2093,7 +2093,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 4527.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 4497.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 36",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2109,7 +2109,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 4488.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 4458.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2124,7 +2124,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 135.0, 4443.0, 80.0, 22.0 ],
+					"patching_rect" : [ 135.0, 4413.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2140,7 +2140,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 4405.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 4375.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 35",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2156,7 +2156,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 4365.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 4335.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2171,7 +2171,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 135.0, 4320.0, 80.0, 22.0 ],
+					"patching_rect" : [ 135.0, 4290.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2187,7 +2187,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 4281.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 4251.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 34",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2203,7 +2203,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 4242.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 4212.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2218,7 +2218,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 135.0, 4197.0, 80.0, 22.0 ],
+					"patching_rect" : [ 135.0, 4167.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2234,7 +2234,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 4158.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 4128.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 33",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2250,7 +2250,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 4119.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 4089.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2265,7 +2265,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 135.0, 4074.0, 80.0, 22.0 ],
+					"patching_rect" : [ 135.0, 4044.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2281,7 +2281,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 4035.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 4005.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 32",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2297,7 +2297,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 3996.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 3966.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2312,7 +2312,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 134.0, 3951.0, 80.0, 22.0 ],
+					"patching_rect" : [ 134.0, 3921.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2328,7 +2328,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 3912.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 3882.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 31",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2343,7 +2343,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 135.0, 3833.0, 80.0, 22.0 ],
+					"patching_rect" : [ 135.0, 3803.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2359,7 +2359,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 3795.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 3765.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 30",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2375,7 +2375,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 3755.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 3725.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2390,7 +2390,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 128.0, 3710.0, 80.0, 22.0 ],
+					"patching_rect" : [ 128.0, 3680.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2406,7 +2406,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 3671.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 3641.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 29",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2422,7 +2422,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 3632.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 3602.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2437,7 +2437,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 128.0, 3587.0, 80.0, 22.0 ],
+					"patching_rect" : [ 128.0, 3557.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2453,7 +2453,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 3547.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 3517.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 28",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2469,7 +2469,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 3509.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 3479.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2484,7 +2484,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 128.0, 3464.0, 80.0, 22.0 ],
+					"patching_rect" : [ 128.0, 3434.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2500,7 +2500,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 3425.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 3395.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 27",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2516,7 +2516,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 3386.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 3356.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2531,7 +2531,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 128.0, 3341.0, 80.0, 22.0 ],
+					"patching_rect" : [ 128.0, 3311.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2547,7 +2547,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 3302.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 3272.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 26",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2563,7 +2563,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 3263.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 3233.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2578,7 +2578,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 128.0, 3218.0, 80.0, 22.0 ],
+					"patching_rect" : [ 128.0, 3188.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2594,7 +2594,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 3179.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 3149.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 25",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2610,7 +2610,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 3140.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 3110.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2625,7 +2625,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 128.0, 3095.0, 80.0, 22.0 ],
+					"patching_rect" : [ 128.0, 3065.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2641,7 +2641,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 3056.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 3026.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 24",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2657,7 +2657,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 3017.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 2987.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2672,7 +2672,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 128.0, 2972.0, 80.0, 22.0 ],
+					"patching_rect" : [ 128.0, 2942.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2688,7 +2688,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 2933.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 2903.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 23",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2704,7 +2704,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 2894.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 2864.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2719,7 +2719,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 128.0, 2849.0, 80.0, 22.0 ],
+					"patching_rect" : [ 128.0, 2819.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2735,7 +2735,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 2811.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 2781.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 22",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2751,7 +2751,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 2771.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 2741.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2766,7 +2766,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 132.0, 2726.0, 80.0, 22.0 ],
+					"patching_rect" : [ 132.0, 2696.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2782,7 +2782,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 2687.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 2657.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 21",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2797,7 +2797,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 135.0, 2605.0, 80.0, 22.0 ],
+					"patching_rect" : [ 135.0, 2575.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2813,7 +2813,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 2566.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 2536.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 20",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2829,7 +2829,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 2527.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 2497.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2844,7 +2844,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 135.0, 2482.0, 80.0, 22.0 ],
+					"patching_rect" : [ 135.0, 2452.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2860,7 +2860,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 2443.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 2413.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 19",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2876,7 +2876,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 2404.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 2374.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2891,7 +2891,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 135.0, 2359.0, 80.0, 22.0 ],
+					"patching_rect" : [ 135.0, 2329.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2907,7 +2907,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 2320.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 2290.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 18",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2923,7 +2923,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 2281.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 2251.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2938,7 +2938,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 135.0, 2236.0, 80.0, 22.0 ],
+					"patching_rect" : [ 135.0, 2206.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2954,7 +2954,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 2197.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 2167.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 17",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2970,7 +2970,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 2158.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 2128.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -2985,7 +2985,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 135.0, 2113.0, 80.0, 22.0 ],
+					"patching_rect" : [ 135.0, 2083.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -3001,7 +3001,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 2074.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 2044.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 16",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -3017,7 +3017,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 2035.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 2005.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -3032,7 +3032,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 135.0, 1990.0, 80.0, 22.0 ],
+					"patching_rect" : [ 135.0, 1960.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -3048,7 +3048,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 1952.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 1922.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 15",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -3064,7 +3064,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 1912.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 1882.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -3079,7 +3079,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 135.0, 1867.0, 80.0, 22.0 ],
+					"patching_rect" : [ 135.0, 1837.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -3095,7 +3095,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 1828.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 1798.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 14",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -3111,7 +3111,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 1789.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 1759.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -3126,7 +3126,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 135.0, 1744.0, 80.0, 22.0 ],
+					"patching_rect" : [ 135.0, 1714.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -3142,7 +3142,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 1705.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 1675.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 13",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -3158,7 +3158,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 1666.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 1636.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -3173,7 +3173,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 135.0, 1621.0, 80.0, 22.0 ],
+					"patching_rect" : [ 135.0, 1591.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -3189,7 +3189,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 1582.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 1552.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 12",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -3205,7 +3205,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 1543.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 1513.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -3220,7 +3220,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 134.0, 1498.0, 80.0, 22.0 ],
+					"patching_rect" : [ 134.0, 1468.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -3236,7 +3236,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 1459.0, 212.0, 22.0 ],
+					"patching_rect" : [ 10.0, 1429.0, 212.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 11",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -3251,7 +3251,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 135.0, 1380.0, 80.0, 22.0 ],
+					"patching_rect" : [ 135.0, 1350.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -3267,7 +3267,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 1341.0, 213.0, 22.0 ],
+					"patching_rect" : [ 10.0, 1311.0, 213.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 10",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -3283,7 +3283,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 1302.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 1272.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -3298,7 +3298,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 128.0, 1257.0, 80.0, 22.0 ],
+					"patching_rect" : [ 128.0, 1227.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -3314,7 +3314,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 1218.0, 206.0, 22.0 ],
+					"patching_rect" : [ 10.0, 1188.0, 206.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 9",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -3330,7 +3330,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 1179.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 1149.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -3345,7 +3345,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 128.0, 1134.0, 80.0, 22.0 ],
+					"patching_rect" : [ 128.0, 1104.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -3361,7 +3361,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 1094.0, 206.0, 22.0 ],
+					"patching_rect" : [ 10.0, 1064.0, 206.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 8",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -3377,7 +3377,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 1056.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 1026.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -3392,7 +3392,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 128.0, 1011.0, 80.0, 22.0 ],
+					"patching_rect" : [ 128.0, 981.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -3408,7 +3408,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 972.0, 206.0, 22.0 ],
+					"patching_rect" : [ 10.0, 942.0, 206.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 7",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -3424,7 +3424,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 933.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 903.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -3439,7 +3439,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 128.0, 888.0, 80.0, 22.0 ],
+					"patching_rect" : [ 128.0, 858.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -3455,7 +3455,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 849.0, 206.0, 22.0 ],
+					"patching_rect" : [ 10.0, 819.0, 206.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 6",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -3471,7 +3471,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 810.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 780.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -3486,7 +3486,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 128.0, 765.0, 80.0, 22.0 ],
+					"patching_rect" : [ 128.0, 735.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -3502,7 +3502,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 726.0, 206.0, 22.0 ],
+					"patching_rect" : [ 10.0, 696.0, 206.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 5",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -3518,7 +3518,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 687.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 657.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -3533,7 +3533,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 128.0, 642.0, 80.0, 22.0 ],
+					"patching_rect" : [ 128.0, 612.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -3549,7 +3549,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 603.0, 206.0, 22.0 ],
+					"patching_rect" : [ 10.0, 573.0, 206.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 4",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -3565,7 +3565,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 564.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 534.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -3580,7 +3580,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 128.0, 519.0, 80.0, 22.0 ],
+					"patching_rect" : [ 128.0, 489.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -3596,7 +3596,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 480.0, 206.0, 22.0 ],
+					"patching_rect" : [ 10.0, 450.0, 206.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 3",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -3612,7 +3612,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 441.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 411.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -3627,7 +3627,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 128.0, 396.0, 80.0, 22.0 ],
+					"patching_rect" : [ 128.0, 366.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -3643,7 +3643,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 358.0, 206.0, 22.0 ],
+					"patching_rect" : [ 10.0, 328.0, 206.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 2",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -3659,7 +3659,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 318.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 288.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -3722,12 +3722,12 @@
 					"color" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 					"id" : "obj-2",
 					"maxclass" : "newobj",
-					"numinlets" : 5,
-					"numoutlets" : 5,
-					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 10.0, 111.0, 241.0, 22.0 ],
+					"numinlets" : 4,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 10.0, 111.0, 202.0, 22.0 ],
 					"style" : "",
-					"text" : "routepass jit_gl_texture bang param drawto",
+					"text" : "routepass jit_gl_texture bang param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -3740,7 +3740,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 333.0, 312.0, 30.0, 30.0 ],
+					"patching_rect" : [ 333.0, 282.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -3754,7 +3754,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 333.0, 273.0, 78.0, 22.0 ],
+					"patching_rect" : [ 333.0, 243.0, 78.0, 22.0 ],
 					"style" : "",
 					"text" : "r  #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -3769,7 +3769,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 132.0, 273.0, 80.0, 22.0 ],
+					"patching_rect" : [ 132.0, 243.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -3785,7 +3785,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 10.0, 234.0, 206.0, 22.0 ],
+					"patching_rect" : [ 10.0, 204.0, 206.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.clouds.jacobi-iteration sc-clouds 1",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -3800,7 +3800,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 119.5, 135.0, 97.0, 22.0 ],
+					"patching_rect" : [ 132.0, 135.0, 97.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -3816,7 +3816,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 195.0, 95.0, 22.0 ],
+					"patching_rect" : [ 25.0, 165.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "r #0-jc-param",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -3872,7 +3872,7 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-29", 2 ],
-					"midpoints" : [ 417.5, 219.0, 206.5, 219.0 ],
+					"midpoints" : [ 417.5, 189.0, 206.5, 189.0 ],
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -6064,7 +6064,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-29", 1 ],
-					"midpoints" : [ 279.5, 219.0, 113.0, 219.0 ],
+					"midpoints" : [ 279.5, 189.0, 113.0, 189.0 ],
 					"source" : [ "obj-52", 0 ]
 				}
 
@@ -6157,13 +6157,6 @@
 				"patchline" : 				{
 					"destination" : [ "", -1 ],
 					"source" : [ "obj-2", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-29", 0 ],
-					"source" : [ "obj-2", 3 ]
 				}
 
 			}

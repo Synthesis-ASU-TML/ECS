@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 3,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 1233.0, 162.0, 708.0, 671.0 ],
+		"rect" : [ 207.0, 218.0, 708.0, 671.0 ],
 		"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -44,7 +44,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 478.0, 15.0, 98.0, 22.0 ],
+					"patching_rect" : [ 404.0, 15.0, 98.0, 22.0 ],
 					"style" : "",
 					"text" : "in 3 signed_xfer"
 				}
@@ -57,7 +57,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 247.0, 11.0, 109.0, 22.0 ],
+					"patching_rect" : [ 210.0, 15.0, 109.0, 22.0 ],
 					"style" : "",
 					"text" : "in 2 unsigned_xfer"
 				}
@@ -90,7 +90,7 @@
 			}
 , 			{
 				"box" : 				{
-					"code" : "Param signmag(0.);\r\nParam contrast(1., 1., 1., 1.);\r\nParam high(1., 1., 500., 1.);\r\nParam low(0., 0., 100., 0.);\r\nParam gain(1.0);\r\n\r\nval = in1;\r\nval = (val - low) / (high - low);\r\nval = pow(val, contrast);\r\n//val = pow(val, contrast);\r\n\r\nif (signmag == 0) {\r\n\tout1 = val * gain;\r\n} else if (signmag == 1) {\r\n\tout1 = sample(in2, val.xx) * gain;\r\n} else if (signmag == 2) {\r\n\tout1 = sample(in3, val) * gain;\r\n} else if (signmag == 3) {\r\n\tbg = vec(val.z, 0, 0.3, 1.);\r\n\tvap = vec(0, val.y / 1.25, val.y, 1.);\r\n\tliq = val.xxx;\r\n\t\r\n\tsky = bg + vap + liq;\r\n\tsky = clamp(sky, 0, 1);\r\n\t\r\n\tout1 = sky * gain;\r\n}",
+					"code" : "Param signmag(0.);\r\nParam contrast(1., 1., 1., 1.);\r\nParam high(1., 1., 500., 1.);\r\nParam low(0., 0., 100., 0.);\r\nParam gain(1.0);\r\n\r\nval = in1;\r\nval = (val - low) / (high - low);\r\nval = pow(val, contrast);\r\n//val = pow(val, contrast);\r\n\r\nif (signmag == 0) {\r\n\tout1 = val * gain;\r\n} else if (signmag == 1) {\r\n\tv = length(val) / sqrt(4);\r\n\tout1 = sample(in2, vec(v,v)) * gain;\r\n} else if (signmag == 2) {\r\n\tout1 = sample(in3, val, boundmode=\"clamp\") * gain;\r\n} else if (signmag == 3) {\r\n\tbg = vec(val.z, 0, 0.3, 1.);\r\n\tvap = vec(0, val.y / 1.25, val.y, 1.);\r\n\tliq = val.xxx;\r\n\t\r\n\tsky = bg + vap + liq;\r\n\tsky = clamp(sky, 0, 1);\r\n\t\r\n\tout1 = sky * gain;\r\n}",
 					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -99,7 +99,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 16.0, 59.0, 481.0, 544.0 ],
+					"patching_rect" : [ 16.0, 60.0, 407.0, 417.0 ],
 					"style" : ""
 				}
 
@@ -108,8 +108,6 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -117,8 +115,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 2 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -126,8 +122,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-36", 0 ]
 				}
 
@@ -135,8 +129,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-37", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-7", 0 ]
 				}
 

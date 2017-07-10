@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 78.0, 983.0, 703.0 ],
+		"rect" : [ 535.0, 310.0, 559.0, 519.0 ],
 		"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -39,19 +39,7 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-4",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 319.333374, 12.999992, 37.0, 20.0 ],
-					"style" : "",
-					"text" : "m / s"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"code" : "require(\"sc.clouds.helpers\");\r\nParam dissipation(1, 1, 1, 1);\t// / frame\r\nParam dt(0.125);\t\t\t\t// s / frame\r\nParam dx(0.05);\t\t\t\t\t// m / px\r\n\r\n// left, right, up, down\r\n// 0: none (periodic), 1: free slip, 2: no slip\r\nParam boundary(0, 0, 0, 0);\r\n\r\nif (norm.x == 0 || norm.y == 0 || norm.x == 1 || norm.y == 1) {\r\n\tout1 = in1;\r\n} else {\r\n\t// uv - uv s px m / frame m s px = uv - uv / frame\r\n\tsrc_coord = norm - (dt / dx) * (in2.xy / dim);\r\n\t\r\n\t// The source texture has a 1px boundary that defines the\r\n\t// input boundaries for non-periodic boundary conditions.\r\n\tscx = boundary.x == 0 ? src_coord.x : clamp(src_coord.x, 0, 1);\r\n\tscy = boundary.y == 0 ? src_coord.y : clamp(src_coord.y, 0, 1);\r\n\tsrc_coord = vec(scx, scy);\r\n\t\r\n\tsrc_mask = sample(in3, src_coord);\r\n\tl, r, u, d = sample_neighbors(in1, src_coord);\r\n\tsrc_val = (l + r + u + d) / 4; //sample(in1, src_coord)\r\n\tpt_mask = sample(in3, norm);\r\n\t\r\n\t// Output.\r\n\tout1 = src_val * src_mask * pt_mask * dissipation;\r\n}",
+					"code" : "require(\"sc.clouds.helpers\");\r\nParam dissipation(1, 1, 1, 1);\t// / frame\r\nParam dt(0.125);\t\t\t\t// s / frame\r\nParam dx(0.05);\t\t\t\t\t// m / px\r\nParam periodic(0, 0);\t\t\t// 0, 1: <horizontal, vertical>\r\n\r\n// uv - uv s px m / frame m s px = uv - uv / frame\r\nsrc_coord = norm - (dt / dx) * (in2.xy / dim);\r\n\r\n// The source texture has a 1px edge for non-periodic \r\n// boundary conditions.\r\nsrc_coord = vec(\r\n\tperiodic.x ? src_coord.x : clamp(src_coord.x, 0, 1),\r\n\tperiodic.y ? src_coord.y : clamp(src_coord.y, 0, 1 - 0.5/dim.y)\r\n);\r\n\r\nsrc_mask = sample(in3, src_coord);\r\n\r\n// This will only be called ON the edges if BC is periodic, \r\n// because otherwise the edge is an obstacle.\r\nsrc_val = sample(in1, src_coord);\r\nsrc_val = src_mask.w * src_mask + (1 - src_mask.w) * src_val;\r\n\r\n// Output.\r\nout1 = in3.w * in3 + (1 - in3.w) * (src_val * dissipation);",
 					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -60,7 +48,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 13.666687, 51.999992, 480.333374, 433.333374 ],
+					"patching_rect" : [ 13.666687, 50.999992, 467.333374, 409.333374 ],
 					"style" : ""
 				}
 
@@ -73,7 +61,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 13.666687, 502.333374, 27.0, 22.0 ],
+					"patching_rect" : [ 13.666687, 477.333374, 27.0, 22.0 ],
 					"style" : "",
 					"text" : "out",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -89,7 +77,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 475.000061, 12.999992, 84.0, 22.0 ],
+					"patching_rect" : [ 462.000061, 12.999992, 84.0, 22.0 ],
 					"style" : "",
 					"text" : "in 3 obstacles",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -105,7 +93,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 244.333374, 12.999992, 73.0, 22.0 ],
+					"patching_rect" : [ 237.833374, 12.999992, 73.0, 22.0 ],
 					"style" : "",
 					"text" : "in 2 velocity",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]

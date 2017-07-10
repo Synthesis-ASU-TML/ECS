@@ -8,15 +8,27 @@ sample_neighbors(tex, coord) {
 	return l, r, u, d;
 }
 
+mask_neighbors(tex, mask, coord) {
+	ml, mr, mu, md = sample_neighbors(mask, coord);
+	l, r, u, d = sample_neighbors(tex, coord);
+
+	l = (1 - ml.w) * l;
+	r = (1 - mr.w) * r;
+	u = (1 - mu.w) * u;
+	d = (1 - md.w) * d;
+
+	return l, r, u, d;	
+} 
+
 mask_neighbors_replace(tex, mask, coord) {
 	ml, mr, mu, md = sample_neighbors(mask, coord);
 	l, r, u, d = sample_neighbors(tex, coord);
 	c = sample(tex, coord, boundmode="wrap");
 
-	l = (1 - ml) * c + ml * l;
-	r = (1 - mr) * c + mr * r;
-	u = (1 - mu) * c + mu * u;
-	d = (1 - md) * c + md * d;
+	l = ml.w * c + (1 - ml.w) * l;
+	r = mr.w * c + (1 - mr.w) * r;
+	u = mu.w * c + (1 - mu.w) * u;
+	d = md.w * c + (1 - md.w) * d;
 
 	return l, r, u, d;
 }
