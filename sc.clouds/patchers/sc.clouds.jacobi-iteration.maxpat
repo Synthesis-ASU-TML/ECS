@@ -5,11 +5,11 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 4,
-			"architecture" : "x64",
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 480.0, 327.0, 587.0, 361.0 ],
+		"rect" : [ 389.0, 727.0, 587.0, 361.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -58,7 +58,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 4,
 					"outlettype" : [ "jit_gl_texture", "jit_gl_texture", "jit_gl_texture", "" ],
-					"patching_rect" : [ 86.5, 233.0, 273.0, 22.0 ],
+					"patching_rect" : [ 86.5, 233.0, 237.0, 22.0 ],
 					"style" : "",
 					"text" : "jit.gl.pix #1 @gen sc.clouds.jacobi @thru 0",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -267,7 +267,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "jit_gl_texture" ],
 					"patching_rect" : [ 268.0, 186.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -281,7 +281,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "jit_gl_texture" ],
 					"patching_rect" : [ 380.5, 186.0, 30.0, 30.0 ],
 					"style" : ""
 				}
