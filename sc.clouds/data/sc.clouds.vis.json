@@ -18,7 +18,7 @@
 					"vis-low-x" : [ 0.0 ],
 					"vis-low-y" : [ 0.0 ],
 					"vis-low-z" : [ 100.0 ],
-					"vis-mode" : [ 3 ],
+					"vis-mode" : [ 4 ],
 					"vis-texture" : [ "watertemp" ]
 				}
 
@@ -40,7 +40,7 @@
 					"vis-low-x" : [ -4.0 ],
 					"vis-low-y" : [ -4.0 ],
 					"vis-low-z" : [ 0.0 ],
-					"vis-mode" : [ 2 ],
+					"vis-mode" : [ 3 ],
 					"vis-texture" : [ "velocity" ]
 				}
 
@@ -62,7 +62,7 @@
 					"vis-low-x" : [ -2.0 ],
 					"vis-low-y" : [ -2.0 ],
 					"vis-low-z" : [ -2.0 ],
-					"vis-mode" : [ 2 ],
+					"vis-mode" : [ 3 ],
 					"vis-texture" : [ "vorticity" ]
 				}
 
@@ -73,7 +73,7 @@
 				"name" : "pressure",
 				"data" : 				{
 					"vis-contrast-w" : [ 1.0 ],
-					"vis-contrast-x" : [ 0.5 ],
+					"vis-contrast-x" : [ 1.0 ],
 					"vis-contrast-y" : [ 0.0 ],
 					"vis-contrast-z" : [ 1.0 ],
 					"vis-high-w" : [ 1.0 ],
@@ -84,7 +84,7 @@
 					"vis-low-x" : [ 0.0 ],
 					"vis-low-y" : [ 0.0 ],
 					"vis-low-z" : [ 0.0 ],
-					"vis-mode" : [ 1 ],
+					"vis-mode" : [ 2 ],
 					"vis-texture" : [ "pressure" ]
 				}
 
@@ -106,7 +106,7 @@
 					"vis-low-x" : [ 0.0 ],
 					"vis-low-y" : [ 0.0 ],
 					"vis-low-z" : [ 0.0 ],
-					"vis-mode" : [ 1 ],
+					"vis-mode" : [ 2 ],
 					"vis-texture" : [ "divergence" ]
 				}
 
@@ -128,7 +128,7 @@
 					"vis-low-x" : [ -0.5 ],
 					"vis-low-y" : [ -0.5 ],
 					"vis-low-z" : [ 0.0 ],
-					"vis-mode" : [ 2 ],
+					"vis-mode" : [ 3 ],
 					"vis-texture" : [ "hsflow" ]
 				}
 

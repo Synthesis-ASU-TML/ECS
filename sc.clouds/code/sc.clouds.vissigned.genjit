@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 207.0, 218.0, 708.0, 671.0 ],
+		"rect" : [ 207.0, 218.0, 663.0, 546.0 ],
 		"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -39,13 +39,26 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-4",
+					"linecount" : 7,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 435.0, 69.0, 175.0, 100.0 ],
+					"style" : "",
+					"text" : "Values for signmag:\n0: raw input\n1: magnitude of scaled vector\n2: magnitude of x component only\n3: signed magnitude\n4: \"clouds\""
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-2",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 404.0, 15.0, 98.0, 22.0 ],
-					"style" : "",
+					"style" : "ecs-io",
 					"text" : "in 3 signed_xfer"
 				}
 
@@ -58,7 +71,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 210.0, 15.0, 109.0, 22.0 ],
-					"style" : "",
+					"style" : "ecs-io",
 					"text" : "in 2 unsigned_xfer"
 				}
 
@@ -69,8 +82,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 16.0, 639.0, 37.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 16.0, 484.0, 37.0, 22.0 ],
+					"style" : "ecs-io",
 					"text" : "out 1"
 				}
 
@@ -83,14 +96,14 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 16.0, 15.0, 59.0, 22.0 ],
-					"style" : "",
+					"style" : "ecs-io",
 					"text" : "in 1 input"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"code" : "Param signmag(0.);\r\nParam contrast(1., 1., 1., 1.);\r\nParam high(1., 1., 500., 1.);\r\nParam low(0., 0., 100., 0.);\r\nParam gain(1.0);\r\n\r\nval = in1;\r\nval = (val - low) / (high - low);\r\nval = pow(val, contrast);\r\n//val = pow(val, contrast);\r\n\r\nif (signmag == 0) {\r\n\tout1 = val * gain;\r\n} else if (signmag == 1) {\r\n\tv = length(val) / sqrt(4);\r\n\tout1 = sample(in2, vec(v,v)) * gain;\r\n} else if (signmag == 2) {\r\n\tout1 = sample(in3, val, boundmode=\"clamp\") * gain;\r\n} else if (signmag == 3) {\r\n\tbg = vec(val.z, 0, 0.3, 1.);\r\n\tvap = vec(0, val.y / 1.25, val.y, 1.);\r\n\tliq = val.xxx;\r\n\t\r\n\tsky = bg + vap + liq;\r\n\tsky = clamp(sky, 0, 1);\r\n\t\r\n\tout1 = sky * gain;\r\n}",
+					"code" : "Param signmag(0.);\r\nParam contrast(1., 1., 1., 1.);\r\nParam high(1., 1., 500., 1.);\r\nParam low(0., 0., 100., 0.);\r\nParam gain(1.0);\r\n\r\nval = pow((in1 - low) / (high - low), contrast);\r\n\r\nif (signmag == 0) {\r\n\tout1 = val * gain;\r\n} else if (signmag == 1) {\r\n\tv = length(val) / sqrt(4);\r\n\tout1 = sample(in2, vec(v,v)) * gain;\r\n} else if (signmag == 2) {\r\n\tout1 = sample(in2, val.xx) * gain;\r\n} else if (signmag == 3) {\r\n\tout1 = sample(in3, val, boundmode=\"clamp\") * gain;\r\n} else if (signmag == 4) {\r\n\tbg = vec(val.z, 0, 0.3, 1.);\r\n\tvap = vec(0, val.y / 1.25, val.y, 1.);\r\n\tliq = val.xxx;\r\n\t\r\n\tsky = bg + vap + liq;\r\n\tsky = clamp(sky, 0, 1);\r\n\t\r\n\tout1 = sky * gain;\r\n}",
 					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -99,7 +112,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 16.0, 60.0, 407.0, 417.0 ],
+					"patching_rect" : [ 16.0, 60.0, 407.0, 407.0 ],
 					"style" : ""
 				}
 
@@ -132,6 +145,18 @@
 					"source" : [ "obj-7", 0 ]
 				}
 
+			}
+ ],
+		"styles" : [ 			{
+				"name" : "ecs-io",
+				"default" : 				{
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"accentcolor" : [ 0.650963, 0.655203, 0.777106, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
 			}
  ]
 	}
