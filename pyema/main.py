@@ -14,10 +14,12 @@ from pyopencl.tools import get_gl_sharing_context_properties
 import pygame
 from pygame.locals import *
 
-SCREEN_SIZE = (1024,1024)
+SCREEN_SIZE = (512,512)
 time_step = 0.005
 mouse_down = False
 mouse_old = dict(x=0, y=0)
+LASTPOS = None
+time_passed = 0
 ema = None
 
 # PIL helpers.
@@ -36,32 +38,60 @@ def profile_event(event, name):
 	print name, event.profile.end-event.profile.start * 1e-9
 
 def runloop():
+	global LASTPOS, time_passed
+
 	playtime = 0
 
 	while True:
 		for event in pygame.event.get():
+			mods = pygame.key.get_mods()
+
 			if event.type == QUIT:
 				return
-			if event.type == KEYUP and event.key == K_ESCAPE:
-				return
-			if event.type == KEYUP and event.key == K_1:
-				ema.dt /= 2
-			if event.type == KEYUP and event.key == K_2:
-				ema.dt *= 2
-			if event.type == KEYUP and event.key == K_3:
-				ema.dx /= 2
-			if event.type == KEYUP and event.key == K_4:
-				ema.dx *= 2
-			if event.type == KEYUP and event.key == K_5:
-				ema.vorticity_confinement_scale *= 1.5
-			if event.type == KEYUP and event.key == K_6:
-				ema.vorticity_confinement_scale /= 1.5
+			if event.type == KEYUP:
+				if event.key == K_ESCAPE:
+					return
+				elif mods & KMOD_SHIFT:
+					if event.key == K_1:
+						ema.showmode = 0
+					elif event.key == K_2:
+						ema.showmode = 1
+					elif event.key == K_3:
+						ema.showmode = 2
+				else:
+					if event.key == K_1:
+						ema.dt /= 2
+					elif event.key == K_2:
+						ema.dt *= 2
+					elif event.key == K_3:
+						ema.dx /= 2
+					elif event.key == K_4:
+						ema.dx *= 2
+					elif event.key == K_5:
+						ema.vorticity_confinement_scale *= 1.5
+					elif event.key == K_6:
+						ema.vorticity_confinement_scale /= 1.5
+			if event.type == MOUSEMOTION:
+				pos = pygame.mouse.get_pos()
+				pos = np.array(pos, dtype=np.float32) / np.array(SCREEN_SIZE, dtype=np.float32)
+				pos[1] = 1 - pos[1]
 
-		time_passed = clock.tick()
-		playtime += time_passed / 1000.0
-		pressed = pygame.key.get_pressed()
+				if pygame.mouse.get_pressed()[0]:
+					ema.obstacle_position[0:2] = pos
+
+					if LASTPOS != None and time_passed > 0:
+						ema.circle_velocity = (pos - LASTPOS) / (time_passed / 1000.0)
+
+				if time_passed > 0:
+					LASTPOS = pos
+
+
+
+		#pressed = pygame.key.get_pressed()
 
 		ema.timestep()
+		time_passed = clock.tick()
+		playtime += time_passed / 1000.0
 
 		glClearColor(0,0,0,0)
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
@@ -164,18 +194,23 @@ class Field:
 
 class EMA:	
 	def __init__(self):
+		self.showmode = 0
+
 		self.dt = .025							# s / frame
 		self.dx = .025							# Km / px
 
 		self.origin = np.array([0, 0])
 		self.gravity = np.array([-0.0098,0])#, -0.0098])	# Km / s
-		self.boundaries = np.array([1,1,0,0], dtype=np.float32)
+		self.boundaries = np.array([1,1,0,0], dtype=np.uint)
 
 		self.p0 = 115							# kPa
 		self.t0 = 280
 
-		self.vorticity_confinement_scale = 10
-		self.jacobi_iterations = 20#20#20#0#20
+		self.circle_gain = 10
+		self.circle_velocity = np.array([0, 0], dtype=np.float32)
+
+		self.vorticity_confinement_scale = 0
+		self.jacobi_iterations = 40#20#20#0#20
 		self.diffusion_iterations = 0
 		self.dissipation = np.array([1, 1, 1, 1])
 
@@ -195,6 +230,8 @@ class EMA:
 
 		self.jacobi_alpha_pressure = -(self.dx * self.dx)
 		self.jacobi_beta_pressure = 4
+
+		self.obstacle_position=np.array([0.5, 0.5, 0.1], dtype=np.float32);
 
 	def init_cl(self):
 		'''Initialize OpenCL context, queue, and program.'''
@@ -258,7 +295,7 @@ class EMA:
 		)
 		
 		self.grayscale = cl.image_from_array(
-			self.context, np.float32(pp.cm.get_cmap('plasma')(vals)), 4
+			self.context, np.float32(pp.cm.get_cmap('gray')(vals)), 4
 		)
 
 		# External force is a small rectangle on left side that forces right.
@@ -270,7 +307,7 @@ class EMA:
 
 		# Initial velocity field points to the right.
 		vel = np.array(zeros)
-		self.velocity = Field(vel, vismin=(-20,-20), vismax=(20,20), **cl_objects)
+		self.velocity = Field(vel, vismin=(-0.5,-0.5), vismax=(0.5,0.5), **cl_objects)
 
 		# Initial densities set to central condensed blob within vapor blob.
 		im = Image.new("RGBA", SCREEN_SIZE, "black")
@@ -292,7 +329,7 @@ class EMA:
 		if self.boundaries[1] == 0: obsarr[:,-1] = 0
 		if self.boundaries[2] == 0: obsarr[0,:] = 0
 		if self.boundaries[3] == 0: obsarr[-1,:] = 0
-		self.obstacles = Field(obsarr, **cl_objects)
+		self.obstacles = Field(obsarr, vismin=(0,0), vismax=(1.1, 1.1), **cl_objects)
 
 		# Other fields.
 		self.buoyancy = Field(np.array(zeros), **cl_objects)
@@ -302,6 +339,8 @@ class EMA:
 		self.pressure = Field(np.array(zeros), vismax=(0.05,0.05), **cl_objects)
 
 		# Kernels.
+		self.obstacles_kernel = self.program.obstacles
+		self.addvel_kernel = self.program.addvel
 		self.advect_kernel = self.program.advect
 		self.buoyancy_force_kernel = self.program.buoyancy_force
 		self.add_force_kernel = self.program.add_force
@@ -338,7 +377,12 @@ class EMA:
 		#return self.show_field_out_xfer(self.divergence, self.grayscale)
 		#return self.show_field_out_xfer(self.velocity, self.xfer_2d_signed)
 		#return self.show_field_out_xfer(self.obstacles, self.grayscale)
-		return self.show_clouds()
+		if self.showmode==0:
+			return self.show_clouds()
+		elif self.showmode==1:
+			return self.show_field_out_xfer(self.velocity, self.xfer_2d_signed)
+		elif self.showmode==2:
+			return self.show_field_out_xfer(self.obstacles, self.grayscale)
 
 	def enqueue_kernel(self, kernel, gl_objects, params, queue=None):
 		if queue is None: queue = self.queues[0]
@@ -351,6 +395,22 @@ class EMA:
 		return event
 
 	# Simulation operations.
+	def enqueue_circle_obstacle(self, source, queue=None, circle=None):
+		return self.enqueue_kernel(
+			self.obstacles_kernel,
+			[self.obstacles.clout],
+			(self.obstacles.clout, np.float32(circle)),
+			queue=queue
+		)
+
+	def enqueue_addvel(self, queue=None, position=(0,0,0), vel=(0,0), gain=0):
+		return self.enqueue_kernel(
+			self.addvel_kernel,
+			[self.velocity.clin, self.velocity.clout],
+			(self.velocity.clin, self.velocity.clout, np.float32(position), np.float32(vel), np.float32(gain)),
+			queue=queue
+		)
+
 	def enqueue_advect(self, source, queue=None):
 		return self.enqueue_kernel(
 			self.advect_kernel,
@@ -436,7 +496,7 @@ class EMA:
 			queue=queue
 		)
 
-	def enqueue_jacobi_iteration(self, x_buffer, b_buffer, out_buffer, alpha=0, beta=0, iteration=0, queue=None):
+	def enqueue_jacobi_iteration(self, x_buffer, b_buffer, out_buffer, alpha=0, beta=0, firstiteration=False, queue=None):
 		return self.enqueue_kernel(
 			self.jacobi_kernel,
 			[
@@ -450,7 +510,7 @@ class EMA:
 				out_buffer, 
 				np.float32(alpha),
 				np.float32(beta),
-				np.int8(iteration)
+				np.uint8(firstiteration)
 			),
 			queue=queue
 		)
@@ -473,6 +533,9 @@ class EMA:
 		)
 	
 	def timestep(self):
+		e_obstacles = self.enqueue_circle_obstacle(self.obstacles, queue=self.queues[0], circle=self.obstacle_position)
+		e_obstacles.wait()
+
 		# Advect water and temperature.
 		e_advwtemp = self.enqueue_advect(self.wtemp, queue=self.queues[0])
 		e_advvel = self.enqueue_advect(self.velocity, queue=self.queues[-1])
@@ -483,10 +546,14 @@ class EMA:
 		self.wtemp.swap()
 		self.velocity.swap()
 
+		e_addvel = self.enqueue_addvel(queue=self.queues[0], vel=self.circle_velocity, position=self.obstacle_position, gain=self.circle_gain)
+		e_addvel.wait()
+		self.velocity.swap()
+
 		for i in range(self.diffusion_iterations):
 			self.enqueue_jacobi_iteration(
 				self.velocity.clin, self.velocity.clin, self.velocity.clout,
-				alpha=self.jacobi_alpha_diffusion, beta=self.jacobi_beta_diffusion, iteration=i+1
+				alpha=self.jacobi_alpha_diffusion, beta=self.jacobi_beta_diffusion, firstiteration=(i==0)
 			)
 
 			self.velocity.swap()
@@ -515,7 +582,7 @@ class EMA:
 
 			self.enqueue_jacobi_iteration(
 				self.pressure.clin, self.divergence.clout, self.pressure.clout,
-				alpha=self.jacobi_alpha_pressure, beta=self.jacobi_beta_pressure, iteration=i
+				alpha=self.jacobi_alpha_pressure, beta=self.jacobi_beta_pressure, firstiteration=(i==0)
 			).wait()
 
 		# Subtract pressure gradient from velocity.

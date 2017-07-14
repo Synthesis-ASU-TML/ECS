@@ -62,6 +62,43 @@ void coords_dim_uv_px(
 	(*px) = (float2)(1.0 / (*dim).x, 1.0 / (*dim).y);
 }
 
+// Obstacles
+__kernel void obstacles(
+	write_only image2d_t obs_out,
+	const float3 position
+) {
+	int2 coords, dim; float2 uv, px;
+	coords_dim_uv_px(&coords, &dim, &uv, &px);
+
+	write_imagef(obs_out, coords, length(uv - position.xy) > position.z);
+}
+
+__kernel void addvel(
+	read_only image2d_t velin,
+	write_only image2d_t velout,
+	const float3 position,
+	const float2 vel,
+	const float gain
+) {
+	const sampler_t sampler = CLK_NORMALIZED_COORDS_FALSE | 
+		CLK_ADDRESS_REPEAT | 
+		CLK_FILTER_LINEAR;
+
+	int2 coords, dim; float2 uv, px;
+	coords_dim_uv_px(&coords, &dim, &uv, &px);
+	float2 v = read_imagef(velin, sampler, coords).xy;
+	bool inside = (length(uv - position.xy) + length(px)) < position.z;
+	float2 val;// = float4(v.x, v.y, 0, 0);
+
+	if (inside) {
+		val = v + float2(1,1);//( * gain);
+	} else {
+		val = float2(0, 0);
+	}
+
+	write_imagef(velout, coords, float4(val.x, val.y, 0, 0));	
+}
+
 // Advection
 __kernel void advect(
 	read_only image2d_t velocity_in, 
@@ -70,7 +107,7 @@ __kernel void advect(
 	write_only image2d_t source_out, 
 	const float dt, 
 	const float dx,
-	const float4 boundaries
+	const uint4 boundaries
 ) {
 	const sampler_t sampler = CLK_NORMALIZED_COORDS_TRUE | 
 		CLK_ADDRESS_REPEAT | 
@@ -256,7 +293,7 @@ __kernel void jacobi(
 	write_only image2d_t x_out, 
 	float alpha,
 	float beta,
-	int iteration
+	uchar firstiteration
 ) {
 	const sampler_t sampler = CLK_NORMALIZED_COORDS_TRUE | 
 		CLK_ADDRESS_REPEAT | 
@@ -271,7 +308,8 @@ __kernel void jacobi(
 	float4 xc = read_imagef(x, sampler, uv);
 	float4 bc = read_imagef(b, sampler, uv);
 	
-	if (iteration != 0) {
+
+	if (firstiteration == 0) {
 		xl = ol.x * xl.x + (1.0f - ol.x) * xc.x;
 		xr = or.x * xr.x + (1.0f - or.x) * xc.x;
 		xu = ou.x * xu.x + (1.0f - ou.x) * xc.x;
