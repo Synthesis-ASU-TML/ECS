@@ -21,7 +21,7 @@ nearest_neighbors(tex, coord) {
 
 mask_neighbors(tex, mask, coord) {
 	ml, mr, mu, md = nearest_neighbors(mask, coord);
-	l, r, u, d = sample_neighbors(tex, coord);
+	l, r, u, d = nearest_neighbors(tex, coord);
 
 	l = (1 - ml.w) * l;
 	r = (1 - mr.w) * r;
@@ -33,7 +33,7 @@ mask_neighbors(tex, mask, coord) {
 
 mask_neighbors_replace(tex, mask, coord) {
 	ml, mr, mu, md = nearest_neighbors(mask, coord);
-	l, r, u, d = sample_neighbors(tex, coord);
+	l, r, u, d = nearest_neighbors(tex, coord);
 	c = sample(tex, coord, boundmode="wrap");
 
 	l = ml.w * c + (1 - ml.w) * l;

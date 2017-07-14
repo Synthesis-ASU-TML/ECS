@@ -1,8 +1,8 @@
 {
 	"name" : "sc.clouds",
 	"version" : 1,
-	"creationdate" : -722461017,
-	"modificationdate" : 3579778077,
+	"creationdate" : -722461138,
+	"modificationdate" : 3582889958,
 	"viewrect" : [ 1.0, 45.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -73,52 +73,7 @@
 				"local" : 1
 			}
 ,
-			"sc.clouds.water_continuity.genjit" : 			{
-				"kind" : "genjit",
-				"local" : 1
-			}
-,
-			"sc.clouds.calculate_vorticity.genjit" : 			{
-				"kind" : "genjit",
-				"local" : 1
-			}
-,
-			"sc.clouds.vorticity_confinement.genjit" : 			{
-				"kind" : "genjit",
-				"local" : 1
-			}
-,
-			"sc.clouds.acceleration_buoyancy.genjit" : 			{
-				"kind" : "genjit",
-				"local" : 1
-			}
-,
-			"sc.clouds.masked_gain.genjit" : 			{
-				"kind" : "genjit",
-				"local" : 1
-			}
-,
 			"sc.clouds.advect.genjit" : 			{
-				"kind" : "genjit",
-				"local" : 1
-			}
-,
-			"sc.clouds.thermodynamics.genjit" : 			{
-				"kind" : "genjit",
-				"local" : 1
-			}
-,
-			"sc.clouds.subtract_gradient.genjit" : 			{
-				"kind" : "genjit",
-				"local" : 1
-			}
-,
-			"sc.clouds.divergence.genjit" : 			{
-				"kind" : "genjit",
-				"local" : 1
-			}
-,
-			"sc.clouds.jacobi.genjit" : 			{
 				"kind" : "genjit",
 				"local" : 1
 			}
@@ -128,7 +83,12 @@
 				"local" : 1
 			}
 ,
-			"sc.clouds.hsflow.genjit" : 			{
+			"sc.clouds.masked_gain.genjit" : 			{
+				"kind" : "genjit",
+				"local" : 1
+			}
+,
+			"sc.clouds.ball.genjit" : 			{
 				"kind" : "genjit",
 				"local" : 1
 			}
@@ -138,27 +98,7 @@
 				"local" : 1
 			}
 ,
-			"sc.clouds.nearest4.genjit" : 			{
-				"kind" : "genjit",
-				"local" : 1
-			}
-,
 			"sc.clouds.neighbors.genjit" : 			{
-				"kind" : "genjit",
-				"local" : 1
-			}
-,
-			"sc.clouds.nearest_neighbors.genjit" : 			{
-				"kind" : "genjit",
-				"local" : 1
-			}
-,
-			"sc.clouds.mask_nearest_neighbors.genjit" : 			{
-				"kind" : "genjit",
-				"local" : 1
-			}
-,
-			"sc.clouds.ball.genjit" : 			{
 				"kind" : "genjit",
 				"local" : 1
 			}
