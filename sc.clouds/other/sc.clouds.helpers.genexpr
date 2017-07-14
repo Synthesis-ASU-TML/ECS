@@ -1,3 +1,4 @@
+// Samplers.
 sample_neighbors(tex, coord) { 
 	px = 1 / dim;
 	l = sample(tex, coord - vec(px.x, 0), boundmode="wrap");
@@ -8,8 +9,18 @@ sample_neighbors(tex, coord) {
 	return l, r, u, d;
 }
 
+nearest_neighbors(tex, coord) {
+	px = 1 / dim;
+	l = nearest(tex, coord - vec(px.x, 0), boundmode="wrap");
+	r = nearest(tex, coord + vec(px.x, 0), boundmode="wrap");
+	u = nearest(tex, coord - vec(0, px.y), boundmode="wrap");
+	d = nearest(tex, coord + vec(0, px.y), boundmode="wrap");
+
+	return l, r, u, d;	
+}
+
 mask_neighbors(tex, mask, coord) {
-	ml, mr, mu, md = sample_neighbors(mask, coord);
+	ml, mr, mu, md = nearest_neighbors(mask, coord);
 	l, r, u, d = sample_neighbors(tex, coord);
 
 	l = (1 - ml.w) * l;
@@ -21,7 +32,7 @@ mask_neighbors(tex, mask, coord) {
 } 
 
 mask_neighbors_replace(tex, mask, coord) {
-	ml, mr, mu, md = sample_neighbors(mask, coord);
+	ml, mr, mu, md = nearest_neighbors(mask, coord);
 	l, r, u, d = sample_neighbors(tex, coord);
 	c = sample(tex, coord, boundmode="wrap");
 
@@ -32,3 +43,51 @@ mask_neighbors_replace(tex, mask, coord) {
 
 	return l, r, u, d;
 }
+
+// Scalar -> Vector
+grad3x3(tex, coord) {
+	sl, sr, su, sd = sample_neighbors(tex, coord);
+	return vec(sr - sl, sd - su);
+}
+
+grad3x3_mask(tex, mask, coord) {
+	sl, sr, su, sd = mask_neighbors(tex, mask, coord);
+	return vec(sr - sl, sd - su) / 2;
+}
+
+grad3x3_mask_replace(tex, mask, coord) {
+	sl, sr, su, sd = mask_neighbors_replace(tex, mask, coord);
+	return vec(sr - sl, sd - su) / 2;
+}
+
+// Vector -> Scalar
+curl3x3(tex, coord) {
+	vl, vr, vu, vd = sample_neighbors(tex, coord);
+	return ((vr.y - vl.y) - (vd.x - vu.x)) / 2;
+}
+
+curl3x3_mask(tex, mask, coord) {
+	vl, vr, vu, vd = mask_neighbors(tex, mask, coord);
+	return ((vr.y - vl.y) - (vd.x - vu.x)) / 2;
+}
+
+curl3x3_mask_replace(tex, mask, coord) {
+	vl, vr, vu, vd = mask_neighbors_replace(tex, mask, coord);
+	return ((vr.y - vl.y) - (vd.x - vu.x)) / 2;
+}
+
+div3x3(tex, coord) {
+	vl, vr, vu, vd = sample_neighbors(tex, coord);
+	return (vr.x - vl.x + vd.y - vu.y) / 2;
+}
+
+div3x3_mask(tex, mask, coord) {
+	vl, vr, vu, vd = mask_neighbors(tex, mask, coord);
+	return (vr.x - vl.x + vd.y - vu.y) / 2;
+}
+
+div3x3_mask_replace(tex, mask, coord) {
+	vl, vr, vu, vd = mask_neighbors_replace(tex, mask, coord);
+	return (vr.x - vl.x + vd.y - vu.y) / 2;
+}
+
