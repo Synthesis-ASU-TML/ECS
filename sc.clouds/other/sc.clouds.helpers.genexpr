@@ -34,7 +34,7 @@ mask_neighbors(tex, mask, coord) {
 mask_neighbors_replace(tex, mask, coord) {
 	ml, mr, mu, md = nearest_neighbors(mask, coord);
 	l, r, u, d = nearest_neighbors(tex, coord);
-	c = sample(tex, coord, boundmode="wrap");
+	c = nearest(tex, coord, boundmode="wrap");
 
 	l = ml.w * c + (1 - ml.w) * l;
 	r = mr.w * c + (1 - mr.w) * r;
@@ -47,7 +47,7 @@ mask_neighbors_replace(tex, mask, coord) {
 // Scalar -> Vector
 grad3x3(tex, coord) {
 	sl, sr, su, sd = sample_neighbors(tex, coord);
-	return vec(sr - sl, sd - su);
+	return vec(sr - sl, sd - su) / 2;
 }
 
 grad3x3_mask(tex, mask, coord) {
