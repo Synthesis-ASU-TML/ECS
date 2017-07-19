@@ -1,9 +1,9 @@
 {
 	"name" : "sc.clouds",
 	"version" : 1,
-	"creationdate" : -722461138,
-	"modificationdate" : 3582889958,
-	"viewrect" : [ 1.0, 45.0, 300.0, 500.0 ],
+	"creationdate" : -722461259,
+	"modificationdate" : 3583314895,
+	"viewrect" : [ 1.0, 45.0, 240.0, 902.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -68,37 +68,7 @@
 		}
 ,
 		"code" : 		{
-			"sc.clouds.vissigned.genjit" : 			{
-				"kind" : "genjit",
-				"local" : 1
-			}
-,
 			"sc.clouds.advect.genjit" : 			{
-				"kind" : "genjit",
-				"local" : 1
-			}
-,
-			"sc.clouds.pressure_environmental.genjit" : 			{
-				"kind" : "genjit",
-				"local" : 1
-			}
-,
-			"sc.clouds.masked_gain.genjit" : 			{
-				"kind" : "genjit",
-				"local" : 1
-			}
-,
-			"sc.clouds.ball.genjit" : 			{
-				"kind" : "genjit",
-				"local" : 1
-			}
-,
-			"sc.clouds.split.genjit" : 			{
-				"kind" : "genjit",
-				"local" : 1
-			}
-,
-			"sc.clouds.neighbors.genjit" : 			{
 				"kind" : "genjit",
 				"local" : 1
 			}
@@ -123,25 +93,6 @@
 		}
 ,
 		"other" : 		{
-			"mask_neighbors_replace.genexpr" : 			{
-				"kind" : "genexpr",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/Dropbox/Development/github/ecs/sc.clouds/code",
-					"projectrelativepath" : "./code"
-				}
-
-			}
-,
-			"sample_neighbors.genexpr" : 			{
-				"kind" : "genexpr",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/Dropbox/Development/github/ecs/sc.clouds/code",
-					"projectrelativepath" : "./code"
-				}
-
-			}
 
 		}
 

@@ -23,10 +23,10 @@ mask_neighbors(tex, mask, coord) {
 	ml, mr, mu, md = nearest_neighbors(mask, coord);
 	l, r, u, d = nearest_neighbors(tex, coord);
 
-	l = (1 - ml.w) * l;
-	r = (1 - mr.w) * r;
-	u = (1 - mu.w) * u;
-	d = (1 - md.w) * d;
+	l = (1 - ml.w) * l + ml.w * ml.xyz;
+	r = (1 - mr.w) * r + ml.w * ml.xyz;
+	u = (1 - mu.w) * u + ml.w * ml.xzz;
+	d = (1 - md.w) * d + ml.w * ml.xyz;
 
 	return l, r, u, d;	
 } 
