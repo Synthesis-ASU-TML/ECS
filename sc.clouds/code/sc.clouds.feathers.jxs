@@ -7,19 +7,19 @@
 	<param name="xfer" type="int" default="1"/>
 	<param name="low" type="vec2" default="-50 -50"/>
 	<param name="high" type="vec2" default="50 50"/>
-	<param name="contrast" type="vec2" default="1 1"/>
 	<param name="auto_color" type="int" default="1"/>
 	<param name="default_color" type="vec4" default="1 1 1 1"/>
+	<param name="arrowhead_size" type="float" default=".01"/>
 	
 	<language name="glsl" version="1.2">
 		<bind param="scale" program="gp"/>
 		<bind param="tex" program="gp"/>
 		<bind param="xfer" program="gp"/>
-		<bind param="contrast" program="gp"/>
 		<bind param="high" program="gp"/>
 		<bind param="low" program="gp"/>
 		<bind param="default_color" program="gp"/>
 		<bind param="auto_color" program="gp"/>
+		<bind param="arrowhead_size" program="gp"/>
 		
 		<program name="vp" type="vertex">
 <![CDATA[
@@ -57,58 +57,69 @@
 			varying in vec2 texdim1[1];
 			uniform vec2 high;
 			uniform vec2 low;
-			uniform vec2 contrast;
 			uniform vec4 default_color;
 			uniform int auto_color;
+			uniform float arrowhead_size;
 			
 			void main() {
+				// Arrow base vertex.
 				vec4 line_start = gl_PositionIn[0];
-				vec2 uv = line_start.xy * texdim0[0];
-				vec2 velocity = texture2DRect(tex, uv).xy;
-				vec2 line = vec2(velocity.x, -velocity.y) * scale;
-				line_start = line_start * vec4(2,2,1,1) - vec4(1,1,0,0);
-				vec4 line_end = line_start + vec4(line, 0, 0);
 				
-				float arrow_length = length(line) * 0.75;
+				// Velocity value from texture.
+				vec2 velocity = texture2DRect(tex, line_start.xy * texdim0[0]).xy;
+				
+				// Scale the arrow between low / high values.
+				vec2 scale_dist = high - low;
+				vec2 scaled_unsigned = (velocity - low) / scale_dist;
+				vec2 zero_point = -low / scale_dist;
+				vec2 scaled_signed = (scaled_unsigned - zero_point) * 2;
+				
+				// Arrow point vertex.
+				vec2 line = vec2(scaled_signed.x, -scaled_signed.y);
+				line_start = line_start * vec4(2,2,1,1) - vec4(1,1,0,0);
+				vec4 line_end = line_start + vec4(line * scale, 0, 0);
+				
+				// Arrowhead vertices.
 				vec2 normalized = normalize(line);
 				float arrow_angle = atan(normalized.y, normalized.x);
-				float arrow_angle_a = arrow_angle + 0.1;
-				float arrow_angle_b = arrow_angle - 0.1;
+				float arrow_angle_a = arrow_angle + 0.785;
+				float arrow_angle_b = arrow_angle - 0.785;
 				
 				vec4 arrow_line_a = vec4(cos(arrow_angle_a), sin(arrow_angle_a), 0, 0);
 				vec4 arrow_line_b = vec4(cos(arrow_angle_b), sin(arrow_angle_b), 0, 0);
-				arrow_line_a = normalize(arrow_line_a) * arrow_length;
-				arrow_line_b = normalize(arrow_line_b) * arrow_length;
-				vec4 arrow_a = line_start + arrow_line_a;
-				vec4 arrow_b = line_start + arrow_line_b;
+				arrow_line_a = normalize(arrow_line_a) * arrowhead_size;
+				arrow_line_b = normalize(arrow_line_b) * arrowhead_size;
+				vec4 arrow_a = line_end - arrow_line_a;
+				vec4 arrow_b = line_end - arrow_line_b;
 				
-				vec2 val = pow((velocity - low) / (high - low), contrast);
-				val = clamp(val, vec2(0,0), vec2(1,1));
+				// Color the arrow either automatically using HSV mapping or with a single value.
 				vec4 arrow_color;
-				
-				if (auto_color == 1)
-					arrow_color = vec4(texture2DRect(xfer, val * texdim1[0]).xyz, default_color.w);
-				else
+
+				if (auto_color == 1) {
+					arrow_color = vec4(
+						texture2DRect(
+							xfer, 
+							clamp(scaled_unsigned, 0, 1) * texdim1[0]
+						).xyz, default_color.w
+					);
+				} else
 					arrow_color = default_color;
 				
+				// Draw the arrow.
 				gl_Position = line_start;
 				gl_FrontColor = arrow_color;
 				EmitVertex();
 				
 				gl_Position = line_end;
-				gl_FrontColor = arrow_color;
 				EmitVertex();
 				
 				gl_Position = arrow_a;
-				gl_FrontColor = arrow_color;
 				EmitVertex();
 				
 				gl_Position = line_end;
-				gl_FrontColor = arrow_color;
 				EmitVertex();
 				
 				gl_Position = arrow_b;
-				gl_FrontColor = arrow_color;
 				EmitVertex();
 				
 				EndPrimitive();
