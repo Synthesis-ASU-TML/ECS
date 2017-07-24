@@ -2,7 +2,7 @@
 	"name" : "sc.clouds",
 	"version" : 1,
 	"creationdate" : -722461259,
-	"modificationdate" : 3583314895,
+	"modificationdate" : -711226627,
 	"viewrect" : [ 1.0, 45.0, 240.0, 902.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -46,21 +46,6 @@
 			}
 ,
 			"sc.clouds.jacobi-iteration.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"sc.o.ambipack.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"sc.o.nodepack.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"sc.o.rp.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}

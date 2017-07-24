@@ -6,10 +6,17 @@
 				"id" : 1,
 				"name" : "clouds",
 				"data" : 				{
+					"feathers-arrowhead-size" : [ 0.014 ],
+					"feathers-auto-color" : [ 0 ],
+					"feathers-color" : [ 1.0, 1.0, 1.0, 1.0, 0.0, 1.0, 1.0 ],
+					"feathers-color-alpha" : [ 0.0 ],
+					"feathers-dim-x" : [ 1 ],
+					"feathers-dim-y" : [ 1 ],
 					"feathers-high-x" : [ 1.0 ],
 					"feathers-high-y" : [ 1.0 ],
 					"feathers-low-x" : [ 0.0 ],
 					"feathers-low-y" : [ 0.0 ],
+					"feathers-size" : [ 0.0 ],
 					"feathers-texture" : [ "watertemp" ],
 					"internal_gain" : [ 1.0 ],
 					"vis-contrast-w" : [ 1.0 ],
@@ -25,14 +32,7 @@
 					"vis-low-y" : [ 0.0 ],
 					"vis-low-z" : [ 100.0 ],
 					"vis-mode" : [ 4 ],
-					"vis-texture" : [ "watertemp" ],
-					"feathers-dim-x" : [ 1 ],
-					"feathers-dim-y" : [ 1 ],
-					"feathers-auto-color" : [ 0 ],
-					"feathers-arrowhead-size" : [ 0.014 ],
-					"feathers-color-alpha" : [ 0.0 ],
-					"feathers-color" : [ 1.0, 1.0, 1.0, 1.0, 0.0, 1.0, 1.0 ],
-					"feathers-size" : [ 0.0 ]
+					"vis-texture" : [ "watertemp" ]
 				}
 
 			}
@@ -41,10 +41,17 @@
 				"id" : 2,
 				"name" : "velocity",
 				"data" : 				{
+					"feathers-arrowhead-size" : [ 0.014 ],
+					"feathers-auto-color" : [ 1 ],
+					"feathers-color" : [ 1.0, 1.0, 1.0, 1.0, 0.0, 1.0, 1.0 ],
+					"feathers-color-alpha" : [ 1.0 ],
+					"feathers-dim-x" : [ 100 ],
+					"feathers-dim-y" : [ 100 ],
 					"feathers-high-x" : [ 50.0 ],
 					"feathers-high-y" : [ 50.0 ],
 					"feathers-low-x" : [ -50.0 ],
 					"feathers-low-y" : [ -50.0 ],
+					"feathers-size" : [ 0.02 ],
 					"feathers-texture" : [ "velocity" ],
 					"internal_gain" : [ 0.6 ],
 					"vis-contrast-w" : [ 1.0 ],
@@ -60,14 +67,7 @@
 					"vis-low-y" : [ -50.0 ],
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 3 ],
-					"vis-texture" : [ "velocity" ],
-					"feathers-dim-x" : [ 100 ],
-					"feathers-dim-y" : [ 100 ],
-					"feathers-auto-color" : [ 1 ],
-					"feathers-arrowhead-size" : [ 0.014 ],
-					"feathers-color-alpha" : [ 1.0 ],
-					"feathers-color" : [ 1.0, 1.0, 1.0, 1.0, 0.0, 1.0, 1.0 ],
-					"feathers-size" : [ 0.02 ]
+					"vis-texture" : [ "velocity" ]
 				}
 
 			}
@@ -76,10 +76,17 @@
 				"id" : 3,
 				"name" : "vorticity",
 				"data" : 				{
+					"feathers-arrowhead-size" : [ 0.014 ],
+					"feathers-auto-color" : [ 0 ],
+					"feathers-color" : [ 1.0, 1.0, 1.0, 1.0, 0.018398, 1.0, 1.0 ],
+					"feathers-color-alpha" : [ 0.4 ],
+					"feathers-dim-x" : [ 50 ],
+					"feathers-dim-y" : [ 50 ],
 					"feathers-high-x" : [ 50.0 ],
 					"feathers-high-y" : [ 50.0 ],
 					"feathers-low-x" : [ -50.0 ],
 					"feathers-low-y" : [ -50.0 ],
+					"feathers-size" : [ 0.03 ],
 					"feathers-texture" : [ "velocity" ],
 					"internal_gain" : [ 1.0 ],
 					"vis-contrast-w" : [ 1.0 ],
@@ -95,14 +102,7 @@
 					"vis-low-y" : [ -10.0 ],
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 3 ],
-					"vis-texture" : [ "vorticity" ],
-					"feathers-dim-x" : [ 50 ],
-					"feathers-dim-y" : [ 50 ],
-					"feathers-auto-color" : [ 0 ],
-					"feathers-arrowhead-size" : [ 0.014 ],
-					"feathers-color-alpha" : [ 0.4 ],
-					"feathers-color" : [ 1.0, 1.0, 1.0, 1.0, 0.018398, 1.0, 1.0 ],
-					"feathers-size" : [ 0.03 ]
+					"vis-texture" : [ "vorticity" ]
 				}
 
 			}
@@ -111,10 +111,17 @@
 				"id" : 4,
 				"name" : "pressure",
 				"data" : 				{
+					"feathers-arrowhead-size" : [ 0.014 ],
+					"feathers-auto-color" : [ 0 ],
+					"feathers-color" : [ 1.0, 1.0, 1.0, 1.0, 0.018398, 1.0, 1.0 ],
+					"feathers-color-alpha" : [ 0.4 ],
+					"feathers-dim-x" : [ 50 ],
+					"feathers-dim-y" : [ 50 ],
 					"feathers-high-x" : [ 50.0 ],
 					"feathers-high-y" : [ 50.0 ],
 					"feathers-low-x" : [ -50.0 ],
 					"feathers-low-y" : [ -50.0 ],
+					"feathers-size" : [ 0.04 ],
 					"feathers-texture" : [ "velocity" ],
 					"internal_gain" : [ 1.0 ],
 					"vis-contrast-w" : [ 1.0 ],
@@ -130,14 +137,7 @@
 					"vis-low-y" : [ 0.0 ],
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 2 ],
-					"vis-texture" : [ "pressure" ],
-					"feathers-dim-x" : [ 50 ],
-					"feathers-dim-y" : [ 50 ],
-					"feathers-auto-color" : [ 0 ],
-					"feathers-arrowhead-size" : [ 0.014 ],
-					"feathers-color-alpha" : [ 0.4 ],
-					"feathers-color" : [ 1.0, 1.0, 1.0, 1.0, 0.018398, 1.0, 1.0 ],
-					"feathers-size" : [ 0.04 ]
+					"vis-texture" : [ "pressure" ]
 				}
 
 			}
@@ -146,10 +146,17 @@
 				"id" : 5,
 				"name" : "divergence",
 				"data" : 				{
+					"feathers-arrowhead-size" : [ 0.014 ],
+					"feathers-auto-color" : [ 0 ],
+					"feathers-color" : [ 0.0, 0.0, 0.0, 1.0, 0.040754, 1.0, 0.0 ],
+					"feathers-color-alpha" : [ 0.4 ],
+					"feathers-dim-x" : [ 50 ],
+					"feathers-dim-y" : [ 50 ],
 					"feathers-high-x" : [ 50.0 ],
 					"feathers-high-y" : [ 50.0 ],
 					"feathers-low-x" : [ -50.0 ],
 					"feathers-low-y" : [ -50.0 ],
+					"feathers-size" : [ 0.04 ],
 					"feathers-texture" : [ "velocity" ],
 					"internal_gain" : [ 1.0 ],
 					"vis-contrast-w" : [ 1.0 ],
@@ -165,14 +172,7 @@
 					"vis-low-y" : [ 0.0 ],
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 2 ],
-					"vis-texture" : [ "divergence" ],
-					"feathers-dim-x" : [ 50 ],
-					"feathers-dim-y" : [ 50 ],
-					"feathers-auto-color" : [ 0 ],
-					"feathers-arrowhead-size" : [ 0.014 ],
-					"feathers-color-alpha" : [ 0.4 ],
-					"feathers-color" : [ 0.0, 0.0, 0.0, 1.0, 0.040754, 1.0, 0.0 ],
-					"feathers-size" : [ 0.04 ]
+					"vis-texture" : [ "divergence" ]
 				}
 
 			}
@@ -181,10 +181,17 @@
 				"id" : 6,
 				"name" : "hsflow",
 				"data" : 				{
+					"feathers-arrowhead-size" : [ 0.014 ],
+					"feathers-auto-color" : [ 1 ],
+					"feathers-color" : [ 1.0, 1.0, 1.0, 1.0, 0.018398, 1.0, 1.0 ],
+					"feathers-color-alpha" : [ 1.0 ],
+					"feathers-dim-x" : [ 200 ],
+					"feathers-dim-y" : [ 200 ],
 					"feathers-high-x" : [ 1.0 ],
 					"feathers-high-y" : [ 1.0 ],
 					"feathers-low-x" : [ -1.0 ],
 					"feathers-low-y" : [ -1.0 ],
+					"feathers-size" : [ 0.05 ],
 					"feathers-texture" : [ "hsflow" ],
 					"internal_gain" : [ 0.0 ],
 					"vis-contrast-w" : [ 1.0 ],
@@ -200,14 +207,7 @@
 					"vis-low-y" : [ -2.0 ],
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 3 ],
-					"vis-texture" : [ "hsflow" ],
-					"feathers-dim-x" : [ 200 ],
-					"feathers-dim-y" : [ 200 ],
-					"feathers-auto-color" : [ 1 ],
-					"feathers-arrowhead-size" : [ 0.014 ],
-					"feathers-color-alpha" : [ 1.0 ],
-					"feathers-color" : [ 1.0, 1.0, 1.0, 1.0, 0.018398, 1.0, 1.0 ],
-					"feathers-size" : [ 0.05 ]
+					"vis-texture" : [ "hsflow" ]
 				}
 
 			}
@@ -216,10 +216,17 @@
 				"id" : 7,
 				"name" : "camera",
 				"data" : 				{
+					"feathers-arrowhead-size" : [ 0.014 ],
+					"feathers-auto-color" : [ 0 ],
+					"feathers-color" : [ 1.0, 1.0, 1.0, 1.0, 0.018398, 1.0, 1.0 ],
+					"feathers-color-alpha" : [ 0.0 ],
+					"feathers-dim-x" : [ 1 ],
+					"feathers-dim-y" : [ 1 ],
 					"feathers-high-x" : [ 1.0 ],
 					"feathers-high-y" : [ 1.0 ],
 					"feathers-low-x" : [ 0.0 ],
 					"feathers-low-y" : [ 0.0 ],
+					"feathers-size" : [ 0.0 ],
 					"feathers-texture" : [ "camera" ],
 					"internal_gain" : [ 1.0 ],
 					"vis-contrast-w" : [ 1.0 ],
@@ -235,14 +242,7 @@
 					"vis-low-y" : [ 0.0 ],
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 0 ],
-					"vis-texture" : [ "camera" ],
-					"feathers-dim-x" : [ 1 ],
-					"feathers-dim-y" : [ 1 ],
-					"feathers-auto-color" : [ 0 ],
-					"feathers-arrowhead-size" : [ 0.014 ],
-					"feathers-color-alpha" : [ 0.0 ],
-					"feathers-color" : [ 1.0, 1.0, 1.0, 1.0, 0.018398, 1.0, 1.0 ],
-					"feathers-size" : [ 0.0 ]
+					"vis-texture" : [ "camera" ]
 				}
 
 			}
@@ -251,10 +251,17 @@
 				"id" : 8,
 				"name" : "obstacles",
 				"data" : 				{
+					"feathers-arrowhead-size" : [ 0.014 ],
+					"feathers-auto-color" : [ 0 ],
+					"feathers-color" : [ 1.0, 1.0, 1.0, 1.0, 0.018398, 1.0, 1.0 ],
+					"feathers-color-alpha" : [ 0.0 ],
+					"feathers-dim-x" : [ 1 ],
+					"feathers-dim-y" : [ 1 ],
 					"feathers-high-x" : [ 0.0 ],
 					"feathers-high-y" : [ 0.0 ],
 					"feathers-low-x" : [ 1.0 ],
 					"feathers-low-y" : [ 1.0 ],
+					"feathers-size" : [ 0.0 ],
 					"feathers-texture" : [ "obstacles" ],
 					"internal_gain" : [ 1.0 ],
 					"vis-contrast-w" : [ 1.0 ],
@@ -270,14 +277,7 @@
 					"vis-low-y" : [ 0.0 ],
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 1 ],
-					"vis-texture" : [ "obstacles" ],
-					"feathers-dim-x" : [ 1 ],
-					"feathers-dim-y" : [ 1 ],
-					"feathers-auto-color" : [ 0 ],
-					"feathers-arrowhead-size" : [ 0.014 ],
-					"feathers-color-alpha" : [ 0.0 ],
-					"feathers-color" : [ 1.0, 1.0, 1.0, 1.0, 0.018398, 1.0, 1.0 ],
-					"feathers-size" : [ 0.0 ]
+					"vis-texture" : [ "obstacles" ]
 				}
 
 			}
@@ -286,10 +286,17 @@
 				"id" : 9,
 				"name" : "background",
 				"data" : 				{
+					"feathers-arrowhead-size" : [ 0.014 ],
+					"feathers-auto-color" : [ 0 ],
+					"feathers-color" : [ 1.0, 1.0, 1.0, 1.0, 0.018398, 1.0, 1.0 ],
+					"feathers-color-alpha" : [ 0.0 ],
+					"feathers-dim-x" : [ 1 ],
+					"feathers-dim-y" : [ 1 ],
 					"feathers-high-x" : [ 0.0 ],
 					"feathers-high-y" : [ 0.0 ],
 					"feathers-low-x" : [ 1.0 ],
 					"feathers-low-y" : [ 1.0 ],
+					"feathers-size" : [ 0.0 ],
 					"feathers-texture" : [ "bgmask" ],
 					"internal_gain" : [ 1.0 ],
 					"vis-contrast-w" : [ 1.0 ],
@@ -305,14 +312,7 @@
 					"vis-low-y" : [ 0.0 ],
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 0 ],
-					"vis-texture" : [ "bgmask" ],
-					"feathers-dim-x" : [ 1 ],
-					"feathers-dim-y" : [ 1 ],
-					"feathers-auto-color" : [ 0 ],
-					"feathers-arrowhead-size" : [ 0.014 ],
-					"feathers-color-alpha" : [ 0.0 ],
-					"feathers-color" : [ 1.0, 1.0, 1.0, 1.0, 0.018398, 1.0, 1.0 ],
-					"feathers-size" : [ 0.0 ]
+					"vis-texture" : [ "bgmask" ]
 				}
 
 			}
@@ -321,10 +321,17 @@
 				"id" : 10,
 				"name" : "bgsub",
 				"data" : 				{
+					"feathers-arrowhead-size" : [ 0.014 ],
+					"feathers-auto-color" : [ 0 ],
+					"feathers-color" : [ 1.0, 1.0, 1.0, 1.0, 0.018398, 1.0, 1.0 ],
+					"feathers-color-alpha" : [ 0.0 ],
+					"feathers-dim-x" : [ 1 ],
+					"feathers-dim-y" : [ 1 ],
 					"feathers-high-x" : [ 1.0 ],
 					"feathers-high-y" : [ 1.0 ],
 					"feathers-low-x" : [ 0.0 ],
 					"feathers-low-y" : [ 0.0 ],
+					"feathers-size" : [ 0.0 ],
 					"feathers-texture" : [ "bgsub" ],
 					"internal_gain" : [ 1.0 ],
 					"vis-contrast-w" : [ 1.0 ],
@@ -340,14 +347,7 @@
 					"vis-low-y" : [ 0.0 ],
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 2 ],
-					"vis-texture" : [ "bgsub" ],
-					"feathers-dim-x" : [ 1 ],
-					"feathers-dim-y" : [ 1 ],
-					"feathers-auto-color" : [ 0 ],
-					"feathers-arrowhead-size" : [ 0.014 ],
-					"feathers-color-alpha" : [ 0.0 ],
-					"feathers-color" : [ 1.0, 1.0, 1.0, 1.0, 0.018398, 1.0, 1.0 ],
-					"feathers-size" : [ 0.0 ]
+					"vis-texture" : [ "bgsub" ]
 				}
 
 			}
@@ -356,10 +356,17 @@
 				"id" : 11,
 				"name" : "staticvideo",
 				"data" : 				{
+					"feathers-arrowhead-size" : [ 0.014 ],
+					"feathers-auto-color" : [ 0 ],
+					"feathers-color" : [ 1.0, 1.0, 1.0, 1.0, 0.018398, 1.0, 1.0 ],
+					"feathers-color-alpha" : [ 0.0 ],
+					"feathers-dim-x" : [ 1 ],
+					"feathers-dim-y" : [ 1 ],
 					"feathers-high-x" : [ 1.0 ],
 					"feathers-high-y" : [ 1.0 ],
 					"feathers-low-x" : [ 0.0 ],
 					"feathers-low-y" : [ 0.0 ],
+					"feathers-size" : [ 0.0 ],
 					"feathers-texture" : [ "static_video" ],
 					"internal_gain" : [ 1.0 ],
 					"vis-contrast-w" : [ 1.0 ],
@@ -375,14 +382,77 @@
 					"vis-low-y" : [ 0.0 ],
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 0 ],
-					"vis-texture" : [ "static_video" ],
+					"vis-texture" : [ "static_video" ]
+				}
+
+			}
+,
+			"12" : 			{
+				"id" : 12,
+				"name" : "clouds-scrim",
+				"data" : 				{
+					"feathers-arrowhead-size" : [ 0.014 ],
+					"feathers-auto-color" : [ 0 ],
+					"feathers-color" : [ 1.0, 1.0, 1.0, 1.0, 0.0, 1.0, 1.0 ],
+					"feathers-color-alpha" : [ 0.0 ],
 					"feathers-dim-x" : [ 1 ],
 					"feathers-dim-y" : [ 1 ],
+					"feathers-high-x" : [ 1.0 ],
+					"feathers-high-y" : [ 1.0 ],
+					"feathers-low-x" : [ 0.0 ],
+					"feathers-low-y" : [ 0.0 ],
+					"feathers-size" : [ 0.0 ],
+					"feathers-texture" : [ "watertemp" ],
+					"internal_gain" : [ 1.0 ],
+					"vis-contrast-w" : [ 1.0 ],
+					"vis-contrast-x" : [ 1.0 ],
+					"vis-contrast-y" : [ 1.0 ],
+					"vis-contrast-z" : [ 0.89 ],
+					"vis-high-w" : [ 1.0 ],
+					"vis-high-x" : [ 1.0 ],
+					"vis-high-y" : [ 1.0 ],
+					"vis-high-z" : [ 336.0 ],
+					"vis-low-w" : [ 0.0 ],
+					"vis-low-x" : [ 0.0 ],
+					"vis-low-y" : [ 0.0 ],
+					"vis-low-z" : [ 100.0 ],
+					"vis-mode" : [ 4 ],
+					"vis-texture" : [ "watertemp" ]
+				}
+
+			}
+,
+			"13" : 			{
+				"id" : 13,
+				"name" : "velocity-scrim",
+				"data" : 				{
+					"feathers-arrowhead-size" : [ 0.005 ],
 					"feathers-auto-color" : [ 0 ],
-					"feathers-arrowhead-size" : [ 0.014 ],
-					"feathers-color-alpha" : [ 0.0 ],
-					"feathers-color" : [ 1.0, 1.0, 1.0, 1.0, 0.018398, 1.0, 1.0 ],
-					"feathers-size" : [ 0.0 ]
+					"feathers-color" : [ 1.0, 1.0, 1.0, 1.0, 0.0, 1.0, 1.0 ],
+					"feathers-color-alpha" : [ 1.0 ],
+					"feathers-dim-x" : [ 50 ],
+					"feathers-dim-y" : [ 50 ],
+					"feathers-high-x" : [ 50.0 ],
+					"feathers-high-y" : [ 50.0 ],
+					"feathers-low-x" : [ -50.0 ],
+					"feathers-low-y" : [ -50.0 ],
+					"feathers-size" : [ 0.02 ],
+					"feathers-texture" : [ "velocity" ],
+					"internal_gain" : [ 1.0 ],
+					"vis-contrast-w" : [ 1.0 ],
+					"vis-contrast-x" : [ 1.0 ],
+					"vis-contrast-y" : [ 1.0 ],
+					"vis-contrast-z" : [ 0.89 ],
+					"vis-high-w" : [ 1.0 ],
+					"vis-high-x" : [ 1.0 ],
+					"vis-high-y" : [ 1.0 ],
+					"vis-high-z" : [ 336.0 ],
+					"vis-low-w" : [ 0.0 ],
+					"vis-low-x" : [ 0.0 ],
+					"vis-low-y" : [ 0.0 ],
+					"vis-low-z" : [ 100.0 ],
+					"vis-mode" : [ 4 ],
+					"vis-texture" : [ "watertemp" ]
 				}
 
 			}
