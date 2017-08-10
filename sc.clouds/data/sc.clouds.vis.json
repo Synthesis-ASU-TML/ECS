@@ -20,17 +20,17 @@
 					"feathers-texture" : [ "watertemp" ],
 					"internal_gain" : [ 1.0 ],
 					"vis-contrast-w" : [ 1.0 ],
-					"vis-contrast-x" : [ 1.0 ],
-					"vis-contrast-y" : [ 1.0 ],
+					"vis-contrast-x" : [ 0.3 ],
+					"vis-contrast-y" : [ 0.06 ],
 					"vis-contrast-z" : [ 1.0 ],
 					"vis-high-w" : [ 1.0 ],
 					"vis-high-x" : [ 1.0 ],
 					"vis-high-y" : [ 1.0 ],
-					"vis-high-z" : [ 500.0 ],
+					"vis-high-z" : [ 288.15 ],
 					"vis-low-w" : [ 0.0 ],
 					"vis-low-x" : [ 0.0 ],
 					"vis-low-y" : [ 0.0 ],
-					"vis-low-z" : [ 100.0 ],
+					"vis-low-z" : [ 230.0 ],
 					"vis-mode" : [ 4 ],
 					"vis-texture" : [ "watertemp" ]
 				}
@@ -453,6 +453,76 @@
 					"vis-low-z" : [ 100.0 ],
 					"vis-mode" : [ 4 ],
 					"vis-texture" : [ "watertemp" ]
+				}
+
+			}
+,
+			"14" : 			{
+				"id" : 14,
+				"name" : "buoyancy",
+				"data" : 				{
+					"feathers-arrowhead-size" : [ 0.014 ],
+					"feathers-auto-color" : [ 1 ],
+					"feathers-color" : [ 1.0, 1.0, 1.0, 1.0, 0.0, 1.0, 1.0 ],
+					"feathers-color-alpha" : [ 1.0 ],
+					"feathers-dim-x" : [ 100 ],
+					"feathers-dim-y" : [ 100 ],
+					"feathers-high-x" : [ 10.0 ],
+					"feathers-high-y" : [ 10.0 ],
+					"feathers-low-x" : [ -10.0 ],
+					"feathers-low-y" : [ -10.0 ],
+					"feathers-size" : [ 0.02 ],
+					"feathers-texture" : [ "buoyancy" ],
+					"internal_gain" : [ 0.6 ],
+					"vis-contrast-w" : [ 1.0 ],
+					"vis-contrast-x" : [ 1.0 ],
+					"vis-contrast-y" : [ 1.0 ],
+					"vis-contrast-z" : [ 1.0 ],
+					"vis-high-w" : [ 1.0 ],
+					"vis-high-x" : [ 10.0 ],
+					"vis-high-y" : [ 10.0 ],
+					"vis-high-z" : [ 1.0 ],
+					"vis-low-w" : [ 0.0 ],
+					"vis-low-x" : [ -10.0 ],
+					"vis-low-y" : [ -10.0 ],
+					"vis-low-z" : [ 0.0 ],
+					"vis-mode" : [ 3 ],
+					"vis-texture" : [ "buoyancy" ]
+				}
+
+			}
+,
+			"15" : 			{
+				"id" : 15,
+				"name" : "condensation",
+				"data" : 				{
+					"feathers-arrowhead-size" : [ 0.014 ],
+					"feathers-auto-color" : [ 0 ],
+					"feathers-color" : [ 1.0, 1.0, 1.0, 1.0, 0.018398, 1.0, 1.0 ],
+					"feathers-color-alpha" : [ 0.4 ],
+					"feathers-dim-x" : [ 0 ],
+					"feathers-dim-y" : [ 0 ],
+					"feathers-high-x" : [ 50.0 ],
+					"feathers-high-y" : [ 50.0 ],
+					"feathers-low-x" : [ -50.0 ],
+					"feathers-low-y" : [ -50.0 ],
+					"feathers-size" : [ 0.03 ],
+					"feathers-texture" : [ "velocity" ],
+					"internal_gain" : [ 1.0 ],
+					"vis-contrast-w" : [ 1.0 ],
+					"vis-contrast-x" : [ 1.0 ],
+					"vis-contrast-y" : [ 1.0 ],
+					"vis-contrast-z" : [ 1.0 ],
+					"vis-high-w" : [ 1.0 ],
+					"vis-high-x" : [ 1.0 ],
+					"vis-high-y" : [ 1.0 ],
+					"vis-high-z" : [ 1.0 ],
+					"vis-low-w" : [ 0.0 ],
+					"vis-low-x" : [ -1.0 ],
+					"vis-low-y" : [ -1.0 ],
+					"vis-low-z" : [ 0.0 ],
+					"vis-mode" : [ 3 ],
+					"vis-texture" : [ "condensation" ]
 				}
 
 			}
