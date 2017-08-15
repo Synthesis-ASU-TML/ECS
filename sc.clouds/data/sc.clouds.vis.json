@@ -32,7 +32,11 @@
 					"vis-low-y" : [ 0.0 ],
 					"vis-low-z" : [ 230.0 ],
 					"vis-mode" : [ 4 ],
-					"vis-texture" : [ "watertemp" ]
+					"vis-texture" : [ "watertemp" ],
+					"vis-var-r" : [ 0 ],
+					"vis-var-g" : [ 1 ],
+					"vis-var-b" : [ 2 ],
+					"vis-var-a" : [ 3 ]
 				}
 
 			}
@@ -67,7 +71,11 @@
 					"vis-low-y" : [ -50.0 ],
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 3 ],
-					"vis-texture" : [ "velocity" ]
+					"vis-texture" : [ "velocity" ],
+					"vis-var-r" : [ 0 ],
+					"vis-var-g" : [ 1 ],
+					"vis-var-b" : [ 2 ],
+					"vis-var-a" : [ 3 ]
 				}
 
 			}
@@ -102,7 +110,11 @@
 					"vis-low-y" : [ -10.0 ],
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 3 ],
-					"vis-texture" : [ "vorticity" ]
+					"vis-texture" : [ "vorticity" ],
+					"vis-var-r" : [ 0 ],
+					"vis-var-g" : [ 1 ],
+					"vis-var-b" : [ 2 ],
+					"vis-var-a" : [ 3 ]
 				}
 
 			}
@@ -137,7 +149,11 @@
 					"vis-low-y" : [ 0.0 ],
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 2 ],
-					"vis-texture" : [ "pressure" ]
+					"vis-texture" : [ "pressure" ],
+					"vis-var-r" : [ 0 ],
+					"vis-var-g" : [ 1 ],
+					"vis-var-b" : [ 2 ],
+					"vis-var-a" : [ 3 ]
 				}
 
 			}
@@ -172,7 +188,11 @@
 					"vis-low-y" : [ 0.0 ],
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 2 ],
-					"vis-texture" : [ "divergence" ]
+					"vis-texture" : [ "divergence" ],
+					"vis-var-r" : [ 0 ],
+					"vis-var-g" : [ 1 ],
+					"vis-var-b" : [ 2 ],
+					"vis-var-a" : [ 3 ]
 				}
 
 			}
@@ -207,7 +227,11 @@
 					"vis-low-y" : [ -2.0 ],
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 3 ],
-					"vis-texture" : [ "hsflow" ]
+					"vis-texture" : [ "hsflow" ],
+					"vis-var-r" : [ 0 ],
+					"vis-var-g" : [ 1 ],
+					"vis-var-b" : [ 2 ],
+					"vis-var-a" : [ 3 ]
 				}
 
 			}
@@ -234,7 +258,7 @@
 					"vis-contrast-y" : [ 1.0 ],
 					"vis-contrast-z" : [ 1.0 ],
 					"vis-high-w" : [ 1.0 ],
-					"vis-high-x" : [ 1.0001 ],
+					"vis-high-x" : [ 1.0 ],
 					"vis-high-y" : [ 1.0 ],
 					"vis-high-z" : [ 1.0 ],
 					"vis-low-w" : [ 0.0 ],
@@ -242,7 +266,11 @@
 					"vis-low-y" : [ 0.0 ],
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 0 ],
-					"vis-texture" : [ "camera" ]
+					"vis-texture" : [ "camera" ],
+					"vis-var-r" : [ 0 ],
+					"vis-var-g" : [ 1 ],
+					"vis-var-b" : [ 2 ],
+					"vis-var-a" : [ 3 ]
 				}
 
 			}
@@ -277,7 +305,11 @@
 					"vis-low-y" : [ 0.0 ],
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 1 ],
-					"vis-texture" : [ "obstacles" ]
+					"vis-texture" : [ "obstacles" ],
+					"vis-var-r" : [ 3 ],
+					"vis-var-g" : [ 3 ],
+					"vis-var-b" : [ 3 ],
+					"vis-var-a" : [ 3 ]
 				}
 
 			}
@@ -312,7 +344,11 @@
 					"vis-low-y" : [ 0.0 ],
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 0 ],
-					"vis-texture" : [ "bgmask" ]
+					"vis-texture" : [ "bgmask" ],
+					"vis-var-r" : [ 0 ],
+					"vis-var-g" : [ 1 ],
+					"vis-var-b" : [ 2 ],
+					"vis-var-a" : [ 3 ]
 				}
 
 			}
@@ -338,16 +374,20 @@
 					"vis-contrast-x" : [ 1.0 ],
 					"vis-contrast-y" : [ 1.0 ],
 					"vis-contrast-z" : [ 1.0 ],
-					"vis-high-w" : [ 0.4 ],
+					"vis-high-w" : [ 1.0 ],
 					"vis-high-x" : [ 1.0 ],
 					"vis-high-y" : [ 1.0 ],
-					"vis-high-z" : [ 0.4 ],
+					"vis-high-z" : [ 1.0 ],
 					"vis-low-w" : [ 0.0 ],
 					"vis-low-x" : [ 0.0 ],
 					"vis-low-y" : [ 0.0 ],
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 2 ],
-					"vis-texture" : [ "bgsub" ]
+					"vis-texture" : [ "bgsub" ],
+					"vis-var-r" : [ 0 ],
+					"vis-var-g" : [ 1 ],
+					"vis-var-b" : [ 2 ],
+					"vis-var-a" : [ 3 ]
 				}
 
 			}
@@ -382,7 +422,11 @@
 					"vis-low-y" : [ 0.0 ],
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 0 ],
-					"vis-texture" : [ "static_video" ]
+					"vis-texture" : [ "static_video" ],
+					"vis-var-r" : [ 0 ],
+					"vis-var-g" : [ 1 ],
+					"vis-var-b" : [ 2 ],
+					"vis-var-a" : [ 3 ]
 				}
 
 			}
@@ -417,7 +461,11 @@
 					"vis-low-y" : [ 0.0 ],
 					"vis-low-z" : [ 100.0 ],
 					"vis-mode" : [ 4 ],
-					"vis-texture" : [ "watertemp" ]
+					"vis-texture" : [ "watertemp" ],
+					"vis-var-r" : [ 0 ],
+					"vis-var-g" : [ 1 ],
+					"vis-var-b" : [ 2 ],
+					"vis-var-a" : [ 3 ]
 				}
 
 			}
@@ -452,7 +500,11 @@
 					"vis-low-y" : [ 0.0 ],
 					"vis-low-z" : [ 100.0 ],
 					"vis-mode" : [ 4 ],
-					"vis-texture" : [ "watertemp" ]
+					"vis-texture" : [ "watertemp" ],
+					"vis-var-r" : [ 0 ],
+					"vis-var-g" : [ 1 ],
+					"vis-var-b" : [ 2 ],
+					"vis-var-a" : [ 3 ]
 				}
 
 			}
@@ -487,7 +539,11 @@
 					"vis-low-y" : [ -10.0 ],
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 3 ],
-					"vis-texture" : [ "buoyancy" ]
+					"vis-texture" : [ "buoyancy" ],
+					"vis-var-r" : [ 0 ],
+					"vis-var-g" : [ 1 ],
+					"vis-var-b" : [ 2 ],
+					"vis-var-a" : [ 3 ]
 				}
 
 			}
@@ -522,7 +578,11 @@
 					"vis-low-y" : [ -1.0 ],
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 3 ],
-					"vis-texture" : [ "condensation" ]
+					"vis-texture" : [ "condensation" ],
+					"vis-var-r" : [ 0 ],
+					"vis-var-g" : [ 1 ],
+					"vis-var-b" : [ 2 ],
+					"vis-var-a" : [ 3 ]
 				}
 
 			}
