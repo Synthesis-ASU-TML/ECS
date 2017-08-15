@@ -59,7 +59,8 @@
 					"sim-timestep" : [ 0.9 ],
 					"sim-width" : [ 640 ],
 					"udp-host" : [ "127.0.0.1" ],
-					"udp-port" : [ 10001 ]
+					"udp-port" : [ 10001 ],
+					"env-lapse-rate" : [  ]
 				}
 
 			}
@@ -122,7 +123,8 @@
 					"sim-timestep" : [ 0.9 ],
 					"sim-width" : [ 640 ],
 					"udp-host" : [ "127.0.0.1" ],
-					"udp-port" : [ 10001 ]
+					"udp-port" : [ 10001 ],
+					"env-lapse-rate" : [  ]
 				}
 
 			}
@@ -185,7 +187,8 @@
 					"sim-timestep" : [ 0.2 ],
 					"sim-width" : [ 1280 ],
 					"udp-host" : [ "127.0.0.1" ],
-					"udp-port" : [ 10001 ]
+					"udp-port" : [ 10001 ],
+					"env-lapse-rate" : [  ]
 				}
 
 			}
@@ -248,7 +251,8 @@
 					"sim-timestep" : [ 0.931 ],
 					"sim-width" : [ 1280 ],
 					"udp-host" : [ "127.0.0.1" ],
-					"udp-port" : [ 10001 ]
+					"udp-port" : [ 10001 ],
+					"env-lapse-rate" : [  ]
 				}
 
 			}
@@ -311,7 +315,8 @@
 					"sim-timestep" : [ 0.33 ],
 					"sim-width" : [ 640 ],
 					"udp-host" : [ "127.0.0.1" ],
-					"udp-port" : [ 10001 ]
+					"udp-port" : [ 10001 ],
+					"env-lapse-rate" : [  ]
 				}
 
 			}
@@ -374,7 +379,8 @@
 					"sim-timestep" : [ 0.3 ],
 					"sim-width" : [ 640 ],
 					"udp-host" : [ "127.0.0.1" ],
-					"udp-port" : [ 10001 ]
+					"udp-port" : [ 10001 ],
+					"env-lapse-rate" : [  ]
 				}
 
 			}
@@ -387,7 +393,7 @@
 					"bgsub-postalpha" : [ 0.0 ],
 					"bgsub-prealpha" : [ 1.0 ],
 					"bgsub-threshold" : [ 0.1 ],
-					"boundary-dynamic-source" : [ 0 ],
+					"boundary-dynamic-source" : [ 1 ],
 					"boundary-hard-bottom" : [ 1 ],
 					"boundary-hard-left" : [ 0 ],
 					"boundary-hard-right" : [ 0 ],
@@ -402,7 +408,7 @@
 					"cfd-velocity-dissipation" : [ 1.0 ],
 					"cfd-vorticity" : [ 0.2 ],
 					"env-K0" : [ 288.15 ],
-					"env-L" : [ 2.5 ],
+					"env-L" : [ 2501000.0 ],
 					"env-dry-cp" : [ 1004.0 ],
 					"env-dry-cv" : [ 717.0 ],
 					"env-gravity-angle" : [ 0.0 ],
@@ -419,7 +425,7 @@
 					"external-liquid-texture" : [ "hsflow" ],
 					"external-temp-gain" : [ 5.0 ],
 					"external-temp-texture" : [ "hsflow" ],
-					"external-vapor-gain" : [ 0.0 ],
+					"external-vapor-gain" : [ 0.001 ],
 					"external-vapor-texture" : [ "hsflow" ],
 					"external-velocity-gain" : [ 0.0 ],
 					"external-velocity-texture" : [ "hsflow" ],
@@ -430,14 +436,15 @@
 					"hsflow-offset" : [ 1.0 ],
 					"hsflow-threshold" : [ 0.0 ],
 					"render-context" : [ "sc-clouds" ],
-					"sim-cell-size" : [ 20.0 ],
+					"sim-cell-size" : [ 30.0 ],
 					"sim-height" : [ 480 ],
 					"sim-manual-timestep" : [ 1 ],
 					"sim-speed" : [ 19.0 ],
 					"sim-timestep" : [ 0.9 ],
 					"sim-width" : [ 640 ],
 					"udp-host" : [ "127.0.0.1" ],
-					"udp-port" : [ 10001 ]
+					"udp-port" : [ 10001 ],
+					"env-lapse-rate" : [ 6.5 ]
 				}
 
 			}
