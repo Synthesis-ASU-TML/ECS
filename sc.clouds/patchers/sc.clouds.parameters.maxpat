@@ -458,7 +458,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 13.35, 823.470886, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 103.187744, 709.781738, 62.011841, 22.0 ],
+					"presentation_rect" : [ 104.000092, 709.781738, 62.011841, 22.0 ],
 					"style" : "",
 					"varname" : "env-wind-magnitude"
 				}
@@ -1215,9 +1215,9 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 369.750122, 121.5, 300.247559, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 104.000092, 532.607178, 300.636017, 21.0 ],
+					"presentation_rect" : [ 104.000092, 532.607178, 252.636017, 21.0 ],
 					"style" : "",
-					"text" : "Specific heat capacity at constant pressure (J kg⁻¹ K⁻¹)"
+					"text" : "Specific heat at constant pressure (J kg⁻¹ K⁻¹)"
 				}
 
 			}
@@ -1229,9 +1229,9 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 369.750122, 145.5, 300.247559, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 104.000092, 556.607178, 300.636017, 21.0 ],
+					"presentation_rect" : [ 104.000092, 556.607178, 252.636017, 21.0 ],
 					"style" : "",
-					"text" : "Specific heat capacity at constant volume (J kg⁻¹ K⁻¹)\n"
+					"text" : "Specific heat at constant volume (J kg⁻¹ K⁻¹)"
 				}
 
 			}
@@ -72199,9 +72199,9 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 369.900513, 48.0, 300.247559, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 104.000092, 462.107178, 300.636017, 21.0 ],
+					"presentation_rect" : [ 104.000092, 462.607178, 252.636017, 21.0 ],
 					"style" : "",
-					"text" : "Specific heat capacity at constant pressure (J kg⁻¹ K⁻¹)"
+					"text" : "Specific heat at constant pressure (J kg⁻¹ K⁻¹)"
 				}
 
 			}
@@ -72211,11 +72211,11 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 369.900513, 72.0, 300.247559, 21.0 ],
+					"patching_rect" : [ 369.900513, 72.0, 300.247559, 34.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 104.000092, 486.607178, 300.636017, 21.0 ],
+					"presentation_rect" : [ 104.000092, 486.607178, 252.636017, 21.0 ],
 					"style" : "",
-					"text" : "Specific heat capacity at constant volume (J kg⁻¹ K⁻¹)\n"
+					"text" : "Specific heat at constant volume (J kg⁻¹ K⁻¹)\n"
 				}
 
 			}
@@ -72227,7 +72227,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 369.750122, 170.999878, 300.247559, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 104.000092, 580.607178, 300.636017, 21.0 ],
+					"presentation_rect" : [ 104.000092, 580.607178, 252.636017, 21.0 ],
 					"style" : "",
 					"text" : "Latent heat from vaporization (J kg⁻¹)\n"
 				}
