@@ -68,7 +68,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 886.0, 289.0, 633.0, 426.0 ],
+						"rect" : [ 305.0, 278.0, 633.0, 426.0 ],
 						"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
@@ -149,7 +149,7 @@
 							}
 , 							{
 								"box" : 								{
-									"code" : "require(\"sc.clouds.helpers\");\r\nParam dx(0.005);\t\t// m / px\r\nParam iteration(1);\t\t// int\r\nParam savepressure(0);\t// bool\r\nParam hard(1, 1, 1, 1);\r\n\r\nptot = 0;\r\nzerop = (savepressure == 1) || (iteration != 1);\r\n\r\n// Total pressure from neighboring pixels.\r\npl, pr, pu, pd = mask_neighbors_replace(in1, in3, norm, hard);\t\r\nptot = zerop * (pl.x + pr.x + pu.x + pd.x);\r\n\r\n// (m^2 / px^2) * (px / s) = m^2 / px s. TODO: Is this ACTUALLY Pa?\r\n// Gradient subtraction later is (m^2 / px s) / (m / px) = m / s.\r\nout1 = (1 - in3.w) * ((ptot - (dx * dx) * in2.x) / 4);\t// New pressure.\r\nout2 = in2;\t\t\t\t\t\t\t\t// Divergence.\r\nout3 = in3;\t\t\t\t\t\t\t\t// Obstacle mask. ",
+									"code" : "require(\"sc.clouds.helpers\");\r\nParam dx(0.005);\t\t// m / px\r\nParam iteration(1);\t\t// int\r\nParam savepressure(0);\t// bool\r\nParam hard(1, 1, 1, 1);\r\n\r\nptot = 0;\r\nzerop = (savepressure == 1) || (iteration != 1);\r\n\r\n\r\n// Total pressure from neighboring pixels.\r\npl, pr, pu, pd = mask_neighbors_replace(in1, in3, norm, hard);\t\r\nptot = zerop * (pl.x + pr.x + pu.x + pd.x);\r\n\r\n// (m^2 / px^2) * (px / s) = m^2 / px s. TODO: Is this ACTUALLY Pa?\r\n// Gradient subtraction later is (m^2 / px s) / (m / px) = m / s.\r\nout1 = (1 - in3.w) * ((ptot - (dx * dx) * in2.x) / 4);\t// New pressure.\r\nout2 = in2;\t\t\t\t\t\t\t\t// Divergence.\r\nout3 = in3;\t\t\t\t\t\t\t\t// Obstacle mask. ",
 									"fontface" : 0,
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
