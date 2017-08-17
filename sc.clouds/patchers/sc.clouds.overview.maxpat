@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 175.0, 113.0, 992.0, 932.0 ],
+		"rect" : [ 0.0, 44.0, 840.0, 1001.0 ],
 		"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
 		"editing_bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
 		"bglocked" : 0,
@@ -53,7 +53,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 2.0, 2.0 ],
-					"patching_rect" : [ 712.5, 47.0, 689.0, 867.0 ],
+					"patching_rect" : [ 773.5, 47.0, 689.0, 867.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -74,7 +74,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 2.0, 2.0 ],
 					"outlettype" : [ "jit_gl_texture", "bang" ],
-					"patching_rect" : [ 21.0, 355.0, 248.0, 559.0 ],
+					"patching_rect" : [ 21.0, 355.0, 309.0, 651.0 ],
 					"varname" : "sc.clouds.video-output",
 					"viewvisibility" : 1
 				}
@@ -96,7 +96,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 2.0, 2.0 ],
 					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 21.0, 47.0, 248.0, 265.0 ],
+					"patching_rect" : [ 21.0, 47.0, 309.0, 265.0 ],
 					"varname" : "sc.clouds.video-input",
 					"viewvisibility" : 1
 				}
@@ -117,7 +117,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 2.0, 2.0 ],
-					"patching_rect" : [ 286.0, 47.0, 409.5, 867.0 ],
+					"patching_rect" : [ 347.0, 47.0, 409.5, 867.0 ],
 					"varname" : "sc.clouds.parameters",
 					"viewvisibility" : 1
 				}
@@ -132,7 +132,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 21.0, 21.0, 248.0, 24.0 ],
+					"patching_rect" : [ 21.0, 21.0, 309.0, 24.0 ],
 					"style" : "",
 					"text" : "Camera Input",
 					"textjustification" : 1
@@ -148,7 +148,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 21.0, 329.0, 248.0, 24.0 ],
+					"patching_rect" : [ 21.0, 329.0, 309.0, 24.0 ],
 					"style" : "",
 					"text" : "Video Output",
 					"textjustification" : 1
@@ -164,7 +164,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 286.0, 21.0, 409.5, 24.0 ],
+					"patching_rect" : [ 347.0, 21.0, 409.5, 24.0 ],
 					"style" : "",
 					"text" : "Simulation Parameters",
 					"textjustification" : 1
@@ -180,7 +180,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 712.5, 21.0, 689.0, 24.0 ],
+					"patching_rect" : [ 773.5, 21.0, 689.0, 24.0 ],
 					"style" : "",
 					"text" : "Simulation Status",
 					"textjustification" : 1
