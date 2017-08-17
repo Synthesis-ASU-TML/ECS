@@ -48,10 +48,10 @@ mask_neighbors_replace(tex, mask, coord, replace) {
 		replace.w || coord.y + px.y < dim.y - px.y
 	);
 
-	l = ml.w * (replace.x * c) + (1 - ml.w) * l;
-	r = mr.w * (replace.y * c) + (1 - mr.w) * r;
-	u = mu.w * (replace.z * c) + (1 - mu.w) * u;
-	d = md.w * (replace.w * c) + (1 - md.w) * d;
+	l = ml.w * (zero.x * c) + (1 - ml.w) * l;
+	r = mr.w * (zero.y * c) + (1 - mr.w) * r;
+	u = mu.w * (zero.z * c) + (1 - mu.w) * u;
+	d = md.w * (zero.w * c) + (1 - md.w) * d;
 
 	return l, r, u, d;
 }
