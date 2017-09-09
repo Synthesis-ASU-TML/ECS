@@ -2,16 +2,12 @@
 	<description>
 		draw velocity feather plot using input velocity texture
 	</description>
-	<param name="dt" type="float" default="0.001"/>
 	<param name="tex" type="int" default="0"/>
 	<param name="color" type="vec4" default="1 1 1 1"/>
-	<param name="nparticles" type="int" default="0"/>
 	
 	<language name="glsl" version="1.2">
-		<bind param="dt" program="gp"/>
 		<bind param="tex" program="gp"/>
 		<bind param="color" program="gp"/>
-		<bind param="nparticles" program="gp"/>
 			
 		<program name="vp" type="vertex">
 <![CDATA[
@@ -41,74 +37,14 @@
 			
 			uniform sampler2DRect tex;
 			
-			uniform float dt;
 			varying in vec2 texdim[1];
 			uniform vec4 color;
-			uniform int nparticles;
 			
 			void main() {
 				// Arrow base vertex.
-				vec2 spawn_pos = gl_PositionIn[0].xy * texdim[0].xy;
-				spawn_pos = vec2(spawn_pos.x / float(nparticles), spawn_pos.y);
-				
-				// Velocity value from texture.
-				vec2 velocity = texture2DRect(tex, spawn_pos.xy).xy;
-				
-				// Scale the arrow between low / high values.
-				vec2 end
-				vec2 scale_dist = high - low;
-				vec2 scaled_unsigned = (velocity - low) / scale_dist;
-				vec2 zero_point = -low / scale_dist;
-				vec2 scaled_signed = (scaled_unsigned - zero_point) * 2;
-				
-				// Arrow point vertex.
-				vec2 line = vec2(scaled_signed.x, -scaled_signed.y);
-				line_start = line_start * vec4(2,2,1,1) - vec4(1,1,0,0);
-				vec4 line_end = line_start + vec4(line * scale, 0, 0);
-				
-				// Arrowhead vertices.
-				vec2 normalized = normalize(line);
-				float arrow_angle = atan(normalized.y, normalized.x);
-				float arrow_angle_a = arrow_angle + 0.785;
-				float arrow_angle_b = arrow_angle - 0.785;
-				
-				vec4 arrow_line_a = vec4(cos(arrow_angle_a), sin(arrow_angle_a), 0, 0);
-				vec4 arrow_line_b = vec4(cos(arrow_angle_b), sin(arrow_angle_b), 0, 0);
-				arrow_line_a = normalize(arrow_line_a) * arrowhead_size;
-				arrow_line_b = normalize(arrow_line_b) * arrowhead_size;
-				vec4 arrow_a = line_end - arrow_line_a;
-				vec4 arrow_b = line_end - arrow_line_b;
-				
-				// Color the arrow either automatically using HSV mapping or with a single value.
-				vec4 arrow_color;
-
-				if (auto_color == 1) {
-					arrow_color = vec4(
-						texture2DRect(
-							xfer, 
-							clamp(scaled_unsigned, 0, 1) * texdim1[0]
-						).xyz, default_color.w
-					);
-				} else
-					arrow_color = default_color;
-				
-				// Draw the arrow.
-				gl_Position = line_start;
-				gl_FrontColor = arrow_color;
-				EmitVertex();
-				
-				gl_Position = line_end;
-				EmitVertex();
-				
-				gl_Position = arrow_a;
-				EmitVertex();
-				
-				gl_Position = line_end;
-				EmitVertex();
-				
-				gl_Position = arrow_b;
-				EmitVertex();
-				
+				gl_Position = vec4(texture2DRect(tex, gl_PositionIn[0].xy * texdim[0].xy).xy * texdim[0].xy, 0, 1);
+ 				gl_FrontColor = color;
+				EmitVertex();	
 				EndPrimitive();
 			}
 ]]>
