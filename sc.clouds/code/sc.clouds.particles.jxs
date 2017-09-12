@@ -42,7 +42,19 @@
 			
 			void main() {
 				// Arrow base vertex.
-				gl_Position = vec4(texture2DRect(tex, gl_PositionIn[0].xy * texdim[0].xy).xy * texdim[0].xy, 0, 1);
+				vec2 px = 1.0 / texdim[0].xy;
+				
+				vec2 samplepos = (gl_PositionIn[0].xy + 1.0) / 2.0 * texdim[0].xy;
+				samplepos = vec2(samplepos.x, samplepos.y);
+				
+				vec2 pos = vec2(2.0,-2.0) * (texture2DRect(tex, samplepos).xy - 0.5);
+				
+				gl_Position = vec4(
+					pos.x, 
+ 					pos.y,
+					gl_PositionIn[0].z, 
+					gl_PositionIn[0].w
+				);
  				gl_FrontColor = color;
 				EmitVertex();	
 				EndPrimitive();
