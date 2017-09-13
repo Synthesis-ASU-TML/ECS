@@ -1,14 +1,14 @@
 <jittershader name="feather plot shader">
-	<description>
-		draw velocity feather plot using input velocity texture
-	</description>
+	<description>draw lines given a start position and an end position</description>
 	<param name="tex" type="int" default="0"/>
+	<param name="tex_prev" type="int" default="1"/>
 	<param name="color" type="vec4" default="1 1 1 1"/>
 	
 	<language name="glsl" version="1.2">
 		<bind param="tex" program="gp"/>
+		<bind param="tex_prev" program="gp"/>
 		<bind param="color" program="gp"/>
-			
+		
 		<program name="vp" type="vertex">
 <![CDATA[
 			#version 120
@@ -21,6 +21,7 @@
 			}
 ]]>
 		</program>
+		
 		<program name="fp" type="fragment">
 <![CDATA[
 			#version 120
@@ -30,33 +31,41 @@
 			}
 ]]>
 		</program>
-		<program name="gp" type="geometry" vertices_out="1" input_type="points" output_type="points">
+		
+		<program name="gp" type="geometry" vertices_out="2" input_type="points" output_type="line_strip">
 <![CDATA[
 			#version 120
 			#extension GL_EXT_geometry_shader4 : enable
 			
 			uniform sampler2DRect tex;
+			uniform sampler2DRect tex_prev;
 			
 			varying in vec2 texdim[1];
 			uniform vec4 color;
 			
 			void main() {
-				// Arrow base vertex.
-				vec2 px = 1.0 / texdim[0].xy;
+				vec2 uv = (gl_PositionIn[0].xy + 1.0) / 2.0 * texdim[0].xy;				
+				vec2 pos = vec2(2.0, -2.0) * (texture2DRect(tex, uv).xy - 0.5); 
+				vec2 pos_prev = vec2(2.0, -2.0) * (texture2DRect(tex_prev, uv).xy - 0.5);
 				
-				vec2 samplepos = (gl_PositionIn[0].xy + 1.0) / 2.0 * texdim[0].xy;
-				samplepos = vec2(samplepos.x, samplepos.y);
-				
-				vec2 pos = vec2(2.0,-2.0) * (texture2DRect(tex, samplepos).xy - 0.5);
+				gl_FrontColor = color;
 				
 				gl_Position = vec4(
-					pos.x, 
- 					pos.y,
+					pos_prev.x, 
+ 					pos_prev.y,
 					gl_PositionIn[0].z, 
 					gl_PositionIn[0].w
 				);
- 				gl_FrontColor = color;
-				EmitVertex();	
+ 				EmitVertex();	
+				
+				gl_Position = vec4(
+					pos.x,
+					pos.y,
+					gl_PositionIn[0].z,
+					gl_PositionIn[0].w
+				);
+				EmitVertex();
+				
 				EndPrimitive();
 			}
 ]]>
