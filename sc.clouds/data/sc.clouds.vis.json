@@ -6,30 +6,32 @@
 				"id" : 1,
 				"name" : "clouds",
 				"data" : 				{
-					"feathers-arrowhead-size" : [ 0.014 ],
-					"feathers-color" : [ 1.0, 1.0, 1.0, 1.0, 0.0, 1.0, 1.0 ],
+					"feathers-arrowhead-size" : [ 0.0 ],
 					"feathers-color-alpha" : [ 0.0 ],
-					"feathers-dim-x" : [ 1 ],
-					"feathers-dim-y" : [ 1 ],
+					"feathers-dim-x" : [ 0 ],
+					"feathers-dim-y" : [ 0 ],
 					"feathers-high-x" : [ 1.0 ],
 					"feathers-high-y" : [ 1.0 ],
 					"feathers-low-x" : [ 0.0 ],
 					"feathers-low-y" : [ 0.0 ],
 					"feathers-size" : [ 0.0 ],
-					"feathers-texture" : [ "watertemp" ],
+					"feathers-texture" : [ "velocity" ],
 					"internal_gain" : [ 1.0 ],
-					"particles-dim-x" : [  ],
-					"particles-dim-y" : [  ],
-					"particles-dim-z" : [  ],
-					"particles-duration" : [  ],
-					"particles-texture" : [  ],
+					"particles-color-alpha" : [ 0.0 ],
+					"particles-dim-x" : [ 0 ],
+					"particles-dim-y" : [ 0 ],
+					"particles-duration" : [ 0.0 ],
+					"particles-gain" : [ 0.0 ],
+					"particles-slide-down" : [ 0.0 ],
+					"particles-slide-up" : [ 0.0 ],
+					"particles-texture" : [ "velocity" ],
 					"vis-contrast-w" : [ 1.0 ],
-					"vis-contrast-x" : [ 0.3 ],
-					"vis-contrast-y" : [ 0.19 ],
+					"vis-contrast-x" : [ 0.273 ],
+					"vis-contrast-y" : [ 0.152 ],
 					"vis-contrast-z" : [ 1.0 ],
 					"vis-high-w" : [ 1.0 ],
-					"vis-high-x" : [ 0.0001 ],
-					"vis-high-y" : [ 1.0 ],
+					"vis-high-x" : [ 0.0103 ],
+					"vis-high-y" : [ 0.0081 ],
 					"vis-high-z" : [ 288.149994 ],
 					"vis-low-w" : [ 0.0 ],
 					"vis-low-x" : [ 0.0 ],
@@ -40,7 +42,14 @@
 					"vis-var-a" : [ 3 ],
 					"vis-var-b" : [ 2 ],
 					"vis-var-g" : [ 1 ],
-					"vis-var-r" : [ 0 ]
+					"vis-var-r" : [ 0 ],
+					"particles-blend" : [ 7 ],
+					"feathers-slide-up" : [ 0.0 ],
+					"feathers-slide-down" : [ 1.0 ],
+					"feathers-blend" : [ 5 ],
+					"particles-blur-width" : [ 0.0 ],
+					"particles-color-rgb" : [ 1.0, 1.0, 1.0 ],
+					"feathers-color-rgb" : [ 1.0, 1.0, 1.0 ]
 				}
 
 			}
@@ -50,22 +59,24 @@
 				"name" : "velocity",
 				"data" : 				{
 					"feathers-arrowhead-size" : [ 0.014 ],
-					"feathers-color" : [ 1.0, 1.0, 1.0, 1.0, 0.0, 1.0, 1.0 ],
-					"feathers-color-alpha" : [ 1.0 ],
-					"feathers-dim-x" : [ 100 ],
-					"feathers-dim-y" : [ 100 ],
+					"feathers-color-alpha" : [ 0.0 ],
+					"feathers-dim-x" : [ 0 ],
+					"feathers-dim-y" : [ 0 ],
 					"feathers-high-x" : [ 50.0 ],
 					"feathers-high-y" : [ 50.0 ],
 					"feathers-low-x" : [ -50.0 ],
 					"feathers-low-y" : [ -50.0 ],
 					"feathers-size" : [ 0.02 ],
 					"feathers-texture" : [ "velocity" ],
-					"internal_gain" : [ 0.6 ],
-					"particles-dim-x" : [  ],
-					"particles-dim-y" : [  ],
-					"particles-dim-z" : [  ],
-					"particles-duration" : [  ],
-					"particles-texture" : [  ],
+					"internal_gain" : [ 1.0 ],
+					"particles-color-alpha" : [ 1.0 ],
+					"particles-dim-x" : [ 300 ],
+					"particles-dim-y" : [ 300 ],
+					"particles-duration" : [ 0.5 ],
+					"particles-gain" : [ 0.1 ],
+					"particles-slide-down" : [ 0.995 ],
+					"particles-slide-up" : [ 0.0 ],
+					"particles-texture" : [ "velocity" ],
 					"vis-contrast-w" : [ 1.0 ],
 					"vis-contrast-x" : [ 1.0 ],
 					"vis-contrast-y" : [ 1.0 ],
@@ -83,60 +94,23 @@
 					"vis-var-a" : [ 3 ],
 					"vis-var-b" : [ 2 ],
 					"vis-var-g" : [ 1 ],
-					"vis-var-r" : [ 0 ]
+					"vis-var-r" : [ 0 ],
+					"particles-blend" : [ 4 ],
+					"feathers-slide-up" : [ 0.0 ],
+					"feathers-slide-down" : [ 1.0 ],
+					"feathers-blend" : [ 5 ],
+					"particles-blur-width" : [  ],
+					"particles-color-rgb" : [ 1.0, 1.0, 1.0 ],
+					"feathers-color-rgb" : [ 1.0, 1.0, 1.0 ]
 				}
 
 			}
 ,
 			"3" : 			{
 				"id" : 3,
-				"name" : "vorticity",
-				"data" : 				{
-					"feathers-arrowhead-size" : [ 0.014 ],
-					"feathers-color" : [ 1.0, 1.0, 1.0, 1.0, 0.018398, 1.0, 1.0 ],
-					"feathers-color-alpha" : [ 0.4 ],
-					"feathers-dim-x" : [ 50 ],
-					"feathers-dim-y" : [ 50 ],
-					"feathers-high-x" : [ 50.0 ],
-					"feathers-high-y" : [ 50.0 ],
-					"feathers-low-x" : [ -50.0 ],
-					"feathers-low-y" : [ -50.0 ],
-					"feathers-size" : [ 0.03 ],
-					"feathers-texture" : [ "velocity" ],
-					"internal_gain" : [ 1.0 ],
-					"particles-dim-x" : [  ],
-					"particles-dim-y" : [  ],
-					"particles-dim-z" : [  ],
-					"particles-duration" : [  ],
-					"particles-texture" : [  ],
-					"vis-contrast-w" : [ 1.0 ],
-					"vis-contrast-x" : [ 1.0 ],
-					"vis-contrast-y" : [ 1.0 ],
-					"vis-contrast-z" : [ 1.0 ],
-					"vis-high-w" : [ 1.0 ],
-					"vis-high-x" : [ 10.0 ],
-					"vis-high-y" : [ 10.0 ],
-					"vis-high-z" : [ 1.0 ],
-					"vis-low-w" : [ 0.0 ],
-					"vis-low-x" : [ -10.0 ],
-					"vis-low-y" : [ -10.0 ],
-					"vis-low-z" : [ 0.0 ],
-					"vis-mode" : [ 3 ],
-					"vis-texture" : [ "vorticity" ],
-					"vis-var-a" : [ 3 ],
-					"vis-var-b" : [ 2 ],
-					"vis-var-g" : [ 1 ],
-					"vis-var-r" : [ 0 ]
-				}
-
-			}
-,
-			"4" : 			{
-				"id" : 4,
 				"name" : "pressure",
 				"data" : 				{
 					"feathers-arrowhead-size" : [ 0.014 ],
-					"feathers-color" : [ 1.0, 1.0, 1.0, 1.0, 0.018398, 1.0, 1.0 ],
 					"feathers-color-alpha" : [ 0.4 ],
 					"feathers-dim-x" : [ 50 ],
 					"feathers-dim-y" : [ 50 ],
@@ -147,10 +121,13 @@
 					"feathers-size" : [ 0.04 ],
 					"feathers-texture" : [ "velocity" ],
 					"internal_gain" : [ 1.0 ],
-					"particles-dim-x" : [  ],
-					"particles-dim-y" : [  ],
-					"particles-dim-z" : [  ],
-					"particles-duration" : [  ],
+					"particles-color-alpha" : [ 0.0 ],
+					"particles-dim-x" : [ 0 ],
+					"particles-dim-y" : [ 0 ],
+					"particles-duration" : [ 0.0 ],
+					"particles-gain" : [ 0.0 ],
+					"particles-slide-down" : [ 0.0 ],
+					"particles-slide-up" : [ 0.0 ],
 					"particles-texture" : [  ],
 					"vis-contrast-w" : [ 1.0 ],
 					"vis-contrast-x" : [ 1.0 ],
@@ -169,17 +146,23 @@
 					"vis-var-a" : [ 3 ],
 					"vis-var-b" : [ 2 ],
 					"vis-var-g" : [ 1 ],
-					"vis-var-r" : [ 0 ]
+					"vis-var-r" : [ 0 ],
+					"particles-blend" : [ 4 ],
+					"feathers-slide-up" : [ 0.0 ],
+					"feathers-slide-down" : [ 1.0 ],
+					"feathers-blend" : [ 5 ],
+					"particles-blur-width" : [ 0.0 ],
+					"particles-color-rgb" : [ 1.0, 1.0, 1.0 ],
+					"feathers-color-rgb" : [ 1.0, 1.0, 1.0 ]
 				}
 
 			}
 ,
-			"5" : 			{
-				"id" : 5,
+			"4" : 			{
+				"id" : 4,
 				"name" : "divergence",
 				"data" : 				{
 					"feathers-arrowhead-size" : [ 0.014 ],
-					"feathers-color" : [ 0.0, 0.0, 0.0, 1.0, 0.040754, 1.0, 0.0 ],
 					"feathers-color-alpha" : [ 0.4 ],
 					"feathers-dim-x" : [ 50 ],
 					"feathers-dim-y" : [ 50 ],
@@ -190,17 +173,20 @@
 					"feathers-size" : [ 0.04 ],
 					"feathers-texture" : [ "velocity" ],
 					"internal_gain" : [ 1.0 ],
+					"particles-color-alpha" : [ 0.0 ],
 					"particles-dim-x" : [  ],
 					"particles-dim-y" : [  ],
-					"particles-dim-z" : [  ],
 					"particles-duration" : [  ],
+					"particles-gain" : [ 0.0 ],
+					"particles-slide-down" : [ 0.0 ],
+					"particles-slide-up" : [ 0.0 ],
 					"particles-texture" : [  ],
 					"vis-contrast-w" : [ 1.0 ],
-					"vis-contrast-x" : [ 0.4 ],
+					"vis-contrast-x" : [ 2.0 ],
 					"vis-contrast-y" : [ 1.0 ],
 					"vis-contrast-z" : [ 1.0 ],
 					"vis-high-w" : [ 1.0 ],
-					"vis-high-x" : [ 0.1 ],
+					"vis-high-x" : [ 4.0 ],
 					"vis-high-y" : [ 1.0 ],
 					"vis-high-z" : [ 1.0 ],
 					"vis-low-w" : [ 0.0 ],
@@ -212,17 +198,23 @@
 					"vis-var-a" : [ 3 ],
 					"vis-var-b" : [ 2 ],
 					"vis-var-g" : [ 1 ],
-					"vis-var-r" : [ 0 ]
+					"vis-var-r" : [ 0 ],
+					"particles-blend" : [ 5 ],
+					"feathers-slide-up" : [ 0.0 ],
+					"feathers-slide-down" : [ 1.0 ],
+					"feathers-blend" : [ 5 ],
+					"particles-blur-width" : [ 0.0 ],
+					"particles-color-rgb" : [ 1.0, 1.0, 1.0 ],
+					"feathers-color-rgb" : [ 1.0, 1.0, 1.0 ]
 				}
 
 			}
 ,
-			"6" : 			{
-				"id" : 6,
+			"5" : 			{
+				"id" : 5,
 				"name" : "hsflow",
 				"data" : 				{
-					"feathers-arrowhead-size" : [ 0.014 ],
-					"feathers-color" : [ 1.0, 1.0, 1.0, 1.0, 0.018398, 1.0, 1.0 ],
+					"feathers-arrowhead-size" : [ 0.0075 ],
 					"feathers-color-alpha" : [ 1.0 ],
 					"feathers-dim-x" : [ 200 ],
 					"feathers-dim-y" : [ 200 ],
@@ -230,42 +222,51 @@
 					"feathers-high-y" : [ 1.0 ],
 					"feathers-low-x" : [ -1.0 ],
 					"feathers-low-y" : [ -1.0 ],
-					"feathers-size" : [ 0.05 ],
+					"feathers-size" : [ 0.025 ],
 					"feathers-texture" : [ "hsflow" ],
 					"internal_gain" : [ 0.0 ],
-					"particles-dim-x" : [  ],
-					"particles-dim-y" : [  ],
-					"particles-dim-z" : [  ],
-					"particles-duration" : [  ],
-					"particles-texture" : [  ],
+					"particles-color-alpha" : [ 0.0 ],
+					"particles-dim-x" : [ 0 ],
+					"particles-dim-y" : [ 0 ],
+					"particles-duration" : [ 8.0 ],
+					"particles-gain" : [ 30.0 ],
+					"particles-slide-down" : [ 0.99 ],
+					"particles-slide-up" : [ 0.0 ],
+					"particles-texture" : [ "hsflow" ],
 					"vis-contrast-w" : [ 1.0 ],
 					"vis-contrast-x" : [ 1.0 ],
 					"vis-contrast-y" : [ 1.0 ],
 					"vis-contrast-z" : [ 1.0 ],
 					"vis-high-w" : [ 1.0 ],
-					"vis-high-x" : [ 2.0 ],
-					"vis-high-y" : [ 2.0 ],
+					"vis-high-x" : [ 1.0 ],
+					"vis-high-y" : [ 1.0 ],
 					"vis-high-z" : [ 1.0 ],
 					"vis-low-w" : [ 0.0 ],
-					"vis-low-x" : [ -2.0 ],
-					"vis-low-y" : [ -2.0 ],
+					"vis-low-x" : [ -1.0 ],
+					"vis-low-y" : [ -1.0 ],
 					"vis-low-z" : [ 0.0 ],
 					"vis-mode" : [ 3 ],
 					"vis-texture" : [ "hsflow" ],
 					"vis-var-a" : [ 3 ],
 					"vis-var-b" : [ 2 ],
 					"vis-var-g" : [ 1 ],
-					"vis-var-r" : [ 0 ]
+					"vis-var-r" : [ 0 ],
+					"particles-blend" : [ 7 ],
+					"feathers-slide-up" : [ 0.0 ],
+					"feathers-slide-down" : [ 0.95 ],
+					"feathers-blend" : [ 5 ],
+					"particles-blur-width" : [  ],
+					"particles-color-rgb" : [ 1.0, 1.0, 1.0 ],
+					"feathers-color-rgb" : [ 1.0, 1.0, 1.0 ]
 				}
 
 			}
 ,
-			"7" : 			{
-				"id" : 7,
+			"6" : 			{
+				"id" : 6,
 				"name" : "camera",
 				"data" : 				{
 					"feathers-arrowhead-size" : [ 0.014 ],
-					"feathers-color" : [ 1.0, 1.0, 1.0, 1.0, 0.018398, 1.0, 1.0 ],
 					"feathers-color-alpha" : [ 0.0 ],
 					"feathers-dim-x" : [ 1 ],
 					"feathers-dim-y" : [ 1 ],
@@ -276,10 +277,13 @@
 					"feathers-size" : [ 0.0 ],
 					"feathers-texture" : [ "camera" ],
 					"internal_gain" : [ 1.0 ],
+					"particles-color-alpha" : [  ],
 					"particles-dim-x" : [  ],
 					"particles-dim-y" : [  ],
-					"particles-dim-z" : [  ],
 					"particles-duration" : [  ],
+					"particles-gain" : [  ],
+					"particles-slide-down" : [  ],
+					"particles-slide-up" : [  ],
 					"particles-texture" : [  ],
 					"vis-contrast-w" : [ 1.0 ],
 					"vis-contrast-x" : [ 1.0 ],
@@ -298,17 +302,23 @@
 					"vis-var-a" : [ 3 ],
 					"vis-var-b" : [ 2 ],
 					"vis-var-g" : [ 1 ],
-					"vis-var-r" : [ 0 ]
+					"vis-var-r" : [ 0 ],
+					"particles-blend" : [  ],
+					"feathers-slide-up" : [  ],
+					"feathers-slide-down" : [  ],
+					"feathers-blend" : [  ],
+					"particles-blur-width" : [  ],
+					"particles-color-rgb" : [  ],
+					"feathers-color-rgb" : [  ]
 				}
 
 			}
 ,
-			"8" : 			{
-				"id" : 8,
+			"7" : 			{
+				"id" : 7,
 				"name" : "obstacles",
 				"data" : 				{
 					"feathers-arrowhead-size" : [ 0.014 ],
-					"feathers-color" : [ 1.0, 1.0, 1.0, 1.0, 0.018398, 1.0, 1.0 ],
 					"feathers-color-alpha" : [ 0.0 ],
 					"feathers-dim-x" : [ 1 ],
 					"feathers-dim-y" : [ 1 ],
@@ -319,10 +329,13 @@
 					"feathers-size" : [ 0.0 ],
 					"feathers-texture" : [ "obstacles" ],
 					"internal_gain" : [ 1.0 ],
+					"particles-color-alpha" : [  ],
 					"particles-dim-x" : [  ],
 					"particles-dim-y" : [  ],
-					"particles-dim-z" : [  ],
 					"particles-duration" : [  ],
+					"particles-gain" : [  ],
+					"particles-slide-down" : [  ],
+					"particles-slide-up" : [  ],
 					"particles-texture" : [  ],
 					"vis-contrast-w" : [ 1.0 ],
 					"vis-contrast-x" : [ 1.0 ],
@@ -341,17 +354,23 @@
 					"vis-var-a" : [ 3 ],
 					"vis-var-b" : [ 3 ],
 					"vis-var-g" : [ 3 ],
-					"vis-var-r" : [ 3 ]
+					"vis-var-r" : [ 3 ],
+					"particles-blend" : [  ],
+					"feathers-slide-up" : [  ],
+					"feathers-slide-down" : [  ],
+					"feathers-blend" : [  ],
+					"particles-blur-width" : [  ],
+					"particles-color-rgb" : [  ],
+					"feathers-color-rgb" : [  ]
 				}
 
 			}
 ,
-			"9" : 			{
-				"id" : 9,
+			"8" : 			{
+				"id" : 8,
 				"name" : "background",
 				"data" : 				{
 					"feathers-arrowhead-size" : [ 0.014 ],
-					"feathers-color" : [ 1.0, 1.0, 1.0, 1.0, 0.018398, 1.0, 1.0 ],
 					"feathers-color-alpha" : [ 0.0 ],
 					"feathers-dim-x" : [ 1 ],
 					"feathers-dim-y" : [ 1 ],
@@ -362,10 +381,13 @@
 					"feathers-size" : [ 0.0 ],
 					"feathers-texture" : [ "bgmask" ],
 					"internal_gain" : [ 1.0 ],
+					"particles-color-alpha" : [  ],
 					"particles-dim-x" : [  ],
 					"particles-dim-y" : [  ],
-					"particles-dim-z" : [  ],
 					"particles-duration" : [  ],
+					"particles-gain" : [  ],
+					"particles-slide-down" : [  ],
+					"particles-slide-up" : [  ],
 					"particles-texture" : [  ],
 					"vis-contrast-w" : [ 1.0 ],
 					"vis-contrast-x" : [ 1.0 ],
@@ -384,17 +406,23 @@
 					"vis-var-a" : [ 3 ],
 					"vis-var-b" : [ 2 ],
 					"vis-var-g" : [ 1 ],
-					"vis-var-r" : [ 0 ]
+					"vis-var-r" : [ 0 ],
+					"particles-blend" : [  ],
+					"feathers-slide-up" : [  ],
+					"feathers-slide-down" : [  ],
+					"feathers-blend" : [  ],
+					"particles-blur-width" : [  ],
+					"particles-color-rgb" : [  ],
+					"feathers-color-rgb" : [  ]
 				}
 
 			}
 ,
-			"10" : 			{
-				"id" : 10,
+			"9" : 			{
+				"id" : 9,
 				"name" : "bgsub",
 				"data" : 				{
 					"feathers-arrowhead-size" : [ 0.014 ],
-					"feathers-color" : [ 1.0, 1.0, 1.0, 1.0, 0.018398, 1.0, 1.0 ],
 					"feathers-color-alpha" : [ 0.0 ],
 					"feathers-dim-x" : [ 1 ],
 					"feathers-dim-y" : [ 1 ],
@@ -405,10 +433,13 @@
 					"feathers-size" : [ 0.0 ],
 					"feathers-texture" : [ "bgsub" ],
 					"internal_gain" : [ 1.0 ],
+					"particles-color-alpha" : [  ],
 					"particles-dim-x" : [  ],
 					"particles-dim-y" : [  ],
-					"particles-dim-z" : [  ],
 					"particles-duration" : [  ],
+					"particles-gain" : [  ],
+					"particles-slide-down" : [  ],
+					"particles-slide-up" : [  ],
 					"particles-texture" : [  ],
 					"vis-contrast-w" : [ 1.0 ],
 					"vis-contrast-x" : [ 1.0 ],
@@ -427,17 +458,23 @@
 					"vis-var-a" : [ 3 ],
 					"vis-var-b" : [ 2 ],
 					"vis-var-g" : [ 1 ],
-					"vis-var-r" : [ 0 ]
+					"vis-var-r" : [ 0 ],
+					"particles-blend" : [  ],
+					"feathers-slide-up" : [  ],
+					"feathers-slide-down" : [  ],
+					"feathers-blend" : [  ],
+					"particles-blur-width" : [  ],
+					"particles-color-rgb" : [  ],
+					"feathers-color-rgb" : [  ]
 				}
 
 			}
 ,
-			"11" : 			{
-				"id" : 11,
+			"10" : 			{
+				"id" : 10,
 				"name" : "staticvideo",
 				"data" : 				{
 					"feathers-arrowhead-size" : [ 0.014 ],
-					"feathers-color" : [ 1.0, 1.0, 1.0, 1.0, 0.018398, 1.0, 1.0 ],
 					"feathers-color-alpha" : [ 0.0 ],
 					"feathers-dim-x" : [ 1 ],
 					"feathers-dim-y" : [ 1 ],
@@ -448,10 +485,13 @@
 					"feathers-size" : [ 0.0 ],
 					"feathers-texture" : [ "static_video" ],
 					"internal_gain" : [ 1.0 ],
+					"particles-color-alpha" : [  ],
 					"particles-dim-x" : [  ],
 					"particles-dim-y" : [  ],
-					"particles-dim-z" : [  ],
 					"particles-duration" : [  ],
+					"particles-gain" : [  ],
+					"particles-slide-down" : [  ],
+					"particles-slide-up" : [  ],
 					"particles-texture" : [  ],
 					"vis-contrast-w" : [ 1.0 ],
 					"vis-contrast-x" : [ 1.0 ],
@@ -470,17 +510,23 @@
 					"vis-var-a" : [ 3 ],
 					"vis-var-b" : [ 2 ],
 					"vis-var-g" : [ 1 ],
-					"vis-var-r" : [ 0 ]
+					"vis-var-r" : [ 0 ],
+					"particles-blend" : [  ],
+					"feathers-slide-up" : [  ],
+					"feathers-slide-down" : [  ],
+					"feathers-blend" : [  ],
+					"particles-blur-width" : [  ],
+					"particles-color-rgb" : [  ],
+					"feathers-color-rgb" : [  ]
 				}
 
 			}
 ,
-			"12" : 			{
-				"id" : 12,
+			"11" : 			{
+				"id" : 11,
 				"name" : "clouds-scrim",
 				"data" : 				{
 					"feathers-arrowhead-size" : [ 0.014 ],
-					"feathers-color" : [ 1.0, 1.0, 1.0, 1.0, 0.0, 1.0, 1.0 ],
 					"feathers-color-alpha" : [ 0.0 ],
 					"feathers-dim-x" : [ 1 ],
 					"feathers-dim-y" : [ 1 ],
@@ -491,10 +537,13 @@
 					"feathers-size" : [ 0.0 ],
 					"feathers-texture" : [ "watertemp" ],
 					"internal_gain" : [ 1.0 ],
+					"particles-color-alpha" : [  ],
 					"particles-dim-x" : [  ],
 					"particles-dim-y" : [  ],
-					"particles-dim-z" : [  ],
 					"particles-duration" : [  ],
+					"particles-gain" : [  ],
+					"particles-slide-down" : [  ],
+					"particles-slide-up" : [  ],
 					"particles-texture" : [  ],
 					"vis-contrast-w" : [ 1.0 ],
 					"vis-contrast-x" : [ 1.0 ],
@@ -513,17 +562,23 @@
 					"vis-var-a" : [ 3 ],
 					"vis-var-b" : [ 2 ],
 					"vis-var-g" : [ 1 ],
-					"vis-var-r" : [ 0 ]
+					"vis-var-r" : [ 0 ],
+					"particles-blend" : [  ],
+					"feathers-slide-up" : [  ],
+					"feathers-slide-down" : [  ],
+					"feathers-blend" : [  ],
+					"particles-blur-width" : [  ],
+					"particles-color-rgb" : [  ],
+					"feathers-color-rgb" : [  ]
 				}
 
 			}
 ,
-			"13" : 			{
-				"id" : 13,
+			"12" : 			{
+				"id" : 12,
 				"name" : "velocity-scrim",
 				"data" : 				{
 					"feathers-arrowhead-size" : [ 0.005 ],
-					"feathers-color" : [ 1.0, 1.0, 1.0, 1.0, 0.0, 1.0, 1.0 ],
 					"feathers-color-alpha" : [ 1.0 ],
 					"feathers-dim-x" : [ 50 ],
 					"feathers-dim-y" : [ 50 ],
@@ -534,10 +589,13 @@
 					"feathers-size" : [ 0.02 ],
 					"feathers-texture" : [ "velocity" ],
 					"internal_gain" : [ 1.0 ],
+					"particles-color-alpha" : [  ],
 					"particles-dim-x" : [  ],
 					"particles-dim-y" : [  ],
-					"particles-dim-z" : [  ],
 					"particles-duration" : [  ],
+					"particles-gain" : [  ],
+					"particles-slide-down" : [  ],
+					"particles-slide-up" : [  ],
 					"particles-texture" : [  ],
 					"vis-contrast-w" : [ 1.0 ],
 					"vis-contrast-x" : [ 1.0 ],
@@ -556,17 +614,23 @@
 					"vis-var-a" : [ 3 ],
 					"vis-var-b" : [ 2 ],
 					"vis-var-g" : [ 1 ],
-					"vis-var-r" : [ 0 ]
+					"vis-var-r" : [ 0 ],
+					"particles-blend" : [  ],
+					"feathers-slide-up" : [  ],
+					"feathers-slide-down" : [  ],
+					"feathers-blend" : [  ],
+					"particles-blur-width" : [  ],
+					"particles-color-rgb" : [  ],
+					"feathers-color-rgb" : [  ]
 				}
 
 			}
 ,
-			"14" : 			{
-				"id" : 14,
+			"13" : 			{
+				"id" : 13,
 				"name" : "buoyancy",
 				"data" : 				{
 					"feathers-arrowhead-size" : [ 0.014 ],
-					"feathers-color" : [ 1.0, 1.0, 1.0, 1.0, 0.0, 1.0, 1.0 ],
 					"feathers-color-alpha" : [ 1.0 ],
 					"feathers-dim-x" : [ 100 ],
 					"feathers-dim-y" : [ 100 ],
@@ -577,10 +641,13 @@
 					"feathers-size" : [ 0.02 ],
 					"feathers-texture" : [ "buoyancy" ],
 					"internal_gain" : [ 0.6 ],
+					"particles-color-alpha" : [  ],
 					"particles-dim-x" : [  ],
 					"particles-dim-y" : [  ],
-					"particles-dim-z" : [  ],
 					"particles-duration" : [  ],
+					"particles-gain" : [  ],
+					"particles-slide-down" : [  ],
+					"particles-slide-up" : [  ],
 					"particles-texture" : [  ],
 					"vis-contrast-w" : [ 1.0 ],
 					"vis-contrast-x" : [ 1.0 ],
@@ -599,17 +666,23 @@
 					"vis-var-a" : [ 3 ],
 					"vis-var-b" : [ 2 ],
 					"vis-var-g" : [ 1 ],
-					"vis-var-r" : [ 0 ]
+					"vis-var-r" : [ 0 ],
+					"particles-blend" : [  ],
+					"feathers-slide-up" : [  ],
+					"feathers-slide-down" : [  ],
+					"feathers-blend" : [  ],
+					"particles-blur-width" : [  ],
+					"particles-color-rgb" : [  ],
+					"feathers-color-rgb" : [  ]
 				}
 
 			}
 ,
-			"15" : 			{
-				"id" : 15,
+			"14" : 			{
+				"id" : 14,
 				"name" : "condensation",
 				"data" : 				{
 					"feathers-arrowhead-size" : [ 0.014 ],
-					"feathers-color" : [ 1.0, 1.0, 1.0, 1.0, 0.018398, 1.0, 1.0 ],
 					"feathers-color-alpha" : [ 0.4 ],
 					"feathers-dim-x" : [ 0 ],
 					"feathers-dim-y" : [ 0 ],
@@ -620,10 +693,13 @@
 					"feathers-size" : [ 0.03 ],
 					"feathers-texture" : [ "velocity" ],
 					"internal_gain" : [ 1.0 ],
+					"particles-color-alpha" : [  ],
 					"particles-dim-x" : [  ],
 					"particles-dim-y" : [  ],
-					"particles-dim-z" : [  ],
 					"particles-duration" : [  ],
+					"particles-gain" : [  ],
+					"particles-slide-down" : [  ],
+					"particles-slide-up" : [  ],
 					"particles-texture" : [  ],
 					"vis-contrast-w" : [ 1.0 ],
 					"vis-contrast-x" : [ 1.0 ],
@@ -642,17 +718,23 @@
 					"vis-var-a" : [ 3 ],
 					"vis-var-b" : [ 2 ],
 					"vis-var-g" : [ 1 ],
-					"vis-var-r" : [ 0 ]
+					"vis-var-r" : [ 0 ],
+					"particles-blend" : [  ],
+					"feathers-slide-up" : [  ],
+					"feathers-slide-down" : [  ],
+					"feathers-blend" : [  ],
+					"particles-blur-width" : [  ],
+					"particles-color-rgb" : [  ],
+					"feathers-color-rgb" : [  ]
 				}
 
 			}
 ,
-			"16" : 			{
-				"id" : 16,
+			"15" : 			{
+				"id" : 15,
 				"name" : "condensation-sonify",
 				"data" : 				{
 					"feathers-arrowhead-size" : [ 0.014 ],
-					"feathers-color" : [ 1.0, 1.0, 1.0, 1.0, 0.018398, 1.0, 1.0 ],
 					"feathers-color-alpha" : [ 0.4 ],
 					"feathers-dim-x" : [ 0 ],
 					"feathers-dim-y" : [ 0 ],
@@ -663,10 +745,13 @@
 					"feathers-size" : [ 0.03 ],
 					"feathers-texture" : [ "velocity" ],
 					"internal_gain" : [ 1.0 ],
+					"particles-color-alpha" : [  ],
 					"particles-dim-x" : [  ],
 					"particles-dim-y" : [  ],
-					"particles-dim-z" : [  ],
 					"particles-duration" : [  ],
+					"particles-gain" : [  ],
+					"particles-slide-down" : [  ],
+					"particles-slide-up" : [  ],
 					"particles-texture" : [  ],
 					"vis-contrast-w" : [ 1.0 ],
 					"vis-contrast-x" : [ 1.0 ],
@@ -685,17 +770,23 @@
 					"vis-var-a" : [ 3 ],
 					"vis-var-b" : [ 2 ],
 					"vis-var-g" : [ 0 ],
-					"vis-var-r" : [ 0 ]
+					"vis-var-r" : [ 0 ],
+					"particles-blend" : [  ],
+					"feathers-slide-up" : [  ],
+					"feathers-slide-down" : [  ],
+					"feathers-blend" : [  ],
+					"particles-blur-width" : [  ],
+					"particles-color-rgb" : [  ],
+					"feathers-color-rgb" : [  ]
 				}
 
 			}
 ,
-			"17" : 			{
-				"id" : 17,
+			"16" : 			{
+				"id" : 16,
 				"name" : "clouds-floor",
 				"data" : 				{
 					"feathers-arrowhead-size" : [ 0.014 ],
-					"feathers-color" : [ 1.0, 1.0, 1.0, 1.0, 0.0, 1.0, 1.0 ],
 					"feathers-color-alpha" : [ 0.0 ],
 					"feathers-dim-x" : [ 1 ],
 					"feathers-dim-y" : [ 1 ],
@@ -706,10 +797,13 @@
 					"feathers-size" : [ 0.0 ],
 					"feathers-texture" : [ "watertemp" ],
 					"internal_gain" : [ 1.0 ],
+					"particles-color-alpha" : [  ],
 					"particles-dim-x" : [  ],
 					"particles-dim-y" : [  ],
-					"particles-dim-z" : [  ],
 					"particles-duration" : [  ],
+					"particles-gain" : [  ],
+					"particles-slide-down" : [  ],
+					"particles-slide-up" : [  ],
 					"particles-texture" : [  ],
 					"vis-contrast-w" : [ 1.0 ],
 					"vis-contrast-x" : [ 0.683 ],
@@ -728,17 +822,23 @@
 					"vis-var-a" : [ 3 ],
 					"vis-var-b" : [ 2 ],
 					"vis-var-g" : [ 1 ],
-					"vis-var-r" : [ 0 ]
+					"vis-var-r" : [ 0 ],
+					"particles-blend" : [  ],
+					"feathers-slide-up" : [  ],
+					"feathers-slide-down" : [  ],
+					"feathers-blend" : [  ],
+					"particles-blur-width" : [  ],
+					"particles-color-rgb" : [  ],
+					"feathers-color-rgb" : [  ]
 				}
 
 			}
 ,
-			"18" : 			{
-				"id" : 18,
+			"17" : 			{
+				"id" : 17,
 				"name" : "velocity-floor",
 				"data" : 				{
 					"feathers-arrowhead-size" : [ 0.005 ],
-					"feathers-color" : [ 1.0, 1.0, 1.0, 1.0, 0.0, 1.0, 1.0 ],
 					"feathers-color-alpha" : [ 1.0 ],
 					"feathers-dim-x" : [ 100 ],
 					"feathers-dim-y" : [ 100 ],
@@ -749,10 +849,13 @@
 					"feathers-size" : [ 0.02 ],
 					"feathers-texture" : [ "velocity" ],
 					"internal_gain" : [ 0.6 ],
+					"particles-color-alpha" : [  ],
 					"particles-dim-x" : [  ],
 					"particles-dim-y" : [  ],
-					"particles-dim-z" : [  ],
 					"particles-duration" : [  ],
+					"particles-gain" : [  ],
+					"particles-slide-down" : [  ],
+					"particles-slide-up" : [  ],
 					"particles-texture" : [  ],
 					"vis-contrast-w" : [ 1.0 ],
 					"vis-contrast-x" : [ 1.0 ],
@@ -771,17 +874,23 @@
 					"vis-var-a" : [ 3 ],
 					"vis-var-b" : [ 2 ],
 					"vis-var-g" : [ 1 ],
-					"vis-var-r" : [ 0 ]
+					"vis-var-r" : [ 0 ],
+					"particles-blend" : [  ],
+					"feathers-slide-up" : [  ],
+					"feathers-slide-down" : [  ],
+					"feathers-blend" : [  ],
+					"particles-blur-width" : [  ],
+					"particles-color-rgb" : [  ],
+					"feathers-color-rgb" : [  ]
 				}
 
 			}
 ,
-			"19" : 			{
-				"id" : 19,
+			"18" : 			{
+				"id" : 18,
 				"name" : "hsflow-floor",
 				"data" : 				{
 					"feathers-arrowhead-size" : [ 0.005 ],
-					"feathers-color" : [ 1.0, 1.0, 1.0, 1.0, 0.018398, 1.0, 1.0 ],
 					"feathers-color-alpha" : [ 1.0 ],
 					"feathers-dim-x" : [ 200 ],
 					"feathers-dim-y" : [ 200 ],
@@ -792,10 +901,13 @@
 					"feathers-size" : [ 0.075 ],
 					"feathers-texture" : [ "hsflow" ],
 					"internal_gain" : [ 0.0 ],
+					"particles-color-alpha" : [  ],
 					"particles-dim-x" : [  ],
 					"particles-dim-y" : [  ],
-					"particles-dim-z" : [  ],
 					"particles-duration" : [  ],
+					"particles-gain" : [  ],
+					"particles-slide-down" : [  ],
+					"particles-slide-up" : [  ],
 					"particles-texture" : [  ],
 					"vis-contrast-w" : [ 1.0 ],
 					"vis-contrast-x" : [ 1.0 ],
@@ -814,17 +926,23 @@
 					"vis-var-a" : [ 3 ],
 					"vis-var-b" : [ 2 ],
 					"vis-var-g" : [ 1 ],
-					"vis-var-r" : [ 0 ]
+					"vis-var-r" : [ 0 ],
+					"particles-blend" : [  ],
+					"feathers-slide-up" : [  ],
+					"feathers-slide-down" : [  ],
+					"feathers-blend" : [  ],
+					"particles-blur-width" : [  ],
+					"particles-color-rgb" : [  ],
+					"feathers-color-rgb" : [  ]
 				}
 
 			}
 ,
-			"20" : 			{
-				"id" : 20,
+			"19" : 			{
+				"id" : 19,
 				"name" : "clouds-serra-scrim",
 				"data" : 				{
 					"feathers-arrowhead-size" : [ 0.014 ],
-					"feathers-color" : [ 1.0, 1.0, 1.0, 1.0, 0.0, 1.0, 1.0 ],
 					"feathers-color-alpha" : [ 0.0 ],
 					"feathers-dim-x" : [ 1 ],
 					"feathers-dim-y" : [ 1 ],
@@ -835,10 +953,13 @@
 					"feathers-size" : [ 0.0 ],
 					"feathers-texture" : [ "watertemp" ],
 					"internal_gain" : [ 1.0 ],
+					"particles-color-alpha" : [  ],
 					"particles-dim-x" : [  ],
 					"particles-dim-y" : [  ],
-					"particles-dim-z" : [  ],
 					"particles-duration" : [  ],
+					"particles-gain" : [  ],
+					"particles-slide-down" : [  ],
+					"particles-slide-up" : [  ],
 					"particles-texture" : [  ],
 					"vis-contrast-w" : [ 1.0 ],
 					"vis-contrast-x" : [ 0.3 ],
@@ -857,17 +978,23 @@
 					"vis-var-a" : [ 3 ],
 					"vis-var-b" : [ 2 ],
 					"vis-var-g" : [ 1 ],
-					"vis-var-r" : [ 0 ]
+					"vis-var-r" : [ 0 ],
+					"particles-blend" : [  ],
+					"feathers-slide-up" : [  ],
+					"feathers-slide-down" : [  ],
+					"feathers-blend" : [  ],
+					"particles-blur-width" : [  ],
+					"particles-color-rgb" : [  ],
+					"feathers-color-rgb" : [  ]
 				}
 
 			}
 ,
-			"21" : 			{
-				"id" : 21,
+			"20" : 			{
+				"id" : 20,
 				"name" : "istage-floor-clouds-pressure-driven",
 				"data" : 				{
 					"feathers-arrowhead-size" : [ 0.014 ],
-					"feathers-color" : [ 1.0, 1.0, 1.0, 1.0, 0.0, 1.0, 1.0 ],
 					"feathers-color-alpha" : [ 0.0 ],
 					"feathers-dim-x" : [ 1 ],
 					"feathers-dim-y" : [ 1 ],
@@ -878,10 +1005,13 @@
 					"feathers-size" : [ 0.0 ],
 					"feathers-texture" : [ "watertemp" ],
 					"internal_gain" : [ 1.0 ],
+					"particles-color-alpha" : [  ],
 					"particles-dim-x" : [ 0 ],
 					"particles-dim-y" : [ 0 ],
-					"particles-dim-z" : [ 0 ],
 					"particles-duration" : [ 0 ],
+					"particles-gain" : [  ],
+					"particles-slide-down" : [  ],
+					"particles-slide-up" : [  ],
 					"particles-texture" : [ "watertemp" ],
 					"vis-contrast-w" : [ 1.0 ],
 					"vis-contrast-x" : [ 0.93 ],
@@ -900,7 +1030,14 @@
 					"vis-var-a" : [ 3 ],
 					"vis-var-b" : [ 2 ],
 					"vis-var-g" : [ 1 ],
-					"vis-var-r" : [ 0 ]
+					"vis-var-r" : [ 0 ],
+					"particles-blend" : [  ],
+					"feathers-slide-up" : [  ],
+					"feathers-slide-down" : [  ],
+					"feathers-blend" : [  ],
+					"particles-blur-width" : [  ],
+					"particles-color-rgb" : [  ],
+					"feathers-color-rgb" : [  ]
 				}
 
 			}
