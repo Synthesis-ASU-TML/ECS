@@ -1,8 +1,8 @@
 {
 	"name" : "sc.clouds",
 	"version" : 1,
-	"creationdate" : -722461259,
-	"modificationdate" : -711226627,
+	"creationdate" : -722461380,
+	"modificationdate" : 3588141337,
 	"viewrect" : [ 1.0, 45.0, 240.0, 902.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -36,11 +36,6 @@
 			}
 ,
 			"sc.clouds.simulation.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"sc.clouds.jacobi.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}

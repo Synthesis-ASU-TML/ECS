@@ -2,23 +2,17 @@
 	<description>
 		draw velocity feather plot using input velocity texture
 	</description>
-	<param name="scale" type="float" default="0.001"/>
 	<param name="tex" type="int" default="0"/>
-	<param name="xfer" type="int" default="1"/>
+	<param name="scale" type="float" default="0.001"/>
 	<param name="low" type="vec2" default="-50 -50"/>
 	<param name="high" type="vec2" default="50 50"/>
-	<param name="auto_color" type="int" default="1"/>
-	<param name="default_color" type="vec4" default="1 1 1 1"/>
 	<param name="arrowhead_size" type="float" default=".01"/>
 	
 	<language name="glsl" version="1.2">
-		<bind param="scale" program="gp"/>
 		<bind param="tex" program="gp"/>
-		<bind param="xfer" program="gp"/>
+		<bind param="scale" program="gp"/>
 		<bind param="high" program="gp"/>
 		<bind param="low" program="gp"/>
-		<bind param="default_color" program="gp"/>
-		<bind param="auto_color" program="gp"/>
 		<bind param="arrowhead_size" program="gp"/>
 		
 		<program name="vp" type="vertex">
@@ -50,15 +44,12 @@
 			#extension GL_EXT_geometry_shader4 : enable
 			
 			uniform sampler2DRect tex;
-			uniform sampler2DRect xfer;
 			
-			uniform float scale;
 			varying in vec2 texdim0[1];
 			varying in vec2 texdim1[1];
+			uniform float scale;
 			uniform vec2 high;
 			uniform vec2 low;
-			uniform vec4 default_color;
-			uniform int auto_color;
 			uniform float arrowhead_size;
 			
 			void main() {
@@ -73,6 +64,8 @@
 				vec2 scaled_unsigned = (velocity - low) / scale_dist;
 				vec2 zero_point = -low / scale_dist;
 				vec2 scaled_signed = (scaled_unsigned - zero_point) * 2;
+				
+				bool big_line = length(scaled_signed) * scale > 0.1;
 				
 				// Arrow point vertex.
 				vec2 line = vec2(scaled_signed.x, -scaled_signed.y);
@@ -92,34 +85,21 @@
 				vec4 arrow_a = line_end - arrow_line_a;
 				vec4 arrow_b = line_end - arrow_line_b;
 				
-				// Color the arrow either automatically using HSV mapping or with a single value.
-				vec4 arrow_color;
-
-				if (auto_color == 1) {
-					arrow_color = vec4(
-						texture2DRect(
-							xfer, 
-							clamp(scaled_unsigned, 0, 1) * texdim1[0]
-						).xyz, default_color.w
-					);
-				} else
-					arrow_color = default_color;
-				
 				// Draw the arrow.
 				gl_Position = line_start;
-				gl_FrontColor = arrow_color;
+				gl_FrontColor = vec4(length(scaled_signed));
 				EmitVertex();
 				
-				gl_Position = line_end;
+				gl_Position = big_line ? line_start : line_end;
 				EmitVertex();
 				
-				gl_Position = arrow_a;
+				gl_Position = big_line ? line_start : arrow_a;
 				EmitVertex();
 				
-				gl_Position = line_end;
+				gl_Position = big_line ? line_start : line_end;
 				EmitVertex();
 				
-				gl_Position = arrow_b;
+				gl_Position = big_line ? line_start : arrow_b;
 				EmitVertex();
 				
 				EndPrimitive();
