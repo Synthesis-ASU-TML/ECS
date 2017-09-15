@@ -345,8 +345,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 715.799927, 303.549988, 277.799988, 94.0 ],
+					"outlettype" : [ "jit_matrix" ],
+					"patching_rect" : [ 715.799927, 301.625, 277.799988, 94.0 ],
 					"varname" : "looping_video",
 					"viewvisibility" : 1
 				}
@@ -396,7 +396,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 412.799957, 171.625, 291.999969, 225.925003 ],
+					"patching_rect" : [ 412.799957, 171.625, 286.999969, 224.0 ],
 					"varname" : "show_field",
 					"viewvisibility" : 1
 				}
@@ -418,7 +418,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 213.899994, 171.625, 189.800003, 227.199997 ],
+					"patching_rect" : [ 213.899994, 171.625, 189.800003, 224.0 ],
 					"varname" : "feather_plot",
 					"viewvisibility" : 1
 				}
@@ -995,7 +995,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
 					"midpoints" : [ 121.5, 156.0, 422.299957, 156.0 ],
-					"order" : 2,
+					"order" : 1,
 					"source" : [ "obj-31", 0 ]
 				}
 
@@ -1004,7 +1004,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
 					"midpoints" : [ 121.5, 156.0, 725.299927, 156.0 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-31", 0 ]
 				}
 
@@ -1013,7 +1013,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
 					"midpoints" : [ 121.5, 156.0, 32.5, 156.0 ],
-					"order" : 0,
+					"order" : 2,
 					"source" : [ "obj-31", 0 ]
 				}
 

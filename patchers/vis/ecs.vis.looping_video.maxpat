@@ -235,11 +235,11 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 5.0, 234.0, 104.0, 20.0 ],
+					"patching_rect" : [ 5.0, 234.0, 112.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 208.5, 67.833336, 64.875, 20.0 ],
 					"rounded" : 0.0,
-					"style" : "default",
+					"style" : "",
 					"tabmode" : 0,
 					"text" : "0",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
@@ -807,7 +807,7 @@
 					"patching_rect" : [ 221.25, 186.0, 240.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 4.25, 21.833336, 233.125, 22.0 ],
-					"style" : "default",
+					"style" : "",
 					"varname" : "playhead"
 				}
 
