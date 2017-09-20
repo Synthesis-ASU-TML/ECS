@@ -7,6 +7,7 @@
 				"name" : "clouds",
 				"data" : 				{
 					"feathers-arrowhead-size" : [ 0.0 ],
+					"feathers-blend" : [ 5 ],
 					"feathers-color-alpha" : [ 0.0 ],
 					"feathers-dim-x" : [ 0 ],
 					"feathers-dim-y" : [ 0 ],
@@ -15,8 +16,12 @@
 					"feathers-low-x" : [ 0.0 ],
 					"feathers-low-y" : [ 0.0 ],
 					"feathers-size" : [ 0.0 ],
+					"feathers-slide-down" : [ 1.0 ],
+					"feathers-slide-up" : [ 0.0 ],
 					"feathers-texture" : [ "velocity" ],
 					"internal_gain" : [ 1.0 ],
+					"particles-blend" : [ 7 ],
+					"particles-blur-width" : [ 0.0 ],
 					"particles-color-alpha" : [ 0.0 ],
 					"particles-dim-x" : [ 0 ],
 					"particles-dim-y" : [ 0 ],
@@ -43,13 +48,8 @@
 					"vis-var-b" : [ 2 ],
 					"vis-var-g" : [ 1 ],
 					"vis-var-r" : [ 0 ],
-					"particles-blend" : [ 7 ],
-					"feathers-slide-up" : [ 0.0 ],
-					"feathers-slide-down" : [ 1.0 ],
-					"feathers-blend" : [ 5 ],
-					"particles-blur-width" : [ 0.0 ],
-					"particles-color-rgb" : [ 1.0, 1.0, 1.0 ],
-					"feathers-color-rgb" : [ 1.0, 1.0, 1.0 ]
+					"feathers-color-rgb" : [ 1.0, 1.0, 1.0 ],
+					"particles-color-rgb" : [ 1.0, 1.0, 1.0 ]
 				}
 
 			}
@@ -59,6 +59,7 @@
 				"name" : "velocity",
 				"data" : 				{
 					"feathers-arrowhead-size" : [ 0.014 ],
+					"feathers-blend" : [ 5 ],
 					"feathers-color-alpha" : [ 0.0 ],
 					"feathers-dim-x" : [ 0 ],
 					"feathers-dim-y" : [ 0 ],
@@ -67,14 +68,18 @@
 					"feathers-low-x" : [ -50.0 ],
 					"feathers-low-y" : [ -50.0 ],
 					"feathers-size" : [ 0.02 ],
+					"feathers-slide-down" : [ 1.0 ],
+					"feathers-slide-up" : [ 0.0 ],
 					"feathers-texture" : [ "velocity" ],
 					"internal_gain" : [ 1.0 ],
+					"particles-blend" : [ 4 ],
+					"particles-blur-width" : [ 0.05 ],
 					"particles-color-alpha" : [ 1.0 ],
 					"particles-dim-x" : [ 300 ],
 					"particles-dim-y" : [ 300 ],
 					"particles-duration" : [ 0.5 ],
 					"particles-gain" : [ 0.1 ],
-					"particles-slide-down" : [ 0.995 ],
+					"particles-slide-down" : [ 0.95 ],
 					"particles-slide-up" : [ 0.0 ],
 					"particles-texture" : [ "velocity" ],
 					"vis-contrast-w" : [ 1.0 ],
@@ -95,13 +100,8 @@
 					"vis-var-b" : [ 2 ],
 					"vis-var-g" : [ 1 ],
 					"vis-var-r" : [ 0 ],
-					"particles-blend" : [ 4 ],
-					"feathers-slide-up" : [ 0.0 ],
-					"feathers-slide-down" : [ 1.0 ],
-					"feathers-blend" : [ 5 ],
-					"particles-blur-width" : [  ],
-					"particles-color-rgb" : [ 1.0, 1.0, 1.0 ],
-					"feathers-color-rgb" : [ 1.0, 1.0, 1.0 ]
+					"feathers-color-rgb" : [ 1.0, 1.0, 1.0 ],
+					"particles-color-rgb" : [ 1.0, 1.0, 1.0 ]
 				}
 
 			}
@@ -111,6 +111,7 @@
 				"name" : "pressure",
 				"data" : 				{
 					"feathers-arrowhead-size" : [ 0.014 ],
+					"feathers-blend" : [ 5 ],
 					"feathers-color-alpha" : [ 0.4 ],
 					"feathers-dim-x" : [ 50 ],
 					"feathers-dim-y" : [ 50 ],
@@ -119,8 +120,12 @@
 					"feathers-low-x" : [ -50.0 ],
 					"feathers-low-y" : [ -50.0 ],
 					"feathers-size" : [ 0.04 ],
+					"feathers-slide-down" : [ 1.0 ],
+					"feathers-slide-up" : [ 0.0 ],
 					"feathers-texture" : [ "velocity" ],
 					"internal_gain" : [ 1.0 ],
+					"particles-blend" : [ 4 ],
+					"particles-blur-width" : [ 0.0 ],
 					"particles-color-alpha" : [ 0.0 ],
 					"particles-dim-x" : [ 0 ],
 					"particles-dim-y" : [ 0 ],
@@ -147,13 +152,8 @@
 					"vis-var-b" : [ 2 ],
 					"vis-var-g" : [ 1 ],
 					"vis-var-r" : [ 0 ],
-					"particles-blend" : [ 4 ],
-					"feathers-slide-up" : [ 0.0 ],
-					"feathers-slide-down" : [ 1.0 ],
-					"feathers-blend" : [ 5 ],
-					"particles-blur-width" : [ 0.0 ],
-					"particles-color-rgb" : [ 1.0, 1.0, 1.0 ],
-					"feathers-color-rgb" : [ 1.0, 1.0, 1.0 ]
+					"feathers-color-rgb" : [ 1.0, 1.0, 1.0 ],
+					"particles-color-rgb" : [ 1.0, 1.0, 1.0 ]
 				}
 
 			}
@@ -163,6 +163,7 @@
 				"name" : "divergence",
 				"data" : 				{
 					"feathers-arrowhead-size" : [ 0.014 ],
+					"feathers-blend" : [ 5 ],
 					"feathers-color-alpha" : [ 0.4 ],
 					"feathers-dim-x" : [ 50 ],
 					"feathers-dim-y" : [ 50 ],
@@ -171,8 +172,12 @@
 					"feathers-low-x" : [ -50.0 ],
 					"feathers-low-y" : [ -50.0 ],
 					"feathers-size" : [ 0.04 ],
+					"feathers-slide-down" : [ 1.0 ],
+					"feathers-slide-up" : [ 0.0 ],
 					"feathers-texture" : [ "velocity" ],
 					"internal_gain" : [ 1.0 ],
+					"particles-blend" : [ 5 ],
+					"particles-blur-width" : [ 0.0 ],
 					"particles-color-alpha" : [ 0.0 ],
 					"particles-dim-x" : [ 0 ],
 					"particles-dim-y" : [ 0 ],
@@ -199,13 +204,8 @@
 					"vis-var-b" : [ 2 ],
 					"vis-var-g" : [ 1 ],
 					"vis-var-r" : [ 0 ],
-					"particles-blend" : [ 5 ],
-					"feathers-slide-up" : [ 0.0 ],
-					"feathers-slide-down" : [ 1.0 ],
-					"feathers-blend" : [ 5 ],
-					"particles-blur-width" : [ 0.0 ],
-					"particles-color-rgb" : [ 1.0, 1.0, 1.0 ],
-					"feathers-color-rgb" : [ 1.0, 1.0, 1.0 ]
+					"feathers-color-rgb" : [ 1.0, 1.0, 1.0 ],
+					"particles-color-rgb" : [ 1.0, 1.0, 1.0 ]
 				}
 
 			}
@@ -215,6 +215,7 @@
 				"name" : "hsflow",
 				"data" : 				{
 					"feathers-arrowhead-size" : [ 0.0075 ],
+					"feathers-blend" : [ 5 ],
 					"feathers-color-alpha" : [ 1.0 ],
 					"feathers-dim-x" : [ 200 ],
 					"feathers-dim-y" : [ 200 ],
@@ -223,8 +224,12 @@
 					"feathers-low-x" : [ -1.0 ],
 					"feathers-low-y" : [ -1.0 ],
 					"feathers-size" : [ 0.025 ],
+					"feathers-slide-down" : [ 0.95 ],
+					"feathers-slide-up" : [ 0.0 ],
 					"feathers-texture" : [ "hsflow" ],
 					"internal_gain" : [ 0.0 ],
+					"particles-blend" : [ 7 ],
+					"particles-blur-width" : [ 0.0 ],
 					"particles-color-alpha" : [ 0.0 ],
 					"particles-dim-x" : [ 0 ],
 					"particles-dim-y" : [ 0 ],
@@ -251,13 +256,8 @@
 					"vis-var-b" : [ 2 ],
 					"vis-var-g" : [ 1 ],
 					"vis-var-r" : [ 0 ],
-					"particles-blend" : [ 7 ],
-					"feathers-slide-up" : [ 0.0 ],
-					"feathers-slide-down" : [ 0.95 ],
-					"feathers-blend" : [ 5 ],
-					"particles-blur-width" : [ 0.0 ],
-					"particles-color-rgb" : [ 1.0, 1.0, 1.0 ],
-					"feathers-color-rgb" : [ 1.0, 1.0, 1.0 ]
+					"feathers-color-rgb" : [ 1.0, 1.0, 1.0 ],
+					"particles-color-rgb" : [ 1.0, 1.0, 1.0 ]
 				}
 
 			}
@@ -267,6 +267,7 @@
 				"name" : "camera",
 				"data" : 				{
 					"feathers-arrowhead-size" : [ 0.0 ],
+					"feathers-blend" : [ 5 ],
 					"feathers-color-alpha" : [ 0.0 ],
 					"feathers-dim-x" : [ 0 ],
 					"feathers-dim-y" : [ 0 ],
@@ -275,8 +276,12 @@
 					"feathers-low-x" : [ 0.0 ],
 					"feathers-low-y" : [ 0.0 ],
 					"feathers-size" : [ 0.0 ],
+					"feathers-slide-down" : [ 0.0 ],
+					"feathers-slide-up" : [ 0.0 ],
 					"feathers-texture" : [ "camera" ],
 					"internal_gain" : [ 1.0 ],
+					"particles-blend" : [ 5 ],
+					"particles-blur-width" : [ 0.0 ],
 					"particles-color-alpha" : [ 0.0 ],
 					"particles-dim-x" : [ 0 ],
 					"particles-dim-y" : [ 0 ],
@@ -303,13 +308,8 @@
 					"vis-var-b" : [ 2 ],
 					"vis-var-g" : [ 1 ],
 					"vis-var-r" : [ 0 ],
-					"particles-blend" : [ 5 ],
-					"feathers-slide-up" : [ 0.0 ],
-					"feathers-slide-down" : [ 0.0 ],
-					"feathers-blend" : [ 5 ],
-					"particles-blur-width" : [ 0.0 ],
-					"particles-color-rgb" : [ 1.0, 1.0, 1.0 ],
-					"feathers-color-rgb" : [ 1.0, 1.0, 1.0 ]
+					"feathers-color-rgb" : [ 1.0, 1.0, 1.0 ],
+					"particles-color-rgb" : [ 1.0, 1.0, 1.0 ]
 				}
 
 			}
@@ -319,6 +319,7 @@
 				"name" : "obstacles",
 				"data" : 				{
 					"feathers-arrowhead-size" : [ 0.0 ],
+					"feathers-blend" : [ 5 ],
 					"feathers-color-alpha" : [ 0.0 ],
 					"feathers-dim-x" : [ 0 ],
 					"feathers-dim-y" : [ 0 ],
@@ -327,8 +328,12 @@
 					"feathers-low-x" : [ 0.0 ],
 					"feathers-low-y" : [ 0.0 ],
 					"feathers-size" : [ 0.0 ],
+					"feathers-slide-down" : [ 0.0 ],
+					"feathers-slide-up" : [ 0.0 ],
 					"feathers-texture" : [ "obstacles" ],
 					"internal_gain" : [ 1.0 ],
+					"particles-blend" : [ 5 ],
+					"particles-blur-width" : [ 0.0 ],
 					"particles-color-alpha" : [ 0.0 ],
 					"particles-dim-x" : [ 0 ],
 					"particles-dim-y" : [ 0 ],
@@ -355,13 +360,8 @@
 					"vis-var-b" : [ 3 ],
 					"vis-var-g" : [ 3 ],
 					"vis-var-r" : [ 3 ],
-					"particles-blend" : [ 5 ],
-					"feathers-slide-up" : [ 0.0 ],
-					"feathers-slide-down" : [ 0.0 ],
-					"feathers-blend" : [ 5 ],
-					"particles-blur-width" : [ 0.0 ],
-					"particles-color-rgb" : [ 1.0, 1.0, 1.0 ],
-					"feathers-color-rgb" : [ 1.0, 1.0, 1.0 ]
+					"feathers-color-rgb" : [ 1.0, 1.0, 1.0 ],
+					"particles-color-rgb" : [ 1.0, 1.0, 1.0 ]
 				}
 
 			}
@@ -371,6 +371,7 @@
 				"name" : "background",
 				"data" : 				{
 					"feathers-arrowhead-size" : [ 0.0 ],
+					"feathers-blend" : [ 5 ],
 					"feathers-color-alpha" : [ 0.0 ],
 					"feathers-dim-x" : [ 0 ],
 					"feathers-dim-y" : [ 0 ],
@@ -379,8 +380,12 @@
 					"feathers-low-x" : [ 0.0 ],
 					"feathers-low-y" : [ 0.0 ],
 					"feathers-size" : [ 0.0 ],
+					"feathers-slide-down" : [ 0.0 ],
+					"feathers-slide-up" : [ 0.0 ],
 					"feathers-texture" : [ "bgmask" ],
 					"internal_gain" : [ 1.0 ],
+					"particles-blend" : [ 5 ],
+					"particles-blur-width" : [ 0.0 ],
 					"particles-color-alpha" : [ 0.0 ],
 					"particles-dim-x" : [ 0 ],
 					"particles-dim-y" : [ 0 ],
@@ -407,13 +412,8 @@
 					"vis-var-b" : [ 2 ],
 					"vis-var-g" : [ 1 ],
 					"vis-var-r" : [ 0 ],
-					"particles-blend" : [ 5 ],
-					"feathers-slide-up" : [ 0.0 ],
-					"feathers-slide-down" : [ 0.0 ],
-					"feathers-blend" : [ 5 ],
-					"particles-blur-width" : [ 0.0 ],
-					"particles-color-rgb" : [ 1.0, 1.0, 1.0 ],
-					"feathers-color-rgb" : [ 1.0, 1.0, 1.0 ]
+					"feathers-color-rgb" : [ 1.0, 1.0, 1.0 ],
+					"particles-color-rgb" : [ 1.0, 1.0, 1.0 ]
 				}
 
 			}
@@ -423,6 +423,7 @@
 				"name" : "bgsub",
 				"data" : 				{
 					"feathers-arrowhead-size" : [ 0.0 ],
+					"feathers-blend" : [ 4 ],
 					"feathers-color-alpha" : [ 0.0 ],
 					"feathers-dim-x" : [ 0 ],
 					"feathers-dim-y" : [ 0 ],
@@ -431,8 +432,12 @@
 					"feathers-low-x" : [ 0.0 ],
 					"feathers-low-y" : [ 0.0 ],
 					"feathers-size" : [ 0.0 ],
+					"feathers-slide-down" : [ 0.0 ],
+					"feathers-slide-up" : [ 0.0 ],
 					"feathers-texture" : [ "bgsub" ],
 					"internal_gain" : [ 1.0 ],
+					"particles-blend" : [ 5 ],
+					"particles-blur-width" : [ 0.0 ],
 					"particles-color-alpha" : [ 0.0 ],
 					"particles-dim-x" : [ 0 ],
 					"particles-dim-y" : [ 0 ],
@@ -459,13 +464,8 @@
 					"vis-var-b" : [ 2 ],
 					"vis-var-g" : [ 1 ],
 					"vis-var-r" : [ 0 ],
-					"particles-blend" : [ 5 ],
-					"feathers-slide-up" : [ 0.0 ],
-					"feathers-slide-down" : [ 0.0 ],
-					"feathers-blend" : [ 4 ],
-					"particles-blur-width" : [ 0.0 ],
-					"particles-color-rgb" : [ 1.0, 1.0, 1.0 ],
-					"feathers-color-rgb" : [ 1.0, 1.0, 1.0 ]
+					"feathers-color-rgb" : [ 1.0, 1.0, 1.0 ],
+					"particles-color-rgb" : [ 1.0, 1.0, 1.0 ]
 				}
 
 			}
@@ -475,6 +475,7 @@
 				"name" : "staticvideo",
 				"data" : 				{
 					"feathers-arrowhead-size" : [ 0.0 ],
+					"feathers-blend" : [ 5 ],
 					"feathers-color-alpha" : [ 0.0 ],
 					"feathers-dim-x" : [ 0 ],
 					"feathers-dim-y" : [ 0 ],
@@ -483,8 +484,12 @@
 					"feathers-low-x" : [ 0.0 ],
 					"feathers-low-y" : [ 0.0 ],
 					"feathers-size" : [ 0.0 ],
+					"feathers-slide-down" : [ 0.0 ],
+					"feathers-slide-up" : [ 0.0 ],
 					"feathers-texture" : [ "velocity" ],
 					"internal_gain" : [ 1.0 ],
+					"particles-blend" : [ 5 ],
+					"particles-blur-width" : [ 0.0 ],
 					"particles-color-alpha" : [ 0.0 ],
 					"particles-dim-x" : [ 0 ],
 					"particles-dim-y" : [ 0 ],
@@ -511,13 +516,8 @@
 					"vis-var-b" : [ 2 ],
 					"vis-var-g" : [ 1 ],
 					"vis-var-r" : [ 0 ],
-					"particles-blend" : [ 5 ],
-					"feathers-slide-up" : [ 0.0 ],
-					"feathers-slide-down" : [ 0.0 ],
-					"feathers-blend" : [ 5 ],
-					"particles-blur-width" : [ 0.0 ],
-					"particles-color-rgb" : [ 1.0, 1.0, 1.0 ],
-					"feathers-color-rgb" : [ 1.0, 1.0, 1.0 ]
+					"feathers-color-rgb" : [ 1.0, 1.0, 1.0 ],
+					"particles-color-rgb" : [ 1.0, 1.0, 1.0 ]
 				}
 
 			}
