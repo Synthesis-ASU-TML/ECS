@@ -4,58 +4,6 @@
 		"slots" : 		{
 			"1" : 			{
 				"id" : 1,
-				"name" : "clouds",
-				"data" : 				{
-					"feathers-arrowhead-size" : [ 0.0 ],
-					"feathers-blend" : [ 5 ],
-					"feathers-color-alpha" : [ 0.0 ],
-					"feathers-dim-x" : [ 0 ],
-					"feathers-dim-y" : [ 0 ],
-					"feathers-high-x" : [ 1.0 ],
-					"feathers-high-y" : [ 1.0 ],
-					"feathers-low-x" : [ 0.0 ],
-					"feathers-low-y" : [ 0.0 ],
-					"feathers-size" : [ 0.0 ],
-					"feathers-slide-down" : [ 1.0 ],
-					"feathers-slide-up" : [ 0.0 ],
-					"feathers-texture" : [ "velocity" ],
-					"internal_gain" : [ 1.0 ],
-					"particles-blend" : [ 7 ],
-					"particles-blur-width" : [ 0.0 ],
-					"particles-color-alpha" : [ 0.0 ],
-					"particles-dim-x" : [ 0 ],
-					"particles-dim-y" : [ 0 ],
-					"particles-duration" : [ 0.0 ],
-					"particles-gain" : [ 0.0 ],
-					"particles-slide-down" : [ 0.0 ],
-					"particles-slide-up" : [ 0.0 ],
-					"particles-texture" : [ "velocity" ],
-					"vis-contrast-w" : [ 1.0 ],
-					"vis-contrast-x" : [ 0.273 ],
-					"vis-contrast-y" : [ 0.152 ],
-					"vis-contrast-z" : [ 1.0 ],
-					"vis-high-w" : [ 1.0 ],
-					"vis-high-x" : [ 0.0103 ],
-					"vis-high-y" : [ 0.0081 ],
-					"vis-high-z" : [ 288.149994 ],
-					"vis-low-w" : [ 0.0 ],
-					"vis-low-x" : [ 0.0 ],
-					"vis-low-y" : [ 0.0 ],
-					"vis-low-z" : [ 230.0 ],
-					"vis-mode" : [ 4 ],
-					"vis-texture" : [ "watertemp" ],
-					"vis-var-a" : [ 3 ],
-					"vis-var-b" : [ 2 ],
-					"vis-var-g" : [ 1 ],
-					"vis-var-r" : [ 0 ],
-					"feathers-color-rgb" : [ 1.0, 1.0, 1.0 ],
-					"particles-color-rgb" : [ 1.0, 1.0, 1.0 ]
-				}
-
-			}
-,
-			"2" : 			{
-				"id" : 2,
 				"name" : "velocity",
 				"data" : 				{
 					"feathers-arrowhead-size" : [ 0.014 ],
@@ -106,8 +54,8 @@
 
 			}
 ,
-			"3" : 			{
-				"id" : 3,
+			"2" : 			{
+				"id" : 2,
 				"name" : "pressure",
 				"data" : 				{
 					"feathers-arrowhead-size" : [ 0.014 ],
@@ -158,8 +106,8 @@
 
 			}
 ,
-			"4" : 			{
-				"id" : 4,
+			"3" : 			{
+				"id" : 3,
 				"name" : "divergence",
 				"data" : 				{
 					"feathers-arrowhead-size" : [ 0.014 ],
@@ -210,8 +158,8 @@
 
 			}
 ,
-			"5" : 			{
-				"id" : 5,
+			"4" : 			{
+				"id" : 4,
 				"name" : "hsflow",
 				"data" : 				{
 					"feathers-arrowhead-size" : [ 0.0075 ],
@@ -262,8 +210,8 @@
 
 			}
 ,
-			"6" : 			{
-				"id" : 6,
+			"5" : 			{
+				"id" : 5,
 				"name" : "camera",
 				"data" : 				{
 					"feathers-arrowhead-size" : [ 0.014 ],
@@ -314,8 +262,8 @@
 
 			}
 ,
-			"7" : 			{
-				"id" : 7,
+			"6" : 			{
+				"id" : 6,
 				"name" : "obstacles",
 				"data" : 				{
 					"feathers-arrowhead-size" : [ 0.014 ],
@@ -366,8 +314,8 @@
 
 			}
 ,
-			"8" : 			{
-				"id" : 8,
+			"7" : 			{
+				"id" : 7,
 				"name" : "background",
 				"data" : 				{
 					"feathers-arrowhead-size" : [ 0.014 ],
@@ -418,8 +366,8 @@
 
 			}
 ,
-			"9" : 			{
-				"id" : 9,
+			"8" : 			{
+				"id" : 8,
 				"name" : "bgsub",
 				"data" : 				{
 					"feathers-arrowhead-size" : [ 0.014 ],
@@ -470,8 +418,8 @@
 
 			}
 ,
-			"10" : 			{
-				"id" : 10,
+			"9" : 			{
+				"id" : 9,
 				"name" : "staticvideo",
 				"data" : 				{
 					"feathers-arrowhead-size" : [ 0.014 ],
@@ -522,112 +470,8 @@
 
 			}
 ,
-			"11" : 			{
-				"id" : 11,
-				"name" : "clouds-scrim",
-				"data" : 				{
-					"feathers-arrowhead-size" : [ 0.014 ],
-					"feathers-blend" : [  ],
-					"feathers-color-alpha" : [ 0.0 ],
-					"feathers-dim-x" : [ 1 ],
-					"feathers-dim-y" : [ 1 ],
-					"feathers-high-x" : [ 1.0 ],
-					"feathers-high-y" : [ 1.0 ],
-					"feathers-low-x" : [ 0.0 ],
-					"feathers-low-y" : [ 0.0 ],
-					"feathers-size" : [ 0.0 ],
-					"feathers-slide-down" : [  ],
-					"feathers-slide-up" : [  ],
-					"feathers-texture" : [ "watertemp" ],
-					"internal_gain" : [ 1.0 ],
-					"particles-blend" : [  ],
-					"particles-blur-width" : [  ],
-					"particles-color-alpha" : [  ],
-					"particles-dim-x" : [  ],
-					"particles-dim-y" : [  ],
-					"particles-duration" : [  ],
-					"particles-gain" : [  ],
-					"particles-slide-down" : [  ],
-					"particles-slide-up" : [  ],
-					"particles-texture" : [  ],
-					"vis-contrast-w" : [ 1.0 ],
-					"vis-contrast-x" : [ 1.0 ],
-					"vis-contrast-y" : [ 1.0 ],
-					"vis-contrast-z" : [ 0.89 ],
-					"vis-high-w" : [ 1.0 ],
-					"vis-high-x" : [ 1.0 ],
-					"vis-high-y" : [ 1.0 ],
-					"vis-high-z" : [ 336.0 ],
-					"vis-low-w" : [ 0.0 ],
-					"vis-low-x" : [ 0.0 ],
-					"vis-low-y" : [ 0.0 ],
-					"vis-low-z" : [ 100.0 ],
-					"vis-mode" : [ 4 ],
-					"vis-texture" : [ "watertemp" ],
-					"vis-var-a" : [ 3 ],
-					"vis-var-b" : [ 2 ],
-					"vis-var-g" : [ 1 ],
-					"vis-var-r" : [ 0 ],
-					"feathers-color-rgb" : [  ],
-					"particles-color-rgb" : [  ]
-				}
-
-			}
-,
-			"12" : 			{
-				"id" : 12,
-				"name" : "velocity-scrim",
-				"data" : 				{
-					"feathers-arrowhead-size" : [ 0.005 ],
-					"feathers-blend" : [  ],
-					"feathers-color-alpha" : [ 1.0 ],
-					"feathers-dim-x" : [ 50 ],
-					"feathers-dim-y" : [ 50 ],
-					"feathers-high-x" : [ 50.0 ],
-					"feathers-high-y" : [ 50.0 ],
-					"feathers-low-x" : [ -50.0 ],
-					"feathers-low-y" : [ -50.0 ],
-					"feathers-size" : [ 0.02 ],
-					"feathers-slide-down" : [  ],
-					"feathers-slide-up" : [  ],
-					"feathers-texture" : [ "velocity" ],
-					"internal_gain" : [ 1.0 ],
-					"particles-blend" : [  ],
-					"particles-blur-width" : [  ],
-					"particles-color-alpha" : [  ],
-					"particles-dim-x" : [  ],
-					"particles-dim-y" : [  ],
-					"particles-duration" : [  ],
-					"particles-gain" : [  ],
-					"particles-slide-down" : [  ],
-					"particles-slide-up" : [  ],
-					"particles-texture" : [  ],
-					"vis-contrast-w" : [ 1.0 ],
-					"vis-contrast-x" : [ 1.0 ],
-					"vis-contrast-y" : [ 1.0 ],
-					"vis-contrast-z" : [ 0.89 ],
-					"vis-high-w" : [ 1.0 ],
-					"vis-high-x" : [ 1.0 ],
-					"vis-high-y" : [ 1.0 ],
-					"vis-high-z" : [ 336.0 ],
-					"vis-low-w" : [ 0.0 ],
-					"vis-low-x" : [ 0.0 ],
-					"vis-low-y" : [ 0.0 ],
-					"vis-low-z" : [ 100.0 ],
-					"vis-mode" : [ 4 ],
-					"vis-texture" : [ "watertemp" ],
-					"vis-var-a" : [ 3 ],
-					"vis-var-b" : [ 2 ],
-					"vis-var-g" : [ 1 ],
-					"vis-var-r" : [ 0 ],
-					"feathers-color-rgb" : [  ],
-					"particles-color-rgb" : [  ]
-				}
-
-			}
-,
-			"13" : 			{
-				"id" : 13,
+			"10" : 			{
+				"id" : 10,
 				"name" : "buoyancy",
 				"data" : 				{
 					"feathers-arrowhead-size" : [ 0.014 ],
@@ -678,8 +522,8 @@
 
 			}
 ,
-			"14" : 			{
-				"id" : 14,
+			"11" : 			{
+				"id" : 11,
 				"name" : "condensation",
 				"data" : 				{
 					"feathers-arrowhead-size" : [ 0.014 ],
@@ -730,217 +574,9 @@
 
 			}
 ,
-			"15" : 			{
-				"id" : 15,
-				"name" : "condensation-sonify",
-				"data" : 				{
-					"feathers-arrowhead-size" : [ 0.014 ],
-					"feathers-blend" : [  ],
-					"feathers-color-alpha" : [ 0.4 ],
-					"feathers-dim-x" : [ 0 ],
-					"feathers-dim-y" : [ 0 ],
-					"feathers-high-x" : [ 50.0 ],
-					"feathers-high-y" : [ 50.0 ],
-					"feathers-low-x" : [ -50.0 ],
-					"feathers-low-y" : [ -50.0 ],
-					"feathers-size" : [ 0.03 ],
-					"feathers-slide-down" : [  ],
-					"feathers-slide-up" : [  ],
-					"feathers-texture" : [ "velocity" ],
-					"internal_gain" : [ 1.0 ],
-					"particles-blend" : [  ],
-					"particles-blur-width" : [  ],
-					"particles-color-alpha" : [  ],
-					"particles-dim-x" : [  ],
-					"particles-dim-y" : [  ],
-					"particles-duration" : [  ],
-					"particles-gain" : [  ],
-					"particles-slide-down" : [  ],
-					"particles-slide-up" : [  ],
-					"particles-texture" : [  ],
-					"vis-contrast-w" : [ 1.0 ],
-					"vis-contrast-x" : [ 1.0 ],
-					"vis-contrast-y" : [ 1.0 ],
-					"vis-contrast-z" : [ 1.0 ],
-					"vis-high-w" : [ 1.0 ],
-					"vis-high-x" : [ -0.00001 ],
-					"vis-high-y" : [ 0.00001 ],
-					"vis-high-z" : [ 1.0 ],
-					"vis-low-w" : [ 0.0 ],
-					"vis-low-x" : [ 0.0 ],
-					"vis-low-y" : [ 0.0 ],
-					"vis-low-z" : [ 0.0 ],
-					"vis-mode" : [ 0 ],
-					"vis-texture" : [ "condensation" ],
-					"vis-var-a" : [ 3 ],
-					"vis-var-b" : [ 2 ],
-					"vis-var-g" : [ 0 ],
-					"vis-var-r" : [ 0 ],
-					"feathers-color-rgb" : [  ],
-					"particles-color-rgb" : [  ]
-				}
-
-			}
-,
-			"16" : 			{
-				"id" : 16,
-				"name" : "clouds-floor",
-				"data" : 				{
-					"feathers-arrowhead-size" : [ 0.014 ],
-					"feathers-blend" : [  ],
-					"feathers-color-alpha" : [ 0.0 ],
-					"feathers-dim-x" : [ 1 ],
-					"feathers-dim-y" : [ 1 ],
-					"feathers-high-x" : [ 1.0 ],
-					"feathers-high-y" : [ 1.0 ],
-					"feathers-low-x" : [ 0.0 ],
-					"feathers-low-y" : [ 0.0 ],
-					"feathers-size" : [ 0.0 ],
-					"feathers-slide-down" : [  ],
-					"feathers-slide-up" : [  ],
-					"feathers-texture" : [ "watertemp" ],
-					"internal_gain" : [ 1.0 ],
-					"particles-blend" : [  ],
-					"particles-blur-width" : [  ],
-					"particles-color-alpha" : [  ],
-					"particles-dim-x" : [  ],
-					"particles-dim-y" : [  ],
-					"particles-duration" : [  ],
-					"particles-gain" : [  ],
-					"particles-slide-down" : [  ],
-					"particles-slide-up" : [  ],
-					"particles-texture" : [  ],
-					"vis-contrast-w" : [ 1.0 ],
-					"vis-contrast-x" : [ 0.683 ],
-					"vis-contrast-y" : [ 0.19 ],
-					"vis-contrast-z" : [ 1.0 ],
-					"vis-high-w" : [ 1.0 ],
-					"vis-high-x" : [ 0.0104 ],
-					"vis-high-y" : [ 1.0 ],
-					"vis-high-z" : [ 999.0 ],
-					"vis-low-w" : [ 0.0 ],
-					"vis-low-x" : [ 0.0 ],
-					"vis-low-y" : [ 0.0 ],
-					"vis-low-z" : [ 230.0 ],
-					"vis-mode" : [ 4 ],
-					"vis-texture" : [ "watertemp" ],
-					"vis-var-a" : [ 3 ],
-					"vis-var-b" : [ 2 ],
-					"vis-var-g" : [ 1 ],
-					"vis-var-r" : [ 0 ],
-					"feathers-color-rgb" : [  ],
-					"particles-color-rgb" : [  ]
-				}
-
-			}
-,
-			"17" : 			{
-				"id" : 17,
-				"name" : "velocity-floor",
-				"data" : 				{
-					"feathers-arrowhead-size" : [ 0.005 ],
-					"feathers-blend" : [  ],
-					"feathers-color-alpha" : [ 1.0 ],
-					"feathers-dim-x" : [ 100 ],
-					"feathers-dim-y" : [ 100 ],
-					"feathers-high-x" : [ 50.0 ],
-					"feathers-high-y" : [ 50.0 ],
-					"feathers-low-x" : [ -50.0 ],
-					"feathers-low-y" : [ -50.0 ],
-					"feathers-size" : [ 0.02 ],
-					"feathers-slide-down" : [  ],
-					"feathers-slide-up" : [  ],
-					"feathers-texture" : [ "velocity" ],
-					"internal_gain" : [ 0.6 ],
-					"particles-blend" : [  ],
-					"particles-blur-width" : [  ],
-					"particles-color-alpha" : [  ],
-					"particles-dim-x" : [  ],
-					"particles-dim-y" : [  ],
-					"particles-duration" : [  ],
-					"particles-gain" : [  ],
-					"particles-slide-down" : [  ],
-					"particles-slide-up" : [  ],
-					"particles-texture" : [  ],
-					"vis-contrast-w" : [ 1.0 ],
-					"vis-contrast-x" : [ 1.0 ],
-					"vis-contrast-y" : [ 1.0 ],
-					"vis-contrast-z" : [ 1.0 ],
-					"vis-high-w" : [ 1.0 ],
-					"vis-high-x" : [ 50.0 ],
-					"vis-high-y" : [ 50.0 ],
-					"vis-high-z" : [ 1.0 ],
-					"vis-low-w" : [ 0.0 ],
-					"vis-low-x" : [ -50.0 ],
-					"vis-low-y" : [ -50.0 ],
-					"vis-low-z" : [ 0.0 ],
-					"vis-mode" : [ 3 ],
-					"vis-texture" : [ "velocity" ],
-					"vis-var-a" : [ 3 ],
-					"vis-var-b" : [ 2 ],
-					"vis-var-g" : [ 1 ],
-					"vis-var-r" : [ 0 ],
-					"feathers-color-rgb" : [  ],
-					"particles-color-rgb" : [  ]
-				}
-
-			}
-,
-			"18" : 			{
-				"id" : 18,
-				"name" : "hsflow-floor",
-				"data" : 				{
-					"feathers-arrowhead-size" : [ 0.005 ],
-					"feathers-blend" : [  ],
-					"feathers-color-alpha" : [ 1.0 ],
-					"feathers-dim-x" : [ 200 ],
-					"feathers-dim-y" : [ 200 ],
-					"feathers-high-x" : [ 1.0 ],
-					"feathers-high-y" : [ 1.0 ],
-					"feathers-low-x" : [ -1.0 ],
-					"feathers-low-y" : [ -1.0 ],
-					"feathers-size" : [ 0.075 ],
-					"feathers-slide-down" : [  ],
-					"feathers-slide-up" : [  ],
-					"feathers-texture" : [ "hsflow" ],
-					"internal_gain" : [ 0.0 ],
-					"particles-blend" : [  ],
-					"particles-blur-width" : [  ],
-					"particles-color-alpha" : [  ],
-					"particles-dim-x" : [  ],
-					"particles-dim-y" : [  ],
-					"particles-duration" : [  ],
-					"particles-gain" : [  ],
-					"particles-slide-down" : [  ],
-					"particles-slide-up" : [  ],
-					"particles-texture" : [  ],
-					"vis-contrast-w" : [ 1.0 ],
-					"vis-contrast-x" : [ 1.0 ],
-					"vis-contrast-y" : [ 1.0 ],
-					"vis-contrast-z" : [ 1.0 ],
-					"vis-high-w" : [ 1.0 ],
-					"vis-high-x" : [ 2.0 ],
-					"vis-high-y" : [ 2.0 ],
-					"vis-high-z" : [ 1.0 ],
-					"vis-low-w" : [ 0.0 ],
-					"vis-low-x" : [ -2.0 ],
-					"vis-low-y" : [ -2.0 ],
-					"vis-low-z" : [ 0.0 ],
-					"vis-mode" : [ 3 ],
-					"vis-texture" : [ "hsflow" ],
-					"vis-var-a" : [ 3 ],
-					"vis-var-b" : [ 2 ],
-					"vis-var-g" : [ 1 ],
-					"vis-var-r" : [ 0 ],
-					"feathers-color-rgb" : [  ],
-					"particles-color-rgb" : [  ]
-				}
-
-			}
-,
-			"19" : 			{
-				"id" : 19,
-				"name" : "clouds-serra-scrim",
+			"12" : 			{
+				"id" : 12,
+				"name" : "clouds",
 				"data" : 				{
 					"feathers-arrowhead-size" : [ 0.014 ],
 					"feathers-blend" : [  ],
@@ -986,58 +622,6 @@
 					"vis-var-r" : [ 0 ],
 					"feathers-color-rgb" : [  ],
 					"particles-color-rgb" : [ 1.0, 1.0, 1.0 ]
-				}
-
-			}
-,
-			"20" : 			{
-				"id" : 20,
-				"name" : "istage-floor-clouds-pressure-driven",
-				"data" : 				{
-					"feathers-arrowhead-size" : [ 0.014 ],
-					"feathers-blend" : [  ],
-					"feathers-color-alpha" : [ 0.0 ],
-					"feathers-dim-x" : [ 1 ],
-					"feathers-dim-y" : [ 1 ],
-					"feathers-high-x" : [ 1.0 ],
-					"feathers-high-y" : [ 1.0 ],
-					"feathers-low-x" : [ 0.0 ],
-					"feathers-low-y" : [ 0.0 ],
-					"feathers-size" : [ 0.0 ],
-					"feathers-slide-down" : [  ],
-					"feathers-slide-up" : [  ],
-					"feathers-texture" : [ "watertemp" ],
-					"internal_gain" : [ 1.0 ],
-					"particles-blend" : [  ],
-					"particles-blur-width" : [  ],
-					"particles-color-alpha" : [  ],
-					"particles-dim-x" : [ 0 ],
-					"particles-dim-y" : [ 0 ],
-					"particles-duration" : [ 0 ],
-					"particles-gain" : [  ],
-					"particles-slide-down" : [  ],
-					"particles-slide-up" : [  ],
-					"particles-texture" : [ "watertemp" ],
-					"vis-contrast-w" : [ 1.0 ],
-					"vis-contrast-x" : [ 0.93 ],
-					"vis-contrast-y" : [ 0.19 ],
-					"vis-contrast-z" : [ 1.0 ],
-					"vis-high-w" : [ 1.0 ],
-					"vis-high-x" : [ 0.0001 ],
-					"vis-high-y" : [ 1.0 ],
-					"vis-high-z" : [ 288.149994 ],
-					"vis-low-w" : [ 0.0 ],
-					"vis-low-x" : [ 0.0 ],
-					"vis-low-y" : [ 0.0 ],
-					"vis-low-z" : [ 230.0 ],
-					"vis-mode" : [ 4 ],
-					"vis-texture" : [ "watertemp" ],
-					"vis-var-a" : [ 3 ],
-					"vis-var-b" : [ 2 ],
-					"vis-var-g" : [ 1 ],
-					"vis-var-r" : [ 0 ],
-					"feathers-color-rgb" : [  ],
-					"particles-color-rgb" : [  ]
 				}
 
 			}
