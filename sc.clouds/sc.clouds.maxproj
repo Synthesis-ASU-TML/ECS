@@ -1,8 +1,8 @@
 {
 	"name" : "sc.clouds",
 	"version" : 1,
-	"creationdate" : -722461380,
-	"modificationdate" : -706630955,
+	"creationdate" : -722461441,
+	"modificationdate" : 3589182109,
 	"viewrect" : [ 1.0, 45.0, 240.0, 902.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -12,7 +12,8 @@
 		"patchers" : 		{
 			"sc.clouds.overview.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1
+				"local" : 1,
+				"toplevel" : 1
 			}
 ,
 			"sc.clouds.parameters.maxpat" : 			{
