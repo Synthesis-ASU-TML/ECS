@@ -4,15 +4,13 @@
 	</description>
 	<param name="tex" type="int" default="0"/>
 	<param name="scale" type="float" default="0.001"/>
-	<param name="low" type="vec2" default="-50 -50"/>
-	<param name="high" type="vec2" default="50 50"/>
-	<param name="arrowhead_size" type="float" default=".01"/>
+	<param name="arrowhead_size" type="float" default="0.01"/>
+	<param name="threshold" type="float" default="0.01"/>
 	
 	<language name="glsl" version="1.2">
 		<bind param="tex" program="gp"/>
 		<bind param="scale" program="gp"/>
-		<bind param="high" program="gp"/>
-		<bind param="low" program="gp"/>
+		<bind param="threshold" program="gp"/>
 		<bind param="arrowhead_size" program="gp"/>
 		
 		<program name="vp" type="vertex">
@@ -48,9 +46,8 @@
 			varying in vec2 texdim0[1];
 			varying in vec2 texdim1[1];
 			uniform float scale;
-			uniform vec2 high;
-			uniform vec2 low;
 			uniform float arrowhead_size;
+			uniform float threshold;
 			
 			void main() {
 				// Arrow base vertex.
@@ -58,19 +55,12 @@
 				
 				// Velocity value from texture.
 				vec2 velocity = texture2DRect(tex, line_start.xy * texdim0[0]).xy;
-				
-				// Scale the arrow between low / high values.
-				vec2 scale_dist = high - low;
-				vec2 scaled_unsigned = (velocity - low) / scale_dist;
-				vec2 zero_point = -low / scale_dist;
-				vec2 scaled_signed = (scaled_unsigned - zero_point) * 2;
-				
-				bool big_line = length(scaled_signed) * scale > 0.1;
+				vec2 scaled = velocity * scale;
 				
 				// Arrow point vertex.
-				vec2 line = vec2(scaled_signed.x, -scaled_signed.y);
+				vec2 line = vec2(scaled.x, -scaled.y);
 				line_start = line_start * vec4(2,2,1,1) - vec4(1,1,0,0);
-				vec4 line_end = line_start + vec4(line * scale, 0, 0);
+				vec4 line_end = line_start + vec4(scaled, 0, 0);
 				
 				// Arrowhead vertices.
 				vec2 normalized = normalize(line);
@@ -87,19 +77,19 @@
 				
 				// Draw the arrow.
 				gl_Position = line_start;
-				gl_FrontColor = vec4(length(scaled_signed));
+				gl_FrontColor = length(line) < threshold ? vec4(0,0,0,0) : vec4(1,1,1,1);
 				EmitVertex();
 				
-				gl_Position = big_line ? line_start : line_end;
+				gl_Position = line_end;
 				EmitVertex();
 				
-				gl_Position = big_line ? line_start : arrow_a;
+				gl_Position = arrow_a;
 				EmitVertex();
 				
-				gl_Position = big_line ? line_start : line_end;
+				gl_Position = line_end;
 				EmitVertex();
 				
-				gl_Position = big_line ? line_start : arrow_b;
+				gl_Position = arrow_b;
 				EmitVertex();
 				
 				EndPrimitive();

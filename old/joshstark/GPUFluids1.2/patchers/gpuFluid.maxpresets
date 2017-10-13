@@ -1,7 +1,0 @@
-{
-	"preset_data" : [ 		{
-			"number" : 1,
-			"data" : [ 5, "obj-11", "toggle", "int", 1, 5, "obj-97", "radiogroup", "int", 7, 5, "obj-90", "toggle", "int", 1, 5, "obj-42", "flonum", "float", 0.0, 5, "obj-20", "flonum", "float", 0.125, 5, "obj-39", "flonum", "float", 0.99999, 5, "obj-55", "flonum", "float", 0.125, 5, "obj-58", "flonum", "float", 0.99, 5, "obj-61", "number", "int", 1, 5, "obj-82", "flonum", "float", 0.001, 5, "obj-84", "flonum", "float", 0.001, 5, "obj-135", "number", "int", 0, 5, "obj-138", "number", "int", 0, 5, "obj-142", "number", "int", 0, 5, "obj-121", "flonum", "float", 0.0, 5, "obj-123", "flonum", "float", 0.0, 5, "obj-130", "flonum", "float", 0.0, 5, "obj-126", "flonum", "float", 0.0 ]
-		}
- ]
-}
