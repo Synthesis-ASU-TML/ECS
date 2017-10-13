@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 60.0, 84.0, 877.0, 840.0 ],
+		"rect" : [ 145.0, 59.0, 869.0, 840.0 ],
 		"bgcolor" : [ 0.878431, 0.878431, 0.858824, 1.0 ],
 		"editing_bgcolor" : [ 0.878431, 0.878431, 0.858824, 1.0 ],
 		"bglocked" : 0,
@@ -23309,7 +23309,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 518.5, 240.5, 80.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 299.5, 503.0, 80.0, 35.0 ],
+					"presentation_rect" : [ 312.5, 498.0, 80.0, 35.0 ],
 					"style" : ""
 				}
 
@@ -23816,7 +23816,7 @@
 					"outlettype" : [ "", "", "", "", "jit_gl_texture", "jit_gl_texture", "jit_gl_texture" ],
 					"patching_rect" : [ 302.5, 668.0, 531.0, 526.625061 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 299.5, 15.0, 527.0, 523.0 ],
+					"presentation_rect" : [ 308.5, 15.0, 527.0, 523.0 ],
 					"varname" : "simulation",
 					"viewvisibility" : 1
 				}

@@ -789,7 +789,6 @@
 					"embed" : 1,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
-					"hidden" : 1,
 					"id" : "obj-5",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
@@ -23206,7 +23205,7 @@
 ,
 					"patching_rect" : [ 1090.5, 726.0, 250.0, 96.283325 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.375, 113.833336, 252.0, 101.999992 ],
+					"presentation_rect" : [ 3.375, 113.833336, 265.0, 112.250008 ],
 					"varname" : "circle_input",
 					"viewvisibility" : 1
 				}
@@ -68642,6 +68641,7 @@
 					"embed" : 1,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
+					"hidden" : 1,
 					"id" : "obj-150",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
