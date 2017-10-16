@@ -26,7 +26,7 @@
 					"particles-dim-x" : [ 300 ],
 					"particles-dim-y" : [ 300 ],
 					"particles-duration" : [ 0.5 ],
-					"particles-gain" : [ 0.033 ],
+					"particles-gain" : [ 0.15 ],
 					"particles-point-size" : [ 0.1 ],
 					"particles-slide-down" : [ 0.95 ],
 					"particles-slide-up" : [ 0.0 ],
