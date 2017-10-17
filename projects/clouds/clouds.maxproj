@@ -2,7 +2,7 @@
 	"name" : "clouds",
 	"version" : 1,
 	"creationdate" : 3590406737,
-	"modificationdate" : 3590996789,
+	"modificationdate" : 3591022128,
 	"viewrect" : [ 0.0, 45.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -17,6 +17,29 @@
 				"singleton" : 				{
 					"bootpath" : "~/Dropbox/Development/github/ecs/projects/clouds/patchers",
 					"projectrelativepath" : "./patchers"
+				}
+
+			}
+
+		}
+,
+		"media" : 		{
+			"hsv-transfer.png" : 			{
+				"kind" : "imagefile",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Dropbox/Development/github/ecs/media",
+					"projectrelativepath" : "../../media"
+				}
+
+			}
+,
+			"unsigned-transfer.png" : 			{
+				"kind" : "imagefile",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Dropbox/Development/github/ecs/media",
+					"projectrelativepath" : "../../media"
 				}
 
 			}
