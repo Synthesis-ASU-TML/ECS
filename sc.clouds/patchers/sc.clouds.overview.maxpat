@@ -98,7 +98,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 897.0, 40.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 612.0, 81.0, 150.0, 20.0 ],
+					"presentation_rect" : [ 606.5, 81.0, 150.0, 20.0 ],
 					"style" : "",
 					"text" : "Pressure demo (floor only)"
 				}
@@ -113,7 +113,7 @@
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 871.0, 40.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 586.0, 79.0, 24.0, 24.0 ],
+					"presentation_rect" : [ 580.5, 79.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -153,7 +153,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 377.0, 156.0, 72.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 586.0, 33.0, 72.0, 22.0 ],
+					"presentation_rect" : [ 580.5, 33.0, 72.0, 22.0 ],
 					"style" : "",
 					"text" : "fullscreen 0"
 				}
@@ -168,7 +168,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 409.0, 184.0, 119.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 586.0, 56.0, 119.0, 22.0 ],
+					"presentation_rect" : [ 580.5, 56.0, 119.0, 22.0 ],
 					"style" : "",
 					"text" : "windowposition 0 40"
 				}
@@ -198,7 +198,8 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 407.0, 67.0, 153.0, 33.0 ],
 					"style" : "",
-					"text" : "Step 12 / 12"
+					"text" : "Step 12 / 12",
+					"textjustification" : 1
 				}
 
 			}
@@ -1836,7 +1837,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 580.0, 33.0, 156.0, 78.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 586.0, 33.0, 176.0, 68.0 ],
+					"presentation_rect" : [ 580.5, 33.0, 176.0, 68.0 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
