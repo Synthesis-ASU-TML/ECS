@@ -53,13 +53,14 @@
 					"particles-color-rgb" : [ 1.0, 1.0, 1.0 ]
 				}
 
-			},
+			}
+,
 			"2" : 			{
 				"id" : 2,
 				"name" : "velocity",
 				"data" : 				{
 					"feathers-arrowhead-size" : [ 0.014 ],
-					"feathers-blend" : [ 5 ],
+					"feathers-blend" : [ 0 ],
 					"feathers-color-alpha" : [ 0.0 ],
 					"feathers-dim-x" : [ 0 ],
 					"feathers-dim-y" : [ 0 ],
@@ -68,11 +69,11 @@
 					"feathers-low-x" : [ -50.0 ],
 					"feathers-low-y" : [ -50.0 ],
 					"feathers-size" : [ 0.02 ],
-					"feathers-slide-down" : [ 1.0 ],
+					"feathers-slide-down" : [ 0.0 ],
 					"feathers-slide-up" : [ 0.0 ],
 					"feathers-texture" : [ "velocity" ],
 					"internal_gain" : [ 1.0 ],
-					"particles-blend" : [ 4 ],
+					"particles-blend" : [ 6 ],
 					"particles-blur-width" : [  ],
 					"particles-color-alpha" : [ 1.0 ],
 					"particles-dim-x" : [ 300 ],
@@ -633,6 +634,59 @@
 					"vis-var-r" : [ 0 ],
 					"feathers-color-rgb" : [  ],
 					"particles-color-rgb" : [  ]
+				}
+
+			}
+,
+			"13" : 			{
+				"id" : 13,
+				"name" : "clouds no particles",
+				"data" : 				{
+					"feathers-arrowhead-size" : [ 0.014 ],
+					"feathers-blend" : [  ],
+					"feathers-color-alpha" : [ 0.0 ],
+					"feathers-dim-x" : [ 0 ],
+					"feathers-dim-y" : [ 0 ],
+					"feathers-high-x" : [ 1.0 ],
+					"feathers-high-y" : [ 1.0 ],
+					"feathers-low-x" : [ 0.0 ],
+					"feathers-low-y" : [ 0.0 ],
+					"feathers-size" : [ 0.0 ],
+					"feathers-slide-down" : [ 0.0 ],
+					"feathers-slide-up" : [  ],
+					"feathers-texture" : [ "watertemp" ],
+					"internal_gain" : [ 1.0 ],
+					"particles-blend" : [ 7 ],
+					"particles-blur-width" : [ 0.01 ],
+					"particles-color-alpha" : [ 0.67 ],
+					"particles-dim-x" : [ 0 ],
+					"particles-dim-y" : [ 0 ],
+					"particles-duration" : [ 1.0 ],
+					"particles-gain" : [ 0.5 ],
+					"particles-point-size" : [ 37.9 ],
+					"particles-slide-down" : [ 0.9 ],
+					"particles-slide-up" : [  ],
+					"particles-texture" : [ "velocity" ],
+					"vis-contrast-w" : [ 1.0 ],
+					"vis-contrast-x" : [ 0.36 ],
+					"vis-contrast-y" : [ 0.19 ],
+					"vis-contrast-z" : [ 1.0 ],
+					"vis-high-w" : [ 1.0 ],
+					"vis-high-x" : [ 0.07 ],
+					"vis-high-y" : [ 1.0 ],
+					"vis-high-z" : [ 439.0 ],
+					"vis-low-w" : [ 0.0 ],
+					"vis-low-x" : [ 0.0 ],
+					"vis-low-y" : [ 0.0 ],
+					"vis-low-z" : [ 251.1 ],
+					"vis-mode" : [ 4 ],
+					"vis-texture" : [ "watertemp" ],
+					"vis-var-a" : [ 3 ],
+					"vis-var-b" : [ 2 ],
+					"vis-var-g" : [ 1 ],
+					"vis-var-r" : [ 0 ],
+					"feathers-color-rgb" : [  ],
+					"particles-color-rgb" : [ 1.0, 1.0, 1.0 ]
 				}
 
 			}
