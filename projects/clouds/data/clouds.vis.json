@@ -1,0 +1,76 @@
+{
+	"pattrstorage" : 	{
+		"name" : "visualization",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"name" : "clouds",
+				"data" : 				{
+					"blend_feathers" : [ 7 ],
+					"blend_field" : [ 7 ],
+					"blend_particles" : [ 7 ],
+					"blend_tracers" : [ 7 ],
+					"feather_plot::texture" : [ "velocity" ],
+					"feather_plot::length" : [ 0.01 ],
+					"feather_plot::width" : [ 0.0025 ],
+					"feather_plot::blur" : [ 0.0 ],
+					"feather_plot::dim" : [ 50, 50 ],
+					"feather_plot::slide" : [ 0, 0 ],
+					"feather_plot::enable" : [ 1 ],
+					"feather_plot::dx" : [ 20.0 ],
+					"feather_plot::threshold" : [ 0.01 ],
+					"feather_plot::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"particles::duration" : [ 0.5 ],
+					"particles::force" : [ 0.15 ],
+					"particles::texture" : [ "velocity" ],
+					"particles::point_size" : [ 1.0 ],
+					"particles::blur" : [ 0.05 ],
+					"particles::dim" : [ 300.0, 300.0 ],
+					"particles::slide" : [ 0.0, 0.95 ],
+					"particles::dt" : [ 0.9 ],
+					"particles::dx" : [ 20.0 ],
+					"particles::enable" : [ 1 ],
+					"particles::radius" : [ -1.0 ],
+					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"video_input::texture" : [ "camera" ],
+					"video_input::mirror" : [ 1 ],
+					"video_input::flip" : [ 1 ],
+					"video_input::invert" : [ 0 ],
+					"video_input::mode" : [ 0 ],
+					"video_input::enable" : [ 1 ],
+					"video_input::movie::dim" : [ 1280, 720 ],
+					"video_input::movie::rate" : [ 1.0 ],
+					"video_input::circle::dim" : [ 1280, 720 ],
+					"video_input::circle::ramp_time" : [ 100.0 ],
+					"video_input::circle::circle" : [ 0.5, 0.5, 0 ],
+					"tracers::duration" : [ 0.5 ],
+					"tracers::force" : [ 0.15 ],
+					"tracers::texture" : [ "velocity" ],
+					"tracers::point_size" : [ 1.0 ],
+					"tracers::blur" : [ 0.05 ],
+					"tracers::dim" : [ 10.0, 10.0 ],
+					"tracers::slide" : [ 0.0, 0.95 ],
+					"tracers::dt" : [ 0.9 ],
+					"tracers::dx" : [ 20.0 ],
+					"tracers::enable" : [ 1 ],
+					"tracers::radius" : [ -1.0 ],
+					"tracers::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"field::source_vars" : [ 0, 1, 2, 3 ],
+					"field::contrast" : [ 0.1429, 0.0889, 1.0, 1.0 ],
+					"field::texture" : [ "watertemp" ],
+					"field::mode" : [ 4 ],
+					"field::alpha" : [ 1.0 ],
+					"field::bg" : [ "env_pressure" ],
+					"field::high" : [ 0.002, 0.002, 288.15, 1.0 ],
+					"field::low" : [ 0.0, 0.0, 230.0, 0.0 ],
+					"field::enable" : [ 1 ],
+					"simulation::u388130348" : [ -1 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}
