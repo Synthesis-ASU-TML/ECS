@@ -3,13 +3,13 @@
 		draw velocity feather plot using input velocity texture
 	</description>
 	<param name="tex" type="int" default="0"/>
-	<param name="scale" type="float" default="0.001"/>
+	<param name="dim" type="vec2" default="100.0 100.0"/>
 	<param name="arrowhead_size" type="float" default="0.01"/>
 	<param name="threshold" type="float" default="0.01"/>
 	
 	<language name="glsl" version="1.2">
 		<bind param="tex" program="gp"/>
-		<bind param="scale" program="gp"/>
+		<bind param="dim" program="gp"/>
 		<bind param="threshold" program="gp"/>
 		<bind param="arrowhead_size" program="gp"/>
 		
@@ -46,6 +46,7 @@
 			varying in vec2 texdim0[1];
 			varying in vec2 texdim1[1];
 			uniform float scale;
+			uniform vec2 dim;
 			uniform float arrowhead_size;
 			uniform float threshold;
 			
@@ -55,12 +56,11 @@
 				
 				// Velocity value from texture.
 				vec2 velocity = texture2DRect(tex, line_start.xy * texdim0[0]).xy;
-				vec2 scaled = velocity * scale;
-				
+				vec2 scaled = (velocity / length(velocity)) / (dim / 1.5);
 				// Arrow point vertex.
 				vec2 line = vec2(scaled.x, -scaled.y);
 				line_start = line_start * vec4(2,2,1,1) - vec4(1,1,0,0);
-				vec4 line_end = line_start + vec4(scaled, 0, 0);
+				vec4 line_end = line_start + vec4(scaled,0,0);//vec4(normed, 0, 0);
 				
 				// Arrowhead vertices.
 				vec2 normalized = normalize(line);
