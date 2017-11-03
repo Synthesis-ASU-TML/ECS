@@ -2,8 +2,8 @@
 	"name" : "clouds",
 	"version" : 1,
 	"creationdate" : 3590406737,
-	"modificationdate" : 3592401802,
-	"viewrect" : [ 12.0, 45.0, 300.0, 500.0 ],
+	"modificationdate" : 3592480749,
+	"viewrect" : [ 20.0, 44.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -13,10 +13,20 @@
 			"clouds.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/synthesis-git/ecs/projects/clouds/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
+			}
+,
+			"ecs.sound.filterbanks.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1,
 				"toplevel" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Dropbox/Development/github/ecs/projects/clouds/patchers",
-					"projectrelativepath" : "./patchers"
+					"bootpath" : "~/synthesis-git/ecs/patchers/sound",
+					"projectrelativepath" : "../../patchers/sound"
 				}
 
 			}
@@ -28,7 +38,7 @@
 				"kind" : "imagefile",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Dropbox/Development/github/ecs/media",
+					"bootpath" : "~/synthesis-git/ecs/media",
 					"projectrelativepath" : "../../media"
 				}
 
@@ -38,7 +48,7 @@
 				"kind" : "imagefile",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Dropbox/Development/github/ecs/media",
+					"bootpath" : "~/synthesis-git/ecs/media",
 					"projectrelativepath" : "../../media"
 				}
 
@@ -65,7 +75,8 @@
 			}
 ,
 			"clouds.sim.floor.json" : 			{
-				"kind" : "json"
+				"kind" : "json",
+				"local" : 1
 			}
 
 		}
