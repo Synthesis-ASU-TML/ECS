@@ -26,7 +26,7 @@
 					"particles::dim" : [ 300.0, 300.0 ],
 					"particles::slide" : [ 0.0, 0.95 ],
 					"particles::dt" : [ 0.9 ],
-					"particles::dx" : [ 80.0 ],
+					"particles::dx" : [ 30.0 ],
 					"particles::enable" : [ 1 ],
 					"particles::radius" : [ -1.0 ],
 					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 1.0 ],
@@ -44,18 +44,18 @@
 					"video_input::movie::rate" : [ 1.0 ],
 					"video_input::circle::dim" : [ 1280, 720 ],
 					"video_input::circle::ramp_time" : [ 100.0 ],
-					"video_input::circle::circle" : [ 0.5, 0.5, 0 ],
+					"video_input::circle::circle" : [ 0.346551, 0.459776, 0.0 ],
 					"field::source_vars" : [ 0, 1, 2, 3 ],
-					"field::contrast" : [ 0.1429, 0.0889, 1.0, 1.0 ],
+					"field::contrast" : [ 0.232, 0.0889, 1.0, 1.0 ],
 					"field::texture" : [ "watertemp" ],
 					"field::mode" : [ 4 ],
 					"field::alpha" : [ 1.0 ],
 					"field::bg" : [ "env_pressure" ],
-					"field::high" : [ 0.002, 0.002, 288.15, 1.0 ],
+					"field::high" : [ 0.03, 0.002, 288.15, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 230.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"simulation::u013006836" : [ -1 ],
-					"bpatcher[1]::u073002930" : [ -1 ]
+					"simulation::u704006541" : [ 3 ],
+					"bpatcher[1]::u430002635" : [ -1 ]
 				}
 
 			}
@@ -64,9 +64,9 @@
 				"id" : 2,
 				"name" : "velocity",
 				"data" : 				{
-					"blend_feathers" : [ 1 ],
+					"blend_feathers" : [ 7 ],
 					"blend_field" : [ 7 ],
-					"blend_particles" : [ 1 ],
+					"blend_particles" : [ 7 ],
 					"feather_plot::texture" : [ "velocity" ],
 					"feather_plot::width" : [ 0.0025 ],
 					"feather_plot::blur" : [ 0.0 ],
@@ -81,8 +81,8 @@
 					"particles::texture" : [ "velocity" ],
 					"particles::point_size" : [ 1.0 ],
 					"particles::blur" : [ 0.05 ],
-					"particles::dim" : [ 300.0, 300.0 ],
-					"particles::slide" : [ 0.0, 0.975 ],
+					"particles::dim" : [ 0.0, 0.0 ],
+					"particles::slide" : [ 0.0, 0.0 ],
 					"particles::dt" : [ 0.9 ],
 					"particles::dx" : [ 80.0 ],
 					"particles::enable" : [ 0 ],
@@ -112,8 +112,8 @@
 					"field::high" : [ 50.0, 50.0, 1.0, 1.0 ],
 					"field::low" : [ -50.0, -50.0, 0.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"simulation::u013006836" : [ -1 ],
-					"bpatcher[1]::u073002930" : [ -1 ]
+					"simulation::u704006541" : [ 3 ],
+					"bpatcher[1]::u430002635" : [ -1 ]
 				}
 
 			}
@@ -170,8 +170,8 @@
 					"field::high" : [ 1024.0, 1.0, 1.0, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 0.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"simulation::u013006836" : [ -1 ],
-					"bpatcher[1]::u073002930" : [ -1 ]
+					"simulation::u704006541" : [  ],
+					"bpatcher[1]::u430002635" : [  ]
 				}
 
 			}
@@ -228,8 +228,8 @@
 					"field::high" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"field::low" : [ -1.0, -1.0, 0.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"simulation::u013006836" : [ -1 ],
-					"bpatcher[1]::u073002930" : [ -1 ]
+					"simulation::u704006541" : [  ],
+					"bpatcher[1]::u430002635" : [  ]
 				}
 
 			}
@@ -286,8 +286,8 @@
 					"field::high" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 0.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"simulation::u013006836" : [ -1 ],
-					"bpatcher[1]::u073002930" : [ -1 ]
+					"simulation::u704006541" : [  ],
+					"bpatcher[1]::u430002635" : [  ]
 				}
 
 			}
@@ -344,8 +344,8 @@
 					"field::high" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 0.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"simulation::u013006836" : [ -1 ],
-					"bpatcher[1]::u073002930" : [ -1 ]
+					"simulation::u704006541" : [  ],
+					"bpatcher[1]::u430002635" : [  ]
 				}
 
 			}
@@ -402,8 +402,8 @@
 					"field::high" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 0.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"simulation::u013006836" : [ -1 ],
-					"bpatcher[1]::u073002930" : [ -1 ]
+					"simulation::u704006541" : [  ],
+					"bpatcher[1]::u430002635" : [  ]
 				}
 
 			}
@@ -460,8 +460,8 @@
 					"field::high" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 0.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"simulation::u013006836" : [ -1 ],
-					"bpatcher[1]::u073002930" : [ -1 ]
+					"simulation::u704006541" : [  ],
+					"bpatcher[1]::u430002635" : [  ]
 				}
 
 			}
