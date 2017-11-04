@@ -1,6 +1,6 @@
 {
 	"pattrstorage" : 	{
-		"name" : "u166296798",
+		"name" : "u704006541",
 		"slots" : 		{
 			"1" : 			{
 				"id" : 1,
@@ -168,7 +168,7 @@
 					"simulation::hsflow_motion_blur_down" : [ 0.9 ],
 					"simulation::hsflow_blur" : [ 1.0 ],
 					"simulation::obstacles_fg_motion_blur" : [ 0.0 ],
-					"simulation::obstacles_blur" : [ 1.0065 ],
+					"simulation::obstacles_blur" : [ 2.51 ],
 					"simulation::obstacles_threshold" : [ 0.09 ],
 					"simulation::obstacles_bg_motion_blur" : [ 1.0 ],
 					"simulation::camera_obstacles" : [ 0 ],
