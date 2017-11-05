@@ -2,10 +2,12 @@
 	<description>draw lines given a start position and an end position</description>
 	<param name="tex" type="int" default="0"/>
 	<param name="tex_prev" type="int" default="1"/>
+	<param name="threshold" type="float" default="-1"/>
 	
 	<language name="glsl" version="1.2">
 		<bind param="tex" program="gp"/>
 		<bind param="tex_prev" program="gp"/>
+		<bind param="threshold" program="gp" />
 		
 		<program name="vp" type="vertex">
 <![CDATA[
@@ -40,14 +42,15 @@
 			
 			varying in vec2 texdim[1];
 			uniform vec4 color;
+			uniform float threshold;
 			
 			void main() {
-				vec2 uv = gl_PositionIn[0].xy * texdim[0].xy;				//(gl_PositionIn[0].xy + 1.0) / 2.0 * texdim[0].xy;				
+				vec2 uv = gl_PositionIn[0].xy * texdim[0].xy;			
 				vec2 pos = vec2(2.0, -2.0) * (texture2DRect(tex, uv).xy - 0.5); 
 				vec2 pos_prev = vec2(2.0, -2.0) * (texture2DRect(tex_prev, uv).xy - 0.5);
 				float vel = length(pos - pos_prev);
 				
-				gl_FrontColor = vel < 0.001 ? vec4(0.) : vec4(1.);
+				gl_FrontColor = vel < threshold ? vec4(0.) : vec4(1.);
 				
 				gl_Position = vec4(
 					pos_prev.x, 
