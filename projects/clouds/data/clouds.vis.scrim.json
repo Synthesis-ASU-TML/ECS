@@ -40,7 +40,7 @@
 					"field::high" : [ 0.002, 1.0, 439.0, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 251.1, 0.0 ],
 					"field::enable" : [ 1 ],
-					"bpatcher[1]::u146022538" : [  ]
+					"bpatcher[1]::u828189051" : [  ]
 				}
 
 			}
@@ -83,7 +83,7 @@
 					"field::high" : [ 10.0, 10.0, 1.0, 1.0 ],
 					"field::low" : [ -10.0, -10.0, 0.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"bpatcher[1]::u146022538" : [ -1 ]
+					"bpatcher[1]::u828189051" : [  ]
 				}
 
 			}
@@ -126,7 +126,7 @@
 					"field::high" : [ 4096.0, 1.0, 1.0, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 0.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"bpatcher[1]::u146022538" : [  ]
+					"bpatcher[1]::u828189051" : [  ]
 				}
 
 			}
@@ -169,7 +169,7 @@
 					"field::high" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"field::low" : [ -1.0, -1.0, 0.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"bpatcher[1]::u146022538" : [ -1 ]
+					"bpatcher[1]::u828189051" : [  ]
 				}
 
 			}
@@ -212,7 +212,7 @@
 					"field::high" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 0.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"bpatcher[1]::u146022538" : [  ]
+					"bpatcher[1]::u828189051" : [  ]
 				}
 
 			}
@@ -255,7 +255,7 @@
 					"field::high" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 0.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"bpatcher[1]::u146022538" : [  ]
+					"bpatcher[1]::u828189051" : [  ]
 				}
 
 			}
@@ -298,7 +298,7 @@
 					"field::high" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 0.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"bpatcher[1]::u146022538" : [  ]
+					"bpatcher[1]::u828189051" : [  ]
 				}
 
 			}
@@ -341,7 +341,7 @@
 					"field::high" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 0.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"bpatcher[1]::u146022538" : [  ]
+					"bpatcher[1]::u828189051" : [  ]
 				}
 
 			}
@@ -384,7 +384,50 @@
 					"field::high" : [ 0.002, 1.0, 439.0, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 251.1, 0.0 ],
 					"field::enable" : [ 1 ],
-					"bpatcher[1]::u146022538" : [  ]
+					"bpatcher[1]::u828189051" : [  ]
+				}
+
+			}
+,
+			"10" : 			{
+				"id" : 10,
+				"name" : "Blackout",
+				"data" : 				{
+					"blend_feathers" : [ 7 ],
+					"blend_field" : [ 7 ],
+					"blend_particles" : [ 7 ],
+					"feather_plot::texture" : [ "velocity" ],
+					"feather_plot::width" : [ 0.0025 ],
+					"feather_plot::blur" : [ 0.0 ],
+					"feather_plot::dim" : [ 0.0, 0.0 ],
+					"feather_plot::slide" : [ 0, 0 ],
+					"feather_plot::enable" : [ 0 ],
+					"feather_plot::threshold" : [ 0.01 ],
+					"feather_plot::weight" : [ 2.0 ],
+					"feather_plot::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 0.0 ],
+					"particles::duration" : [ 1.0 ],
+					"particles::force" : [ 1.0 ],
+					"particles::texture" : [ "velocity" ],
+					"particles::point_size" : [ 0.1 ],
+					"particles::blur" : [ 0.1 ],
+					"particles::dim" : [ 0.0, 0.0 ],
+					"particles::slide" : [ 0, 0 ],
+					"particles::dt" : [ 0.9 ],
+					"particles::dx" : [ 80.0 ],
+					"particles::enable" : [ 0 ],
+					"particles::radius" : [ -1.0 ],
+					"particles::threshold" : [ 0.2 ],
+					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 0.0 ],
+					"field::source_vars" : [ 0, 1, 2, 3 ],
+					"field::contrast" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"field::texture" : [ "camera" ],
+					"field::mode" : [ 0 ],
+					"field::alpha" : [ 0.0 ],
+					"field::bg" : [ "env_pressure" ],
+					"field::high" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"field::low" : [ 0.0, 0.0, 0.0, 0.0 ],
+					"field::enable" : [ 1 ],
+					"bpatcher[1]::u828189051" : [ -1 ]
 				}
 
 			}
