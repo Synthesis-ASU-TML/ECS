@@ -40,7 +40,7 @@
 					"field::high" : [ 0.03, 0.002, 288.15, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 230.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"bpatcher[1]::u200022812" : [  ]
+					"bpatcher[1]::u953022538" : [  ]
 				}
 
 			}
@@ -61,7 +61,7 @@
 					"feather_plot::threshold" : [ 0.01 ],
 					"feather_plot::weight" : [ 0.0 ],
 					"feather_plot::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"particles::duration" : [ 0.05 ],
+					"particles::duration" : [ 0.1 ],
 					"particles::force" : [ 0.5 ],
 					"particles::texture" : [ "velocity" ],
 					"particles::point_size" : [ 1.0 ],
@@ -83,7 +83,7 @@
 					"field::high" : [ 50.0, 50.0, 1.0, 1.0 ],
 					"field::low" : [ -50.0, -50.0, 0.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"bpatcher[1]::u200022812" : [ -1 ]
+					"bpatcher[1]::u953022538" : [ -1 ]
 				}
 
 			}
@@ -118,7 +118,7 @@
 					"particles::threshold" : [ -1.0 ],
 					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 0.0 ],
 					"field::source_vars" : [ 0, 1, 2, 3 ],
-					"field::contrast" : [ 0.56, 1.0, 1.0, 1.0 ],
+					"field::contrast" : [ 0.337, 1.0, 1.0, 1.0 ],
 					"field::texture" : [ "pressure" ],
 					"field::mode" : [ 2 ],
 					"field::alpha" : [ 1.0 ],
@@ -126,7 +126,7 @@
 					"field::high" : [ 1024.0, 1.0, 1.0, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 0.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"bpatcher[1]::u200022812" : [ -1 ]
+					"bpatcher[1]::u953022538" : [ -1 ]
 				}
 
 			}
@@ -169,7 +169,7 @@
 					"field::high" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"field::low" : [ -1.0, -1.0, 0.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"bpatcher[1]::u200022812" : [  ]
+					"bpatcher[1]::u953022538" : [  ]
 				}
 
 			}
@@ -212,7 +212,7 @@
 					"field::high" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 0.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"bpatcher[1]::u200022812" : [  ]
+					"bpatcher[1]::u953022538" : [  ]
 				}
 
 			}
@@ -255,7 +255,7 @@
 					"field::high" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 0.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"bpatcher[1]::u200022812" : [  ]
+					"bpatcher[1]::u953022538" : [  ]
 				}
 
 			}
@@ -298,7 +298,7 @@
 					"field::high" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 0.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"bpatcher[1]::u200022812" : [  ]
+					"bpatcher[1]::u953022538" : [  ]
 				}
 
 			}
@@ -341,7 +341,50 @@
 					"field::high" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 0.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"bpatcher[1]::u200022812" : [  ]
+					"bpatcher[1]::u953022538" : [  ]
+				}
+
+			}
+,
+			"9" : 			{
+				"id" : 9,
+				"name" : "blackout",
+				"data" : 				{
+					"blend_feathers" : [ 7 ],
+					"blend_field" : [ 7 ],
+					"blend_particles" : [ 7 ],
+					"feather_plot::texture" : [ "velocity" ],
+					"feather_plot::width" : [ 0.0025 ],
+					"feather_plot::blur" : [ 0.0 ],
+					"feather_plot::dim" : [ 0.0, 0.0 ],
+					"feather_plot::slide" : [ 0, 0 ],
+					"feather_plot::enable" : [ 0 ],
+					"feather_plot::threshold" : [ 0.01 ],
+					"feather_plot::weight" : [ 0.0 ],
+					"feather_plot::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"particles::duration" : [ 0.5 ],
+					"particles::force" : [ 0.1 ],
+					"particles::texture" : [ "velocity" ],
+					"particles::point_size" : [ 1.0 ],
+					"particles::blur" : [ 0.0 ],
+					"particles::dim" : [ 0.0, 0.0 ],
+					"particles::slide" : [ 0.0, 0.0 ],
+					"particles::dt" : [ 0.9 ],
+					"particles::dx" : [ 80.0 ],
+					"particles::enable" : [ 0 ],
+					"particles::radius" : [ -1.0 ],
+					"particles::threshold" : [ -1.0 ],
+					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 0.0 ],
+					"field::source_vars" : [ 0, 1, 2, 3 ],
+					"field::contrast" : [ 0.337, 1.0, 1.0, 1.0 ],
+					"field::texture" : [ "pressure" ],
+					"field::mode" : [ 2 ],
+					"field::alpha" : [ 0.0 ],
+					"field::bg" : [ "env_pressure" ],
+					"field::high" : [ 1024.0, 1.0, 1.0, 1.0 ],
+					"field::low" : [ 0.0, 0.0, 0.0, 0.0 ],
+					"field::enable" : [ 1 ],
+					"bpatcher[1]::u953022538" : [ -1 ]
 				}
 
 			}

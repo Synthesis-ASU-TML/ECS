@@ -2,8 +2,8 @@
 	"name" : "clouds",
 	"version" : 1,
 	"creationdate" : 3590406737,
-	"modificationdate" : 3592572182,
-	"viewrect" : [ 0.0, 44.0, 300.0, 500.0 ],
+	"modificationdate" : 3592745050,
+	"viewrect" : [ 0.0, 45.0, 300.0, 1361.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -14,7 +14,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/synthesis-git/ecs/patchers/sound",
+					"bootpath" : "~/synthesis-git/ECS/patchers/sound",
 					"projectrelativepath" : "../../patchers/sound"
 				}
 
@@ -32,7 +32,7 @@
 				"kind" : "imagefile",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/synthesis-git/ecs/media",
+					"bootpath" : "~/synthesis-git/ECS/media",
 					"projectrelativepath" : "../../media"
 				}
 
@@ -42,7 +42,7 @@
 				"kind" : "imagefile",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/synthesis-git/ecs/media",
+					"bootpath" : "~/synthesis-git/ECS/media",
 					"projectrelativepath" : "../../media"
 				}
 
@@ -51,18 +51,17 @@
 		}
 ,
 		"code" : 		{
+			"ecs.vis.feather_plot.jxs" : 			{
+				"kind" : "shader"
+			}
+,
+			"ecs.vis.particle_flow.jxs" : 			{
+				"kind" : "shader"
+			}
 
 		}
 ,
 		"data" : 		{
-			"clouds.vis.scrim.json" : 			{
-				"kind" : "json"
-			}
-,
-			"clouds.sim.scrim.json" : 			{
-				"kind" : "json"
-			}
-,
 			"clouds.vis.floor.json" : 			{
 				"kind" : "json",
 				"local" : 1
@@ -71,6 +70,14 @@
 			"clouds.sim.floor.json" : 			{
 				"kind" : "json",
 				"local" : 1
+			}
+,
+			"clouds.vis.scrim.json" : 			{
+				"kind" : "json"
+			}
+,
+			"clouds.sim.scrim.json" : 			{
+				"kind" : "json"
 			}
 
 		}
