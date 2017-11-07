@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 768.0, 74.0, 1308.0, 1332.0 ],
+		"rect" : [ 778.0, 363.0, 1281.0, 822.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -857,7 +857,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1876.0, 227.0, 783.0, 711.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 546.0, 130.0, 712.0, 670.0 ],
+					"presentation_rect" : [ 546.0, 130.0, 709.0, 670.0 ],
 					"varname" : "dest-control20x20",
 					"viewvisibility" : 1
 				}
@@ -1984,16 +1984,16 @@
 						"ema_scrim_clear" : [ -1 ],
 						"ema_scrim_reset" : [ -1 ],
 						"ema_scrim_sim" : [ 0 ],
-						"ema_scrim_vis" : [ 1 ],
+						"ema_scrim_vis" : [ 0 ],
 						"indiv_dest" : [ 0 ],
 						"indiv_source" : [ 0 ],
 						"lights_grid" : [ 0 ],
 						"lights_scoops" : [ 0 ],
 						"serra" : [ 0 ],
 						"serra_ex4" : [ 0 ],
-						"sound_floor" : [ 2 ],
+						"sound_floor" : [ 0 ],
 						"sound_floor_volume" : [ 43 ],
-						"sound_scrim" : [ 2 ],
+						"sound_scrim" : [ 0 ],
 						"sound_scrim_volume" : [ 43 ]
 					}
 ,
@@ -2185,7 +2185,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-21",
-					"items" : [ "Camera", ",", "Vectors", ",", "Fluids", ",", "Charged", "bodies" ],
+					"items" : [ "Camera", ",", "Vectors", ",", "Fluids", ",", "Charged", "bodies", ",", "Movie:", "nature", ",", "Movie:", "city", ",", "Movie:", "river" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -2339,7 +2339,7 @@
 					"mode" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 75.0, 28.0, 128.0, 128.0 ],
+					"patching_rect" : [ 501.0, 59.0, 128.0, 128.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 3.0, 9.0, 523.0, 189.0 ],
 					"proportion" : 0.39,
@@ -2359,7 +2359,7 @@
 					"mode" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 712.0, 252.0, 128.0, 128.0 ],
+					"patching_rect" : [ 631.0, 59.0, 128.0, 128.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 3.0, 215.0, 523.0, 323.0 ],
 					"proportion" : 0.39,

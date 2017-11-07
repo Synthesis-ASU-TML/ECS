@@ -34,6 +34,39 @@
 				}
 
 			}
+,
+			"2" : 			{
+				"id" : 2,
+				"name" : "EMA Velocity",
+				"data" : 				{
+					"ema_floor_alpha" : [ 0.0 ],
+					"ema_floor_clear" : [ -1 ],
+					"ema_floor_reset" : [ -1 ],
+					"ema_floor_sim" : [ 2 ],
+					"ema_floor_vis" : [ 1 ],
+					"ema_scrim_alpha" : [ 0.0 ],
+					"ema_scrim_clear" : [ -1 ],
+					"ema_scrim_reset" : [ -1 ],
+					"ema_scrim_sim" : [ 0 ],
+					"ema_scrim_vis" : [ 1 ],
+					"indiv_dest" : [ 0 ],
+					"indiv_source" : [ 0 ],
+					"lights_grid" : [ 0 ],
+					"lights_scoops" : [ 0 ],
+					"serra" : [ 0 ],
+					"serra_ex4" : [ 0 ],
+					"sound_floor" : [ 2 ],
+					"sound_floor_volume" : [ 43 ],
+					"sound_scrim" : [ 2 ],
+					"sound_scrim_volume" : [ 43 ],
+					"autoupdate" : [ 0 ],
+					"ipaddr" : [ "2.78.21.26" ],
+					"port" : [ 9990 ],
+					"dest-control20x20::matrix-ctrl" : [ 0, 5, 1, 1, 2, 1, 1, 10, 1, 1, 19, 1, 2, 0, 1, 2, 14, 1, 3, 1, 1, 3, 9, 1, 3, 12, 1, 4, 4, 1, 4, 7, 1, 4, 8, 1, 4, 11, 1, 5, 6, 1, 6, 13, 1, 10, 3, 1, 19, 15, 1, 19, 16, 1, 19, 17, 1, 19, 18, 1 ],
+					"u742000432" : [ -1 ]
+				}
+
+			}
 
 		}
 
