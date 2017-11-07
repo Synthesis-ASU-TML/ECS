@@ -36,7 +36,7 @@
 ,
 			"2" : 			{
 				"id" : 2,
-				"name" : "EMA Velocity",
+				"name" : "EMA velocity flow field",
 				"data" : 				{
 					"ema_floor_alpha" : [ 0.0 ],
 					"ema_floor_clear" : [ -1 ],
@@ -52,9 +52,9 @@
 					"indiv_source" : [ 0 ],
 					"serra" : [ 0 ],
 					"serra_ex4" : [ 0 ],
-					"sound_floor" : [ 0 ],
+					"sound_floor" : [ 3 ],
 					"sound_floor_volume" : [ 0 ],
-					"sound_scrim" : [ 0 ],
+					"sound_scrim" : [ 3 ],
 					"sound_scrim_volume" : [ 0 ],
 					"lights" : [ 5 ],
 					"autoupdate" : [ 0 ],

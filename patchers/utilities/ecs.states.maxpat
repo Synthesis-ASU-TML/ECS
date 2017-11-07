@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 922.0, 282.0, 1099.0, 802.0 ],
+		"rect" : [ 922.0, 282.0, 809.0, 802.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -1979,21 +1979,21 @@
 						"ema_floor_clear" : [ -1 ],
 						"ema_floor_reset" : [ -1 ],
 						"ema_floor_sim" : [ 2 ],
-						"ema_floor_vis" : [ 0 ],
+						"ema_floor_vis" : [ 1 ],
 						"ema_scrim_alpha" : [ 0.0 ],
 						"ema_scrim_clear" : [ -1 ],
 						"ema_scrim_reset" : [ -1 ],
 						"ema_scrim_sim" : [ 0 ],
-						"ema_scrim_vis" : [ 0 ],
+						"ema_scrim_vis" : [ 1 ],
 						"indiv_dest" : [ 0 ],
 						"indiv_source" : [ 0 ],
-						"lights" : [ 0 ],
+						"lights" : [ 5 ],
 						"serra" : [ 0 ],
 						"serra_ex4" : [ 0 ],
 						"sound_floor" : [ 0 ],
-						"sound_floor_volume" : [ 43 ],
+						"sound_floor_volume" : [ 0 ],
 						"sound_scrim" : [ 0 ],
-						"sound_scrim_volume" : [ 43 ]
+						"sound_scrim_volume" : [ 0 ]
 					}
 ,
 					"style" : "",
@@ -2231,7 +2231,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-18",
-					"items" : [ "Clouds", ",", "Pressure", ",", "Velocity" ],
+					"items" : [ "Clouds", ",", "Pressure", ",", "Velocity", ",", "Off" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -2248,7 +2248,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-17",
-					"items" : [ "Clouds", ",", "Pressure", ",", "Velocity" ],
+					"items" : [ "Clouds", ",", "Pressure", ",", "Velocity", ",", "Off" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
