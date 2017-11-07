@@ -40,7 +40,7 @@
 					"field::high" : [ 0.03, 0.002, 288.15, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 230.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"bpatcher[1]::u953022538" : [  ]
+					"bpatcher[1]::u888024282" : [  ]
 				}
 
 			}
@@ -75,15 +75,15 @@
 					"particles::threshold" : [ -1.0 ],
 					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"field::source_vars" : [ 0, 1, 2, 3 ],
-					"field::contrast" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"field::texture" : [ "velocity" ],
-					"field::mode" : [ 3 ],
+					"field::contrast" : [ 0.232, 0.0889, 1.0, 1.0 ],
+					"field::texture" : [ "watertemp" ],
+					"field::mode" : [ 4 ],
 					"field::alpha" : [ 1.0 ],
 					"field::bg" : [ "env_pressure" ],
-					"field::high" : [ 50.0, 50.0, 1.0, 1.0 ],
-					"field::low" : [ -50.0, -50.0, 0.0, 0.0 ],
+					"field::high" : [ 0.03, 0.002, 28.15, 1.0 ],
+					"field::low" : [ 0.0, 0.0, 230.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"bpatcher[1]::u953022538" : [ -1 ]
+					"bpatcher[1]::u888024282" : [ -1 ]
 				}
 
 			}
@@ -126,7 +126,7 @@
 					"field::high" : [ 1024.0, 1.0, 1.0, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 0.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"bpatcher[1]::u953022538" : [ -1 ]
+					"bpatcher[1]::u888024282" : [  ]
 				}
 
 			}
@@ -169,7 +169,7 @@
 					"field::high" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"field::low" : [ -1.0, -1.0, 0.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"bpatcher[1]::u953022538" : [  ]
+					"bpatcher[1]::u888024282" : [  ]
 				}
 
 			}
@@ -212,7 +212,7 @@
 					"field::high" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 0.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"bpatcher[1]::u953022538" : [  ]
+					"bpatcher[1]::u888024282" : [  ]
 				}
 
 			}
@@ -255,7 +255,7 @@
 					"field::high" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 0.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"bpatcher[1]::u953022538" : [  ]
+					"bpatcher[1]::u888024282" : [  ]
 				}
 
 			}
@@ -298,7 +298,7 @@
 					"field::high" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 0.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"bpatcher[1]::u953022538" : [  ]
+					"bpatcher[1]::u888024282" : [  ]
 				}
 
 			}
@@ -341,7 +341,7 @@
 					"field::high" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 0.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"bpatcher[1]::u953022538" : [  ]
+					"bpatcher[1]::u888024282" : [  ]
 				}
 
 			}
@@ -384,7 +384,7 @@
 					"field::high" : [ 1024.0, 1.0, 1.0, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 0.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"bpatcher[1]::u953022538" : [ -1 ]
+					"bpatcher[1]::u888024282" : [  ]
 				}
 
 			}
