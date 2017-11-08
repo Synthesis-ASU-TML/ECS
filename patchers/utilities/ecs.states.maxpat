@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 634.0, 333.0, 1263.0, 1073.0 ],
+		"rect" : [ 320.0, 155.0, 1087.0, 869.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,13 +38,33 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"angle" : 270.0,
+					"border" : 1,
+					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"grad1" : [ 0.376471, 0.384314, 0.4, 0.0 ],
+					"grad2" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"id" : "obj-10",
+					"maxclass" : "panel",
+					"mode" : 1,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 178.0, 239.0, 128.0, 128.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 192.0, 210.0, 581.0, 630.0 ],
+					"proportion" : 0.39,
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-3",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 46.0, 536.0, 131.0, 20.0 ],
+					"patching_rect" : [ 277.0, 523.0, 98.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 215.0, 346.0, 99.0, 20.0 ],
+					"presentation_rect" : [ 428.0, 15.0, 94.0, 20.0 ],
 					"style" : "",
 					"text" : "Sound: Emiddio",
 					"textjustification" : 2
@@ -60,9 +80,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 134.0, 535.0, 174.0, 22.0 ],
+					"patching_rect" : [ 585.0, 499.0, 174.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 316.0, 345.0, 126.0, 22.0 ],
+					"presentation_rect" : [ 428.0, 37.0, 94.0, 22.0 ],
 					"style" : "",
 					"varname" : "sound_scrim[2]"
 				}
@@ -74,9 +94,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 58.0, 524.0, 131.0, 20.0 ],
+					"patching_rect" : [ 109.0, 524.0, 75.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 228.0, 323.0, 86.0, 20.0 ],
+					"presentation_rect" : [ 325.0, 15.0, 86.0, 20.0 ],
 					"style" : "",
 					"text" : "Sound: Ben",
 					"textjustification" : 2
@@ -92,9 +112,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 146.0, 523.0, 174.0, 22.0 ],
+					"patching_rect" : [ 394.0, 499.0, 174.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 316.0, 322.0, 126.0, 22.0 ],
+					"presentation_rect" : [ 325.0, 37.0, 86.0, 22.0 ],
 					"style" : "",
 					"varname" : "sound_scrim[1]"
 				}
@@ -108,7 +128,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1178.5, 1208.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1010.0, 69.0, 180.0, 20.0 ],
+					"presentation_rect" : [ 890.0, 281.0, 162.0, 20.0 ],
 					"style" : "",
 					"text" : "source"
 				}
@@ -122,7 +142,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1178.5, 1161.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1010.0, 21.0, 180.0, 20.0 ],
+					"presentation_rect" : [ 890.0, 232.0, 162.0, 20.0 ],
 					"style" : "",
 					"text" : "destination"
 				}
@@ -229,7 +249,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1374.5, 1291.0, 180.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1010.0, 91.0, 180.0, 22.0 ],
+					"presentation_rect" : [ 890.0, 303.0, 162.0, 22.0 ],
 					"style" : "",
 					"varname" : "indiv_source"
 				}
@@ -285,7 +305,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1131.5, 1296.0, 180.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1010.0, 43.0, 180.0, 22.0 ],
+					"presentation_rect" : [ 890.0, 255.0, 162.0, 22.0 ],
 					"style" : "",
 					"varname" : "indiv_dest"
 				}
@@ -297,7 +317,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1906.0, 1007.0, 34.0, 22.0 ],
+					"patching_rect" : [ 1876.0, 940.0, 34.0, 22.0 ],
 					"style" : "",
 					"text" : "print"
 				}
@@ -310,7 +330,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1804.0, 1012.0, 50.0, 22.0 ],
+					"patching_rect" : [ 1912.0, 940.0, 50.0, 22.0 ],
 					"style" : "",
 					"text" : "18 19"
 				}
@@ -323,7 +343,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1950.0, 1048.0, 137.0, 22.0 ],
+					"patching_rect" : [ 1876.0, 964.0, 137.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"client_rect" : [ 4, 45, 358, 246 ],
 						"parameter_enable" : 0,
@@ -332,7 +352,7 @@
 ,
 					"style" : "",
 					"text" : "pattrstorage @greedy 1",
-					"varname" : "u563000444"
+					"varname" : "u966000409"
 				}
 
 			}
@@ -343,7 +363,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1662.0, 256.0, 37.0, 22.0 ],
+					"patching_rect" : [ 1876.0, 176.0, 37.0, 22.0 ],
 					"style" : "",
 					"text" : "2 2 1"
 				}
@@ -356,7 +376,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1648.0, 312.0, 100.0, 22.0 ],
+					"patching_rect" : [ 1876.0, 200.0, 100.0, 22.0 ],
 					"style" : "",
 					"text" : "prepend connect"
 				}
@@ -408,22 +428,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1283.0, 334.0, 60.0, 22.0 ],
+					"patching_rect" : [ 1283.0, 423.0, 60.0, 22.0 ],
 					"style" : "",
 					"text" : "loadbang"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-128",
-					"linecount" : 15,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 697.5, 983.0, 256.0, 208.0 ],
-					"style" : "",
-					"text" : "cool, this is good for a complete overview of the videohub. I'm thinking we could have another patch that only deals with inputs and outputs of the single computer running the patch...for this, we can.....\n\ncoordinate name of computer (i.e. synthMP4) with corresponding videohub inputs and outputs\n\nex. for this machine, HDMI-2 amd BME-2 become synth-MP4_in / synth-MP4_out...\n\nthen we can have a couple umenus to select the input and output for that computer."
 				}
 
 			}
@@ -433,11 +440,11 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1291.0, 242.0, 150.0, 20.0 ],
+					"patching_rect" : [ 1373.0, 227.0, 32.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 714.0, 9.0, 76.0, 20.0 ],
+					"presentation_rect" : [ 1005.0, 14.0, 47.0, 20.0 ],
 					"style" : "",
-					"text" : "TCP Port"
+					"text" : "Port"
 				}
 
 			}
@@ -447,11 +454,11 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1140.0, 232.0, 150.0, 20.0 ],
+					"patching_rect" : [ 1152.0, 228.0, 120.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 546.0, 9.0, 162.0, 20.0 ],
+					"presentation_rect" : [ 890.0, 14.0, 98.0, 20.0 ],
 					"style" : "",
-					"text" : "VideoHub IP Address"
+					"text" : "VideoHub IP"
 				}
 
 			}
@@ -462,7 +469,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1632.0, 904.0, 79.0, 22.0 ],
+					"patching_rect" : [ 1634.0, 899.0, 79.0, 22.0 ],
 					"style" : "",
 					"text" : "prepend port"
 				}
@@ -475,7 +482,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 1606.0, 829.0, 131.0, 22.0 ],
+					"patching_rect" : [ 1578.0, 851.0, 131.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"initial" : [ 9990 ],
 						"parameter_enable" : 0
@@ -497,7 +504,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1634.0, 875.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 714.0, 33.0, 76.0, 22.0 ],
+					"presentation_rect" : [ 1005.0, 38.0, 47.0, 22.0 ],
 					"style" : "",
 					"varname" : "number"
 				}
@@ -559,7 +566,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1328.5, 840.0, 154.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 546.0, 33.0, 162.0, 24.0 ],
+					"presentation_rect" : [ 890.0, 38.0, 98.0, 24.0 ],
 					"style" : "",
 					"text" : "2.78.21.26",
 					"varname" : "textedit"
@@ -620,9 +627,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1312.0, 406.0, 100.0, 20.0 ],
+					"patching_rect" : [ 1385.0, 447.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 714.0, 65.0, 127.0, 20.0 ],
+					"presentation_rect" : [ 890.0, 171.0, 162.0, 20.0 ],
 					"style" : "",
 					"text" : "Disconnect From Videohub"
 				}
@@ -636,9 +643,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1283.0, 367.0, 100.0, 20.0 ],
+					"patching_rect" : [ 1283.0, 447.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 546.0, 65.0, 162.0, 20.0 ],
+					"presentation_rect" : [ 890.0, 79.0, 162.0, 20.0 ],
 					"style" : "",
 					"text" : "Connect To Videohub"
 				}
@@ -655,7 +662,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1473.0, 340.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 846.0, 65.0, 156.0, 20.0 ],
+					"presentation_rect" : [ 890.0, 125.0, 162.0, 20.0 ],
 					"style" : "",
 					"text" : "AutoUpdate Off",
 					"texton" : "AutoUpdate On"
@@ -725,7 +732,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1410.0, 200.0, 156.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 846.0, 91.0, 156.0, 22.0 ],
+					"presentation_rect" : [ 890.0, 147.0, 162.0, 22.0 ],
 					"style" : "",
 					"text" : "Update Routing Status"
 				}
@@ -754,7 +761,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1278.0, 200.0, 127.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 714.0, 91.0, 127.0, 22.0 ],
+					"presentation_rect" : [ 890.0, 193.0, 162.0, 22.0 ],
 					"style" : "",
 					"text" : "Update Source Labels"
 				}
@@ -885,7 +892,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1110.0, 200.0, 162.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 546.0, 91.0, 162.0, 22.0 ],
+					"presentation_rect" : [ 890.0, 101.0, 162.0, 22.0 ],
 					"style" : "",
 					"text" : "Update Destination Labels"
 				}
@@ -917,11 +924,11 @@
 					"name" : "dest-control20x20.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
+					"offset" : [ -130.0, -40.0 ],
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1876.0, 227.0, 783.0, 711.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 546.0, 130.0, 709.0, 670.0 ],
+					"presentation_rect" : [ 192.0, 210.0, 581.0, 630.0 ],
 					"varname" : "dest-control20x20",
 					"viewvisibility" : 1
 				}
@@ -1228,7 +1235,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1160.0, 452.0, 53.0, 22.0 ],
+					"patching_rect" : [ 1283.0, 469.0, 53.0, 22.0 ],
 					"style" : "",
 					"text" : "connect"
 				}
@@ -1241,7 +1248,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1218.0, 418.0, 67.0, 22.0 ],
+					"patching_rect" : [ 1218.0, 423.0, 67.0, 22.0 ],
 					"style" : "",
 					"text" : "append 10"
 				}
@@ -1336,7 +1343,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 31.5, 1107.0, 638.0, 104.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 7.0, 13.0, 163.0, 1039.0 ],
+					"presentation_rect" : [ 9.0, 15.0, 165.0, 820.0 ],
 					"style" : "",
 					"tabs" : [ "Roundtable", "Migration", "Serra Night", "Serra Day", "ex4 Vectors", "ex4 Charged Bodies", "ex4 Fluids", "ex4 Freezing", "EMA Clouds", "EMA Pressure", "EMA Velocity", "EMA Wind + Obstacles", "Movies: Clouds", "Movies: Water", "Movies: City" ]
 				}
@@ -1372,7 +1379,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 31.5, 1261.0, 271.5, 87.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 428.0, 578.0, 271.5, 87.0 ],
+					"presentation_rect" : [ 785.5, 753.0, 271.5, 87.0 ],
 					"varname" : "ecs.pattr",
 					"viewvisibility" : 1
 				}
@@ -1390,7 +1397,7 @@
 					"saved_object_attributes" : 					{
 						"client_rect" : [ 4, 45, 358, 246 ],
 						"parameter_enable" : 0,
-						"storage_rect" : [ 1691, 59, 2851, 1430 ]
+						"storage_rect" : [ 583, 69, 1743, 1440 ]
 					}
 ,
 					"style" : "",
@@ -1437,7 +1444,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 631.0, 663.0, 100.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 443.0, 534.0, 126.0, 22.0 ],
+					"presentation_rect" : [ 596.0, 137.0, 126.0, 22.0 ],
 					"style" : "",
 					"text" : "Clear",
 					"texton" : "Clear",
@@ -1455,7 +1462,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 560.0, 841.0, 100.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 443.0, 471.0, 126.0, 22.0 ],
+					"presentation_rect" : [ 326.0, 138.0, 126.0, 22.0 ],
 					"style" : "",
 					"text" : "Clear",
 					"texton" : "Clear",
@@ -1473,7 +1480,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 514.0, 663.0, 100.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 316.0, 534.0, 126.0, 22.0 ],
+					"presentation_rect" : [ 469.0, 137.0, 126.0, 22.0 ],
 					"style" : "",
 					"text" : "Reset",
 					"texton" : "Reset",
@@ -1491,7 +1498,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 443.0, 841.0, 100.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 316.0, 471.0, 126.0, 22.0 ],
+					"presentation_rect" : [ 199.0, 138.0, 126.0, 22.0 ],
 					"style" : "",
 					"text" : "Reset",
 					"texton" : "Reset",
@@ -1588,7 +1595,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 206.0, 663.0, 174.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 443.0, 510.0, 126.0, 22.0 ],
+					"presentation_rect" : [ 596.0, 113.0, 126.0, 22.0 ],
 					"style" : "",
 					"varname" : "ema_floor_sim"
 				}
@@ -1605,7 +1612,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 201.0, 841.0, 108.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 443.0, 447.0, 126.0, 22.0 ],
+					"presentation_rect" : [ 326.0, 114.0, 126.0, 22.0 ],
 					"style" : "",
 					"varname" : "ema_scrim_sim"
 				}
@@ -2064,7 +2071,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u758001796"
+					"varname" : "u656001762"
 				}
 
 			}
@@ -2079,7 +2086,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 397.0, 663.0, 100.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 571.0, 510.0, 128.5, 46.0 ],
+					"presentation_rect" : [ 469.0, 161.0, 253.0, 22.0 ],
 					"size" : 1.0,
 					"style" : "",
 					"varname" : "ema_floor_alpha"
@@ -2097,7 +2104,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 326.0, 841.0, 100.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 571.0, 447.0, 128.5, 46.0 ],
+					"presentation_rect" : [ 199.0, 162.0, 253.0, 22.0 ],
 					"size" : 1.0,
 					"style" : "",
 					"varname" : "ema_scrim_alpha"
@@ -2114,7 +2121,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 201.0, 248.0, 174.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 443.0, 384.0, 126.0, 22.0 ],
+					"presentation_rect" : [ 540.0, 61.0, 82.0, 22.0 ],
 					"style" : "",
 					"varname" : "sound_scrim_volume"
 				}
@@ -2130,7 +2137,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 585.0, 248.0, 174.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 443.0, 408.0, 126.0, 22.0 ],
+					"presentation_rect" : [ 639.0, 61.0, 80.0, 22.0 ],
 					"style" : "",
 					"varname" : "sound_floor_volume"
 				}
@@ -2144,7 +2151,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 85.0, 641.0, 104.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 239.0, 511.0, 75.0, 20.0 ],
+					"presentation_rect" : [ 469.0, 92.0, 253.0, 20.0 ],
 					"style" : "",
 					"text" : "EMA: Floor",
 					"textjustification" : 2
@@ -2162,7 +2169,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 85.0, 663.0, 104.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 316.0, 510.0, 126.0, 22.0 ],
+					"presentation_rect" : [ 469.0, 113.0, 126.0, 22.0 ],
 					"style" : "",
 					"varname" : "ema_floor_vis"
 				}
@@ -2176,7 +2183,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 85.0, 819.0, 104.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 239.0, 448.0, 75.0, 20.0 ],
+					"presentation_rect" : [ 199.0, 92.0, 253.0, 20.0 ],
 					"style" : "",
 					"text" : "EMA: Scrim",
 					"textjustification" : 2
@@ -2194,7 +2201,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 85.0, 841.0, 104.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 316.0, 447.0, 126.0, 22.0 ],
+					"presentation_rect" : [ 199.0, 114.0, 126.0, 22.0 ],
 					"style" : "",
 					"varname" : "ema_scrim_vis"
 				}
@@ -2206,9 +2213,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 244.0, 475.0, 131.0, 20.0 ],
+					"patching_rect" : [ 206.0, 475.0, 169.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 222.0, 284.0, 92.0, 20.0 ],
+					"presentation_rect" : [ 736.0, 92.0, 55.0, 20.0 ],
 					"style" : "",
 					"text" : "Serra",
 					"textjustification" : 2
@@ -2226,7 +2233,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 201.0, 499.0, 174.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 316.0, 283.0, 126.0, 22.0 ],
+					"presentation_rect" : [ 736.0, 114.0, 55.0, 22.0 ],
 					"style" : "",
 					"varname" : "serra"
 				}
@@ -2238,9 +2245,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 53.0, 475.0, 131.0, 20.0 ],
+					"patching_rect" : [ 10.0, 475.0, 174.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 222.0, 260.0, 92.0, 20.0 ],
+					"presentation_rect" : [ 736.0, 15.0, 111.0, 20.0 ],
 					"style" : "",
 					"text" : "Serra ex4",
 					"textjustification" : 2
@@ -2258,7 +2265,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 10.0, 499.0, 174.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 316.0, 259.0, 126.0, 22.0 ],
+					"presentation_rect" : [ 736.0, 37.0, 111.0, 22.0 ],
 					"style" : "",
 					"varname" : "serra_ex4"
 				}
@@ -2270,9 +2277,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 437.0, 226.0, 131.0, 20.0 ],
+					"patching_rect" : [ 394.0, 226.0, 174.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 228.0, 409.0, 86.0, 20.0 ],
+					"presentation_rect" : [ 639.0, 15.0, 80.0, 20.0 ],
 					"style" : "",
 					"text" : "Sound: Floor",
 					"textjustification" : 2
@@ -2285,9 +2292,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 53.0, 226.0, 131.0, 20.0 ],
+					"patching_rect" : [ 10.0, 226.0, 174.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 228.0, 385.0, 86.0, 20.0 ],
+					"presentation_rect" : [ 540.0, 15.0, 82.0, 20.0 ],
 					"style" : "",
 					"text" : "Sound: Scrim",
 					"textjustification" : 2
@@ -2305,7 +2312,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 394.0, 248.0, 174.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 316.0, 408.0, 126.0, 22.0 ],
+					"presentation_rect" : [ 639.0, 37.0, 80.0, 22.0 ],
 					"style" : "",
 					"varname" : "sound_floor"
 				}
@@ -2322,7 +2329,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 10.0, 248.0, 174.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 316.0, 384.0, 126.0, 22.0 ],
+					"presentation_rect" : [ 540.0, 37.0, 82.0, 22.0 ],
 					"style" : "",
 					"varname" : "sound_scrim"
 				}
@@ -2339,7 +2346,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 10.0, 59.0, 174.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 316.0, 220.0, 126.0, 22.0 ],
+					"presentation_rect" : [ 199.0, 37.0, 107.0, 22.0 ],
 					"style" : "",
 					"varname" : "lights"
 				}
@@ -2351,9 +2358,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 53.0, 37.0, 131.0, 20.0 ],
+					"patching_rect" : [ 10.0, 37.0, 174.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 222.0, 220.0, 92.0, 20.0 ],
+					"presentation_rect" : [ 199.0, 15.0, 107.0, 20.0 ],
 					"style" : "",
 					"text" : "Lights",
 					"textjustification" : 2
@@ -2374,7 +2381,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 501.0, 59.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.0, 9.0, 167.0, 1048.0 ],
+					"presentation_rect" : [ 6.0, 9.0, 172.0, 831.0 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -2394,7 +2401,27 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 631.0, 59.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 183.0, 215.0, 523.0, 346.0 ],
+					"presentation_rect" : [ 192.0, 9.0, 661.0, 183.0 ],
+					"proportion" : 0.39,
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"border" : 1,
+					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"grad1" : [ 0.376471, 0.384314, 0.4, 0.0 ],
+					"grad2" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"id" : "obj-6",
+					"maxclass" : "panel",
+					"mode" : 1,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 631.0, 367.0, 128.0, 128.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 885.0, 9.0, 172.0, 321.0 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -2678,7 +2705,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-88", 0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-138", 0 ]
 				}
 
@@ -2686,7 +2713,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-89", 1 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-138", 0 ]
 				}
 
@@ -3380,35 +3407,35 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "sc.net.send.maxpat",
-				"bootpath" : "~/synthesis-git/SC/patchers/utilities",
+				"bootpath" : "~/Dropbox/Development/github/SC/patchers/utilities",
 				"patcherrelativepath" : "../../../SC/patchers/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "states.json",
-				"bootpath" : "~/synthesis-git/ECS/projects/clouds/data",
+				"bootpath" : "~/Dropbox/Development/github/ecs/projects/clouds/data",
 				"patcherrelativepath" : "../../projects/clouds/data",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ecs.pattr.maxpat",
-				"bootpath" : "~/synthesis-git/ECS/patchers/utilities",
+				"bootpath" : "~/Dropbox/Development/github/ecs/patchers/utilities",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "dest-control20x20.maxpat",
-				"bootpath" : "~/synthesis-git/SC/dev/video/videohub-control/patchers",
+				"bootpath" : "~/Dropbox/Development/github/SC/dev/video/videohub-control/patchers",
 				"patcherrelativepath" : "../../../SC/dev/video/videohub-control/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "rot-comment.js",
-				"bootpath" : "~/synthesis-git/SC/dev/video/videohub-control/code",
+				"bootpath" : "~/Dropbox/Development/github/SC/dev/video/videohub-control/code",
 				"patcherrelativepath" : "../../../SC/dev/video/videohub-control/code",
 				"type" : "TEXT",
 				"implicit" : 1
