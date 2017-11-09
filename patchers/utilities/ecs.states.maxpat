@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 79.0, 1026.0, 859.0 ],
+		"rect" : [ 0.0, 45.0, 1026.0, 859.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -107,7 +107,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 193.0, 449.0, 150.0, 20.0 ],
+					"patching_rect" : [ 193.0, 449.0, 71.25, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 245.0, 376.0, 68.0, 20.0 ],
 					"style" : "",
@@ -150,7 +150,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 310.0, 1091.0, 150.0, 20.0 ],
+					"patching_rect" : [ 241.5, 1017.0, 113.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 245.0, 354.0, 68.0, 20.0 ],
 					"style" : "",
@@ -165,7 +165,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 246.5, 1019.0, 277.0, 33.0 ],
+					"patching_rect" : [ 241.5, 982.0, 113.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 44.0, 803.0, 179.0, 33.0 ],
 					"style" : "",
@@ -554,7 +554,7 @@
 					"saved_object_attributes" : 					{
 						"client_rect" : [ 4, 45, 358, 246 ],
 						"parameter_enable" : 0,
-						"storage_rect" : [ 83, 45, 1243, 1416 ]
+						"storage_rect" : [ 583, 69, 1743, 1440 ]
 					}
 ,
 					"style" : "",
@@ -1552,7 +1552,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 9.0, 15.0, 214.0, 786.0 ],
 					"style" : "",
-					"tabs" : [ "Roundtable", "Migration", "Serra Night", "Serra Day", "ex4 Vectors", "ex4 Fluids", "ex4 Charged Bodies", "ex4 Freezing", "ex4 Scatter Gather", "EMA Clouds", "EMA Pressure", "EMA Velocity Particles", "EMA Velocity Image", "Movies: Clouds", "Movies: Water", "Movies: City" ]
+					"tabs" : [ "Roundtable", "Migration", "Serra Night", "Serra Day", "ex4 Vectors", "ex4 Fluids", "ex4 Charged Bodies", "ex4 Freezing", "ex4 Scatter Gather", "ex4 River Vectors", "EMA Clouds", "EMA Pressure", "EMA Velocity Particles", "EMA Velocity Image", "Movies: Clouds", "Movies: Water", "Movies: City" ]
 				}
 
 			}
@@ -1586,7 +1586,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 31.5, 1396.0, 271.5, 87.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 741.5, 643.0, 271.5, 87.0 ],
+					"presentation_rect" : [ 741.5, 658.0, 271.5, 87.0 ],
 					"varname" : "ecs.pattr",
 					"viewvisibility" : 1
 				}
@@ -1604,7 +1604,7 @@
 					"saved_object_attributes" : 					{
 						"client_rect" : [ 4, 45, 358, 246 ],
 						"parameter_enable" : 0,
-						"storage_rect" : [ 83, 45, 1243, 1416 ]
+						"storage_rect" : [ 583, 69, 1743, 1440 ]
 					}
 ,
 					"style" : "",
