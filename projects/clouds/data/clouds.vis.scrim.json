@@ -27,7 +27,7 @@
 					"video_input::circle::dim" : [ 1280, 720 ],
 					"video_input::circle::ramp_time" : [ 100.0 ],
 					"video_input::circle::circle" : [ 0.5, 0.5, 0.0 ],
-					"simulation::u497014874" : [  ],
+					"simulation::u901052229" : [  ],
 					"feather_plot::texture" : [ "velocity" ],
 					"feather_plot::width" : [ 0.0025 ],
 					"feather_plot::blur" : [ 0.0 ],
@@ -58,7 +58,8 @@
 					"field::bg" : [ "env_pressure" ],
 					"field::high" : [ 0.002, 1.0, 439.0, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 251.1, 0.0 ],
-					"field::enable" : [ 1 ]
+					"field::enable" : [ 1 ],
+					"tracers::u237042969" : [  ]
 				}
 
 			}
@@ -88,7 +89,7 @@
 					"video_input::circle::dim" : [ 1280, 720 ],
 					"video_input::circle::ramp_time" : [ 100.0 ],
 					"video_input::circle::circle" : [ 0.5, 0.5, 0.0 ],
-					"simulation::u497014874" : [  ],
+					"simulation::u901052229" : [  ],
 					"feather_plot::texture" : [ "velocity" ],
 					"feather_plot::width" : [ 0.0025 ],
 					"feather_plot::blur" : [ 0.0 ],
@@ -119,10 +120,12 @@
 					"field::bg" : [ "env_pressure" ],
 					"field::high" : [ 3.404, 1.0, 1217.0, 1.0 ],
 					"field::low" : [ -0.13, 0.0, 0.0, 0.0 ],
-					"field::enable" : [ 1 ]
+					"field::enable" : [ 1 ],
+					"tracers::u237042969" : [  ]
 				}
 
-			},
+			}
+,
 			"3" : 			{
 				"id" : 3,
 				"name" : "velocity - field",
@@ -148,7 +151,7 @@
 					"video_input::circle::dim" : [ 1280, 720 ],
 					"video_input::circle::ramp_time" : [ 100.0 ],
 					"video_input::circle::circle" : [ 0.53046, 0.471565, 0.0 ],
-					"simulation::u497014874" : [  ],
+					"simulation::u901052229" : [  ],
 					"feather_plot::texture" : [ "velocity" ],
 					"feather_plot::width" : [ 0.0025 ],
 					"feather_plot::blur" : [ 0.0 ],
@@ -179,10 +182,12 @@
 					"field::bg" : [ "env_pressure" ],
 					"field::high" : [ 50.0, 50.0, 1.0, 1.0 ],
 					"field::low" : [ -50.0, -50.0, 0.0, 0.0 ],
-					"field::enable" : [ 1 ]
+					"field::enable" : [ 1 ],
+					"tracers::u237042969" : [  ]
 				}
 
-			},
+			}
+,
 			"4" : 			{
 				"id" : 4,
 				"name" : "pressure",
@@ -208,7 +213,7 @@
 					"video_input::circle::dim" : [ 1280, 720 ],
 					"video_input::circle::ramp_time" : [ 100.0 ],
 					"video_input::circle::circle" : [ 0.5, 0.5, 0.0 ],
-					"simulation::u497014874" : [  ],
+					"simulation::u901052229" : [  ],
 					"feather_plot::texture" : [ "velocity" ],
 					"feather_plot::width" : [ 0.0025 ],
 					"feather_plot::blur" : [ 0.0 ],
@@ -239,9 +244,12 @@
 					"field::bg" : [ "env_pressure" ],
 					"field::high" : [ 4096.0, 1.0, 1.0, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 0.0, 0.0 ],
-					"field::enable" : [ 1 ]
+					"field::enable" : [ 1 ],
+					"tracers::u237042969" : [  ]
 				}
-			},
+
+			}
+,
 			"5" : 			{
 				"id" : 5,
 				"name" : "hsflow",
@@ -267,7 +275,7 @@
 					"video_input::circle::dim" : [ 1280, 720 ],
 					"video_input::circle::ramp_time" : [ 100.0 ],
 					"video_input::circle::circle" : [ 0.5, 0.5, 0.0 ],
-					"simulation::u497014874" : [  ],
+					"simulation::u901052229" : [  ],
 					"feather_plot::texture" : [ "hsflow" ],
 					"feather_plot::width" : [ 0.0025 ],
 					"feather_plot::blur" : [ 0.0 ],
@@ -298,9 +306,12 @@
 					"field::bg" : [ "env_pressure" ],
 					"field::high" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"field::low" : [ -1.0, -1.0, 0.0, 0.0 ],
-					"field::enable" : [ 1 ]
+					"field::enable" : [ 1 ],
+					"tracers::u237042969" : [  ]
 				}
-			},
+
+			}
+,
 			"6" : 			{
 				"id" : 6,
 				"name" : "camera",
@@ -326,7 +337,7 @@
 					"video_input::circle::dim" : [ 1280, 720 ],
 					"video_input::circle::ramp_time" : [ 100.0 ],
 					"video_input::circle::circle" : [ 0.5, 0.5, 0.0 ],
-					"simulation::u497014874" : [  ],
+					"simulation::u901052229" : [  ],
 					"feather_plot::texture" : [ "hsflow" ],
 					"feather_plot::width" : [ 0.0 ],
 					"feather_plot::blur" : [ 0.0 ],
@@ -357,9 +368,12 @@
 					"field::bg" : [ "env_pressure" ],
 					"field::high" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 0.0, 0.0 ],
-					"field::enable" : [ 1 ]
+					"field::enable" : [ 1 ],
+					"tracers::u237042969" : [  ]
 				}
-			},
+
+			}
+,
 			"7" : 			{
 				"id" : 7,
 				"name" : "obstacles",
@@ -385,7 +399,7 @@
 					"video_input::circle::dim" : [ 1280, 720 ],
 					"video_input::circle::ramp_time" : [ 100.0 ],
 					"video_input::circle::circle" : [ 0.5, 0.5, 0.0 ],
-					"simulation::u497014874" : [  ],
+					"simulation::u901052229" : [  ],
 					"feather_plot::texture" : [ "hsflow" ],
 					"feather_plot::width" : [ 0.0 ],
 					"feather_plot::blur" : [ 0.0 ],
@@ -416,9 +430,12 @@
 					"field::bg" : [ "env_pressure" ],
 					"field::high" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 0.0, 0.0 ],
-					"field::enable" : [ 1 ]
+					"field::enable" : [ 1 ],
+					"tracers::u237042969" : [  ]
 				}
-			},
+
+			}
+,
 			"8" : 			{
 				"id" : 8,
 				"name" : "background",
@@ -444,7 +461,7 @@
 					"video_input::circle::dim" : [ 1280, 720 ],
 					"video_input::circle::ramp_time" : [ 100.0 ],
 					"video_input::circle::circle" : [ 0.5, 0.5, 0.0 ],
-					"simulation::u497014874" : [  ],
+					"simulation::u901052229" : [  ],
 					"feather_plot::texture" : [ "hsflow" ],
 					"feather_plot::width" : [ 0.0 ],
 					"feather_plot::blur" : [ 0.0 ],
@@ -475,9 +492,12 @@
 					"field::bg" : [ "env_pressure" ],
 					"field::high" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 0.0, 0.0 ],
-					"field::enable" : [ 1 ]
+					"field::enable" : [ 1 ],
+					"tracers::u237042969" : [  ]
 				}
-			},
+
+			}
+,
 			"9" : 			{
 				"id" : 9,
 				"name" : "bgsub",
@@ -503,7 +523,7 @@
 					"video_input::circle::dim" : [ 1280, 720 ],
 					"video_input::circle::ramp_time" : [ 100.0 ],
 					"video_input::circle::circle" : [ 0.5, 0.5, 0.0 ],
-					"simulation::u497014874" : [  ],
+					"simulation::u901052229" : [  ],
 					"feather_plot::texture" : [ "hsflow" ],
 					"feather_plot::width" : [ 0.0 ],
 					"feather_plot::blur" : [ 0.0 ],
@@ -534,9 +554,12 @@
 					"field::bg" : [ "env_pressure" ],
 					"field::high" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 0.0, 0.0 ],
-					"field::enable" : [ 1 ]
+					"field::enable" : [ 1 ],
+					"tracers::u237042969" : [  ]
 				}
-			},
+
+			}
+,
 			"10" : 			{
 				"id" : 10,
 				"name" : "clouds no particles",
@@ -562,7 +585,7 @@
 					"video_input::circle::dim" : [ 1280, 720 ],
 					"video_input::circle::ramp_time" : [ 100.0 ],
 					"video_input::circle::circle" : [ 0.5, 0.5, 0.0 ],
-					"simulation::u497014874" : [  ],
+					"simulation::u901052229" : [  ],
 					"feather_plot::texture" : [ "velocity" ],
 					"feather_plot::width" : [ 0.0 ],
 					"feather_plot::blur" : [ 0.0 ],
@@ -593,11 +616,75 @@
 					"field::bg" : [ "env_pressure" ],
 					"field::high" : [ 0.002, 1.0, 439.0, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 251.1, 0.0 ],
-					"field::enable" : [ 1 ]
+					"field::enable" : [ 1 ],
+					"tracers::u237042969" : [  ]
 				}
-			},
-			"11" : 			{
-				"id" : 11,
+
+			}
+,
+"11" : 			{
+	"id" : 11,
+	"name" : "blackout",
+	"data" : 				{
+		"blend_feathers" : [ 7 ],
+		"blend_field" : [ 1 ],
+		"blend_particles" : [ 6 ],
+		"video_input::texture" : [ "camera" ],
+		"video_input::mirror" : [ 1 ],
+		"video_input::flip" : [ 1 ],
+		"video_input::invert" : [ 0 ],
+		"video_input::mode" : [ 0 ],
+		"video_input::enable" : [ 1 ],
+		"video_input::syphon::multiview_segment" : [ 2 ],
+		"video_input::syphon::multiview_on" : [ 1 ],
+		"video_input::syphon::cam_syphon_server" : [ 1 ],
+		"video_input::syphon::cam_syphon_app" : [ 1 ],
+		"video_input::camera::multiview_segment" : [ 0 ],
+		"video_input::camera::multiview_on" : [ 0 ],
+		"video_input::movie::dim" : [ 1280, 720 ],
+		"video_input::movie::rate" : [ 1.0 ],
+		"video_input::movie::moviefile" : [  ],
+		"video_input::circle::dim" : [ 1280, 720 ],
+		"video_input::circle::ramp_time" : [ 100.0 ],
+		"video_input::circle::circle" : [ 0.5, 0.5, 0.0 ],
+		"simulation::u901052229" : [ 1 ],
+		"feather_plot::texture" : [ "velocity" ],
+		"feather_plot::width" : [ 0.0 ],
+		"feather_plot::blur" : [ 0.0 ],
+		"feather_plot::dim" : [ 0.0, 0.0 ],
+		"feather_plot::slide" : [ 0, 0 ],
+		"feather_plot::enable" : [ 0 ],
+		"feather_plot::threshold" : [ 0.01 ],
+		"feather_plot::weight" : [ 0.0 ],
+		"feather_plot::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 1.0 ],
+		"particles::duration" : [ 1.0 ],
+		"particles::force" : [ 0.5 ],
+		"particles::texture" : [ "velocity" ],
+		"particles::point_size" : [ 1.0 ],
+		"particles::blur" : [ 0.01 ],
+		"particles::dim" : [ 300.0, 300.0 ],
+		"particles::slide" : [ 0.0, 0.9 ],
+		"particles::dt" : [ 0.9 ],
+		"particles::dx" : [ 80.0 ],
+		"particles::enable" : [ 0 ],
+		"particles::radius" : [ -1.0 ],
+		"particles::threshold" : [  ],
+		"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 0.0 ],
+		"field::source_vars" : [ 0, 1, 2, 3 ],
+		"field::contrast" : [ 0.31, 0.19, 1.0, 1.0 ],
+		"field::texture" : [ "watertemp" ],
+		"field::mode" : [ 4 ],
+		"field::alpha" : [ 0.0 ],
+		"field::bg" : [ "env_pressure" ],
+		"field::high" : [ 0.002, 1.0, 439.0, 1.0 ],
+		"field::low" : [ 0.0, 0.0, 251.1, 0.0 ],
+		"field::enable" : [ 1 ],
+		"tracers::u237042969" : [ -1 ]
+	}
+
+},
+			"12" : 			{
+				"id" : 12,
 				"name" : "movie - clouds",
 				"data" : 				{
 					"blend_feathers" : [ 7 ],
@@ -621,7 +708,7 @@
 					"video_input::circle::dim" : [ 1280, 720 ],
 					"video_input::circle::ramp_time" : [ 100.0 ],
 					"video_input::circle::circle" : [ 0.5, 0.5, 0.0 ],
-					"simulation::u497014874" : [ 1 ],
+					"simulation::u901052229" : [  ],
 					"feather_plot::texture" : [ "hsflow" ],
 					"feather_plot::width" : [ 0.0 ],
 					"feather_plot::blur" : [ 0.0 ],
@@ -652,11 +739,14 @@
 					"field::bg" : [ "env_pressure" ],
 					"field::high" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 0.0, 0.0 ],
-					"field::enable" : [ 1 ]
+					"field::enable" : [ 1 ],
+					"tracers::u237042969" : [  ]
 				}
-			},
-			"12" : 			{
-				"id" : 12,
+
+			}
+,
+			"13" : 			{
+				"id" : 13,
 				"name" : "movie - water",
 				"data" : 				{
 					"blend_feathers" : [ 7 ],
@@ -680,7 +770,7 @@
 					"video_input::circle::dim" : [ 1280, 720 ],
 					"video_input::circle::ramp_time" : [ 100.0 ],
 					"video_input::circle::circle" : [ 0.5, 0.5, 0.0 ],
-					"simulation::u497014874" : [ 1 ],
+					"simulation::u901052229" : [  ],
 					"feather_plot::texture" : [ "hsflow" ],
 					"feather_plot::width" : [ 0.0 ],
 					"feather_plot::blur" : [ 0.0 ],
@@ -711,11 +801,14 @@
 					"field::bg" : [ "env_pressure" ],
 					"field::high" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 0.0, 0.0 ],
-					"field::enable" : [ 1 ]
+					"field::enable" : [ 1 ],
+					"tracers::u237042969" : [  ]
 				}
-			},
-			"13" : 			{
-				"id" : 13,
+
+			}
+,
+			"14" : 			{
+				"id" : 14,
 				"name" : "movie - city",
 				"data" : 				{
 					"blend_feathers" : [ 7 ],
@@ -739,7 +832,7 @@
 					"video_input::circle::dim" : [ 1280, 720 ],
 					"video_input::circle::ramp_time" : [ 100.0 ],
 					"video_input::circle::circle" : [ 0.5, 0.5, 0.0 ],
-					"simulation::u497014874" : [ 1 ],
+					"simulation::u901052229" : [  ],
 					"feather_plot::texture" : [ "hsflow" ],
 					"feather_plot::width" : [ 0.0 ],
 					"feather_plot::blur" : [ 0.0 ],
@@ -770,7 +863,8 @@
 					"field::bg" : [ "env_pressure" ],
 					"field::high" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 0.0, 0.0 ],
-					"field::enable" : [ 1 ]
+					"field::enable" : [ 1 ],
+					"tracers::u237042969" : [  ]
 				}
 
 			}
