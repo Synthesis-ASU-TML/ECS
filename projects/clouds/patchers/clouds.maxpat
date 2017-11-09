@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 715.0, 45.0, 850.0, 1005.0 ],
+		"rect" : [ 54.0, 45.0, 850.0, 1005.0 ],
 		"bgcolor" : [ 0.878431, 0.878431, 0.858824, 1.0 ],
 		"editing_bgcolor" : [ 0.878431, 0.878431, 0.858824, 1.0 ],
 		"bglocked" : 0,
@@ -219,7 +219,7 @@
 			}
 , 			{
 				"box" : 				{
-					"autorestore" : "clouds.vis.floor.json",
+					"autorestore" : "clouds.vis.scrim.json",
 					"id" : "obj-34",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -287,7 +287,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 819.0, 160.0, 1327.0, 856.0 ],
+						"rect" : [ 1007.0, 504.0, 252.0, 492.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -315,48 +315,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
-								"box" : 								{
-									"id" : "obj-21",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "jit_matrix", "" ],
-									"patching_rect" : [ 307.0, 495.0, 55.0, 22.0 ],
-									"style" : "",
-									"text" : "jit.matrix"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-20",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 375.0, 495.0, 54.0, 22.0 ],
-									"style" : "",
-									"text" : "plane -1"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"cols" : 5,
-									"fontface" : 0,
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"id" : "obj-18",
-									"maxclass" : "jit.cellblock",
-									"numinlets" : 2,
-									"numoutlets" : 4,
-									"outlettype" : [ "list", "", "", "" ],
-									"patching_rect" : [ 307.0, 554.0, 377.0, 246.0 ],
-									"rows" : 5
-								}
-
-							}
-, 							{
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-17",
@@ -1908,20 +1866,6 @@
 								"patchline" : 								{
 									"destination" : [ "obj-4", 0 ],
 									"source" : [ "obj-16", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-18", 0 ],
-									"source" : [ "obj-20", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-18", 0 ],
-									"source" : [ "obj-21", 0 ]
 								}
 
 							}
@@ -23923,7 +23867,7 @@
 							}
 , 							{
 								"box" : 								{
-									"autorestore" : "clouds.sim.floor.json",
+									"autorestore" : "clouds.sim.scrim.json",
 									"id" : "obj-18",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -45990,7 +45934,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1549.0, 1479.0, 512.0, 1094.0 ],
-					"text" : "/ema : {\n\t/1/velocity : [0., 0.],\n\t/1/position : [0.75, 0.5],\n\t/1/acceleration : [0., 0.],\n\t/2/velocity : [0., 0.],\n\t/2/position : [0.75, 0.5],\n\t/2/acceleration : [0., 0.],\n\t/3/velocity : [0., 0.],\n\t/3/position : [0.741481, 0.564705],\n\t/3/acceleration : [0., 0.],\n\t/4/velocity : [0., 0.],\n\t/4/position : [0.716506, 0.625],\n\t/4/acceleration : [0., 0.],\n\t/5/velocity : [0., 0.],\n\t/5/position : [0.676777, 0.676777],\n\t/5/acceleration : [0., 0.],\n\t/6/velocity : [0., 0.],\n\t/6/position : [0.625, 0.716506],\n\t/6/acceleration : [0., 0.],\n\t/7/velocity : [0., 0.],\n\t/7/position : [0.564705, 0.741481],\n\t/7/acceleration : [0., 0.],\n\t/8/velocity : [0., 0.],\n\t/8/position : [0.5, 0.75],\n\t/8/acceleration : [0., 0.],\n\t/9/velocity : [0., 0.],\n\t/9/position : [0.435295, 0.741481],\n\t/9/acceleration : [0., 0.],\n\t/10/velocity : [0., 0.],\n\t/10/position : [0.375, 0.716506],\n\t/10/acceleration : [0., 0.],\n\t/11/velocity : [0., 0.],\n\t/11/position : [0.323223, 0.676777],\n\t/11/acceleration : [0., 0.],\n\t/12/velocity : [0., 0.],\n\t/12/position : [0.283494, 0.625],\n\t/12/acceleration : [0., 0.],\n\t/13/velocity : [0., 0.],\n\t/13/position : [0.258519, 0.564705],\n\t/13/acceleration : [0., 0.],\n\t/14/velocity : [0., 0.],\n\t/14/position : [0.25, 0.5],\n\t/14/acceleration : [0., 0.],\n\t/15/velocity : [0., 0.],\n\t/15/position : [0.258519, 0.435295],\n\t/15/acceleration : [0., 0.],\n\t/16/velocity : [0., 0.],\n\t/16/position : [0.283494, 0.375],\n\t/16/acceleration : [0., 0.],\n\t/17/velocity : [0., 0.],\n\t/17/position : [0.323223, 0.323223],\n\t/17/acceleration : [0., 0.],\n\t/18/velocity : [0., 0.],\n\t/18/position : [0.375, 0.283494],\n\t/18/acceleration : [0., 0.],\n\t/19/velocity : [0., 0.],\n\t/19/position : [0.435295, 0.258519],\n\t/19/acceleration : [0., 0.],\n\t/20/velocity : [0., 0.],\n\t/20/position : [0.5, 0.25],\n\t/20/acceleration : [0., 0.],\n\t/21/velocity : [0., 0.],\n\t/21/position : [0.564705, 0.258519],\n\t/21/acceleration : [0., 0.],\n\t/22/velocity : [0., 0.],\n\t/22/position : [0.625, 0.283494],\n\t/22/acceleration : [0., 0.],\n\t/23/velocity : [0., 0.],\n\t/23/position : [0.676777, 0.323223],\n\t/23/acceleration : [0., 0.],\n\t/24/velocity : [0., 0.],\n\t/24/position : [0.716506, 0.375],\n\t/24/acceleration : [0., 0.],\n\t/25/velocity : [0., 0.],\n\t/25/position : [0.741481, 0.435295],\n\t/25/acceleration : [0., 0.],\n\t/average/acceleration : 0.,\n\t/average/velocity : 0.\n}",
+					"text" : "/ema : {\n\t/1/velocity : [0.00132537, -0.0055849],\n\t/1/position : [0.672378, 0.664971],\n\t/1/acceleration : [-0.00198096, -0.00381601],\n\t/2/velocity : [-0.000742137, 0.000655472],\n\t/2/position : [0.648803, 0.817287],\n\t/2/acceleration : [9.94802e-05, 0.000101209],\n\t/3/velocity : [0.00188237, 0.00285],\n\t/3/position : [0.768444, 0.554665],\n\t/3/acceleration : [0.000337362, 0.000550985],\n\t/4/velocity : [0.0065012, 0.00329846],\n\t/4/position : [0.750604, 0.616367],\n\t/4/acceleration : [-0.00445366, 0.00257999],\n\t/5/velocity : [-0.0084703, 0.00654107],\n\t/5/position : [0.672485, 0.702142],\n\t/5/acceleration : [0.000634074, 0.00676727],\n\t/6/velocity : [0.000224173, -0.000507832],\n\t/6/position : [0.668059, 0.70412],\n\t/6/acceleration : [0.00216949, -0.00235587],\n\t/7/velocity : [0.0033617, 0.0043605],\n\t/7/position : [0.561631, 0.76941],\n\t/7/acceleration : [0.000907719, -0.000865042],\n\t/8/velocity : [0.00110561, 0.000570297],\n\t/8/position : [0.619173, 0.879031],\n\t/8/acceleration : [-0.000195801, -0.000282288],\n\t/9/velocity : [0.000186622, 0.000149488],\n\t/9/position : [0.508675, 0.957793],\n\t/9/acceleration : [-3.20673e-05, -4.42863e-05],\n\t/10/velocity : [-0.000305608, 0.00067687],\n\t/10/position : [0.235886, 0.898719],\n\t/10/acceleration : [-0.000181094, -0.000135362],\n\t/11/velocity : [-0.000256807, -0.00073415],\n\t/11/position : [0.235852, 0.709189],\n\t/11/acceleration : [-9.85861e-05, -7.92146e-05],\n\t/12/velocity : [-0.000423744, 0.00330907],\n\t/12/position : [0.193455, 0.670921],\n\t/12/acceleration : [-0.000902236, -0.00012058],\n\t/13/velocity : [-0.000209153, 0.00179237],\n\t/13/position : [0.241068, 0.846464],\n\t/13/acceleration : [-0.000233576, 0.000661135],\n\t/14/velocity : [-0.000318199, -0.000915051],\n\t/14/position : [0.235631, 0.7082],\n\t/14/acceleration : [7.86483e-05, -3.8147e-05],\n\t/15/velocity : [-0.0082705, 0.00820047],\n\t/15/position : [0.381512, 0.479659],\n\t/15/acceleration : [-0.00070563, -0.00528145],\n\t/16/velocity : [0.00568143, 0.0164888],\n\t/16/position : [0.399307, 0.406413],\n\t/16/acceleration : [-0.00397071, 0.010153],\n\t/17/velocity : [8.19564e-07, -5.43594e-05],\n\t/17/position : [0.23862, 0.81998],\n\t/17/acceleration : [-9.045e-06, 5.66244e-06],\n\t/18/velocity : [-0.000481486, 0.000599444],\n\t/18/position : [0.233541, 0.8523],\n\t/18/acceleration : [2.65241e-06, -5.1856e-06],\n\t/19/velocity : [-0.00214739, 0.00215006],\n\t/19/position : [0.237197, 0.773284],\n\t/19/acceleration : [-0.000176623, -0.000298262],\n\t/20/velocity : [-0.000734568, 0.000652492],\n\t/20/position : [0.648794, 0.817298],\n\t/20/acceleration : [0.000103533, 9.17315e-05],\n\t/21/velocity : [0.00379336, -0.00328571],\n\t/21/position : [0.700737, 0.627424],\n\t/21/acceleration : [-0.000745535, -0.000362456],\n\t/22/velocity : [-0.00104195, -0.000872552],\n\t/22/position : [0.654397, 0.711534],\n\t/22/acceleration : [-0.000625312, 0.000356376],\n\t/23/velocity : [-0.00149703, 0.000554502],\n\t/23/position : [0.667861, 0.746578],\n\t/23/acceleration : [-8.2612e-05, 7.48038e-05],\n\t/24/velocity : [0.000100613, 0.0112634],\n\t/24/position : [0.764225, 0.656718],\n\t/24/acceleration : [0.0019694, 4.14848e-05],\n\t/25/velocity : [0.00115603, -0.000208378],\n\t/25/position : [0.670329, 0.671853],\n\t/25/acceleration : [-0.000259221, 0.00129586],\n\t/average/acceleration : 0.00179257,\n\t/average/velocity : 0.00390623\n}",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -70433,7 +70377,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "clouds.sim.floor.json",
+				"name" : "clouds.sim.scrim.json",
 				"bootpath" : "~/Dropbox/Development/github/ecs/projects/clouds/data",
 				"patcherrelativepath" : "../data",
 				"type" : "JSON",
@@ -70468,7 +70412,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "clouds.vis.floor.json",
+				"name" : "clouds.vis.scrim.json",
 				"bootpath" : "~/Dropbox/Development/github/ecs/projects/clouds/data",
 				"patcherrelativepath" : "../data",
 				"type" : "JSON",
