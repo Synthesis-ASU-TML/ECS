@@ -38,6 +38,33 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-14",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 10.0, 272.0, 29.5, 22.0 ],
+					"presentation_rect" : [ 134.0, 173.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "+ 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 394.0, 272.0, 29.5, 22.0 ],
+					"style" : "",
+					"text" : "+ 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"angle" : 270.0,
 					"border" : 1,
 					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
@@ -352,7 +379,7 @@
 ,
 					"style" : "",
 					"text" : "pattrstorage @greedy 1",
-					"varname" : "u966000409"
+					"varname" : "u559040211"
 				}
 
 			}
@@ -1092,7 +1119,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 50.0, 100.0, 430.0, 49.0 ],
 									"style" : "",
-									"text" : "86 73 68 69 79 32 79 85 84 80 85 84 32 82 79 85 84 73 78 71 58, 48 32 50, 49 32 51, 50 32 49, 51 32 49 48, 52 32 52, 53 32 54, 54 32 49 57, 55 32 52, 56 32 52, 57 32 50, 49 48 32 49, 49 49 32 52, 49 50 32 51, 49 51 32 54, 49 52 32 50, 49 53 32 49 57, 49 54 32 49 57, 49 55 32 49 57, 49 56 32 49 57, 49 57 32 57, 10"
+									"text" : "86 73 68 69 79 32 79 85 84 80 85 84 32 82 79 85 84 73 78 71 58, 48 32 50, 49 32 51, 50 32 49, 51 32 49 48, 52 32 52, 53 32 48, 54 32 49 57, 55 32 52, 56 32 52, 57 32 50, 49 48 32 51, 49 49 32 52, 49 50 32 51, 49 51 32 54, 49 52 32 50, 49 53 32 49 57, 49 54 32 49 57, 49 55 32 49 57, 49 56 32 49 57, 49 57 32 57, 10"
 								}
 
 							}
@@ -1587,7 +1614,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-68",
-					"items" : [ "Laminar", ",", "Clouds", ",", "Laminar", "for", "pressure", "demo", ",", "Laminar", "for", "pressure", "demo", "with", "wind", ",", "Laminar", "for", "pressure", "demo", "with", "wind", "and", "accumulated", "pressure" ],
+					"items" : [ "Laminar", ",", "Clouds", ",", "Laminar", "for", "pressure", "demo", ",", "Laminar", "for", "pressure", "demo", "with", "wind", ",", "Laminar", "for", "pressure", "demo", "with", "wind", "and", "accumulated", "pressure", ",", "disabled" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1604,7 +1631,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-67",
-					"items" : [ "Clouds", "above", ",", "Clouds", "above", "with", "wind" ],
+					"items" : [ "Clouds", "above", ",", "Clouds", "above", "with", "wind", ",", "disabled" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1846,40 +1873,6 @@
 			}
 , 			{
 				"box" : 				{
-					"coll_data" : 					{
-						"count" : 3,
-						"data" : [ 							{
-								"key" : 1,
-								"value" : [ 3 ]
-							}
-, 							{
-								"key" : 2,
-								"value" : [ 2 ]
-							}
-, 							{
-								"key" : 3,
-								"value" : [ 4 ]
-							}
- ]
-					}
-,
-					"id" : "obj-48",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 394.0, 272.0, 50.5, 22.0 ],
-					"saved_object_attributes" : 					{
-						"embed" : 1
-					}
-,
-					"style" : "",
-					"text" : "coll"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-47",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -1940,40 +1933,6 @@
 					"patching_rect" : [ 10.0, 374.0, 126.0, 22.0 ],
 					"style" : "",
 					"text" : "o.prepend /filterbanks"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"coll_data" : 					{
-						"count" : 3,
-						"data" : [ 							{
-								"key" : 1,
-								"value" : [ 1 ]
-							}
-, 							{
-								"key" : 2,
-								"value" : [ 6 ]
-							}
-, 							{
-								"key" : 3,
-								"value" : [ 5 ]
-							}
- ]
-					}
-,
-					"id" : "obj-42",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 10.0, 272.0, 50.5, 22.0 ],
-					"saved_object_attributes" : 					{
-						"embed" : 1
-					}
-,
-					"style" : "",
-					"text" : "coll"
 				}
 
 			}
@@ -2061,7 +2020,7 @@
 						"lights" : [ 5 ],
 						"serra" : [ 0 ],
 						"serra_ex4" : [ 0 ],
-						"sound_floor" : [ 3 ],
+						"sound_floor" : [ 5 ],
 						"sound_floor_volume" : [ 0 ],
 						"sound_scrim" : [ 3 ],
 						"sound_scrim[1]" : [ 0 ],
@@ -2071,7 +2030,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u656001762"
+					"varname" : "u150041557"
 				}
 
 			}
@@ -2304,7 +2263,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-18",
-					"items" : [ "Clouds", ",", "Pressure", ",", "Velocity", ",", "Off" ],
+					"items" : [ "Scrim", "clouds", ",", "Floor", "pressure", ",", "Floor", "clouds", ",", "Off", ",", "Scrim", "pressure", ",", "Floor", "velocity", "image" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -2321,7 +2280,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-17",
-					"items" : [ "Clouds", ",", "Pressure", ",", "Velocity", ",", "Off" ],
+					"items" : [ "Scrim", "clouds", ",", "Floor", "pressure", ",", "Floor", "clouds", ",", "Off", ",", "Scrim", "pressure", ",", "Floor", "velocity", "image" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -2481,6 +2440,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-100", 0 ],
 					"source" : [ "obj-107", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-49", 0 ],
+					"source" : [ "obj-11", 0 ]
 				}
 
 			}
@@ -2741,6 +2707,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-41", 0 ],
+					"source" : [ "obj-14", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-154", 0 ],
 					"source" : [ "obj-140", 0 ]
 				}
@@ -2913,14 +2886,14 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-42", 0 ],
+					"destination" : [ "obj-14", 0 ],
 					"source" : [ "obj-17", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-48", 0 ],
+					"destination" : [ "obj-11", 0 ],
 					"source" : [ "obj-18", 0 ]
 				}
 
@@ -3020,13 +2993,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-41", 0 ],
-					"source" : [ "obj-42", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-44", 0 ],
 					"source" : [ "obj-43", 0 ]
 				}
@@ -3050,13 +3016,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-50", 0 ],
 					"source" : [ "obj-47", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-49", 0 ],
-					"source" : [ "obj-48", 0 ]
 				}
 
 			}
@@ -3407,35 +3366,35 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "sc.net.send.maxpat",
-				"bootpath" : "~/Dropbox/Development/github/SC/patchers/utilities",
+				"bootpath" : "~/synthesis-git/SC/patchers/utilities",
 				"patcherrelativepath" : "../../../SC/patchers/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "states.json",
-				"bootpath" : "~/Dropbox/Development/github/ecs/projects/clouds/data",
+				"bootpath" : "~/synthesis-git/ECS/projects/clouds/data",
 				"patcherrelativepath" : "../../projects/clouds/data",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ecs.pattr.maxpat",
-				"bootpath" : "~/Dropbox/Development/github/ecs/patchers/utilities",
+				"bootpath" : "~/synthesis-git/ECS/patchers/utilities",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "dest-control20x20.maxpat",
-				"bootpath" : "~/Dropbox/Development/github/SC/dev/video/videohub-control/patchers",
+				"bootpath" : "~/synthesis-git/SC/dev/video/videohub-control/patchers",
 				"patcherrelativepath" : "../../../SC/dev/video/videohub-control/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "rot-comment.js",
-				"bootpath" : "~/Dropbox/Development/github/SC/dev/video/videohub-control/code",
+				"bootpath" : "~/synthesis-git/SC/dev/video/videohub-control/code",
 				"patcherrelativepath" : "../../../SC/dev/video/videohub-control/code",
 				"type" : "TEXT",
 				"implicit" : 1
