@@ -269,7 +269,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 277.0, 553.0, 98.0, 20.0 ],
+					"patching_rect" : [ 585.0, 505.0, 174.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 245.0, 122.0, 173.0, 20.0 ],
 					"style" : "",
@@ -301,7 +301,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 109.0, 554.0, 75.0, 20.0 ],
+					"patching_rect" : [ 394.0, 505.0, 174.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 245.0, 76.0, 173.0, 20.0 ],
 					"style" : "",
@@ -1957,44 +1957,42 @@
 			}
 , 			{
 				"box" : 				{
-					"coll_data" : 					{
-						"count" : 0,
-						"data" : [  ]
-					}
-,
-					"id" : "obj-54",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 201.0, 553.0, 50.5, 22.0 ],
-					"saved_object_attributes" : 					{
-						"embed" : 1
-					}
-,
-					"style" : "",
-					"text" : "coll"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-53",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 10.0, 577.0, 86.0, 22.0 ],
+					"patching_rect" : [ 10.0, 577.0, 118.0, 22.0 ],
 					"style" : "",
-					"text" : "o.pack /preset"
+					"text" : "o.pack /video/preset"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"coll_data" : 					{
-						"count" : 0,
-						"data" : [  ]
+						"count" : 5,
+						"data" : [ 							{
+								"key" : 0,
+								"value" : [ 1012 ]
+							}
+, 							{
+								"key" : 1,
+								"value" : [ 611 ]
+							}
+, 							{
+								"key" : 2,
+								"value" : [ 686 ]
+							}
+, 							{
+								"key" : 3,
+								"value" : [ 566 ]
+							}
+, 							{
+								"key" : 4,
+								"value" : [ 682 ]
+							}
+ ]
 					}
 ,
 					"id" : "obj-52",
@@ -2132,8 +2130,32 @@
 , 			{
 				"box" : 				{
 					"coll_data" : 					{
-						"count" : 0,
-						"data" : [  ]
+						"count" : 6,
+						"data" : [ 							{
+								"key" : 0,
+								"value" : [ 1 ]
+							}
+, 							{
+								"key" : 1,
+								"value" : [ 2 ]
+							}
+, 							{
+								"key" : 2,
+								"value" : [ 9 ]
+							}
+, 							{
+								"key" : 3,
+								"value" : [ 7 ]
+							}
+, 							{
+								"key" : 4,
+								"value" : [ 8 ]
+							}
+, 							{
+								"key" : 5,
+								"value" : [ 6 ]
+							}
+ ]
 					}
 ,
 					"id" : "obj-39",
@@ -2141,7 +2163,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 10.0, 97.0, 50.5, 22.0 ],
+					"patching_rect" : [ 10.0, 83.0, 50.5, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 1
 					}
@@ -2158,7 +2180,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 10.0, 138.0, 86.0, 22.0 ],
+					"patching_rect" : [ 10.0, 107.0, 86.0, 22.0 ],
 					"style" : "",
 					"text" : "o.pack /preset"
 				}
@@ -2170,7 +2192,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 10.0, 162.0, 80.0, 22.0 ],
+					"patching_rect" : [ 10.0, 131.0, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "s #0-netsend"
 				}
@@ -3169,7 +3191,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-54", 0 ],
+					"destination" : [ "obj-56", 0 ],
 					"source" : [ "obj-24", 0 ]
 				}
 
@@ -3248,6 +3270,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-37", 0 ],
+					"source" : [ "obj-39", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-45", 0 ],
 					"source" : [ "obj-41", 0 ]
 				}
@@ -3306,13 +3335,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-51", 0 ],
 					"source" : [ "obj-53", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-56", 0 ],
-					"source" : [ "obj-54", 0 ]
 				}
 
 			}
