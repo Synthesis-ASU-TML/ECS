@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 880.0, 109.0, 1026.0, 960.0 ],
+		"rect" : [ 1199.0, 77.0, 1024.0, 876.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -420,7 +420,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 250.0, 106.0, 50.0, 22.0 ],
 					"style" : "",
-					"text" : "0"
+					"text" : "5"
 				}
 
 			}
@@ -434,7 +434,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 149.0, 122.0, 50.0, 76.0 ],
 					"style" : "",
-					"text" : "FullPacket 36 105553181615088"
+					"text" : "FullPacket 36 107202421775536"
 				}
 
 			}
@@ -1137,7 +1137,7 @@
 ,
 					"style" : "",
 					"text" : "pattrstorage @greedy 1",
-					"varname" : "u331038787"
+					"varname" : "u719038929"
 				}
 
 			}
@@ -1897,7 +1897,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 50.0, 100.0, 430.0, 49.0 ],
 									"style" : "",
-									"text" : "86 73 68 69 79 32 79 85 84 80 85 84 32 82 79 85 84 73 78 71 58, 48 32 50, 49 32 51, 50 32 49, 51 32 49 48, 52 32 52, 53 32 54, 54 32 49 57, 55 32 52, 56 32 52, 57 32 49 56, 49 48 32 49 56, 49 49 32 52, 49 50 32 51, 49 51 32 54, 49 52 32 50, 49 53 32 49 57, 49 54 32 49 57, 49 55 32 49 57, 49 56 32 49 57, 49 57 32 57, 10"
+									"text" : "86 73 68 69 79 32 79 85 84 80 85 84 32 82 79 85 84 73 78 71 58, 48 32 50, 49 32 51, 50 32 49, 51 32 48, 52 32 52, 53 32 48, 54 32 49 57, 55 32 52, 56 32 52, 57 32 50, 49 48 32 51, 49 49 32 52, 49 50 32 51, 49 51 32 54, 49 52 32 50, 49 53 32 49 57, 49 54 32 49 57, 49 55 32 49 57, 49 56 32 49 57, 49 57 32 57, 10"
 								}
 
 							}
@@ -2825,25 +2825,25 @@
 						"ema_floor_clear" : [ -1 ],
 						"ema_floor_reset" : [ -1 ],
 						"ema_floor_sim" : [ 2 ],
-						"ema_floor_vis" : [ 9 ],
+						"ema_floor_vis" : [ 1 ],
 						"ema_scrim_alpha" : [ 0.0 ],
 						"ema_scrim_clear" : [ -1 ],
 						"ema_scrim_reset" : [ -1 ],
 						"ema_scrim_sim" : [ 0 ],
-						"ema_scrim_vis" : [ 10 ],
+						"ema_scrim_vis" : [ 1 ],
 						"ex4_blackout" : [ 1 ],
 						"indiv_dest" : [ 0 ],
 						"indiv_source" : [ 0 ],
-						"lights" : [ 0 ],
-						"number[1]" : [ 0 ],
-						"number[2]" : [ 0 ],
+						"lights" : [ 5 ],
+						"number[1]" : [ 10 ],
+						"number[2]" : [ 10 ],
 						"serra" : [ 0 ],
 						"serra_ex4" : [ 5 ],
-						"sound_floor" : [ 3 ],
+						"sound_floor" : [ 10 ],
 						"sound_floor_volume" : [ 0 ],
-						"sound_scrim" : [ 3 ],
-						"sound_scrim[1]" : [ 0 ],
-						"sound_scrim[2]" : [ 1 ],
+						"sound_scrim" : [ 0 ],
+						"sound_scrim[1]" : [ 6 ],
+						"sound_scrim[2]" : [ 0 ],
 						"sound_scrim_volume" : [ 0 ],
 						"toggle[1]" : [ 0 ],
 						"toggle[2]" : [ 0 ]
@@ -2851,7 +2851,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u512040141"
+					"varname" : "u403040330"
 				}
 
 			}
@@ -3164,7 +3164,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-18",
-					"items" : [ "Scrim", "clouds", ",", "Floor", "pressure", ",", "Floor", "clouds", ",", "Off", ",", "Scrim", "Pressure", ",", "Floor", "Velocity", "Image", ",", "ex4", "vectors", ",", "ex4", "freezing", ",", "ex4", "fluids", ",", "ex4", "scatter", "gather" ],
+					"items" : [ "Scrim", "clouds", ",", "Floor", "pressure", ",", "Floor", "clouds", ",", "Off", ",", "Scrim", "Pressure", ",", "Floor", "Velocity", "Image", ",", "ex4", "vectors", ",", "ex4", "freezing", ",", "ex4", "fluids", ",", "ex4", "scatter", "gather", ",", "floor", "velocity", "flow" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -3191,7 +3191,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-17",
-					"items" : [ "Scrim", "clouds", ",", "Floor", "pressure", ",", "Floor", "clouds", ",", "Off", ",", "Scrim", "Pressure", ",", "Floor", "Velocity", "Image" ],
+					"items" : [ "Scrim", "clouds", ",", "Floor", "pressure", ",", "Floor", "clouds", ",", "Off", ",", "Scrim", "Pressure", ",", "Floor", "Velocity", "Image", ",", "ex4", "vectors", ",", "ex4", "freezing", ",", "ex4", "fluids", ",", "ex4", "scatter", "gather", ",", "floor", "velocity", "flow" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -3326,7 +3326,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 973.0, 911.0, 190.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 55.5, 1248.75, 154.0, 27.0 ],
+					"presentation_rect" : [ 55.5, 1248.75, 144.0, 27.0 ],
 					"style" : "",
 					"text" : "Movies: City",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -3374,7 +3374,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 973.0, 846.0, 199.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 473.5, 1080.4375, 189.0, 27.0 ],
+					"presentation_rect" : [ 473.5, 1080.4375, 207.0, 27.0 ],
 					"style" : "",
 					"text" : "EMA Velocity Image",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -3406,7 +3406,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 973.0, 802.0, 248.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 473.5, 987.0625, 172.5, 27.0 ],
+					"presentation_rect" : [ 473.5, 987.0625, 203.0, 27.0 ],
 					"style" : "",
 					"text" : "EMA Pressure",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -3422,7 +3422,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 973.0, 775.0, 276.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 473.5, 940.875, 161.0, 27.0 ],
+					"presentation_rect" : [ 473.5, 940.875, 203.0, 27.0 ],
 					"style" : "",
 					"text" : "EMA Clouds",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -3438,7 +3438,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 973.0, 753.0, 120.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 237.5, 1172.3125, 131.0, 27.0 ],
+					"presentation_rect" : [ 237.5, 1172.3125, 197.0, 27.0 ],
 					"style" : "",
 					"text" : "ex4 River",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -3454,7 +3454,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 794.0, 933.0, 301.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 237.5, 1125.25, 186.0, 27.0 ],
+					"presentation_rect" : [ 237.5, 1125.25, 197.0, 27.0 ],
 					"style" : "",
 					"text" : "ex4 Scatter gather",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -3470,7 +3470,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 794.0, 911.0, 146.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 237.5, 1079.0625, 113.0, 27.0 ],
+					"presentation_rect" : [ 237.5, 1079.0625, 197.0, 27.0 ],
 					"style" : "",
 					"text" : "ex4 Freezing",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -3502,7 +3502,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 794.0, 865.0, 194.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 237.5, 986.6875, 91.0, 27.0 ],
+					"presentation_rect" : [ 237.5, 986.6875, 197.0, 27.0 ],
 					"style" : "",
 					"text" : "ex4 Fluids",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -3518,7 +3518,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 794.0, 846.0, 255.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 237.5, 940.5, 103.0, 27.0 ],
+					"presentation_rect" : [ 237.5, 940.5, 197.0, 27.0 ],
 					"style" : "",
 					"text" : "ex4 Vectors",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -3534,7 +3534,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 794.0, 824.0, 196.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 55.5, 1094.5625, 87.0, 27.0 ],
+					"presentation_rect" : [ 55.5, 1094.5625, 144.0, 27.0 ],
 					"style" : "",
 					"text" : "Serra day",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -3550,7 +3550,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 794.0, 802.0, 251.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 55.5, 1048.375, 97.0, 27.0 ],
+					"presentation_rect" : [ 55.5, 1048.375, 144.0, 27.0 ],
 					"style" : "",
 					"text" : "Serra night",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -3566,7 +3566,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 794.0, 780.0, 179.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 55.5, 987.1875, 83.0, 27.0 ],
+					"presentation_rect" : [ 55.5, 987.1875, 144.0, 27.0 ],
 					"style" : "",
 					"text" : "Migration",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -3582,7 +3582,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 794.0, 758.0, 217.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 55.5, 941.0, 217.0, 27.0 ],
+					"presentation_rect" : [ 55.5, 941.0, 144.0, 27.0 ],
 					"style" : "",
 					"text" : "Roundtable",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
@@ -5335,30 +5335,30 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-119" : [ "toggle", "toggle", 0 ],
+			"obj-21" : [ "serra_ex4", "serra_ex4", 0 ],
+			"obj-2" : [ "sound_scrim[1]", "sound_scrim[1]", 0 ],
+			"obj-112" : [ "number", "number", 0 ],
 			"obj-28" : [ "ema_floor_vis", "ema_floor_vis", 0 ],
 			"obj-26" : [ "ema_scrim_vis", "ema_scrim_vis", 0 ],
-			"obj-21" : [ "serra_ex4", "serra_ex4", 0 ],
 			"obj-159" : [ "number[1]", "number[1]", 0 ],
-			"obj-4" : [ "sound_scrim[2]", "sound_scrim[2]", 0 ],
-			"obj-70" : [ "indiv_source", "indiv_source", 0 ],
 			"obj-17" : [ "sound_scrim", "sound_scrim", 0 ],
-			"obj-34" : [ "ema_floor_alpha", "ema_floor_alpha", 0 ],
+			"obj-11" : [ "toggle[1]", "toggle[1]", 0 ],
+			"obj-70" : [ "indiv_source", "indiv_source", 0 ],
+			"obj-18" : [ "sound_floor", "sound_floor", 0 ],
+			"obj-4" : [ "sound_scrim[2]", "sound_scrim[2]", 0 ],
 			"obj-24" : [ "serra", "serra", 0 ],
+			"obj-34" : [ "ema_floor_alpha", "ema_floor_alpha", 0 ],
 			"obj-33" : [ "ema_scrim_alpha", "ema_scrim_alpha", 0 ],
 			"obj-168" : [ "ex4_blackout", "ex4_blackout", 0 ],
-			"obj-18" : [ "sound_floor", "sound_floor", 0 ],
-			"obj-32" : [ "sound_scrim_volume", "sound_scrim_volume", 0 ],
+			"obj-270" : [ "number[2]", "number[1]", 0 ],
 			"obj-271" : [ "toggle[2]", "toggle[1]", 0 ],
 			"obj-68" : [ "ema_floor_sim", "ema_floor_sim", 0 ],
 			"obj-67" : [ "ema_scrim_sim", "ema_scrim_sim", 0 ],
 			"obj-13" : [ "lights", "lights", 0 ],
-			"obj-2" : [ "sound_scrim[1]", "sound_scrim[1]", 0 ],
-			"obj-119" : [ "toggle", "toggle", 0 ],
-			"obj-112" : [ "number", "number", 0 ],
-			"obj-86" : [ "indiv_dest", "indiv_dest", 0 ],
-			"obj-11" : [ "toggle[1]", "toggle[1]", 0 ],
-			"obj-270" : [ "number[2]", "number[1]", 0 ],
-			"obj-29" : [ "sound_floor_volume", "sound_floor_volume", 0 ]
+			"obj-29" : [ "sound_floor_volume", "sound_floor_volume", 0 ],
+			"obj-32" : [ "sound_scrim_volume", "sound_scrim_volume", 0 ],
+			"obj-86" : [ "indiv_dest", "indiv_dest", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
