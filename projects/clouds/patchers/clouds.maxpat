@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 746.0, 66.0, 858.0, 1014.0 ],
+		"rect" : [ 521.0, 62.0, 1035.0, 1014.0 ],
 		"bgcolor" : [ 0.878431, 0.878431, 0.858824, 1.0 ],
 		"editing_bgcolor" : [ 0.878431, 0.878431, 0.858824, 1.0 ],
 		"bglocked" : 0,
@@ -63,7 +63,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 181.5, 59.000031, 152.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 124.500015, 245.0, 160.0, 22.0 ],
+					"presentation_rect" : [ 102.500015, 245.0, 182.0, 22.0 ],
 					"style" : "",
 					"text_width" : 46.499985
 				}
@@ -84,7 +84,7 @@
 ,
 					"style" : "ecs-onload",
 					"text" : "pattr @bindto video_input::dim @invisible 1",
-					"varname" : "u409102771"
+					"varname" : "u619101423"
 				}
 
 			}
@@ -96,14 +96,14 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 36.0, 279.0, 295.0, 22.0 ],
-					"restore" : [ 640, 480 ],
+					"restore" : [ 1280, 720 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0
 					}
 ,
 					"style" : "ecs-onload",
 					"text" : "pattr @bindto simulation::simulation::dim @invisible 1",
-					"varname" : "u118056060"
+					"varname" : "u418101413"
 				}
 
 			}
@@ -133,7 +133,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 486.0, 978.0, 169.0, 22.0 ],
 					"style" : "",
-					"varname" : "blend_particles[1]"
+					"varname" : "blend_tracers"
 				}
 
 			}
@@ -263,7 +263,7 @@
 ,
 					"style" : "ecs-onload",
 					"text" : "pattr @bindto simulation::simulation::wind_magnitude @invisible 1",
-					"varname" : "u842056051"
+					"varname" : "u991101431"
 				}
 
 			}
@@ -375,7 +375,7 @@
 ,
 					"style" : "ecs-onload",
 					"text" : "pattr @bindto simulation::simulation::vorticity_confinement @invisible 1",
-					"varname" : "u776056031"
+					"varname" : "u168101412"
 				}
 
 			}
@@ -1009,18 +1009,19 @@
 					"restore" : 					{
 						"blend_feathers" : [ 7 ],
 						"blend_field" : [ 7 ],
-						"blend_particles" : [ 7 ],
-						"blend_particles[1]" : [ 7 ]
+						"blend_particles" : [ 6 ],
+						"blend_tracers" : [ 7 ]
 					}
 ,
 					"style" : "ecs-onload",
 					"text" : "autopattr",
-					"varname" : "u712199579"
+					"varname" : "u634233145"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"autorestore" : "clouds.vis.scrim.json",
 					"id" : "obj-34",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -1028,9 +1029,9 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 5.0, 1620.0, 224.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 43, 839, 489, 1023 ],
+						"client_rect" : [ 43, 162, 489, 1023 ],
 						"parameter_enable" : 0,
-						"storage_rect" : [ 766, 44, 1220, 302 ]
+						"storage_rect" : [ 74, 130, 1226, 1075 ]
 					}
 ,
 					"style" : "ecs-onload",
@@ -1143,7 +1144,7 @@
 ,
 									"style" : "",
 									"text" : "pattr @bindto tracers::duration @invisible 1 @initial 1",
-									"varname" : "u474117332"
+									"varname" : "u568066777"
 								}
 
 							}
@@ -1162,7 +1163,7 @@
 ,
 									"style" : "",
 									"text" : "pattr @bindto tracers::force @invisible 1 @initial 0.1",
-									"varname" : "u404117335"
+									"varname" : "u398066749"
 								}
 
 							}
@@ -1181,7 +1182,7 @@
 ,
 									"style" : "",
 									"text" : "pattr @bindto tracers::blur @invisible 1 @initial 0.05",
-									"varname" : "u928038504"
+									"varname" : "u754066753"
 								}
 
 							}
@@ -1200,7 +1201,7 @@
 ,
 									"style" : "",
 									"text" : "pattr @bindto tracers::slide @invisible 1 @initial 0 0.95",
-									"varname" : "u960038851"
+									"varname" : "u671064244"
 								}
 
 							}
@@ -1219,7 +1220,7 @@
 ,
 									"style" : "",
 									"text" : "pattr @bindto tracers::radius @invisible 1 @initial 0.25",
-									"varname" : "u296117561"
+									"varname" : "u697065512"
 								}
 
 							}
@@ -1238,7 +1239,7 @@
 ,
 									"style" : "",
 									"text" : "pattr @bindto tracers::ecs.colorpicker:color @invisible 1 @initial 1. 1. 1. 0.",
-									"varname" : "u792117559"
+									"varname" : "u930151141"
 								}
 
 							}
@@ -1257,7 +1258,7 @@
 ,
 									"style" : "",
 									"text" : "pattr @bindto tracers::dim @invisible 1 @initial 5 5",
-									"varname" : "u515117330"
+									"varname" : "u648151144"
 								}
 
 							}
@@ -1270,14 +1271,14 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 190.333359, 204.0, 75.0, 22.0 ],
 									"saved_object_attributes" : 									{
-										"client_rect" : [ 43, 839, 489, 1023 ],
+										"client_rect" : [ 43, 162, 489, 1023 ],
 										"parameter_enable" : 0,
-										"storage_rect" : [ 766, 44, 1220, 302 ]
+										"storage_rect" : [ 74, 130, 1226, 1075 ]
 									}
 ,
 									"style" : "",
 									"text" : "pattrstorage",
-									"varname" : "u969038579"
+									"varname" : "u109065498"
 								}
 
 							}
@@ -24434,7 +24435,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 214.0, 122.0, 1153.0, 935.0 ],
+						"rect" : [ 556.0, 111.0, 1153.0, 935.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -24498,12 +24499,13 @@
 									"patching_rect" : [ 921.0, 258.0, 59.0, 22.0 ],
 									"style" : "ecs-onload",
 									"text" : "autopattr",
-									"varname" : "u071199511"
+									"varname" : "u671233078"
 								}
 
 							}
 , 							{
 								"box" : 								{
+									"autorestore" : "clouds.sim.scrim.json",
 									"id" : "obj-18",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -24511,14 +24513,14 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 709.0, 258.0, 155.0, 22.0 ],
 									"saved_object_attributes" : 									{
-										"client_rect" : [ 43, 839, 489, 1023 ],
+										"client_rect" : [ 43, 162, 489, 1023 ],
 										"parameter_enable" : 0,
-										"storage_rect" : [ 766, 44, 1220, 302 ]
+										"storage_rect" : [ 74, 130, 1226, 1075 ]
 									}
 ,
 									"style" : "ecs-onload",
 									"text" : "pattrstorage @savemode 0",
-									"varname" : "u312175042"
+									"varname" : "u690208609"
 								}
 
 							}
@@ -46405,7 +46407,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 517.5, 2520.050049, 25.0, 20.0 ],
+					"patching_rect" : [ 517.5, 2520.050049, 24.330078, 20.0 ],
 					"style" : "basic"
 				}
 
@@ -46452,7 +46454,7 @@
 ,
 					"style" : "ecs-onload",
 					"text" : "pattr @bindto simulation::simulation::dt @invisible 1",
-					"varname" : "u725191770"
+					"varname" : "u081225337"
 				}
 
 			}
@@ -46498,7 +46500,7 @@
 ,
 					"style" : "ecs-onload",
 					"text" : "pattr @bindto field::alpha @invisible 1",
-					"varname" : "u139191773"
+					"varname" : "u182225340"
 				}
 
 			}
@@ -46929,7 +46931,7 @@
 ,
 					"style" : "ecs-onload",
 					"text" : "pattr @bindto simulation::simulation::events @invisible 1",
-					"varname" : "u791191782"
+					"varname" : "u727225349"
 				}
 
 			}
@@ -46949,7 +46951,7 @@
 ,
 					"style" : "ecs-onload",
 					"text" : "pattr @bindto simulation::simulation::dtfl @invisible 1",
-					"varname" : "u195191784"
+					"varname" : "u154225351"
 				}
 
 			}
@@ -46962,14 +46964,14 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1133.5, 1349.0, 213.5, 35.0 ],
-					"restore" : [ 30.0 ],
+					"restore" : [ 80.0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0
 					}
 ,
 					"style" : "ecs-onload",
 					"text" : "pattr @bindto simulation::simulation::dx @invisible 1",
-					"varname" : "u499191786"
+					"varname" : "u772225353"
 				}
 
 			}
@@ -69386,7 +69388,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-148", 0 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-12", 0 ]
 				}
 
@@ -69394,7 +69396,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-37", 0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-12", 0 ]
 				}
 
@@ -69794,7 +69796,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-148", 0 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-39", 0 ]
 				}
 
@@ -69802,7 +69804,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-37", 0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-39", 0 ]
 				}
 
@@ -71000,6 +71002,13 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "clouds.sim.scrim.json",
+				"bootpath" : "~/synthesis-git/ecs/projects/clouds/data",
+				"patcherrelativepath" : "../data",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "ecs.vis.feather_plot.maxpat",
 				"bootpath" : "~/synthesis-git/ecs/patchers/vis",
 				"patcherrelativepath" : "../../../patchers/vis",
@@ -71024,6 +71033,13 @@
 				"name" : "ecs.vis.show_field.maxpat",
 				"bootpath" : "~/synthesis-git/ecs/patchers/vis",
 				"patcherrelativepath" : "../../../patchers/vis",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "clouds.vis.scrim.json",
+				"bootpath" : "~/synthesis-git/ecs/projects/clouds/data",
+				"patcherrelativepath" : "../data",
 				"type" : "JSON",
 				"implicit" : 1
 			}

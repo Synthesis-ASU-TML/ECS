@@ -9,12 +9,14 @@
 					"blend_feathers" : [ 7 ],
 					"blend_field" : [ 7 ],
 					"blend_particles" : [ 6 ],
+					"blend_particles[1]" : [ 7 ],
 					"video_input::texture" : [ "camera" ],
 					"video_input::mirror" : [ 1 ],
 					"video_input::flip" : [ 1 ],
 					"video_input::invert" : [ 0 ],
 					"video_input::mode" : [ 0 ],
 					"video_input::enable" : [ 1 ],
+					"video_input::dim" : [ 1280, 720 ],
 					"video_input::syphon::multiview_segment" : [ 1 ],
 					"video_input::syphon::multiview_on" : [ 0 ],
 					"video_input::syphon::cam_syphon_server" : [ 0 ],
@@ -24,10 +26,9 @@
 					"video_input::movie::dim" : [ 1280, 720 ],
 					"video_input::movie::rate" : [ 1.0 ],
 					"video_input::movie::moviefile" : [  ],
-					"video_input::circle::dim" : [ 1280, 720 ],
 					"video_input::circle::ramp_time" : [ 100.0 ],
-					"video_input::circle::circle" : [ 0.5, 0.5, 0.0 ],
-					"simulation::u832013448" : [ 1 ],
+					"video_input::circle::circle" : [ 0.704166, 1.0, 0.0 ],
+					"simulation::u690208609" : [ 1 ],
 					"feather_plot::texture" : [ "velocity" ],
 					"feather_plot::width" : [ 0.0025 ],
 					"feather_plot::blur" : [ 0.0 ],
@@ -43,12 +44,12 @@
 					"particles::point_size" : [ 1.0 ],
 					"particles::blur" : [ 0.01 ],
 					"particles::dim" : [ 300.0, 300.0 ],
-					"particles::slide" : [ 0.0, 0.9 ],
+					"particles::slide" : [ 0.5, 0.9 ],
 					"particles::dt" : [ 0.9 ],
 					"particles::dx" : [ 80.0 ],
 					"particles::enable" : [ 1 ],
 					"particles::radius" : [ -1.0 ],
-					"particles::threshold" : [  ],
+					"particles::threshold" : [ 0.0 ],
 					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 0.67 ],
 					"field::source_vars" : [ 0, 1, 2, 3 ],
 					"field::contrast" : [ 0.31, 0.19, 1.0, 1.0 ],
@@ -59,7 +60,8 @@
 					"field::high" : [ 0.002, 1.0, 439.0, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 251.1, 0.0 ],
 					"field::enable" : [ 1 ],
-					"tracers::u720004188" : [ -1 ]
+					"field::colormap" : [ 36 ],
+					"tracers::u109065498" : [ -1 ]
 				}
 
 			}
@@ -71,12 +73,14 @@
 					"blend_feathers" : [ 0 ],
 					"blend_field" : [ 0 ],
 					"blend_particles" : [ 1 ],
+					"blend_particles[1]" : [  ],
 					"video_input::texture" : [ "camera" ],
 					"video_input::mirror" : [ 1 ],
 					"video_input::flip" : [ 1 ],
 					"video_input::invert" : [ 0 ],
 					"video_input::mode" : [ 0 ],
 					"video_input::enable" : [ 1 ],
+					"video_input::dim" : [  ],
 					"video_input::syphon::multiview_segment" : [ 1 ],
 					"video_input::syphon::multiview_on" : [ 0 ],
 					"video_input::syphon::cam_syphon_server" : [ 0 ],
@@ -86,10 +90,9 @@
 					"video_input::movie::dim" : [ 1280, 720 ],
 					"video_input::movie::rate" : [ 1.0 ],
 					"video_input::movie::moviefile" : [  ],
-					"video_input::circle::dim" : [ 1280, 720 ],
 					"video_input::circle::ramp_time" : [ 100.0 ],
 					"video_input::circle::circle" : [ 0.5, 0.5, 0.0 ],
-					"simulation::u832013448" : [ 1 ],
+					"simulation::u690208609" : [  ],
 					"feather_plot::texture" : [ "velocity" ],
 					"feather_plot::width" : [ 0.0025 ],
 					"feather_plot::blur" : [ 0.0 ],
@@ -121,7 +124,8 @@
 					"field::high" : [ 3.404, 1.0, 1217.0, 1.0 ],
 					"field::low" : [ -0.13, 0.0, 0.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"tracers::u720004188" : [ -1 ]
+					"field::colormap" : [  ],
+					"tracers::u109065498" : [  ]
 				}
 
 			}
@@ -133,12 +137,14 @@
 					"blend_feathers" : [ 0 ],
 					"blend_field" : [ 0 ],
 					"blend_particles" : [ 0 ],
+					"blend_particles[1]" : [  ],
 					"video_input::texture" : [ "camera" ],
 					"video_input::mirror" : [ 1 ],
 					"video_input::flip" : [ 1 ],
 					"video_input::invert" : [ 0 ],
 					"video_input::mode" : [ 0 ],
 					"video_input::enable" : [ 1 ],
+					"video_input::dim" : [  ],
 					"video_input::syphon::multiview_segment" : [ 1 ],
 					"video_input::syphon::multiview_on" : [ 0 ],
 					"video_input::syphon::cam_syphon_server" : [ 0 ],
@@ -148,10 +154,9 @@
 					"video_input::movie::dim" : [ 1280, 720 ],
 					"video_input::movie::rate" : [ 1.0 ],
 					"video_input::movie::moviefile" : [  ],
-					"video_input::circle::dim" : [ 1280, 720 ],
 					"video_input::circle::ramp_time" : [ 100.0 ],
 					"video_input::circle::circle" : [ 0.53046, 0.471565, 0.0 ],
-					"simulation::u832013448" : [ 1 ],
+					"simulation::u690208609" : [  ],
 					"feather_plot::texture" : [ "velocity" ],
 					"feather_plot::width" : [ 0.0025 ],
 					"feather_plot::blur" : [ 0.0 ],
@@ -183,7 +188,8 @@
 					"field::high" : [ 50.0, 50.0, 1.0, 1.0 ],
 					"field::low" : [ -50.0, -50.0, 0.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"tracers::u720004188" : [ -1 ]
+					"field::colormap" : [  ],
+					"tracers::u109065498" : [  ]
 				}
 
 			}
@@ -195,12 +201,14 @@
 					"blend_feathers" : [ 7 ],
 					"blend_field" : [ 7 ],
 					"blend_particles" : [ 7 ],
+					"blend_particles[1]" : [  ],
 					"video_input::texture" : [ "camera" ],
 					"video_input::mirror" : [ 1 ],
 					"video_input::flip" : [ 1 ],
 					"video_input::invert" : [ 0 ],
 					"video_input::mode" : [ 0 ],
 					"video_input::enable" : [ 1 ],
+					"video_input::dim" : [  ],
 					"video_input::syphon::multiview_segment" : [ 1 ],
 					"video_input::syphon::multiview_on" : [ 0 ],
 					"video_input::syphon::cam_syphon_server" : [ 0 ],
@@ -210,10 +218,9 @@
 					"video_input::movie::dim" : [ 1280, 720 ],
 					"video_input::movie::rate" : [ 1.0 ],
 					"video_input::movie::moviefile" : [  ],
-					"video_input::circle::dim" : [ 1280, 720 ],
 					"video_input::circle::ramp_time" : [ 100.0 ],
 					"video_input::circle::circle" : [ 0.5, 0.5, 0.0 ],
-					"simulation::u832013448" : [ 1 ],
+					"simulation::u690208609" : [  ],
 					"feather_plot::texture" : [ "velocity" ],
 					"feather_plot::width" : [ 0.0025 ],
 					"feather_plot::blur" : [ 0.0 ],
@@ -245,7 +252,8 @@
 					"field::high" : [ 4096.0, 1.0, 1.0, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 0.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"tracers::u720004188" : [ -1 ]
+					"field::colormap" : [  ],
+					"tracers::u109065498" : [  ]
 				}
 
 			}
@@ -257,12 +265,14 @@
 					"blend_feathers" : [ 1 ],
 					"blend_field" : [ 7 ],
 					"blend_particles" : [ 7 ],
+					"blend_particles[1]" : [  ],
 					"video_input::texture" : [ "camera" ],
 					"video_input::mirror" : [ 1 ],
 					"video_input::flip" : [ 1 ],
 					"video_input::invert" : [ 0 ],
 					"video_input::mode" : [ 0 ],
 					"video_input::enable" : [ 1 ],
+					"video_input::dim" : [  ],
 					"video_input::syphon::multiview_segment" : [ 1 ],
 					"video_input::syphon::multiview_on" : [ 0 ],
 					"video_input::syphon::cam_syphon_server" : [ 0 ],
@@ -272,10 +282,9 @@
 					"video_input::movie::dim" : [ 1280, 720 ],
 					"video_input::movie::rate" : [ 1.0 ],
 					"video_input::movie::moviefile" : [  ],
-					"video_input::circle::dim" : [ 1280, 720 ],
 					"video_input::circle::ramp_time" : [ 100.0 ],
 					"video_input::circle::circle" : [ 0.5, 0.5, 0.0 ],
-					"simulation::u832013448" : [ 1 ],
+					"simulation::u690208609" : [  ],
 					"feather_plot::texture" : [ "hsflow" ],
 					"feather_plot::width" : [ 0.0025 ],
 					"feather_plot::blur" : [ 0.0 ],
@@ -307,7 +316,8 @@
 					"field::high" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"field::low" : [ -1.0, -1.0, 0.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"tracers::u720004188" : [ -1 ]
+					"field::colormap" : [  ],
+					"tracers::u109065498" : [  ]
 				}
 
 			}
@@ -319,12 +329,14 @@
 					"blend_feathers" : [ 7 ],
 					"blend_field" : [ 7 ],
 					"blend_particles" : [ 7 ],
+					"blend_particles[1]" : [  ],
 					"video_input::texture" : [ "camera" ],
 					"video_input::mirror" : [ 1 ],
 					"video_input::flip" : [ 1 ],
 					"video_input::invert" : [ 0 ],
 					"video_input::mode" : [ 0 ],
 					"video_input::enable" : [ 1 ],
+					"video_input::dim" : [  ],
 					"video_input::syphon::multiview_segment" : [ 1 ],
 					"video_input::syphon::multiview_on" : [ 0 ],
 					"video_input::syphon::cam_syphon_server" : [ 0 ],
@@ -334,10 +346,9 @@
 					"video_input::movie::dim" : [ 1280, 720 ],
 					"video_input::movie::rate" : [ 1.0 ],
 					"video_input::movie::moviefile" : [  ],
-					"video_input::circle::dim" : [ 1280, 720 ],
 					"video_input::circle::ramp_time" : [ 100.0 ],
 					"video_input::circle::circle" : [ 0.5, 0.5, 0.0 ],
-					"simulation::u832013448" : [ 1 ],
+					"simulation::u690208609" : [  ],
 					"feather_plot::texture" : [ "hsflow" ],
 					"feather_plot::width" : [ 0.0 ],
 					"feather_plot::blur" : [ 0.0 ],
@@ -369,7 +380,8 @@
 					"field::high" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 0.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"tracers::u720004188" : [ -1 ]
+					"field::colormap" : [  ],
+					"tracers::u109065498" : [  ]
 				}
 
 			}
@@ -381,12 +393,14 @@
 					"blend_feathers" : [ 7 ],
 					"blend_field" : [ 7 ],
 					"blend_particles" : [ 7 ],
+					"blend_particles[1]" : [  ],
 					"video_input::texture" : [ "camera" ],
 					"video_input::mirror" : [ 1 ],
 					"video_input::flip" : [ 1 ],
 					"video_input::invert" : [ 0 ],
 					"video_input::mode" : [ 0 ],
 					"video_input::enable" : [ 1 ],
+					"video_input::dim" : [  ],
 					"video_input::syphon::multiview_segment" : [ 1 ],
 					"video_input::syphon::multiview_on" : [ 0 ],
 					"video_input::syphon::cam_syphon_server" : [ 0 ],
@@ -396,10 +410,9 @@
 					"video_input::movie::dim" : [ 1280, 720 ],
 					"video_input::movie::rate" : [ 1.0 ],
 					"video_input::movie::moviefile" : [  ],
-					"video_input::circle::dim" : [ 1280, 720 ],
 					"video_input::circle::ramp_time" : [ 100.0 ],
 					"video_input::circle::circle" : [ 0.5, 0.5, 0.0 ],
-					"simulation::u832013448" : [ 1 ],
+					"simulation::u690208609" : [  ],
 					"feather_plot::texture" : [ "hsflow" ],
 					"feather_plot::width" : [ 0.0 ],
 					"feather_plot::blur" : [ 0.0 ],
@@ -431,7 +444,8 @@
 					"field::high" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 0.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"tracers::u720004188" : [ -1 ]
+					"field::colormap" : [  ],
+					"tracers::u109065498" : [  ]
 				}
 
 			}
@@ -443,12 +457,14 @@
 					"blend_feathers" : [ 7 ],
 					"blend_field" : [ 7 ],
 					"blend_particles" : [ 7 ],
+					"blend_particles[1]" : [  ],
 					"video_input::texture" : [ "camera" ],
 					"video_input::mirror" : [ 1 ],
 					"video_input::flip" : [ 1 ],
 					"video_input::invert" : [ 0 ],
 					"video_input::mode" : [ 0 ],
 					"video_input::enable" : [ 1 ],
+					"video_input::dim" : [  ],
 					"video_input::syphon::multiview_segment" : [ 1 ],
 					"video_input::syphon::multiview_on" : [ 0 ],
 					"video_input::syphon::cam_syphon_server" : [ 0 ],
@@ -458,10 +474,9 @@
 					"video_input::movie::dim" : [ 1280, 720 ],
 					"video_input::movie::rate" : [ 1.0 ],
 					"video_input::movie::moviefile" : [  ],
-					"video_input::circle::dim" : [ 1280, 720 ],
 					"video_input::circle::ramp_time" : [ 100.0 ],
 					"video_input::circle::circle" : [ 0.5, 0.5, 0.0 ],
-					"simulation::u832013448" : [ 1 ],
+					"simulation::u690208609" : [  ],
 					"feather_plot::texture" : [ "hsflow" ],
 					"feather_plot::width" : [ 0.0 ],
 					"feather_plot::blur" : [ 0.0 ],
@@ -493,7 +508,8 @@
 					"field::high" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 0.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"tracers::u720004188" : [ -1 ]
+					"field::colormap" : [  ],
+					"tracers::u109065498" : [  ]
 				}
 
 			}
@@ -505,12 +521,14 @@
 					"blend_feathers" : [ 7 ],
 					"blend_field" : [ 7 ],
 					"blend_particles" : [ 7 ],
+					"blend_particles[1]" : [  ],
 					"video_input::texture" : [ "camera" ],
 					"video_input::mirror" : [ 1 ],
 					"video_input::flip" : [ 1 ],
 					"video_input::invert" : [ 0 ],
 					"video_input::mode" : [ 0 ],
 					"video_input::enable" : [ 1 ],
+					"video_input::dim" : [  ],
 					"video_input::syphon::multiview_segment" : [ 1 ],
 					"video_input::syphon::multiview_on" : [ 0 ],
 					"video_input::syphon::cam_syphon_server" : [ 0 ],
@@ -520,10 +538,9 @@
 					"video_input::movie::dim" : [ 1280, 720 ],
 					"video_input::movie::rate" : [ 1.0 ],
 					"video_input::movie::moviefile" : [  ],
-					"video_input::circle::dim" : [ 1280, 720 ],
 					"video_input::circle::ramp_time" : [ 100.0 ],
 					"video_input::circle::circle" : [ 0.507471, 0.471565, 0.0 ],
-					"simulation::u832013448" : [ 1 ],
+					"simulation::u690208609" : [  ],
 					"feather_plot::texture" : [ "hsflow" ],
 					"feather_plot::width" : [ 0.0 ],
 					"feather_plot::blur" : [ 0.0 ],
@@ -555,7 +572,8 @@
 					"field::high" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 0.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"tracers::u720004188" : [ -1 ]
+					"field::colormap" : [  ],
+					"tracers::u109065498" : [  ]
 				}
 
 			}
@@ -567,12 +585,14 @@
 					"blend_feathers" : [ 7 ],
 					"blend_field" : [ 7 ],
 					"blend_particles" : [ 6 ],
+					"blend_particles[1]" : [  ],
 					"video_input::texture" : [ "camera" ],
 					"video_input::mirror" : [ 1 ],
 					"video_input::flip" : [ 1 ],
 					"video_input::invert" : [ 0 ],
 					"video_input::mode" : [ 0 ],
 					"video_input::enable" : [ 1 ],
+					"video_input::dim" : [  ],
 					"video_input::syphon::multiview_segment" : [ 1 ],
 					"video_input::syphon::multiview_on" : [ 0 ],
 					"video_input::syphon::cam_syphon_server" : [ 0 ],
@@ -582,10 +602,9 @@
 					"video_input::movie::dim" : [ 1280, 720 ],
 					"video_input::movie::rate" : [ 1.0 ],
 					"video_input::movie::moviefile" : [  ],
-					"video_input::circle::dim" : [ 1280, 720 ],
 					"video_input::circle::ramp_time" : [ 100.0 ],
 					"video_input::circle::circle" : [ 0.5, 0.5, 0.0 ],
-					"simulation::u832013448" : [ 1 ],
+					"simulation::u690208609" : [  ],
 					"feather_plot::texture" : [ "velocity" ],
 					"feather_plot::width" : [ 0.0 ],
 					"feather_plot::blur" : [ 0.0 ],
@@ -617,7 +636,8 @@
 					"field::high" : [ 0.002, 1.0, 439.0, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 251.1, 0.0 ],
 					"field::enable" : [ 1 ],
-					"tracers::u720004188" : [ -1 ]
+					"field::colormap" : [  ],
+					"tracers::u109065498" : [  ]
 				}
 
 			}
@@ -629,12 +649,14 @@
 					"blend_feathers" : [ 7 ],
 					"blend_field" : [ 1 ],
 					"blend_particles" : [ 6 ],
+					"blend_particles[1]" : [  ],
 					"video_input::texture" : [ "camera" ],
 					"video_input::mirror" : [ 1 ],
 					"video_input::flip" : [ 1 ],
 					"video_input::invert" : [ 0 ],
 					"video_input::mode" : [ 0 ],
 					"video_input::enable" : [ 1 ],
+					"video_input::dim" : [  ],
 					"video_input::syphon::multiview_segment" : [ 1 ],
 					"video_input::syphon::multiview_on" : [ 0 ],
 					"video_input::syphon::cam_syphon_server" : [ 0 ],
@@ -644,10 +666,9 @@
 					"video_input::movie::dim" : [ 1280, 720 ],
 					"video_input::movie::rate" : [ 1.0 ],
 					"video_input::movie::moviefile" : [  ],
-					"video_input::circle::dim" : [ 1280, 720 ],
 					"video_input::circle::ramp_time" : [ 100.0 ],
 					"video_input::circle::circle" : [ 0.5, 0.5, 0.0 ],
-					"simulation::u832013448" : [ 1 ],
+					"simulation::u690208609" : [  ],
 					"feather_plot::texture" : [ "velocity" ],
 					"feather_plot::width" : [ 0.0 ],
 					"feather_plot::blur" : [ 0.0 ],
@@ -679,7 +700,8 @@
 					"field::high" : [ 0.002, 1.0, 439.0, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 251.1, 0.0 ],
 					"field::enable" : [ 1 ],
-					"tracers::u720004188" : [ -1 ]
+					"field::colormap" : [  ],
+					"tracers::u109065498" : [  ]
 				}
 
 			}
@@ -691,12 +713,14 @@
 					"blend_feathers" : [ 7 ],
 					"blend_field" : [ 7 ],
 					"blend_particles" : [ 7 ],
+					"blend_particles[1]" : [  ],
 					"video_input::texture" : [ "camera" ],
 					"video_input::mirror" : [ 1 ],
 					"video_input::flip" : [ 1 ],
 					"video_input::invert" : [ 0 ],
 					"video_input::mode" : [ 2 ],
 					"video_input::enable" : [ 1 ],
+					"video_input::dim" : [  ],
 					"video_input::syphon::multiview_segment" : [ 2 ],
 					"video_input::syphon::multiview_on" : [ 1 ],
 					"video_input::syphon::cam_syphon_server" : [ 1 ],
@@ -706,10 +730,9 @@
 					"video_input::movie::dim" : [ 1280, 720 ],
 					"video_input::movie::rate" : [ 1.0 ],
 					"video_input::movie::moviefile" : [ 27 ],
-					"video_input::circle::dim" : [ 1280, 720 ],
 					"video_input::circle::ramp_time" : [ 100.0 ],
 					"video_input::circle::circle" : [ 0.5, 0.5, 0.0 ],
-					"simulation::u832013448" : [  ],
+					"simulation::u690208609" : [  ],
 					"feather_plot::texture" : [ "hsflow" ],
 					"feather_plot::width" : [ 0.0 ],
 					"feather_plot::blur" : [ 0.0 ],
@@ -741,7 +764,8 @@
 					"field::high" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 0.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"tracers::u720004188" : [  ]
+					"field::colormap" : [  ],
+					"tracers::u109065498" : [  ]
 				}
 
 			}
@@ -753,12 +777,14 @@
 					"blend_feathers" : [ 7 ],
 					"blend_field" : [ 7 ],
 					"blend_particles" : [ 7 ],
+					"blend_particles[1]" : [  ],
 					"video_input::texture" : [ "camera" ],
 					"video_input::mirror" : [ 1 ],
 					"video_input::flip" : [ 1 ],
 					"video_input::invert" : [ 0 ],
 					"video_input::mode" : [ 2 ],
 					"video_input::enable" : [ 1 ],
+					"video_input::dim" : [  ],
 					"video_input::syphon::multiview_segment" : [ 2 ],
 					"video_input::syphon::multiview_on" : [ 1 ],
 					"video_input::syphon::cam_syphon_server" : [ 1 ],
@@ -768,10 +794,9 @@
 					"video_input::movie::dim" : [ 1280, 720 ],
 					"video_input::movie::rate" : [ 1.0 ],
 					"video_input::movie::moviefile" : [ 33 ],
-					"video_input::circle::dim" : [ 1280, 720 ],
 					"video_input::circle::ramp_time" : [ 100.0 ],
 					"video_input::circle::circle" : [ 0.5, 0.5, 0.0 ],
-					"simulation::u832013448" : [  ],
+					"simulation::u690208609" : [  ],
 					"feather_plot::texture" : [ "hsflow" ],
 					"feather_plot::width" : [ 0.0 ],
 					"feather_plot::blur" : [ 0.0 ],
@@ -803,7 +828,8 @@
 					"field::high" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 0.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"tracers::u720004188" : [  ]
+					"field::colormap" : [  ],
+					"tracers::u109065498" : [  ]
 				}
 
 			}
@@ -815,12 +841,14 @@
 					"blend_feathers" : [ 7 ],
 					"blend_field" : [ 7 ],
 					"blend_particles" : [ 7 ],
+					"blend_particles[1]" : [  ],
 					"video_input::texture" : [ "camera" ],
 					"video_input::mirror" : [ 1 ],
 					"video_input::flip" : [ 1 ],
 					"video_input::invert" : [ 0 ],
 					"video_input::mode" : [ 2 ],
 					"video_input::enable" : [ 1 ],
+					"video_input::dim" : [  ],
 					"video_input::syphon::multiview_segment" : [ 2 ],
 					"video_input::syphon::multiview_on" : [ 1 ],
 					"video_input::syphon::cam_syphon_server" : [ 1 ],
@@ -830,10 +858,9 @@
 					"video_input::movie::dim" : [ 1280, 720 ],
 					"video_input::movie::rate" : [ 1.0 ],
 					"video_input::movie::moviefile" : [ 12 ],
-					"video_input::circle::dim" : [ 1280, 720 ],
 					"video_input::circle::ramp_time" : [ 100.0 ],
 					"video_input::circle::circle" : [ 0.5, 0.5, 0.0 ],
-					"simulation::u832013448" : [  ],
+					"simulation::u690208609" : [  ],
 					"feather_plot::texture" : [ "hsflow" ],
 					"feather_plot::width" : [ 0.0 ],
 					"feather_plot::blur" : [ 0.0 ],
@@ -865,7 +892,8 @@
 					"field::high" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 0.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"tracers::u720004188" : [  ]
+					"field::colormap" : [  ],
+					"tracers::u109065498" : [  ]
 				}
 
 			}

@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 583.0, 114.0, 805.0, 932.0 ],
+		"rect" : [ 583.0, 110.0, 805.0, 932.0 ],
 		"bgcolor" : [ 0.88, 0.88, 0.8624, 1.0 ],
 		"editing_bgcolor" : [ 0.9024, 0.94, 0.94, 1.0 ],
 		"bglocked" : 0,
@@ -1448,8 +1448,8 @@
 									"presentation_rect" : [ 177.850021, 1.0, 84.0, 84.0 ],
 									"style" : "",
 									"varname" : "boundary-dynamic-primitive-nodes",
-									"xplace" : [ 0.549405 ],
-									"yplace" : [ 0.535714 ]
+									"xplace" : [ 0.561309 ],
+									"yplace" : [ 0.464286 ]
 								}
 
 							}
@@ -24242,7 +24242,6 @@
 					"embed" : 1,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
-					"hidden" : 1,
 					"id" : "obj-152",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
@@ -24260,7 +24259,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 183.0, 112.0, 965.0, 650.0 ],
+						"rect" : [ 404.0, 283.0, 965.0, 650.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -24290,6 +24289,18 @@
 						"showontab" : 0,
 						"title" : "Movie Input",
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-5",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 633.0, 501.0, 99.0, 22.0 ],
+									"style" : "",
+									"text" : "print video_input"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-38",
 									"maxclass" : "newobj",
@@ -25029,7 +25040,16 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-5", 0 ],
+									"order" : 0,
+									"source" : [ "obj-32", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-94", 0 ],
+									"order" : 1,
 									"source" : [ "obj-32", 0 ]
 								}
 
@@ -69416,6 +69436,7 @@
 					"embed" : 1,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
+					"hidden" : 1,
 					"id" : "obj-150",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
