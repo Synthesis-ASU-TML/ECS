@@ -1741,7 +1741,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 50.0, 100.0, 430.0, 49.0 ],
 									"style" : "",
-									"text" : "86 73 68 69 79 32 79 85 84 80 85 84 32 82 79 85 84 73 78 71 58, 48 32 50, 49 32 50, 50 32 50, 51 32 49 48, 52 32 52, 53 32 49 50, 54 32 49 57, 55 32 52, 56 32 52, 57 32 50, 49 48 32 50, 49 49 32 52, 49 50 32 51, 49 51 32 54, 49 52 32 50, 49 53 32 49 57, 49 54 32 49 57, 49 55 32 49 57, 49 56 32 49 57, 49 57 32 50, 10"
+									"text" : "86 73 68 69 79 32 79 85 84 80 85 84 32 82 79 85 84 73 78 71 58, 48 32 49 49, 49 32 51, 50 32 50, 51 32 48, 52 32 51, 53 32 48, 54 32 49 57, 55 32 52, 56 32 52, 57 32 48, 49 48 32 48, 49 49 32 52, 49 50 32 51, 49 51 32 49 50, 49 52 32 49 49, 49 53 32 49 57, 49 54 32 49 57, 49 55 32 49 57, 49 56 32 49 57, 49 57 32 50, 10"
 								}
 
 							}
@@ -2674,15 +2674,15 @@
 						"ema_scrim_clear" : [ -1 ],
 						"ema_scrim_reset" : [ -1 ],
 						"ema_scrim_sim" : [ 2 ],
-						"ema_scrim_vis" : [ 10 ],
+						"ema_scrim_vis" : [ 0 ],
 						"indiv_dest" : [ 0 ],
 						"indiv_source" : [ 0 ],
-						"lights" : [ 0 ],
+						"lights" : [ 5 ],
 						"number[1]" : [ 10 ],
 						"number[2]" : [ 10 ],
 						"serra" : [ 0 ],
-						"serra_ex4" : [ 5 ],
-						"sound_floor" : [ 3 ],
+						"serra_ex4" : [ 0 ],
+						"sound_floor" : [ 6 ],
 						"sound_floor_volume" : [ 0 ],
 						"sound_scrim" : [ 3 ],
 						"sound_scrim[1]" : [ 0 ],
@@ -2866,7 +2866,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-26",
-					"items" : [ "Clouds", ",", "Velocity", "flow", "field", ",", "Velocity", "image", ",", "Pressure", ",", "Optical", "flow", ",", "Camera", ",", "Obstacles", ",", "Background", ",", "Foreground", ",", "Clouds", "(no", "particles)", ",", "Off", ",", "Movie:", "Clouds", ",", "Movie:", "Water", ",", "Movie:", "City" ],
+					"items" : [ "Clouds", ",", "Velocity", "flow", "field", ",", "Velocity", "image", ",", "Pressure", ",", "Optical", "flow", ",", "Camera", ",", "Obstacles", ",", "Background", ",", "Foreground", ",", "Clouds", "(no", "particles)", ",", "Off", ",", "Movie:", "Clouds", ",", "Movie:", "Water", ",", "Movie:", "City", ",", "Movie:", "River" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
