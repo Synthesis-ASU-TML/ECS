@@ -2,8 +2,8 @@
 	"name" : "filterbanks",
 	"version" : 1,
 	"creationdate" : 3594117922,
-	"modificationdate" : 3594118098,
-	"viewrect" : [ 25.0, 69.0, 300.0, 500.0 ],
+	"modificationdate" : 3595248645,
+	"viewrect" : [ 0.0, 44.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -14,6 +14,10 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"toplevel" : 1
+			}
+,
+			"two filterbanks instances.maxpat" : 			{
+				"kind" : "patcher"
 			}
 
 		}
@@ -31,10 +35,6 @@
 		}
 ,
 		"externals" : 		{
-
-		}
-,
-		"other" : 		{
 
 		}
 
