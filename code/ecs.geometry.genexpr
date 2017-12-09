@@ -1,0 +1,105 @@
+// Samplers.
+sample_neighbors(tex, coord) { 
+	px = 1 / dim;
+	l = sample(tex, coord - vec(px.x, 0), boundmode="wrap");
+	r = sample(tex, coord + vec(px.x, 0), boundmode="wrap");
+	u = sample(tex, coord - vec(0, px.y), boundmode="wrap");
+	d = sample(tex, coord + vec(0, px.y), boundmode="wrap");
+
+	return l, r, u, d;
+}
+
+nearest_neighbors(tex, coord) {
+	px = 1 / dim;
+	l = nearest(tex, coord - vec(px.x, 0), boundmode="wrap");
+	r = nearest(tex, coord + vec(px.x, 0), boundmode="wrap");
+	u = nearest(tex, coord - vec(0, px.y), boundmode="wrap");
+	d = nearest(tex, coord + vec(0, px.y), boundmode="wrap");
+
+	return l, r, u, d;	
+}
+
+mask_neighbors(tex, mask, coord) {
+	ml, mr, mu, md = nearest_neighbors(mask, coord);
+	l, r, u, d = nearest_neighbors(tex, coord);
+
+	l = (1 - ml.w) * l + ml.w * ml.xyz;
+	r = (1 - mr.w) * r + ml.w * ml.xyz;
+	u = (1 - mu.w) * u + ml.w * ml.xzz;
+	d = (1 - md.w) * d + ml.w * ml.xyz;
+
+	return l, r, u, d;	
+} 
+
+mask_neighbors_replace(tex, mask, coord, replace) {
+	// Replace masked pixels by the center pixel.
+	// Replace is a vector of binary values for left, right, up, down.
+	// If the flag is 1, replace by the center pixel. Otherwise, use 0.
+
+	ml, mr, mu, md = nearest_neighbors(mask, coord);
+	l, r, u, d = nearest_neighbors(tex, coord);
+	c = nearest(tex, coord, boundmode="wrap");
+
+	px = 1 / dim;
+	zero = vec(
+		replace.x || coord.x - px.x > 1,
+		replace.y || coord.x + px.x < dim.x - px.x,
+		replace.z || coord.y - px.y > 1,
+		replace.w || coord.y + px.y < dim.y - px.y
+	);
+
+	l = ml.w * (zero.x * c) + (1 - ml.w) * l;
+	r = mr.w * (zero.y * c) + (1 - mr.w) * r;
+	u = mu.w * (zero.z * c) + (1 - mu.w) * u;
+	d = md.w * (zero.w * c) + (1 - md.w) * d;
+
+	return l, r, u, d;
+}
+
+// Scalar -> Vector
+grad3x3(tex, coord) {
+	sl, sr, su, sd = sample_neighbors(tex, coord);
+	return vec(sr - sl, sd - su) / 2;
+}
+
+grad3x3_mask(tex, mask, coord) {
+	sl, sr, su, sd = mask_neighbors(tex, mask, coord);
+	return vec(sr - sl, sd - su) / 2;
+}
+
+grad3x3_mask_replace(tex, mask, coord, replace) {
+	sl, sr, su, sd = mask_neighbors_replace(tex, mask, coord, replace);
+	return vec(sr - sl, sd - su) / 2;
+}
+
+// Vector -> Scalar
+curl3x3(tex, coord) {
+	vl, vr, vu, vd = sample_neighbors(tex, coord);
+	return ((vr.y - vl.y) - (vd.x - vu.x)) / 2;
+}
+
+curl3x3_mask(tex, mask, coord) {
+	vl, vr, vu, vd = mask_neighbors(tex, mask, coord);
+	return ((vr.y - vl.y) - (vd.x - vu.x)) / 2;
+}
+
+curl3x3_mask_replace(tex, mask, coord, replace) {
+	vl, vr, vu, vd = mask_neighbors_replace(tex, mask, coord, replace);
+	return ((vr.y - vl.y) - (vd.x - vu.x)) / 2;
+}
+
+div3x3(tex, coord) {
+	vl, vr, vu, vd = sample_neighbors(tex, coord);
+	return (vr.x - vl.x + vd.y - vu.y) / 2;
+}
+
+div3x3_mask(tex, mask, coord) {
+	vl, vr, vu, vd = mask_neighbors(tex, mask, coord);
+	return (vr.x - vl.x + vd.y - vu.y) / 2;
+}
+
+div3x3_mask_replace(tex, mask, coord, replace) {
+	vl, vr, vu, vd = mask_neighbors_replace(tex, mask, coord, replace);
+	return (vr.x - vl.x + vd.y - vu.y) / 2;
+}
+
