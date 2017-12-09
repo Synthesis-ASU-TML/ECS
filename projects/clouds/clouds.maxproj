@@ -2,7 +2,7 @@
 	"name" : "clouds",
 	"version" : 1,
 	"creationdate" : 3590406737,
-	"modificationdate" : 3594623829,
+	"modificationdate" : 3595594495,
 	"viewrect" : [ 0.0, 45.0, 300.0, 1361.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -12,6 +12,7 @@
 		"patchers" : 		{
 			"clouds.maxpat" : 			{
 				"kind" : "patcher",
+				"local" : 1,
 				"toplevel" : 1
 			}
 
@@ -29,6 +30,10 @@
 		}
 ,
 		"code" : 		{
+			"ecs.sim.clouds.advect.genjit" : 			{
+				"kind" : "genjit"
+			}
+,
 			"ecs.vis.feather_plot.jxs" : 			{
 				"kind" : "shader"
 			}
@@ -51,11 +56,13 @@
 			}
 ,
 			"clouds.vis.scrim.json" : 			{
-				"kind" : "json"
+				"kind" : "json",
+				"local" : 1
 			}
 ,
 			"clouds.sim.scrim.json" : 			{
-				"kind" : "json"
+				"kind" : "json",
+				"local" : 1
 			}
 
 		}
