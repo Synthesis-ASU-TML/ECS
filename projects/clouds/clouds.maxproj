@@ -2,8 +2,8 @@
 	"name" : "clouds",
 	"version" : 1,
 	"creationdate" : 3590406737,
-	"modificationdate" : 3595594495,
-	"viewrect" : [ 0.0, 45.0, 300.0, 1361.0 ],
+	"modificationdate" : 3595842984,
+	"viewrect" : [ 8.0, 57.0, 300.0, 805.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -14,17 +14,6 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"toplevel" : 1
-			}
-
-		}
-,
-		"media" : 		{
-			"hsv-transfer.png" : 			{
-				"kind" : "imagefile"
-			}
-,
-			"unsigned-transfer.png" : 			{
-				"kind" : "imagefile"
 			}
 
 		}
