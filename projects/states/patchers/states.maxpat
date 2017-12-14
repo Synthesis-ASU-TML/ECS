@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 358.0, 139.0, 1024.0, 876.0 ],
+		"rect" : [ 862.0, 436.0, 1024.0, 876.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,37 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-165",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 595.0, 379.0, 69.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"allwindowsactive" : 0,
+						"audiosupport" : 1,
+						"bundleidentifier" : "net.synthesiscenter.ecs.states",
+						"cantclosetoplevelpatchers" : 1,
+						"cefsupport" : 1,
+						"copysupport" : 1,
+						"database" : 0,
+						"extensions" : 1,
+						"gensupport" : 1,
+						"midisupport" : 1,
+						"noloadbangdefeating" : 0,
+						"overdrive" : 0,
+						"preffilename" : "ECS States Preferences",
+						"searchformissingfiles" : 1,
+						"statusvisible" : 0,
+						"usesearchpath" : 0
+					}
+,
+					"style" : "",
+					"text" : "standalone"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-268",
 					"maxclass" : "comment",
@@ -371,18 +402,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-178",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 387.0, 421.0, 100.0, 22.0 ],
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontface" : 0,
 					"fontsize" : 12.0,
 					"id" : "obj-177",
@@ -393,48 +412,6 @@
 					"patching_rect" : [ 10.0, 411.0, 150.0, 34.0 ],
 					"text" : "/ex4/preset : 619",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 0,
-					"fontsize" : 12.0,
-					"id" : "obj-174",
-					"maxclass" : "o.display",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 260.0, 70.0, 150.0, 34.0 ],
-					"text" : "/preset : 6",
-					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-171",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 250.0, 106.0, 50.0, 22.0 ],
-					"style" : "",
-					"text" : "5"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-167",
-					"linecount" : 5,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 149.0, 122.0, 50.0, 76.0 ],
-					"style" : "",
-					"text" : "FullPacket 36 140601608915968"
 				}
 
 			}
@@ -1006,7 +983,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-70",
-					"items" : [ "0_MultiView_16", ",", "1_HDMI-1_A", ",", "2_HDMI-2_A", ",", "3_HDMI-3", ",", "4_Cam:_Floor", ",", "5_Cam:_Fishbowl", ",", "6_Cam:_Front", ",", "7_Cam:_Doc", ",", "8_MultiView_4", ",", "9_HDMI-1_B", ",", "10_Camera_West", ",", "11_HDMI-2_B", ",", "12_Patchbay-in_5", ",", "13_Patchbay-In_6", ",", "14_Patchbay-In_7", ",", "15_Patchbay-In_8", ",", "16_Patchbay-In_9", ",", "17_Patchbay-In_10", ",", "18_HDMI-Island_A", ",", "19_HDMI-Island_B" ],
+					"items" : [ "0_MultiView_16", ",", "1_Computer:_MP2_Display_Right", ",", "2_Computer:_MP4_Display_Right", ",", "3_Computer:_MP1_Display_Right", ",", "4_Camera:_Floor", ",", "5_Camera:_Fishbowl", ",", "6_Camera:_North", ",", "7_Camera:_Doc", ",", "8_MultiView_4", ",", "9_Computer:_MP2_Display_Left", ",", "10_Camera:_West", ",", "11_Computer:_MP4_Display_Left", ",", "12_Camera:_South", ",", "13_Patchbay-In_6", ",", "14_Patchbay-In_7", ",", "15_Patchbay-In_8", ",", "16_Patchbay-In_9", ",", "17_Patchbay-In_10", ",", "18_Computer:_Island_A_DIsplay", ",", "19_Computer:_Island_B_Display" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1072,7 +1049,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-86",
-					"items" : [ "0_Projector:_Floor", ",", "1_Projector:_Scrim", ",", "2_Proj_SERRA_Lower", ",", "3_BME_1", ",", "4_BME_2", ",", "5_BME_3", ",", "6_to_fishbowl", ",", "7_BME_Island_A", ",", "8_BME_Island_B", ",", "9_Monitor_1", ",", "10_Monitor_2", ",", "11_multiView-1", ",", "12_multiView-2", ",", "13_multiView-3", ",", "14_multiView-4", ",", "15_multiView-5", ",", "16_multiView-6", ",", "17_multiView-7", ",", "18_multiView-8", ",", "19_Proj_SERRA_Upper" ],
+					"items" : [ "0_Projector:_Floor", ",", "1_Projector:_Scrim", ",", "2_Projector:_SERRA_Lower", ",", "3_Computer:_MP2_Input", ",", "4_Computer:_MP4_Input", ",", "5_Computer:_MP1_Input", ",", "6_Videohub:_Fishbowl", ",", "7_Computer:_Island_A_Input", ",", "8_Computer:_Island_B_Input", ",", "9_TV:_West_(Stage)", ",", "10_TV:_South_(Computers)", ",", "11_MultiView_16:_Input_1", ",", "12_MultiView_16:_Input_2", ",", "13_MultiView_16:_Input_3", ",", "14_MultiView_16:_Input_4", ",", "15_MultiView_16:_Input_5", ",", "16_MultiView_16:_Input_6", ",", "17_MultiView_16:_Input_7", ",", "18_MultiView_16:_Input_8", ",", "19_Projector:_SERRA_Upper" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1137,7 +1114,7 @@
 ,
 					"style" : "",
 					"text" : "pattrstorage @greedy 1",
-					"varname" : "u191002067"
+					"varname" : "u253047836"
 				}
 
 			}
@@ -1897,7 +1874,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 50.0, 100.0, 430.0, 49.0 ],
 									"style" : "",
-									"text" : "86 73 68 69 79 32 79 85 84 80 85 84 32 82 79 85 84 73 78 71 58, 48 32 49, 49 32 51, 50 32 49, 51 32 52, 52 32 52, 53 32 48, 54 32 49 57, 55 32 49 48, 56 32 49 48, 57 32 49, 49 48 32 49, 49 49 32 52, 49 50 32 51, 49 51 32 54, 49 52 32 50, 49 53 32 49 57, 49 54 32 49 57, 49 55 32 49 57, 49 56 32 49 57, 49 57 32 57, 10"
+									"text" : "86 73 68 69 79 32 79 85 84 80 85 84 32 82 79 85 84 73 78 71 58, 48 32 50, 49 32 51, 50 32 49, 51 32 48, 52 32 48, 53 32 48, 54 32 49 57, 55 32 52, 56 32 48, 57 32 50, 49 48 32 48, 49 49 32 52, 49 50 32 50, 49 51 32 49 50, 49 52 32 51, 49 53 32 49 57, 49 54 32 49 57, 49 55 32 49 57, 49 56 32 49 57, 49 57 32 57, 10"
 								}
 
 							}
@@ -2839,7 +2816,7 @@
 						"number[2]" : [ 10 ],
 						"serra" : [ 0 ],
 						"serra_ex4" : [ 5 ],
-						"sound_floor" : [ 10 ],
+						"sound_floor" : [ 0 ],
 						"sound_floor_volume" : [ 0 ],
 						"sound_scrim" : [ 0 ],
 						"sound_scrim[1]" : [ 6 ],
@@ -2851,7 +2828,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u810003462"
+					"varname" : "u650049238"
 				}
 
 			}
@@ -3164,7 +3141,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-18",
-					"items" : [ "Scrim", "clouds", ",", "Floor", "pressure", ",", "Floor", "clouds", ",", "Off", ",", "Scrim", "Pressure", ",", "Floor", "Velocity", "Image", ",", "ex4", "vectors", ",", "ex4", "freezing", ",", "ex4", "fluids", ",", "ex4", "scatter", "gather", ",", "floor", "velocity", "flow" ],
+					"items" : [ "Scrim", "clouds", ",", "Floor", "pressure", ",", "Floor", "clouds", ",", "Off", ",", "Scrim", "Pressure", ",", "Floor", "Velocity", "Image", ",", "ex4", "vectors", ",", "ex4", "freezing", ",", "ex4", "fluids", ",", "ex4", "scatter", "gather", ",", "floor", "velocity", "flow", ",", "floor", "xylo-piano" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -3191,7 +3168,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-17",
-					"items" : [ "Scrim", "clouds", ",", "Floor", "pressure", ",", "Floor", "clouds", ",", "Off", ",", "Scrim", "Pressure", ",", "Floor", "Velocity", "Image", ",", "ex4", "vectors", ",", "ex4", "freezing", ",", "ex4", "fluids", ",", "ex4", "scatter", "gather", ",", "floor", "velocity", "flow" ],
+					"items" : [ "Scrim", "clouds", ",", "Floor", "pressure", ",", "Floor", "clouds", ",", "Off", ",", "Scrim", "Pressure", ",", "Floor", "Velocity", "Image", ",", "ex4", "vectors", ",", "ex4", "freezing", ",", "ex4", "fluids", ",", "ex4", "scatter", "gather", ",", "floor", "velocity", "flow", ",", "floor", "xylo-piano" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -4091,16 +4068,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-171", 1 ],
-					"order" : 0,
-					"source" : [ "obj-13", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-39", 0 ],
-					"order" : 1,
 					"source" : [ "obj-13", 0 ]
 				}
 
@@ -4896,23 +4864,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-161", 0 ],
-					"order" : 2,
-					"source" : [ "obj-37", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-167", 1 ],
-					"order" : 1,
-					"source" : [ "obj-37", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-174", 0 ],
-					"order" : 0,
 					"source" : [ "obj-37", 0 ]
 				}
 
@@ -5340,17 +5291,16 @@
 			"obj-270" : [ "number[2]", "number[1]", 0 ],
 			"obj-17" : [ "sound_scrim", "sound_scrim", 0 ],
 			"obj-271" : [ "toggle[2]", "toggle[1]", 0 ],
-			"obj-34" : [ "ema_floor_alpha", "ema_floor_alpha", 0 ],
 			"obj-68" : [ "ema_floor_sim", "ema_floor_sim", 0 ],
 			"obj-67" : [ "ema_scrim_sim", "ema_scrim_sim", 0 ],
 			"obj-13" : [ "lights", "lights", 0 ],
 			"obj-18" : [ "sound_floor", "sound_floor", 0 ],
 			"obj-32" : [ "sound_scrim_volume", "sound_scrim_volume", 0 ],
-			"obj-119" : [ "toggle", "toggle", 0 ],
 			"obj-86" : [ "indiv_dest", "indiv_dest", 0 ],
-			"obj-112" : [ "number", "number", 0 ],
 			"obj-24" : [ "serra", "serra", 0 ],
 			"obj-2" : [ "sound_scrim[1]", "sound_scrim[1]", 0 ],
+			"obj-119" : [ "toggle", "toggle", 0 ],
+			"obj-112" : [ "number", "number", 0 ],
 			"obj-28" : [ "ema_floor_vis", "ema_floor_vis", 0 ],
 			"obj-26" : [ "ema_scrim_vis", "ema_scrim_vis", 0 ],
 			"obj-159" : [ "number[1]", "number[1]", 0 ],
@@ -5358,26 +5308,27 @@
 			"obj-11" : [ "toggle[1]", "toggle[1]", 0 ],
 			"obj-70" : [ "indiv_source", "indiv_source", 0 ],
 			"obj-21" : [ "serra_ex4", "serra_ex4", 0 ],
-			"obj-4" : [ "sound_scrim[2]", "sound_scrim[2]", 0 ]
+			"obj-4" : [ "sound_scrim[2]", "sound_scrim[2]", 0 ],
+			"obj-34" : [ "ema_floor_alpha", "ema_floor_alpha", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "sc.net.send.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/SC/patchers/utilities",
-				"patcherrelativepath" : "../../../../../Documents/Max 7/Packages/SC/patchers/utilities",
+				"patcherrelativepath" : "../../../../SC/patchers/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "states.json",
-				"bootpath" : "~/synthesis-git/ecs/projects/clouds/data",
-				"patcherrelativepath" : "../../clouds/data",
+				"bootpath" : "~/Documents/Max 7/Packages/ecs/projects/states/data",
+				"patcherrelativepath" : "../data",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ecs.pattr.maxpat",
-				"bootpath" : "~/synthesis-git/ecs/patchers/utilities",
+				"bootpath" : "~/Documents/Max 7/Packages/ecs/patchers/utilities",
 				"patcherrelativepath" : "../../../patchers/utilities",
 				"type" : "JSON",
 				"implicit" : 1
@@ -5385,14 +5336,14 @@
 , 			{
 				"name" : "dest-control20x20.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/SC/dev/video/videohub-control/patchers",
-				"patcherrelativepath" : "../../../../../Documents/Max 7/Packages/SC/dev/video/videohub-control/patchers",
+				"patcherrelativepath" : "../../../../SC/dev/video/videohub-control/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "rot-comment.js",
 				"bootpath" : "~/Documents/Max 7/Packages/SC/dev/video/videohub-control/code",
-				"patcherrelativepath" : "../../../../../Documents/Max 7/Packages/SC/dev/video/videohub-control/code",
+				"patcherrelativepath" : "../../../../SC/dev/video/videohub-control/code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
