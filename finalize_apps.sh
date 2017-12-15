@@ -15,11 +15,14 @@ STATE_APP_PKG_PATH="${STATE_APP_PATH}/Contents/Resources/C74/packages"
 MAX_PKG_PATH=~/Documents/"Max 7"/Packages
 
 # Move package and media dependencies into apps.
-mkdir "${CLOUD_APP_PKG_PATH}"/ecs
-mkdir "${CLOUD_APP_PKG_PATH}"/ecs/media
+mkdir -v "${CLOUD_APP_PKG_PATH}"/ecs
+mkdir -v "${CLOUD_APP_PKG_PATH}"/ecs/media
 
+echo "Copying ${MAX_PKG_PATH}/ecs/media/colormaps to ${CLOUD_APP_PKG_PATH}/ecs/media/"
 cp -R "${MAX_PKG_PATH}"/ecs/media/colormaps "${CLOUD_APP_PKG_PATH}"/ecs/media/
+echo "Copying ${MAX_PKG_PATH}/bach to ${FB_APP_PKG_PATH}/"
 cp -R "${MAX_PKG_PATH}"/bach "${FB_APP_PKG_PATH}"/
+echo "Copying ${MAX_PKG_PATH}/sadam to ${STATE_APP_PKG_PATH}/"
 cp -R "${MAX_PKG_PATH}"/sadam "${STATE_APP_PKG_PATH}"/
 
 # Remove 32-bit versions from apps to reduce file size.
@@ -31,7 +34,7 @@ rm -rf "${CLOUD_APP_PATH}"
 rm -rf "${FB_APP_PATH}"
 rm -rf "${STATE_APP_PATH}"
 
-mv newclouds.app "${CLOUD_APP_PATH}"
-mv newfb.app "${FB_APP_PATH}"
-mv newstates.app "${STATE_APP_PATH}"
+mv -v newclouds.app "${CLOUD_APP_PATH}"
+mv -v newfb.app "${FB_APP_PATH}"
+mv -v newstates.app "${STATE_APP_PATH}"
 
