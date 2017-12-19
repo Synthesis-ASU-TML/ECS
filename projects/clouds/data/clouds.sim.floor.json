@@ -1,6 +1,6 @@
 {
 	"pattrstorage" : 	{
-		"name" : "u559028940",
+		"name" : "u352604838",
 		"slots" : 		{
 			"1" : 			{
 				"id" : 1,
@@ -59,7 +59,7 @@
 					"simulation::enable" : [ 1 ],
 					"simulation::latent_heat" : [ 2501000.0 ],
 					"simulation::dtfl" : [ 0.9 ],
-					"simulation::hsflow_source" : [ 1 ]
+					"simulation::hsflow_source" : [ "bgthresh" ]
 				}
 
 			}
@@ -121,7 +121,7 @@
 					"simulation::enable" : [ 1 ],
 					"simulation::latent_heat" : [ 2501000.0 ],
 					"simulation::dtfl" : [ 0.9 ],
-					"simulation::hsflow_source" : [ 1 ]
+					"simulation::hsflow_source" : [ "bgthresh" ]
 				}
 
 			}
@@ -183,7 +183,7 @@
 					"simulation::enable" : [ 1 ],
 					"simulation::latent_heat" : [ 2501000.0 ],
 					"simulation::dtfl" : [ 0.9 ],
-					"simulation::hsflow_source" : [ 1 ]
+					"simulation::hsflow_source" : [ "bgthresh" ]
 				}
 
 			}
@@ -245,7 +245,7 @@
 					"simulation::enable" : [ 1 ],
 					"simulation::latent_heat" : [ 2501000.0 ],
 					"simulation::dtfl" : [ 0.9 ],
-					"simulation::hsflow_source" : [ 1 ]
+					"simulation::hsflow_source" : [ "bgthresh" ]
 				}
 
 			}
@@ -307,7 +307,7 @@
 					"simulation::enable" : [ 1 ],
 					"simulation::latent_heat" : [ 2501000.0 ],
 					"simulation::dtfl" : [ 0.9 ],
-					"simulation::hsflow_source" : [ 1 ]
+					"simulation::hsflow_source" : [ "bgthresh" ]
 				}
 
 			}
@@ -369,7 +369,7 @@
 					"simulation::enable" : [ 0 ],
 					"simulation::latent_heat" : [ 2501000.0 ],
 					"simulation::dtfl" : [ 0.9 ],
-					"simulation::hsflow_source" : [ 1 ]
+					"simulation::hsflow_source" : [ "bgthresh" ]
 				}
 
 			}
@@ -418,7 +418,7 @@
 					"simulation::obstacles_fg_motion_blur" : [ 0.0 ],
 					"simulation::obstacles_blur" : [ 2.51 ],
 					"simulation::obstacles_threshold" : [ 0.09 ],
-					"simulation::obstacles_bg_motion_blur" : [ 1.0 ],
+					"simulation::obstacles_bg_motion_blur" : [ 0.995 ],
 					"simulation::camera_obstacles" : [ 0 ],
 					"simulation::dt" : [ 0.9 ],
 					"simulation::speed" : [ 0.0333 ],
@@ -431,7 +431,7 @@
 					"simulation::enable" : [ 1 ],
 					"simulation::latent_heat" : [ 2501000.0 ],
 					"simulation::dtfl" : [ 0.9 ],
-					"simulation::hsflow_source" : [ 1 ]
+					"simulation::hsflow_source" : [ "bgthresh" ]
 				}
 
 			}
