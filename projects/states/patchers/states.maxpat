@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 862.0, 436.0, 1024.0, 876.0 ],
+		"rect" : [ 552.0, 418.0, 1024.0, 876.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -1094,7 +1094,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1912.0, 940.0, 50.0, 22.0 ],
 					"style" : "",
-					"text" : "19 19"
+					"text" : "18 19"
 				}
 
 			}
@@ -1114,7 +1114,7 @@
 ,
 					"style" : "",
 					"text" : "pattrstorage @greedy 1",
-					"varname" : "u253047836"
+					"varname" : "u315799372"
 				}
 
 			}
@@ -1874,7 +1874,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 50.0, 100.0, 430.0, 49.0 ],
 									"style" : "",
-									"text" : "86 73 68 69 79 32 79 85 84 80 85 84 32 82 79 85 84 73 78 71 58, 48 32 50, 49 32 51, 50 32 49, 51 32 48, 52 32 48, 53 32 48, 54 32 49 57, 55 32 52, 56 32 48, 57 32 50, 49 48 32 48, 49 49 32 52, 49 50 32 50, 49 51 32 49 50, 49 52 32 51, 49 53 32 49 57, 49 54 32 49 57, 49 55 32 49 57, 49 56 32 49 57, 49 57 32 57, 10"
+									"text" : "86 73 68 69 79 32 79 85 84 80 85 84 32 82 79 85 84 73 78 71 58, 48 32 50, 49 32 51, 50 32 50, 51 32 48, 52 32 48, 53 32 48, 54 32 49 57, 55 32 52, 56 32 48, 57 32 50, 49 48 32 48, 49 49 32 52, 49 50 32 50, 49 51 32 49 50, 49 52 32 51, 49 53 32 49 57, 49 54 32 49 57, 49 55 32 49 57, 49 56 32 49 57, 49 57 32 49 49, 10"
 								}
 
 							}
@@ -2369,7 +2369,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-68",
-					"items" : [ "Laminar", ",", "Clouds", ",", "Laminar", "for", "pressure", "demo", ",", "Laminar", "for", "pressure", "demo", "with", "wind", ",", "Laminar", "for", "pressure", "demo", "with", "wind", "and", "accumulated", "pressure" ],
+					"items" : [ "Laminar", ",", "Clouds", ",", "Laminar", "for", "pressure", "demo", ",", "Laminar", "for", "pressure", "demo", "with", "wind", ",", "Laminar", "for", "pressure", "demo", "with", "wind", "and", "accumulated", "pressure", ",", "disabled", ",", "pressure", "to", "vapor" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -2802,12 +2802,12 @@
 						"ema_floor_clear" : [ -1 ],
 						"ema_floor_reset" : [ -1 ],
 						"ema_floor_sim" : [ 2 ],
-						"ema_floor_vis" : [ 1 ],
+						"ema_floor_vis" : [ 0 ],
 						"ema_scrim_alpha" : [ 0.0 ],
 						"ema_scrim_clear" : [ -1 ],
 						"ema_scrim_reset" : [ -1 ],
 						"ema_scrim_sim" : [ 0 ],
-						"ema_scrim_vis" : [ 1 ],
+						"ema_scrim_vis" : [ 0 ],
 						"ex4_blackout" : [ 1 ],
 						"indiv_dest" : [ 0 ],
 						"indiv_source" : [ 0 ],
@@ -2816,10 +2816,10 @@
 						"number[2]" : [ 10 ],
 						"serra" : [ 0 ],
 						"serra_ex4" : [ 5 ],
-						"sound_floor" : [ 0 ],
+						"sound_floor" : [ 2 ],
 						"sound_floor_volume" : [ 0 ],
 						"sound_scrim" : [ 0 ],
-						"sound_scrim[1]" : [ 6 ],
+						"sound_scrim[1]" : [ 1 ],
 						"sound_scrim[2]" : [ 0 ],
 						"sound_scrim_volume" : [ 0 ],
 						"toggle[1]" : [ 0 ],
@@ -2828,7 +2828,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u650049238"
+					"varname" : "u510800767"
 				}
 
 			}
@@ -3847,9 +3847,9 @@
 					"maxclass" : "mira.frame",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 475.0, 729.0, 256.000006, 182.0 ],
+					"patching_rect" : [ 475.0, 729.0, 256.0, 182.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 6.999992, 926.0, 665.230786, 472.9375 ]
+					"presentation_rect" : [ 6.999992, 926.0, 665.230774, 472.9375 ]
 				}
 
 			}
@@ -5286,30 +5286,30 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-33" : [ "ema_scrim_alpha", "ema_scrim_alpha", 0 ],
-			"obj-168" : [ "ex4_blackout", "ex4_blackout", 0 ],
-			"obj-270" : [ "number[2]", "number[1]", 0 ],
-			"obj-17" : [ "sound_scrim", "sound_scrim", 0 ],
-			"obj-271" : [ "toggle[2]", "toggle[1]", 0 ],
-			"obj-68" : [ "ema_floor_sim", "ema_floor_sim", 0 ],
-			"obj-67" : [ "ema_scrim_sim", "ema_scrim_sim", 0 ],
-			"obj-13" : [ "lights", "lights", 0 ],
-			"obj-18" : [ "sound_floor", "sound_floor", 0 ],
-			"obj-32" : [ "sound_scrim_volume", "sound_scrim_volume", 0 ],
-			"obj-86" : [ "indiv_dest", "indiv_dest", 0 ],
-			"obj-24" : [ "serra", "serra", 0 ],
-			"obj-2" : [ "sound_scrim[1]", "sound_scrim[1]", 0 ],
 			"obj-119" : [ "toggle", "toggle", 0 ],
 			"obj-112" : [ "number", "number", 0 ],
+			"obj-24" : [ "serra", "serra", 0 ],
 			"obj-28" : [ "ema_floor_vis", "ema_floor_vis", 0 ],
+			"obj-2" : [ "sound_scrim[1]", "sound_scrim[1]", 0 ],
 			"obj-26" : [ "ema_scrim_vis", "ema_scrim_vis", 0 ],
 			"obj-159" : [ "number[1]", "number[1]", 0 ],
 			"obj-29" : [ "sound_floor_volume", "sound_floor_volume", 0 ],
-			"obj-11" : [ "toggle[1]", "toggle[1]", 0 ],
 			"obj-70" : [ "indiv_source", "indiv_source", 0 ],
+			"obj-11" : [ "toggle[1]", "toggle[1]", 0 ],
+			"obj-34" : [ "ema_floor_alpha", "ema_floor_alpha", 0 ],
+			"obj-33" : [ "ema_scrim_alpha", "ema_scrim_alpha", 0 ],
 			"obj-21" : [ "serra_ex4", "serra_ex4", 0 ],
+			"obj-168" : [ "ex4_blackout", "ex4_blackout", 0 ],
 			"obj-4" : [ "sound_scrim[2]", "sound_scrim[2]", 0 ],
-			"obj-34" : [ "ema_floor_alpha", "ema_floor_alpha", 0 ]
+			"obj-270" : [ "number[2]", "number[1]", 0 ],
+			"obj-68" : [ "ema_floor_sim", "ema_floor_sim", 0 ],
+			"obj-67" : [ "ema_scrim_sim", "ema_scrim_sim", 0 ],
+			"obj-17" : [ "sound_scrim", "sound_scrim", 0 ],
+			"obj-271" : [ "toggle[2]", "toggle[1]", 0 ],
+			"obj-13" : [ "lights", "lights", 0 ],
+			"obj-18" : [ "sound_floor", "sound_floor", 0 ],
+			"obj-86" : [ "indiv_dest", "indiv_dest", 0 ],
+			"obj-32" : [ "sound_scrim_volume", "sound_scrim_volume", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
