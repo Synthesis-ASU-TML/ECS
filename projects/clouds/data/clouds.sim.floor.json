@@ -1,6 +1,6 @@
 {
 	"pattrstorage" : 	{
-		"name" : "u352604838",
+		"name" : "u574171966",
 		"slots" : 		{
 			"1" : 			{
 				"id" : 1,
@@ -59,7 +59,8 @@
 					"simulation::enable" : [ 1 ],
 					"simulation::latent_heat" : [ 2501000.0 ],
 					"simulation::dtfl" : [ 0.9 ],
-					"simulation::hsflow_source" : [ "bgthresh" ]
+					"simulation::hsflow_source" : [ "bgthresh" ],
+					"simulation::veldim" : [ 1280, 720 ]
 				}
 
 			}
@@ -121,7 +122,8 @@
 					"simulation::enable" : [ 1 ],
 					"simulation::latent_heat" : [ 2501000.0 ],
 					"simulation::dtfl" : [ 0.9 ],
-					"simulation::hsflow_source" : [ "bgthresh" ]
+					"simulation::hsflow_source" : [ "bgthresh" ],
+					"simulation::veldim" : [ 1280, 720 ]
 				}
 
 			}
@@ -183,7 +185,8 @@
 					"simulation::enable" : [ 1 ],
 					"simulation::latent_heat" : [ 2501000.0 ],
 					"simulation::dtfl" : [ 0.9 ],
-					"simulation::hsflow_source" : [ "bgthresh" ]
+					"simulation::hsflow_source" : [ "bgthresh" ],
+					"simulation::veldim" : [ 1280, 720 ]
 				}
 
 			}
@@ -245,7 +248,8 @@
 					"simulation::enable" : [ 1 ],
 					"simulation::latent_heat" : [ 2501000.0 ],
 					"simulation::dtfl" : [ 0.9 ],
-					"simulation::hsflow_source" : [ "bgthresh" ]
+					"simulation::hsflow_source" : [ "bgthresh" ],
+					"simulation::veldim" : [ 1280, 720 ]
 				}
 
 			}
@@ -307,7 +311,8 @@
 					"simulation::enable" : [ 1 ],
 					"simulation::latent_heat" : [ 2501000.0 ],
 					"simulation::dtfl" : [ 0.9 ],
-					"simulation::hsflow_source" : [ "bgthresh" ]
+					"simulation::hsflow_source" : [ "bgthresh" ],
+					"simulation::veldim" : [ 1280, 720 ]
 				}
 
 			}
@@ -369,7 +374,8 @@
 					"simulation::enable" : [ 0 ],
 					"simulation::latent_heat" : [ 2501000.0 ],
 					"simulation::dtfl" : [ 0.9 ],
-					"simulation::hsflow_source" : [ "bgthresh" ]
+					"simulation::hsflow_source" : [ "bgthresh" ],
+					"simulation::veldim" : [  ]
 				}
 
 			}
@@ -431,7 +437,8 @@
 					"simulation::enable" : [ 1 ],
 					"simulation::latent_heat" : [ 2501000.0 ],
 					"simulation::dtfl" : [ 0.9 ],
-					"simulation::hsflow_source" : [ "bgthresh" ]
+					"simulation::hsflow_source" : [ "bgthresh" ],
+					"simulation::veldim" : [ 1280, 720 ]
 				}
 
 			}
