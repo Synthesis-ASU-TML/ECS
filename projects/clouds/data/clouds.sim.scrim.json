@@ -1,6 +1,6 @@
 {
 	"pattrstorage" : 	{
-		"name" : "u630028826",
+		"name" : "u167028801",
 		"slots" : 		{
 			"1" : 			{
 				"id" : 1,
@@ -61,7 +61,8 @@
 					"simulation::dtfl" : [ 0.9 ],
 					"simulation::hsflow_source" : [ "bgthresh" ],
 					"simulation::veldim" : [ 1280, 720 ],
-					"simulation::interpolate" : [ 0 ]
+					"simulation::viscosity_iterations" : [ 0 ],
+					"simulation::viscosity" : [ 0.0 ]
 				}
 
 			}
@@ -125,7 +126,8 @@
 					"simulation::dtfl" : [ 0.9 ],
 					"simulation::hsflow_source" : [ "bgthresh" ],
 					"simulation::veldim" : [ 1280, 720 ],
-					"simulation::interpolate" : [ 0 ]
+					"simulation::viscosity_iterations" : [ 0 ],
+					"simulation::viscosity" : [ 0.0 ]
 				}
 
 			}
@@ -189,7 +191,8 @@
 					"simulation::dtfl" : [ 0.9 ],
 					"simulation::hsflow_source" : [ "bgthresh" ],
 					"simulation::veldim" : [ 1280, 720 ],
-					"simulation::interpolate" : [ 0 ]
+					"simulation::viscosity_iterations" : [  ],
+					"simulation::viscosity" : [  ]
 				}
 
 			}
