@@ -56,8 +56,8 @@
 					"id" : "obj-30",
 					"maxclass" : "newobj",
 					"numinlets" : 3,
-					"numoutlets" : 4,
-					"outlettype" : [ "jit_gl_texture", "jit_gl_texture", "jit_gl_texture", "" ],
+					"numoutlets" : 2,
+					"outlettype" : [ "jit_gl_texture", "" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
@@ -68,7 +68,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 305.0, 278.0, 633.0, 426.0 ],
+						"rect" : [ 858.0, 243.0, 633.0, 426.0 ],
 						"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
@@ -98,30 +98,6 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-6",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 534.5, 372.0, 94.0, 20.0 ],
-									"style" : "",
-									"text" : "Pass obstacles"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-4",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 296.0, 372.0, 107.0, 20.0 ],
-									"style" : "",
-									"text" : "Pass divergence"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"id" : "obj-3",
 									"maxclass" : "comment",
 									"numinlets" : 1,
@@ -134,47 +110,17 @@
 							}
 , 							{
 								"box" : 								{
-									"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
-									"color" : [ 0.650963, 0.655203, 0.777106, 1.0 ],
-									"id" : "obj-7",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 489.0, 372.0, 41.0, 22.0 ],
-									"style" : "",
-									"text" : "out 3",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"code" : "require(\"ecs.geometry\");\r\nParam dx(0.005);\t\t// m / px\r\nParam iteration(1);\t\t// int\r\nParam savepressure(0);\t// bool\r\nParam hard(1, 1, 1, 1);\r\n\r\nptot = 0;\r\nzerop = (savepressure == 1) || (iteration != 1);\r\n\r\n\r\n// Total pressure from neighboring pixels.\r\npl, pr, pu, pd = mask_neighbors_replace(in1, in3, norm, hard);\t\r\nptot = zerop * (pl.x + pr.x + pu.x + pd.x);\r\n\r\n// (m^2 / px^2) * (px / s) = m^2 / px s. TODO: Is this ACTUALLY Pa?\r\n// Gradient subtraction later is (m^2 / px s) / (m / px) = m / s.\r\nout1 = (1 - in3.w) * ((ptot - (dx * dx) * in2.x) / 4);\t// New pressure.\r\nout2 = in2;\t\t\t\t\t\t\t\t// Divergence.\r\nout3 = in3;\t\t\t\t\t\t\t\t// Obstacle mask. ",
+									"code" : "require(\"ecs.geometry\");\r\nParam dx(0.005);\t\t// m / px\r\nParam iteration(1);\t\t// int\r\nParam savepressure(0);\t// bool\r\nParam hard(1, 1, 1, 1);\r\n\r\nptot = 0;\r\nzerop = (savepressure == 1) || (iteration != 1);\r\n\r\n\r\n// Total pressure from neighboring pixels.\r\npl, pr, pu, pd = mask_neighbors_replace(in1, in3, norm, hard);\t\r\nptot = zerop * (pl.x + pr.x + pu.x + pd.x);\r\n\r\n// (m^2 / px^2) * (px / s) = m^2 / px s. TODO: Is this ACTUALLY Pa?\r\n// Gradient subtraction later is (m^2 / px s) / (m / px) = m / s.\r\nout1 = (1 - in3.w) * ((ptot - (dx * dx) * in2.x) / 4);\t// New pressure.\r\n",
 									"fontface" : 0,
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-5",
 									"maxclass" : "codebox",
 									"numinlets" : 3,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
 									"patching_rect" : [ 25.0, 57.0, 483.0, 297.0 ],
 									"style" : ""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
-									"color" : [ 0.650963, 0.655203, 0.777106, 1.0 ],
-									"id" : "obj-1",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 257.0, 372.0, 37.0, 22.0 ],
-									"style" : "",
-									"text" : "out 2",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
 							}
@@ -258,22 +204,8 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-1", 0 ],
-									"source" : [ "obj-5", 1 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-51", 0 ],
 									"source" : [ "obj-5", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-7", 0 ],
-									"source" : [ "obj-5", 2 ]
 								}
 
 							}
@@ -592,7 +524,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-26", 0 ],
+					"order" : 0,
+					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-30", 1 ],
+					"order" : 1,
 					"source" : [ "obj-19", 0 ]
 				}
 
@@ -607,7 +548,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-27", 0 ],
+					"order" : 0,
+					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-30", 2 ],
+					"order" : 1,
 					"source" : [ "obj-20", 0 ]
 				}
 
@@ -639,20 +589,6 @@
 				"patchline" : 				{
 					"destination" : [ "", -1 ],
 					"source" : [ "obj-4", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-26", 0 ],
-					"source" : [ "obj-30", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-27", 0 ],
-					"source" : [ "obj-30", 2 ]
 				}
 
 			}
