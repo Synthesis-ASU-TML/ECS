@@ -91,7 +91,6 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-7",
-					"int" : 1,
 					"maxclass" : "gswitch2",
 					"numinlets" : 2,
 					"numoutlets" : 2,
@@ -105,7 +104,6 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-6",
-					"int" : 1,
 					"maxclass" : "gswitch2",
 					"numinlets" : 2,
 					"numoutlets" : 2,
@@ -206,7 +204,7 @@
 							}
 , 							{
 								"box" : 								{
-									"code" : "require(\"ecs.geometry\");\r\nParam dt(1);\t\t\t\t// s (simulated) / s (real)\r\nParam viscosity(0);\t\t\t// 1 / 1\r\nParam gain(0);\r\n\r\nviscdt = sample(in2, norm) * gain + viscosity * dt;\r\n\r\n// Total velocity from neighboring pixels.\r\nvl, vr, vu, vd = mask_neighbors(in1, in3, norm);\r\n\r\nout1 = (sample(in1, norm) + viscdt * (\t// New velocity.\r\n\tvl + vr + vu + vd\r\n)) / (1 + 4 * viscdt) * (1 - in3.w);",
+									"code" : "require(\"ecs.geometry\");\r\nParam dt(1);\t\t\t\t// s (simulated) / s (real)\r\nParam viscosity(0);\t\t\t// 1 / 1\r\nParam gain(0);\r\n\r\nviscdt = (sample(in2, norm) * gain + viscosity) * dt;\r\n\r\n// Total velocity from neighboring pixels.\r\nvl, vr, vu, vd = mask_neighbors(in1, in3, norm);\r\n\r\nout1 = (sample(in1, norm) + viscdt * (\t// New velocity.\r\n\tvl + vr + vu + vd\r\n)) / (1 + 4 * viscdt) * (1 - in3.w);",
 									"fontface" : 0,
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
@@ -422,7 +420,6 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-3",
-					"int" : 1,
 					"maxclass" : "gswitch2",
 					"numinlets" : 2,
 					"numoutlets" : 2,
