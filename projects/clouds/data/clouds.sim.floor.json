@@ -1,6 +1,6 @@
 {
 	"pattrstorage" : 	{
-		"name" : "u167028801",
+		"name" : "u662079874",
 		"slots" : 		{
 			"1" : 			{
 				"id" : 1,
@@ -62,7 +62,9 @@
 					"simulation::hsflow_source" : [ "bgthresh" ],
 					"simulation::veldim" : [ 1280, 720 ],
 					"simulation::viscosity_iterations" : [ 0 ],
-					"simulation::viscosity" : [ 0.0 ]
+					"simulation::viscosity" : [ 0.0 ],
+					"simulation::external_viscosity_gain" : [  ],
+					"simulation::external_viscosity_texture" : [  ]
 				}
 
 			}
@@ -127,7 +129,9 @@
 					"simulation::hsflow_source" : [ "bgthresh" ],
 					"simulation::veldim" : [ 1280, 720 ],
 					"simulation::viscosity_iterations" : [ 0 ],
-					"simulation::viscosity" : [ 0.0 ]
+					"simulation::viscosity" : [ 0.0 ],
+					"simulation::external_viscosity_gain" : [  ],
+					"simulation::external_viscosity_texture" : [  ]
 				}
 
 			}
@@ -151,17 +155,17 @@
 					"simulation::dry_cv" : [ 717.0 ],
 					"simulation::vapor_cv" : [ 1388.5 ],
 					"simulation::accumulate_pressure" : [ 0 ],
-					"simulation::vapor_dissipation" : [ 0.99 ],
-					"simulation::liquid_dissipation" : [ 0.99 ],
+					"simulation::vapor_dissipation" : [ 0.98 ],
+					"simulation::liquid_dissipation" : [ 0.98 ],
 					"simulation::temperature_dissipation" : [ 0.95 ],
-					"simulation::velocity_dissipation" : [ 1.0 ],
+					"simulation::velocity_dissipation" : [ 0.98 ],
 					"simulation::external_velocity_texture" : [ "hsflow" ],
 					"simulation::external_pressure_texture" : [ "hsflow" ],
 					"simulation::external_temperature_texture" : [ "hsflow" ],
 					"simulation::external_vapor_texture" : [ "hsflow" ],
 					"simulation::external_liquid_texture" : [ "hsflow" ],
 					"simulation::external_env_pressure_texture" : [ "hsflow" ],
-					"simulation::external_velocity_gain" : [ 100.0 ],
+					"simulation::external_velocity_gain" : [ 400.0 ],
 					"simulation::external_pressure_gain" : [ 0.0 ],
 					"simulation::external_temperature_gain" : [ 0.0 ],
 					"simulation::external_vapor_gain" : [ 0.001 ],
@@ -176,7 +180,7 @@
 					"simulation::obstacles_fg_motion_blur" : [ 0.0 ],
 					"simulation::obstacles_blur" : [ 2.51 ],
 					"simulation::obstacles_threshold" : [ 0.09 ],
-					"simulation::obstacles_bg_motion_blur" : [ 1.0 ],
+					"simulation::obstacles_bg_motion_blur" : [ 0.995 ],
 					"simulation::camera_obstacles" : [ 0 ],
 					"simulation::dt" : [ 0.9 ],
 					"simulation::speed" : [ 0.0333 ],
@@ -189,10 +193,12 @@
 					"simulation::enable" : [ 1 ],
 					"simulation::latent_heat" : [ 2501000.0 ],
 					"simulation::dtfl" : [ 0.9 ],
-					"simulation::hsflow_source" : [ "bgthresh" ],
+					"simulation::hsflow_source" : [ "bgsub" ],
 					"simulation::veldim" : [ 1280, 720 ],
-					"simulation::viscosity_iterations" : [ 0 ],
-					"simulation::viscosity" : [ 0.0 ]
+					"simulation::viscosity_iterations" : [ 20 ],
+					"simulation::viscosity" : [ 0.0 ],
+					"simulation::external_viscosity_gain" : [ 0.0 ],
+					"simulation::external_viscosity_texture" : [ "bgsub" ]
 				}
 
 			}
@@ -257,7 +263,9 @@
 					"simulation::hsflow_source" : [ "bgthresh" ],
 					"simulation::veldim" : [ 1280, 720 ],
 					"simulation::viscosity_iterations" : [ 0 ],
-					"simulation::viscosity" : [ 0.0 ]
+					"simulation::viscosity" : [ 0.0 ],
+					"simulation::external_viscosity_gain" : [  ],
+					"simulation::external_viscosity_texture" : [  ]
 				}
 
 			}
@@ -322,7 +330,9 @@
 					"simulation::hsflow_source" : [ "bgthresh" ],
 					"simulation::veldim" : [ 1280, 720 ],
 					"simulation::viscosity_iterations" : [ 0 ],
-					"simulation::viscosity" : [ 0.0 ]
+					"simulation::viscosity" : [ 0.0 ],
+					"simulation::external_viscosity_gain" : [  ],
+					"simulation::external_viscosity_texture" : [  ]
 				}
 
 			}
@@ -387,7 +397,9 @@
 					"simulation::hsflow_source" : [ "bgthresh" ],
 					"simulation::veldim" : [  ],
 					"simulation::viscosity_iterations" : [ 0 ],
-					"simulation::viscosity" : [ 0.0 ]
+					"simulation::viscosity" : [ 0.0 ],
+					"simulation::external_viscosity_gain" : [  ],
+					"simulation::external_viscosity_texture" : [  ]
 				}
 
 			}
@@ -449,10 +461,12 @@
 					"simulation::enable" : [ 1 ],
 					"simulation::latent_heat" : [ 2501000.0 ],
 					"simulation::dtfl" : [ 0.9 ],
-					"simulation::hsflow_source" : [ "bgthresh" ],
+					"simulation::hsflow_source" : [ "bgsub" ],
 					"simulation::veldim" : [ 1280, 720 ],
 					"simulation::viscosity_iterations" : [ 0 ],
-					"simulation::viscosity" : [ 0.0 ]
+					"simulation::viscosity" : [ 0.0 ],
+					"simulation::external_viscosity_gain" : [ 0.0 ],
+					"simulation::external_viscosity_texture" : [ "bgsub" ]
 				}
 
 			}
