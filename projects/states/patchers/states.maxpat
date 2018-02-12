@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 552.0, 418.0, 1291.0, 876.0 ],
+		"rect" : [ 814.0, 418.0, 1029.0, 876.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -410,8 +410,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 10.0, 411.0, 150.0, 34.0 ],
-					"text" : "/ex4/preset : 619",
-					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+					"text" : "/ex4/preset : 619"
 				}
 
 			}
@@ -1076,7 +1075,7 @@
 ,
 					"style" : "",
 					"text" : "pattrstorage @greedy 1",
-					"varname" : "u249047849"
+					"varname" : "u839051425"
 				}
 
 			}
@@ -2017,7 +2016,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "list", "int" ],
+					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 1218.0, 507.0, 187.0, 22.0 ],
 					"style" : "",
 					"text" : "sadam.tcpClient 2.78.21.26 9990"
@@ -2764,7 +2763,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u596049252"
+					"varname" : "u452052821"
 				}
 
 			}
@@ -3783,9 +3782,9 @@
 					"maxclass" : "mira.frame",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 31.5, 1635.0, 500.747265, 356.0 ],
+					"patching_rect" : [ 31.5, 1635.0, 500.747253, 356.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 6.999992, 926.0, 665.230786, 472.9375 ]
+					"presentation_rect" : [ 6.999992, 926.0, 665.230774, 472.9375 ]
 				}
 
 			}
@@ -5222,11 +5221,8 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-2" : [ "sound_scrim[1]", "sound_scrim[1]", 0 ],
-			"obj-119" : [ "toggle", "toggle", 0 ],
 			"obj-28" : [ "ema_floor_vis", "ema_floor_vis", 0 ],
 			"obj-26" : [ "ema_scrim_vis", "ema_scrim_vis", 0 ],
-			"obj-112" : [ "number", "number", 0 ],
 			"obj-159" : [ "number[1]", "number[1]", 0 ],
 			"obj-29" : [ "sound_floor_volume", "sound_floor_volume", 0 ],
 			"obj-11" : [ "toggle[1]", "toggle[1]", 0 ],
@@ -5244,8 +5240,11 @@
 			"obj-13" : [ "lights", "lights", 0 ],
 			"obj-18" : [ "sound_floor", "sound_floor", 0 ],
 			"obj-32" : [ "sound_scrim_volume", "sound_scrim_volume", 0 ],
+			"obj-119" : [ "toggle", "toggle", 0 ],
+			"obj-112" : [ "number", "number", 0 ],
 			"obj-86" : [ "indiv_dest", "indiv_dest", 0 ],
-			"obj-24" : [ "serra", "serra", 0 ]
+			"obj-24" : [ "serra", "serra", 0 ],
+			"obj-2" : [ "sound_scrim[1]", "sound_scrim[1]", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -5293,10 +5292,6 @@
 			}
 , 			{
 				"name" : "o.route.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "sadam.tcpClient.mxo",
 				"type" : "iLaX"
 			}
 , 			{

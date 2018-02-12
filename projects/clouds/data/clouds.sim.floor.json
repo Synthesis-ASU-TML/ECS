@@ -1,6 +1,6 @@
 {
 	"pattrstorage" : 	{
-		"name" : "u662079874",
+		"name" : "u907030289",
 		"slots" : 		{
 			"1" : 			{
 				"id" : 1,
@@ -158,7 +158,7 @@
 					"simulation::vapor_dissipation" : [ 0.98 ],
 					"simulation::liquid_dissipation" : [ 0.98 ],
 					"simulation::temperature_dissipation" : [ 0.95 ],
-					"simulation::velocity_dissipation" : [ 0.98 ],
+					"simulation::velocity_dissipation" : [ 1.0 ],
 					"simulation::external_velocity_texture" : [ "hsflow" ],
 					"simulation::external_pressure_texture" : [ "hsflow" ],
 					"simulation::external_temperature_texture" : [ "hsflow" ],
