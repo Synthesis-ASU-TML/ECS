@@ -1,6 +1,6 @@
 {
 	"pattrstorage" : 	{
-		"name" : "u167028801",
+		"name" : "u651028837",
 		"slots" : 		{
 			"1" : 			{
 				"id" : 1,
@@ -45,8 +45,8 @@
 					"simulation::hsflow_blur" : [ 1.0 ],
 					"simulation::obstacles_fg_motion_blur" : [ 0.0 ],
 					"simulation::obstacles_blur" : [ 2.51 ],
-					"simulation::obstacles_threshold" : [ 0.08 ],
-					"simulation::obstacles_bg_motion_blur" : [ 1.0 ],
+					"simulation::obstacles_threshold" : [ 0.02 ],
+					"simulation::obstacles_bg_motion_blur" : [ 0.995 ],
 					"simulation::camera_obstacles" : [ 1 ],
 					"simulation::dt" : [ 0.9 ],
 					"simulation::speed" : [ 0.0333 ],
@@ -62,7 +62,9 @@
 					"simulation::hsflow_source" : [ "bgthresh" ],
 					"simulation::veldim" : [ 1280, 720 ],
 					"simulation::viscosity_iterations" : [ 0 ],
-					"simulation::viscosity" : [ 0.0 ]
+					"simulation::viscosity" : [ 0.0 ],
+					"simulation::external_viscosity_gain" : [ 0.0 ],
+					"simulation::external_viscosity_texture" : [ "bgsub" ]
 				}
 
 			}
@@ -110,7 +112,7 @@
 					"simulation::hsflow_blur" : [ 1.0 ],
 					"simulation::obstacles_fg_motion_blur" : [ 0.0 ],
 					"simulation::obstacles_blur" : [ 2.51 ],
-					"simulation::obstacles_threshold" : [ 0.08 ],
+					"simulation::obstacles_threshold" : [ 0.02 ],
 					"simulation::obstacles_bg_motion_blur" : [ 1.0 ],
 					"simulation::camera_obstacles" : [ 0 ],
 					"simulation::dt" : [ 0.9 ],
@@ -127,7 +129,9 @@
 					"simulation::hsflow_source" : [ "bgthresh" ],
 					"simulation::veldim" : [ 1280, 720 ],
 					"simulation::viscosity_iterations" : [ 0 ],
-					"simulation::viscosity" : [ 0.0 ]
+					"simulation::viscosity" : [ 0.0 ],
+					"simulation::external_viscosity_gain" : [ 0.0 ],
+					"simulation::external_viscosity_texture" : [ "bgsub" ]
 				}
 
 			}
@@ -192,7 +196,9 @@
 					"simulation::hsflow_source" : [ "bgthresh" ],
 					"simulation::veldim" : [ 1280, 720 ],
 					"simulation::viscosity_iterations" : [  ],
-					"simulation::viscosity" : [  ]
+					"simulation::viscosity" : [  ],
+					"simulation::external_viscosity_gain" : [  ],
+					"simulation::external_viscosity_texture" : [  ]
 				}
 
 			}
