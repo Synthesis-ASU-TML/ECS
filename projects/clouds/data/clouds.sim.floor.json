@@ -1,6 +1,6 @@
 {
 	"pattrstorage" : 	{
-		"name" : "u907030289",
+		"name" : "u974029468",
 		"slots" : 		{
 			"1" : 			{
 				"id" : 1,
@@ -195,7 +195,7 @@
 					"simulation::dtfl" : [ 0.9 ],
 					"simulation::hsflow_source" : [ "bgsub" ],
 					"simulation::veldim" : [ 1280, 720 ],
-					"simulation::viscosity_iterations" : [ 20 ],
+					"simulation::viscosity_iterations" : [ 0 ],
 					"simulation::viscosity" : [ 0.0 ],
 					"simulation::external_viscosity_gain" : [ 0.0 ],
 					"simulation::external_viscosity_texture" : [ "bgsub" ]
