@@ -1,6 +1,6 @@
 {
 	"pattrstorage" : 	{
-		"name" : "u539030206",
+		"name" : "u725030200",
 		"slots" : 		{
 			"1" : 			{
 				"id" : 1,
@@ -155,8 +155,8 @@
 					"simulation::dry_cv" : [ 717.0 ],
 					"simulation::vapor_cv" : [ 1388.5 ],
 					"simulation::accumulate_pressure" : [ 0 ],
-					"simulation::vapor_dissipation" : [ 0.98 ],
-					"simulation::liquid_dissipation" : [ 0.98 ],
+					"simulation::vapor_dissipation" : [ 0.99 ],
+					"simulation::liquid_dissipation" : [ 0.99 ],
 					"simulation::temperature_dissipation" : [ 0.95 ],
 					"simulation::velocity_dissipation" : [ 1.0 ],
 					"simulation::external_velocity_texture" : [ "hsflow" ],
@@ -165,7 +165,7 @@
 					"simulation::external_vapor_texture" : [ "hsflow" ],
 					"simulation::external_liquid_texture" : [ "hsflow" ],
 					"simulation::external_env_pressure_texture" : [ "hsflow" ],
-					"simulation::external_velocity_gain" : [ 400.0 ],
+					"simulation::external_velocity_gain" : [ 50.0 ],
 					"simulation::external_pressure_gain" : [ 0.0 ],
 					"simulation::external_temperature_gain" : [ 0.0 ],
 					"simulation::external_vapor_gain" : [ 0.001 ],
