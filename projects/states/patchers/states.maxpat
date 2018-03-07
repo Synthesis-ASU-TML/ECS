@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 1162.0, 532.0, 959.0, 883.0 ],
+		"rect" : [ 236.0, 118.0, 1114.0, 883.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,45 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-167",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "FullPacket" ],
+					"patching_rect" : [ 478.0, 986.0, 101.0, 22.0 ],
+					"style" : "",
+					"text" : "o.pack /sim/reset"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-169",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "FullPacket" ],
+					"patching_rect" : [ 568.0, 946.5, 101.0, 22.0 ],
+					"style" : "",
+					"text" : "o.pack /sim/clear"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-92",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "FullPacket" ],
+					"patching_rect" : [ 513.0, 709.0, 101.0, 22.0 ],
+					"style" : "",
+					"text" : "o.pack /sim/reset"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-229",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -45,7 +84,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 29.0, 736.0, 50.0, 22.0 ],
 					"style" : "",
-					"text" : "1"
+					"text" : "15"
 				}
 
 			}
@@ -57,7 +96,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
 					"patching_rect" : [ 899.0, 889.0, 114.0, 22.0 ],
-					"presentation_rect" : [ 898.0, 887.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "o.pack /sim/bgclear"
 				}
@@ -146,7 +184,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
 					"patching_rect" : [ 677.0, 889.0, 111.0, 22.0 ],
-					"presentation_rect" : [ 769.0, 785.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "o.pack /sim/enable"
 				}
@@ -205,8 +242,7 @@
 
 					}
 ,
-					"style" : "",
-					"varname" : "toggle[4]"
+					"style" : ""
 				}
 
 			}
@@ -250,8 +286,7 @@
 
 					}
 ,
-					"style" : "",
-					"varname" : "toggle[3]"
+					"style" : ""
 				}
 
 			}
@@ -417,7 +452,7 @@
 				"box" : 				{
 					"fontsize" : 36.0,
 					"id" : "obj-174",
-					"items" : [ "Laminar", ",", "Clouds", ",", "Laminar", "for", "pressure", "demo", ",", "Laminar", "for", "pressure", "demo", "with", "wind", ",", "Laminar", "for", "pressure", "demo", "with", "wind", "and", "accumulated", "pressure", ",", "disabled", ",", "pressure", "to", "vapor", ",", "Velocity", "Ghosting" ],
+					"items" : [ "Laminar", ",", "Clouds", ",", "Laminar", "for", "pressure", "demo", ",", "Laminar", "for", "pressure", "demo", "with", "wind", ",", "Laminar", "for", "pressure", "demo", "with", "wind", "and", "accumulated", "pressure", ",", "disabled", ",", "pressure", "to", "vapor", ",", "Velocity", "Ghosting", ",", "ghosting", "no", "vorticity" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -436,8 +471,7 @@
 
 					}
 ,
-					"style" : "",
-					"varname" : "ema_floor_sim[1]"
+					"style" : ""
 				}
 
 			}
@@ -464,8 +498,7 @@
 
 					}
 ,
-					"style" : "",
-					"varname" : "ema_scrim_sim[1]"
+					"style" : ""
 				}
 
 			}
@@ -492,8 +525,7 @@
 					}
 ,
 					"size" : 1.0,
-					"style" : "",
-					"varname" : "ema_floor_alpha[1]"
+					"style" : ""
 				}
 
 			}
@@ -520,8 +552,7 @@
 					}
 ,
 					"size" : 1.0,
-					"style" : "",
-					"varname" : "ema_scrim_alpha[1]"
+					"style" : ""
 				}
 
 			}
@@ -529,7 +560,7 @@
 				"box" : 				{
 					"fontsize" : 36.0,
 					"id" : "obj-179",
-					"items" : [ "Clouds", ",", "Velocity", "flow", "field", ",", "Velocity", "image", ",", "Pressure", ",", "Optical", "flow", ",", "Camera", ",", "Obstacles", ",", "Background", ",", "Foreground", ",", "Off", ",", "Movie:", "Clouds", ",", "Movie:", "Water", ",", "Movie:", "City", ",", "Velocity", "Field", "-", "Wind", ",", "Velocity", "Ghosting" ],
+					"items" : [ "Clouds", ",", "Velocity", "flow", "field", ",", "Velocity", "image", ",", "Pressure", ",", "Optical", "flow", ",", "Camera", ",", "Obstacles", ",", "Background", ",", "Foreground", ",", "Off", ",", "Movie:", "Clouds", ",", "Movie:", "Water", ",", "Movie:", "City", ",", "Velocity", "Field", "-", "Wind", ",", "Velocity", "Ghosting", ",", "ghosting", "long", "particles", ",", "ghosting", "short", "particles" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -548,8 +579,7 @@
 
 					}
 ,
-					"style" : "",
-					"varname" : "ema_floor_vis[1]"
+					"style" : ""
 				}
 
 			}
@@ -576,8 +606,7 @@
 
 					}
 ,
-					"style" : "",
-					"varname" : "ema_scrim_vis[1]"
+					"style" : ""
 				}
 
 			}
@@ -973,8 +1002,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 10.0, 411.0, 150.0, 34.0 ],
-					"text" : "/ex4/preset : 619",
-					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+					"text" : "/ex4/preset : 619"
 				}
 
 			}
@@ -1599,7 +1627,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-86",
-					"items" : [ "0_Projector:_Floor", ",", "1_Projector:_Scrim", ",", "2_Projector:_SERRA_Lower", ",", "3_Computer:_iMac_Input", ",", "4_Computer:_MP4_Input", ",", "5_Computer:_MP1_Input", ",", "6_Videohub:_Fishbowl", ",", "7_Computer:_Island_A_Input", ",", "8_Computer:_Island_B_Input", ",", "9_TV:_West_(Stage)", ",", "10_TV:_South_(Computers)", ",", "11_MultiView_16:_Input_1", ",", "12_MultiView_16:_Input_2", ",", "13_MultiView_16:_Input_3", ",", "14_MultiView_16:_Input_4", ",", "15_MultiView_16:_Input_5", ",", "16_MultiView_16:_Input_6", ",", "17_MultiView_16:_Input_7", ",", "18_MultiView_16:_Input_8", ",", "19_Projector:_SERRA_Upper" ],
+					"items" : [ "0_Projector:_Floor", ",", "1_Projector:_Scrim", ",", "2_Projector:_Sky_North", ",", "3_Computer:_iMac_Input", ",", "4_Computer:_MP4_Input", ",", "5_Computer:_MP1_Input", ",", "6_Videohub:_Fishbowl", ",", "7_Computer:_Island_A_Input", ",", "8_Computer:_Island_B_Input", ",", "9_TV:_West_(Stage)", ",", "10_TV:_South_(Computers)", ",", "11_MultiView_16:_Input_1", ",", "12_MultiView_16:_Input_2", ",", "13_MultiView_16:_Input_3", ",", "14_MultiView_16:_Input_4", ",", "15_MultiView_16:_Input_5", ",", "16_MultiView_16:_Input_6", ",", "17_MultiView_16:_Input_7", ",", "18_MultiView_16:_Input_8", ",", "19_Projector:_Sky_South" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1632,14 +1660,14 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1876.0, 1009.0, 137.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 4, 45, 358, 246 ],
+						"client_rect" : [ 4, 44, 358, 172 ],
 						"parameter_enable" : 0,
-						"storage_rect" : [ 583, 69, 1743, 1440 ]
+						"storage_rect" : [ 583, 69, 1034, 197 ]
 					}
 ,
 					"style" : "",
 					"text" : "pattrstorage @greedy 1",
-					"varname" : "u400054137"
+					"varname" : "u767054232"
 				}
 
 			}
@@ -2366,14 +2394,14 @@
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-37",
-									"linecount" : 2,
+									"linecount" : 5,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 50.0, 100.0, 430.0, 49.0 ],
 									"style" : "",
-									"text" : "86 73 68 69 79 32 79 85 84 80 85 84 32 82 79 85 84 73 78 71 58, 49 48 32 52, 10"
+									"text" : "86 73 68 69 79 32 79 85 84 80 85 84 32 82 79 85 84 73 78 71 58, 48 32 49, 49 32 51, 50 32 50, 51 32 52, 52 32 48, 53 32 48, 54 32 49 57, 55 32 52, 56 32 48, 57 32 50, 49 48 32 48, 49 49 32 52, 49 50 32 49, 49 51 32 49 50, 49 52 32 51, 49 53 32 49 57, 49 54 32 49 57, 49 55 32 49 57, 49 56 32 49 57, 49 57 32 49 49, 10"
 								}
 
 							}
@@ -2676,9 +2704,9 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 31.5, 1591.0, 110.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 4, 45, 358, 246 ],
+						"client_rect" : [ 4, 44, 358, 172 ],
 						"parameter_enable" : 0,
-						"storage_rect" : [ 583, 69, 1743, 1440 ]
+						"storage_rect" : [ 583, 69, 1034, 197 ]
 					}
 ,
 					"style" : "",
@@ -2690,28 +2718,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-84",
-					"linecount" : 2,
 					"maxclass" : "newobj",
-					"numinlets" : 2,
+					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 514.0, 716.0, 136.0, 35.0 ],
+					"patching_rect" : [ 595.0, 724.5, 101.0, 22.0 ],
 					"style" : "",
-					"text" : "o.pack /sim/reset /sim/clear"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-83",
-					"linecount" : 2,
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 443.0, 889.0, 136.0, 35.0 ],
-					"style" : "",
-					"text" : "o.pack /sim/reset /sim/clear"
+					"text" : "o.pack /sim/clear"
 				}
 
 			}
@@ -2868,7 +2881,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-68",
-					"items" : [ "Laminar", ",", "Clouds", ",", "Laminar", "for", "pressure", "demo", ",", "Laminar", "for", "pressure", "demo", "with", "wind", ",", "Laminar", "for", "pressure", "demo", "with", "wind", "and", "accumulated", "pressure", ",", "disabled", ",", "pressure", "to", "vapor" ],
+					"items" : [ "Laminar", ",", "Clouds", ",", "Laminar", "for", "pressure", "demo", ",", "Laminar", "for", "pressure", "demo", "with", "wind", ",", "Laminar", "for", "pressure", "demo", "with", "wind", "and", "accumulated", "pressure", ",", "disabled", ",", "pressure", "to", "vapor", ",", "ghosting", ",", "ghosting", "no", "vorticity" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -3297,22 +3310,16 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 243.0, 1591.0, 58.0, 22.0 ],
 					"restore" : 					{
-						"ema_floor_alpha" : [ 0.0 ],
-						"ema_floor_alpha[1]" : [ 1.0 ],
+						"ema_floor_alpha" : [ 1.0 ],
 						"ema_floor_clear" : [ -1 ],
 						"ema_floor_reset" : [ -1 ],
-						"ema_floor_sim" : [ 2 ],
-						"ema_floor_sim[1]" : [ 3 ],
-						"ema_floor_vis" : [ 0 ],
-						"ema_floor_vis[1]" : [ 3 ],
+						"ema_floor_sim" : [ 8 ],
+						"ema_floor_vis" : [ 14 ],
 						"ema_scrim_alpha" : [ 0.0 ],
-						"ema_scrim_alpha[1]" : [ 0.0 ],
 						"ema_scrim_clear" : [ -1 ],
 						"ema_scrim_reset" : [ -1 ],
 						"ema_scrim_sim" : [ 0 ],
-						"ema_scrim_sim[1]" : [ 0 ],
-						"ema_scrim_vis" : [ 0 ],
-						"ema_scrim_vis[1]" : [ 14 ],
+						"ema_scrim_vis" : [ 14 ],
 						"ex4_blackout" : [ 1 ],
 						"indiv_dest" : [ 0 ],
 						"indiv_source" : [ 0 ],
@@ -3328,14 +3335,12 @@
 						"sound_scrim[2]" : [ 0 ],
 						"sound_scrim_volume" : [ 0 ],
 						"toggle[1]" : [ 0 ],
-						"toggle[2]" : [ 0 ],
-						"toggle[3]" : [ 1 ],
-						"toggle[4]" : [ 0 ]
+						"toggle[2]" : [ 0 ]
 					}
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u625055540"
+					"varname" : "u587055634"
 				}
 
 			}
@@ -3465,7 +3470,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-28",
-					"items" : [ "Clouds", ",", "Velocity", "flow", "field", ",", "Velocity", "image", ",", "Pressure", ",", "Optical", "flow", ",", "Camera", ",", "Obstacles", ",", "Background", ",", "Foreground", ",", "Off", ",", "Movie:", "Clouds", ",", "Movie:", "Water", ",", "Movie:", "City", ",", "Velocity", "Field", "-", "Wind", ",", "Velocity", "Ghosting" ],
+					"items" : [ "Clouds", ",", "Velocity", "flow", "field", ",", "Velocity", "image", ",", "Pressure", ",", "Optical", "flow", ",", "Camera", ",", "Obstacles", ",", "Background", ",", "Foreground", ",", "Off", ",", "Movie:", "Clouds", ",", "Movie:", "Water", ",", "Movie:", "City", ",", "Velocity", "Field", "-", "Wind", ",", "Velocity", "Ghosting", ",", "ghosting", "long", "particles", ",", "ghosting", "short", "particles" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -4945,8 +4950,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-59", 0 ],
+					"source" : [ "obj-167", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
 					"source" : [ "obj-168", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-59", 0 ],
+					"source" : [ "obj-169", 0 ]
 				}
 
 			}
@@ -5793,7 +5812,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-83", 0 ],
+					"destination" : [ "obj-167", 0 ],
 					"source" : [ "obj-79", 0 ]
 				}
 
@@ -5807,29 +5826,22 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-84", 0 ],
+					"destination" : [ "obj-92", 0 ],
 					"source" : [ "obj-80", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-83", 1 ],
+					"destination" : [ "obj-169", 0 ],
 					"source" : [ "obj-81", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-84", 1 ],
+					"destination" : [ "obj-84", 0 ],
 					"source" : [ "obj-82", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-59", 0 ],
-					"source" : [ "obj-83", 0 ]
 				}
 
 			}
@@ -5873,6 +5885,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-81", 0 ],
 					"source" : [ "obj-91", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-60", 0 ],
+					"source" : [ "obj-92", 0 ]
 				}
 
 			}
@@ -5942,38 +5961,38 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-67" : [ "ema_scrim_sim", "ema_scrim_sim", 0 ],
-			"obj-86" : [ "indiv_dest", "indiv_dest", 0 ],
-			"obj-24" : [ "serra", "serra", 0 ],
-			"obj-2" : [ "sound_scrim[1]", "sound_scrim[1]", 0 ],
-			"obj-174" : [ "ema_floor_sim[1]", "ema_floor_sim", 0 ],
-			"obj-200" : [ "ema_scrim_vis[1]", "ema_scrim_vis", 0 ],
-			"obj-210" : [ "toggle[3]", "toggle[1]", 0 ],
-			"obj-159" : [ "number[1]", "number[1]", 0 ],
-			"obj-29" : [ "sound_floor_volume", "sound_floor_volume", 0 ],
-			"obj-34" : [ "ema_floor_alpha", "ema_floor_alpha", 0 ],
-			"obj-11" : [ "toggle[1]", "toggle[1]", 0 ],
 			"obj-33" : [ "ema_scrim_alpha", "ema_scrim_alpha", 0 ],
 			"obj-175" : [ "ema_scrim_sim[1]", "ema_scrim_sim", 0 ],
 			"obj-70" : [ "indiv_source", "indiv_source", 0 ],
-			"obj-21" : [ "serra_ex4", "serra_ex4", 0 ],
-			"obj-4" : [ "sound_scrim[2]", "sound_scrim[2]", 0 ],
-			"obj-213" : [ "toggle[4]", "toggle[1]", 0 ],
+			"obj-29" : [ "sound_floor_volume", "sound_floor_volume", 0 ],
 			"obj-119" : [ "toggle", "toggle", 0 ],
+			"obj-11" : [ "toggle[1]", "toggle[1]", 0 ],
+			"obj-176" : [ "ema_floor_alpha[1]", "ema_floor_alpha", 0 ],
 			"obj-28" : [ "ema_floor_vis", "ema_floor_vis", 0 ],
 			"obj-112" : [ "number", "number", 0 ],
 			"obj-168" : [ "ex4_blackout", "ex4_blackout", 0 ],
-			"obj-270" : [ "number[2]", "number[1]", 0 ],
-			"obj-17" : [ "sound_scrim", "sound_scrim", 0 ],
-			"obj-176" : [ "ema_floor_alpha[1]", "ema_floor_alpha", 0 ],
-			"obj-271" : [ "toggle[2]", "toggle[1]", 0 ],
+			"obj-21" : [ "serra_ex4", "serra_ex4", 0 ],
+			"obj-4" : [ "sound_scrim[2]", "sound_scrim[2]", 0 ],
+			"obj-213" : [ "toggle[4]", "toggle[1]", 0 ],
 			"obj-68" : [ "ema_floor_sim", "ema_floor_sim", 0 ],
 			"obj-178" : [ "ema_scrim_alpha[1]", "ema_scrim_alpha", 0 ],
 			"obj-26" : [ "ema_scrim_vis", "ema_scrim_vis", 0 ],
 			"obj-13" : [ "lights", "lights", 0 ],
+			"obj-159" : [ "number[1]", "number[1]", 0 ],
+			"obj-17" : [ "sound_scrim", "sound_scrim", 0 ],
+			"obj-271" : [ "toggle[2]", "toggle[1]", 0 ],
+			"obj-179" : [ "ema_floor_vis[1]", "ema_floor_vis", 0 ],
+			"obj-67" : [ "ema_scrim_sim", "ema_scrim_sim", 0 ],
+			"obj-86" : [ "indiv_dest", "indiv_dest", 0 ],
 			"obj-18" : [ "sound_floor", "sound_floor", 0 ],
 			"obj-32" : [ "sound_scrim_volume", "sound_scrim_volume", 0 ],
-			"obj-179" : [ "ema_floor_vis[1]", "ema_floor_vis", 0 ]
+			"obj-34" : [ "ema_floor_alpha", "ema_floor_alpha", 0 ],
+			"obj-174" : [ "ema_floor_sim[1]", "ema_floor_sim", 0 ],
+			"obj-200" : [ "ema_scrim_vis[1]", "ema_scrim_vis", 0 ],
+			"obj-24" : [ "serra", "serra", 0 ],
+			"obj-270" : [ "number[2]", "number[1]", 0 ],
+			"obj-2" : [ "sound_scrim[1]", "sound_scrim[1]", 0 ],
+			"obj-210" : [ "toggle[3]", "toggle[1]", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{

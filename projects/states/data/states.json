@@ -7,15 +7,21 @@
 				"name" : "Roundtable",
 				"data" : 				{
 					"ema_floor_alpha" : [ 0.0 ],
+					"ema_floor_alpha[1]" : [  ],
 					"ema_floor_clear" : [ -1 ],
 					"ema_floor_reset" : [ -1 ],
 					"ema_floor_sim" : [ 5 ],
+					"ema_floor_sim[1]" : [  ],
 					"ema_floor_vis" : [ 9 ],
+					"ema_floor_vis[1]" : [  ],
 					"ema_scrim_alpha" : [ 0.0 ],
+					"ema_scrim_alpha[1]" : [  ],
 					"ema_scrim_clear" : [ -1 ],
 					"ema_scrim_reset" : [ -1 ],
 					"ema_scrim_sim" : [ 2 ],
+					"ema_scrim_sim[1]" : [  ],
 					"ema_scrim_vis" : [ 10 ],
+					"ema_scrim_vis[1]" : [  ],
 					"ex4_blackout" : [  ],
 					"indiv_dest" : [ 0 ],
 					"indiv_source" : [ 0 ],
@@ -32,11 +38,13 @@
 					"sound_scrim_volume" : [ 0 ],
 					"toggle[1]" : [ 0 ],
 					"toggle[2]" : [ 0 ],
+					"toggle[3]" : [  ],
+					"toggle[4]" : [  ],
 					"autoupdate" : [ 0 ],
 					"ipaddr" : [ "2.78.21.26" ],
 					"port" : [ 9990 ],
 					"dest-control20x20::matrix-ctrl" : [ 2, 0, 1, 2, 1, 1, 2, 2, 1, 2, 9, 1, 2, 10, 1, 2, 14, 1, 2, 19, 1, 3, 12, 1, 4, 4, 1, 4, 7, 1, 4, 8, 1, 4, 11, 1, 6, 13, 1, 10, 3, 1, 12, 5, 1, 19, 6, 1, 19, 15, 1, 19, 16, 1, 19, 17, 1, 19, 18, 1 ],
-					"u449000504" : [  ]
+					"u767054232" : [  ]
 				}
 
 			}
@@ -46,15 +54,21 @@
 				"name" : "Migration",
 				"data" : 				{
 					"ema_floor_alpha" : [ 0.0 ],
+					"ema_floor_alpha[1]" : [  ],
 					"ema_floor_clear" : [ -1 ],
 					"ema_floor_reset" : [ -1 ],
 					"ema_floor_sim" : [ 5 ],
+					"ema_floor_sim[1]" : [  ],
 					"ema_floor_vis" : [ 9 ],
+					"ema_floor_vis[1]" : [  ],
 					"ema_scrim_alpha" : [ 0.0 ],
+					"ema_scrim_alpha[1]" : [  ],
 					"ema_scrim_clear" : [ -1 ],
 					"ema_scrim_reset" : [ -1 ],
 					"ema_scrim_sim" : [ 2 ],
+					"ema_scrim_sim[1]" : [  ],
 					"ema_scrim_vis" : [ 10 ],
+					"ema_scrim_vis[1]" : [  ],
 					"ex4_blackout" : [  ],
 					"indiv_dest" : [ 0 ],
 					"indiv_source" : [ 0 ],
@@ -71,11 +85,13 @@
 					"sound_scrim_volume" : [ 0 ],
 					"toggle[1]" : [ 0 ],
 					"toggle[2]" : [ 0 ],
+					"toggle[3]" : [  ],
+					"toggle[4]" : [  ],
 					"autoupdate" : [ 0 ],
 					"ipaddr" : [ "2.78.21.26" ],
 					"port" : [ 9990 ],
 					"dest-control20x20::matrix-ctrl" : [ 2, 0, 1, 2, 1, 1, 2, 2, 1, 2, 9, 1, 2, 10, 1, 2, 14, 1, 2, 19, 1, 3, 12, 1, 4, 4, 1, 4, 7, 1, 4, 8, 1, 4, 11, 1, 6, 13, 1, 10, 3, 1, 12, 5, 1, 19, 6, 1, 19, 15, 1, 19, 16, 1, 19, 17, 1, 19, 18, 1 ],
-					"u449000504" : [  ]
+					"u767054232" : [  ]
 				}
 
 			}
@@ -85,15 +101,21 @@
 				"name" : "Serra night",
 				"data" : 				{
 					"ema_floor_alpha" : [ 0.0 ],
+					"ema_floor_alpha[1]" : [  ],
 					"ema_floor_clear" : [ -1 ],
 					"ema_floor_reset" : [ -1 ],
 					"ema_floor_sim" : [ 5 ],
+					"ema_floor_sim[1]" : [  ],
 					"ema_floor_vis" : [ 9 ],
+					"ema_floor_vis[1]" : [  ],
 					"ema_scrim_alpha" : [ 0.0 ],
+					"ema_scrim_alpha[1]" : [  ],
 					"ema_scrim_clear" : [ -1 ],
 					"ema_scrim_reset" : [ -1 ],
 					"ema_scrim_sim" : [ 2 ],
+					"ema_scrim_sim[1]" : [  ],
 					"ema_scrim_vis" : [ 10 ],
+					"ema_scrim_vis[1]" : [  ],
 					"ex4_blackout" : [  ],
 					"indiv_dest" : [ 0 ],
 					"indiv_source" : [ 0 ],
@@ -110,11 +132,13 @@
 					"sound_scrim_volume" : [ 0 ],
 					"toggle[1]" : [ 0 ],
 					"toggle[2]" : [ 0 ],
+					"toggle[3]" : [  ],
+					"toggle[4]" : [  ],
 					"autoupdate" : [ 0 ],
 					"ipaddr" : [ "2.78.21.26" ],
 					"port" : [ 9990 ],
 					"dest-control20x20::matrix-ctrl" : [ 1, 2, 1, 2, 0, 1, 2, 14, 1, 3, 12, 1, 4, 4, 1, 4, 7, 1, 4, 8, 1, 4, 11, 1, 6, 13, 1, 9, 1, 1, 9, 9, 1, 9, 10, 1, 9, 19, 1, 10, 3, 1, 12, 5, 1, 19, 6, 1, 19, 15, 1, 19, 16, 1, 19, 17, 1, 19, 18, 1 ],
-					"u449000504" : [  ]
+					"u767054232" : [  ]
 				}
 
 			}
@@ -124,15 +148,21 @@
 				"name" : "Serra day",
 				"data" : 				{
 					"ema_floor_alpha" : [ 0.0 ],
+					"ema_floor_alpha[1]" : [  ],
 					"ema_floor_clear" : [ -1 ],
 					"ema_floor_reset" : [ -1 ],
 					"ema_floor_sim" : [ 5 ],
+					"ema_floor_sim[1]" : [  ],
 					"ema_floor_vis" : [ 9 ],
+					"ema_floor_vis[1]" : [  ],
 					"ema_scrim_alpha" : [ 0.0 ],
+					"ema_scrim_alpha[1]" : [  ],
 					"ema_scrim_clear" : [ -1 ],
 					"ema_scrim_reset" : [ -1 ],
 					"ema_scrim_sim" : [ 2 ],
+					"ema_scrim_sim[1]" : [  ],
 					"ema_scrim_vis" : [ 10 ],
+					"ema_scrim_vis[1]" : [  ],
 					"ex4_blackout" : [  ],
 					"indiv_dest" : [ 0 ],
 					"indiv_source" : [ 0 ],
@@ -149,11 +179,13 @@
 					"sound_scrim_volume" : [ 0 ],
 					"toggle[1]" : [ 0 ],
 					"toggle[2]" : [ 0 ],
+					"toggle[3]" : [  ],
+					"toggle[4]" : [  ],
 					"autoupdate" : [ 0 ],
 					"ipaddr" : [ "2.78.21.26" ],
 					"port" : [ 9990 ],
 					"dest-control20x20::matrix-ctrl" : [ 1, 2, 1, 2, 0, 1, 2, 14, 1, 3, 12, 1, 4, 4, 1, 4, 7, 1, 4, 8, 1, 4, 11, 1, 6, 13, 1, 9, 1, 1, 9, 9, 1, 9, 10, 1, 9, 19, 1, 10, 3, 1, 12, 5, 1, 19, 6, 1, 19, 15, 1, 19, 16, 1, 19, 17, 1, 19, 18, 1 ],
-					"u449000504" : [  ]
+					"u767054232" : [  ]
 				}
 
 			}
@@ -163,15 +195,21 @@
 				"name" : "ex4 Vectors",
 				"data" : 				{
 					"ema_floor_alpha" : [ 0.0 ],
+					"ema_floor_alpha[1]" : [  ],
 					"ema_floor_clear" : [ -1 ],
 					"ema_floor_reset" : [ -1 ],
 					"ema_floor_sim" : [ 5 ],
+					"ema_floor_sim[1]" : [  ],
 					"ema_floor_vis" : [ 9 ],
+					"ema_floor_vis[1]" : [  ],
 					"ema_scrim_alpha" : [ 0.0 ],
+					"ema_scrim_alpha[1]" : [  ],
 					"ema_scrim_clear" : [ -1 ],
 					"ema_scrim_reset" : [ -1 ],
 					"ema_scrim_sim" : [ 2 ],
+					"ema_scrim_sim[1]" : [  ],
 					"ema_scrim_vis" : [ 10 ],
+					"ema_scrim_vis[1]" : [  ],
 					"ex4_blackout" : [  ],
 					"indiv_dest" : [ 0 ],
 					"indiv_source" : [ 0 ],
@@ -188,11 +226,13 @@
 					"sound_scrim_volume" : [ 0 ],
 					"toggle[1]" : [ 0 ],
 					"toggle[2]" : [ 0 ],
+					"toggle[3]" : [  ],
+					"toggle[4]" : [  ],
 					"autoupdate" : [ 0 ],
 					"ipaddr" : [ "2.78.21.26" ],
 					"port" : [ 9990 ],
 					"dest-control20x20::matrix-ctrl" : [ 0, 3, 1, 0, 5, 1, 0, 9, 1, 0, 10, 1, 2, 1, 1, 2, 2, 1, 2, 19, 1, 3, 12, 1, 4, 4, 1, 4, 7, 1, 4, 8, 1, 4, 11, 1, 11, 0, 1, 11, 14, 1, 12, 13, 1, 19, 6, 1, 19, 15, 1, 19, 16, 1, 19, 17, 1, 19, 18, 1 ],
-					"u449000504" : [  ]
+					"u767054232" : [  ]
 				}
 
 			}
@@ -202,15 +242,21 @@
 				"name" : "ex4 Fluids",
 				"data" : 				{
 					"ema_floor_alpha" : [ 0.0 ],
+					"ema_floor_alpha[1]" : [  ],
 					"ema_floor_clear" : [ -1 ],
 					"ema_floor_reset" : [ -1 ],
 					"ema_floor_sim" : [ 5 ],
+					"ema_floor_sim[1]" : [  ],
 					"ema_floor_vis" : [ 9 ],
+					"ema_floor_vis[1]" : [  ],
 					"ema_scrim_alpha" : [ 0.0 ],
+					"ema_scrim_alpha[1]" : [  ],
 					"ema_scrim_clear" : [ -1 ],
 					"ema_scrim_reset" : [ -1 ],
 					"ema_scrim_sim" : [ 2 ],
+					"ema_scrim_sim[1]" : [  ],
 					"ema_scrim_vis" : [ 10 ],
+					"ema_scrim_vis[1]" : [  ],
 					"ex4_blackout" : [  ],
 					"indiv_dest" : [ 0 ],
 					"indiv_source" : [ 0 ],
@@ -227,11 +273,13 @@
 					"sound_scrim_volume" : [ 0 ],
 					"toggle[1]" : [ 0 ],
 					"toggle[2]" : [ 0 ],
+					"toggle[3]" : [  ],
+					"toggle[4]" : [  ],
 					"autoupdate" : [ 0 ],
 					"ipaddr" : [ "2.78.21.26" ],
 					"port" : [ 9990 ],
 					"dest-control20x20::matrix-ctrl" : [ 0, 3, 1, 0, 5, 1, 0, 9, 1, 0, 10, 1, 2, 1, 1, 2, 2, 1, 2, 19, 1, 3, 12, 1, 4, 4, 1, 4, 7, 1, 4, 8, 1, 4, 11, 1, 11, 0, 1, 11, 14, 1, 12, 13, 1, 19, 6, 1, 19, 15, 1, 19, 16, 1, 19, 17, 1, 19, 18, 1 ],
-					"u449000504" : [  ]
+					"u767054232" : [  ]
 				}
 
 			}
@@ -241,15 +289,21 @@
 				"name" : "ex4 Charged bodies",
 				"data" : 				{
 					"ema_floor_alpha" : [ 0.0 ],
+					"ema_floor_alpha[1]" : [  ],
 					"ema_floor_clear" : [ -1 ],
 					"ema_floor_reset" : [ -1 ],
 					"ema_floor_sim" : [ 5 ],
+					"ema_floor_sim[1]" : [  ],
 					"ema_floor_vis" : [ 9 ],
+					"ema_floor_vis[1]" : [  ],
 					"ema_scrim_alpha" : [ 0.0 ],
+					"ema_scrim_alpha[1]" : [  ],
 					"ema_scrim_clear" : [ -1 ],
 					"ema_scrim_reset" : [ -1 ],
 					"ema_scrim_sim" : [ 2 ],
+					"ema_scrim_sim[1]" : [  ],
 					"ema_scrim_vis" : [ 10 ],
+					"ema_scrim_vis[1]" : [  ],
 					"ex4_blackout" : [  ],
 					"indiv_dest" : [ 0 ],
 					"indiv_source" : [ 0 ],
@@ -266,11 +320,13 @@
 					"sound_scrim_volume" : [ 0 ],
 					"toggle[1]" : [ 0 ],
 					"toggle[2]" : [ 0 ],
+					"toggle[3]" : [  ],
+					"toggle[4]" : [  ],
 					"autoupdate" : [ 0 ],
 					"ipaddr" : [ "2.78.21.26" ],
 					"port" : [ 9990 ],
 					"dest-control20x20::matrix-ctrl" : [ 0, 3, 1, 0, 5, 1, 0, 9, 1, 0, 10, 1, 2, 1, 1, 2, 2, 1, 2, 19, 1, 3, 12, 1, 4, 4, 1, 4, 7, 1, 4, 8, 1, 4, 11, 1, 11, 0, 1, 11, 14, 1, 12, 13, 1, 19, 6, 1, 19, 15, 1, 19, 16, 1, 19, 17, 1, 19, 18, 1 ],
-					"u449000504" : [  ]
+					"u767054232" : [  ]
 				}
 
 			}
@@ -280,15 +336,21 @@
 				"name" : "ex4 Freezing",
 				"data" : 				{
 					"ema_floor_alpha" : [ 0.0 ],
+					"ema_floor_alpha[1]" : [  ],
 					"ema_floor_clear" : [ -1 ],
 					"ema_floor_reset" : [ -1 ],
 					"ema_floor_sim" : [ 5 ],
+					"ema_floor_sim[1]" : [  ],
 					"ema_floor_vis" : [ 9 ],
+					"ema_floor_vis[1]" : [  ],
 					"ema_scrim_alpha" : [ 0.0 ],
+					"ema_scrim_alpha[1]" : [  ],
 					"ema_scrim_clear" : [ -1 ],
 					"ema_scrim_reset" : [ -1 ],
 					"ema_scrim_sim" : [ 2 ],
+					"ema_scrim_sim[1]" : [  ],
 					"ema_scrim_vis" : [ 10 ],
+					"ema_scrim_vis[1]" : [  ],
 					"ex4_blackout" : [  ],
 					"indiv_dest" : [ 0 ],
 					"indiv_source" : [ 0 ],
@@ -305,11 +367,13 @@
 					"sound_scrim_volume" : [ 0 ],
 					"toggle[1]" : [ 0 ],
 					"toggle[2]" : [ 0 ],
+					"toggle[3]" : [  ],
+					"toggle[4]" : [  ],
 					"autoupdate" : [ 0 ],
 					"ipaddr" : [ "2.78.21.26" ],
 					"port" : [ 9990 ],
 					"dest-control20x20::matrix-ctrl" : [ 0, 3, 1, 0, 5, 1, 0, 9, 1, 0, 10, 1, 2, 1, 1, 2, 2, 1, 2, 19, 1, 3, 12, 1, 4, 4, 1, 4, 7, 1, 4, 8, 1, 4, 11, 1, 11, 0, 1, 11, 14, 1, 12, 13, 1, 19, 6, 1, 19, 15, 1, 19, 16, 1, 19, 17, 1, 19, 18, 1 ],
-					"u449000504" : [  ]
+					"u767054232" : [  ]
 				}
 
 			}
@@ -319,15 +383,21 @@
 				"name" : "ex4 scatter gather",
 				"data" : 				{
 					"ema_floor_alpha" : [ 0.0 ],
+					"ema_floor_alpha[1]" : [  ],
 					"ema_floor_clear" : [ -1 ],
 					"ema_floor_reset" : [ -1 ],
 					"ema_floor_sim" : [ 5 ],
+					"ema_floor_sim[1]" : [  ],
 					"ema_floor_vis" : [ 9 ],
+					"ema_floor_vis[1]" : [  ],
 					"ema_scrim_alpha" : [ 0.0 ],
+					"ema_scrim_alpha[1]" : [  ],
 					"ema_scrim_clear" : [ -1 ],
 					"ema_scrim_reset" : [ -1 ],
 					"ema_scrim_sim" : [ 2 ],
+					"ema_scrim_sim[1]" : [  ],
 					"ema_scrim_vis" : [ 10 ],
+					"ema_scrim_vis[1]" : [  ],
 					"ex4_blackout" : [  ],
 					"indiv_dest" : [ 0 ],
 					"indiv_source" : [ 0 ],
@@ -344,11 +414,13 @@
 					"sound_scrim_volume" : [ 0 ],
 					"toggle[1]" : [ 0 ],
 					"toggle[2]" : [ 0 ],
+					"toggle[3]" : [  ],
+					"toggle[4]" : [  ],
 					"autoupdate" : [ 0 ],
 					"ipaddr" : [ "2.78.21.26" ],
 					"port" : [ 9990 ],
 					"dest-control20x20::matrix-ctrl" : [ 0, 3, 1, 0, 5, 1, 0, 9, 1, 0, 10, 1, 2, 1, 1, 2, 2, 1, 2, 19, 1, 3, 12, 1, 4, 4, 1, 4, 7, 1, 4, 8, 1, 4, 11, 1, 11, 0, 1, 11, 14, 1, 12, 13, 1, 19, 6, 1, 19, 15, 1, 19, 16, 1, 19, 17, 1, 19, 18, 1 ],
-					"u449000504" : [  ]
+					"u767054232" : [  ]
 				}
 
 			}
@@ -358,15 +430,21 @@
 				"name" : "ex4 River Vectors",
 				"data" : 				{
 					"ema_floor_alpha" : [ 0.0 ],
+					"ema_floor_alpha[1]" : [  ],
 					"ema_floor_clear" : [ -1 ],
 					"ema_floor_reset" : [ -1 ],
 					"ema_floor_sim" : [ 5 ],
+					"ema_floor_sim[1]" : [  ],
 					"ema_floor_vis" : [ 9 ],
+					"ema_floor_vis[1]" : [  ],
 					"ema_scrim_alpha" : [ 0.0 ],
+					"ema_scrim_alpha[1]" : [  ],
 					"ema_scrim_clear" : [ -1 ],
 					"ema_scrim_reset" : [ -1 ],
 					"ema_scrim_sim" : [ 2 ],
+					"ema_scrim_sim[1]" : [  ],
 					"ema_scrim_vis" : [ 12 ],
+					"ema_scrim_vis[1]" : [  ],
 					"ex4_blackout" : [  ],
 					"indiv_dest" : [ 0 ],
 					"indiv_source" : [ 0 ],
@@ -383,11 +461,13 @@
 					"sound_scrim_volume" : [ 0 ],
 					"toggle[1]" : [ 0 ],
 					"toggle[2]" : [ 0 ],
+					"toggle[3]" : [  ],
+					"toggle[4]" : [  ],
 					"autoupdate" : [ 0 ],
 					"ipaddr" : [ "2.78.21.26" ],
 					"port" : [ 9990 ],
 					"dest-control20x20::matrix-ctrl" : [ 0, 3, 1, 0, 5, 1, 0, 9, 1, 0, 10, 1, 2, 2, 1, 2, 19, 1, 3, 1, 1, 3, 4, 1, 3, 12, 1, 4, 7, 1, 4, 8, 1, 4, 11, 1, 11, 0, 1, 11, 14, 1, 12, 13, 1, 19, 6, 1, 19, 15, 1, 19, 16, 1, 19, 17, 1, 19, 18, 1 ],
-					"u449000504" : [  ]
+					"u767054232" : [  ]
 				}
 
 			}
@@ -396,16 +476,22 @@
 				"id" : 11,
 				"name" : "EMA clouds",
 				"data" : 				{
-					"ema_floor_alpha" : [ 0.0 ],
+					"ema_floor_alpha" : [ 1.0 ],
+					"ema_floor_alpha[1]" : [ 1.0 ],
 					"ema_floor_clear" : [ -1 ],
 					"ema_floor_reset" : [ -1 ],
-					"ema_floor_sim" : [ 2 ],
-					"ema_floor_vis" : [ 0 ],
+					"ema_floor_sim" : [ 8 ],
+					"ema_floor_sim[1]" : [ 8 ],
+					"ema_floor_vis" : [ 14 ],
+					"ema_floor_vis[1]" : [ 14 ],
 					"ema_scrim_alpha" : [ 0.0 ],
+					"ema_scrim_alpha[1]" : [ 0.0 ],
 					"ema_scrim_clear" : [ -1 ],
 					"ema_scrim_reset" : [ -1 ],
 					"ema_scrim_sim" : [ 0 ],
-					"ema_scrim_vis" : [ 0 ],
+					"ema_scrim_sim[1]" : [ 0 ],
+					"ema_scrim_vis" : [ 14 ],
+					"ema_scrim_vis[1]" : [ 14 ],
 					"ex4_blackout" : [ 1 ],
 					"indiv_dest" : [ 0 ],
 					"indiv_source" : [ 0 ],
@@ -422,11 +508,13 @@
 					"sound_scrim_volume" : [ 0 ],
 					"toggle[1]" : [ 0 ],
 					"toggle[2]" : [ 0 ],
+					"toggle[3]" : [ 1 ],
+					"toggle[4]" : [ 0 ],
 					"autoupdate" : [ 0 ],
 					"ipaddr" : [ "2.78.21.26" ],
 					"port" : [ 9990 ],
 					"dest-control20x20::matrix-ctrl" : [ 0, 4, 1, 0, 5, 1, 0, 8, 1, 0, 10, 1, 1, 0, 1, 1, 12, 1, 2, 2, 1, 2, 9, 1, 3, 1, 1, 3, 14, 1, 4, 3, 1, 4, 7, 1, 4, 11, 1, 11, 19, 1, 12, 13, 1, 19, 6, 1, 19, 15, 1, 19, 16, 1, 19, 17, 1, 19, 18, 1 ],
-					"u449000504" : [ -1 ]
+					"u767054232" : [ -1 ]
 				}
 
 			}
@@ -435,16 +523,22 @@
 				"id" : 12,
 				"name" : "EMA pressure",
 				"data" : 				{
-					"ema_floor_alpha" : [ 0.0 ],
+					"ema_floor_alpha" : [ 1.0 ],
+					"ema_floor_alpha[1]" : [ 1.0 ],
 					"ema_floor_clear" : [ -1 ],
 					"ema_floor_reset" : [ -1 ],
-					"ema_floor_sim" : [ 2 ],
-					"ema_floor_vis" : [ 3 ],
+					"ema_floor_sim" : [ 8 ],
+					"ema_floor_sim[1]" : [ 8 ],
+					"ema_floor_vis" : [ 14 ],
+					"ema_floor_vis[1]" : [ 14 ],
 					"ema_scrim_alpha" : [ 0.0 ],
+					"ema_scrim_alpha[1]" : [ 0.0 ],
 					"ema_scrim_clear" : [ -1 ],
 					"ema_scrim_reset" : [ -1 ],
 					"ema_scrim_sim" : [ 0 ],
-					"ema_scrim_vis" : [ 3 ],
+					"ema_scrim_sim[1]" : [ 0 ],
+					"ema_scrim_vis" : [ 14 ],
+					"ema_scrim_vis[1]" : [ 14 ],
 					"ex4_blackout" : [ 1 ],
 					"indiv_dest" : [ 0 ],
 					"indiv_source" : [ 0 ],
@@ -461,11 +555,13 @@
 					"sound_scrim_volume" : [ 0 ],
 					"toggle[1]" : [ 0 ],
 					"toggle[2]" : [ 0 ],
+					"toggle[3]" : [ 1 ],
+					"toggle[4]" : [ 0 ],
 					"autoupdate" : [ 0 ],
 					"ipaddr" : [ "2.78.21.26" ],
 					"port" : [ 9990 ],
 					"dest-control20x20::matrix-ctrl" : [ 0, 4, 1, 0, 5, 1, 0, 8, 1, 0, 10, 1, 1, 0, 1, 1, 12, 1, 2, 2, 1, 2, 9, 1, 3, 1, 1, 3, 14, 1, 4, 3, 1, 4, 7, 1, 4, 11, 1, 11, 19, 1, 12, 13, 1, 19, 6, 1, 19, 15, 1, 19, 16, 1, 19, 17, 1, 19, 18, 1 ],
-					"u449000504" : [ -1 ]
+					"u767054232" : [ -1 ]
 				}
 
 			}
@@ -474,16 +570,22 @@
 				"id" : 13,
 				"name" : "EMA velocity flow field",
 				"data" : 				{
-					"ema_floor_alpha" : [ 0.0 ],
+					"ema_floor_alpha" : [ 1.0 ],
+					"ema_floor_alpha[1]" : [ 1.0 ],
 					"ema_floor_clear" : [ -1 ],
 					"ema_floor_reset" : [ -1 ],
-					"ema_floor_sim" : [ 2 ],
-					"ema_floor_vis" : [ 1 ],
+					"ema_floor_sim" : [ 8 ],
+					"ema_floor_sim[1]" : [ 8 ],
+					"ema_floor_vis" : [ 14 ],
+					"ema_floor_vis[1]" : [ 14 ],
 					"ema_scrim_alpha" : [ 0.0 ],
+					"ema_scrim_alpha[1]" : [ 0.0 ],
 					"ema_scrim_clear" : [ -1 ],
 					"ema_scrim_reset" : [ -1 ],
 					"ema_scrim_sim" : [ 0 ],
-					"ema_scrim_vis" : [ 1 ],
+					"ema_scrim_sim[1]" : [ 0 ],
+					"ema_scrim_vis" : [ 14 ],
+					"ema_scrim_vis[1]" : [ 14 ],
 					"ex4_blackout" : [ 1 ],
 					"indiv_dest" : [ 0 ],
 					"indiv_source" : [ 0 ],
@@ -500,11 +602,13 @@
 					"sound_scrim_volume" : [ 0 ],
 					"toggle[1]" : [ 0 ],
 					"toggle[2]" : [ 0 ],
+					"toggle[3]" : [ 1 ],
+					"toggle[4]" : [ 0 ],
 					"autoupdate" : [ 0 ],
 					"ipaddr" : [ "2.78.21.26" ],
 					"port" : [ 9990 ],
 					"dest-control20x20::matrix-ctrl" : [ 0, 4, 1, 0, 5, 1, 0, 8, 1, 0, 10, 1, 1, 0, 1, 1, 12, 1, 2, 2, 1, 2, 9, 1, 3, 1, 1, 3, 14, 1, 4, 3, 1, 4, 7, 1, 4, 11, 1, 11, 19, 1, 12, 13, 1, 19, 6, 1, 19, 15, 1, 19, 16, 1, 19, 17, 1, 19, 18, 1 ],
-					"u449000504" : [ -1 ]
+					"u767054232" : [ -1 ]
 				}
 
 			}
@@ -513,16 +617,22 @@
 				"id" : 14,
 				"name" : "EMA velocity image",
 				"data" : 				{
-					"ema_floor_alpha" : [ 0.0 ],
+					"ema_floor_alpha" : [ 1.0 ],
+					"ema_floor_alpha[1]" : [ 1.0 ],
 					"ema_floor_clear" : [ -1 ],
 					"ema_floor_reset" : [ -1 ],
-					"ema_floor_sim" : [ 2 ],
-					"ema_floor_vis" : [ 2 ],
+					"ema_floor_sim" : [ 8 ],
+					"ema_floor_sim[1]" : [ 8 ],
+					"ema_floor_vis" : [ 14 ],
+					"ema_floor_vis[1]" : [ 14 ],
 					"ema_scrim_alpha" : [ 0.0 ],
+					"ema_scrim_alpha[1]" : [ 0.0 ],
 					"ema_scrim_clear" : [ -1 ],
 					"ema_scrim_reset" : [ -1 ],
 					"ema_scrim_sim" : [ 0 ],
-					"ema_scrim_vis" : [ 2 ],
+					"ema_scrim_sim[1]" : [ 0 ],
+					"ema_scrim_vis" : [ 14 ],
+					"ema_scrim_vis[1]" : [ 14 ],
 					"ex4_blackout" : [ 1 ],
 					"indiv_dest" : [ 0 ],
 					"indiv_source" : [ 0 ],
@@ -539,11 +649,13 @@
 					"sound_scrim_volume" : [ 0 ],
 					"toggle[1]" : [ 0 ],
 					"toggle[2]" : [ 0 ],
+					"toggle[3]" : [ 1 ],
+					"toggle[4]" : [ 0 ],
 					"autoupdate" : [ 0 ],
 					"ipaddr" : [ "2.78.21.26" ],
 					"port" : [ 9990 ],
 					"dest-control20x20::matrix-ctrl" : [ 0, 4, 1, 0, 5, 1, 0, 8, 1, 0, 10, 1, 1, 0, 1, 1, 12, 1, 2, 2, 1, 2, 9, 1, 3, 1, 1, 3, 14, 1, 4, 3, 1, 4, 7, 1, 4, 11, 1, 11, 19, 1, 12, 13, 1, 19, 6, 1, 19, 15, 1, 19, 16, 1, 19, 17, 1, 19, 18, 1 ],
-					"u449000504" : [ -1 ]
+					"u767054232" : [ -1 ]
 				}
 
 			}
@@ -552,16 +664,22 @@
 				"id" : 15,
 				"name" : "Movie - Clouds",
 				"data" : 				{
-					"ema_floor_alpha" : [ 0.0 ],
+					"ema_floor_alpha" : [ 1.0 ],
+					"ema_floor_alpha[1]" : [ 1.0 ],
 					"ema_floor_clear" : [ -1 ],
 					"ema_floor_reset" : [ -1 ],
-					"ema_floor_sim" : [ 5 ],
-					"ema_floor_vis" : [ 10 ],
+					"ema_floor_sim" : [ 8 ],
+					"ema_floor_sim[1]" : [ 8 ],
+					"ema_floor_vis" : [ 14 ],
+					"ema_floor_vis[1]" : [ 14 ],
 					"ema_scrim_alpha" : [ 0.0 ],
+					"ema_scrim_alpha[1]" : [ 0.0 ],
 					"ema_scrim_clear" : [ -1 ],
 					"ema_scrim_reset" : [ -1 ],
-					"ema_scrim_sim" : [ 2 ],
-					"ema_scrim_vis" : [ 11 ],
+					"ema_scrim_sim" : [ 0 ],
+					"ema_scrim_sim[1]" : [ 0 ],
+					"ema_scrim_vis" : [ 14 ],
+					"ema_scrim_vis[1]" : [ 14 ],
 					"ex4_blackout" : [ 1 ],
 					"indiv_dest" : [ 0 ],
 					"indiv_source" : [ 0 ],
@@ -578,11 +696,13 @@
 					"sound_scrim_volume" : [ 0 ],
 					"toggle[1]" : [ 0 ],
 					"toggle[2]" : [ 0 ],
+					"toggle[3]" : [ 1 ],
+					"toggle[4]" : [ 0 ],
 					"autoupdate" : [ 0 ],
 					"ipaddr" : [ "2.78.21.26" ],
 					"port" : [ 9990 ],
-					"dest-control20x20::matrix-ctrl" : [ 0, 3, 1, 0, 4, 1, 0, 5, 1, 0, 8, 1, 0, 9, 1, 0, 10, 1, 1, 0, 1, 1, 12, 1, 2, 2, 1, 3, 1, 1, 3, 14, 1, 4, 7, 1, 4, 11, 1, 11, 19, 1, 12, 13, 1, 19, 6, 1, 19, 15, 1, 19, 16, 1, 19, 17, 1, 19, 18, 1 ],
-					"u449000504" : [ -1 ]
+					"dest-control20x20::matrix-ctrl" : [ 0, 4, 1, 0, 5, 1, 0, 8, 1, 0, 9, 1, 0, 10, 1, 1, 0, 1, 1, 12, 1, 2, 2, 1, 3, 1, 1, 3, 14, 1, 4, 3, 1, 4, 7, 1, 4, 11, 1, 11, 19, 1, 12, 13, 1, 19, 6, 1, 19, 15, 1, 19, 16, 1, 19, 17, 1, 19, 18, 1 ],
+					"u767054232" : [ -1 ]
 				}
 
 			}
@@ -591,16 +711,22 @@
 				"id" : 16,
 				"name" : "Movie - Water",
 				"data" : 				{
-					"ema_floor_alpha" : [ 0.0 ],
+					"ema_floor_alpha" : [ 1.0 ],
+					"ema_floor_alpha[1]" : [ 1.0 ],
 					"ema_floor_clear" : [ -1 ],
 					"ema_floor_reset" : [ -1 ],
-					"ema_floor_sim" : [ 5 ],
-					"ema_floor_vis" : [ 11 ],
+					"ema_floor_sim" : [ 8 ],
+					"ema_floor_sim[1]" : [ 8 ],
+					"ema_floor_vis" : [ 14 ],
+					"ema_floor_vis[1]" : [ 14 ],
 					"ema_scrim_alpha" : [ 0.0 ],
+					"ema_scrim_alpha[1]" : [ 0.0 ],
 					"ema_scrim_clear" : [ -1 ],
 					"ema_scrim_reset" : [ -1 ],
-					"ema_scrim_sim" : [ 2 ],
-					"ema_scrim_vis" : [ 12 ],
+					"ema_scrim_sim" : [ 0 ],
+					"ema_scrim_sim[1]" : [ 0 ],
+					"ema_scrim_vis" : [ 14 ],
+					"ema_scrim_vis[1]" : [ 14 ],
 					"ex4_blackout" : [ 1 ],
 					"indiv_dest" : [ 0 ],
 					"indiv_source" : [ 0 ],
@@ -617,11 +743,13 @@
 					"sound_scrim_volume" : [ 0 ],
 					"toggle[1]" : [ 0 ],
 					"toggle[2]" : [ 0 ],
+					"toggle[3]" : [ 1 ],
+					"toggle[4]" : [ 0 ],
 					"autoupdate" : [ 0 ],
 					"ipaddr" : [ "2.78.21.26" ],
 					"port" : [ 9990 ],
-					"dest-control20x20::matrix-ctrl" : [ 0, 3, 1, 0, 4, 1, 0, 5, 1, 0, 8, 1, 0, 9, 1, 0, 10, 1, 1, 0, 1, 1, 12, 1, 2, 2, 1, 3, 1, 1, 3, 14, 1, 4, 7, 1, 4, 11, 1, 11, 19, 1, 12, 13, 1, 19, 6, 1, 19, 15, 1, 19, 16, 1, 19, 17, 1, 19, 18, 1 ],
-					"u449000504" : [ -1 ]
+					"dest-control20x20::matrix-ctrl" : [ 0, 4, 1, 0, 5, 1, 0, 8, 1, 0, 9, 1, 0, 10, 1, 1, 0, 1, 1, 12, 1, 2, 2, 1, 3, 1, 1, 3, 14, 1, 4, 3, 1, 4, 7, 1, 4, 11, 1, 11, 19, 1, 12, 13, 1, 19, 6, 1, 19, 15, 1, 19, 16, 1, 19, 17, 1, 19, 18, 1 ],
+					"u767054232" : [ -1 ]
 				}
 
 			}
@@ -630,16 +758,22 @@
 				"id" : 17,
 				"name" : "Movie - City",
 				"data" : 				{
-					"ema_floor_alpha" : [ 0.0 ],
+					"ema_floor_alpha" : [ 1.0 ],
+					"ema_floor_alpha[1]" : [ 1.0 ],
 					"ema_floor_clear" : [ -1 ],
 					"ema_floor_reset" : [ -1 ],
-					"ema_floor_sim" : [ 5 ],
-					"ema_floor_vis" : [ 12 ],
+					"ema_floor_sim" : [ 8 ],
+					"ema_floor_sim[1]" : [ 8 ],
+					"ema_floor_vis" : [ 14 ],
+					"ema_floor_vis[1]" : [ 14 ],
 					"ema_scrim_alpha" : [ 0.0 ],
+					"ema_scrim_alpha[1]" : [ 0.0 ],
 					"ema_scrim_clear" : [ -1 ],
 					"ema_scrim_reset" : [ -1 ],
-					"ema_scrim_sim" : [ 2 ],
-					"ema_scrim_vis" : [ 13 ],
+					"ema_scrim_sim" : [ 0 ],
+					"ema_scrim_sim[1]" : [ 0 ],
+					"ema_scrim_vis" : [ 14 ],
+					"ema_scrim_vis[1]" : [ 14 ],
 					"ex4_blackout" : [ 1 ],
 					"indiv_dest" : [ 0 ],
 					"indiv_source" : [ 0 ],
@@ -656,11 +790,13 @@
 					"sound_scrim_volume" : [ 0 ],
 					"toggle[1]" : [ 0 ],
 					"toggle[2]" : [ 0 ],
+					"toggle[3]" : [ 1 ],
+					"toggle[4]" : [ 0 ],
 					"autoupdate" : [ 0 ],
 					"ipaddr" : [ "2.78.21.26" ],
 					"port" : [ 9990 ],
-					"dest-control20x20::matrix-ctrl" : [ 0, 3, 1, 0, 4, 1, 0, 5, 1, 0, 8, 1, 0, 9, 1, 0, 10, 1, 1, 0, 1, 1, 12, 1, 2, 2, 1, 3, 1, 1, 3, 14, 1, 4, 7, 1, 4, 11, 1, 11, 19, 1, 12, 13, 1, 19, 6, 1, 19, 15, 1, 19, 16, 1, 19, 17, 1, 19, 18, 1 ],
-					"u449000504" : [ -1 ]
+					"dest-control20x20::matrix-ctrl" : [ 0, 4, 1, 0, 5, 1, 0, 8, 1, 0, 9, 1, 0, 10, 1, 1, 0, 1, 1, 12, 1, 2, 2, 1, 3, 1, 1, 3, 14, 1, 4, 3, 1, 4, 7, 1, 4, 11, 1, 11, 19, 1, 12, 13, 1, 19, 6, 1, 19, 15, 1, 19, 16, 1, 19, 17, 1, 19, 18, 1 ],
+					"u767054232" : [ -1 ]
 				}
 
 			}
