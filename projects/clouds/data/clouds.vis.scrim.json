@@ -871,6 +871,64 @@
 				}
 
 			}
+,
+			"16" : 			{
+				"id" : 16,
+				"name" : "pressure cubehelix",
+				"data" : 				{
+					"blend_feathers" : [ 7 ],
+					"blend_field" : [ 7 ],
+					"blend_particles" : [ 7 ],
+					"blend_tracers" : [ 7 ],
+					"camera-or-movie" : [ 0 ],
+					"simulation::u672327734" : [ 1 ],
+					"feather_plot::texture" : [ "velocity" ],
+					"feather_plot::width" : [ 0.0025 ],
+					"feather_plot::blur" : [ 0.0 ],
+					"feather_plot::dim" : [ 0.0, 0.0 ],
+					"feather_plot::slide" : [ 0, 0 ],
+					"feather_plot::enable" : [ 0 ],
+					"feather_plot::threshold" : [ 0.01 ],
+					"feather_plot::weight" : [ 0.0 ],
+					"feather_plot::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"particles::duration" : [ 0.5 ],
+					"particles::texture" : [ "velocity" ],
+					"particles::point_size" : [ 1.0 ],
+					"particles::blur" : [ 0.0 ],
+					"particles::dim" : [ 0.0, 0.0 ],
+					"particles::slide" : [ 0.0, 0.0 ],
+					"particles::dt" : [ 0.9 ],
+					"particles::dx" : [ 80.0 ],
+					"particles::enable" : [ 0 ],
+					"particles::radius" : [ -1.0 ],
+					"particles::threshold" : [  ],
+					"particles::force" : [ 0.1 ],
+					"particles::attraction" : [ 1.0 ],
+					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 0.0 ],
+					"field::source_vars" : [ 0, 1, 2, 3 ],
+					"field::contrast" : [ 0.39, 1.0, 1.0, 1.0 ],
+					"field::texture" : [ "pressure" ],
+					"field::mode" : [ 2 ],
+					"field::alpha" : [ 1.0 ],
+					"field::bg" : [ "env_pressure" ],
+					"field::high" : [ 400.0, 1.0, 1.0, 1.0 ],
+					"field::low" : [ 0.0, 0.0, 0.0, 0.0 ],
+					"field::enable" : [ 1 ],
+					"field::colormap" : [ "1d_unsigned_cubehelix.png" ],
+					"tracers::u555318509" : [ -1 ],
+					"video_input::u898310845" : [ -1 ],
+					"movie_input::dim" : [  ],
+					"movie_input::rate" : [  ],
+					"movie_input::moviefile" : [  ],
+					"movie_input::texture" : [  ],
+					"movie_input::mirror" : [  ],
+					"movie_input::flip" : [  ],
+					"movie_input::invert" : [  ],
+					"movie_input::enable" : [ 0 ],
+					"movie_input::folder" : [  ]
+				}
+
+			}
 
 		}
 
