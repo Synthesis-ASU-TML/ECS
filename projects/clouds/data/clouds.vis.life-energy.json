@@ -1,0 +1,180 @@
+{
+	"pattrstorage" : 	{
+		"name" : "u394004490",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"name" : "tables - 1 - clouds",
+				"data" : 				{
+					"u658046450" : [  ],
+					"field::source_vars" : [ 0, 1, 2, 3 ],
+					"field::contrast" : [ 0.4, 0.0889, 1.0, 1.0 ],
+					"field::texture" : [ "watertemp" ],
+					"field::mode" : [ 2 ],
+					"field::alpha" : [ 1.0 ],
+					"field::bg" : [ "env_pressure" ],
+					"field::high" : [ 0.0004, 0.002, 288.15, 1.0 ],
+					"field::low" : [ 0.0, 0.0, 230.0, 0.0 ],
+					"field::enable" : [ 1 ],
+					"field::colormap" : [ "1d_unsigned_YlOrBr.png" ]
+				}
+
+			}
+,
+			"2" : 			{
+				"id" : 2,
+				"name" : "tables - 2 - clouds vorticity",
+				"data" : 				{
+					"u658046450" : [  ],
+					"field::source_vars" : [ 0, 1, 2, 3 ],
+					"field::contrast" : [ 0.4, 0.0889, 1.0, 1.0 ],
+					"field::texture" : [ "watertemp" ],
+					"field::mode" : [ 2 ],
+					"field::alpha" : [ 1.0 ],
+					"field::bg" : [ "env_pressure" ],
+					"field::high" : [ 0.0004, 0.002, 288.15, 1.0 ],
+					"field::low" : [ 0.0, 0.0, 230.0, 0.0 ],
+					"field::enable" : [ 1 ],
+					"field::colormap" : [ "1d_unsigned_YlGnBu.png" ]
+				}
+
+			}
+,
+			"3" : 			{
+				"id" : 3,
+				"name" : "tables - 3 - clouds above",
+				"data" : 				{
+					"u658046450" : [  ],
+					"field::source_vars" : [ 0, 1, 2, 3 ],
+					"field::contrast" : [ 0.4, 0.0889, 1.0, 1.0 ],
+					"field::texture" : [ "watertemp" ],
+					"field::mode" : [ 1 ],
+					"field::alpha" : [ 1.0 ],
+					"field::bg" : [ "env_pressure" ],
+					"field::high" : [ 0.0004, 0.002, 288.15, 1.0 ],
+					"field::low" : [ 0.0, 0.0, 230.0, 0.0 ],
+					"field::enable" : [ 1 ],
+					"field::colormap" : [ "1d_unsigned_YlGnBu.png" ]
+				}
+
+			}
+,
+			"4" : 			{
+				"id" : 4,
+				"name" : "tables - 4 - pressure",
+				"data" : 				{
+					"u658046450" : [  ],
+					"field::source_vars" : [ 0, 1, 2, 3 ],
+					"field::contrast" : [ 0.4, 1.0, 1.0, 1.0 ],
+					"field::texture" : [ "pressure" ],
+					"field::mode" : [ 2 ],
+					"field::alpha" : [ 1.0 ],
+					"field::bg" : [ "env_pressure" ],
+					"field::high" : [ 400.0, 1.0, 1.0, 1.0 ],
+					"field::low" : [ 0.0, 0.0, 0.0, 0.0 ],
+					"field::enable" : [ 1 ],
+					"field::colormap" : [ "1d_unsigned_YlGnBu.png" ]
+				}
+
+			}
+,
+			"5" : 			{
+				"id" : 5,
+				"name" : "tables - 5 - clouds again",
+				"data" : 				{
+					"u658046450" : [  ],
+					"field::source_vars" : [ 0, 1, 2, 3 ],
+					"field::contrast" : [ 0.4, 0.0889, 1.0, 1.0 ],
+					"field::texture" : [ "watertemp" ],
+					"field::mode" : [ 1 ],
+					"field::alpha" : [ 1.0 ],
+					"field::bg" : [ "env_pressure" ],
+					"field::high" : [ 0.0004, 0.002, 288.15, 1.0 ],
+					"field::low" : [ 0.0, 0.0, 230.0, 0.0 ],
+					"field::enable" : [ 1 ],
+					"field::colormap" : [ "1d_unsigned_bone.png" ]
+				}
+
+			}
+,
+			"6" : 			{
+				"id" : 6,
+				"name" : "floor - 2 - particles clouds",
+				"data" : 				{
+					"u658046450" : [  ],
+					"field::source_vars" : [ 0, 1, 2, 3 ],
+					"field::contrast" : [ 0.13, 0.0889, 1.0, 1.0 ],
+					"field::texture" : [ "watertemp" ],
+					"field::mode" : [ 2 ],
+					"field::alpha" : [ 1.0 ],
+					"field::bg" : [ "env_pressure" ],
+					"field::high" : [ 0.0004, 0.002, 288.15, 1.0 ],
+					"field::low" : [ 0.0, 0.0, 230.0, 0.0 ],
+					"field::enable" : [ 1 ],
+					"field::colormap" : [ "1d_unsigned_YlGnBu.png" ]
+				}
+
+			}
+,
+			"7" : 			{
+				"id" : 7,
+				"name" : "floor - 3 - velocity",
+				"data" : 				{
+					"u658046450" : [  ],
+					"field::source_vars" : [ 0, 1, 2, 3 ],
+					"field::contrast" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"field::texture" : [ "velocity" ],
+					"field::mode" : [ 1 ],
+					"field::alpha" : [ 1.0 ],
+					"field::bg" : [ "env_pressure" ],
+					"field::high" : [ 50.0, 50.0, 1.0, 1.0 ],
+					"field::low" : [ -50.0, -50.0, 0.0, 0.0 ],
+					"field::enable" : [ 1 ],
+					"field::colormap" : [ "1d_unsigned_sunset.png" ]
+				}
+
+			}
+,
+			"8" : 			{
+				"id" : 8,
+				"name" : "floor - 4 - pressure map",
+				"data" : 				{
+					"u658046450" : [  ],
+					"field::source_vars" : [ 0, 1, 2, 3 ],
+					"field::contrast" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"field::texture" : [ "velocity" ],
+					"field::mode" : [ 1 ],
+					"field::alpha" : [ 1.0 ],
+					"field::bg" : [ "env_pressure" ],
+					"field::high" : [ 50.0, 50.0, 1.0, 1.0 ],
+					"field::low" : [ -50.0, -50.0, 0.0, 0.0 ],
+					"field::enable" : [ 1 ],
+					"field::colormap" : [ "1d_unsigned_sunset.png" ]
+				}
+
+			}
+,
+			"9" : 			{
+				"id" : 9,
+				"name" : "floor - 5 - ghosting",
+				"data" : 				{
+					"u658046450" : [  ],
+					"field::source_vars" : [ 0, 1, 2, 3 ],
+					"field::contrast" : [ 5.4, 1.0, 1.0, 1.0 ],
+					"field::texture" : [ "velocity" ],
+					"field::mode" : [ 1 ],
+					"field::alpha" : [ 1.0 ],
+					"field::bg" : [ "env_pressure" ],
+					"field::high" : [ 50.0, 50.0, 1.0, 1.0 ],
+					"field::low" : [ -50.0, -50.0, 0.0, 0.0 ],
+					"field::enable" : [ 1 ],
+					"field::colormap" : [ "1d_unsigned_sunset.png" ]
+				}
+
+			}
+
+		}
+
+	}
+
+}
