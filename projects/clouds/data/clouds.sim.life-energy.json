@@ -1,12 +1,11 @@
 {
 	"pattrstorage" : 	{
-		"name" : "u931073852",
+		"name" : "u557018412",
 		"slots" : 		{
 			"1" : 			{
 				"id" : 1,
 				"name" : "tables - 1 - clouds",
 				"data" : 				{
-					"u364101164" : [  ],
 					"simulation::periodic" : [ 1, 1 ],
 					"simulation::closed" : [ 0, 0, 0, 0 ],
 					"simulation::dim" : [ 1280, 720 ],
@@ -76,7 +75,6 @@
 				"id" : 2,
 				"name" : "tables - 2 - clouds vorticity",
 				"data" : 				{
-					"u364101164" : [  ],
 					"simulation::periodic" : [ 1, 1 ],
 					"simulation::closed" : [ 0, 0, 0, 0 ],
 					"simulation::dim" : [ 1280, 720 ],
@@ -146,12 +144,11 @@
 				"id" : 3,
 				"name" : "tables - 3 - clouds above",
 				"data" : 				{
-					"u364101164" : [  ],
 					"simulation::periodic" : [ 1, 0 ],
 					"simulation::closed" : [ 0, 0, 0, 1 ],
 					"simulation::dim" : [ 1280, 720 ],
 					"simulation::dx" : [ 80.0 ],
-					"simulation::vorticity_confinement" : [ 0.15 ],
+					"simulation::vorticity_confinement" : [ 0.0 ],
 					"simulation::t0" : [ 288.15 ],
 					"simulation::z0" : [ -40000.0 ],
 					"simulation::dry_cp" : [ 1004.0 ],
@@ -165,7 +162,7 @@
 					"simulation::vapor_dissipation" : [ 0.99 ],
 					"simulation::liquid_dissipation" : [ 0.98 ],
 					"simulation::temperature_dissipation" : [ 0.95 ],
-					"simulation::velocity_dissipation" : [ 0.98 ],
+					"simulation::velocity_dissipation" : [ 1.0 ],
 					"simulation::external_velocity_texture" : [ "hsflow" ],
 					"simulation::external_pressure_texture" : [ "hsflow" ],
 					"simulation::external_temperature_texture" : [ "hsflow" ],
@@ -187,7 +184,7 @@
 					"simulation::obstacles_fg_motion_blur" : [ 0.0 ],
 					"simulation::obstacles_blur" : [ 2.51 ],
 					"simulation::obstacles_threshold" : [ 0.02 ],
-					"simulation::obstacles_bg_motion_blur" : [ 0.995 ],
+					"simulation::obstacles_bg_motion_blur" : [ 1.0 ],
 					"simulation::camera_obstacles" : [ 0 ],
 					"simulation::dt" : [ 0.9 ],
 					"simulation::speed" : [ 0.0333 ],
@@ -216,7 +213,6 @@
 				"id" : 4,
 				"name" : "tables - 4 - clouds above vorticity",
 				"data" : 				{
-					"u364101164" : [  ],
 					"simulation::periodic" : [ 1, 0 ],
 					"simulation::closed" : [ 0, 0, 0, 1 ],
 					"simulation::dim" : [ 1280, 720 ],
@@ -286,7 +282,6 @@
 				"id" : 5,
 				"name" : "tables - 5 - clouds again",
 				"data" : 				{
-					"u364101164" : [  ],
 					"simulation::periodic" : [ 1, 1 ],
 					"simulation::closed" : [ 0, 0, 0, 0 ],
 					"simulation::dim" : [ 1280, 720 ],
@@ -356,7 +351,6 @@
 				"id" : 6,
 				"name" : "floor - 2 - particles clouds",
 				"data" : 				{
-					"u364101164" : [  ],
 					"simulation::periodic" : [ 1, 1 ],
 					"simulation::closed" : [ 0, 0, 0, 0 ],
 					"simulation::dim" : [ 1280, 720 ],
@@ -426,7 +420,6 @@
 				"id" : 7,
 				"name" : "floor - 3 - velocity",
 				"data" : 				{
-					"u364101164" : [  ],
 					"simulation::periodic" : [ 1, 1 ],
 					"simulation::closed" : [ 0, 0, 0, 0 ],
 					"simulation::dim" : [ 1280, 720 ],
@@ -452,7 +445,7 @@
 					"simulation::external_vapor_texture" : [ "hsflow" ],
 					"simulation::external_liquid_texture" : [ "hsflow" ],
 					"simulation::external_env_pressure_texture" : [ "hsflow" ],
-					"simulation::external_velocity_gain" : [ 50.0 ],
+					"simulation::external_velocity_gain" : [ 500.0 ],
 					"simulation::external_pressure_gain" : [ 0.0 ],
 					"simulation::external_temperature_gain" : [ 0.0 ],
 					"simulation::external_vapor_gain" : [ 0.001 ],
@@ -496,7 +489,6 @@
 				"id" : 8,
 				"name" : "floor - 4 - pressure map",
 				"data" : 				{
-					"u364101164" : [  ],
 					"simulation::periodic" : [ 1, 1 ],
 					"simulation::closed" : [ 0, 0, 0, 0 ],
 					"simulation::dim" : [ 1280, 720 ],
@@ -566,7 +558,6 @@
 				"id" : 9,
 				"name" : "floor - 5 - ghosting",
 				"data" : 				{
-					"u364101164" : [  ],
 					"simulation::periodic" : [ 0, 0 ],
 					"simulation::closed" : [ 0, 0, 0, 0 ],
 					"simulation::dim" : [ 1280, 720 ],

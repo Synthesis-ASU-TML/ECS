@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 320.0, 79.0, 1582.0, 1278.0 ],
+		"rect" : [ -231.0, 325.0, 1582.0, 1278.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,20 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-24",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1412.0, 660.0, 50.0, 35.0 ],
+					"style" : "",
+					"text" : "51 32 52 10"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-178",
 					"maxclass" : "comment",
@@ -188,7 +202,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
 					"patching_rect" : [ 739.0, 445.0, 146.0, 22.0 ],
-					"presentation_rect" : [ 748.0, 484.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "sc.net.send @type sound"
 				}
@@ -741,7 +754,6 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-104",
-									"int" : 1,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 2,
@@ -884,7 +896,6 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-115",
-									"int" : 1,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 2,
@@ -1027,7 +1038,6 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-93",
-									"int" : 1,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 2,
@@ -1196,7 +1206,6 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-279",
-									"int" : 1,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 2,
@@ -2634,7 +2643,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-70",
-					"items" : [ "0_MultiView_16", ",", "1_Computer:_iMac_Display_Right", ",", "2_Computer:_MP4_Display_Right", ",", "3_Computer:_MP1_Display_Right", ",", "4_Camera:_Floor", ",", "5_Camera:_Fishbowl", ",", "6_Camera:_North", ",", "7_Camera:_Doc", ",", "8_MultiView_4", ",", "9_Computer:_iMac_Display_Left", ",", "10_Camera:_West", ",", "11_Computer:_MP4_Display_Left", ",", "12_Camera:_South", ",", "13_Patchbay-In_6", ",", "14_Patchbay-In_7", ",", "15_Patchbay-In_8", ",", "16_Patchbay-In_9", ",", "17_Patchbay-In_10", ",", "18_Computer:_Island_A_DIsplay", ",", "19_Computer:_Island_B_Display" ],
+					"items" : [ "0_MultiView_16", ",", "1_Computer:_iMac_Display_Right", ",", "2_Computer:_MP4_Display_Right", ",", "3_Computer:_MP1_Display_Right", ",", "4_Camera:_Floor", ",", "5_Camera:_Fishbowl", ",", "6_Camera:_North", ",", "7_Empty?", ",", "8_MultiView_4", ",", "9_Computer:_iMac_Display_Left", ",", "10_Camera:_West", ",", "11_Computer:_MP4_Display_Left", ",", "12_Camera:_South", ",", "13_Patchbay-In_6", ",", "14_Table_Multiview", ",", "15_Camera:_Doc", ",", "16_MP4-out3", ",", "17_Island_Out_Temp", ",", "18_Computer:_Island_A_DIsplay", ",", "19_Computer:_Island_B_Display" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -2700,7 +2709,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-86",
-					"items" : [ "0_Projector:_Floor", ",", "1_Projector:_Scrim", ",", "2_Projector:_Sky_North", ",", "3_Computer:_iMac_Input", ",", "4_Computer:_MP4_Input", ",", "5_Computer:_MP1_Input", ",", "6_Videohub:_Fishbowl", ",", "7_Computer:_Island_A_Input", ",", "8_Computer:_Island_B_Input", ",", "9_TV:_West_(Stage)", ",", "10_TV:_South_(Computers)", ",", "11_MultiView_16:_Input_1", ",", "12_MultiView_16:_Input_2", ",", "13_MultiView_16:_Input_3", ",", "14_MultiView_16:_Input_4", ",", "15_MultiView_16:_Input_5", ",", "16_Projector:_Table_Center", ",", "17_Projector:_Table_North", ",", "18_Projector:_Table_South", ",", "19_Projector:_Sky_South" ],
+					"items" : [ "0_Projector:_Floor", ",", "1_Projector:_Scrim", ",", "2_Projector:_Sky_North", ",", "3_Computer:_iMac_Input", ",", "4_Computer:_MP4_Input", ",", "5_Computer:_MP1_Input", ",", "6_Videohub:_Fishbowl", ",", "7_Computer:_Island_A_Input", ",", "8_Computer:_Island_B_Input", ",", "9_TV:_West_(Stage)", ",", "10_TV:_South_(Computers)", ",", "11_MultiView_16:_Input_1", ",", "12_MultiView_16:_Input_2", ",", "13_MultiView_16:_Input_3", ",", "14_MultiView_16:_Input_4", ",", "15_Computer:_MP4_In_2", ",", "16_Projector:_Table_Center", ",", "17_Projector:_Sky_South", ",", "18_Projector:_Table_South", ",", "19_Projector:_Table_North" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -2740,7 +2749,7 @@
 ,
 					"style" : "",
 					"text" : "pattrstorage @greedy 1",
-					"varname" : "u020105233"
+					"varname" : "u897048643"
 				}
 
 			}
@@ -3473,7 +3482,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 50.0, 100.0, 430.0, 49.0 ],
 									"style" : "",
-									"text" : "86 73 68 69 79 32 79 85 84 80 85 84 32 76 79 67 75 83 58, 49 56 32 76, 10"
+									"text" : "86 73 68 69 79 32 79 85 84 80 85 84 32 82 79 85 84 73 78 71 58, 51 32 52, 10"
 								}
 
 							}
@@ -4208,6 +4217,8 @@
 						"indiv_source" : [ 0 ],
 						"lights" : [ 5 ],
 						"number[1]" : [ 10 ],
+						"slider" : [ 0.0 ],
+						"slider[1]" : [ 0.0 ],
 						"sound_floor" : [ 5 ],
 						"sound_life_energy" : [ 0.0 ],
 						"sound_scrim" : [ 3 ],
@@ -4219,7 +4230,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u990106613"
+					"varname" : "u627050018"
 				}
 
 			}
@@ -4311,7 +4322,8 @@
 					}
 ,
 					"size" : 2.0,
-					"style" : ""
+					"style" : "",
+					"varname" : "slider"
 				}
 
 			}
@@ -4341,7 +4353,8 @@
 					}
 ,
 					"size" : 1.0,
-					"style" : ""
+					"style" : "",
+					"varname" : "slider[1]"
 				}
 
 			}
@@ -4593,7 +4606,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 10.0, 37.0, 174.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 8.456055, 366.0, 40.5, 20.0 ],
+					"presentation_rect" : [ 8.456055, 366.0, 41.0, 20.0 ],
 					"style" : "",
 					"text" : "Lights",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
@@ -5021,7 +5034,7 @@
 					"maxclass" : "mira.frame",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 368.269226, 1635.0, 334.769239, 238.0 ],
+					"patching_rect" : [ 368.269226, 1635.0, 334.769218, 237.999985 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 4.456055, 165.0, 360.087921, 256.0 ]
 				}
@@ -5035,7 +5048,7 @@
 					"maxclass" : "mira.frame",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 31.5, 1635.0, 334.769239, 238.0 ],
+					"patching_rect" : [ 31.5, 1635.0, 334.769218, 237.999985 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 5.456055, 425.0, 360.087921, 256.0 ]
 				}
@@ -5505,6 +5518,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-157", 0 ],
+					"order" : 1,
+					"source" : [ "obj-153", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-24", 1 ],
+					"order" : 0,
 					"source" : [ "obj-153", 0 ]
 				}
 
@@ -6329,27 +6351,27 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-70" : [ "indiv_source", "indiv_source", 0 ],
-			"obj-2" : [ "sound_scrim[1]", "sound_scrim[1]", 0 ],
-			"obj-34" : [ "ema_floor_alpha", "ema_floor_alpha", 0 ],
-			"obj-26" : [ "ema_scrim_vis", "ema_scrim_vis", 0 ],
-			"obj-119" : [ "toggle", "toggle", 0 ],
-			"obj-29" : [ "sound_floor_volume", "sound_floor_volume", 0 ],
-			"obj-112" : [ "number", "number", 0 ],
-			"obj-210" : [ "toggle[3]", "toggle[1]", 0 ],
 			"obj-33" : [ "ema_scrim_alpha", "ema_scrim_alpha", 0 ],
 			"obj-13" : [ "lights", "lights", 0 ],
-			"obj-32" : [ "sound_scrim_volume", "sound_scrim_volume", 0 ],
+			"obj-210" : [ "toggle[3]", "toggle[1]", 0 ],
 			"obj-68" : [ "ema_floor_sim", "ema_floor_sim", 0 ],
 			"obj-86" : [ "indiv_dest", "indiv_dest", 0 ],
-			"obj-81" : [ "ema_scrim_alpha[1]", "ema_scrim_alpha", 0 ],
+			"obj-119" : [ "toggle", "toggle", 0 ],
 			"obj-17" : [ "sound_scrim", "sound_scrim", 0 ],
+			"obj-29" : [ "sound_floor_volume", "sound_floor_volume", 0 ],
+			"obj-112" : [ "number", "number", 0 ],
+			"obj-81" : [ "ema_scrim_alpha[1]", "ema_scrim_alpha", 0 ],
 			"obj-67" : [ "ema_scrim_sim", "ema_scrim_sim", 0 ],
-			"obj-213" : [ "toggle[4]", "toggle[1]", 0 ],
-			"obj-18" : [ "sound_floor", "sound_floor", 0 ],
 			"obj-159" : [ "number[1]", "number[1]", 0 ],
+			"obj-18" : [ "sound_floor", "sound_floor", 0 ],
+			"obj-28" : [ "ema_floor_vis", "ema_floor_vis", 0 ],
+			"obj-70" : [ "indiv_source", "indiv_source", 0 ],
 			"obj-11" : [ "toggle[1]", "toggle[1]", 0 ],
-			"obj-28" : [ "ema_floor_vis", "ema_floor_vis", 0 ]
+			"obj-2" : [ "sound_scrim[1]", "sound_scrim[1]", 0 ],
+			"obj-32" : [ "sound_scrim_volume", "sound_scrim_volume", 0 ],
+			"obj-34" : [ "ema_floor_alpha", "ema_floor_alpha", 0 ],
+			"obj-26" : [ "ema_scrim_vis", "ema_scrim_vis", 0 ],
+			"obj-213" : [ "toggle[4]", "toggle[1]", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{

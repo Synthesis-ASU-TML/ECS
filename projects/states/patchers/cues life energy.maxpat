@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 1116.0, 79.0, 1397.0, 1300.0 ],
+		"rect" : [ 622.0, 79.0, 1397.0, 1300.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,20 @@
 				"box" : 				{
 					"fontface" : 0,
 					"fontsize" : 12.0,
+					"id" : "obj-551",
+					"maxclass" : "o.display",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 665.0, 2463.5, 355.0, 34.0 ],
+					"text" : "/scoops/values : [0.35, 0.35, 0., 0.]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontsize" : 12.0,
 					"id" : "obj-535",
 					"linecount" : 2,
 					"maxclass" : "o.display",
@@ -61,7 +75,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 126.5, 2226.0, 50.0, 76.0 ],
 					"style" : "",
-					"text" : "FullPacket 48 107752141911056"
+					"text" : "FullPacket 48 106377901345648"
 				}
 
 			}
@@ -138,7 +152,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 48.5, 1804.0, 82.0, 22.0 ],
-					"presentation_rect" : [ 7.5, 1895.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "speedlim 100"
 				}
@@ -191,7 +204,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 225.599915, 2103.0, 82.0, 22.0 ],
-					"presentation_rect" : [ 614.299988, 2729.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "speedlim 100"
 				}
@@ -684,7 +696,6 @@
 					}
 ,
 					"patching_rect" : [ 2821.250244, 1408.0, 51.0, 22.0 ],
-					"presentation_rect" : [ 2706.900146, 1176.599976, 0.0, 0.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -718,7 +729,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2822.0, 1381.0, 143.0, 22.0 ],
-					"presentation_rect" : [ 2708.650146, 1152.599976, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "0.5 0.5 1. 0.5 0.5 0.5 0.5"
 				}
@@ -785,7 +795,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 2822.0, 1342.0, 59.0, 22.0 ],
-					"presentation_rect" : [ 2863.0, 1344.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "line 0. 20"
 				}
@@ -972,7 +981,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2429.75, 154.0, 29.5, 22.0 ],
-					"presentation_rect" : [ 2429.25, 151.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "1"
 				}
@@ -1052,7 +1060,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 47.0, 1360.0, 37.0, 22.0 ],
-					"presentation_rect" : [ 48.0, 1012.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "set 0"
 				}
@@ -1876,7 +1883,7 @@
 					"patching_rect" : [ 623.0, 782.0, 213.5, 60.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 10,
-					"presentation_rect" : [ 577.75, 31.0, 94.0, 141.0 ],
+					"presentation_rect" : [ 577.75, 31.0, 97.0, 141.0 ],
 					"style" : "",
 					"text" : "TYLER PLAYS FOR ABOUT 15 MINUTES, LAST SONG WILL BE INDICATED EITHER VERBALLY OR THROUGH MUSIC."
 				}
@@ -3587,7 +3594,7 @@
 					"patching_rect" : [ 48.5, 2679.5, 430.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 5,
-					"presentation_rect" : [ 768.25, 549.75, 93.0, 74.0 ],
+					"presentation_rect" : [ 768.25, 549.75, 96.0, 74.0 ],
 					"style" : "",
 					"text" : "Slowly bring DOWN CLOUD SOUND while XW talks, back UP after done."
 				}
@@ -9219,6 +9226,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-74",
+					"int" : 1,
 					"maxclass" : "gswitch2",
 					"numinlets" : 2,
 					"numoutlets" : 2,
@@ -9513,7 +9521,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 1169.0, 2151.0, 88.0, 49.0 ],
+					"patching_rect" : [ 1195.5, 2151.0, 109.0, 49.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 292.125, 1225.0, 93.0, 49.0 ],
 					"saved_attribute_attributes" : 					{
@@ -9543,7 +9551,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 1079.0, 2151.0, 88.0, 49.0 ],
+					"patching_rect" : [ 1079.0, 2151.0, 109.0, 49.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 197.375, 1225.0, 93.0, 49.0 ],
 					"saved_attribute_attributes" : 					{
@@ -9752,7 +9760,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 23.0, 224.0, 2651.5, 235.0 ],
-					"presentation_rect" : [ 24.0, 153.0, 0.0, 0.0 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -9770,7 +9777,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 23.0, 479.0, 2651.5, 199.0 ],
-					"presentation_rect" : [ 34.0, 456.0, 0.0, 0.0 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -9788,7 +9794,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 23.0, 696.0, 2651.5, 82.0 ],
-					"presentation_rect" : [ 24.0, 676.0, 0.0, 0.0 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -9806,7 +9811,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 23.0, 793.0, 2651.5, 273.0 ],
-					"presentation_rect" : [ 312.0, 1139.0, 0.0, 0.0 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -9824,7 +9828,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 23.0, 1200.0, 2651.5, 267.0 ],
-					"presentation_rect" : [ 23.0, 1063.0, 0.0, 0.0 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -9842,7 +9845,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 23.0, 1481.0, 2651.5, 248.0 ],
-					"presentation_rect" : [ 20.0, 1479.0, 0.0, 0.0 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -9860,7 +9862,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 23.0, 1083.0, 2651.5, 98.0 ],
-					"presentation_rect" : [ 22.0, 1064.0, 0.0, 0.0 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -10335,6 +10336,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-18", 2 ],
+					"order" : 1,
+					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-459", 0 ],
+					"order" : 0,
 					"source" : [ "obj-15", 0 ]
 				}
 
@@ -13228,6 +13238,15 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"midpoints" : [ 867.0, 2379.0, 58.0, 2379.0 ],
+					"order" : 1,
+					"source" : [ "obj-9", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-551", 0 ],
+					"order" : 0,
 					"source" : [ "obj-9", 0 ]
 				}
 
@@ -13302,75 +13321,75 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-410" : [ "number[16]", "number[16]", 0 ],
-			"obj-154" : [ "tyler-musician", "tyler-musician", 0 ],
-			"obj-47" : [ "number[26]", "number[26]", 0 ],
-			"obj-237" : [ "dessert-served-master7[24]", "dessert-served-master7[24]", 0 ],
-			"obj-261" : [ "dinner-mics-contact", "dinner-mics-contact", 0 ],
-			"obj-243" : [ "number[30]", "number[30]", 0 ],
-			"obj-447" : [ "dessert-served-master7[7]", "dessert-served-master7[7]", 0 ],
-			"obj-516" : [ "multislider", "multislider", 0 ],
-			"obj-13" : [ "number[3]", "number[3]", 0 ],
-			"obj-478" : [ "number[24]", "number[24]", 0 ],
-			"obj-66" : [ "number[8]", "number[8]", 0 ],
-			"obj-453" : [ "dessert-served-master7[10]", "dessert-served-master7[10]", 0 ],
-			"obj-48" : [ "number[27]", "number[27]", 0 ],
 			"obj-270" : [ "dessert-served-fb-clouds", "dessert-served-fb-clouds", 0 ],
-			"obj-39" : [ "number[6]", "number[6]", 0 ],
-			"obj-115" : [ "toggle[2]", "toggle[2]", 0 ],
-			"obj-302" : [ "servers-pulling-plates-master7", "servers-pulling-plates-master7", 0 ],
-			"obj-228" : [ "salad-enchantments-fb-enchantments", "salad-enchantments-fb-enchantments", 0 ],
-			"obj-358" : [ "number[11]", "number[11]", 0 ],
-			"obj-381" : [ "number[15]", "number[15]", 0 ],
-			"obj-462" : [ "dessert-served-master7[13]", "dessert-served-master7[13]", 0 ],
-			"obj-475" : [ "number[21]", "number[21]", 0 ],
-			"obj-421" : [ "number[18]", "number[18]", 0 ],
-			"obj-196" : [ "tyler-musician[1]", "tyler-musician[1]", 0 ],
-			"obj-7" : [ "number[1]", "number[1]", 0 ],
-			"obj-476" : [ "number[22]", "number[22]", 0 ],
-			"obj-275" : [ "dinner-clouds-tables-alpha", "dinner-clouds-tables-alpha", 0 ],
-			"obj-470" : [ "dessert-served-master7[15]", "dessert-served-master7[15]", 0 ],
-			"obj-449" : [ "dessert-served-master7[8]", "dessert-served-master7[8]", 0 ],
-			"obj-172" : [ "number[28]", "number[28]", 0 ],
+			"obj-48" : [ "number[27]", "number[27]", 0 ],
 			"obj-185" : [ "dinner-clouds-floor-image-and-mask[1]", "dinner-clouds-floor-image-and-mask[1]", 0 ],
-			"obj-238" : [ "dinner-clouds-fb-clouds", "dinner-clouds-fb-clouds", 0 ],
-			"obj-412" : [ "dessert-served-master7[2]", "dessert-served-master7[2]", 0 ],
-			"obj-206" : [ "salad-wipeaway-master7", "salad-wipeaway-master7", 0 ],
-			"obj-368" : [ "number[13]", "number[13]", 0 ],
-			"obj-345" : [ "number[9]", "number[9]", 0 ],
-			"obj-458" : [ "dessert-served-master7[11]", "dessert-served-master7[11]", 0 ],
-			"obj-479" : [ "number[25]", "number[25]", 0 ],
-			"obj-90" : [ "toggle[1]", "toggle[1]", 0 ],
+			"obj-478" : [ "number[24]", "number[24]", 0 ],
 			"obj-177" : [ "dessert-served-master7[23]", "dessert-served-master7[23]", 0 ],
-			"obj-288" : [ "dessert-served-floor-mask", "dessert-served-floor-mask", 0 ],
-			"obj-10" : [ "number[7]", "number[7]", 0 ],
-			"obj-15" : [ "number[4]", "number[4]", 0 ],
-			"obj-73" : [ "toggle", "toggle", 0 ],
-			"obj-241" : [ "dinner-clouds-floor-image-and-mask", "dinner-clouds-floor-image-and-mask", 0 ],
-			"obj-417" : [ "dessert-served-master7[3]", "dessert-served-master7[3]", 0 ],
-			"obj-464" : [ "dessert-served-master7[14]", "dessert-served-master7[14]", 0 ],
-			"obj-173" : [ "number[29]", "number[29]", 0 ],
-			"obj-445" : [ "dessert-served-master7[6]", "dessert-served-master7[6]", 0 ],
-			"obj-188" : [ "number[31]", "number[31]", 0 ],
-			"obj-403" : [ "dessert-served-master7[1]", "dessert-served-master7[1]", 0 ],
-			"obj-477" : [ "number[23]", "number[23]", 0 ],
-			"obj-5" : [ "number", "number", 0 ],
-			"obj-11" : [ "number[2]", "number[2]", 0 ],
-			"obj-473" : [ "number[19]", "number[19]", 0 ],
-			"obj-148" : [ "tyler-master7", "tyler-master7", 0 ],
-			"obj-451" : [ "dessert-served-master7[9]", "dessert-served-master7[9]", 0 ],
-			"obj-423" : [ "dessert-served-master7[5]", "dessert-served-master7[5]", 0 ],
-			"obj-252" : [ "dinner-clouds-fb-enchantment", "dinner-clouds-fb-enchantment", 0 ],
-			"obj-361" : [ "number[12]", "number[12]", 0 ],
 			"obj-17" : [ "number[5]", "number[5]", 0 ],
-			"obj-419" : [ "dessert-served-master7[4]", "dessert-served-master7[4]", 0 ],
-			"obj-187" : [ "dessert-served-master7[25]", "dessert-served-master7[25]", 0 ],
-			"obj-385" : [ "number[14]", "number[14]", 0 ],
-			"obj-347" : [ "number[10]", "number[10]", 0 ],
-			"obj-420" : [ "number[17]", "number[17]", 0 ],
+			"obj-228" : [ "salad-enchantments-fb-enchantments", "salad-enchantments-fb-enchantments", 0 ],
+			"obj-115" : [ "toggle[2]", "toggle[2]", 0 ],
+			"obj-464" : [ "dessert-served-master7[14]", "dessert-served-master7[14]", 0 ],
+			"obj-476" : [ "number[22]", "number[22]", 0 ],
+			"obj-10" : [ "number[7]", "number[7]", 0 ],
+			"obj-462" : [ "dessert-served-master7[13]", "dessert-served-master7[13]", 0 ],
 			"obj-460" : [ "dessert-served-master7[12]", "dessert-served-master7[12]", 0 ],
+			"obj-344" : [ "dinner-mics-contact[1]", "dinner-mics-contact[1]", 0 ],
+			"obj-473" : [ "number[19]", "number[19]", 0 ],
+			"obj-73" : [ "toggle", "toggle", 0 ],
+			"obj-458" : [ "dessert-served-master7[11]", "dessert-served-master7[11]", 0 ],
 			"obj-474" : [ "number[20]", "number[20]", 0 ],
-			"obj-344" : [ "dinner-mics-contact[1]", "dinner-mics-contact[1]", 0 ]
+			"obj-252" : [ "dinner-clouds-fb-enchantment", "dinner-clouds-fb-enchantment", 0 ],
+			"obj-516" : [ "multislider", "multislider", 0 ],
+			"obj-237" : [ "dessert-served-master7[24]", "dessert-served-master7[24]", 0 ],
+			"obj-479" : [ "number[25]", "number[25]", 0 ],
+			"obj-419" : [ "dessert-served-master7[4]", "dessert-served-master7[4]", 0 ],
+			"obj-5" : [ "number", "number", 0 ],
+			"obj-172" : [ "number[28]", "number[28]", 0 ],
+			"obj-453" : [ "dessert-served-master7[10]", "dessert-served-master7[10]", 0 ],
+			"obj-420" : [ "number[17]", "number[17]", 0 ],
+			"obj-451" : [ "dessert-served-master7[9]", "dessert-served-master7[9]", 0 ],
+			"obj-15" : [ "number[4]", "number[4]", 0 ],
+			"obj-449" : [ "dessert-served-master7[8]", "dessert-served-master7[8]", 0 ],
+			"obj-275" : [ "dinner-clouds-tables-alpha", "dinner-clouds-tables-alpha", 0 ],
+			"obj-347" : [ "number[10]", "number[10]", 0 ],
+			"obj-403" : [ "dessert-served-master7[1]", "dessert-served-master7[1]", 0 ],
+			"obj-188" : [ "number[31]", "number[31]", 0 ],
+			"obj-7" : [ "number[1]", "number[1]", 0 ],
+			"obj-345" : [ "number[9]", "number[9]", 0 ],
+			"obj-423" : [ "dessert-served-master7[5]", "dessert-served-master7[5]", 0 ],
+			"obj-470" : [ "dessert-served-master7[15]", "dessert-served-master7[15]", 0 ],
+			"obj-148" : [ "tyler-master7", "tyler-master7", 0 ],
+			"obj-238" : [ "dinner-clouds-fb-clouds", "dinner-clouds-fb-clouds", 0 ],
+			"obj-361" : [ "number[12]", "number[12]", 0 ],
+			"obj-13" : [ "number[3]", "number[3]", 0 ],
+			"obj-412" : [ "dessert-served-master7[2]", "dessert-served-master7[2]", 0 ],
+			"obj-385" : [ "number[14]", "number[14]", 0 ],
+			"obj-206" : [ "salad-wipeaway-master7", "salad-wipeaway-master7", 0 ],
+			"obj-196" : [ "tyler-musician[1]", "tyler-musician[1]", 0 ],
+			"obj-477" : [ "number[23]", "number[23]", 0 ],
+			"obj-39" : [ "number[6]", "number[6]", 0 ],
+			"obj-90" : [ "toggle[1]", "toggle[1]", 0 ],
+			"obj-381" : [ "number[15]", "number[15]", 0 ],
+			"obj-302" : [ "servers-pulling-plates-master7", "servers-pulling-plates-master7", 0 ],
+			"obj-261" : [ "dinner-mics-contact", "dinner-mics-contact", 0 ],
+			"obj-47" : [ "number[26]", "number[26]", 0 ],
+			"obj-410" : [ "number[16]", "number[16]", 0 ],
+			"obj-173" : [ "number[29]", "number[29]", 0 ],
+			"obj-66" : [ "number[8]", "number[8]", 0 ],
+			"obj-368" : [ "number[13]", "number[13]", 0 ],
+			"obj-288" : [ "dessert-served-floor-mask", "dessert-served-floor-mask", 0 ],
+			"obj-187" : [ "dessert-served-master7[25]", "dessert-served-master7[25]", 0 ],
+			"obj-421" : [ "number[18]", "number[18]", 0 ],
+			"obj-154" : [ "tyler-musician", "tyler-musician", 0 ],
+			"obj-447" : [ "dessert-served-master7[7]", "dessert-served-master7[7]", 0 ],
+			"obj-241" : [ "dinner-clouds-floor-image-and-mask", "dinner-clouds-floor-image-and-mask", 0 ],
+			"obj-243" : [ "number[30]", "number[30]", 0 ],
+			"obj-445" : [ "dessert-served-master7[6]", "dessert-served-master7[6]", 0 ],
+			"obj-417" : [ "dessert-served-master7[3]", "dessert-served-master7[3]", 0 ],
+			"obj-358" : [ "number[11]", "number[11]", 0 ],
+			"obj-11" : [ "number[2]", "number[2]", 0 ],
+			"obj-475" : [ "number[21]", "number[21]", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
