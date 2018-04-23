@@ -1,6 +1,6 @@
 {
 	"pattrstorage" : 	{
-		"name" : "u789045046",
+		"name" : "u864045087",
 		"slots" : 		{
 			"1" : 			{
 				"id" : 1,
@@ -115,7 +115,8 @@
 					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 0.0 ]
 				}
 
-			},
+			}
+,
 			"6" : 			{
 				"id" : 6,
 				"name" : "floor - 2 - particles clouds",
@@ -143,8 +144,8 @@
 				"id" : 7,
 				"name" : "floor - 3 - velocity",
 				"data" : 				{
-					"blend_particles" : [ 1 ],
-					"particles::duration" : [ 2.0 ],
+					"blend_particles" : [ 0 ],
+					"particles::duration" : [ 0.1 ],
 					"particles::texture" : [ "velocity" ],
 					"particles::point_size" : [ 0.1 ],
 					"particles::blur" : [ 0.1 ],
@@ -155,7 +156,7 @@
 					"particles::enable" : [ 1 ],
 					"particles::radius" : [ -1.0 ],
 					"particles::threshold" : [ 0.0 ],
-					"particles::force" : [ 1.0, 1.0 ],
+					"particles::force" : [ 0.1, 0.1 ],
 					"particles::attraction" : [ 0.0 ],
 					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
