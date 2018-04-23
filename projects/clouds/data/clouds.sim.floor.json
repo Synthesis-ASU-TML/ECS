@@ -1,6 +1,6 @@
 {
 	"pattrstorage" : 	{
-		"name" : "u018029901",
+		"name" : "u492100636",
 		"slots" : 		{
 			"1" : 			{
 				"id" : 1,
@@ -64,7 +64,9 @@
 					"simulation::viscosity_iterations" : [ 0 ],
 					"simulation::viscosity" : [ 0.0 ],
 					"simulation::external_viscosity_gain" : [  ],
-					"simulation::external_viscosity_texture" : [  ]
+					"simulation::external_viscosity_texture" : [  ],
+					"simulation::bfecc" : [  ],
+					"simulation::bfecc_alpha" : [  ]
 				}
 
 			}
@@ -131,7 +133,9 @@
 					"simulation::viscosity_iterations" : [ 0 ],
 					"simulation::viscosity" : [ 0.0 ],
 					"simulation::external_viscosity_gain" : [  ],
-					"simulation::external_viscosity_texture" : [  ]
+					"simulation::external_viscosity_texture" : [  ],
+					"simulation::bfecc" : [  ],
+					"simulation::bfecc_alpha" : [  ]
 				}
 
 			}
@@ -198,7 +202,9 @@
 					"simulation::viscosity_iterations" : [ 0 ],
 					"simulation::viscosity" : [ 0.0 ],
 					"simulation::external_viscosity_gain" : [ 0.0 ],
-					"simulation::external_viscosity_texture" : [ "bgsub" ]
+					"simulation::external_viscosity_texture" : [ "bgsub" ],
+					"simulation::bfecc" : [  ],
+					"simulation::bfecc_alpha" : [  ]
 				}
 
 			}
@@ -265,7 +271,9 @@
 					"simulation::viscosity_iterations" : [ 0 ],
 					"simulation::viscosity" : [ 0.0 ],
 					"simulation::external_viscosity_gain" : [ 0.0 ],
-					"simulation::external_viscosity_texture" : [ "bgsub" ]
+					"simulation::external_viscosity_texture" : [ "bgsub" ],
+					"simulation::bfecc" : [  ],
+					"simulation::bfecc_alpha" : [  ]
 				}
 
 			}
@@ -332,7 +340,9 @@
 					"simulation::viscosity_iterations" : [ 0 ],
 					"simulation::viscosity" : [ 0.0 ],
 					"simulation::external_viscosity_gain" : [  ],
-					"simulation::external_viscosity_texture" : [  ]
+					"simulation::external_viscosity_texture" : [  ],
+					"simulation::bfecc" : [  ],
+					"simulation::bfecc_alpha" : [  ]
 				}
 
 			}
@@ -399,7 +409,9 @@
 					"simulation::viscosity_iterations" : [ 0 ],
 					"simulation::viscosity" : [ 0.0 ],
 					"simulation::external_viscosity_gain" : [  ],
-					"simulation::external_viscosity_texture" : [  ]
+					"simulation::external_viscosity_texture" : [  ],
+					"simulation::bfecc" : [  ],
+					"simulation::bfecc_alpha" : [  ]
 				}
 
 			}
@@ -466,7 +478,9 @@
 					"simulation::viscosity_iterations" : [ 0 ],
 					"simulation::viscosity" : [ 0.0 ],
 					"simulation::external_viscosity_gain" : [ 0.0 ],
-					"simulation::external_viscosity_texture" : [ "bgsub" ]
+					"simulation::external_viscosity_texture" : [ "bgsub" ],
+					"simulation::bfecc" : [  ],
+					"simulation::bfecc_alpha" : [  ]
 				}
 
 			}
@@ -484,7 +498,7 @@
 					"simulation::z0" : [ 0.0 ],
 					"simulation::dry_cp" : [ 1004.0 ],
 					"simulation::vapor_cp" : [ 1850.0 ],
-					"simulation::jacobi_iterations" : [ 80 ],
+					"simulation::jacobi_iterations" : [ 20 ],
 					"simulation::p0" : [ 70.0 ],
 					"simulation::lapse_rate" : [ 6.5 ],
 					"simulation::dry_cv" : [ 717.0 ],
@@ -533,7 +547,9 @@
 					"simulation::viscosity_iterations" : [ 0 ],
 					"simulation::viscosity" : [ 0.0 ],
 					"simulation::external_viscosity_gain" : [ 0.0 ],
-					"simulation::external_viscosity_texture" : [ "bgsub" ]
+					"simulation::external_viscosity_texture" : [ "bgsub" ],
+					"simulation::bfecc" : [ 0 ],
+					"simulation::bfecc_alpha" : [ 0.0 ]
 				}
 
 			}
@@ -600,7 +616,9 @@
 					"simulation::viscosity_iterations" : [ 0 ],
 					"simulation::viscosity" : [ 0.0 ],
 					"simulation::external_viscosity_gain" : [ 0.0 ],
-					"simulation::external_viscosity_texture" : [ "bgsub" ]
+					"simulation::external_viscosity_texture" : [ "bgsub" ],
+					"simulation::bfecc" : [  ],
+					"simulation::bfecc_alpha" : [  ]
 				}
 
 			}
@@ -667,11 +685,13 @@
 					"simulation::viscosity_iterations" : [ 0 ],
 					"simulation::viscosity" : [ 0.0 ],
 					"simulation::external_viscosity_gain" : [ 0.0 ],
-					"simulation::external_viscosity_texture" : [ "bgsub" ]
+					"simulation::external_viscosity_texture" : [ "bgsub" ],
+					"simulation::bfecc" : [  ],
+					"simulation::bfecc_alpha" : [  ]
 				}
 
-			},
-
+			}
+,
 			"11" : 			{
 				"id" : 11,
 				"name" : "clouds above",
@@ -734,7 +754,9 @@
 					"simulation::viscosity_iterations" : [ 0 ],
 					"simulation::viscosity" : [ 0.0 ],
 					"simulation::external_viscosity_gain" : [ 0.0 ],
-					"simulation::external_viscosity_texture" : [ "bgsub" ]
+					"simulation::external_viscosity_texture" : [ "bgsub" ],
+					"simulation::bfecc" : [  ],
+					"simulation::bfecc_alpha" : [  ]
 				}
 
 			}
@@ -801,7 +823,9 @@
 					"simulation::viscosity_iterations" : [ 0 ],
 					"simulation::viscosity" : [ 0.0 ],
 					"simulation::external_viscosity_gain" : [ 0.0 ],
-					"simulation::external_viscosity_texture" : [ "bgsub" ]
+					"simulation::external_viscosity_texture" : [ "bgsub" ],
+					"simulation::bfecc" : [  ],
+					"simulation::bfecc_alpha" : [  ]
 				}
 
 			}
@@ -868,7 +892,9 @@
 					"simulation::viscosity_iterations" : [  ],
 					"simulation::viscosity" : [  ],
 					"simulation::external_viscosity_gain" : [  ],
-					"simulation::external_viscosity_texture" : [  ]
+					"simulation::external_viscosity_texture" : [  ],
+					"simulation::bfecc" : [  ],
+					"simulation::bfecc_alpha" : [  ]
 				}
 
 			}
