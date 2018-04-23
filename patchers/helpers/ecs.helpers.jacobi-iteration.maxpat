@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 486.0, 509.0, 667.0, 501.0 ],
+		"rect" : [ -1477.0, 349.0, 667.0, 501.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,13 +39,13 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-18",
+					"int" : 1,
 					"maxclass" : "gswitch2",
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 395.5, 263.0, 30.0, 22.0 ],
-					"presentation_rect" : [ 401.0, 232.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -53,6 +53,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-6",
+					"int" : 1,
 					"maxclass" : "gswitch2",
 					"numinlets" : 2,
 					"numoutlets" : 2,
@@ -95,7 +96,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 858.0, 243.0, 633.0, 426.0 ],
+						"rect" : [ -1422.0, 317.0, 650.0, 375.0 ],
 						"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
@@ -129,7 +130,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 64.0, 372.0, 190.0, 20.0 ],
+									"patching_rect" : [ 64.0, 333.0, 190.0, 20.0 ],
 									"style" : "",
 									"text" : "Updated pressure (1 / (px s^2)?)"
 								}
@@ -137,7 +138,7 @@
 							}
 , 							{
 								"box" : 								{
-									"code" : "require(\"ecs.geometry\");\r\nParam dx(0.005);\t\t// m / px\r\nParam iteration(1);\t\t// int\r\nParam savepressure(0);\t// bool\r\nParam hard(1, 1, 1, 1);\r\n\r\nptot = 0;\r\nzerop = (savepressure == 1) || (iteration != 1);\r\n\r\n\r\n// Total pressure from neighboring pixels.\r\npl, pr, pu, pd = mask_neighbors_replace(in1, in3, norm, hard);\t\r\nptot = zerop * (pl.x + pr.x + pu.x + pd.x);\r\n\r\n// (m^2 / px^2) * (px / s) = m^2 / px s. TODO: Is this ACTUALLY Pa?\r\n// Gradient subtraction later is (m^2 / px s) / (m / px) = m / s.\r\nout1 = (1 - in3.w) * ((ptot - (dx * dx) * in2.x) / 4);\t// New pressure.\r\n",
+									"code" : "require(\"ecs.geometry\");\r\nParam dx(0.005);\t\t// m / px\r\nParam iteration(1);\t\t// int\r\nParam savepressure(0);\t// bool\r\nParam hard(1, 1, 1, 1);\r\n\r\nptot = 0;\r\nzerop = (savepressure == 1) || (iteration != 1);\r\n\r\n// Total pressure from neighboring pixels.\r\npl, pr, pu, pd = mask_neighbors_replace(in1, in3, norm, hard);\t\r\nptot = zerop * (pl.x + pr.x + pu.x + pd.x);\r\n\r\n// (m^2 / px^2) * (px / s) = m^2 / px s. TODO: Is this ACTUALLY Pa?\r\n// Gradient subtraction later is (m^2 / px s) / (m / px) = m / s.\r\nout1 = (1 - in3.w) * ((ptot - (dx * dx) * in2.x) / 4);\t// New pressure.",
 									"fontface" : 0,
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
@@ -146,7 +147,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 25.0, 57.0, 483.0, 297.0 ],
+									"patching_rect" : [ 25.0, 57.0, 511.0, 258.0 ],
 									"style" : ""
 								}
 
@@ -160,7 +161,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 257.0, 19.0, 92.0, 22.0 ],
+									"patching_rect" : [ 271.0, 19.0, 92.0, 22.0 ],
 									"style" : "",
 									"text" : "in 2 divergence",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -175,7 +176,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 25.0, 371.0, 37.0, 22.0 ],
+									"patching_rect" : [ 25.0, 332.0, 37.0, 22.0 ],
 									"style" : "",
 									"text" : "out 1",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -191,7 +192,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 489.0, 19.0, 111.0, 22.0 ],
+									"patching_rect" : [ 517.0, 19.0, 111.0, 22.0 ],
 									"style" : "",
 									"text" : "in 3 obstacles",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -423,6 +424,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-3",
+					"int" : 1,
 					"maxclass" : "gswitch2",
 					"numinlets" : 2,
 					"numoutlets" : 2,
