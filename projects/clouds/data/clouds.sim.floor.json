@@ -66,7 +66,17 @@
 					"simulation::external_viscosity_gain" : [  ],
 					"simulation::external_viscosity_texture" : [  ],
 					"simulation::bfecc" : [  ],
-					"simulation::bfecc_alpha" : [  ]
+					"simulation::bfecc_alpha" : [  ],
+					"camera-or-movie" : [ 0 ],
+					"movie_input::dim" : [ 1280, 720 ],
+					"movie_input::rate" : [ 1.0 ],
+					"movie_input::moviefile" : [ "CSC_2015_video/monsoon_9.mov" ],
+					"movie_input::texture" : [ "movie_input" ],
+					"movie_input::mirror" : [ 0 ],
+					"movie_input::flip" : [ 0 ],
+					"movie_input::invert" : [ 0 ],
+					"movie_input::enable" : [ 1 ],
+					"movie_input::folder" : [ "Macintosh HD:/Users/synthesis/synthesis-git/media/video/ECM/" ]
 				}
 
 			}
@@ -135,7 +145,17 @@
 					"simulation::external_viscosity_gain" : [  ],
 					"simulation::external_viscosity_texture" : [  ],
 					"simulation::bfecc" : [  ],
-					"simulation::bfecc_alpha" : [  ]
+					"simulation::bfecc_alpha" : [  ],
+					"camera-or-movie" : [ 0 ],
+					"movie_input::dim" : [ 1280, 720 ],
+					"movie_input::rate" : [ 1.0 ],
+					"movie_input::moviefile" : [ "CSC_2015_video/monsoon_9.mov" ],
+					"movie_input::texture" : [ "movie_input" ],
+					"movie_input::mirror" : [ 0 ],
+					"movie_input::flip" : [ 0 ],
+					"movie_input::invert" : [ 0 ],
+					"movie_input::enable" : [ 1 ],
+					"movie_input::folder" : [ "Macintosh HD:/Users/synthesis/synthesis-git/media/video/ECM/" ]					
 				}
 
 			}
@@ -204,7 +224,17 @@
 					"simulation::external_viscosity_gain" : [ 0.0 ],
 					"simulation::external_viscosity_texture" : [ "bgsub" ],
 					"simulation::bfecc" : [  ],
-					"simulation::bfecc_alpha" : [  ]
+					"simulation::bfecc_alpha" : [  ],
+					"camera-or-movie" : [ 0 ],					
+					"movie_input::dim" : [ 1280, 720 ],
+					"movie_input::rate" : [ 1.0 ],
+					"movie_input::moviefile" : [ "CSC_2015_video/monsoon_9.mov" ],
+					"movie_input::texture" : [ "movie_input" ],
+					"movie_input::mirror" : [ 0 ],
+					"movie_input::flip" : [ 0 ],
+					"movie_input::invert" : [ 0 ],
+					"movie_input::enable" : [ 1 ],
+					"movie_input::folder" : [ "Macintosh HD:/Users/synthesis/synthesis-git/media/video/ECM/" ]					
 				}
 
 			}
@@ -273,7 +303,17 @@
 					"simulation::external_viscosity_gain" : [ 0.0 ],
 					"simulation::external_viscosity_texture" : [ "bgsub" ],
 					"simulation::bfecc" : [  ],
-					"simulation::bfecc_alpha" : [  ]
+					"simulation::bfecc_alpha" : [  ],
+					"camera-or-movie" : [ 0 ],					
+					"movie_input::dim" : [ 1280, 720 ],
+					"movie_input::rate" : [ 1.0 ],
+					"movie_input::moviefile" : [ "CSC_2015_video/monsoon_9.mov" ],
+					"movie_input::texture" : [ "movie_input" ],
+					"movie_input::mirror" : [ 0 ],
+					"movie_input::flip" : [ 0 ],
+					"movie_input::invert" : [ 0 ],
+					"movie_input::enable" : [ 1 ],
+					"movie_input::folder" : [ "Macintosh HD:/Users/synthesis/synthesis-git/media/video/ECM/" ]					
 				}
 
 			}
@@ -342,7 +382,17 @@
 					"simulation::external_viscosity_gain" : [  ],
 					"simulation::external_viscosity_texture" : [  ],
 					"simulation::bfecc" : [  ],
-					"simulation::bfecc_alpha" : [  ]
+					"simulation::bfecc_alpha" : [  ],
+					"camera-or-movie" : [ 0 ],					
+					"movie_input::dim" : [ 1280, 720 ],
+					"movie_input::rate" : [ 1.0 ],
+					"movie_input::moviefile" : [ "CSC_2015_video/monsoon_9.mov" ],
+					"movie_input::texture" : [ "movie_input" ],
+					"movie_input::mirror" : [ 0 ],
+					"movie_input::flip" : [ 0 ],
+					"movie_input::invert" : [ 0 ],
+					"movie_input::enable" : [ 1 ],
+					"movie_input::folder" : [ "Macintosh HD:/Users/synthesis/synthesis-git/media/video/ECM/" ]					
 				}
 
 			}
@@ -411,7 +461,17 @@
 					"simulation::external_viscosity_gain" : [  ],
 					"simulation::external_viscosity_texture" : [  ],
 					"simulation::bfecc" : [  ],
-					"simulation::bfecc_alpha" : [  ]
+					"simulation::bfecc_alpha" : [  ],
+					"camera-or-movie" : [ 0 ],					
+					"movie_input::dim" : [ 1280, 720 ],
+					"movie_input::rate" : [ 1.0 ],
+					"movie_input::moviefile" : [ "CSC_2015_video/monsoon_9.mov" ],
+					"movie_input::texture" : [ "movie_input" ],
+					"movie_input::mirror" : [ 0 ],
+					"movie_input::flip" : [ 0 ],
+					"movie_input::invert" : [ 0 ],
+					"movie_input::enable" : [ 1 ],
+					"movie_input::folder" : [ "Macintosh HD:/Users/synthesis/synthesis-git/media/video/ECM/" ]					
 				}
 
 			}
@@ -480,7 +540,17 @@
 					"simulation::external_viscosity_gain" : [ 0.0 ],
 					"simulation::external_viscosity_texture" : [ "bgsub" ],
 					"simulation::bfecc" : [  ],
-					"simulation::bfecc_alpha" : [  ]
+					"simulation::bfecc_alpha" : [  ],
+					"camera-or-movie" : [ 0 ],					
+					"movie_input::dim" : [ 1280, 720 ],
+					"movie_input::rate" : [ 1.0 ],
+					"movie_input::moviefile" : [ "CSC_2015_video/monsoon_9.mov" ],
+					"movie_input::texture" : [ "movie_input" ],
+					"movie_input::mirror" : [ 0 ],
+					"movie_input::flip" : [ 0 ],
+					"movie_input::invert" : [ 0 ],
+					"movie_input::enable" : [ 1 ],
+					"movie_input::folder" : [ "Macintosh HD:/Users/synthesis/synthesis-git/media/video/ECM/" ]					
 				}
 
 			}
@@ -549,7 +619,17 @@
 					"simulation::external_viscosity_gain" : [ 0.0 ],
 					"simulation::external_viscosity_texture" : [ "bgsub" ],
 					"simulation::bfecc" : [ 0 ],
-					"simulation::bfecc_alpha" : [ 0.0 ]
+					"simulation::bfecc_alpha" : [ 0.0 ],
+					"camera-or-movie" : [ 0 ],					
+					"movie_input::dim" : [ 1280, 720 ],
+					"movie_input::rate" : [ 1.0 ],
+					"movie_input::moviefile" : [ "CSC_2015_video/monsoon_9.mov" ],
+					"movie_input::texture" : [ "movie_input" ],
+					"movie_input::mirror" : [ 0 ],
+					"movie_input::flip" : [ 0 ],
+					"movie_input::invert" : [ 0 ],
+					"movie_input::enable" : [ 1 ],
+					"movie_input::folder" : [ "Macintosh HD:/Users/synthesis/synthesis-git/media/video/ECM/" ]					
 				}
 
 			}
@@ -618,7 +698,16 @@
 					"simulation::external_viscosity_gain" : [ 0.0 ],
 					"simulation::external_viscosity_texture" : [ "bgsub" ],
 					"simulation::bfecc" : [  ],
-					"simulation::bfecc_alpha" : [  ]
+					"simulation::bfecc_alpha" : [  ],
+					"movie_input::dim" : [ 1280, 720 ],
+					"movie_input::rate" : [ 1.0 ],
+					"movie_input::moviefile" : [ "CSC_2015_video/monsoon_9.mov" ],
+					"movie_input::texture" : [ "movie_input" ],
+					"movie_input::mirror" : [ 0 ],
+					"movie_input::flip" : [ 0 ],
+					"movie_input::invert" : [ 0 ],
+					"movie_input::enable" : [ 1 ],
+					"movie_input::folder" : [ "Macintosh HD:/Users/synthesis/synthesis-git/media/video/ECM/" ]					
 				}
 
 			}
@@ -687,7 +776,16 @@
 					"simulation::external_viscosity_gain" : [ 0.0 ],
 					"simulation::external_viscosity_texture" : [ "bgsub" ],
 					"simulation::bfecc" : [  ],
-					"simulation::bfecc_alpha" : [  ]
+					"simulation::bfecc_alpha" : [  ],
+					"movie_input::dim" : [ 1280, 720 ],
+					"movie_input::rate" : [ 1.0 ],
+					"movie_input::moviefile" : [ "CSC_2015_video/monsoon_9.mov" ],
+					"movie_input::texture" : [ "movie_input" ],
+					"movie_input::mirror" : [ 0 ],
+					"movie_input::flip" : [ 0 ],
+					"movie_input::invert" : [ 0 ],
+					"movie_input::enable" : [ 1 ],
+					"movie_input::folder" : [ "Macintosh HD:/Users/synthesis/synthesis-git/media/video/ECM/" ]					
 				}
 
 			}
@@ -756,7 +854,16 @@
 					"simulation::external_viscosity_gain" : [ 0.0 ],
 					"simulation::external_viscosity_texture" : [ "bgsub" ],
 					"simulation::bfecc" : [  ],
-					"simulation::bfecc_alpha" : [  ]
+					"simulation::bfecc_alpha" : [  ],
+					"movie_input::dim" : [ 1280, 720 ],
+					"movie_input::rate" : [ 1.0 ],
+					"movie_input::moviefile" : [ "CSC_2015_video/monsoon_9.mov" ],
+					"movie_input::texture" : [ "movie_input" ],
+					"movie_input::mirror" : [ 0 ],
+					"movie_input::flip" : [ 0 ],
+					"movie_input::invert" : [ 0 ],
+					"movie_input::enable" : [ 1 ],
+					"movie_input::folder" : [ "Macintosh HD:/Users/synthesis/synthesis-git/media/video/ECM/" ]					
 				}
 
 			}
@@ -825,7 +932,16 @@
 					"simulation::external_viscosity_gain" : [ 0.0 ],
 					"simulation::external_viscosity_texture" : [ "bgsub" ],
 					"simulation::bfecc" : [  ],
-					"simulation::bfecc_alpha" : [  ]
+					"simulation::bfecc_alpha" : [  ],
+					"movie_input::dim" : [ 1280, 720 ],
+					"movie_input::rate" : [ 1.0 ],
+					"movie_input::moviefile" : [ "CSC_2015_video/monsoon_9.mov" ],
+					"movie_input::texture" : [ "movie_input" ],
+					"movie_input::mirror" : [ 0 ],
+					"movie_input::flip" : [ 0 ],
+					"movie_input::invert" : [ 0 ],
+					"movie_input::enable" : [ 1 ],
+					"movie_input::folder" : [ "Macintosh HD:/Users/synthesis/synthesis-git/media/video/ECM/" ]					
 				}
 
 			}
@@ -894,7 +1010,16 @@
 					"simulation::external_viscosity_gain" : [  ],
 					"simulation::external_viscosity_texture" : [  ],
 					"simulation::bfecc" : [  ],
-					"simulation::bfecc_alpha" : [  ]
+					"simulation::bfecc_alpha" : [  ],
+					"movie_input::dim" : [ 1280, 720 ],
+					"movie_input::rate" : [ 1.0 ],
+					"movie_input::moviefile" : [ "CSC_2015_video/monsoon_9.mov" ],
+					"movie_input::texture" : [ "movie_input" ],
+					"movie_input::mirror" : [ 0 ],
+					"movie_input::flip" : [ 0 ],
+					"movie_input::invert" : [ 0 ],
+					"movie_input::enable" : [ 1 ],
+					"movie_input::folder" : [ "Macintosh HD:/Users/synthesis/synthesis-git/media/video/ECM/" ]					
 				}
 
 			}

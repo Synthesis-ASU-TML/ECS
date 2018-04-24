@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 5,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 472.0, 289.0, 989.0, 817.0 ],
+		"rect" : [ 890.0, 217.0, 956.0, 798.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,14 +39,13 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-24",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1412.0, 660.0, 139.0, 35.0 ],
 					"style" : "",
-					"text" : "79 85 84 80 85 84 32 76 65 66 69 76 83 58 10"
+					"text" : "49 56 32 49 57 10"
 				}
 
 			}
@@ -603,7 +602,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 5,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -754,7 +753,6 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-104",
-									"int" : 1,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 2,
@@ -897,7 +895,6 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-115",
-									"int" : 1,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 2,
@@ -1040,7 +1037,6 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-93",
-									"int" : 1,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 2,
@@ -1209,7 +1205,6 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-279",
-									"int" : 1,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 2,
@@ -2753,7 +2748,7 @@
 ,
 					"style" : "",
 					"text" : "pattrstorage @greedy 1",
-					"varname" : "u025028036"
+					"varname" : "u471102865"
 				}
 
 			}
@@ -3445,7 +3440,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 5,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3694,7 +3689,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "list", "int" ],
+					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 1218.0, 507.0, 187.0, 22.0 ],
 					"style" : "",
 					"text" : "sadam.tcpClient 2.78.21.26 9990"
@@ -4213,11 +4208,11 @@
 					"patching_rect" : [ 144.5, 1615.0, 58.0, 22.0 ],
 					"restore" : 					{
 						"ema_floor_alpha" : [ 1.0 ],
-						"ema_floor_sim" : [ 2 ],
-						"ema_floor_vis" : [ 0 ],
-						"ema_scrim_alpha" : [ 1.0 ],
-						"ema_scrim_sim" : [ 0 ],
-						"ema_scrim_vis" : [ 0 ],
+						"ema_floor_sim" : [ 5 ],
+						"ema_floor_vis" : [ 10 ],
+						"ema_scrim_alpha" : [ 0.0 ],
+						"ema_scrim_sim" : [ 2 ],
+						"ema_scrim_vis" : [ 11 ],
 						"indiv_dest" : [ 0 ],
 						"indiv_source" : [ 0 ],
 						"lights" : [ 5 ],
@@ -4235,7 +4230,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u829242718"
+					"varname" : "u204104241"
 				}
 
 			}
@@ -6356,27 +6351,27 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-17" : [ "sound_scrim", "sound_scrim", 0 ],
+			"obj-86" : [ "indiv_dest", "indiv_dest", 0 ],
+			"obj-81" : [ "ema_scrim_alpha[1]", "ema_scrim_alpha", 0 ],
 			"obj-32" : [ "sound_scrim_volume", "sound_scrim_volume", 0 ],
 			"obj-67" : [ "ema_scrim_sim", "ema_scrim_sim", 0 ],
-			"obj-119" : [ "toggle", "toggle", 0 ],
-			"obj-18" : [ "sound_floor", "sound_floor", 0 ],
-			"obj-112" : [ "number", "number", 0 ],
-			"obj-81" : [ "ema_scrim_alpha[1]", "ema_scrim_alpha", 0 ],
-			"obj-11" : [ "toggle[1]", "toggle[1]", 0 ],
+			"obj-210" : [ "toggle[3]", "toggle[1]", 0 ],
+			"obj-159" : [ "number[1]", "number[1]", 0 ],
+			"obj-213" : [ "toggle[4]", "toggle[1]", 0 ],
 			"obj-28" : [ "ema_floor_vis", "ema_floor_vis", 0 ],
 			"obj-70" : [ "indiv_source", "indiv_source", 0 ],
-			"obj-13" : [ "lights", "lights", 0 ],
-			"obj-2" : [ "sound_scrim[1]", "sound_scrim[1]", 0 ],
-			"obj-29" : [ "sound_floor_volume", "sound_floor_volume", 0 ],
+			"obj-17" : [ "sound_scrim", "sound_scrim", 0 ],
+			"obj-11" : [ "toggle[1]", "toggle[1]", 0 ],
 			"obj-34" : [ "ema_floor_alpha", "ema_floor_alpha", 0 ],
 			"obj-26" : [ "ema_scrim_vis", "ema_scrim_vis", 0 ],
-			"obj-213" : [ "toggle[4]", "toggle[1]", 0 ],
+			"obj-18" : [ "sound_floor", "sound_floor", 0 ],
+			"obj-119" : [ "toggle", "toggle", 0 ],
 			"obj-33" : [ "ema_scrim_alpha", "ema_scrim_alpha", 0 ],
-			"obj-210" : [ "toggle[3]", "toggle[1]", 0 ],
-			"obj-68" : [ "ema_floor_sim", "ema_floor_sim", 0 ],
-			"obj-86" : [ "indiv_dest", "indiv_dest", 0 ],
-			"obj-159" : [ "number[1]", "number[1]", 0 ]
+			"obj-29" : [ "sound_floor_volume", "sound_floor_volume", 0 ],
+			"obj-13" : [ "lights", "lights", 0 ],
+			"obj-112" : [ "number", "number", 0 ],
+			"obj-2" : [ "sound_scrim[1]", "sound_scrim[1]", 0 ],
+			"obj-68" : [ "ema_floor_sim", "ema_floor_sim", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -6431,10 +6426,6 @@
 			}
 , 			{
 				"name" : "o.route.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "sadam.tcpClient.mxo",
 				"type" : "iLaX"
 			}
  ],
