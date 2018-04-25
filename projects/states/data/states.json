@@ -293,7 +293,7 @@
 				"name" : "EMA pressure",
 				"data" : 				{
 					"ema_floor_sim" : [ 2 ],
-					"ema_floor_vis" : [ 15 ],
+					"ema_floor_vis" : [ 3 ],
 					"ema_scrim_sim" : [ 0 ],
 					"ema_scrim_vis" : [ 3 ],
 					"floor-movie-city-opacity" : [ 0.0 ],
@@ -461,6 +461,32 @@
 					"slider" : [ 0.0 ],
 					"slider[1]" : [ 0.75 ],
 					"sound_floor" : [ 5 ],
+					"sound_scrim" : [ 3 ],
+					"sound_scrim[1]" : [ 0 ],
+					"toggle" : [ 1 ],
+					"toggle[1]" : [ 1 ],
+					"toggle[3]" : [ 1 ]
+				}
+
+			}
+,
+			"19" : 			{
+				"id" : 19,
+				"name" : "EMA pressure cubehelix",
+				"data" : 				{
+					"ema_floor_sim" : [ 2 ],
+					"ema_floor_vis" : [ 15 ],
+					"ema_scrim_sim" : [ 0 ],
+					"ema_scrim_vis" : [ 3 ],
+					"floor-movie-city-opacity" : [ 0.0 ],
+					"floor-movie-clouds-opacity" : [ 0.0 ],
+					"floor-movie-water-opacity" : [ 0.0 ],
+					"floor-sim-opacity" : [ 1.0 ],
+					"lights" : [ 5 ],
+					"number[1]" : [ 10 ],
+					"slider" : [ 0.0 ],
+					"slider[1]" : [ 0.75 ],
+					"sound_floor" : [ 3 ],
 					"sound_scrim" : [ 3 ],
 					"sound_scrim[1]" : [ 0 ],
 					"toggle" : [ 1 ],
