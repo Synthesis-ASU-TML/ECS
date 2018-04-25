@@ -2,8 +2,8 @@
 	"name" : "states",
 	"version" : 1,
 	"creationdate" : 3594117618,
-	"modificationdate" : 3594117808,
-	"viewrect" : [ 0.0, 45.0, 300.0, 500.0 ],
+	"modificationdate" : 3607508041,
+	"viewrect" : [ 1.0, 45.0, 284.0, 337.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -12,7 +12,12 @@
 		"patchers" : 		{
 			"states.maxpat" : 			{
 				"kind" : "patcher",
-				"toplevel" : 1
+				"local" : 1
+			}
+,
+			"states apr.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
 			}
 
 		}
@@ -26,6 +31,10 @@
 		}
 ,
 		"externals" : 		{
+
+		}
+,
+		"other" : 		{
 
 		}
 
