@@ -16,7 +16,22 @@
 					"field::high" : [ 0.0004, 0.002, 288.15, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 230.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"field::colormap" : [ "1d_unsigned_YlOrBr.png" ]
+					"field::colormap" : [ "1d_unsigned_YlOrBr.png" ],
+					"blend_particles" : [ 6 ],
+					"particles::duration" : [ 0.2 ],
+					"particles::texture" : [ "velocity" ],
+					"particles::point_size" : [ 0.1 ],
+					"particles::blur" : [ 0.1 ],
+					"particles::dim" : [ 300.0, 300.0 ],
+					"particles::slide" : [ 0.0, 0.95 ],
+					"particles::dt" : [ 0.9 ],
+					"particles::dx" : [ 30.0 ],
+					"particles::enable" : [ 1 ],
+					"particles::radius" : [ -1.0 ],
+					"particles::threshold" : [ 0.0 ],
+					"particles::force" : [ 1.0, 1.0 ],
+					"particles::attraction" : [ 0.0 ],
+					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 0.0 ]
 				}
 
 			}
@@ -35,7 +50,22 @@
 					"field::high" : [ 0.0004, 0.002, 288.15, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 230.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"field::colormap" : [ "1d_unsigned_YlGnBu.png" ]
+					"field::colormap" : [ "1d_unsigned_YlGnBu.png" ],
+					"blend_particles" : [ 6 ],
+					"particles::duration" : [ 0.2 ],
+					"particles::texture" : [ "velocity" ],
+					"particles::point_size" : [ 0.1 ],
+					"particles::blur" : [ 0.1 ],
+					"particles::dim" : [ 300.0, 300.0 ],
+					"particles::slide" : [ 0.0, 0.95 ],
+					"particles::dt" : [ 0.9 ],
+					"particles::dx" : [ 30.0 ],
+					"particles::enable" : [ 1 ],
+					"particles::radius" : [ -1.0 ],
+					"particles::threshold" : [ 0.0 ],
+					"particles::force" : [ 1.0, 1.0 ],
+					"particles::attraction" : [ 0.0 ],
+					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 0.0 ]
 				}
 
 			}
@@ -54,7 +84,22 @@
 					"field::high" : [ 0.0004, 0.002, 288.15, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 0.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"field::colormap" : [ "1d_unsigned_YlGnBu.png" ]
+					"field::colormap" : [ "1d_unsigned_YlGnBu.png" ],
+					"blend_particles" : [ 6 ],
+					"particles::duration" : [ 0.2 ],
+					"particles::texture" : [ "velocity" ],
+					"particles::point_size" : [ 0.1 ],
+					"particles::blur" : [ 0.1 ],
+					"particles::dim" : [ 300.0, 300.0 ],
+					"particles::slide" : [ 0.0, 0.95 ],
+					"particles::dt" : [ 0.9 ],
+					"particles::dx" : [ 80.0 ],
+					"particles::enable" : [ 1 ],
+					"particles::radius" : [ -1.0 ],
+					"particles::threshold" : [ 0.0 ],
+					"particles::force" : [ 1.0, 1.0 ],
+					"particles::attraction" : [ 0.0 ],
+					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 0.0 ]
 				}
 
 			}
@@ -73,7 +118,22 @@
 					"field::high" : [ 400.0, 1.0, 1.0, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 0.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"field::colormap" : [ "1d_unsigned_YlGnBu.png" ]
+					"field::colormap" : [ "1d_unsigned_YlGnBu.png" ],
+					"blend_particles" : [ 6 ],
+					"particles::duration" : [ 0.2 ],
+					"particles::texture" : [ "velocity" ],
+					"particles::point_size" : [ 0.1 ],
+					"particles::blur" : [ 0.1 ],
+					"particles::dim" : [ 300.0, 300.0 ],
+					"particles::slide" : [ 0.0, 0.95 ],
+					"particles::dt" : [ 0.9 ],
+					"particles::dx" : [ 30.0 ],
+					"particles::enable" : [ 1 ],
+					"particles::radius" : [ -1.0 ],
+					"particles::threshold" : [ 0.0 ],
+					"particles::force" : [ 1.0, 1.0 ],
+					"particles::attraction" : [ 0.0 ],
+					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 0.0 ]
 				}
 
 			}
@@ -92,7 +152,22 @@
 					"field::high" : [ 0.0004, 0.002, 288.15, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 0.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"field::colormap" : [ "1d_unsigned_bone.png" ]
+					"field::colormap" : [ "1d_unsigned_bone.png" ],
+					"blend_particles" : [ 6 ],
+					"particles::duration" : [ 0.2 ],
+					"particles::texture" : [ "velocity" ],
+					"particles::point_size" : [ 0.1 ],
+					"particles::blur" : [ 0.1 ],
+					"particles::dim" : [ 300.0, 300.0 ],
+					"particles::slide" : [ 0.0, 0.95 ],
+					"particles::dt" : [ 0.9 ],
+					"particles::dx" : [ 30.0 ],
+					"particles::enable" : [ 1 ],
+					"particles::radius" : [ -1.0 ],
+					"particles::threshold" : [ 0.0 ],
+					"particles::force" : [ 1.0, 1.0 ],
+					"particles::attraction" : [ 0.0 ],
+					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 0.0 ]
 				}
 
 			}
@@ -111,7 +186,22 @@
 					"field::high" : [ 0.0004, 0.002, 288.15, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 230.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"field::colormap" : [ "1d_unsigned_YlGnBu.png" ]
+					"field::colormap" : [ "1d_unsigned_YlGnBu.png" ],
+					"blend_particles" : [ 6 ],
+					"particles::duration" : [ 2.0 ],
+					"particles::texture" : [ "velocity" ],
+					"particles::point_size" : [ 0.1 ],
+					"particles::blur" : [ 0.1 ],
+					"particles::dim" : [ 300.0, 300.0 ],
+					"particles::slide" : [ 0.0, 0.95 ],
+					"particles::dt" : [ 0.9 ],
+					"particles::dx" : [ 30.0 ],
+					"particles::enable" : [ 1 ],
+					"particles::radius" : [ -1.0 ],
+					"particles::threshold" : [ 0.0 ],
+					"particles::force" : [ 0.5, 0.4 ],
+					"particles::attraction" : [ 0.0 ],
+					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
 			}
@@ -130,7 +220,22 @@
 					"field::high" : [ 1000.0, 1000.0, 1.0, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 0.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"field::colormap" : [ "1d_unsigned_sunset.png" ]
+					"field::colormap" : [ "1d_unsigned_sunset.png" ],
+					"blend_particles" : [ 0 ],
+					"particles::duration" : [ 0.1 ],
+					"particles::texture" : [ "velocity" ],
+					"particles::point_size" : [ 0.1 ],
+					"particles::blur" : [ 0.1 ],
+					"particles::dim" : [ 300.0, 300.0 ],
+					"particles::slide" : [ 0.0, 0.975 ],
+					"particles::dt" : [ 0.9 ],
+					"particles::dx" : [ 30.0 ],
+					"particles::enable" : [ 1 ],
+					"particles::radius" : [ -1.0 ],
+					"particles::threshold" : [ 0.0 ],
+					"particles::force" : [ 0.1, 0.1 ],
+					"particles::attraction" : [ 0.0 ],
+					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
 			}
@@ -149,7 +254,22 @@
 					"field::high" : [ 50.0, 50.0, 1.0, 1.0 ],
 					"field::low" : [ -50.0, -50.0, 0.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"field::colormap" : [ "1d_unsigned_sunset.png" ]
+					"field::colormap" : [ "1d_unsigned_sunset.png" ],
+					"blend_particles" : [ 6 ],
+					"particles::duration" : [ 0.2 ],
+					"particles::texture" : [ "velocity" ],
+					"particles::point_size" : [ 0.1 ],
+					"particles::blur" : [ 0.1 ],
+					"particles::dim" : [ 300.0, 300.0 ],
+					"particles::slide" : [ 0.0, 0.95 ],
+					"particles::dt" : [ 0.9 ],
+					"particles::dx" : [ 30.0 ],
+					"particles::enable" : [ 1 ],
+					"particles::radius" : [ -1.0 ],
+					"particles::threshold" : [ 0.0 ],
+					"particles::force" : [ 1.0, 1.0 ],
+					"particles::attraction" : [ 0.0 ],
+					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 0.595346 ]
 				}
 
 			}
@@ -168,7 +288,22 @@
 					"field::high" : [ 50.0, 50.0, 1.0, 1.0 ],
 					"field::low" : [ -50.0, -50.0, 0.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"field::colormap" : [ "1d_unsigned_sunset.png" ]
+					"field::colormap" : [ "1d_unsigned_sunset.png" ],
+					"blend_particles" : [ 6 ],
+					"particles::duration" : [ 0.2 ],
+					"particles::texture" : [ "velocity" ],
+					"particles::point_size" : [ 0.1 ],
+					"particles::blur" : [ 0.1 ],
+					"particles::dim" : [ 300.0, 300.0 ],
+					"particles::slide" : [ 0.0, 0.95 ],
+					"particles::dt" : [ 0.9 ],
+					"particles::dx" : [ 30.0 ],
+					"particles::enable" : [ 1 ],
+					"particles::radius" : [ -1.0 ],
+					"particles::threshold" : [ 0.0 ],
+					"particles::force" : [ 1.0, 1.0 ],
+					"particles::attraction" : [ 0.0 ],
+					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 0.0 ]
 				}
 
 			}
