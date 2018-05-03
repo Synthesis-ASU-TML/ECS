@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 299.0, 236.0, 1038.0, 906.0 ],
+		"rect" : [ 366.0, 78.0, 393.0, 618.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -84,7 +84,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 198.0, 1431.0, 50.0, 22.0 ],
 					"style" : "",
-					"text" : "2"
+					"text" : "0"
 				}
 
 			}
@@ -1472,6 +1472,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-104",
+									"int" : 1,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 2,
@@ -1614,6 +1615,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-115",
+									"int" : 1,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 2,
@@ -1756,6 +1758,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-93",
+									"int" : 1,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 2,
@@ -1924,6 +1927,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-279",
+									"int" : 1,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 2,
@@ -3513,10 +3517,10 @@
 						"floor-movie-city-opacity" : [ 0.0 ],
 						"floor-movie-clouds-opacity" : [ 0.0 ],
 						"floor-movie-water-opacity" : [ 0.0 ],
-						"floor-sim-opacity" : [ 1.0 ],
+						"floor-sim-opacity" : [ 0.0 ],
 						"lights" : [ 5 ],
 						"live.tab" : [ 0.0 ],
-						"number" : [ 3 ],
+						"number" : [ 1 ],
 						"number[1]" : [ 0 ],
 						"slider" : [ 0.0 ],
 						"slider[1]" : [ 0.75 ],
@@ -3530,7 +3534,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u943495371"
+					"varname" : "u777001786"
 				}
 
 			}
@@ -4889,26 +4893,26 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-17" : [ "sound_scrim", "sound_scrim", 0 ],
+			"obj-182" : [ "floor-movie-water-opacity", "floor-movie-water-opacity", 0 ],
 			"obj-67" : [ "ema_scrim_sim", "ema_scrim_sim", 0 ],
-			"obj-213" : [ "toggle[4]", "toggle[1]", 0 ],
 			"obj-159" : [ "number[1]", "number[1]", 0 ],
 			"obj-210" : [ "toggle[3]", "toggle[1]", 0 ],
 			"obj-82" : [ "floor-movie-city-opacity", "floor-movie-city-opacity", 0 ],
 			"obj-68" : [ "ema_floor_sim", "ema_floor_sim", 0 ],
+			"obj-132" : [ "number[2]", "number[2]", 0 ],
 			"obj-2" : [ "sound_scrim[1]", "sound_scrim[1]", 0 ],
+			"obj-213" : [ "toggle[4]", "toggle[1]", 0 ],
+			"obj-29" : [ "sound_floor_volume", "sound_floor_volume", 0 ],
 			"obj-185" : [ "floor-sim-opacity", "floor-sim-opacity", 0 ],
-			"obj-32" : [ "sound_scrim_volume", "sound_scrim_volume", 0 ],
 			"obj-26" : [ "ema_scrim_vis", "ema_scrim_vis", 0 ],
 			"obj-18" : [ "sound_floor", "sound_floor", 0 ],
-			"obj-132" : [ "number[2]", "number[2]", 0 ],
 			"obj-56" : [ "floor-movie-clouds-opacity", "floor-movie-clouds-opacity", 0 ],
-			"obj-28" : [ "ema_floor_vis", "ema_floor_vis", 0 ],
 			"obj-163" : [ "live.tab", "live.tab", 0 ],
+			"obj-28" : [ "ema_floor_vis", "ema_floor_vis", 0 ],
 			"obj-13" : [ "lights", "lights", 0 ],
-			"obj-11" : [ "toggle[1]", "toggle[1]", 0 ],
-			"obj-29" : [ "sound_floor_volume", "sound_floor_volume", 0 ],
-			"obj-17" : [ "sound_scrim", "sound_scrim", 0 ],
-			"obj-182" : [ "floor-movie-water-opacity", "floor-movie-water-opacity", 0 ]
+			"obj-32" : [ "sound_scrim_volume", "sound_scrim_volume", 0 ],
+			"obj-11" : [ "toggle[1]", "toggle[1]", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
