@@ -893,12 +893,12 @@
 					"blend_field" : [ 7 ],
 					"blend_particles" : [ 7 ],
 					"field::source_vars" : [ 0, 1, 2, 3 ],
-					"field::contrast" : [ 0.231, 0.0889, 1.0, 1.0 ],
+					"field::contrast" : [ 0.8, 0.154, 1.0, 1.0 ],
 					"field::texture" : [ "watertemp" ],
 					"field::mode" : [ 4 ],
 					"field::alpha" : [ 1.0 ],
 					"field::bg" : [ "env_pressure" ],
-					"field::high" : [ 0.0048, 0.002, 554.0, 1.0 ],
+					"field::high" : [ 0.0009, 0.676, 785.0, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 230.0, 0.0 ],
 					"field::enable" : [ 1 ],
 					"field::colormap" : [ "1d_unsigned_gray.png" ],
@@ -906,16 +906,16 @@
 					"particles::texture" : [ "velocity" ],
 					"particles::point_size" : [ 1.0 ],
 					"particles::blur" : [ 0.05 ],
-					"particles::dim" : [ 0.0, 0.0 ],
-					"particles::slide" : [ 0.0, 0.0 ],
+					"particles::dim" : [ 300.0, 300.0 ],
+					"particles::slide" : [ 0.0, 0.95 ],
 					"particles::dt" : [ 0.9 ],
 					"particles::dx" : [ 80.0 ],
-					"particles::enable" : [ 0 ],
+					"particles::enable" : [ 1 ],
 					"particles::radius" : [ -1.0 ],
-					"particles::threshold" : [  ],
-					"particles::force" : [ 0.5 ],
+					"particles::threshold" : [ 0.001 ],
+					"particles::force" : [ 0.5, 0.5 ],
 					"particles::attraction" : [  ],
-					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 0.0 ]
+					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 0.5 ]
 				}
 
 			}
