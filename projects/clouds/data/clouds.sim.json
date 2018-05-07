@@ -742,7 +742,7 @@
 					"simulation::dry_cv" : [ 717.0 ],
 					"simulation::vapor_cv" : [ 1388.5 ],
 					"simulation::accumulate_pressure" : [ 0 ],
-					"simulation::vapor_dissipation" : [ 0.999 ],
+					"simulation::vapor_dissipation" : [ 0.99 ],
 					"simulation::liquid_dissipation" : [ 0.98 ],
 					"simulation::temperature_dissipation" : [ 0.95 ],
 					"simulation::velocity_dissipation" : [ 1.0 ],
