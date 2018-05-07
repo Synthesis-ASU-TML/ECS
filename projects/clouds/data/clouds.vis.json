@@ -1,6 +1,6 @@
 {
 	"pattrstorage" : 	{
-		"name" : "u064258324",
+		"name" : "u009013476",
 		"slots" : 		{
 			"1" : 			{
 				"id" : 1,
@@ -881,6 +881,40 @@
 					"particles::threshold" : [ 0.0 ],
 					"particles::force" : [ 1.0, 1.0 ],
 					"particles::attraction" : [ 0.0 ],
+					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 0.0 ]
+				}
+
+			}
+,
+			"27" : 			{
+				"id" : 27,
+				"name" : "clouds above",
+				"data" : 				{
+					"blend_field" : [ 7 ],
+					"blend_particles" : [ 7 ],
+					"field::source_vars" : [ 0, 1, 2, 3 ],
+					"field::contrast" : [ 0.231, 0.0889, 1.0, 1.0 ],
+					"field::texture" : [ "watertemp" ],
+					"field::mode" : [ 4 ],
+					"field::alpha" : [ 1.0 ],
+					"field::bg" : [ "env_pressure" ],
+					"field::high" : [ 0.0048, 0.002, 554.0, 1.0 ],
+					"field::low" : [ 0.0, 0.0, 230.0, 0.0 ],
+					"field::enable" : [ 1 ],
+					"field::colormap" : [ "1d_unsigned_gray.png" ],
+					"particles::duration" : [ 1.0 ],
+					"particles::texture" : [ "velocity" ],
+					"particles::point_size" : [ 1.0 ],
+					"particles::blur" : [ 0.05 ],
+					"particles::dim" : [ 0.0, 0.0 ],
+					"particles::slide" : [ 0.0, 0.0 ],
+					"particles::dt" : [ 0.9 ],
+					"particles::dx" : [ 80.0 ],
+					"particles::enable" : [ 0 ],
+					"particles::radius" : [ -1.0 ],
+					"particles::threshold" : [  ],
+					"particles::force" : [ 0.5 ],
+					"particles::attraction" : [  ],
 					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 0.0 ]
 				}
 
