@@ -221,8 +221,6 @@
 					"format" : 6,
 					"id" : "obj-136",
 					"maxclass" : "flonum",
-					"maximum" : 1.0,
-					"minimum" : 0.0,
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
@@ -241,8 +239,6 @@
 					"format" : 6,
 					"id" : "obj-134",
 					"maxclass" : "flonum",
-					"maximum" : 1.0,
-					"minimum" : 0.0,
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
@@ -261,8 +257,6 @@
 					"format" : 6,
 					"id" : "obj-132",
 					"maxclass" : "flonum",
-					"maximum" : 1.0,
-					"minimum" : 0.0,
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
@@ -281,8 +275,6 @@
 					"format" : 6,
 					"id" : "obj-129",
 					"maxclass" : "flonum",
-					"maximum" : 1.0,
-					"minimum" : 0.0,
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
@@ -312,7 +304,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 578.0, 180.0, 418.0, 233.0 ],
+						"rect" : [ 1075.0, 711.0, 537.0, 257.0 ],
 						"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
@@ -342,7 +334,7 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
-									"code" : "Param bounds(0, 1, 0, 1);\r\nout1 = sample(in1, vec(\r\n\tnorm.x * (bounds.y - bounds.x) + bounds.x, \r\n\tnorm.y * (bounds.w - bounds.z) + bounds.z\r\n), boundmode=\"clamp\");",
+									"code" : "Param bounds(0, 1, 0, 1);\r\npos = vec(\r\n\tnorm.x * (bounds.y - bounds.x) + bounds.x, \r\n\tnorm.y * (bounds.w - bounds.z) + bounds.z\r\n);\r\ndraw = (pos.x >= 0 && pos.x <= 1 && pos.y >= 0 && pos.y <= 1);\r\nout1 = draw * sample(in1, pos, boundmode=\"clamp\");",
 									"fontface" : 0,
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
@@ -351,7 +343,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 20.0, 53.0, 356.0, 123.0 ],
+									"patching_rect" : [ 20.0, 53.0, 541.0, 118.0 ],
 									"style" : ""
 								}
 
@@ -2650,8 +2642,8 @@
 									"presentation_rect" : [ 177.850021, 1.0, 84.0, 84.0 ],
 									"style" : "",
 									"varname" : "boundary-dynamic-primitive-nodes",
-									"xplace" : [ 0.120833 ],
-									"yplace" : [ 0.583333 ]
+									"xplace" : [ 0.454166 ],
+									"yplace" : [ 0.535714 ]
 								}
 
 							}
@@ -48146,7 +48138,7 @@
 								"box" : 								{
 									"fontsize" : 10.0,
 									"id" : "obj-52",
-									"items" : [ "Black Syphon", ",", "Max", ",", "Max", ",", "Max" ],
+									"items" : [ "Max", ",", "Max", ",", "Max", ",", "Black Syphon" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -48225,7 +48217,7 @@
 								"box" : 								{
 									"fontsize" : 10.0,
 									"id" : "obj-40",
-									"items" : [ "UltraStudio Express", ",", "", ",", "", ",", "" ],
+									"items" : [ "velocity", ",", "presence", ",", "clouds", ",", "UltraStudio Express" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
