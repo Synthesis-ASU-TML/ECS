@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 366.0, 78.0, 393.0, 618.0 ],
+		"rect" : [ 412.0, 843.0, 378.0, 624.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -84,7 +84,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 198.0, 1431.0, 50.0, 22.0 ],
 					"style" : "",
-					"text" : "0"
+					"text" : "15"
 				}
 
 			}
@@ -167,7 +167,7 @@
 , 			{
 				"box" : 				{
 					"coll_data" : 					{
-						"count" : 15,
+						"count" : 16,
 						"data" : [ 							{
 								"key" : 0,
 								"value" : [ 17 ]
@@ -228,6 +228,10 @@
 								"key" : 14,
 								"value" : [ 29 ]
 							}
+, 							{
+								"key" : 15,
+								"value" : [ 31 ]
+							}
  ]
 					}
 ,
@@ -265,7 +269,7 @@
 							"parameter_longname" : "live.tab",
 							"parameter_shortname" : "live.tab",
 							"parameter_type" : 2,
-							"parameter_enum" : [ "Movie: City", "Movie: Clouds", "EMA: Clouds", "EMA: Pressure (cubehelix)", "EMA: Velocity Image", "Life Energy: Particles", "EMA: Velocity Ghosting", "EMA: Velocity Particles", "Life Energy: Ghosting", "Movie: Water", "Lights: On", "EMA: Pressure (meteo)", "Camera", "Optical Flow", "Obstacles" ],
+							"parameter_enum" : [ "Movie: City", "Movie: Clouds", "EMA: Clouds", "EMA: Pressure (cubehelix)", "EMA: Velocity Image", "Life Energy: Particles", "EMA: Velocity Ghosting", "EMA: Velocity Particles", "Life Energy: Ghosting", "Movie: Water", "Lights: On", "EMA: Pressure (meteo)", "Camera", "Optical Flow", "Obstacles", "EMA: Clouds Above" ],
 							"parameter_unitstyle" : 0
 						}
 
@@ -579,7 +583,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 39.5, 1800.5, 111.0, 22.0 ],
 					"style" : "",
-					"text" : "recall 27 11"
+					"text" : "recall 31 31"
 				}
 
 			}
@@ -1472,7 +1476,6 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-104",
-									"int" : 1,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 2,
@@ -1615,7 +1618,6 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-115",
-									"int" : 1,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 2,
@@ -3510,31 +3512,31 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 123.0, 1900.0, 58.0, 22.0 ],
 					"restore" : 					{
-						"ema_floor_sim" : [ 2 ],
-						"ema_floor_vis" : [ 0 ],
-						"ema_scrim_sim" : [ 10 ],
-						"ema_scrim_vis" : [ 0 ],
-						"floor-movie-city-opacity" : [ 0.0 ],
+						"ema_floor_sim" : [ 10 ],
+						"ema_floor_vis" : [ 26 ],
+						"ema_scrim_sim" : [ 5 ],
+						"ema_scrim_vis" : [ 9 ],
+						"floor-movie-city-opacity" : [ 1.0 ],
 						"floor-movie-clouds-opacity" : [ 0.0 ],
 						"floor-movie-water-opacity" : [ 0.0 ],
 						"floor-sim-opacity" : [ 0.0 ],
 						"lights" : [ 5 ],
-						"live.tab" : [ 0.0 ],
-						"number" : [ 1 ],
+						"live.tab" : [ 15.0 ],
+						"number" : [ 16 ],
 						"number[1]" : [ 0 ],
 						"slider" : [ 0.0 ],
-						"slider[1]" : [ 0.75 ],
-						"sound_floor" : [ 2 ],
-						"sound_scrim" : [ 0 ],
+						"slider[1]" : [ 0.891668 ],
+						"sound_floor" : [ 9 ],
+						"sound_scrim" : [ 3 ],
 						"sound_scrim[1]" : [ 0 ],
 						"toggle" : [ 0 ],
-						"toggle[1]" : [ 1 ],
+						"toggle[1]" : [ 0 ],
 						"toggle[2]" : [ 1 ]
 					}
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u777001786"
+					"varname" : "u000050501"
 				}
 
 			}
@@ -3626,7 +3628,7 @@
 					"bgfillcolor_proportion" : 0.39,
 					"bgfillcolor_type" : "gradient",
 					"id" : "obj-28",
-					"items" : [ "clouds", ",", "velocity flow particles", ",", "velocity field", ",", "pressure", ",", "hsflow", ",", "camera", ",", "obstacles", ",", "background", ",", "bgsub", ",", "blackout", ",", "velocity field - wind", ",", "velocity ghosting", ",", "velocity ghosting short particles", ",", "velocity ghosting long particles", ",", "ghosting pressure", ",", "pressure cubehelix", ",", "clouds - sunset", ",", "life energy - tables - 1 - clouds", ",", "life energy - tables - 2 - clouds vorticity", ",", "life energy - tables - 3 - clouds above", ",", "life energy - tables - 4 - pressure", ",", "life energy - tables - 5 - clouds again", ",", "life energy - floor - 2 - particles clouds", ",", "life energy - floor - 3 - velocity", ",", "life energy - floor - 4 - pressure map", ",", "life energy - floor - 5 - ghosting" ],
+					"items" : [ "clouds", ",", "velocity flow particles", ",", "velocity field", ",", "pressure", ",", "hsflow", ",", "camera", ",", "obstacles", ",", "background", ",", "bgsub", ",", "blackout", ",", "velocity field - wind", ",", "velocity ghosting", ",", "velocity ghosting short particles", ",", "velocity ghosting long particles", ",", "ghosting pressure", ",", "pressure cubehelix", ",", "clouds - sunset", ",", "life energy - tables - 1 - clouds", ",", "life energy - tables - 2 - clouds vorticity", ",", "life energy - tables - 3 - clouds above", ",", "life energy - tables - 4 - pressure", ",", "life energy - tables - 5 - clouds again", ",", "life energy - floor - 2 - particles clouds", ",", "life energy - floor - 3 - velocity", ",", "life energy - floor - 4 - pressure map", ",", "life energy - floor - 5 - ghosting", ",", "clouds above" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -4893,26 +4895,26 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-17" : [ "sound_scrim", "sound_scrim", 0 ],
-			"obj-182" : [ "floor-movie-water-opacity", "floor-movie-water-opacity", 0 ],
+			"obj-32" : [ "sound_scrim_volume", "sound_scrim_volume", 0 ],
 			"obj-67" : [ "ema_scrim_sim", "ema_scrim_sim", 0 ],
-			"obj-159" : [ "number[1]", "number[1]", 0 ],
-			"obj-210" : [ "toggle[3]", "toggle[1]", 0 ],
-			"obj-82" : [ "floor-movie-city-opacity", "floor-movie-city-opacity", 0 ],
-			"obj-68" : [ "ema_floor_sim", "ema_floor_sim", 0 ],
-			"obj-132" : [ "number[2]", "number[2]", 0 ],
-			"obj-2" : [ "sound_scrim[1]", "sound_scrim[1]", 0 ],
-			"obj-213" : [ "toggle[4]", "toggle[1]", 0 ],
-			"obj-29" : [ "sound_floor_volume", "sound_floor_volume", 0 ],
-			"obj-185" : [ "floor-sim-opacity", "floor-sim-opacity", 0 ],
-			"obj-26" : [ "ema_scrim_vis", "ema_scrim_vis", 0 ],
 			"obj-18" : [ "sound_floor", "sound_floor", 0 ],
+			"obj-68" : [ "ema_floor_sim", "ema_floor_sim", 0 ],
+			"obj-185" : [ "floor-sim-opacity", "floor-sim-opacity", 0 ],
+			"obj-11" : [ "toggle[1]", "toggle[1]", 0 ],
+			"obj-132" : [ "number[2]", "number[2]", 0 ],
+			"obj-210" : [ "toggle[3]", "toggle[1]", 0 ],
 			"obj-56" : [ "floor-movie-clouds-opacity", "floor-movie-clouds-opacity", 0 ],
-			"obj-163" : [ "live.tab", "live.tab", 0 ],
+			"obj-159" : [ "number[1]", "number[1]", 0 ],
+			"obj-26" : [ "ema_scrim_vis", "ema_scrim_vis", 0 ],
+			"obj-17" : [ "sound_scrim", "sound_scrim", 0 ],
 			"obj-28" : [ "ema_floor_vis", "ema_floor_vis", 0 ],
 			"obj-13" : [ "lights", "lights", 0 ],
-			"obj-32" : [ "sound_scrim_volume", "sound_scrim_volume", 0 ],
-			"obj-11" : [ "toggle[1]", "toggle[1]", 0 ]
+			"obj-29" : [ "sound_floor_volume", "sound_floor_volume", 0 ],
+			"obj-182" : [ "floor-movie-water-opacity", "floor-movie-water-opacity", 0 ],
+			"obj-213" : [ "toggle[4]", "toggle[1]", 0 ],
+			"obj-2" : [ "sound_scrim[1]", "sound_scrim[1]", 0 ],
+			"obj-163" : [ "live.tab", "live.tab", 0 ],
+			"obj-82" : [ "floor-movie-city-opacity", "floor-movie-city-opacity", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
