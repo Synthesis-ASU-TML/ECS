@@ -841,6 +841,34 @@
 				}
 
 			}
+,
+			"31" : 			{
+				"id" : 31,
+				"name" : "Clouds abovr",
+				"data" : 				{
+					"ema_floor_sim" : [ 10 ],
+					"ema_floor_vis" : [ 26 ],
+					"ema_scrim_sim" : [ 5 ],
+					"ema_scrim_vis" : [ 9 ],
+					"floor-movie-city-opacity" : [ 1.0 ],
+					"floor-movie-clouds-opacity" : [ 0.0 ],
+					"floor-movie-water-opacity" : [ 0.0 ],
+					"floor-sim-opacity" : [ 0.0 ],
+					"lights" : [ 5 ],
+					"live.tab" : [ 15.0 ],
+					"number" : [ 16 ],
+					"number[1]" : [ 0 ],
+					"slider" : [ 0.0 ],
+					"slider[1]" : [ 0.891668 ],
+					"sound_floor" : [ 9 ],
+					"sound_scrim" : [ 3 ],
+					"sound_scrim[1]" : [ 0 ],
+					"toggle" : [ 0 ],
+					"toggle[1]" : [ 0 ],
+					"toggle[2]" : [  ]
+				}
+
+			}
 
 		}
 
