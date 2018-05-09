@@ -24,9 +24,9 @@ mask_neighbors(tex, mask, coord) {
 	l, r, u, d = nearest_neighbors(tex, coord);
 
 	l = (1 - ml.w) * l + ml.w * ml.xyz;
-	r = (1 - mr.w) * r + ml.w * ml.xyz;
-	u = (1 - mu.w) * u + ml.w * ml.xzz;
-	d = (1 - md.w) * d + ml.w * ml.xyz;
+	r = (1 - mr.w) * r + mr.w * mr.xyz;
+	u = (1 - mu.w) * u + mu.w * mu.xyz;
+	d = (1 - md.w) * d + md.w * md.xyz;
 
 	return l, r, u, d;	
 } 
@@ -42,10 +42,10 @@ mask_neighbors_replace(tex, mask, coord, replace) {
 
 	px = 1 / dim;
 	zero = vec(
-		replace.x || coord.x - px.x > 1,
-		replace.y || coord.x + px.x < dim.x - px.x,
-		replace.z || coord.y - px.y > 1,
-		replace.w || coord.y + px.y < dim.y - px.y
+		replace.x || ((coord.x - px.x) > 1),
+		replace.y || ((coord.x + px.x) < (dim.x - px.x)),
+		replace.z || ((coord.y - px.y) > 1),
+		replace.w || ((coord.y + px.y) < (dim.y - px.y))
 	);
 
 	l = ml.w * (zero.x * c) + (1 - ml.w) * l;
