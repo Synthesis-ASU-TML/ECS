@@ -59,47 +59,47 @@ mask_neighbors_replace(tex, mask, coord, replace) {
 // Scalar -> Vector
 grad3x3(tex, coord) {
 	sl, sr, su, sd = sample_neighbors(tex, coord);
-	return vec(sr - sl, sd - su) / 2;
+	return vec(sr - sl, sd - su) * 0.5;
 }
 
 grad3x3_mask(tex, mask, coord) {
 	sl, sr, su, sd = mask_neighbors(tex, mask, coord);
-	return vec(sr - sl, sd - su) / 2;
+	return vec(sr - sl, sd - su) * 0.5;
 }
 
 grad3x3_mask_replace(tex, mask, coord, replace) {
 	sl, sr, su, sd = mask_neighbors_replace(tex, mask, coord, replace);
-	return vec(sr - sl, sd - su) / 2;
+	return vec(sr - sl, sd - su) * 0.5;
 }
 
 // Vector -> Scalar
 curl3x3(tex, coord) {
 	vl, vr, vu, vd = sample_neighbors(tex, coord);
-	return ((vr.y - vl.y) - (vd.x - vu.x)) / 2;
+	return ((vr.y - vl.y) - (vd.x - vu.x)) * 0.5;
 }
 
 curl3x3_mask(tex, mask, coord) {
 	vl, vr, vu, vd = mask_neighbors(tex, mask, coord);
-	return ((vr.y - vl.y) - (vd.x - vu.x)) / 2;
+	return ((vr.y - vl.y) - (vd.x - vu.x)) * 0.5;
 }
 
 curl3x3_mask_replace(tex, mask, coord, replace) {
 	vl, vr, vu, vd = mask_neighbors_replace(tex, mask, coord, replace);
-	return ((vr.y - vl.y) - (vd.x - vu.x)) / 2;
+	return ((vr.y - vl.y) - (vd.x - vu.x)) * 0.5;
 }
 
 div3x3(tex, coord) {
 	vl, vr, vu, vd = sample_neighbors(tex, coord);
-	return (vr.x - vl.x + vd.y - vu.y) / 2;
+	return (vr.x - vl.x + vd.y - vu.y) * 0.5;
 }
 
 div3x3_mask(tex, mask, coord) {
 	vl, vr, vu, vd = mask_neighbors(tex, mask, coord);
-	return (vr.x - vl.x + vd.y - vu.y) / 2;
+	return (vr.x - vl.x + vd.y - vu.y) * 0.5;
 }
 
 div3x3_mask_replace(tex, mask, coord, replace) {
 	vl, vr, vu, vd = mask_neighbors_replace(tex, mask, coord, replace);
-	return (vr.x - vl.x + vd.y - vu.y) / 2;
+	return (vr.x - vl.x + vd.y - vu.y) * 0.5;
 }
 
