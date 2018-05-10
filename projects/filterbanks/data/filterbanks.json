@@ -1,13 +1,13 @@
 {
 	"pattrstorage" : 	{
-		"name" : "u817002896",
+		"name" : "u540002621",
 		"slots" : 		{
 			"1" : 			{
 				"id" : 1,
 				"name" : "scrim",
 				"data" : 				{
-					"drywet" : [ 0.0 ],
-					"bypass" : [ 1.0 ],
+					"drywet" : [ 0.459111 ],
+					"bypass" : [ 0.441082 ],
 					"sample_player::filename_1" : [ "gaspe_thunder-02" ],
 					"sample_player::filename_2" : [ "gaspe_thunder-02" ],
 					"sample_player::filename_3" : [ "gaspe_thunder-02" ],
@@ -32,15 +32,15 @@
 					"sample_player::reg_6" : [ 0.600835, 0.735489 ],
 					"sample_player::reg_7" : [ 0.649014, 0.735489 ],
 					"sample_player::reg_8" : [ 0.430973, 0.735489 ],
-					"sample_player::amp_1" : [ 1.147541 ],
-					"sample_player::amp_2" : [ 1.180328 ],
-					"sample_player::amp_3" : [ 1.344262 ],
-					"sample_player::amp_4" : [ 1.147541 ],
-					"sample_player::amp_5" : [ 1.081967 ],
-					"sample_player::amp_6" : [ 1.245902 ],
-					"sample_player::amp_7" : [ 1.016393 ],
-					"sample_player::amp_8" : [ 1.114754 ],
-					"video_input::u475069708" : [  ],
+					"sample_player::amp_1" : [ 1.803279 ],
+					"sample_player::amp_2" : [ 1.836066 ],
+					"sample_player::amp_3" : [ 1.836066 ],
+					"sample_player::amp_4" : [ 1.704918 ],
+					"sample_player::amp_5" : [ 1.704918 ],
+					"sample_player::amp_6" : [ 1.737705 ],
+					"sample_player::amp_7" : [ 1.704918 ],
+					"sample_player::amp_8" : [ 1.737705 ],
+					"video_input::u672069430" : [ -1 ],
 					"effects::res::freq" : [ 100.0 ],
 					"effects::res::inharm" : [ 0.4 ],
 					"effects::res::amount" : [ 0.0 ],
@@ -98,7 +98,8 @@
 					"spatialization::speaker_locations::src_7_d" : [ 0.65 ],
 					"spatialization::speaker_locations::src_8_a" : [ 157.5 ],
 					"spatialization::speaker_locations::src_8_e" : [ 0.0 ],
-					"spatialization::speaker_locations::src_8_d" : [ 0.65 ]
+					"spatialization::speaker_locations::src_8_d" : [ 0.65 ],
+					"spatialization::threshold" : [ 0.03 ]
 				}
 
 			}
@@ -141,7 +142,7 @@
 					"sample_player::amp_6" : [ 1.47541 ],
 					"sample_player::amp_7" : [ 0.983607 ],
 					"sample_player::amp_8" : [ 1.442623 ],
-					"video_input::u475069708" : [ -1 ],
+					"video_input::u672069430" : [ -1 ],
 					"effects::res::freq" : [ 100.0 ],
 					"effects::res::inharm" : [ 0.4 ],
 					"effects::res::amount" : [ 0.318325 ],
@@ -199,7 +200,8 @@
 					"spatialization::speaker_locations::src_7_d" : [ 0.91416 ],
 					"spatialization::speaker_locations::src_8_a" : [ 40.728207 ],
 					"spatialization::speaker_locations::src_8_e" : [ 0.0 ],
-					"spatialization::speaker_locations::src_8_d" : [ 1.319586 ]
+					"spatialization::speaker_locations::src_8_d" : [ 1.319586 ],
+					"spatialization::threshold" : [ 0.29 ]
 				}
 
 			}
@@ -242,7 +244,7 @@
 					"sample_player::amp_6" : [ 1.180328 ],
 					"sample_player::amp_7" : [ 1.147541 ],
 					"sample_player::amp_8" : [ 1.147541 ],
-					"video_input::u475069708" : [  ],
+					"video_input::u672069430" : [ -1 ],
 					"effects::res::freq" : [ 100.0 ],
 					"effects::res::inharm" : [ 0.4 ],
 					"effects::res::amount" : [ 0.02734 ],
@@ -300,7 +302,8 @@
 					"spatialization::speaker_locations::src_7_d" : [ 0.91416 ],
 					"spatialization::speaker_locations::src_8_a" : [ 33.871794 ],
 					"spatialization::speaker_locations::src_8_e" : [ 0.0 ],
-					"spatialization::speaker_locations::src_8_d" : [ 1.009903 ]
+					"spatialization::speaker_locations::src_8_d" : [ 1.009903 ],
+					"spatialization::threshold" : [ 0.2 ]
 				}
 
 			}
@@ -343,7 +346,7 @@
 					"sample_player::amp_6" : [ 0.0 ],
 					"sample_player::amp_7" : [ 0.0 ],
 					"sample_player::amp_8" : [ 0.0 ],
-					"video_input::u475069708" : [  ],
+					"video_input::u672069430" : [  ],
 					"effects::res::freq" : [ 100.0 ],
 					"effects::res::inharm" : [ 0.4 ],
 					"effects::res::amount" : [ 0.0 ],
@@ -401,7 +404,8 @@
 					"spatialization::speaker_locations::src_7_d" : [ 0.65 ],
 					"spatialization::speaker_locations::src_8_a" : [ 157.5 ],
 					"spatialization::speaker_locations::src_8_e" : [ 0.0 ],
-					"spatialization::speaker_locations::src_8_d" : [ 0.65 ]
+					"spatialization::speaker_locations::src_8_d" : [ 0.65 ],
+					"spatialization::threshold" : [  ]
 				}
 
 			}
@@ -444,7 +448,7 @@
 					"sample_player::amp_6" : [ 0.885246 ],
 					"sample_player::amp_7" : [ 0.918033 ],
 					"sample_player::amp_8" : [ 1.04918 ],
-					"video_input::u475069708" : [  ],
+					"video_input::u672069430" : [  ],
 					"effects::res::freq" : [ 100.0 ],
 					"effects::res::inharm" : [ 0.4 ],
 					"effects::res::amount" : [ 0.0 ],
@@ -502,7 +506,8 @@
 					"spatialization::speaker_locations::src_7_d" : [ 0.65 ],
 					"spatialization::speaker_locations::src_8_a" : [ 157.5 ],
 					"spatialization::speaker_locations::src_8_e" : [ 0.0 ],
-					"spatialization::speaker_locations::src_8_d" : [ 0.65 ]
+					"spatialization::speaker_locations::src_8_d" : [ 0.65 ],
+					"spatialization::threshold" : [  ]
 				}
 
 			}
@@ -511,8 +516,8 @@
 				"id" : 6,
 				"name" : "floor velocity image",
 				"data" : 				{
-					"drywet" : [ 1.0 ],
-					"bypass" : [ 1.0 ],
+					"drywet" : [ 0.421121 ],
+					"bypass" : [ 0.481005 ],
 					"sample_player::filename_1" : [ "colorfield_emiddiovasquez" ],
 					"sample_player::filename_2" : [ "colorfield_emiddiovasquez" ],
 					"sample_player::filename_3" : [ "colorfield_emiddiovasquez" ],
@@ -537,15 +542,15 @@
 					"sample_player::reg_6" : [ 0.489878, 0.588351 ],
 					"sample_player::reg_7" : [ 0.229626, 0.510979 ],
 					"sample_player::reg_8" : [ 0.518013, 0.785299 ],
-					"sample_player::amp_1" : [ 1.147541 ],
-					"sample_player::amp_2" : [ 1.114754 ],
-					"sample_player::amp_3" : [ 0.983607 ],
-					"sample_player::amp_4" : [ 1.016393 ],
-					"sample_player::amp_5" : [ 1.016393 ],
-					"sample_player::amp_6" : [ 0.983607 ],
-					"sample_player::amp_7" : [ 1.016393 ],
-					"sample_player::amp_8" : [ 1.04918 ],
-					"video_input::u475069708" : [  ],
+					"sample_player::amp_1" : [ 0.852459 ],
+					"sample_player::amp_2" : [ 0.786885 ],
+					"sample_player::amp_3" : [ 0.754098 ],
+					"sample_player::amp_4" : [ 0.786885 ],
+					"sample_player::amp_5" : [ 0.852459 ],
+					"sample_player::amp_6" : [ 0.819672 ],
+					"sample_player::amp_7" : [ 0.852459 ],
+					"sample_player::amp_8" : [ 0.885246 ],
+					"video_input::u672069430" : [ -1 ],
 					"effects::res::freq" : [ 100.0 ],
 					"effects::res::inharm" : [ 0.4 ],
 					"effects::res::amount" : [ 0.495172 ],
@@ -603,7 +608,8 @@
 					"spatialization::speaker_locations::src_7_d" : [ 0.65 ],
 					"spatialization::speaker_locations::src_8_a" : [ 157.5 ],
 					"spatialization::speaker_locations::src_8_e" : [ 0.0 ],
-					"spatialization::speaker_locations::src_8_d" : [ 0.65 ]
+					"spatialization::speaker_locations::src_8_d" : [ 0.65 ],
+					"spatialization::threshold" : [ 0.13 ]
 				}
 
 			}
@@ -639,14 +645,14 @@
 					"sample_player::reg_7" : [ 0.046746, 0.081915 ],
 					"sample_player::reg_8" : [ 0.05378, 0.081915 ],
 					"sample_player::amp_1" : [ 0.95082 ],
-					"sample_player::amp_2" : [ 0.885246 ],
-					"sample_player::amp_3" : [ 1.180328 ],
-					"sample_player::amp_4" : [ 1.213115 ],
-					"sample_player::amp_5" : [ 1.147541 ],
-					"sample_player::amp_6" : [ 0.983607 ],
-					"sample_player::amp_7" : [ 1.245902 ],
-					"sample_player::amp_8" : [ 1.016393 ],
-					"video_input::u475069708" : [  ],
+					"sample_player::amp_2" : [ 0.983607 ],
+					"sample_player::amp_3" : [ 0.95082 ],
+					"sample_player::amp_4" : [ 0.885246 ],
+					"sample_player::amp_5" : [ 0.918033 ],
+					"sample_player::amp_6" : [ 0.95082 ],
+					"sample_player::amp_7" : [ 1.04918 ],
+					"sample_player::amp_8" : [ 0.983607 ],
+					"video_input::u672069430" : [ -1 ],
 					"effects::res::freq" : [ 100.0 ],
 					"effects::res::inharm" : [ 0.4 ],
 					"effects::res::amount" : [ 0.0 ],
@@ -704,7 +710,8 @@
 					"spatialization::speaker_locations::src_7_d" : [ 0.359461 ],
 					"spatialization::speaker_locations::src_8_a" : [ 27.747389 ],
 					"spatialization::speaker_locations::src_8_e" : [ 0.0 ],
-					"spatialization::speaker_locations::src_8_d" : [ 0.374183 ]
+					"spatialization::speaker_locations::src_8_d" : [ 0.374183 ],
+					"spatialization::threshold" : [ 0.2 ]
 				}
 
 			}
@@ -739,15 +746,15 @@
 					"sample_player::reg_6" : [ 0.419539, 0.553182 ],
 					"sample_player::reg_7" : [ 0.363269, 0.503945 ],
 					"sample_player::reg_8" : [ 0.229626, 0.377336 ],
-					"sample_player::amp_1" : [ 0.983607 ],
-					"sample_player::amp_2" : [ 1.016393 ],
-					"sample_player::amp_3" : [ 0.983607 ],
-					"sample_player::amp_4" : [ 0.983607 ],
-					"sample_player::amp_5" : [ 0.983607 ],
-					"sample_player::amp_6" : [ 1.04918 ],
-					"sample_player::amp_7" : [ 1.016393 ],
-					"sample_player::amp_8" : [ 0.983607 ],
-					"video_input::u475069708" : [  ],
+					"sample_player::amp_1" : [ 1.081967 ],
+					"sample_player::amp_2" : [ 0.983607 ],
+					"sample_player::amp_3" : [ 0.918033 ],
+					"sample_player::amp_4" : [ 1.114754 ],
+					"sample_player::amp_5" : [ 1.147541 ],
+					"sample_player::amp_6" : [ 1.245902 ],
+					"sample_player::amp_7" : [ 1.245902 ],
+					"sample_player::amp_8" : [ 1.180328 ],
+					"video_input::u672069430" : [ -1 ],
 					"effects::res::freq" : [ 100.0 ],
 					"effects::res::inharm" : [ 0.4 ],
 					"effects::res::amount" : [ 0.0 ],
@@ -805,7 +812,8 @@
 					"spatialization::speaker_locations::src_7_d" : [ 0.934491 ],
 					"spatialization::speaker_locations::src_8_a" : [ 31.112816 ],
 					"spatialization::speaker_locations::src_8_e" : [ 0.0 ],
-					"spatialization::speaker_locations::src_8_d" : [ 0.938157 ]
+					"spatialization::speaker_locations::src_8_d" : [ 0.938157 ],
+					"spatialization::threshold" : [ 0.69 ]
 				}
 
 			}
@@ -848,7 +856,7 @@
 					"sample_player::amp_6" : [ 1.114754 ],
 					"sample_player::amp_7" : [ 1.04918 ],
 					"sample_player::amp_8" : [ 1.081967 ],
-					"video_input::u475069708" : [  ],
+					"video_input::u672069430" : [  ],
 					"effects::res::freq" : [ 100.0 ],
 					"effects::res::inharm" : [ 0.4 ],
 					"effects::res::amount" : [ 0.141478 ],
@@ -906,7 +914,8 @@
 					"spatialization::speaker_locations::src_7_d" : [ 0.709493 ],
 					"spatialization::speaker_locations::src_8_a" : [ 21.395898 ],
 					"spatialization::speaker_locations::src_8_e" : [ 0.0 ],
-					"spatialization::speaker_locations::src_8_d" : [ 0.715897 ]
+					"spatialization::speaker_locations::src_8_d" : [ 0.715897 ],
+					"spatialization::threshold" : [  ]
 				}
 
 			}
@@ -949,7 +958,7 @@
 					"sample_player::amp_6" : [ 1.016393 ],
 					"sample_player::amp_7" : [ 0.852459 ],
 					"sample_player::amp_8" : [ 0.852459 ],
-					"video_input::u475069708" : [  ],
+					"video_input::u672069430" : [  ],
 					"effects::res::freq" : [ 100.0 ],
 					"effects::res::inharm" : [ 0.4 ],
 					"effects::res::amount" : [ 0.141478 ],
@@ -1007,7 +1016,8 @@
 					"spatialization::speaker_locations::src_7_d" : [ 0.65 ],
 					"spatialization::speaker_locations::src_8_a" : [ 157.5 ],
 					"spatialization::speaker_locations::src_8_e" : [ 0.0 ],
-					"spatialization::speaker_locations::src_8_d" : [ 0.65 ]
+					"spatialization::speaker_locations::src_8_d" : [ 0.65 ],
+					"spatialization::threshold" : [  ]
 				}
 
 			}
@@ -1042,15 +1052,15 @@
 					"sample_player::reg_6" : [ 0.600835, 0.735489 ],
 					"sample_player::reg_7" : [ 0.649014, 0.735489 ],
 					"sample_player::reg_8" : [ 0.430973, 0.735489 ],
-					"sample_player::amp_1" : [ 1.147541 ],
+					"sample_player::amp_1" : [ 1.180328 ],
 					"sample_player::amp_2" : [ 1.147541 ],
 					"sample_player::amp_3" : [ 1.114754 ],
 					"sample_player::amp_4" : [ 1.147541 ],
-					"sample_player::amp_5" : [ 1.114754 ],
+					"sample_player::amp_5" : [ 1.147541 ],
 					"sample_player::amp_6" : [ 1.180328 ],
 					"sample_player::amp_7" : [ 1.147541 ],
-					"sample_player::amp_8" : [ 1.147541 ],
-					"video_input::u475069708" : [  ],
+					"sample_player::amp_8" : [ 1.114754 ],
+					"video_input::u672069430" : [ -1 ],
 					"effects::res::freq" : [ 100.0 ],
 					"effects::res::inharm" : [ 0.4 ],
 					"effects::res::amount" : [ 0.02734 ],
@@ -1108,7 +1118,8 @@
 					"spatialization::speaker_locations::src_7_d" : [ 0.91416 ],
 					"spatialization::speaker_locations::src_8_a" : [ 33.871794 ],
 					"spatialization::speaker_locations::src_8_e" : [ 0.0 ],
-					"spatialization::speaker_locations::src_8_d" : [ 1.009903 ]
+					"spatialization::speaker_locations::src_8_d" : [ 1.009903 ],
+					"spatialization::threshold" : [ -0.01 ]
 				}
 
 			}
@@ -1151,7 +1162,7 @@
 					"sample_player::amp_6" : [ 1.180328 ],
 					"sample_player::amp_7" : [ 1.147541 ],
 					"sample_player::amp_8" : [ 1.147541 ],
-					"video_input::u475069708" : [  ],
+					"video_input::u672069430" : [  ],
 					"effects::res::freq" : [ 100.0 ],
 					"effects::res::inharm" : [ 0.4 ],
 					"effects::res::amount" : [ 0.02734 ],
@@ -1209,7 +1220,8 @@
 					"spatialization::speaker_locations::src_7_d" : [ 0.91416 ],
 					"spatialization::speaker_locations::src_8_a" : [ 33.871794 ],
 					"spatialization::speaker_locations::src_8_e" : [ 0.0 ],
-					"spatialization::speaker_locations::src_8_d" : [ 1.009903 ]
+					"spatialization::speaker_locations::src_8_d" : [ 1.009903 ],
+					"spatialization::threshold" : [  ]
 				}
 
 			}
@@ -1252,7 +1264,7 @@
 					"sample_player::amp_6" : [ 1.180328 ],
 					"sample_player::amp_7" : [ 1.147541 ],
 					"sample_player::amp_8" : [ 1.147541 ],
-					"video_input::u475069708" : [  ],
+					"video_input::u672069430" : [ -1 ],
 					"effects::res::freq" : [ 100.0 ],
 					"effects::res::inharm" : [ 0.4 ],
 					"effects::res::amount" : [ 0.02734 ],
@@ -1310,7 +1322,8 @@
 					"spatialization::speaker_locations::src_7_d" : [ 0.91416 ],
 					"spatialization::speaker_locations::src_8_a" : [ 33.871794 ],
 					"spatialization::speaker_locations::src_8_e" : [ 0.0 ],
-					"spatialization::speaker_locations::src_8_d" : [ 1.009903 ]
+					"spatialization::speaker_locations::src_8_d" : [ 1.009903 ],
+					"spatialization::threshold" : [ 0.26 ]
 				}
 
 			}
