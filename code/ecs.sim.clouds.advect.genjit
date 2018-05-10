@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 1436.0, 617.0, 686.0, 538.0 ],
+		"rect" : [ 1459.0, 476.0, 686.0, 538.0 ],
 		"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -39,7 +39,7 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"code" : "require(\"ecs.geometry\");\r\nParam dissipation(1, 1, 1, 1);\t// / frame\r\nParam dt(0.3);\t\t\t\t\t// s / frame\r\nParam dx(40);\t\t\t\t\t// m / px\r\nParam periodic(0, 0);\t\t\t// 0, 1: <horizontal, vertical>\r\n\r\n// uv - uv s px m / frame m s px = uv - uv / frame\r\ndtdx = dt / dx;\r\nsrc_coord = norm - vec(dtdx, dtdx) * (in2.xy / dim);\r\n\r\n// The source texture has a 1px edge for non-periodic boundary conditions.\r\n// TODO: Why did I manually clamp coordinates instead of using boundmode?\r\n//       There was a reason . . .\r\nsrc_coord = vec(\r\n\tperiodic.x * src_coord.x + (1 - periodic.x) * clamp(src_coord.x, 0, 1),\r\n\tperiodic.y * src_coord.y + (1 - periodic.y) * clamp(src_coord.y, 0, 1)\r\n);\r\n\r\nsrc_mask = sample(in3, src_coord, boundmode=\"wrap\");\r\n\r\n// This will only be called ON the edges if BC is periodic, \r\n// because otherwise the edge is an obstacle.\r\nsrc_val = sample(in1, src_coord, boundmode=\"wrap\");\r\nsrc_val = src_mask.www * src_mask.xyz + (vec(1,1,1) - src_mask.www) * src_val.xyz;\r\n\r\n// Output.\r\nout1 = in3.www * in3.xyz + (vec(1,1,1) - in3.www) * (\r\n\tsrc_val.xyz * dissipation.xyz + (1 - dissipation.xyz) * in3.xyz\r\n);",
+					"code" : "require(\"ecs.geometry\");\r\nParam dissipation(1, 1, 1, 1);\t// / frame\r\nParam dt(0.3);\t\t\t\t\t// s / frame\r\nParam dx(40);\t\t\t\t\t// m / px\r\nParam periodic(0, 0);\t\t\t// 0, 1: <horizontal, vertical>\r\n\r\n// uv - uv s px m / frame m s px = uv - uv / frame\r\ndtdx = dt / dx;\r\nsrc_coord = norm - vec(dtdx, dtdx) * (in2.xy / dim);\r\n\r\n// The source texture has a 1px edge for non-periodic boundary conditions.\r\n// TODO: Why did I manually clamp coordinates instead of using boundmode?\r\n//       There was a reason . . .\r\nsrc_coord = vec(\r\n\tperiodic.x * src_coord.x + (1 - periodic.x) * clamp(src_coord.x, 0, 1),\r\n\tperiodic.y * src_coord.y + (1 - periodic.y) * clamp(src_coord.y, 0, 1)\r\n);\r\n\r\nsrc_mask = sample(in3, src_coord, boundmode=\"wrap\");\r\n\r\n// This will only be called ON the edges if BC is periodic, \r\n// because otherwise the edge is an obstacle.\r\nsrc_val = sample(in1, src_coord, boundmode=\"wrap\");\r\nsrc_val = src_mask.w * src_mask.xyz + (1 - src_mask.w) * src_val.xyz;\r\n\r\n// Output.\r\nout1 = in3.w * in3.xyz + (1 - in3.w) * (\r\n\tsrc_val.xyz * dissipation.xyz + (1 - dissipation.xyz) * in3.xyz\r\n);",
 					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,

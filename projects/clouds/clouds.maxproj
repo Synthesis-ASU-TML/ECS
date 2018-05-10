@@ -2,8 +2,8 @@
 	"name" : "clouds",
 	"version" : 1,
 	"creationdate" : 3590406737,
-	"modificationdate" : 3605512608,
-	"viewrect" : [ 137.0, 96.0, 300.0, 805.0 ],
+	"modificationdate" : 3608208601,
+	"viewrect" : [ 0.0, 439.0, 285.0, 583.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -11,16 +11,6 @@
 	"contents" : 	{
 		"patchers" : 		{
 			"bounding-box.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"clouds-life-energy.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"clouds-life-energy-2.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
