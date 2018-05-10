@@ -1,6 +1,6 @@
 {
 	"pattrstorage" : 	{
-		"name" : "u009013476",
+		"name" : "u304013481",
 		"slots" : 		{
 			"1" : 			{
 				"id" : 1,
@@ -14,7 +14,7 @@
 					"field::mode" : [ 4 ],
 					"field::alpha" : [ 1.0 ],
 					"field::bg" : [ "env_pressure" ],
-					"field::high" : [ 0.0048, 0.002, 288.15, 1.0 ],
+					"field::high" : [ 0.0048, 0.002, 785.0, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 230.0, 0.0 ],
 					"field::enable" : [ 1 ],
 					"field::colormap" : [ "1d_unsigned_gray.png" ],
