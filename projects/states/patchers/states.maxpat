@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 699.0, 234.0, 975.0, 810.0 ],
+		"rect" : [ 577.0, 538.0, 975.0, 810.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -176,7 +176,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 103.5, 1786.0, 66.0, 35.0 ],
 					"style" : "",
-					"text" : "recall 16 15"
+					"text" : "recall 12 14"
 				}
 
 			}
@@ -646,13 +646,14 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-24",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1386.0, 580.0, 139.0, 22.0 ],
 					"style" : "",
-					"text" : "49 56 32 49 57 10"
+					"text" : "79 85 84 80 85 84 32 76 65 66 69 76 83 58 10"
 				}
 
 			}
@@ -1285,7 +1286,6 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-104",
-									"int" : 1,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 2,
@@ -1428,7 +1428,6 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-115",
-									"int" : 1,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 2,
@@ -3039,7 +3038,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1171.5, 1145.0, 69.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 297.456055, 128.0, 68.0, 20.0 ],
+					"presentation_rect" : [ 384.543976, 128.0, 68.0, 20.0 ],
 					"style" : "",
 					"text" : "source"
 				}
@@ -3053,7 +3052,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1171.5, 1098.0, 69.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 475.456055, 128.0, 68.0, 20.0 ],
+					"presentation_rect" : [ 562.543945, 128.0, 68.0, 20.0 ],
 					"style" : "",
 					"text" : "destination"
 				}
@@ -3139,7 +3138,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-70",
-					"items" : [ "0_MultiView_16", ",", "1_Computer:_iMac_Display_Right", ",", "2_Computer:_MP4_Display_Right", ",", "3_Computer:_MP1_Display_Right", ",", "4_Camera:_Floor", ",", "5_Camera:_Fishbowl", ",", "6_Camera:_North", ",", "7_Empty", ",", "8_Empty", ",", "9_Computer:_iMac_Display_Left", ",", "10_Camera:_West", ",", "11_Computer:_MP4_Display_Left", ",", "12_Camera:_South", ",", "13_Patchbay-In_6", ",", "14_Empty", ",", "15_Camera:_Doc", ",", "16_Empty", ",", "17_Empty", ",", "18_Computer:_Island_A_DIsplay", ",", "19_Computer:_Island_B_Display" ],
+					"items" : [ "0_MultiView_16", ",", "1_Computer:_MP4_DIsplay_Top", ",", "2_Computer:_MP4_Display_Right", ",", "3_Computer:_MP1_Display_Right", ",", "4_Camera:_Floor", ",", "5_Camera:_Fishbowl", ",", "6_Camera:_North", ",", "7_Empty", ",", "8_Empty", ",", "9_Computer:_iMac_Display_Right", ",", "10_Camera:_West", ",", "11_Computer:_MP4_Display_Left", ",", "12_Camera:_South", ",", "13_Patchbay-In_6", ",", "14_Empty", ",", "15_Camera:_Doc", ",", "16_Empty", ",", "17_Empty", ",", "18_Computer:_Island_A_DIsplay", ",", "19_Computer:_Island_B_Display" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -3147,7 +3146,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1370.25, 1233.0, 180.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 297.456055, 104.0, 172.0, 22.0 ],
+					"presentation_rect" : [ 384.543976, 104.0, 172.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "indiv_source",
@@ -3205,7 +3204,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-86",
-					"items" : [ "0_Projector:_Floor", ",", "1_Projector:_Scrim", ",", "2_Projector:_Sky_North", ",", "3_Computer:_iMac_Input", ",", "4_Computer:_MP4_Input", ",", "5_Computer:_MP1_Input", ",", "6_Computer:_iMac_Input_2", ",", "7_Computer:_Island_A_Input", ",", "8_Computer:_Island_B_Input", ",", "9_TV:_West_(Stage)", ",", "10_TV:_South_(Computers)", ",", "11_MultiView_16:_Input_1", ",", "12_MultiView_16:_Input_2", ",", "13_MultiView_16:_Input_3", ",", "14_MultiView_16:_Input_4", ",", "15_Empty", ",", "16_Empty", ",", "17_Projector:_Sky_South", ",", "18_Empty", ",", "19_Projector:_Sky_East" ],
+					"items" : [ "0_Projector:_Floor", ",", "1_Projector:_Scrim", ",", "2_Projector:_Sky_North", ",", "3_Computer:_iMac_Input", ",", "4_Computer:_MP4_Input", ",", "5_Computer:_MP1_Input", ",", "6_Computer:_iMac_Input_2", ",", "7_Computer:_Island_A_Input", ",", "8_Computer:_Island_B_Input", ",", "9_TV:_West_(Stage)", ",", "10_TV:_South_(Computers)", ",", "11_MultiView_16:_Input_1", ",", "12_MultiView_16:_Input_2", ",", "13_MultiView_16:_Input_3", ",", "14_MultiView_16:_Input_4", ",", "15_Empty", ",", "16_Empty", ",", "17_Projector:_Sky_South", ",", "18_Projector:_Sky_East", ",", "19_Empty" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -3213,7 +3212,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1120.5, 1228.0, 180.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 475.456055, 104.0, 173.0, 22.0 ],
+					"presentation_rect" : [ 562.543945, 104.0, 173.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "indiv_dest",
@@ -3245,7 +3244,7 @@
 ,
 					"style" : "",
 					"text" : "pattrstorage @greedy 1",
-					"varname" : "u854000530"
+					"varname" : "u293050639"
 				}
 
 			}
@@ -3309,7 +3308,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1453.0, 227.0, 32.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 568.456055, 81.0, 31.0, 20.0 ],
+					"presentation_rect" : [ 655.543945, 81.0, 31.0, 20.0 ],
 					"style" : "",
 					"text" : "Port"
 				}
@@ -3323,7 +3322,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1152.0, 228.0, 120.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 307.456055, 80.0, 76.0, 20.0 ],
+					"presentation_rect" : [ 394.543976, 80.0, 76.0, 20.0 ],
 					"style" : "",
 					"text" : "VideoHub IP"
 				}
@@ -3371,7 +3370,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1667.5, 423.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 601.456055, 80.0, 47.0, 22.0 ],
+					"presentation_rect" : [ 688.543945, 80.0, 47.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "number",
@@ -3443,7 +3442,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1513.0, 423.0, 81.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 385.456055, 80.0, 85.0, 22.0 ],
+					"presentation_rect" : [ 472.543976, 80.0, 85.0, 22.0 ],
 					"style" : "",
 					"text" : "2.78.21.26",
 					"varname" : "textedit"
@@ -3506,7 +3505,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1385.0, 447.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 475.456055, 32.0, 173.0, 22.0 ],
+					"presentation_rect" : [ 562.543945, 32.0, 173.0, 22.0 ],
 					"style" : "",
 					"text" : "Disconnect From Videohub"
 				}
@@ -3522,7 +3521,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1283.0, 447.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 297.456055, 8.0, 173.0, 22.0 ],
+					"presentation_rect" : [ 384.543976, 8.0, 173.0, 22.0 ],
 					"style" : "",
 					"text" : "Connect To Videohub"
 				}
@@ -3539,7 +3538,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1436.0, 133.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 297.456055, 56.0, 173.0, 22.0 ],
+					"presentation_rect" : [ 384.543976, 56.0, 173.0, 22.0 ],
 					"style" : "",
 					"text" : "AutoUpdate Off",
 					"texton" : "AutoUpdate On"
@@ -3619,7 +3618,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1410.0, 95.0, 156.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 475.456055, 8.0, 173.0, 22.0 ],
+					"presentation_rect" : [ 562.543945, 8.0, 173.0, 22.0 ],
 					"style" : "",
 					"text" : "Update Routing Status"
 				}
@@ -3648,7 +3647,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1278.0, 95.0, 127.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 475.456055, 56.0, 173.0, 22.0 ],
+					"presentation_rect" : [ 562.543945, 56.0, 173.0, 22.0 ],
 					"style" : "",
 					"text" : "Update Source Labels"
 				}
@@ -3779,7 +3778,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1110.0, 95.0, 162.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 297.456055, 32.0, 173.0, 22.0 ],
+					"presentation_rect" : [ 384.543976, 32.0, 173.0, 22.0 ],
 					"style" : "",
 					"text" : "Update Destination Labels"
 				}
@@ -3978,7 +3977,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 50.0, 100.0, 430.0, 49.0 ],
 									"style" : "",
-									"text" : "65 67 75, 10"
+									"text" : "86 73 68 69 79 32 79 85 84 80 85 84 32 82 79 85 84 73 78 71 58, 48 32 57, 10"
 								}
 
 							}
@@ -4230,9 +4229,9 @@
 					"maxclass" : "bpatcher",
 					"name" : "ecs.pattr.maxpat",
 					"numinlets" : 1,
-					"numoutlets" : 2,
+					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "", "" ],
+					"outlettype" : [ "clientwindow" ],
 					"patching_rect" : [ 31.5, 1472.0, 271.5, 87.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 4.456055, 3.0, 271.5, 87.0 ],
@@ -4384,7 +4383,7 @@
 					"bgfillcolor_proportion" : 0.39,
 					"bgfillcolor_type" : "gradient",
 					"id" : "obj-68",
-					"items" : [ "laminar", ",", "clouds", ",", "laminar for pressure demo", ",", "laminar for pressure demo with wind", ",", "laminar for pressure demo with wind and accumulated pressure", ",", "disabled", ",", "pressure to vapor", ",", "velocity ghosting", ",", "velocity ghosting no vorticity", ",", "ghosting pressure" ],
+					"items" : [ "laminar", ",", "clouds", ",", "laminar for pressure demo", ",", "laminar for pressure demo with wind", ",", "laminar for pressure demo with wind and accumulated pressure", ",", "disabled", ",", "pressure to vapor", ",", "velocity ghosting", ",", "velocity ghosting no vorticity", ",", "ghosting pressure", ",", "laminar", ",", "clouds", ",", "laminar for pressure demo", ",", "laminar for pressure demo with wind", ",", "laminar for pressure demo with wind and accumulated pressure", ",", "disabled", ",", "pressure to vapor", ",", "velocity ghosting", ",", "velocity ghosting no vorticity", ",", "ghosting pressure", ",", "clouds above", ",", "clouds above wind", ",", "disabled", ",", "life energy - tables - 1 - clouds", ",", "life energy - tables - 2 - clouds vorticity", ",", "life energy - tables - 3 - clouds above", ",", "life energy - tables - 4 - clouds above vorticity", ",", "life energy - tables - 5 - clouds again", ",", "life energy - floor - 2 - particles clouds", ",", "life energy - floor - 3 - velocity", ",", "life energy - floor - 4 - pressure map", ",", "life energy - floor - 5 - ghosting" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -4724,31 +4723,31 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 144.5, 1888.0, 58.0, 22.0 ],
 					"restore" : 					{
-						"ema_floor_sim" : [ 5 ],
-						"ema_floor_vis" : [ 10 ],
-						"ema_scrim_sim" : [ 2 ],
-						"ema_scrim_vis" : [ 11 ],
+						"ema_floor_sim" : [ 2 ],
+						"ema_floor_vis" : [ 2 ],
+						"ema_scrim_sim" : [ 0 ],
+						"ema_scrim_vis" : [ 2 ],
 						"floor-movie-city-opacity" : [ 0.0 ],
-						"floor-movie-clouds-opacity" : [ 1.0 ],
+						"floor-movie-clouds-opacity" : [ 0.0 ],
 						"floor-movie-water-opacity" : [ 0.0 ],
-						"floor-sim-opacity" : [ 0.0 ],
+						"floor-sim-opacity" : [ 1.0 ],
 						"indiv_dest" : [ 0 ],
 						"indiv_source" : [ 0 ],
 						"lights" : [ 5 ],
 						"number[1]" : [ 10 ],
 						"slider" : [ 0.0 ],
-						"slider[1]" : [ 0.5 ],
-						"sound_floor" : [ 2 ],
-						"sound_scrim" : [ 0 ],
+						"slider[1]" : [ 0.75 ],
+						"sound_floor" : [ 5 ],
+						"sound_scrim" : [ 3 ],
 						"sound_scrim[1]" : [ 0 ],
 						"toggle" : [ 1 ],
-						"toggle[1]" : [ 0 ],
+						"toggle[1]" : [ 1 ],
 						"toggle[3]" : [ 1 ]
 					}
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u709001904"
+					"varname" : "u139052015"
 				}
 
 			}
@@ -4840,7 +4839,7 @@
 					"bgfillcolor_proportion" : 0.39,
 					"bgfillcolor_type" : "gradient",
 					"id" : "obj-28",
-					"items" : [ "clouds", ",", "velocity flow particles", ",", "velocity field", ",", "pressure", ",", "hsflow", ",", "camera", ",", "obstacles", ",", "background", ",", "bgsub", ",", "blackout", ",", "movie - clouds", ",", "movie - water", ",", "movie - city", ",", "velocity field - wind", ",", "velocity ghosting", ",", "velocity ghosting short particles", ",", "velocity ghosting long particles", ",", "ghosting pressure", ",", "pressure cubehelix" ],
+					"items" : [ "clouds", ",", "velocity flow particles", ",", "velocity field", ",", "pressure", ",", "hsflow", ",", "camera", ",", "obstacles", ",", "background", ",", "bgsub", ",", "blackout", ",", "movie - clouds", ",", "movie - water", ",", "movie - city", ",", "velocity field - wind", ",", "velocity ghosting", ",", "velocity ghosting short particles", ",", "velocity ghosting long particles", ",", "ghosting pressure", ",", "pressure cubehelix", ",", "clouds", ",", "velocity flow particles", ",", "velocity field", ",", "pressure", ",", "hsflow", ",", "camera", ",", "obstacles", ",", "background", ",", "bgsub", ",", "blackout", ",", "velocity field - wind", ",", "velocity ghosting", ",", "velocity ghosting short particles", ",", "velocity ghosting long particles", ",", "ghosting pressure", ",", "pressure cubehelix", ",", "clouds - sunset", ",", "life energy - tables - 1 - clouds", ",", "life energy - tables - 2 - clouds vorticity", ",", "life energy - tables - 3 - clouds above", ",", "life energy - tables - 4 - pressure", ",", "life energy - tables - 5 - clouds again", ",", "life energy - floor - 2 - particles clouds", ",", "life energy - floor - 3 - velocity", ",", "life energy - floor - 4 - pressure map", ",", "life energy - floor - 5 - ghosting", ",", "clouds above" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -5084,7 +5083,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 449.0, 1399.0, 128.0, 130.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 294.456055, 3.0, 359.087921, 149.0 ],
+					"presentation_rect" : [ 381.543976, 3.0, 359.087921, 149.0 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -6944,28 +6943,28 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-11" : [ "toggle[1]", "toggle[1]", 0 ],
+			"obj-2" : [ "sound_scrim[1]", "sound_scrim[1]", 0 ],
+			"obj-82" : [ "floor-movie-city-opacity", "floor-movie-city-opacity", 0 ],
+			"obj-119" : [ "toggle", "toggle", 0 ],
+			"obj-28" : [ "ema_floor_vis", "ema_floor_vis", 0 ],
 			"obj-112" : [ "number", "number", 0 ],
+			"obj-32" : [ "sound_scrim_volume", "sound_scrim_volume", 0 ],
+			"obj-18" : [ "sound_floor", "sound_floor", 0 ],
+			"obj-185" : [ "floor-sim-opacity", "floor-sim-opacity", 0 ],
 			"obj-86" : [ "indiv_dest", "indiv_dest", 0 ],
-			"obj-17" : [ "sound_scrim", "sound_scrim", 0 ],
-			"obj-182" : [ "floor-movie-water-opacity", "floor-movie-water-opacity", 0 ],
+			"obj-213" : [ "toggle[4]", "toggle[1]", 0 ],
+			"obj-210" : [ "toggle[3]", "toggle[1]", 0 ],
+			"obj-56" : [ "floor-movie-clouds-opacity", "floor-movie-clouds-opacity", 0 ],
 			"obj-67" : [ "ema_scrim_sim", "ema_scrim_sim", 0 ],
 			"obj-159" : [ "number[1]", "number[1]", 0 ],
-			"obj-210" : [ "toggle[3]", "toggle[1]", 0 ],
-			"obj-82" : [ "floor-movie-city-opacity", "floor-movie-city-opacity", 0 ],
-			"obj-29" : [ "sound_floor_volume", "sound_floor_volume", 0 ],
+			"obj-17" : [ "sound_scrim", "sound_scrim", 0 ],
 			"obj-68" : [ "ema_floor_sim", "ema_floor_sim", 0 ],
 			"obj-70" : [ "indiv_source", "indiv_source", 0 ],
-			"obj-2" : [ "sound_scrim[1]", "sound_scrim[1]", 0 ],
-			"obj-185" : [ "floor-sim-opacity", "floor-sim-opacity", 0 ],
-			"obj-26" : [ "ema_scrim_vis", "ema_scrim_vis", 0 ],
-			"obj-18" : [ "sound_floor", "sound_floor", 0 ],
-			"obj-32" : [ "sound_scrim_volume", "sound_scrim_volume", 0 ],
-			"obj-56" : [ "floor-movie-clouds-opacity", "floor-movie-clouds-opacity", 0 ],
-			"obj-28" : [ "ema_floor_vis", "ema_floor_vis", 0 ],
-			"obj-213" : [ "toggle[4]", "toggle[1]", 0 ],
+			"obj-29" : [ "sound_floor_volume", "sound_floor_volume", 0 ],
 			"obj-13" : [ "lights", "lights", 0 ],
-			"obj-11" : [ "toggle[1]", "toggle[1]", 0 ],
-			"obj-119" : [ "toggle", "toggle", 0 ]
+			"obj-182" : [ "floor-movie-water-opacity", "floor-movie-water-opacity", 0 ],
+			"obj-26" : [ "ema_scrim_vis", "ema_scrim_vis", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -6986,6 +6985,12 @@
 				"name" : "ecs.pattr.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/ecs/patchers/utilities",
 				"patcherrelativepath" : "../../../patchers/utilities",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "thru.maxpat",
+				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
