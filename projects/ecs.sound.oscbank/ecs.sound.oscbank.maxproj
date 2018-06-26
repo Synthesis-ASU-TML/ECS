@@ -1,8 +1,8 @@
 {
-	"name" : "sound-oscbank",
+	"name" : "ecs.sound.oscbank",
 	"version" : 1,
 	"creationdate" : 3612783566,
-	"modificationdate" : 3612783626,
+	"modificationdate" : 3612784261,
 	"viewrect" : [ 25.0, 70.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -13,9 +13,8 @@
 			"ecs.sound.oscbank.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1,
-				"toplevel" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 7/Packages/ecs/projects/sound-oscbank/patchers",
+					"bootpath" : "~/Documents/Max 7/Packages/ecs/projects/ecs.sound.oscbank/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
