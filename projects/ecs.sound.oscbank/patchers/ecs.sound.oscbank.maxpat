@@ -9,9 +9,9 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 1027.0, 114.0, 974.0, 1076.0 ],
+		"rect" : [ 1507.0, 193.0, 651.0, 809.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -37,6 +37,42 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-19",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 686.5, 128.5, 221.0, 22.0 ],
+					"style" : "",
+					"text" : "loadmess read ecs.sound.oscbank.json"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-15",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "ecs.pattr.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "clientwindow" ],
+					"patching_rect" : [ 656.5, 5.5, 271.0, 88.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 4.0, 5.0, 271.0, 88.0 ],
+					"varname" : "ecs.pattr",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-80",
 					"maxclass" : "jit.pwindow",
@@ -76,7 +112,6 @@
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_gl_texture", "" ],
 					"patching_rect" : [ 349.5, 1055.5, 199.0, 110.0 ],
-					"presentation_rect" : [ 699.0, 1043.0, 0.0, 0.0 ],
 					"varname" : "sc.texture.slide[1]",
 					"viewvisibility" : 1
 				}
@@ -118,6 +153,7 @@
 			}
 , 			{
 				"box" : 				{
+					"args" : [ "@invisible", 1 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -132,7 +168,6 @@
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 564.5, 1002.5, 204.0, 66.0 ],
-					"presentation_rect" : [ 675.0, 918.0, 0.0, 0.0 ],
 					"varname" : "sc.texture.blur[1]",
 					"viewvisibility" : 1
 				}
@@ -140,6 +175,7 @@
 			}
 , 			{
 				"box" : 				{
+					"args" : [ "@invisible", 1 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -211,7 +247,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 388.5, -24.5, 139.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 202.0, 490.0, 69.0, 73.0 ],
+					"presentation_rect" : [ 140.5, 95.0, 134.5, 24.0 ],
 					"style" : "",
 					"text" : "Refresh syphon server",
 					"texton" : "Refresh syphon server",
@@ -262,7 +298,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 50.5, 437.5, 196.0, 190.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 4.0, 490.0, 196.0, 190.0 ],
+					"presentation_rect" : [ 4.0, 607.0, 196.0, 190.0 ],
 					"varname" : "sc.texture.presence",
 					"viewvisibility" : 1
 				}
@@ -483,7 +519,7 @@
 ,
 					"style" : "",
 					"text" : "pattr @bindto fb::filters @invisible 1",
-					"varname" : "u169002424"
+					"varname" : "u190224772"
 				}
 
 			}
@@ -502,7 +538,7 @@
 ,
 					"style" : "",
 					"text" : "pattr @bindto freqamp::filters @invisible 1",
-					"varname" : "u971002426"
+					"varname" : "u512224774"
 				}
 
 			}
@@ -880,7 +916,7 @@
 ,
 					"style" : "",
 					"text" : "pattr @bindto freqamp::fund_freq @invisible 1",
-					"varname" : "u712002435"
+					"varname" : "u286224781"
 				}
 
 			}
@@ -984,7 +1020,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 286.5, -54.5, 102.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 4.0, 4.0, 123.0, 24.0 ],
+					"presentation_rect" : [ 4.0, 95.0, 134.5, 24.0 ],
 					"style" : "",
 					"text" : "Render",
 					"texton" : "Render"
@@ -1001,7 +1037,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 138.5, 23.5, 200.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 129.0, 4.0, 146.0, 24.0 ],
+					"presentation_rect" : [ 4.0, 121.0, 271.0, 24.0 ],
 					"style" : "",
 					"tabs" : [ "movie", "camera" ]
 				}
@@ -1927,16 +1963,16 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 637.5, 44.5, 75.0, 22.0 ],
+					"patching_rect" : [ 656.5, 167.5, 75.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"client_rect" : [ 43, 839, 489, 1023 ],
 						"parameter_enable" : 0,
-						"storage_rect" : [ 766, 44, 1220, 302 ]
+						"storage_rect" : [ 766, 45, 1298, 1144 ]
 					}
 ,
 					"style" : "",
 					"text" : "pattrstorage",
-					"varname" : "u269006315"
+					"varname" : "u696228659"
 				}
 
 			}
@@ -1957,7 +1993,7 @@
 					"outlettype" : [ "jit_gl_texture" ],
 					"patching_rect" : [ 340.5, 108.5, 270.0, 299.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 4.0, 185.0, 272.0, 303.0 ],
+					"presentation_rect" : [ 4.0, 302.0, 272.0, 303.0 ],
 					"varname" : "ecs.input.video",
 					"viewvisibility" : 1
 				}
@@ -3798,7 +3834,7 @@
 					"outlettype" : [ "jit_gl_texture" ],
 					"patching_rect" : [ 50.5, 108.5, 273.0, 138.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 4.0, 45.0, 271.0, 138.0 ],
+					"presentation_rect" : [ 4.0, 162.0, 271.0, 138.0 ],
 					"varname" : "ecs.input.movie",
 					"viewvisibility" : 1
 				}
@@ -3994,6 +4030,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-27", 0 ],
 					"source" : [ "obj-16", 0 ]
 				}
@@ -4010,6 +4053,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-46", 0 ],
 					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-19", 0 ]
 				}
 
 			}
@@ -4678,6 +4728,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"midpoints" : [ 666.0, 192.0, 642.0, 192.0, 642.0, 0.0, 666.0, 0.0 ],
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-50", 0 ],
 					"source" : [ "obj-52", 0 ]
 				}
@@ -5012,49 +5070,49 @@
 		"dependency_cache" : [ 			{
 				"name" : "ecs.input.movie.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/ecs/patchers/input",
-				"patcherrelativepath" : "../../../Documents/Max 7/Packages/ecs/patchers/input",
+				"patcherrelativepath" : "../../../patchers/input",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ecs.input.video.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/ecs/patchers/input",
-				"patcherrelativepath" : "../../../Documents/Max 7/Packages/ecs/patchers/input",
+				"patcherrelativepath" : "../../../patchers/input",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sc.fb.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/SC/patchers/sound",
-				"patcherrelativepath" : "../../../Documents/Max 7/Packages/SC/patchers/sound",
+				"patcherrelativepath" : "../../../../SC/patchers/sound",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "getvarname.js",
 				"bootpath" : "~/Documents/Max 7/Packages/SC/jsextensions",
-				"patcherrelativepath" : "../../../Documents/Max 7/Packages/SC/jsextensions",
+				"patcherrelativepath" : "../../../../SC/jsextensions",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sc.series.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/SC/patchers/utilities",
-				"patcherrelativepath" : "../../../Documents/Max 7/Packages/SC/patchers/utilities",
+				"patcherrelativepath" : "../../../../SC/patchers/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sc.reverb~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/SC/patchers/sound",
-				"patcherrelativepath" : "../../../Documents/Max 7/Packages/SC/patchers/sound",
+				"patcherrelativepath" : "../../../../SC/patchers/sound",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sc.dw.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/SC/patchers/sound",
-				"patcherrelativepath" : "../../../Documents/Max 7/Packages/SC/patchers/sound",
+				"patcherrelativepath" : "../../../../SC/patchers/sound",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -5067,57 +5125,64 @@
 , 			{
 				"name" : "sc.texture.presence.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/SC/patchers/video/texture",
-				"patcherrelativepath" : "../../../Documents/Max 7/Packages/SC/patchers/video/texture",
+				"patcherrelativepath" : "../../../../SC/patchers/video/texture",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bypass_dummy.genjit",
 				"bootpath" : "~/Documents/Max 7/Packages/SC/code",
-				"patcherrelativepath" : "../../../Documents/Max 7/Packages/SC/code",
+				"patcherrelativepath" : "../../../../SC/code",
 				"type" : "gJIT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sc.texture.framedifference.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/SC/patchers/video/texture",
-				"patcherrelativepath" : "../../../Documents/Max 7/Packages/SC/patchers/video/texture",
+				"patcherrelativepath" : "../../../../SC/patchers/video/texture",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sc.texture.slide.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/SC/patchers/video/texture",
-				"patcherrelativepath" : "../../../Documents/Max 7/Packages/SC/patchers/video/texture",
+				"patcherrelativepath" : "../../../../SC/patchers/video/texture",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sc.texture.blur.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/SC/patchers/video/texture",
-				"patcherrelativepath" : "../../../Documents/Max 7/Packages/SC/patchers/video/texture",
+				"patcherrelativepath" : "../../../../SC/patchers/video/texture",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "blur.genjit",
 				"bootpath" : "~/Documents/Max 7/Packages/SC/code/Convolution",
-				"patcherrelativepath" : "../../../Documents/Max 7/Packages/SC/code/Convolution",
+				"patcherrelativepath" : "../../../../SC/code/Convolution",
 				"type" : "gJIT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sc.texture.rgb2luma.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/SC/patchers/video/texture",
-				"patcherrelativepath" : "../../../Documents/Max 7/Packages/SC/patchers/video/texture",
+				"patcherrelativepath" : "../../../../SC/patchers/video/texture",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sc.rgb2luma.genjit",
 				"bootpath" : "~/Documents/Max 7/Packages/SC/code",
-				"patcherrelativepath" : "../../../Documents/Max 7/Packages/SC/code",
+				"patcherrelativepath" : "../../../../SC/code",
 				"type" : "gJIT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ecs.pattr.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/ecs/patchers/utilities",
+				"patcherrelativepath" : "../../../patchers/utilities",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
@@ -5142,6 +5207,10 @@
 			}
 , 			{
 				"name" : "jit.gl.syphonserver.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.route.mxo",
 				"type" : "iLaX"
 			}
  ],
