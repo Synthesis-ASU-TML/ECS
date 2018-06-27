@@ -1,0 +1,81 @@
+{
+	"pattrstorage" : 	{
+		"name" : "u942007458",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"name" : "omg",
+				"data" : 				{
+					"ecs.input.movie::dim" : [ 1280, 720 ],
+					"ecs.input.movie::rate" : [ 1.0 ],
+					"ecs.input.movie::moviefile" : [ "Coloredwaterredsplash.mp4" ],
+					"ecs.input.movie::texture" : [ "movie_input" ],
+					"ecs.input.movie::mirror" : [ 0 ],
+					"ecs.input.movie::flip" : [ 0 ],
+					"ecs.input.movie::invert" : [ 0 ],
+					"ecs.input.movie::enable" : [ 1 ],
+					"ecs.input.movie::folder" : [ "Macintosh HD:/Users/synthesis/synthesis-git/media/video/ECM/" ],
+					"ecs.input.video::texture" : [ "camera" ],
+					"ecs.input.video::mirror" : [ 0.0 ],
+					"ecs.input.video::flip" : [ 0.0 ],
+					"ecs.input.video::invert" : [ 0.0 ],
+					"ecs.input.video::mode" : [ 0 ],
+					"ecs.input.video::enable" : [ 1 ],
+					"ecs.input.video::multiview_segment" : [ 0 ],
+					"ecs.input.video::multiview_type" : [ 0 ],
+					"ecs.input.video::crop" : [ 0.0, 1.0, 0.0, 1.0 ],
+					"ecs.input.video::dim" : [ 640, 360, 0 ],
+					"ecs.input.video::circle::ramp_time" : [ 100.0 ],
+					"ecs.input.video::circle::circle" : [ 0.204166, 0.690476, 0.0 ],
+					"ecs.input.video::syphon::cam_syphon_server" : [ "rd" ],
+					"ecs.input.video::syphon::cam_syphon_app" : [ "Max" ],
+					"ecs.input.video::syphon::refresh" : [ -1 ],
+					"fb::density" : [ 0 ],
+					"fb::numchannels" : [ 1 ],
+					"fb::amount" : [ 1.0 ],
+					"fb::q" : [ 1000 ],
+					"fb::gain" : [ 0.323701, 0.019238, 0.060722, 0.030638, 0.047511, 0.017763, 0.049636, 0.041037, 0.062816, 0.027535, 0.109188, 0.082954, 0.093377, 0.079595, 0.156209, 0.036326, 0.0741, 0.05083, 0.018745, 0.134692, 0.148333, 0.062272, 0.013239, 0.078973, 0.022515, 0.045865, 0.078547, 0.013548, 0.052212, 0.035673, 0.081648, 0.048901, 0.082378, 0.013505, 0.115448, 0.017543, 0.046822, 0.044321, 0.02508, 0.038095, 0.009981, 0.016018, 0.014735, 0.006108, 0.023204, 0.032607, 0.009011, 0.034519, 0.010629, 0.01776, 0.006852, 0.016588, 0.014156, 0.018808, 0.011381, 0.008513, 0.014736, 0.036524, 0.002579, 0.007579, 0.012695, 0.013506, 0.013846, 0.023097, 0.007209, 0.012215, 0.017765, 0.006198, 0.018175, 0.005086, 0.004851, 0.015021, 0.007575, 0.010286, 0.011059, 0.018707, 0.006204, 0.006882, 0.01245, 0.010674, 0.003842, 0.012429, 0.003196, 0.007701, 0.009072, 0.013878, 0.003216, 0.010503, 0.002925, 0.012327, 0.007395, 0.005097, 0.011106, 0.016278, 0.003191, 0.00561, 0.010673, 0.007941, 0.012378, 0.000426, 0.008788, 0.009771, 0.001701, 0.008739, 0.012952, 0.014835, 0.007849, 0.008211, 0.013468, 0.013901, 0.004665, 0.008606, 0.006928, 0.007253, 0.024537, 0.009982, 0.015617, 0.0131, 0.015445, 0.00514, 0.00998, 0.001725, 0.010141, 0.004258, 0.017864, 0.005615, 0.005828, 0.005391 ],
+					"fb::filters" : [ 1 ],
+					"fb::bypass" : [ 1.0 ],
+					"fb::fund" : [ 1.0 ],
+					"fb::freq" : [ 0 ],
+					"fb::sc.series[1]::u034007388" : [ -1 ],
+					"fb::sc.series::u407006101" : [ -1 ],
+					"sc.reverb~::amount" : [ 0.1 ],
+					"sc.reverb~::room_size" : [ 157.829267 ],
+					"sc.reverb~::time" : [ 100.0 ],
+					"sc.reverb~::spread" : [ 23.0 ],
+					"sc.reverb~::damping" : [ 0.7 ],
+					"sc.reverb~::bandwidth" : [ 0.5 ],
+					"sc.reverb~::dry" : [ 1.0 ],
+					"sc.reverb~::early" : [ 0.878049 ],
+					"sc.reverb~::tail" : [ 0.25 ],
+					"sc.texture.presence::threshold" : [ 0.09 ],
+					"sc.texture.presence::bypass" : [ 1.0 ],
+					"sc.texture.presence::blur" : [ 3.905, 3.905 ],
+					"sc.texture.presence::memory" : [ 0.9 ],
+					"sc.texture.presence::lpf" : [ 1.0 ],
+					"sc.texture.framedifference::threshold" : [ 0.0 ],
+					"sc.texture.framedifference::bypass" : [ 0.0 ],
+					"sc.texture.slide::slide_up" : [ 1.0 ],
+					"sc.texture.slide::slide_down" : [ 1.0 ],
+					"sc.texture.slide::bypass" : [ 0.0 ],
+					"sc.texture.rgb2luma::rscale" : [ 0.299 ],
+					"sc.texture.rgb2luma::gscale" : [ 0.587 ],
+					"sc.texture.rgb2luma::bscale" : [ 0.114 ],
+					"sc.texture.rgb2luma::bypass" : [ 0.0 ],
+					"sc.texture.slide[1]::slide_up" : [ 1.0 ],
+					"sc.texture.slide[1]::slide_down" : [ 1.0 ],
+					"sc.texture.slide[1]::bypass" : [ 0.0 ],
+					"u254027938" : [ 32.0 ],
+					"u189027976" : [ 1.0 ],
+					"u713027991" : [ 1.0 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}
