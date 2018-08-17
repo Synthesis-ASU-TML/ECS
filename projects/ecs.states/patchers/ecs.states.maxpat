@@ -474,8 +474,7 @@
 
 					}
 ,
-					"style" : "",
-					"varname" : "number[1]"
+					"style" : ""
 				}
 
 			}
@@ -3629,7 +3628,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 10.0, 159.0, 151.0, 22.0 ],
+					"patching_rect" : [ 10.0, 133.0, 151.0, 22.0 ],
 					"style" : "",
 					"text" : "sc.net.send @type lighting"
 				}
@@ -3851,8 +3850,7 @@
 
 					}
 ,
-					"style" : "",
-					"varname" : "umenu[1]"
+					"style" : ""
 				}
 
 			}
@@ -3918,8 +3916,7 @@
 
 					}
 ,
-					"style" : "",
-					"varname" : "umenu"
+					"style" : ""
 				}
 
 			}
@@ -4099,8 +4096,7 @@
 
 					}
 ,
-					"style" : "",
-					"varname" : "toggle"
+					"style" : ""
 				}
 
 			}
@@ -4779,6 +4775,7 @@
 , 			{
 				"box" : 				{
 					"active" : 					{
+						"lights-preset" : 0,
 						"dest-control20x20" : 0,
 						"dest-control20x20::matrix-ctrl" : 0
 					}
@@ -5242,15 +5239,11 @@
 						"floor-sim-preset" : [ 5 ],
 						"floor-vis-preset" : [ 9 ],
 						"lights-preset" : [ 2 ],
-						"number[1]" : [ 9990 ],
 						"scrim-filterbanks-preset" : [ 3 ],
 						"scrim-filterbanks-volume" : [ 0.0 ],
 						"scrim-sim-enable" : [ 1 ],
 						"scrim-sim-preset" : [ 2 ],
-						"scrim-vis-preset" : [ 10 ],
-						"toggle" : [ 0 ],
-						"umenu" : [ 0 ],
-						"umenu[1]" : [ 0 ]
+						"scrim-vis-preset" : [ 10 ]
 					}
 ,
 					"style" : "",
@@ -6966,6 +6959,13 @@
 					"destination" : [ "obj-201", 0 ],
 					"midpoints" : [ 707.5, 513.0, 684.0, 513.0, 684.0, 549.0, 19.5, 549.0 ],
 					"source" : [ "obj-34", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-161", 0 ],
+					"source" : [ "obj-37", 0 ]
 				}
 
 			}
