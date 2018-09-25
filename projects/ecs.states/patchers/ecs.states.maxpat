@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 925.0, 539.0, 374.0, 662.0 ],
+		"rect" : [ 303.0, 442.0, 374.0, 645.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,166 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontsize" : 12.0,
+					"id" : "obj-250",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 31.5, 2040.0, 125.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 205.456055, 382.5, 120.0, 20.0 ],
+					"style" : "",
+					"text" : "Lights on",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 12.0,
+					"id" : "obj-207",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 781.0, 1415.0, 128.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 205.456055, 557.888916, 120.0, 20.0 ],
+					"style" : "",
+					"text" : "Movie: Clouds",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 12.0,
+					"id" : "obj-209",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 781.0, 1437.0, 128.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 205.456055, 608.0, 120.0, 20.0 ],
+					"style" : "",
+					"text" : "Movie: City",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 12.0,
+					"id" : "obj-211",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 781.0, 1459.0, 128.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 205.456055, 582.944458, 120.0, 20.0 ],
+					"style" : "",
+					"text" : "Movie: Water",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 12.0,
+					"id" : "obj-9",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 212.5, 2216.0, 136.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 205.456055, 532.833313, 120.0, 20.0 ],
+					"style" : "",
+					"text" : "Velocity ghosting",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 12.0,
+					"id" : "obj-3",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 212.5, 2085.0, 136.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 205.456055, 457.666687, 120.0, 20.0 ],
+					"style" : "",
+					"text" : "Pressure (cubehelix)",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 12.0,
+					"id" : "obj-263",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 212.5, 2107.0, 136.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 205.456055, 507.777771, 120.0, 20.0 ],
+					"style" : "",
+					"text" : "Velocity image",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 12.0,
+					"id" : "obj-262",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 212.5, 2129.0, 136.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 205.456055, 482.722229, 120.0, 20.0 ],
+					"style" : "",
+					"text" : "Velocity particles",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 12.0,
+					"id" : "obj-261",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 212.5, 2063.0, 136.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 205.456055, 432.611115, 120.0, 20.0 ],
+					"style" : "",
+					"text" : "Pressure",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 12.0,
+					"id" : "obj-260",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 212.5, 2041.0, 136.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 205.456055, 407.555542, 120.0, 20.0 ],
+					"style" : "",
+					"text" : "Clouds",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-172",
 					"maxclass" : "newobj",
@@ -93,20 +253,6 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 183.456055, 276.0, 22.0, 22.0 ],
 					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-12",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"patching_rect" : [ 556.0, 128.0, 100.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 1.456056, 635.0, 357.0, 22.0 ],
-					"style" : "",
-					"text" : "miraweb_launch"
 				}
 
 			}
@@ -1105,9 +1251,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 103.5, 1786.0, 70.0, 22.0 ],
+					"patching_rect" : [ 103.5, 1786.0, 72.0, 22.0 ],
 					"style" : "",
-					"text" : "recall 1 32"
+					"text" : "recall 24 30"
 				}
 
 			}
@@ -1178,22 +1324,6 @@
 			}
 , 			{
 				"box" : 				{
-					"fontsize" : 12.0,
-					"id" : "obj-207",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 781.0, 1415.0, 128.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 205.456055, 557.888916, 120.0, 20.0 ],
-					"style" : "",
-					"text" : "Movie: Clouds",
-					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"bgcolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 					"blinkcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"id" : "obj-208",
@@ -1206,38 +1336,6 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 180.956055, 556.277771, 23.0, 23.0 ],
 					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontsize" : 12.0,
-					"id" : "obj-209",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 781.0, 1437.0, 128.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 205.456055, 608.0, 120.0, 20.0 ],
-					"style" : "",
-					"text" : "Movie: City",
-					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontsize" : 12.0,
-					"id" : "obj-211",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 781.0, 1459.0, 128.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 205.456055, 582.944458, 120.0, 20.0 ],
-					"style" : "",
-					"text" : "Movie: Water",
-					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
 			}
@@ -1712,22 +1810,6 @@
 			}
 , 			{
 				"box" : 				{
-					"fontsize" : 12.0,
-					"id" : "obj-9",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 212.5, 2216.0, 136.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 205.456055, 532.833313, 120.0, 20.0 ],
-					"style" : "",
-					"text" : "Velocity ghosting",
-					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"bgcolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 					"blinkcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"id" : "obj-21",
@@ -1740,22 +1822,6 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 181.456055, 455.833313, 23.0, 23.0 ],
 					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontsize" : 12.0,
-					"id" : "obj-3",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 212.5, 2085.0, 136.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 205.456055, 457.666687, 120.0, 20.0 ],
-					"style" : "",
-					"text" : "Pressure (cubehelix)",
-					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
 			}
@@ -2178,6 +2244,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-39",
+									"int" : 1,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 2,
@@ -2476,6 +2543,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-104",
+									"int" : 1,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 2,
@@ -2618,6 +2686,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-115",
+									"int" : 1,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 2,
@@ -2760,6 +2829,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-93",
+									"int" : 1,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 2,
@@ -2928,6 +2998,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-279",
+									"int" : 1,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 2,
@@ -5333,7 +5404,7 @@
 					"bgfillcolor_proportion" : 0.39,
 					"bgfillcolor_type" : "gradient",
 					"id" : "obj-68",
-					"items" : [ "laminar", ",", "clouds", ",", "laminar for pressure demo", ",", "laminar for pressure demo with wind", ",", "laminar for pressure demo with wind and accumulated pressure", ",", "disabled", ",", "pressure to vapor", ",", "velocity ghosting", ",", "velocity ghosting no vorticity", ",", "ghosting pressure", ",", "clouds above", ",", "clouds above wind", ",", "disabled", ",", "life energy - tables - 1 - clouds", ",", "life energy - tables - 2 - clouds vorticity", ",", "life energy - tables - 3 - clouds above", ",", "life energy - tables - 4 - clouds above vorticity", ",", "life energy - tables - 5 - clouds again", ",", "life energy - floor - 2 - particles clouds", ",", "life energy - floor - 3 - velocity", ",", "life energy - floor - 4 - pressure map", ",", "life energy - floor - 5 - ghosting", ",", "laminar", ",", "clouds", ",", "laminar for pressure demo", ",", "laminar for pressure demo with wind", ",", "laminar for pressure demo with wind and accumulated pressure", ",", "disabled", ",", "pressure to vapor", ",", "velocity ghosting", ",", "velocity ghosting no vorticity", ",", "ghosting pressure", ",", "clouds above", ",", "clouds above wind", ",", "disabled", ",", "life energy - tables - 1 - clouds", ",", "life energy - tables - 2 - clouds vorticity", ",", "life energy - tables - 3 - clouds above", ",", "life energy - tables - 4 - clouds above vorticity", ",", "life energy - tables - 5 - clouds again", ",", "life energy - floor - 2 - particles clouds", ",", "life energy - floor - 3 - velocity", ",", "life energy - floor - 4 - pressure map", ",", "life energy - floor - 5 - ghosting" ],
+					"items" : [ "laminar", ",", "clouds", ",", "laminar for pressure demo", ",", "laminar for pressure demo with wind", ",", "laminar for pressure demo with wind and accumulated pressure", ",", "disabled", ",", "pressure to vapor", ",", "velocity ghosting", ",", "velocity ghosting no vorticity", ",", "ghosting pressure", ",", "clouds above", ",", "clouds above wind", ",", "disabled", ",", "life energy - tables - 1 - clouds", ",", "life energy - tables - 2 - clouds vorticity", ",", "life energy - tables - 3 - clouds above", ",", "life energy - tables - 4 - clouds above vorticity", ",", "life energy - tables - 5 - clouds again", ",", "life energy - floor - 2 - particles clouds", ",", "life energy - floor - 3 - velocity", ",", "life energy - floor - 4 - pressure map", ",", "life energy - floor - 5 - ghosting" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -5585,15 +5656,15 @@
 					"patching_rect" : [ 144.5, 1888.0, 58.0, 22.0 ],
 					"restore" : 					{
 						"cloudsynth-preset" : [ 0 ],
-						"floor-filterbanks-preset" : [ 1 ],
-						"floor-filterbanks-volume" : [ 0.895184 ],
+						"floor-filterbanks-preset" : [ 11 ],
+						"floor-filterbanks-volume" : [ 0.75 ],
 						"floor-movie-city-opacity" : [ 0.0 ],
 						"floor-movie-clouds-opacity" : [ 0.0 ],
 						"floor-movie-water-opacity" : [ 0.0 ],
 						"floor-sim-enable" : [ 1 ],
 						"floor-sim-opacity" : [ 1.0 ],
-						"floor-sim-preset" : [ 9 ],
-						"floor-vis-preset" : [ 12 ],
+						"floor-sim-preset" : [ 2 ],
+						"floor-vis-preset" : [ 4 ],
 						"lights-booth" : [ 0.0 ],
 						"lights-intensity" : [ 0.0 ],
 						"lights-rgb" : [ 0.959648, 1.0, 0.911765, 1.0, 0.242886, 1.0, 0.955882 ],
@@ -5602,15 +5673,15 @@
 						"scrim-filterbanks-preset" : [ 3 ],
 						"scrim-filterbanks-volume" : [ 0.0 ],
 						"scrim-sim-enable" : [ 1 ],
-						"scrim-sim-preset" : [ 2 ],
-						"scrim-vis-preset" : [ 11 ],
+						"scrim-sim-preset" : [ 0 ],
+						"scrim-vis-preset" : [ 2 ],
 						"umenu" : [ 0 ],
 						"umenu[1]" : [ 0 ]
 					}
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u348052121"
+					"varname" : "u114053469"
 				}
 
 			}
@@ -5702,7 +5773,7 @@
 					"bgfillcolor_proportion" : 0.39,
 					"bgfillcolor_type" : "gradient",
 					"id" : "obj-28",
-					"items" : [ "clouds", ",", "velocity flow particles", ",", "velocity field", ",", "pressure", ",", "hsflow", ",", "camera", ",", "obstacles", ",", "background", ",", "bgsub", ",", "blackout", ",", "velocity field - wind", ",", "velocity ghosting", ",", "velocity ghosting short particles", ",", "velocity ghosting long particles", ",", "ghosting pressure", ",", "pressure cubehelix", ",", "clouds - sunset", ",", "life energy - tables - 1 - clouds", ",", "life energy - tables - 2 - clouds vorticity", ",", "life energy - tables - 3 - clouds above", ",", "life energy - tables - 4 - pressure", ",", "life energy - tables - 5 - clouds again", ",", "life energy - floor - 2 - particles clouds", ",", "life energy - floor - 3 - velocity", ",", "life energy - floor - 4 - pressure map", ",", "life energy - floor - 5 - ghosting", ",", "clouds above", ",", "clouds", ",", "velocity flow particles", ",", "velocity field", ",", "pressure", ",", "hsflow", ",", "camera", ",", "obstacles", ",", "background", ",", "bgsub", ",", "blackout", ",", "velocity field - wind", ",", "velocity ghosting", ",", "velocity ghosting short particles", ",", "velocity ghosting long particles", ",", "ghosting pressure", ",", "pressure cubehelix", ",", "clouds - sunset", ",", "life energy - tables - 1 - clouds", ",", "life energy - tables - 2 - clouds vorticity", ",", "life energy - tables - 3 - clouds above", ",", "life energy - tables - 4 - pressure", ",", "life energy - tables - 5 - clouds again", ",", "life energy - floor - 2 - particles clouds", ",", "life energy - floor - 3 - velocity", ",", "life energy - floor - 4 - pressure map", ",", "life energy - floor - 5 - ghosting", ",", "clouds above" ],
+					"items" : [ "clouds", ",", "velocity flow particles", ",", "velocity field", ",", "pressure", ",", "hsflow", ",", "camera", ",", "obstacles", ",", "background", ",", "bgsub", ",", "blackout", ",", "velocity field - wind", ",", "velocity ghosting", ",", "velocity ghosting short particles", ",", "velocity ghosting long particles", ",", "ghosting pressure", ",", "pressure cubehelix", ",", "clouds - sunset", ",", "life energy - tables - 1 - clouds", ",", "life energy - tables - 2 - clouds vorticity", ",", "life energy - tables - 3 - clouds above", ",", "life energy - tables - 4 - pressure", ",", "life energy - tables - 5 - clouds again", ",", "life energy - floor - 2 - particles clouds", ",", "life energy - floor - 3 - velocity", ",", "life energy - floor - 4 - pressure map", ",", "life energy - floor - 5 - ghosting", ",", "clouds above" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -5821,7 +5892,7 @@
 					"bgfillcolor_proportion" : 0.39,
 					"bgfillcolor_type" : "gradient",
 					"id" : "obj-18",
-					"items" : [ "scrim", ",", "floor pressure", ",", "floor clouds", ",", "off", ",", "scrim pressure", ",", "floor velocity image", ",", "ex4 vectors", ",", "ex4 freezing", ",", "ex4 fluids", ",", "ex4 scatter", ",", "floor velocity flow field", ",", "floor xylo-pianos", ",", "floor-magnitude", ",", "scrim", ",", "floor pressure", ",", "floor clouds", ",", "off", ",", "scrim pressure", ",", "floor velocity image", ",", "ex4 vectors", ",", "ex4 freezing", ",", "ex4 fluids", ",", "ex4 scatter", ",", "floor velocity flow field", ",", "floor xylo-pianos", ",", "floor-magnitude" ],
+					"items" : [ "scrim", ",", "floor pressure", ",", "floor clouds", ",", "off", ",", "scrim pressure", ",", "floor velocity image", ",", "ex4 vectors", ",", "ex4 freezing", ",", "ex4 fluids", ",", "ex4 scatter", ",", "floor velocity flow field", ",", "floor xylo-pianos", ",", "floor-magnitude", ",", "floor-magnitude-ghosting" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -5878,86 +5949,6 @@
 					"style" : "",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"varname" : "scrim-filterbanks-preset"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontsize" : 12.0,
-					"id" : "obj-263",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 212.5, 2107.0, 136.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 205.456055, 507.777771, 120.0, 20.0 ],
-					"style" : "",
-					"text" : "Velocity image",
-					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontsize" : 12.0,
-					"id" : "obj-262",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 212.5, 2129.0, 136.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 205.456055, 482.722229, 120.0, 20.0 ],
-					"style" : "",
-					"text" : "Velocity particles",
-					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontsize" : 12.0,
-					"id" : "obj-261",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 212.5, 2063.0, 136.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 205.456055, 432.611115, 120.0, 20.0 ],
-					"style" : "",
-					"text" : "Pressure",
-					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontsize" : 12.0,
-					"id" : "obj-260",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 212.5, 2041.0, 136.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 205.456055, 407.555542, 120.0, 20.0 ],
-					"style" : "",
-					"text" : "Clouds",
-					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontsize" : 12.0,
-					"id" : "obj-250",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 31.5, 2040.0, 125.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 205.456055, 382.5, 120.0, 20.0 ],
-					"style" : "",
-					"text" : "Lights on",
-					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
 			}
@@ -6182,7 +6173,7 @@
 					"mode" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 49.5, 2077.0, 332.5, 238.0 ],
+					"patching_rect" : [ 31.5, 2040.0, 332.5, 238.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.456056, 377.0, 361.087921, 256.0 ],
 					"proportion" : 0.39,
@@ -6200,25 +6191,11 @@
 					"mode" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 368.269226, 2040.0, 335.134644, 238.0 ],
+					"patching_rect" : [ 368.269226, 2055.0, 335.134644, 238.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.456056, 105.0, 360.087921, 256.0 ],
 					"proportion" : 0.39,
 					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"background" : 1,
-					"id" : "obj-202",
-					"ignoreclick" : 1,
-					"maxclass" : "mira.frame",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"patching_rect" : [ 368.269226, 2040.0, 334.769218, 237.999985 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.456056, 105.0, 360.087921, 256.0 ]
 				}
 
 			}
@@ -6232,7 +6209,25 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 31.5, 2040.0, 334.769218, 237.999985 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1.456056, 377.0, 360.087921, 256.0 ]
+					"presentation_rect" : [ 1.456056, 377.0, 360.087921, 256.0 ],
+					"tabname" : "States",
+					"taborder" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"background" : 1,
+					"id" : "obj-202",
+					"ignoreclick" : 1,
+					"maxclass" : "mira.frame",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patching_rect" : [ 368.269226, 2040.0, 334.769218, 237.999985 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.456056, 105.0, 360.087921, 256.0 ],
+					"tabname" : "Settings",
+					"taborder" : 2
 				}
 
 			}
@@ -7225,7 +7220,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-290", 1 ],
-					"midpoints" : [ 113.0, 1665.0, 180.0, 1665.0, 180.0, 1773.0, 164.0, 1773.0 ],
+					"midpoints" : [ 113.0, 1665.0, 180.0, 1665.0, 180.0, 1773.0, 166.0, 1773.0 ],
 					"order" : 0,
 					"source" : [ "obj-276", 0 ]
 				}
@@ -7928,34 +7923,28 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-28" : [ "floor-vis-preset", "floor-vis-preset", 0 ],
-			"obj-29" : [ "floor-filterbanks-volume", "floor-filterbanks-volume", 0 ],
-			"obj-32" : [ "scrim-filterbanks-volume", "scrim-filterbanks-volume", 0 ],
-			"obj-86" : [ "umenu", "umenu", 0 ],
-			"obj-56" : [ "floor-movie-clouds-opacity", "floor-movie-clouds-opacity", 0 ],
+			"obj-70" : [ "umenu[1]", "umenu[1]", 0 ],
 			"obj-210" : [ "floor-sim-enable", "floor-sim-enable", 0 ],
 			"obj-67" : [ "scrim-sim-preset", "scrim-sim-preset", 0 ],
-			"obj-55" : [ "number", "number", 0 ],
+			"obj-185" : [ "floor-sim-opacity", "floor-sim-opacity", 0 ],
 			"obj-160" : [ "lights-rgb", "lights-rgb", 0 ],
-			"obj-12::obj-17" : [ "slider[5]", "slider", 0 ],
-			"obj-12::obj-28" : [ "slider[1]", "slider", 0 ],
 			"obj-2" : [ "cloudsynth-preset", "cloudsynth-preset", 0 ],
 			"obj-17" : [ "scrim-filterbanks-preset", "scrim-filterbanks-preset", 0 ],
+			"obj-56" : [ "floor-movie-clouds-opacity", "floor-movie-clouds-opacity", 0 ],
 			"obj-206" : [ "lights-booth", "lights-booth", 0 ],
-			"obj-182" : [ "floor-movie-water-opacity", "floor-movie-water-opacity", 0 ],
-			"obj-70" : [ "umenu[1]", "umenu[1]", 0 ],
-			"obj-12::obj-27" : [ "slider[3]", "slider", 0 ],
 			"obj-68" : [ "floor-sim-preset", "floor-sim-preset", 0 ],
 			"obj-26" : [ "scrim-vis-preset", "scrim-vis-preset", 0 ],
 			"obj-191" : [ "lights-scoops", "lights-scoops", 0 ],
-			"obj-82" : [ "floor-movie-city-opacity", "floor-movie-city-opacity", 0 ],
-			"obj-12::obj-12" : [ "slider", "slider", 0 ],
-			"obj-12::obj-30" : [ "slider[6]", "slider", 0 ],
 			"obj-18" : [ "floor-filterbanks-preset", "floor-filterbanks-preset", 0 ],
 			"obj-213" : [ "scrim-sim-enable", "scrim-sim-enable", 0 ],
+			"obj-55" : [ "number", "number", 0 ],
+			"obj-182" : [ "floor-movie-water-opacity", "floor-movie-water-opacity", 0 ],
 			"obj-91" : [ "lights-intensity", "lights-intensity", 0 ],
-			"obj-185" : [ "floor-sim-opacity", "floor-sim-opacity", 0 ],
-			"obj-12::obj-26" : [ "slider[4]", "slider", 0 ]
+			"obj-28" : [ "floor-vis-preset", "floor-vis-preset", 0 ],
+			"obj-82" : [ "floor-movie-city-opacity", "floor-movie-city-opacity", 0 ],
+			"obj-29" : [ "floor-filterbanks-volume", "floor-filterbanks-volume", 0 ],
+			"obj-32" : [ "scrim-filterbanks-volume", "scrim-filterbanks-volume", 0 ],
+			"obj-86" : [ "umenu", "umenu", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -8007,13 +7996,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "miraweb_launch.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Miraweb/extras",
-				"patcherrelativepath" : "../../../../Miraweb/extras",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "o.pack.mxo",
 				"type" : "iLaX"
 			}
@@ -8027,10 +8009,6 @@
 			}
 , 			{
 				"name" : "sadam.tcpClient.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mira.status.mxo",
 				"type" : "iLaX"
 			}
  ],

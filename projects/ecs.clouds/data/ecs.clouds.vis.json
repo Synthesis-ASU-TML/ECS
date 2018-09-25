@@ -1,6 +1,6 @@
 {
 	"pattrstorage" : 	{
-		"name" : "u936014939",
+		"name" : "u594013475",
 		"slots" : 		{
 			"1" : 			{
 				"id" : 1,
@@ -391,7 +391,7 @@
 					"field::high" : [ 50.0, 50.0, 1.0, 1.0 ],
 					"field::low" : [ -50.0, -50.0, 0.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"field::colormap" : [ "1d_unsigned_binary.png" ],
+					"field::colormap" : [ "1d_unsigned_bone.png" ],
 					"particles::duration" : [ 0.1 ],
 					"particles::texture" : [ "velocity" ],
 					"particles::point_size" : [ 1.0 ],
