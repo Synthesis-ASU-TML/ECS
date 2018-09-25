@@ -1,6 +1,6 @@
 {
 	"pattrstorage" : 	{
-		"name" : "u540002621",
+		"name" : "u382001708",
 		"slots" : 		{
 			"1" : 			{
 				"id" : 1,
@@ -40,7 +40,7 @@
 					"sample_player::amp_6" : [ 1.737705 ],
 					"sample_player::amp_7" : [ 1.704918 ],
 					"sample_player::amp_8" : [ 1.737705 ],
-					"video_input::u672069430" : [ -1 ],
+					"video_input::u023068512" : [  ],
 					"effects::res::freq" : [ 100.0 ],
 					"effects::res::inharm" : [ 0.4 ],
 					"effects::res::amount" : [ 0.0 ],
@@ -75,6 +75,7 @@
 					"tuning::loop_start::length" : [ 0.2 ],
 					"spatialization::scissor_rows" : [ 1 ],
 					"spatialization::scissor_columns" : [ 8 ],
+					"spatialization::threshold" : [ 0.03 ],
 					"spatialization::speaker_locations::src_1_a" : [ -157.5 ],
 					"spatialization::speaker_locations::src_1_e" : [ 0.0 ],
 					"spatialization::speaker_locations::src_1_d" : [ 0.65 ],
@@ -98,8 +99,7 @@
 					"spatialization::speaker_locations::src_7_d" : [ 0.65 ],
 					"spatialization::speaker_locations::src_8_a" : [ 157.5 ],
 					"spatialization::speaker_locations::src_8_e" : [ 0.0 ],
-					"spatialization::speaker_locations::src_8_d" : [ 0.65 ],
-					"spatialization::threshold" : [ 0.03 ]
+					"spatialization::speaker_locations::src_8_d" : [ 0.65 ]
 				}
 
 			}
@@ -142,7 +142,7 @@
 					"sample_player::amp_6" : [ 1.47541 ],
 					"sample_player::amp_7" : [ 0.983607 ],
 					"sample_player::amp_8" : [ 1.442623 ],
-					"video_input::u672069430" : [ -1 ],
+					"video_input::u023068512" : [  ],
 					"effects::res::freq" : [ 100.0 ],
 					"effects::res::inharm" : [ 0.4 ],
 					"effects::res::amount" : [ 0.318325 ],
@@ -177,6 +177,7 @@
 					"tuning::loop_start::length" : [  ],
 					"spatialization::scissor_rows" : [ 4 ],
 					"spatialization::scissor_columns" : [ 2 ],
+					"spatialization::threshold" : [ 0.29 ],
 					"spatialization::speaker_locations::src_1_a" : [ -134.253021 ],
 					"spatialization::speaker_locations::src_1_e" : [ 0.0 ],
 					"spatialization::speaker_locations::src_1_d" : [ 1.35548 ],
@@ -200,8 +201,7 @@
 					"spatialization::speaker_locations::src_7_d" : [ 0.91416 ],
 					"spatialization::speaker_locations::src_8_a" : [ 40.728207 ],
 					"spatialization::speaker_locations::src_8_e" : [ 0.0 ],
-					"spatialization::speaker_locations::src_8_d" : [ 1.319586 ],
-					"spatialization::threshold" : [ 0.29 ]
+					"spatialization::speaker_locations::src_8_d" : [ 1.319586 ]
 				}
 
 			}
@@ -244,7 +244,7 @@
 					"sample_player::amp_6" : [ 1.180328 ],
 					"sample_player::amp_7" : [ 1.147541 ],
 					"sample_player::amp_8" : [ 1.147541 ],
-					"video_input::u672069430" : [ -1 ],
+					"video_input::u023068512" : [  ],
 					"effects::res::freq" : [ 100.0 ],
 					"effects::res::inharm" : [ 0.4 ],
 					"effects::res::amount" : [ 0.02734 ],
@@ -279,6 +279,7 @@
 					"tuning::loop_start::length" : [  ],
 					"spatialization::scissor_rows" : [ 2 ],
 					"spatialization::scissor_columns" : [ 4 ],
+					"spatialization::threshold" : [ 0.2 ],
 					"spatialization::speaker_locations::src_1_a" : [ -142.827591 ],
 					"spatialization::speaker_locations::src_1_e" : [ 0.0 ],
 					"spatialization::speaker_locations::src_1_d" : [ 1.031183 ],
@@ -302,8 +303,7 @@
 					"spatialization::speaker_locations::src_7_d" : [ 0.91416 ],
 					"spatialization::speaker_locations::src_8_a" : [ 33.871794 ],
 					"spatialization::speaker_locations::src_8_e" : [ 0.0 ],
-					"spatialization::speaker_locations::src_8_d" : [ 1.009903 ],
-					"spatialization::threshold" : [ 0.2 ]
+					"spatialization::speaker_locations::src_8_d" : [ 1.009903 ]
 				}
 
 			}
@@ -346,7 +346,7 @@
 					"sample_player::amp_6" : [ 0.0 ],
 					"sample_player::amp_7" : [ 0.0 ],
 					"sample_player::amp_8" : [ 0.0 ],
-					"video_input::u672069430" : [  ],
+					"video_input::u023068512" : [  ],
 					"effects::res::freq" : [ 100.0 ],
 					"effects::res::inharm" : [ 0.4 ],
 					"effects::res::amount" : [ 0.0 ],
@@ -381,6 +381,7 @@
 					"tuning::loop_start::length" : [  ],
 					"spatialization::scissor_rows" : [ 1 ],
 					"spatialization::scissor_columns" : [ 8 ],
+					"spatialization::threshold" : [  ],
 					"spatialization::speaker_locations::src_1_a" : [ -157.5 ],
 					"spatialization::speaker_locations::src_1_e" : [ 0.0 ],
 					"spatialization::speaker_locations::src_1_d" : [ 0.65 ],
@@ -404,8 +405,7 @@
 					"spatialization::speaker_locations::src_7_d" : [ 0.65 ],
 					"spatialization::speaker_locations::src_8_a" : [ 157.5 ],
 					"spatialization::speaker_locations::src_8_e" : [ 0.0 ],
-					"spatialization::speaker_locations::src_8_d" : [ 0.65 ],
-					"spatialization::threshold" : [  ]
+					"spatialization::speaker_locations::src_8_d" : [ 0.65 ]
 				}
 
 			}
@@ -448,7 +448,7 @@
 					"sample_player::amp_6" : [ 0.885246 ],
 					"sample_player::amp_7" : [ 0.918033 ],
 					"sample_player::amp_8" : [ 1.04918 ],
-					"video_input::u672069430" : [  ],
+					"video_input::u023068512" : [  ],
 					"effects::res::freq" : [ 100.0 ],
 					"effects::res::inharm" : [ 0.4 ],
 					"effects::res::amount" : [ 0.0 ],
@@ -483,6 +483,7 @@
 					"tuning::loop_start::length" : [  ],
 					"spatialization::scissor_rows" : [ 1 ],
 					"spatialization::scissor_columns" : [ 8 ],
+					"spatialization::threshold" : [  ],
 					"spatialization::speaker_locations::src_1_a" : [ -157.5 ],
 					"spatialization::speaker_locations::src_1_e" : [ 0.0 ],
 					"spatialization::speaker_locations::src_1_d" : [ 0.65 ],
@@ -506,8 +507,7 @@
 					"spatialization::speaker_locations::src_7_d" : [ 0.65 ],
 					"spatialization::speaker_locations::src_8_a" : [ 157.5 ],
 					"spatialization::speaker_locations::src_8_e" : [ 0.0 ],
-					"spatialization::speaker_locations::src_8_d" : [ 0.65 ],
-					"spatialization::threshold" : [  ]
+					"spatialization::speaker_locations::src_8_d" : [ 0.65 ]
 				}
 
 			}
@@ -550,7 +550,7 @@
 					"sample_player::amp_6" : [ 0.819672 ],
 					"sample_player::amp_7" : [ 0.852459 ],
 					"sample_player::amp_8" : [ 0.885246 ],
-					"video_input::u672069430" : [ -1 ],
+					"video_input::u023068512" : [  ],
 					"effects::res::freq" : [ 100.0 ],
 					"effects::res::inharm" : [ 0.4 ],
 					"effects::res::amount" : [ 0.495172 ],
@@ -585,6 +585,7 @@
 					"tuning::loop_start::length" : [  ],
 					"spatialization::scissor_rows" : [ 4 ],
 					"spatialization::scissor_columns" : [ 2 ],
+					"spatialization::threshold" : [ 0.13 ],
 					"spatialization::speaker_locations::src_1_a" : [ -157.5 ],
 					"spatialization::speaker_locations::src_1_e" : [ 0.0 ],
 					"spatialization::speaker_locations::src_1_d" : [ 0.65 ],
@@ -608,8 +609,7 @@
 					"spatialization::speaker_locations::src_7_d" : [ 0.65 ],
 					"spatialization::speaker_locations::src_8_a" : [ 157.5 ],
 					"spatialization::speaker_locations::src_8_e" : [ 0.0 ],
-					"spatialization::speaker_locations::src_8_d" : [ 0.65 ],
-					"spatialization::threshold" : [ 0.13 ]
+					"spatialization::speaker_locations::src_8_d" : [ 0.65 ]
 				}
 
 			}
@@ -652,7 +652,7 @@
 					"sample_player::amp_6" : [ 0.95082 ],
 					"sample_player::amp_7" : [ 1.04918 ],
 					"sample_player::amp_8" : [ 0.983607 ],
-					"video_input::u672069430" : [ -1 ],
+					"video_input::u023068512" : [  ],
 					"effects::res::freq" : [ 100.0 ],
 					"effects::res::inharm" : [ 0.4 ],
 					"effects::res::amount" : [ 0.0 ],
@@ -687,6 +687,7 @@
 					"tuning::loop_start::length" : [  ],
 					"spatialization::scissor_rows" : [ 2 ],
 					"spatialization::scissor_columns" : [ 4 ],
+					"spatialization::threshold" : [ 0.2 ],
 					"spatialization::speaker_locations::src_1_a" : [ -157.291092 ],
 					"spatialization::speaker_locations::src_1_e" : [ 0.0 ],
 					"spatialization::speaker_locations::src_1_d" : [ 0.354729 ],
@@ -710,8 +711,7 @@
 					"spatialization::speaker_locations::src_7_d" : [ 0.359461 ],
 					"spatialization::speaker_locations::src_8_a" : [ 27.747389 ],
 					"spatialization::speaker_locations::src_8_e" : [ 0.0 ],
-					"spatialization::speaker_locations::src_8_d" : [ 0.374183 ],
-					"spatialization::threshold" : [ 0.2 ]
+					"spatialization::speaker_locations::src_8_d" : [ 0.374183 ]
 				}
 
 			}
@@ -754,7 +754,7 @@
 					"sample_player::amp_6" : [ 1.245902 ],
 					"sample_player::amp_7" : [ 1.245902 ],
 					"sample_player::amp_8" : [ 1.180328 ],
-					"video_input::u672069430" : [ -1 ],
+					"video_input::u023068512" : [  ],
 					"effects::res::freq" : [ 100.0 ],
 					"effects::res::inharm" : [ 0.4 ],
 					"effects::res::amount" : [ 0.0 ],
@@ -789,6 +789,7 @@
 					"tuning::loop_start::length" : [  ],
 					"spatialization::scissor_rows" : [ 2 ],
 					"spatialization::scissor_columns" : [ 4 ],
+					"spatialization::threshold" : [ 0.69 ],
 					"spatialization::speaker_locations::src_1_a" : [ -168.574875 ],
 					"spatialization::speaker_locations::src_1_e" : [ 0.0 ],
 					"spatialization::speaker_locations::src_1_d" : [ 0.942173 ],
@@ -812,8 +813,7 @@
 					"spatialization::speaker_locations::src_7_d" : [ 0.934491 ],
 					"spatialization::speaker_locations::src_8_a" : [ 31.112816 ],
 					"spatialization::speaker_locations::src_8_e" : [ 0.0 ],
-					"spatialization::speaker_locations::src_8_d" : [ 0.938157 ],
-					"spatialization::threshold" : [ 0.69 ]
+					"spatialization::speaker_locations::src_8_d" : [ 0.938157 ]
 				}
 
 			}
@@ -856,7 +856,7 @@
 					"sample_player::amp_6" : [ 1.114754 ],
 					"sample_player::amp_7" : [ 1.04918 ],
 					"sample_player::amp_8" : [ 1.081967 ],
-					"video_input::u672069430" : [  ],
+					"video_input::u023068512" : [  ],
 					"effects::res::freq" : [ 100.0 ],
 					"effects::res::inharm" : [ 0.4 ],
 					"effects::res::amount" : [ 0.141478 ],
@@ -891,6 +891,7 @@
 					"tuning::loop_start::length" : [  ],
 					"spatialization::scissor_rows" : [ 4 ],
 					"spatialization::scissor_columns" : [ 2 ],
+					"spatialization::threshold" : [  ],
 					"spatialization::speaker_locations::src_1_a" : [ -157.5 ],
 					"spatialization::speaker_locations::src_1_e" : [ 0.0 ],
 					"spatialization::speaker_locations::src_1_d" : [ 0.65 ],
@@ -914,8 +915,7 @@
 					"spatialization::speaker_locations::src_7_d" : [ 0.709493 ],
 					"spatialization::speaker_locations::src_8_a" : [ 21.395898 ],
 					"spatialization::speaker_locations::src_8_e" : [ 0.0 ],
-					"spatialization::speaker_locations::src_8_d" : [ 0.715897 ],
-					"spatialization::threshold" : [  ]
+					"spatialization::speaker_locations::src_8_d" : [ 0.715897 ]
 				}
 
 			}
@@ -958,7 +958,7 @@
 					"sample_player::amp_6" : [ 1.016393 ],
 					"sample_player::amp_7" : [ 0.852459 ],
 					"sample_player::amp_8" : [ 0.852459 ],
-					"video_input::u672069430" : [  ],
+					"video_input::u023068512" : [  ],
 					"effects::res::freq" : [ 100.0 ],
 					"effects::res::inharm" : [ 0.4 ],
 					"effects::res::amount" : [ 0.141478 ],
@@ -993,6 +993,7 @@
 					"tuning::loop_start::length" : [  ],
 					"spatialization::scissor_rows" : [ 1 ],
 					"spatialization::scissor_columns" : [ 8 ],
+					"spatialization::threshold" : [  ],
 					"spatialization::speaker_locations::src_1_a" : [ -157.5 ],
 					"spatialization::speaker_locations::src_1_e" : [ 0.0 ],
 					"spatialization::speaker_locations::src_1_d" : [ 0.65 ],
@@ -1016,8 +1017,7 @@
 					"spatialization::speaker_locations::src_7_d" : [ 0.65 ],
 					"spatialization::speaker_locations::src_8_a" : [ 157.5 ],
 					"spatialization::speaker_locations::src_8_e" : [ 0.0 ],
-					"spatialization::speaker_locations::src_8_d" : [ 0.65 ],
-					"spatialization::threshold" : [  ]
+					"spatialization::speaker_locations::src_8_d" : [ 0.65 ]
 				}
 
 			}
@@ -1060,7 +1060,7 @@
 					"sample_player::amp_6" : [ 1.180328 ],
 					"sample_player::amp_7" : [ 1.147541 ],
 					"sample_player::amp_8" : [ 1.114754 ],
-					"video_input::u672069430" : [ -1 ],
+					"video_input::u023068512" : [  ],
 					"effects::res::freq" : [ 100.0 ],
 					"effects::res::inharm" : [ 0.4 ],
 					"effects::res::amount" : [ 0.02734 ],
@@ -1095,6 +1095,7 @@
 					"tuning::loop_start::length" : [  ],
 					"spatialization::scissor_rows" : [ 2 ],
 					"spatialization::scissor_columns" : [ 4 ],
+					"spatialization::threshold" : [ -0.01 ],
 					"spatialization::speaker_locations::src_1_a" : [ -142.827591 ],
 					"spatialization::speaker_locations::src_1_e" : [ 0.0 ],
 					"spatialization::speaker_locations::src_1_d" : [ 1.031183 ],
@@ -1118,8 +1119,7 @@
 					"spatialization::speaker_locations::src_7_d" : [ 0.91416 ],
 					"spatialization::speaker_locations::src_8_a" : [ 33.871794 ],
 					"spatialization::speaker_locations::src_8_e" : [ 0.0 ],
-					"spatialization::speaker_locations::src_8_d" : [ 1.009903 ],
-					"spatialization::threshold" : [ -0.01 ]
+					"spatialization::speaker_locations::src_8_d" : [ 1.009903 ]
 				}
 
 			}
@@ -1162,7 +1162,7 @@
 					"sample_player::amp_6" : [ 1.180328 ],
 					"sample_player::amp_7" : [ 1.147541 ],
 					"sample_player::amp_8" : [ 1.147541 ],
-					"video_input::u672069430" : [  ],
+					"video_input::u023068512" : [  ],
 					"effects::res::freq" : [ 100.0 ],
 					"effects::res::inharm" : [ 0.4 ],
 					"effects::res::amount" : [ 0.02734 ],
@@ -1197,6 +1197,7 @@
 					"tuning::loop_start::length" : [  ],
 					"spatialization::scissor_rows" : [ 2 ],
 					"spatialization::scissor_columns" : [ 4 ],
+					"spatialization::threshold" : [  ],
 					"spatialization::speaker_locations::src_1_a" : [ -142.827591 ],
 					"spatialization::speaker_locations::src_1_e" : [ 0.0 ],
 					"spatialization::speaker_locations::src_1_d" : [ 1.031183 ],
@@ -1220,8 +1221,7 @@
 					"spatialization::speaker_locations::src_7_d" : [ 0.91416 ],
 					"spatialization::speaker_locations::src_8_a" : [ 33.871794 ],
 					"spatialization::speaker_locations::src_8_e" : [ 0.0 ],
-					"spatialization::speaker_locations::src_8_d" : [ 1.009903 ],
-					"spatialization::threshold" : [  ]
+					"spatialization::speaker_locations::src_8_d" : [ 1.009903 ]
 				}
 
 			}
@@ -1264,7 +1264,7 @@
 					"sample_player::amp_6" : [ 1.180328 ],
 					"sample_player::amp_7" : [ 1.147541 ],
 					"sample_player::amp_8" : [ 1.147541 ],
-					"video_input::u672069430" : [ -1 ],
+					"video_input::u023068512" : [  ],
 					"effects::res::freq" : [ 100.0 ],
 					"effects::res::inharm" : [ 0.4 ],
 					"effects::res::amount" : [ 0.02734 ],
@@ -1299,6 +1299,7 @@
 					"tuning::loop_start::length" : [  ],
 					"spatialization::scissor_rows" : [ 2 ],
 					"spatialization::scissor_columns" : [ 4 ],
+					"spatialization::threshold" : [ 0.26 ],
 					"spatialization::speaker_locations::src_1_a" : [ -142.827591 ],
 					"spatialization::speaker_locations::src_1_e" : [ 0.0 ],
 					"spatialization::speaker_locations::src_1_d" : [ 1.031183 ],
@@ -1322,8 +1323,109 @@
 					"spatialization::speaker_locations::src_7_d" : [ 0.91416 ],
 					"spatialization::speaker_locations::src_8_a" : [ 33.871794 ],
 					"spatialization::speaker_locations::src_8_e" : [ 0.0 ],
-					"spatialization::speaker_locations::src_8_d" : [ 1.009903 ],
-					"spatialization::threshold" : [ 0.26 ]
+					"spatialization::speaker_locations::src_8_d" : [ 1.009903 ]
+				}
+
+			}
+,
+			"14" : 			{
+				"id" : 14,
+				"name" : "floor-magnitude-ghosting",
+				"data" : 				{
+					"drywet" : [ 1.0 ],
+					"bypass" : [ 1.0 ],
+					"sample_player::filename_1" : [ "magnitude6-1" ],
+					"sample_player::filename_2" : [ "magnitude6-2" ],
+					"sample_player::filename_3" : [ "magnitude6-1" ],
+					"sample_player::filename_4" : [ "magnitude6-2" ],
+					"sample_player::filename_5" : [ "magnitude6-1" ],
+					"sample_player::filename_6" : [ "magnitude6-2" ],
+					"sample_player::filename_7" : [ "magnitude6-1" ],
+					"sample_player::filename_8" : [ "magnitude6-2" ],
+					"sample_player::spd_1" : [ 1.2 ],
+					"sample_player::spd_2" : [ 0.6 ],
+					"sample_player::spd_3" : [ 0.9 ],
+					"sample_player::spd_4" : [ 0.3 ],
+					"sample_player::spd_5" : [ 0.3 ],
+					"sample_player::spd_6" : [ 0.9 ],
+					"sample_player::spd_7" : [ 0.6 ],
+					"sample_player::spd_8" : [ 1.2 ],
+					"sample_player::reg_1" : [ 0.757163, 0.869705 ],
+					"sample_player::reg_2" : [ 0.453209, 0.735489 ],
+					"sample_player::reg_3" : [ 0.305584, 0.631991 ],
+					"sample_player::reg_4" : [ 0.0, 0.419539 ],
+					"sample_player::reg_5" : [ 0.151781, 0.478188 ],
+					"sample_player::reg_6" : [ 0.600835, 0.735489 ],
+					"sample_player::reg_7" : [ 0.649014, 0.735489 ],
+					"sample_player::reg_8" : [ 0.430973, 0.735489 ],
+					"sample_player::amp_1" : [ 1.147541 ],
+					"sample_player::amp_2" : [ 1.147541 ],
+					"sample_player::amp_3" : [ 1.114754 ],
+					"sample_player::amp_4" : [ 1.147541 ],
+					"sample_player::amp_5" : [ 1.114754 ],
+					"sample_player::amp_6" : [ 1.180328 ],
+					"sample_player::amp_7" : [ 1.147541 ],
+					"sample_player::amp_8" : [ 1.147541 ],
+					"video_input::u023068512" : [ -1 ],
+					"effects::res::freq" : [ 100.0 ],
+					"effects::res::inharm" : [ 0.4 ],
+					"effects::res::amount" : [ 0.02734 ],
+					"effects::res::brilliance" : [ 0.5 ],
+					"effects::res::harm_decay" : [ 0.42 ],
+					"effects::res::decay" : [ 0.0 ],
+					"effects::res::gain" : [ 49 ],
+					"effects::reverb::amount" : [ 0.822129 ],
+					"effects::reverb::room_size" : [ 152.304077 ],
+					"effects::reverb::time" : [ 11.0 ],
+					"effects::reverb::spread" : [ 23.0 ],
+					"effects::reverb::damping" : [ 0.7 ],
+					"effects::reverb::bandwidth" : [ 0.5 ],
+					"effects::reverb::dry" : [ 1.0 ],
+					"effects::reverb::early" : [ 0.25 ],
+					"effects::reverb::tail" : [ 0.66873 ],
+					"tuning::series::process" : [  ],
+					"tuning::series::length" : [  ],
+					"tuning::series::mult" : [  ],
+					"tuning::series::direction" : [  ],
+					"tuning::series::offset" : [  ],
+					"tuning::series::add" : [  ],
+					"tuning::series::scale" : [  ],
+					"tuning::loop_range::len" : [  ],
+					"tuning::loop_range::range" : [  ],
+					"tuning::speed_tuning::tuning" : [  ],
+					"tuning::speed_tuning::scale" : [  ],
+					"tuning::speed_tuning::direction" : [  ],
+					"tuning::speed_tuning::length" : [  ],
+					"tuning::speed_tuning::range" : [  ],
+					"tuning::loop_start::start" : [  ],
+					"tuning::loop_start::length" : [  ],
+					"spatialization::scissor_rows" : [ 2 ],
+					"spatialization::scissor_columns" : [ 4 ],
+					"spatialization::threshold" : [ 0.76 ],
+					"spatialization::speaker_locations::src_1_a" : [ -142.827591 ],
+					"spatialization::speaker_locations::src_1_e" : [ 0.0 ],
+					"spatialization::speaker_locations::src_1_d" : [ 1.031183 ],
+					"spatialization::speaker_locations::src_2_a" : [ -110.884377 ],
+					"spatialization::speaker_locations::src_2_e" : [ 0.0 ],
+					"spatialization::speaker_locations::src_2_d" : [ 0.961998 ],
+					"spatialization::speaker_locations::src_3_a" : [ -72.968361 ],
+					"spatialization::speaker_locations::src_3_e" : [ 0.0 ],
+					"spatialization::speaker_locations::src_3_d" : [ 0.956442 ],
+					"spatialization::speaker_locations::src_4_a" : [ -31.654559 ],
+					"spatialization::speaker_locations::src_4_e" : [ 0.0 ],
+					"spatialization::speaker_locations::src_4_d" : [ 1.006009 ],
+					"spatialization::speaker_locations::src_5_a" : [ 147.200463 ],
+					"spatialization::speaker_locations::src_5_e" : [ 0.0 ],
+					"spatialization::speaker_locations::src_5_d" : [ 0.997548 ],
+					"spatialization::speaker_locations::src_6_a" : [ 108.202187 ],
+					"spatialization::speaker_locations::src_6_e" : [ 0.0 ],
+					"spatialization::speaker_locations::src_6_d" : [ 0.962667 ],
+					"spatialization::speaker_locations::src_7_a" : [ 68.697517 ],
+					"spatialization::speaker_locations::src_7_e" : [ 0.0 ],
+					"spatialization::speaker_locations::src_7_d" : [ 0.91416 ],
+					"spatialization::speaker_locations::src_8_a" : [ 33.871794 ],
+					"spatialization::speaker_locations::src_8_e" : [ 0.0 ],
+					"spatialization::speaker_locations::src_8_d" : [ 1.009903 ]
 				}
 
 			}
