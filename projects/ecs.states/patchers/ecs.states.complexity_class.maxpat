@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 696.0, 119.0, 1235.0, 1248.0 ],
+		"rect" : [ 511.0, 383.0, 1235.0, 1248.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,12 +39,11 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-69",
-					"linecount" : 4,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1132.0, 1642.0, 50.0, 62.0 ],
+					"patching_rect" : [ 1132.0, 1642.0, 157.0, 22.0 ],
 					"style" : "",
 					"text" : "input 0. 0. 0. 0. 0. 0. 0. 0. 0."
 				}
