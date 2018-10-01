@@ -25,275 +25,13 @@
 					"scrim-sim-enable" : [ 0 ],
 					"scrim-sim-preset" : [ 2 ],
 					"scrim-vis-preset" : [ 10 ],
-					"videohub-routing-enable" : [  ],
-					"dest-control20x20::matrix-ctrl" : [  ]
+					"floor-camera-opacity" : [  ]
 				}
 
 			}
 ,
 			"2" : 			{
 				"id" : 2,
-				"name" : "Migration",
-				"data" : 				{
-					"cloudsynth-preset" : [ 0 ],
-					"floor-filterbanks-preset" : [ 3 ],
-					"floor-filterbanks-volume" : [ 0 ],
-					"floor-movie-city-opacity" : [ 0 ],
-					"floor-movie-clouds-opacity" : [ 0 ],
-					"floor-movie-water-opacity" : [ 0 ],
-					"floor-sim-enable" : [ 0 ],
-					"floor-sim-opacity" : [ 0 ],
-					"floor-sim-preset" : [ 5 ],
-					"floor-vis-preset" : [ 9 ],
-					"lights-booth" : [ 0 ],
-					"lights-intensity" : [ 0 ],
-					"lights-rgb" : [  ],
-					"lights-scoops" : [  ],
-					"scrim-filterbanks-preset" : [ 3 ],
-					"scrim-filterbanks-volume" : [ 0 ],
-					"scrim-sim-enable" : [ 0 ],
-					"scrim-sim-preset" : [ 2 ],
-					"scrim-vis-preset" : [ 10 ],
-					"videohub-routing-enable" : [  ],
-					"dest-control20x20::matrix-ctrl" : [  ]
-				}
-
-			}
-,
-			"3" : 			{
-				"id" : 3,
-				"name" : "Serra night",
-				"data" : 				{
-					"cloudsynth-preset" : [ 0 ],
-					"floor-filterbanks-preset" : [ 3 ],
-					"floor-filterbanks-volume" : [ 0 ],
-					"floor-movie-city-opacity" : [ 0 ],
-					"floor-movie-clouds-opacity" : [ 0 ],
-					"floor-movie-water-opacity" : [ 0 ],
-					"floor-sim-enable" : [ 0 ],
-					"floor-sim-opacity" : [ 0 ],
-					"floor-sim-preset" : [ 5 ],
-					"floor-vis-preset" : [ 9 ],
-					"lights-booth" : [ 0 ],
-					"lights-intensity" : [ 0 ],
-					"lights-rgb" : [  ],
-					"lights-scoops" : [  ],
-					"scrim-filterbanks-preset" : [ 3 ],
-					"scrim-filterbanks-volume" : [ 0 ],
-					"scrim-sim-enable" : [ 0 ],
-					"scrim-sim-preset" : [ 2 ],
-					"scrim-vis-preset" : [ 10 ],
-					"videohub-routing-enable" : [  ],
-					"dest-control20x20::matrix-ctrl" : [  ]
-				}
-
-			}
-,
-			"4" : 			{
-				"id" : 4,
-				"name" : "Serra day",
-				"data" : 				{
-					"cloudsynth-preset" : [ 0 ],
-					"floor-filterbanks-preset" : [ 3 ],
-					"floor-filterbanks-volume" : [ 0 ],
-					"floor-movie-city-opacity" : [ 0 ],
-					"floor-movie-clouds-opacity" : [ 0 ],
-					"floor-movie-water-opacity" : [ 0 ],
-					"floor-sim-enable" : [ 0 ],
-					"floor-sim-opacity" : [ 0 ],
-					"floor-sim-preset" : [ 5 ],
-					"floor-vis-preset" : [ 9 ],
-					"lights-booth" : [ 0 ],
-					"lights-intensity" : [ 0 ],
-					"lights-rgb" : [  ],
-					"lights-scoops" : [  ],
-					"scrim-filterbanks-preset" : [ 3 ],
-					"scrim-filterbanks-volume" : [ 0 ],
-					"scrim-sim-enable" : [ 0 ],
-					"scrim-sim-preset" : [ 2 ],
-					"scrim-vis-preset" : [ 10 ],
-					"videohub-routing-enable" : [  ],
-					"dest-control20x20::matrix-ctrl" : [  ]
-				}
-
-			}
-,
-			"5" : 			{
-				"id" : 5,
-				"name" : "ex4 Vectors",
-				"data" : 				{
-					"cloudsynth-preset" : [ 0 ],
-					"floor-filterbanks-preset" : [ 6 ],
-					"floor-filterbanks-volume" : [ 0 ],
-					"floor-movie-city-opacity" : [ 0 ],
-					"floor-movie-clouds-opacity" : [ 0 ],
-					"floor-movie-water-opacity" : [ 0 ],
-					"floor-sim-enable" : [ 0 ],
-					"floor-sim-opacity" : [ 0 ],
-					"floor-sim-preset" : [ 5 ],
-					"floor-vis-preset" : [ 9 ],
-					"lights-booth" : [ 0 ],
-					"lights-intensity" : [ 0 ],
-					"lights-rgb" : [  ],
-					"lights-scoops" : [  ],
-					"scrim-filterbanks-preset" : [ 3 ],
-					"scrim-filterbanks-volume" : [ 0 ],
-					"scrim-sim-enable" : [ 0 ],
-					"scrim-sim-preset" : [ 2 ],
-					"scrim-vis-preset" : [ 10 ],
-					"videohub-routing-enable" : [  ],
-					"dest-control20x20::matrix-ctrl" : [  ]
-				}
-
-			}
-,
-			"6" : 			{
-				"id" : 6,
-				"name" : "ex4 Fluids",
-				"data" : 				{
-					"cloudsynth-preset" : [ 0 ],
-					"floor-filterbanks-preset" : [ 8 ],
-					"floor-filterbanks-volume" : [ 0 ],
-					"floor-movie-city-opacity" : [ 0 ],
-					"floor-movie-clouds-opacity" : [ 0 ],
-					"floor-movie-water-opacity" : [ 0 ],
-					"floor-sim-enable" : [ 0 ],
-					"floor-sim-opacity" : [ 0 ],
-					"floor-sim-preset" : [ 5 ],
-					"floor-vis-preset" : [ 9 ],
-					"lights-booth" : [ 0 ],
-					"lights-intensity" : [ 0 ],
-					"lights-rgb" : [  ],
-					"lights-scoops" : [  ],
-					"scrim-filterbanks-preset" : [ 3 ],
-					"scrim-filterbanks-volume" : [ 0 ],
-					"scrim-sim-enable" : [ 0 ],
-					"scrim-sim-preset" : [ 2 ],
-					"scrim-vis-preset" : [ 10 ],
-					"videohub-routing-enable" : [  ],
-					"dest-control20x20::matrix-ctrl" : [  ]
-				}
-
-			}
-,
-			"7" : 			{
-				"id" : 7,
-				"name" : "ex4 Charged bodies",
-				"data" : 				{
-					"cloudsynth-preset" : [ 0 ],
-					"floor-filterbanks-preset" : [ 8 ],
-					"floor-filterbanks-volume" : [ 0 ],
-					"floor-movie-city-opacity" : [ 0 ],
-					"floor-movie-clouds-opacity" : [ 0 ],
-					"floor-movie-water-opacity" : [ 0 ],
-					"floor-sim-enable" : [ 0 ],
-					"floor-sim-opacity" : [ 0 ],
-					"floor-sim-preset" : [ 5 ],
-					"floor-vis-preset" : [ 9 ],
-					"lights-booth" : [ 0 ],
-					"lights-intensity" : [ 0 ],
-					"lights-rgb" : [  ],
-					"lights-scoops" : [  ],
-					"scrim-filterbanks-preset" : [ 3 ],
-					"scrim-filterbanks-volume" : [ 0 ],
-					"scrim-sim-enable" : [ 0 ],
-					"scrim-sim-preset" : [ 2 ],
-					"scrim-vis-preset" : [ 10 ],
-					"videohub-routing-enable" : [  ],
-					"dest-control20x20::matrix-ctrl" : [  ]
-				}
-
-			}
-,
-			"8" : 			{
-				"id" : 8,
-				"name" : "ex4 Freezing",
-				"data" : 				{
-					"cloudsynth-preset" : [ 0 ],
-					"floor-filterbanks-preset" : [ 7 ],
-					"floor-filterbanks-volume" : [ 0 ],
-					"floor-movie-city-opacity" : [ 0 ],
-					"floor-movie-clouds-opacity" : [ 0 ],
-					"floor-movie-water-opacity" : [ 0 ],
-					"floor-sim-enable" : [ 0 ],
-					"floor-sim-opacity" : [ 0 ],
-					"floor-sim-preset" : [ 5 ],
-					"floor-vis-preset" : [ 9 ],
-					"lights-booth" : [ 0 ],
-					"lights-intensity" : [ 0 ],
-					"lights-rgb" : [  ],
-					"lights-scoops" : [  ],
-					"scrim-filterbanks-preset" : [ 3 ],
-					"scrim-filterbanks-volume" : [ 0 ],
-					"scrim-sim-enable" : [ 0 ],
-					"scrim-sim-preset" : [ 2 ],
-					"scrim-vis-preset" : [ 10 ],
-					"videohub-routing-enable" : [  ],
-					"dest-control20x20::matrix-ctrl" : [  ]
-				}
-
-			}
-,
-			"9" : 			{
-				"id" : 9,
-				"name" : "ex4 scatter gather",
-				"data" : 				{
-					"cloudsynth-preset" : [ 0 ],
-					"floor-filterbanks-preset" : [ 9 ],
-					"floor-filterbanks-volume" : [ 0 ],
-					"floor-movie-city-opacity" : [ 0 ],
-					"floor-movie-clouds-opacity" : [ 0 ],
-					"floor-movie-water-opacity" : [ 0 ],
-					"floor-sim-enable" : [ 0 ],
-					"floor-sim-opacity" : [ 0 ],
-					"floor-sim-preset" : [ 5 ],
-					"floor-vis-preset" : [ 9 ],
-					"lights-booth" : [ 0 ],
-					"lights-intensity" : [ 0 ],
-					"lights-rgb" : [  ],
-					"lights-scoops" : [  ],
-					"scrim-filterbanks-preset" : [ 3 ],
-					"scrim-filterbanks-volume" : [ 0 ],
-					"scrim-sim-enable" : [ 0 ],
-					"scrim-sim-preset" : [ 2 ],
-					"scrim-vis-preset" : [ 10 ],
-					"videohub-routing-enable" : [  ],
-					"dest-control20x20::matrix-ctrl" : [  ]
-				}
-
-			}
-,
-			"10" : 			{
-				"id" : 10,
-				"name" : "ex4 River Vectors",
-				"data" : 				{
-					"cloudsynth-preset" : [ 0 ],
-					"floor-filterbanks-preset" : [ 6 ],
-					"floor-filterbanks-volume" : [ 0 ],
-					"floor-movie-city-opacity" : [ 0 ],
-					"floor-movie-clouds-opacity" : [ 0 ],
-					"floor-movie-water-opacity" : [ 0 ],
-					"floor-sim-enable" : [ 0 ],
-					"floor-sim-opacity" : [ 0 ],
-					"floor-sim-preset" : [ 5 ],
-					"floor-vis-preset" : [ 9 ],
-					"lights-booth" : [ 0 ],
-					"lights-intensity" : [ 0 ],
-					"lights-rgb" : [  ],
-					"lights-scoops" : [  ],
-					"scrim-filterbanks-preset" : [ 3 ],
-					"scrim-filterbanks-volume" : [ 0 ],
-					"scrim-sim-enable" : [ 0 ],
-					"scrim-sim-preset" : [ 2 ],
-					"scrim-vis-preset" : [ 12 ],
-					"videohub-routing-enable" : [  ],
-					"dest-control20x20::matrix-ctrl" : [  ]
-				}
-
-			}
-,
-			"11" : 			{
-				"id" : 11,
 				"name" : "EMA clouds",
 				"data" : 				{
 					"cloudsynth-preset" : [ 0 ],
@@ -315,14 +53,13 @@
 					"scrim-sim-enable" : [ 1 ],
 					"scrim-sim-preset" : [ 10 ],
 					"scrim-vis-preset" : [ 17 ],
-					"videohub-routing-enable" : [  ],
-					"dest-control20x20::matrix-ctrl" : [  ]
+					"floor-camera-opacity" : [  ]
 				}
 
 			}
 ,
-			"12" : 			{
-				"id" : 12,
+			"3" : 			{
+				"id" : 3,
 				"name" : "EMA pressure",
 				"data" : 				{
 					"cloudsynth-preset" : [ 0 ],
@@ -344,14 +81,13 @@
 					"scrim-sim-enable" : [ 1 ],
 					"scrim-sim-preset" : [ 0 ],
 					"scrim-vis-preset" : [ 3 ],
-					"videohub-routing-enable" : [  ],
-					"dest-control20x20::matrix-ctrl" : [  ]
+					"floor-camera-opacity" : [  ]
 				}
 
 			}
 ,
-			"13" : 			{
-				"id" : 13,
+			"4" : 			{
+				"id" : 4,
 				"name" : "EMA velocity flow field",
 				"data" : 				{
 					"cloudsynth-preset" : [ 1 ],
@@ -373,14 +109,13 @@
 					"scrim-sim-enable" : [ 1 ],
 					"scrim-sim-preset" : [ 0 ],
 					"scrim-vis-preset" : [ 1 ],
-					"videohub-routing-enable" : [  ],
-					"dest-control20x20::matrix-ctrl" : [  ]
+					"floor-camera-opacity" : [  ]
 				}
 
 			}
 ,
-			"14" : 			{
-				"id" : 14,
+			"5" : 			{
+				"id" : 5,
 				"name" : "EMA velocity image",
 				"data" : 				{
 					"cloudsynth-preset" : [ 0 ],
@@ -402,14 +137,13 @@
 					"scrim-sim-enable" : [ 1 ],
 					"scrim-sim-preset" : [ 10 ],
 					"scrim-vis-preset" : [ 2 ],
-					"videohub-routing-enable" : [  ],
-					"dest-control20x20::matrix-ctrl" : [  ]
+					"floor-camera-opacity" : [  ]
 				}
 
 			}
 ,
-			"15" : 			{
-				"id" : 15,
+			"6" : 			{
+				"id" : 6,
 				"name" : "Movie - Clouds",
 				"data" : 				{
 					"cloudsynth-preset" : [ 0 ],
@@ -431,14 +165,13 @@
 					"scrim-sim-enable" : [ 0 ],
 					"scrim-sim-preset" : [ 5 ],
 					"scrim-vis-preset" : [ 10 ],
-					"videohub-routing-enable" : [  ],
-					"dest-control20x20::matrix-ctrl" : [  ]
+					"floor-camera-opacity" : [  ]
 				}
 
 			}
 ,
-			"16" : 			{
-				"id" : 16,
+			"7" : 			{
+				"id" : 7,
 				"name" : "Movie - Water",
 				"data" : 				{
 					"cloudsynth-preset" : [ 0 ],
@@ -460,14 +193,13 @@
 					"scrim-sim-enable" : [ 1 ],
 					"scrim-sim-preset" : [ 2 ],
 					"scrim-vis-preset" : [ 10 ],
-					"videohub-routing-enable" : [  ],
-					"dest-control20x20::matrix-ctrl" : [  ]
+					"floor-camera-opacity" : [  ]
 				}
 
 			}
 ,
-			"17" : 			{
-				"id" : 17,
+			"8" : 			{
+				"id" : 8,
 				"name" : "Movie - City",
 				"data" : 				{
 					"cloudsynth-preset" : [ 0 ],
@@ -489,14 +221,13 @@
 					"scrim-sim-enable" : [ 1 ],
 					"scrim-sim-preset" : [ 5 ],
 					"scrim-vis-preset" : [ 10 ],
-					"videohub-routing-enable" : [  ],
-					"dest-control20x20::matrix-ctrl" : [  ]
+					"floor-camera-opacity" : [  ]
 				}
 
 			}
 ,
-			"18" : 			{
-				"id" : 18,
+			"9" : 			{
+				"id" : 9,
 				"name" : "EMA velocity ghosting",
 				"data" : 				{
 					"cloudsynth-preset" : [ 0 ],
@@ -518,14 +249,13 @@
 					"scrim-sim-enable" : [ 1 ],
 					"scrim-sim-preset" : [ 2 ],
 					"scrim-vis-preset" : [ 11 ],
-					"videohub-routing-enable" : [  ],
-					"dest-control20x20::matrix-ctrl" : [  ]
+					"floor-camera-opacity" : [  ]
 				}
 
 			}
 ,
-			"19" : 			{
-				"id" : 19,
+			"10" : 			{
+				"id" : 10,
 				"name" : "EMA pressure cubehelix",
 				"data" : 				{
 					"cloudsynth-preset" : [ 0 ],
@@ -547,14 +277,13 @@
 					"scrim-sim-enable" : [ 1 ],
 					"scrim-sim-preset" : [ 10 ],
 					"scrim-vis-preset" : [ 15 ],
-					"videohub-routing-enable" : [  ],
-					"dest-control20x20::matrix-ctrl" : [  ]
+					"floor-camera-opacity" : [  ]
 				}
 
 			}
 ,
-			"20" : 			{
-				"id" : 20,
+			"11" : 			{
+				"id" : 11,
 				"name" : "EMA Life Energy - Tables - 1 - Clouds",
 				"data" : 				{
 					"cloudsynth-preset" : [ 0 ],
@@ -576,43 +305,13 @@
 					"scrim-sim-enable" : [ 1 ],
 					"scrim-sim-preset" : [ 2 ],
 					"scrim-vis-preset" : [ 10 ],
-					"videohub-routing-enable" : [  ],
-					"dest-control20x20::matrix-ctrl" : [  ]
+					"floor-camera-opacity" : [  ]
 				}
 
 			}
 ,
-			"21" : 			{
-				"id" : 21,
-				"name" : "EMA Life Energy - Tables - 2 - Clouds Vorticity",
-				"data" : 				{
-					"cloudsynth-preset" : [ 0 ],
-					"floor-filterbanks-preset" : [ 2 ],
-					"floor-filterbanks-volume" : [ 0.75 ],
-					"floor-movie-city-opacity" : [ 0.0 ],
-					"floor-movie-clouds-opacity" : [ 0.0 ],
-					"floor-movie-water-opacity" : [ 0.0 ],
-					"floor-sim-enable" : [ 1 ],
-					"floor-sim-opacity" : [ 1.0 ],
-					"floor-sim-preset" : [ 14 ],
-					"floor-vis-preset" : [ 18 ],
-					"lights-booth" : [ 0 ],
-					"lights-intensity" : [ 0 ],
-					"lights-rgb" : [  ],
-					"lights-scoops" : [  ],
-					"scrim-filterbanks-preset" : [ 3 ],
-					"scrim-filterbanks-volume" : [ 0.0 ],
-					"scrim-sim-enable" : [ 1 ],
-					"scrim-sim-preset" : [ 2 ],
-					"scrim-vis-preset" : [ 10 ],
-					"videohub-routing-enable" : [  ],
-					"dest-control20x20::matrix-ctrl" : [  ]
-				}
-
-			}
-,
-			"22" : 			{
-				"id" : 22,
+			"12" : 			{
+				"id" : 12,
 				"name" : "EMA Life Energy - Tables - 3 - Clouds Above",
 				"data" : 				{
 					"cloudsynth-preset" : [ 0 ],
@@ -634,14 +333,13 @@
 					"scrim-sim-enable" : [ 1 ],
 					"scrim-sim-preset" : [ 2 ],
 					"scrim-vis-preset" : [ 10 ],
-					"videohub-routing-enable" : [  ],
-					"dest-control20x20::matrix-ctrl" : [  ]
+					"floor-camera-opacity" : [  ]
 				}
 
 			}
 ,
-			"23" : 			{
-				"id" : 23,
+			"13" : 			{
+				"id" : 13,
 				"name" : "EMA Life Energy - Tables - 4 - Pressure",
 				"data" : 				{
 					"cloudsynth-preset" : [ 0 ],
@@ -663,14 +361,13 @@
 					"scrim-sim-enable" : [ 1 ],
 					"scrim-sim-preset" : [ 2 ],
 					"scrim-vis-preset" : [ 10 ],
-					"videohub-routing-enable" : [  ],
-					"dest-control20x20::matrix-ctrl" : [  ]
+					"floor-camera-opacity" : [  ]
 				}
 
 			}
 ,
-			"24" : 			{
-				"id" : 24,
+			"14" : 			{
+				"id" : 14,
 				"name" : "EMA Life Energy - Floor - 2 - Particles Clouds",
 				"data" : 				{
 					"cloudsynth-preset" : [ 0 ],
@@ -692,14 +389,13 @@
 					"scrim-sim-enable" : [ 1 ],
 					"scrim-sim-preset" : [ 10 ],
 					"scrim-vis-preset" : [ 1 ],
-					"videohub-routing-enable" : [  ],
-					"dest-control20x20::matrix-ctrl" : [  ]
+					"floor-camera-opacity" : [  ]
 				}
 
 			}
 ,
-			"25" : 			{
-				"id" : 25,
+			"15" : 			{
+				"id" : 15,
 				"name" : "EMA Life Energy - Floor - 3 - Velocity",
 				"data" : 				{
 					"cloudsynth-preset" : [ 0 ],
@@ -721,14 +417,13 @@
 					"scrim-sim-enable" : [ 1 ],
 					"scrim-sim-preset" : [ 2 ],
 					"scrim-vis-preset" : [ 10 ],
-					"videohub-routing-enable" : [  ],
-					"dest-control20x20::matrix-ctrl" : [  ]
+					"floor-camera-opacity" : [  ]
 				}
 
 			}
 ,
-			"26" : 			{
-				"id" : 26,
+			"16" : 			{
+				"id" : 16,
 				"name" : "EMA Life Energy - Floor - 4 - Pressure Map",
 				"data" : 				{
 					"cloudsynth-preset" : [ 0 ],
@@ -750,14 +445,13 @@
 					"scrim-sim-enable" : [ 1 ],
 					"scrim-sim-preset" : [ 2 ],
 					"scrim-vis-preset" : [ 10 ],
-					"videohub-routing-enable" : [  ],
-					"dest-control20x20::matrix-ctrl" : [  ]
+					"floor-camera-opacity" : [  ]
 				}
 
 			}
 ,
-			"27" : 			{
-				"id" : 27,
+			"17" : 			{
+				"id" : 17,
 				"name" : "EMA Life Energy - Floor - 4 - Ghosting",
 				"data" : 				{
 					"cloudsynth-preset" : [ 0 ],
@@ -779,43 +473,41 @@
 					"scrim-sim-enable" : [ 1 ],
 					"scrim-sim-preset" : [ 2 ],
 					"scrim-vis-preset" : [ 10 ],
-					"videohub-routing-enable" : [  ],
-					"dest-control20x20::matrix-ctrl" : [  ]
+					"floor-camera-opacity" : [  ]
 				}
 
 			}
 ,
-			"28" : 			{
-				"id" : 28,
+			"18" : 			{
+				"id" : 18,
 				"name" : "Camera",
 				"data" : 				{
 					"cloudsynth-preset" : [ 0 ],
 					"floor-filterbanks-preset" : [ 3 ],
-					"floor-filterbanks-volume" : [ 0.75 ],
+					"floor-filterbanks-volume" : [ 0.745575 ],
 					"floor-movie-city-opacity" : [ 0.0 ],
 					"floor-movie-clouds-opacity" : [ 0.0 ],
 					"floor-movie-water-opacity" : [ 0.0 ],
-					"floor-sim-enable" : [ 1 ],
-					"floor-sim-opacity" : [ 1.0 ],
+					"floor-sim-enable" : [ 0 ],
+					"floor-sim-opacity" : [ 0.0 ],
 					"floor-sim-preset" : [ 5 ],
-					"floor-vis-preset" : [ 5 ],
-					"lights-booth" : [ 0 ],
-					"lights-intensity" : [ 0 ],
-					"lights-rgb" : [  ],
-					"lights-scoops" : [  ],
+					"floor-vis-preset" : [ 9 ],
+					"lights-booth" : [ 0.003234 ],
+					"lights-intensity" : [ 0.006067 ],
+					"lights-rgb" : [ 0.006017, 0.005283, 0.00392, 0.006017, 0.000697, 0.006017, 0.004969 ],
+					"lights-scoops" : [ 0.003157 ],
 					"scrim-filterbanks-preset" : [ 3 ],
 					"scrim-filterbanks-volume" : [ 0.0 ],
-					"scrim-sim-enable" : [ 0 ],
-					"scrim-sim-preset" : [ 12 ],
-					"scrim-vis-preset" : [ 5 ],
-					"videohub-routing-enable" : [  ],
-					"dest-control20x20::matrix-ctrl" : [  ]
+					"scrim-sim-enable" : [ 1 ],
+					"scrim-sim-preset" : [ 0 ],
+					"scrim-vis-preset" : [ 2 ],
+					"floor-camera-opacity" : [ 1.0 ]
 				}
 
 			}
 ,
-			"29" : 			{
-				"id" : 29,
+			"19" : 			{
+				"id" : 19,
 				"name" : "Obstacles",
 				"data" : 				{
 					"cloudsynth-preset" : [ 0 ],
@@ -837,66 +529,7 @@
 					"scrim-sim-enable" : [ 1 ],
 					"scrim-sim-preset" : [ 0 ],
 					"scrim-vis-preset" : [ 2 ],
-					"videohub-routing-enable" : [  ],
-					"dest-control20x20::matrix-ctrl" : [  ]
-				}
-
-			}
-,
-			"30" : 			{
-				"id" : 30,
-				"name" : "Optical flow",
-				"data" : 				{
-					"cloudsynth-preset" : [ 0 ],
-					"floor-filterbanks-preset" : [ 11 ],
-					"floor-filterbanks-volume" : [ 0.75 ],
-					"floor-movie-city-opacity" : [ 0.0 ],
-					"floor-movie-clouds-opacity" : [ 0.0 ],
-					"floor-movie-water-opacity" : [ 0.0 ],
-					"floor-sim-enable" : [ 1 ],
-					"floor-sim-opacity" : [ 1.0 ],
-					"floor-sim-preset" : [ 2 ],
-					"floor-vis-preset" : [ 4 ],
-					"lights-booth" : [ 0 ],
-					"lights-intensity" : [ 0 ],
-					"lights-rgb" : [  ],
-					"lights-scoops" : [  ],
-					"scrim-filterbanks-preset" : [ 3 ],
-					"scrim-filterbanks-volume" : [ 0.0 ],
-					"scrim-sim-enable" : [ 1 ],
-					"scrim-sim-preset" : [ 0 ],
-					"scrim-vis-preset" : [ 2 ],
-					"videohub-routing-enable" : [  ],
-					"dest-control20x20::matrix-ctrl" : [  ]
-				}
-
-			}
-,
-			"31" : 			{
-				"id" : 31,
-				"name" : "Clouds abovr",
-				"data" : 				{
-					"cloudsynth-preset" : [ 0 ],
-					"floor-filterbanks-preset" : [ 9 ],
-					"floor-filterbanks-volume" : [ 0.891668 ],
-					"floor-movie-city-opacity" : [ 1.0 ],
-					"floor-movie-clouds-opacity" : [ 0.0 ],
-					"floor-movie-water-opacity" : [ 0.0 ],
-					"floor-sim-enable" : [ 0 ],
-					"floor-sim-opacity" : [ 0.0 ],
-					"floor-sim-preset" : [ 10 ],
-					"floor-vis-preset" : [ 26 ],
-					"lights-booth" : [ 0 ],
-					"lights-intensity" : [ 0 ],
-					"lights-rgb" : [  ],
-					"lights-scoops" : [  ],
-					"scrim-filterbanks-preset" : [ 3 ],
-					"scrim-filterbanks-volume" : [ 0.0 ],
-					"scrim-sim-enable" : [ 0 ],
-					"scrim-sim-preset" : [ 5 ],
-					"scrim-vis-preset" : [ 9 ],
-					"videohub-routing-enable" : [  ],
-					"dest-control20x20::matrix-ctrl" : [  ]
+					"floor-camera-opacity" : [  ]
 				}
 
 			}
