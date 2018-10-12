@@ -8,8 +8,8 @@
 				"data" : 				{
 					"cloudsynth-preset" : [ 0 ],
 					"floor-camera-opacity" : [ 0.0 ],
-					"floor-filterbanks-preset" : [ 3 ],
-					"floor-filterbanks-volume" : [ 0.0 ],
+					"floor-filterbanks-preset" : [ 2 ],
+					"floor-filterbanks-volume" : [ 1.0 ],
 					"floor-movie-city-opacity" : [ 0 ],
 					"floor-movie-clouds-opacity" : [ 0.0 ],
 					"floor-movie-water-opacity" : [ 0 ],
@@ -536,8 +536,8 @@
 				"data" : 				{
 					"cloudsynth-preset" : [ 0 ],
 					"floor-camera-opacity" : [ 0.0 ],
-					"floor-filterbanks-preset" : [ 3 ],
-					"floor-filterbanks-volume" : [ 0.0 ],
+					"floor-filterbanks-preset" : [ 11 ],
+					"floor-filterbanks-volume" : [ 0.803680981595092 ],
 					"floor-movie-city-opacity" : [ 0 ],
 					"floor-movie-clouds-opacity" : [ 0.0 ],
 					"floor-movie-water-opacity" : [ 0 ],
