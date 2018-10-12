@@ -1,6 +1,6 @@
 {
 	"pattrstorage" : 	{
-		"name" : "u594013475",
+		"name" : "u754013487",
 		"slots" : 		{
 			"1" : 			{
 				"id" : 1,
@@ -41,31 +41,31 @@
 				"name" : "velocity flow particles",
 				"data" : 				{
 					"blend_field" : [ 7 ],
-					"blend_particles" : [ 1 ],
+					"blend_particles" : [ 6 ],
 					"field::source_vars" : [ 0, 1, 2, 3 ],
-					"field::contrast" : [ 0.231, 0.0889, 1.0, 1.0 ],
-					"field::texture" : [ "watertemp" ],
-					"field::mode" : [ 4 ],
+					"field::contrast" : [ 5.4, 1.0, 1.0, 1.0 ],
+					"field::texture" : [ "velocity" ],
+					"field::mode" : [ 1 ],
 					"field::alpha" : [ 1.0 ],
 					"field::bg" : [ "env_pressure" ],
-					"field::high" : [ 0.0048, 0.002, 0.0, 1.0 ],
-					"field::low" : [ 0.0, 0.0, 230.0, 0.0 ],
+					"field::high" : [ 50.0, 50.0, 1.0, 1.0 ],
+					"field::low" : [ -50.0, -50.0, 0.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"field::colormap" : [ "2d_signed_hue.png" ],
-					"particles::duration" : [ 0.5 ],
+					"field::colormap" : [ "1d_unsigned_sunset.png" ],
+					"particles::duration" : [ 0.2 ],
 					"particles::texture" : [ "velocity" ],
-					"particles::point_size" : [ 1.0 ],
-					"particles::blur" : [ 0.01 ],
-					"particles::dim" : [ 300.0, 300.0 ],
+					"particles::point_size" : [ 0.1 ],
+					"particles::blur" : [ 0.1 ],
+					"particles::dim" : [ 0.0, 0.0 ],
 					"particles::slide" : [ 0.0, 0.95 ],
 					"particles::dt" : [ 0.9 ],
-					"particles::dx" : [ 80.0 ],
-					"particles::enable" : [ 1 ],
+					"particles::dx" : [ 30.0 ],
+					"particles::enable" : [ 0 ],
 					"particles::radius" : [ -1.0 ],
-					"particles::threshold" : [ -1.0 ],
-					"particles::force" : [ 0.5, 0.5 ],
+					"particles::threshold" : [ 0.0 ],
+					"particles::force" : [ 1.0, 1.0 ],
 					"particles::attraction" : [ 0.0 ],
-					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 1.0 ]
+					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 0.0 ]
 				}
 
 			}
@@ -916,6 +916,40 @@
 					"particles::force" : [ 0.5, 0.5 ],
 					"particles::attraction" : [  ],
 					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 0.5 ]
+				}
+
+			}
+,
+			"28" : 			{
+				"id" : 28,
+				"name" : "paper pressure",
+				"data" : 				{
+					"blend_field" : [ 7 ],
+					"blend_particles" : [ 6 ],
+					"field::source_vars" : [ 0.0, 1.0, 0.0, 1.0 ],
+					"field::contrast" : [ 0.25, 0.25, 0.25, 0.25 ],
+					"field::texture" : [ "velocity" ],
+					"field::mode" : [ 1 ],
+					"field::alpha" : [ 1.0 ],
+					"field::bg" : [ "env_pressure" ],
+					"field::high" : [ 5000.0, 5000.0, 5000.0, 5000.0 ],
+					"field::low" : [ 0.0, 0.0, 0.0, 0.0 ],
+					"field::enable" : [ 1 ],
+					"field::colormap" : [ "1d_unsigned_bone.png" ],
+					"particles::duration" : [ 0.2 ],
+					"particles::texture" : [ "velocity" ],
+					"particles::point_size" : [ 0.1 ],
+					"particles::blur" : [ 0.1 ],
+					"particles::dim" : [ 300.0, 300.0 ],
+					"particles::slide" : [ 0.0, 0.8 ],
+					"particles::dt" : [ 0.9 ],
+					"particles::dx" : [ 30.0 ],
+					"particles::enable" : [ 1 ],
+					"particles::radius" : [ -1.0 ],
+					"particles::threshold" : [ 0.0 ],
+					"particles::force" : [ 0.5, 0.5 ],
+					"particles::attraction" : [ 0.0 ],
+					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
 			}
