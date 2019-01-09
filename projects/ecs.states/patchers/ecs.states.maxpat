@@ -1606,7 +1606,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 162.0, 177.0, 50.0, 22.0 ],
-									"text" : "10 2"
+									"text" : "3 2"
 								}
 
 							}
@@ -1619,7 +1619,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 141.0, 424.0, 51.0, 35.0 ],
-									"text" : "recall 10 2 1."
+									"text" : "recall 3 2 1."
 								}
 
 							}
@@ -1679,7 +1679,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 50.0, 373.5, 72.0, 22.0 ],
-									"text" : "recall 10 2"
+									"text" : "recall 3 2"
 								}
 
 							}
@@ -2841,7 +2841,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+						"rect" : [ 1289.0, 240.0, 906.0, 642.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2870,24 +2870,24 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-229",
+									"id" : "obj-22",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "int", "int" ],
-									"patching_rect" : [ 81.5, 108.505859000000001, 58.0, 22.0 ],
+									"patching_rect" : [ 202.5, 108.505859375, 57.0, 22.0 ],
 									"text" : "change"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-228",
+									"id" : "obj-229",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "int", "int" ],
-									"patching_rect" : [ 202.5, 104.505859000000001, 58.0, 22.0 ],
+									"patching_rect" : [ 81.5, 108.505859000000001, 58.0, 22.0 ],
 									"text" : "change"
 								}
 
@@ -2959,7 +2959,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 171.0, 104.505859000000001, 29.5, 22.0 ],
+									"patching_rect" : [ 171.0, 108.505859375, 29.5, 22.0 ],
 									"text" : "+ 1"
 								}
 
@@ -2983,7 +2983,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "FullPacket" ],
-									"patching_rect" : [ 171.0, 133.505858999999987, 108.0, 22.0 ],
+									"patching_rect" : [ 171.0, 133.505859375, 108.0, 22.0 ],
 									"text" : "o.pack /sim/preset"
 								}
 
@@ -3154,6 +3154,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-72", 0 ],
+									"source" : [ "obj-22", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-60", 0 ],
 									"source" : [ "obj-223", 0 ]
 								}
@@ -3163,13 +3170,6 @@
 								"patchline" : 								{
 									"destination" : [ "obj-214", 0 ],
 									"source" : [ "obj-227", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-72", 0 ],
-									"source" : [ "obj-228", 0 ]
 								}
 
 							}
@@ -3210,7 +3210,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-228", 0 ],
+									"destination" : [ "obj-22", 0 ],
 									"source" : [ "obj-78", 0 ]
 								}
 
@@ -7981,7 +7981,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 601.0, 771.0, 1911.0, 687.0 ],
+						"rect" : [ 433.0, 438.0, 1911.0, 687.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -8237,6 +8237,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-27",
+									"int" : 1,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 2,
@@ -9943,6 +9944,49 @@
 , 			{
 				"box" : 				{
 					"active" : 					{
+						"button" : 0,
+						"button[10]" : 0,
+						"button[11]" : 0,
+						"button[12]" : 0,
+						"button[13]" : 0,
+						"button[14]" : 0,
+						"button[15]" : 0,
+						"button[16]" : 0,
+						"button[17]" : 0,
+						"button[18]" : 0,
+						"button[19]" : 0,
+						"button[1]" : 0,
+						"button[20]" : 0,
+						"button[21]" : 0,
+						"button[22]" : 0,
+						"button[23]" : 0,
+						"button[2]" : 0,
+						"button[3]" : 0,
+						"button[4]" : 0,
+						"button[5]" : 0,
+						"button[6]" : 0,
+						"button[7]" : 0,
+						"button[8]" : 0,
+						"button[9]" : 0,
+						"slider" : 0,
+						"slider[1]" : 0,
+						"slider[2]" : 0,
+						"slider[3]" : 0,
+						"slider[4]" : 0,
+						"toggle" : 0,
+						"toggle[10]" : 0,
+						"toggle[11]" : 0,
+						"toggle[12]" : 0,
+						"toggle[13]" : 0,
+						"toggle[1]" : 0,
+						"toggle[2]" : 0,
+						"toggle[3]" : 0,
+						"toggle[4]" : 0,
+						"toggle[5]" : 0,
+						"toggle[6]" : 0,
+						"toggle[7]" : 0,
+						"toggle[8]" : 0,
+						"toggle[9]" : 0,
 						"sc.pattr.state_engine" : 0,
 						"sc.pattr.state_engine::beta" : 0,
 						"sc.pattr.state_engine::c" : 0,
@@ -9961,7 +10005,7 @@
 					"interp" : 					{
 						"cloudsynth-preset" : [ 2, 0.0 ],
 						"floor-filterbanks-preset" : [ 2, 0.0 ],
-						"floor-sim-enable" : [ 2, 0.0 ],
+						"floor-sim-enable" : [ 2, 1.0 ],
 						"floor-sim-preset" : [ 2, 0.0 ],
 						"floor-vis-preset" : [ 2, 0.0 ],
 						"lights_toggle_1" : [ 2, 0.0 ],
@@ -10021,7 +10065,7 @@
 						"client_rect" : [ 1488, 444, 2387, 1169 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
-						"storage_rect" : [ 779, 263, 2759, 1264 ]
+						"storage_rect" : [ 1480, 330, 3460, 1331 ]
 					}
 ,
 					"text" : "pattrstorage states",
@@ -10270,7 +10314,7 @@
 						"slider" : [ 0.0 ],
 						"slider[1]" : [ 0.0 ],
 						"slider[2]" : [ 0.0 ],
-						"slider[3]" : [ 0.0 ],
+						"slider[3]" : [ 1.0 ],
 						"slider[4]" : [ 0.0 ],
 						"timelenses-opacity" : [ 1.0 ],
 						"toggle" : [ 0 ],
@@ -10290,7 +10334,7 @@
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u077009451"
+					"varname" : "u644030265"
 				}
 
 			}
@@ -12827,7 +12871,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-99", 0 ],
+					"destination" : [ "obj-87", 0 ],
+					"midpoints" : [ 678.0, 1086.0, 19.5, 1086.0 ],
 					"source" : [ "obj-62", 0 ]
 				}
 
@@ -12945,65 +12990,65 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-217" : [ "button[12]", "button[12]", 0 ],
 			"obj-1118" : [ "lights-rgb-1[15]", "lights-rgb-1[1]", 0 ],
-			"obj-290" : [ "toggle[13]", "toggle[13]", 0 ],
+			"obj-217" : [ "button[12]", "button[12]", 0 ],
 			"obj-1085" : [ "lights_toggle_1[13]", "lights_toggle_1[1]", 0 ],
+			"obj-290" : [ "toggle[13]", "toggle[13]", 0 ],
 			"obj-235" : [ "button[19]", "button[19]", 0 ],
 			"obj-81" : [ "button[17]", "button[17]", 0 ],
 			"obj-1070" : [ "lights-rgb-4", "lights-rgb-4", 0 ],
 			"obj-244" : [ "toggle[7]", "toggle[7]", 0 ],
-			"obj-18" : [ "floor-filterbanks-preset", "floor-filterbanks-preset", 0 ],
 			"obj-12" : [ "button[23]", "button[7]", 0 ],
+			"obj-18" : [ "floor-filterbanks-preset", "floor-filterbanks-preset", 0 ],
 			"obj-292" : [ "button[6]", "button[6]", 0 ],
 			"obj-1042" : [ "lights-intensity_2", "lights-intensity_2", 0 ],
 			"obj-182" : [ "floor-movie-water-opacity", "floor-movie-water-opacity", 0 ],
 			"obj-29" : [ "floor-filterbanks-volume", "floor-filterbanks-volume", 0 ],
-			"obj-1089" : [ "lights-intensity_7", "lights-intensity_7", 0 ],
 			"obj-236" : [ "button", "button", 0 ],
+			"obj-1089" : [ "lights-intensity_7", "lights-intensity_7", 0 ],
 			"obj-356" : [ "slider[2]", "slider[2]", 0 ],
 			"obj-4" : [ "button[10]", "button[10]", 0 ],
-			"obj-1090" : [ "lights-rgb-1[12]", "lights-rgb-1[4]", 0 ],
 			"obj-246" : [ "toggle[11]", "toggle[11]", 0 ],
 			"obj-26" : [ "scrim-vis-preset", "scrim-vis-preset", 0 ],
+			"obj-1090" : [ "lights-rgb-1[12]", "lights-rgb-1[4]", 0 ],
 			"obj-8" : [ "button[15]", "button[15]", 0 ],
 			"obj-237" : [ "toggle[5]", "toggle[5]", 0 ],
 			"obj-1045" : [ "lights_toggle_1[1]", "lights_toggle_1[1]", 0 ],
 			"obj-220" : [ "button[21]", "button[21]", 0 ],
 			"obj-1058" : [ "lights_toggle_1[10]", "lights_toggle_1[1]", 0 ],
-			"obj-28" : [ "floor-vis-preset", "floor-vis-preset", 0 ],
 			"obj-216" : [ "button[4]", "button[4]", 0 ],
+			"obj-28" : [ "floor-vis-preset", "floor-vis-preset", 0 ],
 			"obj-1102" : [ "lights-intensity_11", "lights-intensity_11", 0 ],
 			"obj-304" : [ "button[9]", "button[9]", 0 ],
 			"obj-82" : [ "floor-movie-city-opacity", "floor-movie-city-opacity", 0 ],
 			"obj-1062" : [ "lights-intensity_5", "lights-intensity_5", 0 ],
-			"obj-191" : [ "lights-scoops", "lights-scoops", 0 ],
 			"obj-1112" : [ "lights_toggle_1[17]", "lights_toggle_1[5]", 0 ],
 			"obj-229" : [ "toggle[2]", "toggle[2]", 0 ],
-			"obj-160" : [ "lights-rgb", "lights-rgb", 0 ],
+			"obj-191" : [ "lights-scoops", "lights-scoops", 0 ],
 			"obj-1043" : [ "lights-rgb-1[1]", "lights-rgb-1[1]", 0 ],
-			"obj-1078" : [ "lights_toggle_1[12]", "lights_toggle_1[1]", 0 ],
+			"obj-160" : [ "lights-rgb", "lights-rgb", 0 ],
 			"obj-338" : [ "timelenses-opacity", "timelenses-opacity", 0 ],
+			"obj-1078" : [ "lights_toggle_1[12]", "lights_toggle_1[1]", 0 ],
 			"obj-213" : [ "scrim-sim-enable", "scrim-sim-enable", 0 ],
 			"obj-212" : [ "button[13]", "button[13]", 0 ],
-			"obj-271" : [ "toggle", "toggle", 0 ],
 			"obj-230" : [ "toggle[3]", "toggle[3]", 0 ],
+			"obj-271" : [ "toggle", "toggle", 0 ],
 			"obj-238" : [ "button[1]", "button[1]", 0 ],
 			"obj-221" : [ "button[18]", "button[18]", 0 ],
-			"obj-243" : [ "toggle[8]", "toggle[8]", 0 ],
 			"obj-1063" : [ "lights-rgb-5", "lights-rgb-5", 0 ],
-			"obj-210" : [ "floor-sim-enable", "floor-sim-enable", 0 ],
+			"obj-243" : [ "toggle[8]", "toggle[8]", 0 ],
 			"obj-240" : [ "button[2]", "button[2]", 0 ],
-			"obj-496" : [ "lights-intensity_1", "lights-intensity_1", 0 ],
+			"obj-210" : [ "floor-sim-enable", "floor-sim-enable", 0 ],
 			"obj-311" : [ "number", "number", 0 ],
+			"obj-496" : [ "lights-intensity_1", "lights-intensity_1", 0 ],
 			"obj-296" : [ "button[7]", "button[7]", 0 ],
 			"obj-1049" : [ "lights-intensity_3", "lights-intensity_3", 0 ],
 			"obj-16" : [ "floor-filterbanks-volume[1]", "floor-filterbanks-volume", 0 ],
 			"obj-185" : [ "floor-sim-opacity", "floor-sim-opacity", 0 ],
 			"obj-1082" : [ "lights-intensity_8", "lights-intensity_8", 0 ],
-			"obj-430" : [ "lights_toggle_master", "lights_toggle_master", 0 ],
 			"obj-46" : [ "slider[3]", "slider[3]", 0 ],
 			"obj-1083" : [ "lights-rgb-1[11]", "lights-rgb-1[1]", 0 ],
+			"obj-430" : [ "lights_toggle_master", "lights_toggle_master", 0 ],
 			"obj-21" : [ "button[11]", "button[11]", 0 ],
 			"obj-245" : [ "toggle[12]", "toggle[12]", 0 ],
 			"obj-491" : [ "lights-rgb-1", "lights-rgb-1", 0 ],
@@ -13012,42 +13057,42 @@
 			"obj-1092" : [ "lights_toggle_1[14]", "lights_toggle_1[5]", 0 ],
 			"obj-2" : [ "cloudsynth-preset", "cloudsynth-preset", 0 ],
 			"obj-55" : [ "button[22]", "button[22]", 0 ],
-			"obj-347" : [ "lights_toggle_1", "lights_toggle_1", 0 ],
 			"obj-219" : [ "button[5]", "button[5]", 0 ],
+			"obj-347" : [ "lights_toggle_1", "lights_toggle_1", 0 ],
 			"obj-1096" : [ "lights-intensity_12", "lights-intensity_12", 0 ],
 			"obj-732" : [ "floor-camera-opacity", "floor-camera-opacity", 0 ],
 			"obj-56" : [ "floor-movie-clouds-opacity", "floor-movie-clouds-opacity", 0 ],
 			"obj-1105" : [ "lights_toggle_1[16]", "lights_toggle_1[1]", 0 ],
+			"obj-1050" : [ "lights-rgb-1[7]", "lights-rgb-1[1]", 0 ],
 			"obj-1052" : [ "lights_toggle_1[7]", "lights_toggle_1[1]", 0 ],
 			"obj-1056" : [ "lights-intensity_6", "lights-intensity_6", 0 ],
-			"obj-1050" : [ "lights-rgb-1[7]", "lights-rgb-1[1]", 0 ],
 			"obj-32" : [ "scrim-filterbanks-volume", "scrim-filterbanks-volume", 0 ],
 			"obj-1072" : [ "lights_toggle_1[5]", "lights_toggle_1[5]", 0 ],
 			"obj-91" : [ "lights-intensity", "lights-intensity", 0 ],
 			"obj-247" : [ "toggle[10]", "toggle[10]", 0 ],
 			"obj-67" : [ "scrim-sim-preset", "scrim-sim-preset", 0 ],
 			"obj-208" : [ "button[14]", "button[14]", 0 ],
-			"obj-1098" : [ "lights_toggle_1[15]", "lights_toggle_1[1]", 0 ],
 			"obj-239" : [ "toggle[4]", "toggle[4]", 0 ],
+			"obj-1098" : [ "lights_toggle_1[15]", "lights_toggle_1[1]", 0 ],
 			"obj-119" : [ "button[20]", "button[20]", 0 ],
-			"obj-241" : [ "toggle[9]", "toggle[9]", 0 ],
 			"obj-1117" : [ "lights-rgb-6", "lights-rgb-6", 0 ],
+			"obj-241" : [ "toggle[9]", "toggle[9]", 0 ],
 			"obj-68" : [ "floor-sim-preset", "floor-sim-preset", 0 ],
 			"obj-242" : [ "button[3]", "button[3]", 0 ],
 			"obj-1065" : [ "lights_toggle_1[11]", "lights_toggle_1[1]", 0 ],
 			"obj-1109" : [ "lights-intensity_10", "lights-intensity_10", 0 ],
 			"obj-1110" : [ "lights-rgb-1[14]", "lights-rgb-1[4]", 0 ],
-			"obj-227" : [ "toggle[1]", "toggle[1]", 0 ],
 			"obj-302" : [ "button[8]", "button[8]", 0 ],
+			"obj-227" : [ "toggle[1]", "toggle[1]", 0 ],
 			"obj-1069" : [ "lights-intensity_4", "lights-intensity_4", 0 ],
+			"obj-206" : [ "lights-booth", "lights-booth", 0 ],
 			"obj-1103" : [ "lights-rgb-1[13]", "lights-rgb-1[1]", 0 ],
 			"obj-278" : [ "slider[1]", "slider[1]", 0 ],
-			"obj-206" : [ "lights-booth", "lights-booth", 0 ],
-			"obj-1076" : [ "lights-intensity_9", "lights-intensity_9", 0 ],
 			"obj-1119" : [ "lights-rgb-1[16]", "lights-rgb-1[1]", 0 ],
 			"obj-276" : [ "slider", "slider", 0 ],
-			"obj-50" : [ "slider[4]", "slider[4]", 0 ],
+			"obj-1076" : [ "lights-intensity_9", "lights-intensity_9", 0 ],
 			"obj-17" : [ "scrim-filterbanks-preset", "scrim-filterbanks-preset", 0 ],
+			"obj-50" : [ "slider[4]", "slider[4]", 0 ],
 			"parameterbanks" : 			{
 
 			}

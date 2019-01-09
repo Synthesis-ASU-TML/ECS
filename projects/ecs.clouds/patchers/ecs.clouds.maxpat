@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 650.0, 83.0, 905.0, 1054.0 ],
+		"rect" : [ 1279.0, 44.0, 905.0, 1054.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -170,7 +170,7 @@
 ,
 									"style" : "ecs-onload",
 									"text" : "pattr @bindto parent::fade @invisible 1",
-									"varname" : "u018007823"
+									"varname" : "u068026481"
 								}
 
 							}
@@ -216,7 +216,7 @@
 ,
 									"text" : "pattr @bindto parent::vis-preset @invisible 1",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"varname" : "u524002934"
+									"varname" : "u768026749"
 								}
 
 							}
@@ -247,7 +247,7 @@
 									}
 ,
 									"text" : "pattr @bindto parent::route-name @invisible 1",
-									"varname" : "u243019721"
+									"varname" : "u709026427"
 								}
 
 							}
@@ -624,7 +624,7 @@
 ,
 									"style" : "ecs-onload",
 									"text" : "pattr @bindto parent::refresh-syphon-out @invisible 1",
-									"varname" : "u046006483"
+									"varname" : "u848014616"
 								}
 
 							}
@@ -644,7 +644,7 @@
 ,
 									"style" : "ecs-onload",
 									"text" : "pattr @bindto parent::video-input::syphon::refresh @invisible 1",
-									"varname" : "u007006625"
+									"varname" : "u005026381"
 								}
 
 							}
@@ -676,7 +676,7 @@
 ,
 									"style" : "ecs-onload",
 									"text" : "pattr @bindto parent::video-input::mode @invisible 1",
-									"varname" : "u270005348"
+									"varname" : "u855017928"
 								}
 
 							}
@@ -708,7 +708,7 @@
 ,
 									"style" : "ecs-onload",
 									"text" : "pattr @bindto parent::video-input::syphon::cam_syphon_server @invisible 1",
-									"varname" : "u075006727"
+									"varname" : "u881025853"
 								}
 
 							}
@@ -728,7 +728,7 @@
 ,
 									"style" : "ecs-onload",
 									"text" : "pattr @bindto parent::video-input::syphon::cam_syphon_app @invisible 1",
-									"varname" : "u411004960"
+									"varname" : "u968008876"
 								}
 
 							}
@@ -761,7 +761,7 @@
 ,
 									"style" : "ecs-onload",
 									"text" : "pattr @bindto parent::simulation::simulation::reset @invisible 1",
-									"varname" : "u090003613"
+									"varname" : "u258002922"
 								}
 
 							}
@@ -782,7 +782,7 @@
 ,
 									"style" : "ecs-onload",
 									"text" : "pattr @bindto parent::render @invisible 1",
-									"varname" : "u976005951"
+									"varname" : "u555025843"
 								}
 
 							}
@@ -803,7 +803,7 @@
 ,
 									"style" : "ecs-onload",
 									"text" : "pattr @bindto parent::vis-preset @invisible 1",
-									"varname" : "u037005462"
+									"varname" : "u569023219"
 								}
 
 							}
@@ -848,7 +848,7 @@
 ,
 									"style" : "ecs-onload",
 									"text" : "pattr @bindto parent::video-input::flip @invisible 1",
-									"varname" : "u824003053"
+									"varname" : "u644023216"
 								}
 
 							}
@@ -869,7 +869,7 @@
 ,
 									"style" : "ecs-onload",
 									"text" : "pattr @bindto parent::video-input::crop @invisible 1",
-									"varname" : "u232001035"
+									"varname" : "u885015238"
 								}
 
 							}
@@ -998,7 +998,7 @@
 ,
 									"style" : "ecs-onload",
 									"text" : "pattr @bindto parent::video-input::multiview_type @invisible 1",
-									"varname" : "u834001440"
+									"varname" : "u417005660"
 								}
 
 							}
@@ -1031,7 +1031,7 @@
 ,
 									"style" : "ecs-onload",
 									"text" : "pattr @bindto parent::video-input::multiview_segment @invisible 1",
-									"varname" : "u561002156"
+									"varname" : "u222015841"
 								}
 
 							}
@@ -23097,7 +23097,7 @@
 									}
 ,
 									"text" : "pattr @bindto parent::route-name @invisible 1",
-									"varname" : "u513005140"
+									"varname" : "u851018393"
 								}
 
 							}
@@ -23556,7 +23556,7 @@
 ,
 					"style" : "ecs-onload",
 					"text" : "pattr @bindto vis-left::particles::reset @invisible 1",
-					"varname" : "u446009819"
+					"varname" : "u489024898"
 				}
 
 			}
@@ -23576,7 +23576,7 @@
 ,
 					"style" : "ecs-onload",
 					"text" : "pattr @bindto vis-right::particles::reset @invisible 1",
-					"varname" : "u888026652"
+					"varname" : "u314024848"
 				}
 
 			}
@@ -23596,7 +23596,7 @@
 ,
 					"style" : "ecs-onload",
 					"text" : "pattr @bindto vis-left::particles::dt @invisible 1",
-					"varname" : "u367026653"
+					"varname" : "u670024853"
 				}
 
 			}
@@ -23616,7 +23616,7 @@
 ,
 					"style" : "ecs-onload",
 					"text" : "pattr @bindto vis-left::particles::dx @invisible 1",
-					"varname" : "u692026649"
+					"varname" : "u521024768"
 				}
 
 			}
@@ -23636,7 +23636,7 @@
 ,
 					"style" : "ecs-onload",
 					"text" : "pattr @bindto vis-right::particles::dt @invisible 1",
-					"varname" : "u290026658"
+					"varname" : "u975010967"
 				}
 
 			}
@@ -23656,7 +23656,7 @@
 ,
 					"style" : "ecs-onload",
 					"text" : "pattr @bindto vis-right::particles::dx @invisible 1",
-					"varname" : "u608026651"
+					"varname" : "u925019263"
 				}
 
 			}
@@ -24941,7 +24941,7 @@
 ,
 					"style" : "ecs-onload",
 					"text" : "pattr @bindto simulation::simulation::dim @invisible 1",
-					"varname" : "u237026072"
+					"varname" : "u746012160"
 				}
 
 			}
@@ -25069,7 +25069,7 @@
 ,
 									"text" : "pattr @bindto parent::simulation::simulation::obstacles_bg_motion_blur @invisible 1",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"varname" : "u550003802"
+									"varname" : "u833012010"
 								}
 
 							}
@@ -25190,7 +25190,7 @@
 ,
 					"style" : "ecs-onload",
 					"text" : "pattr @bindto video-input::dim @invisible 1",
-					"varname" : "u027018105"
+					"varname" : "u291012457"
 				}
 
 			}
@@ -25210,7 +25210,7 @@
 ,
 					"style" : "ecs-onload",
 					"text" : "pattr @bindto simulation::simulation::dim @invisible 1",
-					"varname" : "u796025998"
+					"varname" : "u636014017"
 				}
 
 			}
@@ -25302,6 +25302,66 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"fontface" : 0,
+									"fontsize" : 12.0,
+									"id" : "obj-54",
+									"maxclass" : "o.display",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 774.0, -82.25, 150.0, 34.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 0,
+									"fontsize" : 12.0,
+									"id" : "obj-53",
+									"maxclass" : "o.display",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 399.0, 138.75, 150.0, 34.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-52",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 619.0, 108.0, 50.0, 22.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-50",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 635.0, 169.0, 50.0, 22.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-48",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 263.0, -19.25, 54.0, 22.0 ],
+									"text" : "deferlow"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-39",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -25316,7 +25376,7 @@
 ,
 									"style" : "ecs-onload",
 									"text" : "pattr @bindto parent::vis-right::particles::reset",
-									"varname" : "u761025963"
+									"varname" : "u788027171"
 								}
 
 							}
@@ -25336,7 +25396,7 @@
 ,
 									"style" : "ecs-onload",
 									"text" : "pattr @bindto parent::vis-left::particles::reset",
-									"varname" : "u777017614"
+									"varname" : "u361016260"
 								}
 
 							}
@@ -25383,7 +25443,7 @@
 ,
 									"text" : "pattr @bindto simulation::clear @invisible 1",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"varname" : "u469017430"
+									"varname" : "u887027169"
 								}
 
 							}
@@ -25417,7 +25477,7 @@
 ,
 									"text" : "pattr @bindto simulation::reset @invisible 1",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"varname" : "u173025933"
+									"varname" : "u852008632"
 								}
 
 							}
@@ -25437,7 +25497,7 @@
 ,
 									"style" : "ecs-onload",
 									"text" : "pattr @bindto simulation::enable @invisible 1",
-									"varname" : "u179025919"
+									"varname" : "u937027177"
 								}
 
 							}
@@ -25537,7 +25597,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 200.0, 4.75, 29.5, 22.0 ],
+									"patching_rect" : [ 263.0, 28.75, 29.5, 22.0 ],
 									"text" : "i 3"
 								}
 
@@ -25549,7 +25609,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 200.0, -43.25, 22.0, 22.0 ],
+									"patching_rect" : [ 263.0, -43.25, 22.0, 22.0 ],
 									"text" : "t b"
 								}
 
@@ -25561,7 +25621,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 200.0, -19.25, 67.0, 22.0 ],
+									"patching_rect" : [ 263.0, 4.75, 67.0, 22.0 ],
 									"text" : "delay 1000"
 								}
 
@@ -25608,7 +25668,7 @@
 ,
 									"style" : "ecs-onload",
 									"text" : "pattr @bindto parent::route-name @invisible 1",
-									"varname" : "u033025293"
+									"varname" : "u043017656"
 								}
 
 							}
@@ -25700,7 +25760,7 @@
 ,
 									"style" : "ecs-onload",
 									"text" : "pattrstorage @savemode 0",
-									"varname" : "u810014900"
+									"varname" : "u317007738"
 								}
 
 							}
@@ -25900,7 +25960,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-15", 0 ],
+									"destination" : [ "obj-48", 0 ],
 									"source" : [ "obj-16", 0 ]
 								}
 
@@ -26009,7 +26069,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-18", 0 ],
-									"midpoints" : [ 209.5, 69.0, 139.5, 69.0 ],
+									"midpoints" : [ 272.5, 69.0, 139.5, 69.0 ],
 									"source" : [ "obj-25", 0 ]
 								}
 
@@ -26017,6 +26077,15 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-32", 0 ],
+									"order" : 1,
+									"source" : [ "obj-26", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-54", 0 ],
+									"order" : 0,
 									"source" : [ "obj-26", 0 ]
 								}
 
@@ -26031,6 +26100,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-29", 0 ],
+									"order" : 1,
 									"source" : [ "obj-28", 0 ]
 								}
 
@@ -26058,8 +26128,25 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-50", 1 ],
+									"order" : 0,
+									"source" : [ "obj-28", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-18", 0 ],
 									"midpoints" : [ 626.5, 69.0, 139.5, 69.0 ],
+									"order" : 1,
+									"source" : [ "obj-29", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-52", 1 ],
+									"order" : 0,
 									"source" : [ "obj-29", 0 ]
 								}
 
@@ -26076,6 +26163,7 @@
 								"patchline" : 								{
 									"destination" : [ "obj-28", 0 ],
 									"midpoints" : [ 514.0, -44.75, 626.5, -44.75 ],
+									"order" : 0,
 									"source" : [ "obj-32", 1 ]
 								}
 
@@ -26084,6 +26172,14 @@
 								"patchline" : 								{
 									"destination" : [ "obj-31", 0 ],
 									"source" : [ "obj-32", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-53", 0 ],
+									"order" : 1,
+									"source" : [ "obj-32", 1 ]
 								}
 
 							}
@@ -26138,6 +26234,13 @@
 									"destination" : [ "obj-27", 0 ],
 									"midpoints" : [ 712.5, -44.0, 581.0, -44.0, 581.0, 200.0, 139.5, 200.0 ],
 									"source" : [ "obj-38", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-15", 0 ],
+									"source" : [ "obj-48", 0 ]
 								}
 
 							}
@@ -26322,7 +26425,7 @@
 ,
 					"style" : "ecs-onload",
 					"text" : "pattr @bindto simulation::simulation::events @invisible 1",
-					"varname" : "u045027803"
+					"varname" : "u903012233"
 				}
 
 			}
@@ -26342,7 +26445,7 @@
 ,
 					"style" : "ecs-onload",
 					"text" : "pattr @bindto simulation::simulation::dtfl @invisible 1",
-					"varname" : "u650027805"
+					"varname" : "u434012731"
 				}
 
 			}
@@ -26362,7 +26465,7 @@
 ,
 					"style" : "ecs-onload",
 					"text" : "pattr @bindto simulation::simulation::dx @invisible 1",
-					"varname" : "u665027807"
+					"varname" : "u474013027"
 				}
 
 			}
@@ -27782,8 +27885,8 @@
 			"obj-38::obj-37::obj-67" : [ "number[29]", "number[7]", 0 ],
 			"obj-38::obj-37::obj-55" : [ "umenu[7]", "umenu[1]", 0 ],
 			"obj-46::obj-37::obj-108" : [ "number[2]", "number[11]", 0 ],
-			"obj-38::obj-37::obj-3" : [ "toggle[1]", "toggle", 0 ],
 			"obj-38::obj-37::obj-70" : [ "number[33]", "number[5]", 0 ],
+			"obj-38::obj-37::obj-3" : [ "toggle[1]", "toggle", 0 ],
 			"obj-38::obj-37::obj-28" : [ "_colormap[5]", "_colormap", 0 ],
 			"obj-46::obj-37::obj-60" : [ "number[13]", "number", 0 ],
 			"parameterbanks" : 			{
@@ -29047,6 +29150,10 @@
 			}
 , 			{
 				"name" : "o.prepend.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.display.mxo",
 				"type" : "iLaX"
 			}
 , 			{
