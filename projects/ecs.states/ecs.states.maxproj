@@ -2,29 +2,14 @@
 	"name" : "ecs.states",
 	"version" : 1,
 	"creationdate" : 3594117618,
-	"modificationdate" : 3621952841,
+	"modificationdate" : 3631102981,
 	"viewrect" : [ 1.0, 45.0, 284.0, 337.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
-	"autolocalize" : 0,
+	"autolocalize" : 1,
 	"contents" : 	{
 		"patchers" : 		{
-			"ecs.states-apr.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ecs.states-life-energy.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ecs.states.cues-life-energy.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
 			"ecs.states.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
@@ -43,10 +28,6 @@
 		"externals" : 		{
 
 		}
-,
-		"other" : 		{
-
-		}
 
 	}
 ,
@@ -63,5 +44,6 @@
 	"readonly" : 0,
 	"devpathtype" : 0,
 	"devpath" : ".",
-	"sortmode" : 0
+	"sortmode" : 0,
+	"viewmode" : 0
 }

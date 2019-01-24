@@ -1,13 +1,13 @@
 {
 	"pattrstorage" : 	{
-		"name" : "u530010757",
+		"name" : "u451005378",
 		"slots" : 		{
 			"1" : 			{
 				"id" : 1,
 				"name" : "laminar",
 				"data" : 				{
-					"u584010742" : [  ],
-					"u434010740" : [  ],
+					"u198005403" : [  ],
+					"u890005405" : [  ],
 					"simulation::periodic" : [ 1, 1 ],
 					"simulation::closed" : [ 0, 0, 0, 0 ],
 					"simulation::dim" : [ 1280, 720 ],
@@ -71,17 +71,7 @@
 					"simulation::bfecc_alpha" : [  ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::rscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::gscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::bscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::bypass" : [  ],
-					"simulation::background-cv::abs-threshold::bypass" : [  ],
-					"simulation::background-cv::abs-threshold::blur" : [  ],
-					"simulation::background-cv::abs-threshold::memory" : [  ],
-					"simulation::background-cv::abs-threshold::lpf" : [  ],
-					"simulation::background-cv::abs-threshold::u502013472" : [  ],
-					"simulation::background-cv::abs-threshold::thresholds" : [  ]
+					"simulation::obstacles_threshold_low" : [  ]
 				}
 
 			}
@@ -90,8 +80,8 @@
 				"id" : 2,
 				"name" : "clouds",
 				"data" : 				{
-					"u584010742" : [  ],
-					"u434010740" : [  ],
+					"u198005403" : [  ],
+					"u890005405" : [  ],
 					"simulation::periodic" : [ 1, 1 ],
 					"simulation::closed" : [ 0, 0, 0, 0 ],
 					"simulation::dim" : [ 1280, 720 ],
@@ -155,17 +145,7 @@
 					"simulation::bfecc_alpha" : [  ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::rscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::gscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::bscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::bypass" : [  ],
-					"simulation::background-cv::abs-threshold::bypass" : [  ],
-					"simulation::background-cv::abs-threshold::blur" : [  ],
-					"simulation::background-cv::abs-threshold::memory" : [  ],
-					"simulation::background-cv::abs-threshold::lpf" : [  ],
-					"simulation::background-cv::abs-threshold::u502013472" : [  ],
-					"simulation::background-cv::abs-threshold::thresholds" : [  ]
+					"simulation::obstacles_threshold_low" : [  ]
 				}
 
 			}
@@ -174,8 +154,8 @@
 				"id" : 3,
 				"name" : "laminar for pressure demo",
 				"data" : 				{
-					"u584010742" : [  ],
-					"u434010740" : [  ],
+					"u198005403" : [  ],
+					"u890005405" : [  ],
 					"simulation::periodic" : [ 1, 1 ],
 					"simulation::closed" : [ 0, 0, 0, 0 ],
 					"simulation::dim" : [ 1280, 720 ],
@@ -239,17 +219,7 @@
 					"simulation::bfecc_alpha" : [  ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::rscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::gscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::bscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::bypass" : [  ],
-					"simulation::background-cv::abs-threshold::bypass" : [  ],
-					"simulation::background-cv::abs-threshold::blur" : [  ],
-					"simulation::background-cv::abs-threshold::memory" : [  ],
-					"simulation::background-cv::abs-threshold::lpf" : [  ],
-					"simulation::background-cv::abs-threshold::u502013472" : [  ],
-					"simulation::background-cv::abs-threshold::thresholds" : [  ]
+					"simulation::obstacles_threshold_low" : [  ]
 				}
 
 			}
@@ -258,8 +228,8 @@
 				"id" : 4,
 				"name" : "laminar for pressure demo with wind",
 				"data" : 				{
-					"u584010742" : [ 0 ],
-					"u434010740" : [ 0 ],
+					"u198005403" : [  ],
+					"u890005405" : [  ],
 					"simulation::periodic" : [ 0, 1 ],
 					"simulation::closed" : [ 0, 0, 0, 0 ],
 					"simulation::dim" : [ 1280, 720 ],
@@ -323,17 +293,7 @@
 					"simulation::bfecc_alpha" : [  ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [ -0.009 ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::rscale" : [ 0.299 ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::gscale" : [ 0.587 ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::bscale" : [ 0.114 ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::bypass" : [ 0.0 ],
-					"simulation::background-cv::abs-threshold::bypass" : [ 0.0 ],
-					"simulation::background-cv::abs-threshold::blur" : [ 2.200000047683716, 2.200000047683716 ],
-					"simulation::background-cv::abs-threshold::memory" : [ 1.0 ],
-					"simulation::background-cv::abs-threshold::lpf" : [ 0.05 ],
-					"simulation::background-cv::abs-threshold::u502013472" : [ 2.509999990463257, 2.509999990463257 ],
-					"simulation::background-cv::abs-threshold::thresholds" : [ -0.009, 0.09 ]
+					"simulation::obstacles_threshold_low" : [ -0.009 ]
 				}
 
 			}
@@ -342,8 +302,8 @@
 				"id" : 5,
 				"name" : "laminar for pressure demo with wind and accumulated pressure",
 				"data" : 				{
-					"u584010742" : [  ],
-					"u434010740" : [  ],
+					"u198005403" : [  ],
+					"u890005405" : [  ],
 					"simulation::periodic" : [ 1, 1 ],
 					"simulation::closed" : [ 0, 0, 0, 0 ],
 					"simulation::dim" : [ 1280, 720 ],
@@ -407,17 +367,7 @@
 					"simulation::bfecc_alpha" : [  ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::rscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::gscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::bscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::bypass" : [  ],
-					"simulation::background-cv::abs-threshold::bypass" : [  ],
-					"simulation::background-cv::abs-threshold::blur" : [  ],
-					"simulation::background-cv::abs-threshold::memory" : [  ],
-					"simulation::background-cv::abs-threshold::lpf" : [  ],
-					"simulation::background-cv::abs-threshold::u502013472" : [  ],
-					"simulation::background-cv::abs-threshold::thresholds" : [  ]
+					"simulation::obstacles_threshold_low" : [  ]
 				}
 
 			}
@@ -426,8 +376,8 @@
 				"id" : 6,
 				"name" : "disabled",
 				"data" : 				{
-					"u584010742" : [  ],
-					"u434010740" : [  ],
+					"u198005403" : [  ],
+					"u890005405" : [  ],
 					"simulation::periodic" : [ 1, 1 ],
 					"simulation::closed" : [ 0, 0, 0, 0 ],
 					"simulation::dim" : [ 1280, 720 ],
@@ -491,17 +441,7 @@
 					"simulation::bfecc_alpha" : [  ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::rscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::gscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::bscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::bypass" : [  ],
-					"simulation::background-cv::abs-threshold::bypass" : [  ],
-					"simulation::background-cv::abs-threshold::blur" : [  ],
-					"simulation::background-cv::abs-threshold::memory" : [  ],
-					"simulation::background-cv::abs-threshold::lpf" : [  ],
-					"simulation::background-cv::abs-threshold::u502013472" : [  ],
-					"simulation::background-cv::abs-threshold::thresholds" : [  ]
+					"simulation::obstacles_threshold_low" : [  ]
 				}
 
 			}
@@ -510,8 +450,8 @@
 				"id" : 7,
 				"name" : "pressure to vapor",
 				"data" : 				{
-					"u584010742" : [  ],
-					"u434010740" : [  ],
+					"u198005403" : [  ],
+					"u890005405" : [  ],
 					"simulation::periodic" : [ 1, 1 ],
 					"simulation::closed" : [ 0, 0, 0, 0 ],
 					"simulation::dim" : [ 1280, 720 ],
@@ -575,17 +515,7 @@
 					"simulation::bfecc_alpha" : [  ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::rscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::gscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::bscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::bypass" : [  ],
-					"simulation::background-cv::abs-threshold::bypass" : [  ],
-					"simulation::background-cv::abs-threshold::blur" : [  ],
-					"simulation::background-cv::abs-threshold::memory" : [  ],
-					"simulation::background-cv::abs-threshold::lpf" : [  ],
-					"simulation::background-cv::abs-threshold::u502013472" : [  ],
-					"simulation::background-cv::abs-threshold::thresholds" : [  ]
+					"simulation::obstacles_threshold_low" : [  ]
 				}
 
 			}
@@ -594,8 +524,8 @@
 				"id" : 8,
 				"name" : "velocity ghosting",
 				"data" : 				{
-					"u584010742" : [  ],
-					"u434010740" : [  ],
+					"u198005403" : [  ],
+					"u890005405" : [  ],
 					"simulation::periodic" : [ 0, 0 ],
 					"simulation::closed" : [ 0, 0, 0, 0 ],
 					"simulation::dim" : [ 1280, 720 ],
@@ -659,17 +589,7 @@
 					"simulation::bfecc_alpha" : [ 0.0 ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::rscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::gscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::bscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::bypass" : [  ],
-					"simulation::background-cv::abs-threshold::bypass" : [  ],
-					"simulation::background-cv::abs-threshold::blur" : [  ],
-					"simulation::background-cv::abs-threshold::memory" : [  ],
-					"simulation::background-cv::abs-threshold::lpf" : [  ],
-					"simulation::background-cv::abs-threshold::u502013472" : [  ],
-					"simulation::background-cv::abs-threshold::thresholds" : [  ]
+					"simulation::obstacles_threshold_low" : [  ]
 				}
 
 			}
@@ -678,8 +598,8 @@
 				"id" : 9,
 				"name" : "velocity ghosting no vorticity",
 				"data" : 				{
-					"u584010742" : [  ],
-					"u434010740" : [  ],
+					"u198005403" : [  ],
+					"u890005405" : [  ],
 					"simulation::periodic" : [ 0, 0 ],
 					"simulation::closed" : [ 0, 0, 0, 0 ],
 					"simulation::dim" : [ 1280, 720 ],
@@ -743,17 +663,7 @@
 					"simulation::bfecc_alpha" : [  ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::rscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::gscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::bscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::bypass" : [  ],
-					"simulation::background-cv::abs-threshold::bypass" : [  ],
-					"simulation::background-cv::abs-threshold::blur" : [  ],
-					"simulation::background-cv::abs-threshold::memory" : [  ],
-					"simulation::background-cv::abs-threshold::lpf" : [  ],
-					"simulation::background-cv::abs-threshold::u502013472" : [  ],
-					"simulation::background-cv::abs-threshold::thresholds" : [  ]
+					"simulation::obstacles_threshold_low" : [  ]
 				}
 
 			}
@@ -762,8 +672,8 @@
 				"id" : 10,
 				"name" : "ghosting pressure",
 				"data" : 				{
-					"u584010742" : [  ],
-					"u434010740" : [  ],
+					"u198005403" : [  ],
+					"u890005405" : [  ],
 					"simulation::periodic" : [ 1, 1 ],
 					"simulation::closed" : [ 0, 0, 0, 0 ],
 					"simulation::dim" : [ 1280, 720 ],
@@ -827,17 +737,7 @@
 					"simulation::bfecc_alpha" : [  ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::rscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::gscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::bscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::bypass" : [  ],
-					"simulation::background-cv::abs-threshold::bypass" : [  ],
-					"simulation::background-cv::abs-threshold::blur" : [  ],
-					"simulation::background-cv::abs-threshold::memory" : [  ],
-					"simulation::background-cv::abs-threshold::lpf" : [  ],
-					"simulation::background-cv::abs-threshold::u502013472" : [  ],
-					"simulation::background-cv::abs-threshold::thresholds" : [  ]
+					"simulation::obstacles_threshold_low" : [  ]
 				}
 
 			}
@@ -846,8 +746,8 @@
 				"id" : 11,
 				"name" : "clouds above",
 				"data" : 				{
-					"u584010742" : [  ],
-					"u434010740" : [  ],
+					"u198005403" : [  ],
+					"u890005405" : [  ],
 					"simulation::periodic" : [ 1, 0 ],
 					"simulation::closed" : [ 0, 0, 1, 1 ],
 					"simulation::dim" : [ 1280, 720 ],
@@ -911,17 +811,7 @@
 					"simulation::bfecc_alpha" : [ 0.0 ],
 					"simulation::reset" : [ 0 ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::rscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::gscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::bscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::bypass" : [  ],
-					"simulation::background-cv::abs-threshold::bypass" : [  ],
-					"simulation::background-cv::abs-threshold::blur" : [  ],
-					"simulation::background-cv::abs-threshold::memory" : [  ],
-					"simulation::background-cv::abs-threshold::lpf" : [  ],
-					"simulation::background-cv::abs-threshold::u502013472" : [  ],
-					"simulation::background-cv::abs-threshold::thresholds" : [  ]
+					"simulation::obstacles_threshold_low" : [  ]
 				}
 
 			}
@@ -930,8 +820,8 @@
 				"id" : 12,
 				"name" : "clouds above wind",
 				"data" : 				{
-					"u584010742" : [  ],
-					"u434010740" : [  ],
+					"u198005403" : [  ],
+					"u890005405" : [  ],
 					"simulation::periodic" : [ 1, 0 ],
 					"simulation::closed" : [ 0, 0, 0, 1 ],
 					"simulation::dim" : [ 1280, 720 ],
@@ -995,17 +885,7 @@
 					"simulation::bfecc_alpha" : [  ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::rscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::gscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::bscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::bypass" : [  ],
-					"simulation::background-cv::abs-threshold::bypass" : [  ],
-					"simulation::background-cv::abs-threshold::blur" : [  ],
-					"simulation::background-cv::abs-threshold::memory" : [  ],
-					"simulation::background-cv::abs-threshold::lpf" : [  ],
-					"simulation::background-cv::abs-threshold::u502013472" : [  ],
-					"simulation::background-cv::abs-threshold::thresholds" : [  ]
+					"simulation::obstacles_threshold_low" : [  ]
 				}
 
 			}
@@ -1014,8 +894,8 @@
 				"id" : 13,
 				"name" : "disabled",
 				"data" : 				{
-					"u584010742" : [  ],
-					"u434010740" : [  ],
+					"u198005403" : [  ],
+					"u890005405" : [  ],
 					"simulation::periodic" : [ 1, 0 ],
 					"simulation::closed" : [ 0, 0, 0, 1 ],
 					"simulation::dim" : [ 1280, 720 ],
@@ -1079,17 +959,7 @@
 					"simulation::bfecc_alpha" : [  ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::rscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::gscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::bscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::bypass" : [  ],
-					"simulation::background-cv::abs-threshold::bypass" : [  ],
-					"simulation::background-cv::abs-threshold::blur" : [  ],
-					"simulation::background-cv::abs-threshold::memory" : [  ],
-					"simulation::background-cv::abs-threshold::lpf" : [  ],
-					"simulation::background-cv::abs-threshold::u502013472" : [  ],
-					"simulation::background-cv::abs-threshold::thresholds" : [  ]
+					"simulation::obstacles_threshold_low" : [  ]
 				}
 
 			}
@@ -1098,8 +968,8 @@
 				"id" : 14,
 				"name" : "life energy - tables - 1 - clouds",
 				"data" : 				{
-					"u584010742" : [  ],
-					"u434010740" : [  ],
+					"u198005403" : [  ],
+					"u890005405" : [  ],
 					"simulation::periodic" : [ 1, 1 ],
 					"simulation::closed" : [ 0, 0, 0, 0 ],
 					"simulation::dim" : [ 1280, 720 ],
@@ -1163,17 +1033,7 @@
 					"simulation::bfecc_alpha" : [ 0.0 ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::rscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::gscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::bscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::bypass" : [  ],
-					"simulation::background-cv::abs-threshold::bypass" : [  ],
-					"simulation::background-cv::abs-threshold::blur" : [  ],
-					"simulation::background-cv::abs-threshold::memory" : [  ],
-					"simulation::background-cv::abs-threshold::lpf" : [  ],
-					"simulation::background-cv::abs-threshold::u502013472" : [  ],
-					"simulation::background-cv::abs-threshold::thresholds" : [  ]
+					"simulation::obstacles_threshold_low" : [  ]
 				}
 
 			}
@@ -1182,8 +1042,8 @@
 				"id" : 15,
 				"name" : "life energy - tables - 2 - clouds vorticity",
 				"data" : 				{
-					"u584010742" : [  ],
-					"u434010740" : [  ],
+					"u198005403" : [  ],
+					"u890005405" : [  ],
 					"simulation::periodic" : [ 1, 1 ],
 					"simulation::closed" : [ 0, 0, 0, 0 ],
 					"simulation::dim" : [ 1280, 720 ],
@@ -1247,17 +1107,7 @@
 					"simulation::bfecc_alpha" : [ 0.0 ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::rscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::gscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::bscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::bypass" : [  ],
-					"simulation::background-cv::abs-threshold::bypass" : [  ],
-					"simulation::background-cv::abs-threshold::blur" : [  ],
-					"simulation::background-cv::abs-threshold::memory" : [  ],
-					"simulation::background-cv::abs-threshold::lpf" : [  ],
-					"simulation::background-cv::abs-threshold::u502013472" : [  ],
-					"simulation::background-cv::abs-threshold::thresholds" : [  ]
+					"simulation::obstacles_threshold_low" : [  ]
 				}
 
 			}
@@ -1266,8 +1116,8 @@
 				"id" : 16,
 				"name" : "life energy - tables - 3 - clouds above",
 				"data" : 				{
-					"u584010742" : [  ],
-					"u434010740" : [  ],
+					"u198005403" : [  ],
+					"u890005405" : [  ],
 					"simulation::periodic" : [ 1, 0 ],
 					"simulation::closed" : [ 0, 0, 0, 1 ],
 					"simulation::dim" : [ 1280, 720 ],
@@ -1331,17 +1181,7 @@
 					"simulation::bfecc_alpha" : [ 0.0 ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::rscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::gscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::bscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::bypass" : [  ],
-					"simulation::background-cv::abs-threshold::bypass" : [  ],
-					"simulation::background-cv::abs-threshold::blur" : [  ],
-					"simulation::background-cv::abs-threshold::memory" : [  ],
-					"simulation::background-cv::abs-threshold::lpf" : [  ],
-					"simulation::background-cv::abs-threshold::u502013472" : [  ],
-					"simulation::background-cv::abs-threshold::thresholds" : [  ]
+					"simulation::obstacles_threshold_low" : [  ]
 				}
 
 			}
@@ -1350,8 +1190,8 @@
 				"id" : 17,
 				"name" : "life energy - tables - 4 - clouds above vorticity",
 				"data" : 				{
-					"u584010742" : [  ],
-					"u434010740" : [  ],
+					"u198005403" : [  ],
+					"u890005405" : [  ],
 					"simulation::periodic" : [ 1, 0 ],
 					"simulation::closed" : [ 0, 0, 0, 1 ],
 					"simulation::dim" : [ 1280, 720 ],
@@ -1415,17 +1255,7 @@
 					"simulation::bfecc_alpha" : [ 0.0 ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::rscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::gscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::bscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::bypass" : [  ],
-					"simulation::background-cv::abs-threshold::bypass" : [  ],
-					"simulation::background-cv::abs-threshold::blur" : [  ],
-					"simulation::background-cv::abs-threshold::memory" : [  ],
-					"simulation::background-cv::abs-threshold::lpf" : [  ],
-					"simulation::background-cv::abs-threshold::u502013472" : [  ],
-					"simulation::background-cv::abs-threshold::thresholds" : [  ]
+					"simulation::obstacles_threshold_low" : [  ]
 				}
 
 			}
@@ -1434,8 +1264,8 @@
 				"id" : 18,
 				"name" : "life energy - tables - 5 - clouds again",
 				"data" : 				{
-					"u584010742" : [  ],
-					"u434010740" : [  ],
+					"u198005403" : [  ],
+					"u890005405" : [  ],
 					"simulation::periodic" : [ 1, 1 ],
 					"simulation::closed" : [ 0, 0, 0, 0 ],
 					"simulation::dim" : [ 1280, 720 ],
@@ -1499,17 +1329,7 @@
 					"simulation::bfecc_alpha" : [ 0.0 ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::rscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::gscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::bscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::bypass" : [  ],
-					"simulation::background-cv::abs-threshold::bypass" : [  ],
-					"simulation::background-cv::abs-threshold::blur" : [  ],
-					"simulation::background-cv::abs-threshold::memory" : [  ],
-					"simulation::background-cv::abs-threshold::lpf" : [  ],
-					"simulation::background-cv::abs-threshold::u502013472" : [  ],
-					"simulation::background-cv::abs-threshold::thresholds" : [  ]
+					"simulation::obstacles_threshold_low" : [  ]
 				}
 
 			}
@@ -1518,8 +1338,8 @@
 				"id" : 19,
 				"name" : "life energy - floor - 2 - particles clouds",
 				"data" : 				{
-					"u584010742" : [  ],
-					"u434010740" : [  ],
+					"u198005403" : [  ],
+					"u890005405" : [  ],
 					"simulation::periodic" : [ 1, 1 ],
 					"simulation::closed" : [ 0, 0, 0, 0 ],
 					"simulation::dim" : [ 1280, 720 ],
@@ -1583,17 +1403,7 @@
 					"simulation::bfecc_alpha" : [ 0.0 ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::rscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::gscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::bscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::bypass" : [  ],
-					"simulation::background-cv::abs-threshold::bypass" : [  ],
-					"simulation::background-cv::abs-threshold::blur" : [  ],
-					"simulation::background-cv::abs-threshold::memory" : [  ],
-					"simulation::background-cv::abs-threshold::lpf" : [  ],
-					"simulation::background-cv::abs-threshold::u502013472" : [  ],
-					"simulation::background-cv::abs-threshold::thresholds" : [  ]
+					"simulation::obstacles_threshold_low" : [  ]
 				}
 
 			}
@@ -1602,8 +1412,8 @@
 				"id" : 20,
 				"name" : "life energy - floor - 3 - velocity",
 				"data" : 				{
-					"u584010742" : [  ],
-					"u434010740" : [  ],
+					"u198005403" : [  ],
+					"u890005405" : [  ],
 					"simulation::periodic" : [ 1, 1 ],
 					"simulation::closed" : [ 0, 0, 0, 0 ],
 					"simulation::dim" : [ 1280, 720 ],
@@ -1667,17 +1477,7 @@
 					"simulation::bfecc_alpha" : [ 0.0 ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::rscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::gscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::bscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::bypass" : [  ],
-					"simulation::background-cv::abs-threshold::bypass" : [  ],
-					"simulation::background-cv::abs-threshold::blur" : [  ],
-					"simulation::background-cv::abs-threshold::memory" : [  ],
-					"simulation::background-cv::abs-threshold::lpf" : [  ],
-					"simulation::background-cv::abs-threshold::u502013472" : [  ],
-					"simulation::background-cv::abs-threshold::thresholds" : [  ]
+					"simulation::obstacles_threshold_low" : [  ]
 				}
 
 			}
@@ -1686,8 +1486,8 @@
 				"id" : 21,
 				"name" : "life energy - floor - 4 - pressure map",
 				"data" : 				{
-					"u584010742" : [  ],
-					"u434010740" : [  ],
+					"u198005403" : [  ],
+					"u890005405" : [  ],
 					"simulation::periodic" : [ 1, 1 ],
 					"simulation::closed" : [ 0, 0, 0, 0 ],
 					"simulation::dim" : [ 1280, 720 ],
@@ -1751,17 +1551,7 @@
 					"simulation::bfecc_alpha" : [ 0.0 ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::rscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::gscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::bscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::bypass" : [  ],
-					"simulation::background-cv::abs-threshold::bypass" : [  ],
-					"simulation::background-cv::abs-threshold::blur" : [  ],
-					"simulation::background-cv::abs-threshold::memory" : [  ],
-					"simulation::background-cv::abs-threshold::lpf" : [  ],
-					"simulation::background-cv::abs-threshold::u502013472" : [  ],
-					"simulation::background-cv::abs-threshold::thresholds" : [  ]
+					"simulation::obstacles_threshold_low" : [  ]
 				}
 
 			}
@@ -1770,8 +1560,8 @@
 				"id" : 22,
 				"name" : "life energy - floor - 5 - ghosting",
 				"data" : 				{
-					"u584010742" : [  ],
-					"u434010740" : [  ],
+					"u198005403" : [  ],
+					"u890005405" : [  ],
 					"simulation::periodic" : [ 0, 0 ],
 					"simulation::closed" : [ 0, 0, 0, 0 ],
 					"simulation::dim" : [ 1280, 720 ],
@@ -1835,17 +1625,7 @@
 					"simulation::bfecc_alpha" : [ 0.0 ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::rscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::gscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::bscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::bypass" : [  ],
-					"simulation::background-cv::abs-threshold::bypass" : [  ],
-					"simulation::background-cv::abs-threshold::blur" : [  ],
-					"simulation::background-cv::abs-threshold::memory" : [  ],
-					"simulation::background-cv::abs-threshold::lpf" : [  ],
-					"simulation::background-cv::abs-threshold::u502013472" : [  ],
-					"simulation::background-cv::abs-threshold::thresholds" : [  ]
+					"simulation::obstacles_threshold_low" : [  ]
 				}
 
 			}
@@ -1854,37 +1634,37 @@
 				"id" : 23,
 				"name" : "paper pressure",
 				"data" : 				{
-					"u584010742" : [  ],
-					"u434010740" : [  ],
-					"simulation::periodic" : [ 1, 1 ],
+					"u198005403" : [ 1 ],
+					"u890005405" : [ 1 ],
+					"simulation::periodic" : [ 0, 1 ],
 					"simulation::closed" : [ 0, 0, 0, 0 ],
 					"simulation::dim" : [ 1280, 720 ],
 					"simulation::dx" : [ 30.0 ],
-					"simulation::vorticity_confinement" : [ 0.9 ],
+					"simulation::vorticity_confinement" : [ 0.0 ],
 					"simulation::t0" : [ 150.0 ],
 					"simulation::z0" : [ 0.0 ],
 					"simulation::dry_cp" : [ 1004.0 ],
 					"simulation::vapor_cp" : [ 1850.0 ],
-					"simulation::jacobi_iterations" : [ 80 ],
+					"simulation::jacobi_iterations" : [ 20 ],
 					"simulation::p0" : [ 70.0 ],
 					"simulation::lapse_rate" : [ 6.5 ],
 					"simulation::dry_cv" : [ 717.0 ],
 					"simulation::vapor_cv" : [ 1388.5 ],
-					"simulation::accumulate_pressure" : [ 0 ],
+					"simulation::accumulate_pressure" : [ 1 ],
 					"simulation::vapor_dissipation" : [ 0.99 ],
 					"simulation::liquid_dissipation" : [ 0.99 ],
 					"simulation::temperature_dissipation" : [ 0.95 ],
-					"simulation::velocity_dissipation" : [ 1.0 ],
+					"simulation::velocity_dissipation" : [ 0.998 ],
 					"simulation::external_velocity_texture" : [ "hsflow" ],
-					"simulation::external_pressure_texture" : [ "bgsub" ],
+					"simulation::external_pressure_texture" : [ "presence_b_low" ],
 					"simulation::external_temperature_texture" : [ "hsflow" ],
 					"simulation::external_vapor_texture" : [ "hsflow" ],
 					"simulation::external_liquid_texture" : [ "hsflow" ],
 					"simulation::external_env_pressure_texture" : [ "hsflow" ],
 					"simulation::external_velocity_gain" : [ 0.0 ],
-					"simulation::external_pressure_gain" : [ -5000.0 ],
+					"simulation::external_pressure_gain" : [ -500.0 ],
 					"simulation::external_temperature_gain" : [ 0.0 ],
-					"simulation::external_vapor_gain" : [ 0.001 ],
+					"simulation::external_vapor_gain" : [ 0.0 ],
 					"simulation::external_liquid_gain" : [ 0.0 ],
 					"simulation::external_env_pressure_gain" : [ 0.0 ],
 					"simulation::hsflow_lambda" : [ 0.1 ],
@@ -1893,23 +1673,23 @@
 					"simulation::hsflow_motion_blur_up" : [ 0.0 ],
 					"simulation::hsflow_motion_blur_down" : [ 0.9 ],
 					"simulation::hsflow_blur" : [ 1.0 ],
-					"simulation::obstacles_fg_motion_blur" : [ 0.0 ],
-					"simulation::obstacles_blur" : [ 2.51 ],
+					"simulation::obstacles_fg_motion_blur" : [ 0.95 ],
+					"simulation::obstacles_blur" : [ 2.2 ],
 					"simulation::obstacles_threshold" : [ 0.09 ],
 					"simulation::obstacles_bg_motion_blur" : [ 1.0 ],
-					"simulation::camera_obstacles" : [ 0 ],
+					"simulation::camera_obstacles" : [ 1 ],
 					"simulation::dt" : [ 0.9 ],
 					"simulation::speed" : [ 0.0333 ],
 					"simulation::use_speed" : [ 0 ],
-					"simulation::gravity_angle" : [ 0.43 ],
-					"simulation::gravity_magnitude" : [ 10.0 ],
-					"simulation::wind_angle" : [ 167.816570000000013 ],
+					"simulation::gravity_angle" : [ 0.0 ],
+					"simulation::gravity_magnitude" : [ 0.001 ],
+					"simulation::wind_angle" : [ 270.971653447094866 ],
 					"simulation::wind_magnitude" : [ 0.01 ],
 					"simulation::origin" : [ 0.0, 1.0 ],
 					"simulation::enable" : [ 1 ],
 					"simulation::latent_heat" : [ 2501000.0 ],
 					"simulation::dtfl" : [ 0.9 ],
-					"simulation::hsflow_source" : [ "bgsub" ],
+					"simulation::hsflow_source" : [ "presence_b_low" ],
 					"simulation::veldim" : [ 1280, 720 ],
 					"simulation::viscosity_iterations" : [ 0 ],
 					"simulation::viscosity" : [ 0.0 ],
@@ -1918,18 +1698,8 @@
 					"simulation::bfecc" : [ 0 ],
 					"simulation::bfecc_alpha" : [ 0.0 ],
 					"simulation::reset" : [  ],
-					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::rscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::gscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::bscale" : [  ],
-					"simulation::background-cv::sc.texture.rgb2luma[1]::bypass" : [  ],
-					"simulation::background-cv::abs-threshold::bypass" : [  ],
-					"simulation::background-cv::abs-threshold::blur" : [  ],
-					"simulation::background-cv::abs-threshold::memory" : [  ],
-					"simulation::background-cv::abs-threshold::lpf" : [  ],
-					"simulation::background-cv::abs-threshold::u502013472" : [  ],
-					"simulation::background-cv::abs-threshold::thresholds" : [  ]
+					"simulation::clear" : [ 0 ],
+					"simulation::obstacles_threshold_low" : [ -0.009 ]
 				}
 
 			}
