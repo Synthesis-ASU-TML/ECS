@@ -2,7 +2,7 @@
 	"name" : "ecs.clouds",
 	"version" : 1,
 	"creationdate" : 3590406737,
-	"modificationdate" : 3612784181,
+	"modificationdate" : 3631103324,
 	"viewrect" : [ 0.0, 439.0, 285.0, 583.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -12,22 +12,8 @@
 		"patchers" : 		{
 			"ecs.clouds.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ecs.clouds.test.2017-01-21-av.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ecs.clouds.test.2017-10-16-pressure.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"ecs.clouds.bounding-box.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
+				"local" : 1,
+				"toplevel" : 1
 			}
 
 		}
@@ -83,5 +69,6 @@
 	"readonly" : 0,
 	"devpathtype" : 0,
 	"devpath" : ".",
-	"sortmode" : 0
+	"sortmode" : 0,
+	"viewmode" : 0
 }
