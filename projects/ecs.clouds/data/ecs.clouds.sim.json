@@ -1636,7 +1636,7 @@
 				"data" : 				{
 					"u067001223" : [  ],
 					"u439001221" : [  ],
-					"simulation::periodic" : [ 0, 1 ],
+					"simulation::periodic" : [ 0, 0 ],
 					"simulation::closed" : [ 0, 0, 0, 0 ],
 					"simulation::dim" : [ 1280, 720 ],
 					"simulation::dx" : [ 30.0 ],
@@ -1677,7 +1677,7 @@
 					"simulation::obstacles_blur" : [ 2.2 ],
 					"simulation::obstacles_threshold" : [ 0.09 ],
 					"simulation::obstacles_bg_motion_blur" : [ 1.0 ],
-					"simulation::camera_obstacles" : [ 1 ],
+					"simulation::camera_obstacles" : [ 0 ],
 					"simulation::dt" : [ 0.9 ],
 					"simulation::speed" : [ 0.0333 ],
 					"simulation::use_speed" : [ 0 ],
