@@ -11,7 +11,7 @@
 					"floor-sim-preset" : [ 22 ],
 					"scrim-sim-preset" : [ 2 ],
 					"floor-sim-enable" : [ 0 ],
-					"scrim-sim-enable" : [ 0 ],
+					"scrim-sim-enable" : [ 1 ],
 					"floor-sim-opacity" : [ 1.0 ],
 					"floor-movie-city-opacity" : [ 0 ],
 					"floor-movie-water-opacity" : [ 0 ],
