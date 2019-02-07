@@ -45,8 +45,8 @@
 					"simulation::hsflow_motion_blur_up" : [ 0.0 ],
 					"simulation::hsflow_motion_blur_down" : [ 0.9 ],
 					"simulation::hsflow_blur" : [ 1.0 ],
-					"simulation::obstacles_fg_motion_blur" : [ 0.0 ],
-					"simulation::obstacles_blur" : [ 1.0065 ],
+					"simulation::obstacles_fg_motion_blur" : [ 0.95 ],
+					"simulation::obstacles_blur" : [ 1 ],
 					"simulation::obstacles_threshold" : [ 0.0075 ],
 					"simulation::obstacles_bg_motion_blur" : [ 1.0 ],
 					"simulation::camera_obstacles" : [ 0 ],
@@ -71,7 +71,7 @@
 					"simulation::bfecc_alpha" : [  ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [ -0.35 ]
+					"simulation::obstacles_threshold_low" : [ -0.012 ]
 				}
 
 			}
@@ -119,8 +119,8 @@
 					"simulation::hsflow_motion_blur_up" : [ 0.0 ],
 					"simulation::hsflow_motion_blur_down" : [ 0.9 ],
 					"simulation::hsflow_blur" : [ 1.0 ],
-					"simulation::obstacles_fg_motion_blur" : [ 0.0 ],
-					"simulation::obstacles_blur" : [ 1.0065 ],
+					"simulation::obstacles_fg_motion_blur" : [ 0.95 ],
+					"simulation::obstacles_blur" : [ 1 ],
 					"simulation::obstacles_threshold" : [ 0.0075 ],
 					"simulation::obstacles_bg_motion_blur" : [ 1.0 ],
 					"simulation::camera_obstacles" : [ 0 ],
@@ -145,7 +145,7 @@
 					"simulation::bfecc_alpha" : [  ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [ -0.35 ]
+					"simulation::obstacles_threshold_low" : [ -0.012 ]
 				}
 
 			}
@@ -193,8 +193,8 @@
 					"simulation::hsflow_motion_blur_up" : [ 0.0 ],
 					"simulation::hsflow_motion_blur_down" : [ 0.9 ],
 					"simulation::hsflow_blur" : [ 1.0 ],
-					"simulation::obstacles_fg_motion_blur" : [ 0.0 ],
-					"simulation::obstacles_blur" : [ 2.51 ],
+					"simulation::obstacles_fg_motion_blur" : [ 0.95 ],
+					"simulation::obstacles_blur" : [ 1 ],
 					"simulation::obstacles_threshold" : [ 0.0075 ],
 					"simulation::obstacles_bg_motion_blur" : [ 0.995 ],
 					"simulation::camera_obstacles" : [ 0 ],
@@ -219,7 +219,7 @@
 					"simulation::bfecc_alpha" : [  ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [ -0.35 ]
+					"simulation::obstacles_threshold_low" : [ -0.012 ]
 				}
 
 			}
@@ -268,7 +268,7 @@
 					"simulation::hsflow_motion_blur_down" : [ 0.9 ],
 					"simulation::hsflow_blur" : [ 1.0 ],
 					"simulation::obstacles_fg_motion_blur" : [ 0.95 ],
-					"simulation::obstacles_blur" : [ 2.2 ],
+					"simulation::obstacles_blur" : [ 1 ],
 					"simulation::obstacles_threshold" : [ 0.0075 ],
 					"simulation::obstacles_bg_motion_blur" : [ 1.0 ],
 					"simulation::camera_obstacles" : [ 1 ],
@@ -293,7 +293,7 @@
 					"simulation::bfecc_alpha" : [  ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [ -0.35 ]
+					"simulation::obstacles_threshold_low" : [ -0.012 ]
 				}
 
 			}
@@ -341,8 +341,8 @@
 					"simulation::hsflow_motion_blur_up" : [ 0.0 ],
 					"simulation::hsflow_motion_blur_down" : [ 0.9 ],
 					"simulation::hsflow_blur" : [ 1.0 ],
-					"simulation::obstacles_fg_motion_blur" : [ 0.0 ],
-					"simulation::obstacles_blur" : [ 1.0065 ],
+					"simulation::obstacles_fg_motion_blur" : [ 0.95 ],
+					"simulation::obstacles_blur" : [ 1 ],
 					"simulation::obstacles_threshold" : [ 0.0075 ],
 					"simulation::obstacles_bg_motion_blur" : [ 1.0 ],
 					"simulation::camera_obstacles" : [ 0 ],
@@ -367,7 +367,7 @@
 					"simulation::bfecc_alpha" : [  ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [ -0.35 ]
+					"simulation::obstacles_threshold_low" : [ -0.012 ]
 				}
 
 			}
@@ -415,8 +415,8 @@
 					"simulation::hsflow_motion_blur_up" : [ 0.0 ],
 					"simulation::hsflow_motion_blur_down" : [ 0.9 ],
 					"simulation::hsflow_blur" : [ 1.0 ],
-					"simulation::obstacles_fg_motion_blur" : [ 0.0 ],
-					"simulation::obstacles_blur" : [ 2.51 ],
+					"simulation::obstacles_fg_motion_blur" : [ 0.95 ],
+					"simulation::obstacles_blur" : [ 1 ],
 					"simulation::obstacles_threshold" : [ 0.0075 ],
 					"simulation::obstacles_bg_motion_blur" : [ 1.0 ],
 					"simulation::camera_obstacles" : [ 0 ],
@@ -441,7 +441,7 @@
 					"simulation::bfecc_alpha" : [  ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [ -0.35 ]
+					"simulation::obstacles_threshold_low" : [ -0.012 ]
 				}
 
 			}
@@ -489,8 +489,8 @@
 					"simulation::hsflow_motion_blur_up" : [ 0.0 ],
 					"simulation::hsflow_motion_blur_down" : [ 0.9 ],
 					"simulation::hsflow_blur" : [ 1.0 ],
-					"simulation::obstacles_fg_motion_blur" : [ 0.0 ],
-					"simulation::obstacles_blur" : [ 2.51 ],
+					"simulation::obstacles_fg_motion_blur" : [ 0.95 ],
+					"simulation::obstacles_blur" : [ 1 ],
 					"simulation::obstacles_threshold" : [ 0.0075 ],
 					"simulation::obstacles_bg_motion_blur" : [ 0.995 ],
 					"simulation::camera_obstacles" : [ 0 ],
@@ -515,7 +515,7 @@
 					"simulation::bfecc_alpha" : [  ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [ -0.35 ]
+					"simulation::obstacles_threshold_low" : [ -0.012 ]
 				}
 
 			}
@@ -563,8 +563,8 @@
 					"simulation::hsflow_motion_blur_up" : [ 0.0 ],
 					"simulation::hsflow_motion_blur_down" : [ 0.9 ],
 					"simulation::hsflow_blur" : [ 1.0 ],
-					"simulation::obstacles_fg_motion_blur" : [ 0.0 ],
-					"simulation::obstacles_blur" : [ 2.51 ],
+					"simulation::obstacles_fg_motion_blur" : [ 0.95 ],
+					"simulation::obstacles_blur" : [ 1 ],
 					"simulation::obstacles_threshold" : [ 0.0075 ],
 					"simulation::obstacles_bg_motion_blur" : [ 0.995 ],
 					"simulation::camera_obstacles" : [ 0 ],
@@ -589,7 +589,7 @@
 					"simulation::bfecc_alpha" : [ 0.0 ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [ -0.35 ]
+					"simulation::obstacles_threshold_low" : [ -0.012 ]
 				}
 
 			}
@@ -637,8 +637,8 @@
 					"simulation::hsflow_motion_blur_up" : [ 0.0 ],
 					"simulation::hsflow_motion_blur_down" : [ 0.9 ],
 					"simulation::hsflow_blur" : [ 1.0 ],
-					"simulation::obstacles_fg_motion_blur" : [ 0.0 ],
-					"simulation::obstacles_blur" : [ 2.51 ],
+					"simulation::obstacles_fg_motion_blur" : [ 0.95 ],
+					"simulation::obstacles_blur" : [ 1 ],
 					"simulation::obstacles_threshold" : [ 0.0075 ],
 					"simulation::obstacles_bg_motion_blur" : [ 0.995 ],
 					"simulation::camera_obstacles" : [ 0 ],
@@ -663,7 +663,7 @@
 					"simulation::bfecc_alpha" : [  ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [ -0.35 ]
+					"simulation::obstacles_threshold_low" : [ -0.012 ]
 				}
 
 			}
@@ -712,7 +712,7 @@
 					"simulation::hsflow_motion_blur_down" : [ 0.9 ],
 					"simulation::hsflow_blur" : [ 1.0 ],
 					"simulation::obstacles_fg_motion_blur" : [ 0.95 ],
-					"simulation::obstacles_blur" : [ 0.0 ],
+					"simulation::obstacles_blur" : [ 1 ],
 					"simulation::obstacles_threshold" : [ 0.0075 ],
 					"simulation::obstacles_bg_motion_blur" : [ 1.0 ],
 					"simulation::camera_obstacles" : [ 0 ],
@@ -737,7 +737,7 @@
 					"simulation::bfecc_alpha" : [  ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [ -0.35 ]
+					"simulation::obstacles_threshold_low" : [ -0.012 ]
 				}
 
 			}
@@ -785,8 +785,8 @@
 					"simulation::hsflow_motion_blur_up" : [ 0.0 ],
 					"simulation::hsflow_motion_blur_down" : [ 0.9 ],
 					"simulation::hsflow_blur" : [ 1.0 ],
-					"simulation::obstacles_fg_motion_blur" : [ 0.0 ],
-					"simulation::obstacles_blur" : [ 2.51 ],
+					"simulation::obstacles_fg_motion_blur" : [ 0.95 ],
+					"simulation::obstacles_blur" : [ 1 ],
 					"simulation::obstacles_threshold" : [ 0.0075 ],
 					"simulation::obstacles_bg_motion_blur" : [ 1.0 ],
 					"simulation::camera_obstacles" : [ 1 ],
@@ -811,7 +811,7 @@
 					"simulation::bfecc_alpha" : [ 0.0 ],
 					"simulation::reset" : [ 0 ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [ -0.35 ]
+					"simulation::obstacles_threshold_low" : [ -0.012 ]
 				}
 
 			}
@@ -859,8 +859,8 @@
 					"simulation::hsflow_motion_blur_up" : [ 0.0 ],
 					"simulation::hsflow_motion_blur_down" : [ 0.9 ],
 					"simulation::hsflow_blur" : [ 1.0 ],
-					"simulation::obstacles_fg_motion_blur" : [ 0.0 ],
-					"simulation::obstacles_blur" : [ 2.51 ],
+					"simulation::obstacles_fg_motion_blur" : [ 0.95 ],
+					"simulation::obstacles_blur" : [ 1 ],
 					"simulation::obstacles_threshold" : [ 0.0075 ],
 					"simulation::obstacles_bg_motion_blur" : [ 1.0 ],
 					"simulation::camera_obstacles" : [ 0 ],
@@ -885,7 +885,7 @@
 					"simulation::bfecc_alpha" : [  ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [ -0.35 ]
+					"simulation::obstacles_threshold_low" : [ -0.012 ]
 				}
 
 			}
@@ -933,8 +933,8 @@
 					"simulation::hsflow_motion_blur_up" : [ 0.0 ],
 					"simulation::hsflow_motion_blur_down" : [ 0.9 ],
 					"simulation::hsflow_blur" : [ 1.0 ],
-					"simulation::obstacles_fg_motion_blur" : [ 0.0 ],
-					"simulation::obstacles_blur" : [ 2.51 ],
+					"simulation::obstacles_fg_motion_blur" : [ 0.95 ],
+					"simulation::obstacles_blur" : [ 1 ],
 					"simulation::obstacles_threshold" : [ 0.0075 ],
 					"simulation::obstacles_bg_motion_blur" : [ 1.0 ],
 					"simulation::camera_obstacles" : [ 0 ],
@@ -959,7 +959,7 @@
 					"simulation::bfecc_alpha" : [  ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [ -0.35 ]
+					"simulation::obstacles_threshold_low" : [ -0.012 ]
 				}
 
 			}
@@ -1007,8 +1007,8 @@
 					"simulation::hsflow_motion_blur_up" : [ 0.0 ],
 					"simulation::hsflow_motion_blur_down" : [ 0.9 ],
 					"simulation::hsflow_blur" : [ 1.0 ],
-					"simulation::obstacles_fg_motion_blur" : [ 0.0 ],
-					"simulation::obstacles_blur" : [ 2.51 ],
+					"simulation::obstacles_fg_motion_blur" : [ 0.95 ],
+					"simulation::obstacles_blur" : [ 1 ],
 					"simulation::obstacles_threshold" : [ 0.0075 ],
 					"simulation::obstacles_bg_motion_blur" : [ 0.995 ],
 					"simulation::camera_obstacles" : [ 0 ],
@@ -1033,7 +1033,7 @@
 					"simulation::bfecc_alpha" : [ 0.0 ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [ -0.35 ]
+					"simulation::obstacles_threshold_low" : [ -0.012 ]
 				}
 
 			}
@@ -1081,8 +1081,8 @@
 					"simulation::hsflow_motion_blur_up" : [ 0.0 ],
 					"simulation::hsflow_motion_blur_down" : [ 0.9 ],
 					"simulation::hsflow_blur" : [ 1.0 ],
-					"simulation::obstacles_fg_motion_blur" : [ 0.0 ],
-					"simulation::obstacles_blur" : [ 2.51 ],
+					"simulation::obstacles_fg_motion_blur" : [ 0.95 ],
+					"simulation::obstacles_blur" : [ 1 ],
 					"simulation::obstacles_threshold" : [ 0.0075 ],
 					"simulation::obstacles_bg_motion_blur" : [ 0.995 ],
 					"simulation::camera_obstacles" : [ 0 ],
@@ -1107,7 +1107,7 @@
 					"simulation::bfecc_alpha" : [ 0.0 ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [ -0.35 ]
+					"simulation::obstacles_threshold_low" : [ -0.012 ]
 				}
 
 			}
@@ -1155,8 +1155,8 @@
 					"simulation::hsflow_motion_blur_up" : [ 0.0 ],
 					"simulation::hsflow_motion_blur_down" : [ 0.9 ],
 					"simulation::hsflow_blur" : [ 1.0 ],
-					"simulation::obstacles_fg_motion_blur" : [ 0.0 ],
-					"simulation::obstacles_blur" : [ 2.51 ],
+					"simulation::obstacles_fg_motion_blur" : [ 0.95 ],
+					"simulation::obstacles_blur" : [ 1 ],
 					"simulation::obstacles_threshold" : [ 0.0075 ],
 					"simulation::obstacles_bg_motion_blur" : [ 1.0 ],
 					"simulation::camera_obstacles" : [ 0 ],
@@ -1181,7 +1181,7 @@
 					"simulation::bfecc_alpha" : [ 0.0 ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [ -0.35 ]
+					"simulation::obstacles_threshold_low" : [ -0.012 ]
 				}
 
 			}
@@ -1229,8 +1229,8 @@
 					"simulation::hsflow_motion_blur_up" : [ 0.0 ],
 					"simulation::hsflow_motion_blur_down" : [ 0.9 ],
 					"simulation::hsflow_blur" : [ 1.0 ],
-					"simulation::obstacles_fg_motion_blur" : [ 0.0 ],
-					"simulation::obstacles_blur" : [ 2.51 ],
+					"simulation::obstacles_fg_motion_blur" : [ 0.95 ],
+					"simulation::obstacles_blur" : [ 1 ],
 					"simulation::obstacles_threshold" : [ 0.0075 ],
 					"simulation::obstacles_bg_motion_blur" : [ 0.995 ],
 					"simulation::camera_obstacles" : [ 0 ],
@@ -1255,7 +1255,7 @@
 					"simulation::bfecc_alpha" : [ 0.0 ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [ -0.35 ]
+					"simulation::obstacles_threshold_low" : [ -0.012 ]
 				}
 
 			}
@@ -1303,8 +1303,8 @@
 					"simulation::hsflow_motion_blur_up" : [ 0.0 ],
 					"simulation::hsflow_motion_blur_down" : [ 0.9 ],
 					"simulation::hsflow_blur" : [ 1.0 ],
-					"simulation::obstacles_fg_motion_blur" : [ 0.0 ],
-					"simulation::obstacles_blur" : [ 2.51 ],
+					"simulation::obstacles_fg_motion_blur" : [ 0.95 ],
+					"simulation::obstacles_blur" : [ 1 ],
 					"simulation::obstacles_threshold" : [ 0.0075 ],
 					"simulation::obstacles_bg_motion_blur" : [ 0.995 ],
 					"simulation::camera_obstacles" : [ 0 ],
@@ -1329,7 +1329,7 @@
 					"simulation::bfecc_alpha" : [ 0.0 ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [ -0.35 ]
+					"simulation::obstacles_threshold_low" : [ -0.012 ]
 				}
 
 			}
@@ -1377,8 +1377,8 @@
 					"simulation::hsflow_motion_blur_up" : [ 0.0 ],
 					"simulation::hsflow_motion_blur_down" : [ 0.9 ],
 					"simulation::hsflow_blur" : [ 1.0 ],
-					"simulation::obstacles_fg_motion_blur" : [ 0.0 ],
-					"simulation::obstacles_blur" : [ 2.51 ],
+					"simulation::obstacles_fg_motion_blur" : [ 0.95 ],
+					"simulation::obstacles_blur" : [ 1 ],
 					"simulation::obstacles_threshold" : [ 0.0075 ],
 					"simulation::obstacles_bg_motion_blur" : [ 1.0 ],
 					"simulation::camera_obstacles" : [ 0 ],
@@ -1403,7 +1403,7 @@
 					"simulation::bfecc_alpha" : [ 0.0 ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [ -0.35 ]
+					"simulation::obstacles_threshold_low" : [ -0.012 ]
 				}
 
 			}
@@ -1451,8 +1451,8 @@
 					"simulation::hsflow_motion_blur_up" : [ 0.0 ],
 					"simulation::hsflow_motion_blur_down" : [ 0.9 ],
 					"simulation::hsflow_blur" : [ 1.0 ],
-					"simulation::obstacles_fg_motion_blur" : [ 0.0 ],
-					"simulation::obstacles_blur" : [ 2.51 ],
+					"simulation::obstacles_fg_motion_blur" : [ 0.95 ],
+					"simulation::obstacles_blur" : [ 1 ],
 					"simulation::obstacles_threshold" : [ 0.0075 ],
 					"simulation::obstacles_bg_motion_blur" : [ 1.0 ],
 					"simulation::camera_obstacles" : [ 0 ],
@@ -1477,7 +1477,7 @@
 					"simulation::bfecc_alpha" : [ 0.0 ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [ -0.35 ]
+					"simulation::obstacles_threshold_low" : [ -0.012 ]
 				}
 
 			}
@@ -1525,8 +1525,8 @@
 					"simulation::hsflow_motion_blur_up" : [ 0.0 ],
 					"simulation::hsflow_motion_blur_down" : [ 0.9 ],
 					"simulation::hsflow_blur" : [ 1.0 ],
-					"simulation::obstacles_fg_motion_blur" : [ 0.0 ],
-					"simulation::obstacles_blur" : [ 2.51 ],
+					"simulation::obstacles_fg_motion_blur" : [ 0.95 ],
+					"simulation::obstacles_blur" : [ 1 ],
 					"simulation::obstacles_threshold" : [ 0.0075 ],
 					"simulation::obstacles_bg_motion_blur" : [ 1.0 ],
 					"simulation::camera_obstacles" : [ 0 ],
@@ -1551,7 +1551,7 @@
 					"simulation::bfecc_alpha" : [ 0.0 ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [ -0.35 ]
+					"simulation::obstacles_threshold_low" : [ -0.012 ]
 				}
 
 			}
@@ -1599,8 +1599,8 @@
 					"simulation::hsflow_motion_blur_up" : [ 0.0 ],
 					"simulation::hsflow_motion_blur_down" : [ 0.9 ],
 					"simulation::hsflow_blur" : [ 1.0 ],
-					"simulation::obstacles_fg_motion_blur" : [ 0.0 ],
-					"simulation::obstacles_blur" : [ 2.51 ],
+					"simulation::obstacles_fg_motion_blur" : [ 0.95 ],
+					"simulation::obstacles_blur" : [ 1 ],
 					"simulation::obstacles_threshold" : [ 0.0075 ],
 					"simulation::obstacles_bg_motion_blur" : [ 0.995 ],
 					"simulation::camera_obstacles" : [ 0 ],
@@ -1625,7 +1625,7 @@
 					"simulation::bfecc_alpha" : [ 0.0 ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [ -0.35 ]
+					"simulation::obstacles_threshold_low" : [ -0.012 ]
 				}
 
 			}
@@ -1674,7 +1674,7 @@
 					"simulation::hsflow_motion_blur_down" : [ 0.9 ],
 					"simulation::hsflow_blur" : [ 1.0 ],
 					"simulation::obstacles_fg_motion_blur" : [ 0.95 ],
-					"simulation::obstacles_blur" : [ 2.2 ],
+					"simulation::obstacles_blur" : [ 1 ],
 					"simulation::obstacles_threshold" : [ 0.0075 ],
 					"simulation::obstacles_bg_motion_blur" : [ 1.0 ],
 					"simulation::camera_obstacles" : [ 0 ],
@@ -1699,7 +1699,7 @@
 					"simulation::bfecc_alpha" : [ 0.0 ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [ 0 ],
-					"simulation::obstacles_threshold_low" : [ -0.35 ]
+					"simulation::obstacles_threshold_low" : [ -0.012 ]
 				}
 
 			}
@@ -1747,8 +1747,8 @@
 					"simulation::hsflow_motion_blur_up" : [ 0.0 ],
 					"simulation::hsflow_motion_blur_down" : [ 0.9 ],
 					"simulation::hsflow_blur" : [ 1.0 ],
-					"simulation::obstacles_fg_motion_blur" : [ 0.0 ],
-					"simulation::obstacles_blur" : [ 2.51 ],
+					"simulation::obstacles_fg_motion_blur" : [ 0.95 ],
+					"simulation::obstacles_blur" : [ 1 ],
 					"simulation::obstacles_threshold" : [ 0.0075 ],
 					"simulation::obstacles_bg_motion_blur" : [ 0.995 ],
 					"simulation::camera_obstacles" : [ 0 ],
@@ -1773,7 +1773,7 @@
 					"simulation::bfecc_alpha" : [  ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [ -0.35 ]
+					"simulation::obstacles_threshold_low" : [ -0.012 ]
 				}
 
 			}
