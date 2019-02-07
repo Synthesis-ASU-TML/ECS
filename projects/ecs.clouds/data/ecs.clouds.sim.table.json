@@ -47,7 +47,7 @@
 					"simulation::hsflow_blur" : [ 1.0 ],
 					"simulation::obstacles_fg_motion_blur" : [ 0.0 ],
 					"simulation::obstacles_blur" : [ 1.0065 ],
-					"simulation::obstacles_threshold" : [ 0.09 ],
+					"simulation::obstacles_threshold" : [ 0.0075 ],
 					"simulation::obstacles_bg_motion_blur" : [ 1.0 ],
 					"simulation::camera_obstacles" : [ 0 ],
 					"simulation::dt" : [ 0.9 ],
@@ -61,7 +61,7 @@
 					"simulation::enable" : [ 1 ],
 					"simulation::latent_heat" : [ 2501000.0 ],
 					"simulation::dtfl" : [ 0.9 ],
-					"simulation::hsflow_source" : [ "presence" ],
+					"simulation::hsflow_source" : [ "presence_union" ],
 					"simulation::veldim" : [ 1280, 720 ],
 					"simulation::viscosity_iterations" : [ 0 ],
 					"simulation::viscosity" : [ 0.0 ],
@@ -71,7 +71,7 @@
 					"simulation::bfecc_alpha" : [  ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [  ]
+					"simulation::obstacles_threshold_low" : [ -0.01 ]
 				}
 
 			}
@@ -121,7 +121,7 @@
 					"simulation::hsflow_blur" : [ 1.0 ],
 					"simulation::obstacles_fg_motion_blur" : [ 0.0 ],
 					"simulation::obstacles_blur" : [ 1.0065 ],
-					"simulation::obstacles_threshold" : [ 0.09 ],
+					"simulation::obstacles_threshold" : [ 0.0075 ],
 					"simulation::obstacles_bg_motion_blur" : [ 1.0 ],
 					"simulation::camera_obstacles" : [ 0 ],
 					"simulation::dt" : [ 0.9 ],
@@ -135,7 +135,7 @@
 					"simulation::enable" : [ 1 ],
 					"simulation::latent_heat" : [ 2501000.0 ],
 					"simulation::dtfl" : [ 0.9 ],
-					"simulation::hsflow_source" : [ "presence" ],
+					"simulation::hsflow_source" : [ "presence_union" ],
 					"simulation::veldim" : [ 1280, 720 ],
 					"simulation::viscosity_iterations" : [ 0 ],
 					"simulation::viscosity" : [ 0.0 ],
@@ -145,7 +145,7 @@
 					"simulation::bfecc_alpha" : [  ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [  ]
+					"simulation::obstacles_threshold_low" : [ -0.01 ]
 				}
 
 			}
@@ -195,7 +195,7 @@
 					"simulation::hsflow_blur" : [ 1.0 ],
 					"simulation::obstacles_fg_motion_blur" : [ 0.0 ],
 					"simulation::obstacles_blur" : [ 2.51 ],
-					"simulation::obstacles_threshold" : [ 0.09 ],
+					"simulation::obstacles_threshold" : [ 0.0075 ],
 					"simulation::obstacles_bg_motion_blur" : [ 0.995 ],
 					"simulation::camera_obstacles" : [ 0 ],
 					"simulation::dt" : [ 0.9 ],
@@ -209,17 +209,17 @@
 					"simulation::enable" : [ 1 ],
 					"simulation::latent_heat" : [ 2501000.0 ],
 					"simulation::dtfl" : [ 0.9 ],
-					"simulation::hsflow_source" : [ "bgsub" ],
+					"simulation::hsflow_source" : [ "presence_union" ],
 					"simulation::veldim" : [ 1280, 720 ],
 					"simulation::viscosity_iterations" : [ 0 ],
 					"simulation::viscosity" : [ 0.0 ],
 					"simulation::external_viscosity_gain" : [ 0.0 ],
-					"simulation::external_viscosity_texture" : [ "bgsub" ],
+					"simulation::external_viscosity_texture" : [ "presence_union" ],
 					"simulation::bfecc" : [  ],
 					"simulation::bfecc_alpha" : [  ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [  ]
+					"simulation::obstacles_threshold_low" : [ -0.01 ]
 				}
 
 			}
@@ -269,7 +269,7 @@
 					"simulation::hsflow_blur" : [ 1.0 ],
 					"simulation::obstacles_fg_motion_blur" : [ 0.95 ],
 					"simulation::obstacles_blur" : [ 2.2 ],
-					"simulation::obstacles_threshold" : [ 0.09 ],
+					"simulation::obstacles_threshold" : [ 0.0075 ],
 					"simulation::obstacles_bg_motion_blur" : [ 1.0 ],
 					"simulation::camera_obstacles" : [ 1 ],
 					"simulation::dt" : [ 0.1 ],
@@ -283,7 +283,7 @@
 					"simulation::enable" : [ 1 ],
 					"simulation::latent_heat" : [ 2501000.0 ],
 					"simulation::dtfl" : [ 0.1 ],
-					"simulation::hsflow_source" : [ "presence" ],
+					"simulation::hsflow_source" : [ "presence_union" ],
 					"simulation::veldim" : [ 1280, 720 ],
 					"simulation::viscosity_iterations" : [ 0 ],
 					"simulation::viscosity" : [ 0.0 ],
@@ -293,7 +293,7 @@
 					"simulation::bfecc_alpha" : [  ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [ -0.009 ]
+					"simulation::obstacles_threshold_low" : [ -0.01 ]
 				}
 
 			}
@@ -343,7 +343,7 @@
 					"simulation::hsflow_blur" : [ 1.0 ],
 					"simulation::obstacles_fg_motion_blur" : [ 0.0 ],
 					"simulation::obstacles_blur" : [ 1.0065 ],
-					"simulation::obstacles_threshold" : [ 0.09 ],
+					"simulation::obstacles_threshold" : [ 0.0075 ],
 					"simulation::obstacles_bg_motion_blur" : [ 1.0 ],
 					"simulation::camera_obstacles" : [ 0 ],
 					"simulation::dt" : [ 0.9 ],
@@ -357,7 +357,7 @@
 					"simulation::enable" : [ 1 ],
 					"simulation::latent_heat" : [ 2501000.0 ],
 					"simulation::dtfl" : [ 0.9 ],
-					"simulation::hsflow_source" : [ "presence" ],
+					"simulation::hsflow_source" : [ "presence_union" ],
 					"simulation::veldim" : [ 1280, 720 ],
 					"simulation::viscosity_iterations" : [ 0 ],
 					"simulation::viscosity" : [ 0.0 ],
@@ -367,7 +367,7 @@
 					"simulation::bfecc_alpha" : [  ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [  ]
+					"simulation::obstacles_threshold_low" : [ -0.01 ]
 				}
 
 			}
@@ -417,7 +417,7 @@
 					"simulation::hsflow_blur" : [ 1.0 ],
 					"simulation::obstacles_fg_motion_blur" : [ 0.0 ],
 					"simulation::obstacles_blur" : [ 2.51 ],
-					"simulation::obstacles_threshold" : [ 0.09 ],
+					"simulation::obstacles_threshold" : [ 0.0075 ],
 					"simulation::obstacles_bg_motion_blur" : [ 1.0 ],
 					"simulation::camera_obstacles" : [ 0 ],
 					"simulation::dt" : [ 0.9 ],
@@ -431,7 +431,7 @@
 					"simulation::enable" : [ 0 ],
 					"simulation::latent_heat" : [ 2501000.0 ],
 					"simulation::dtfl" : [ 0.9 ],
-					"simulation::hsflow_source" : [ "presence" ],
+					"simulation::hsflow_source" : [ "presence_union" ],
 					"simulation::veldim" : [  ],
 					"simulation::viscosity_iterations" : [ 0 ],
 					"simulation::viscosity" : [ 0.0 ],
@@ -441,7 +441,7 @@
 					"simulation::bfecc_alpha" : [  ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [  ]
+					"simulation::obstacles_threshold_low" : [ -0.01 ]
 				}
 
 			}
@@ -491,7 +491,7 @@
 					"simulation::hsflow_blur" : [ 1.0 ],
 					"simulation::obstacles_fg_motion_blur" : [ 0.0 ],
 					"simulation::obstacles_blur" : [ 2.51 ],
-					"simulation::obstacles_threshold" : [ 0.09 ],
+					"simulation::obstacles_threshold" : [ 0.0075 ],
 					"simulation::obstacles_bg_motion_blur" : [ 0.995 ],
 					"simulation::camera_obstacles" : [ 0 ],
 					"simulation::dt" : [ 0.9 ],
@@ -505,17 +505,17 @@
 					"simulation::enable" : [ 1 ],
 					"simulation::latent_heat" : [ 2501000.0 ],
 					"simulation::dtfl" : [ 0.9 ],
-					"simulation::hsflow_source" : [ "bgsub" ],
+					"simulation::hsflow_source" : [ "presence_union" ],
 					"simulation::veldim" : [ 1280, 720 ],
 					"simulation::viscosity_iterations" : [ 0 ],
 					"simulation::viscosity" : [ 0.0 ],
 					"simulation::external_viscosity_gain" : [ 0.0 ],
-					"simulation::external_viscosity_texture" : [ "bgsub" ],
+					"simulation::external_viscosity_texture" : [ "presence_union" ],
 					"simulation::bfecc" : [  ],
 					"simulation::bfecc_alpha" : [  ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [  ]
+					"simulation::obstacles_threshold_low" : [ -0.01 ]
 				}
 
 			}
@@ -565,7 +565,7 @@
 					"simulation::hsflow_blur" : [ 1.0 ],
 					"simulation::obstacles_fg_motion_blur" : [ 0.0 ],
 					"simulation::obstacles_blur" : [ 2.51 ],
-					"simulation::obstacles_threshold" : [ 0.09 ],
+					"simulation::obstacles_threshold" : [ 0.0075 ],
 					"simulation::obstacles_bg_motion_blur" : [ 0.995 ],
 					"simulation::camera_obstacles" : [ 0 ],
 					"simulation::dt" : [ 0.9 ],
@@ -579,17 +579,17 @@
 					"simulation::enable" : [ 1 ],
 					"simulation::latent_heat" : [ 2501000.0 ],
 					"simulation::dtfl" : [ 0.9 ],
-					"simulation::hsflow_source" : [ "bgsub" ],
+					"simulation::hsflow_source" : [ "presence_union" ],
 					"simulation::veldim" : [ 1280, 720 ],
 					"simulation::viscosity_iterations" : [ 0 ],
 					"simulation::viscosity" : [ 0.0 ],
 					"simulation::external_viscosity_gain" : [ 0.0 ],
-					"simulation::external_viscosity_texture" : [ "bgsub" ],
+					"simulation::external_viscosity_texture" : [ "presence_union" ],
 					"simulation::bfecc" : [ 0 ],
 					"simulation::bfecc_alpha" : [ 0.0 ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [  ]
+					"simulation::obstacles_threshold_low" : [ -0.01 ]
 				}
 
 			}
@@ -639,7 +639,7 @@
 					"simulation::hsflow_blur" : [ 1.0 ],
 					"simulation::obstacles_fg_motion_blur" : [ 0.0 ],
 					"simulation::obstacles_blur" : [ 2.51 ],
-					"simulation::obstacles_threshold" : [ 0.09 ],
+					"simulation::obstacles_threshold" : [ 0.0075 ],
 					"simulation::obstacles_bg_motion_blur" : [ 0.995 ],
 					"simulation::camera_obstacles" : [ 0 ],
 					"simulation::dt" : [ 0.9 ],
@@ -653,17 +653,17 @@
 					"simulation::enable" : [ 1 ],
 					"simulation::latent_heat" : [ 2501000.0 ],
 					"simulation::dtfl" : [ 0.9 ],
-					"simulation::hsflow_source" : [ "bgsub" ],
+					"simulation::hsflow_source" : [ "presence_union" ],
 					"simulation::veldim" : [ 1280, 720 ],
 					"simulation::viscosity_iterations" : [ 0 ],
 					"simulation::viscosity" : [ 0.0 ],
 					"simulation::external_viscosity_gain" : [ 0.0 ],
-					"simulation::external_viscosity_texture" : [ "bgsub" ],
+					"simulation::external_viscosity_texture" : [ "presence_union" ],
 					"simulation::bfecc" : [  ],
 					"simulation::bfecc_alpha" : [  ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [  ]
+					"simulation::obstacles_threshold_low" : [ -0.01 ]
 				}
 
 			}
@@ -694,7 +694,7 @@
 					"simulation::temperature_dissipation" : [ 0.95 ],
 					"simulation::velocity_dissipation" : [ 1.0 ],
 					"simulation::external_velocity_texture" : [ "hsflow" ],
-					"simulation::external_pressure_texture" : [ "bgsub" ],
+					"simulation::external_pressure_texture" : [ "presence_union" ],
 					"simulation::external_temperature_texture" : [ "hsflow" ],
 					"simulation::external_vapor_texture" : [ "hsflow" ],
 					"simulation::external_liquid_texture" : [ "hsflow" ],
@@ -713,7 +713,7 @@
 					"simulation::hsflow_blur" : [ 1.0 ],
 					"simulation::obstacles_fg_motion_blur" : [ 0.95 ],
 					"simulation::obstacles_blur" : [ 0.0 ],
-					"simulation::obstacles_threshold" : [ 0.16 ],
+					"simulation::obstacles_threshold" : [ 0.0075 ],
 					"simulation::obstacles_bg_motion_blur" : [ 1.0 ],
 					"simulation::camera_obstacles" : [ 0 ],
 					"simulation::dt" : [ 0.9 ],
@@ -727,17 +727,17 @@
 					"simulation::enable" : [ 1 ],
 					"simulation::latent_heat" : [ 2501000.0 ],
 					"simulation::dtfl" : [ 0.9 ],
-					"simulation::hsflow_source" : [ "bgsub" ],
+					"simulation::hsflow_source" : [ "presence_union" ],
 					"simulation::veldim" : [ 1280, 720 ],
 					"simulation::viscosity_iterations" : [ 0 ],
 					"simulation::viscosity" : [ 0.0 ],
 					"simulation::external_viscosity_gain" : [ 0.0 ],
-					"simulation::external_viscosity_texture" : [ "bgsub" ],
+					"simulation::external_viscosity_texture" : [ "presence_union" ],
 					"simulation::bfecc" : [  ],
 					"simulation::bfecc_alpha" : [  ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [  ]
+					"simulation::obstacles_threshold_low" : [ -0.01 ]
 				}
 
 			}
@@ -787,7 +787,7 @@
 					"simulation::hsflow_blur" : [ 1.0 ],
 					"simulation::obstacles_fg_motion_blur" : [ 0.0 ],
 					"simulation::obstacles_blur" : [ 2.51 ],
-					"simulation::obstacles_threshold" : [ 0.02 ],
+					"simulation::obstacles_threshold" : [ 0.0075 ],
 					"simulation::obstacles_bg_motion_blur" : [ 1.0 ],
 					"simulation::camera_obstacles" : [ 1 ],
 					"simulation::dt" : [ 0.9 ],
@@ -801,17 +801,17 @@
 					"simulation::enable" : [ 1 ],
 					"simulation::latent_heat" : [ 2501000.0 ],
 					"simulation::dtfl" : [ 0.9 ],
-					"simulation::hsflow_source" : [ "presence" ],
+					"simulation::hsflow_source" : [ "presence_union" ],
 					"simulation::veldim" : [ 1280, 720 ],
 					"simulation::viscosity_iterations" : [ 0 ],
 					"simulation::viscosity" : [ 0.0 ],
 					"simulation::external_viscosity_gain" : [ 0.0 ],
-					"simulation::external_viscosity_texture" : [ "bgsub" ],
+					"simulation::external_viscosity_texture" : [ "presence_union" ],
 					"simulation::bfecc" : [ 0 ],
 					"simulation::bfecc_alpha" : [ 0.0 ],
 					"simulation::reset" : [ 0 ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [  ]
+					"simulation::obstacles_threshold_low" : [ -0.01 ]
 				}
 
 			}
@@ -861,7 +861,7 @@
 					"simulation::hsflow_blur" : [ 1.0 ],
 					"simulation::obstacles_fg_motion_blur" : [ 0.0 ],
 					"simulation::obstacles_blur" : [ 2.51 ],
-					"simulation::obstacles_threshold" : [ 0.02 ],
+					"simulation::obstacles_threshold" : [ 0.0075 ],
 					"simulation::obstacles_bg_motion_blur" : [ 1.0 ],
 					"simulation::camera_obstacles" : [ 0 ],
 					"simulation::dt" : [ 0.9 ],
@@ -875,17 +875,17 @@
 					"simulation::enable" : [ 1 ],
 					"simulation::latent_heat" : [ 2501000.0 ],
 					"simulation::dtfl" : [ 0.9 ],
-					"simulation::hsflow_source" : [ "presence" ],
+					"simulation::hsflow_source" : [ "presence_union" ],
 					"simulation::veldim" : [ 1280, 720 ],
 					"simulation::viscosity_iterations" : [ 0 ],
 					"simulation::viscosity" : [ 0.0 ],
 					"simulation::external_viscosity_gain" : [ 0.0 ],
-					"simulation::external_viscosity_texture" : [ "bgsub" ],
+					"simulation::external_viscosity_texture" : [ "presence_union" ],
 					"simulation::bfecc" : [  ],
 					"simulation::bfecc_alpha" : [  ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [  ]
+					"simulation::obstacles_threshold_low" : [ -0.01 ]
 				}
 
 			}
@@ -935,7 +935,7 @@
 					"simulation::hsflow_blur" : [ 1.0 ],
 					"simulation::obstacles_fg_motion_blur" : [ 0.0 ],
 					"simulation::obstacles_blur" : [ 2.51 ],
-					"simulation::obstacles_threshold" : [ 0.08 ],
+					"simulation::obstacles_threshold" : [ 0.0075 ],
 					"simulation::obstacles_bg_motion_blur" : [ 1.0 ],
 					"simulation::camera_obstacles" : [ 0 ],
 					"simulation::dt" : [ 0.9 ],
@@ -949,7 +949,7 @@
 					"simulation::enable" : [ 0 ],
 					"simulation::latent_heat" : [ 2501000.0 ],
 					"simulation::dtfl" : [ 0.9 ],
-					"simulation::hsflow_source" : [ "presence" ],
+					"simulation::hsflow_source" : [ "presence_union" ],
 					"simulation::veldim" : [ 1280, 720 ],
 					"simulation::viscosity_iterations" : [  ],
 					"simulation::viscosity" : [  ],
@@ -959,7 +959,7 @@
 					"simulation::bfecc_alpha" : [  ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [  ]
+					"simulation::obstacles_threshold_low" : [ -0.01 ]
 				}
 
 			}
@@ -1009,7 +1009,7 @@
 					"simulation::hsflow_blur" : [ 1.0 ],
 					"simulation::obstacles_fg_motion_blur" : [ 0.0 ],
 					"simulation::obstacles_blur" : [ 2.51 ],
-					"simulation::obstacles_threshold" : [ 0.09 ],
+					"simulation::obstacles_threshold" : [ 0.0075 ],
 					"simulation::obstacles_bg_motion_blur" : [ 0.995 ],
 					"simulation::camera_obstacles" : [ 0 ],
 					"simulation::dt" : [ 0.9 ],
@@ -1023,17 +1023,17 @@
 					"simulation::enable" : [ 1 ],
 					"simulation::latent_heat" : [ 2501000.0 ],
 					"simulation::dtfl" : [ 0.9 ],
-					"simulation::hsflow_source" : [ "bgsub" ],
+					"simulation::hsflow_source" : [ "presence_union" ],
 					"simulation::veldim" : [ 1280, 720 ],
 					"simulation::viscosity_iterations" : [ 0 ],
 					"simulation::viscosity" : [ 0.0 ],
 					"simulation::external_viscosity_gain" : [ 0.0 ],
-					"simulation::external_viscosity_texture" : [ "bgsub" ],
+					"simulation::external_viscosity_texture" : [ "presence_union" ],
 					"simulation::bfecc" : [ 0 ],
 					"simulation::bfecc_alpha" : [ 0.0 ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [  ]
+					"simulation::obstacles_threshold_low" : [ -0.01 ]
 				}
 
 			}
@@ -1083,7 +1083,7 @@
 					"simulation::hsflow_blur" : [ 1.0 ],
 					"simulation::obstacles_fg_motion_blur" : [ 0.0 ],
 					"simulation::obstacles_blur" : [ 2.51 ],
-					"simulation::obstacles_threshold" : [ 0.09 ],
+					"simulation::obstacles_threshold" : [ 0.0075 ],
 					"simulation::obstacles_bg_motion_blur" : [ 0.995 ],
 					"simulation::camera_obstacles" : [ 0 ],
 					"simulation::dt" : [ 0.9 ],
@@ -1097,17 +1097,17 @@
 					"simulation::enable" : [ 1 ],
 					"simulation::latent_heat" : [ 2501000.0 ],
 					"simulation::dtfl" : [ 0.9 ],
-					"simulation::hsflow_source" : [ "bgsub" ],
+					"simulation::hsflow_source" : [ "presence_union" ],
 					"simulation::veldim" : [ 1280, 720 ],
 					"simulation::viscosity_iterations" : [ 0 ],
 					"simulation::viscosity" : [ 0.0 ],
 					"simulation::external_viscosity_gain" : [ 0.0 ],
-					"simulation::external_viscosity_texture" : [ "bgsub" ],
+					"simulation::external_viscosity_texture" : [ "presence_union" ],
 					"simulation::bfecc" : [ 0 ],
 					"simulation::bfecc_alpha" : [ 0.0 ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [  ]
+					"simulation::obstacles_threshold_low" : [ -0.01 ]
 				}
 
 			}
@@ -1157,7 +1157,7 @@
 					"simulation::hsflow_blur" : [ 1.0 ],
 					"simulation::obstacles_fg_motion_blur" : [ 0.0 ],
 					"simulation::obstacles_blur" : [ 2.51 ],
-					"simulation::obstacles_threshold" : [ 0.02 ],
+					"simulation::obstacles_threshold" : [ 0.0075 ],
 					"simulation::obstacles_bg_motion_blur" : [ 1.0 ],
 					"simulation::camera_obstacles" : [ 0 ],
 					"simulation::dt" : [ 0.9 ],
@@ -1171,7 +1171,7 @@
 					"simulation::enable" : [ 1 ],
 					"simulation::latent_heat" : [ 2501000.0 ],
 					"simulation::dtfl" : [ 0.9 ],
-					"simulation::hsflow_source" : [ "presence" ],
+					"simulation::hsflow_source" : [ "presence_union" ],
 					"simulation::veldim" : [ 1280, 720 ],
 					"simulation::viscosity_iterations" : [ 0 ],
 					"simulation::viscosity" : [ 0.0 ],
@@ -1181,7 +1181,7 @@
 					"simulation::bfecc_alpha" : [ 0.0 ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [  ]
+					"simulation::obstacles_threshold_low" : [ -0.01 ]
 				}
 
 			}
@@ -1231,7 +1231,7 @@
 					"simulation::hsflow_blur" : [ 1.0 ],
 					"simulation::obstacles_fg_motion_blur" : [ 0.0 ],
 					"simulation::obstacles_blur" : [ 2.51 ],
-					"simulation::obstacles_threshold" : [ 0.02 ],
+					"simulation::obstacles_threshold" : [ 0.0075 ],
 					"simulation::obstacles_bg_motion_blur" : [ 0.995 ],
 					"simulation::camera_obstacles" : [ 0 ],
 					"simulation::dt" : [ 0.9 ],
@@ -1245,7 +1245,7 @@
 					"simulation::enable" : [ 1 ],
 					"simulation::latent_heat" : [ 2501000.0 ],
 					"simulation::dtfl" : [ 0.9 ],
-					"simulation::hsflow_source" : [ "presence" ],
+					"simulation::hsflow_source" : [ "presence_union" ],
 					"simulation::veldim" : [ 1280, 720 ],
 					"simulation::viscosity_iterations" : [ 0 ],
 					"simulation::viscosity" : [ 0.0 ],
@@ -1255,7 +1255,7 @@
 					"simulation::bfecc_alpha" : [ 0.0 ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [  ]
+					"simulation::obstacles_threshold_low" : [ -0.01 ]
 				}
 
 			}
@@ -1305,7 +1305,7 @@
 					"simulation::hsflow_blur" : [ 1.0 ],
 					"simulation::obstacles_fg_motion_blur" : [ 0.0 ],
 					"simulation::obstacles_blur" : [ 2.51 ],
-					"simulation::obstacles_threshold" : [ 0.09 ],
+					"simulation::obstacles_threshold" : [ 0.0075 ],
 					"simulation::obstacles_bg_motion_blur" : [ 0.995 ],
 					"simulation::camera_obstacles" : [ 0 ],
 					"simulation::dt" : [ 0.9 ],
@@ -1319,7 +1319,7 @@
 					"simulation::enable" : [ 1 ],
 					"simulation::latent_heat" : [ 2501000.0 ],
 					"simulation::dtfl" : [ 0.9 ],
-					"simulation::hsflow_source" : [ "presence" ],
+					"simulation::hsflow_source" : [ "presence_union" ],
 					"simulation::veldim" : [ 1280, 720 ],
 					"simulation::viscosity_iterations" : [ 0 ],
 					"simulation::viscosity" : [ 0.0 ],
@@ -1329,7 +1329,7 @@
 					"simulation::bfecc_alpha" : [ 0.0 ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [  ]
+					"simulation::obstacles_threshold_low" : [ -0.01 ]
 				}
 
 			}
@@ -1360,7 +1360,7 @@
 					"simulation::temperature_dissipation" : [ 0.95 ],
 					"simulation::velocity_dissipation" : [ 1.0 ],
 					"simulation::external_velocity_texture" : [ "hsflow" ],
-					"simulation::external_pressure_texture" : [ "presence" ],
+					"simulation::external_pressure_texture" : [ "presence_union" ],
 					"simulation::external_temperature_texture" : [ "hsflow" ],
 					"simulation::external_vapor_texture" : [ "hsflow" ],
 					"simulation::external_liquid_texture" : [ "hsflow" ],
@@ -1379,7 +1379,7 @@
 					"simulation::hsflow_blur" : [ 1.0 ],
 					"simulation::obstacles_fg_motion_blur" : [ 0.0 ],
 					"simulation::obstacles_blur" : [ 2.51 ],
-					"simulation::obstacles_threshold" : [ 0.09 ],
+					"simulation::obstacles_threshold" : [ 0.0075 ],
 					"simulation::obstacles_bg_motion_blur" : [ 1.0 ],
 					"simulation::camera_obstacles" : [ 0 ],
 					"simulation::dt" : [ 0.9 ],
@@ -1393,7 +1393,7 @@
 					"simulation::enable" : [ 1 ],
 					"simulation::latent_heat" : [ 2501000.0 ],
 					"simulation::dtfl" : [ 0.9 ],
-					"simulation::hsflow_source" : [ "presence" ],
+					"simulation::hsflow_source" : [ "presence_union" ],
 					"simulation::veldim" : [ 1280, 720 ],
 					"simulation::viscosity_iterations" : [ 0 ],
 					"simulation::viscosity" : [ 0.0 ],
@@ -1403,7 +1403,7 @@
 					"simulation::bfecc_alpha" : [ 0.0 ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [  ]
+					"simulation::obstacles_threshold_low" : [ -0.01 ]
 				}
 
 			}
@@ -1434,7 +1434,7 @@
 					"simulation::temperature_dissipation" : [ 0.95 ],
 					"simulation::velocity_dissipation" : [ 1.0 ],
 					"simulation::external_velocity_texture" : [ "hsflow" ],
-					"simulation::external_pressure_texture" : [ "presence" ],
+					"simulation::external_pressure_texture" : [ "presence_union" ],
 					"simulation::external_temperature_texture" : [ "hsflow" ],
 					"simulation::external_vapor_texture" : [ "hsflow" ],
 					"simulation::external_liquid_texture" : [ "hsflow" ],
@@ -1453,7 +1453,7 @@
 					"simulation::hsflow_blur" : [ 1.0 ],
 					"simulation::obstacles_fg_motion_blur" : [ 0.0 ],
 					"simulation::obstacles_blur" : [ 2.51 ],
-					"simulation::obstacles_threshold" : [ 0.09 ],
+					"simulation::obstacles_threshold" : [ 0.0075 ],
 					"simulation::obstacles_bg_motion_blur" : [ 1.0 ],
 					"simulation::camera_obstacles" : [ 0 ],
 					"simulation::dt" : [ 0.9 ],
@@ -1467,7 +1467,7 @@
 					"simulation::enable" : [ 1 ],
 					"simulation::latent_heat" : [ 2501000.0 ],
 					"simulation::dtfl" : [ 0.9 ],
-					"simulation::hsflow_source" : [ "presence" ],
+					"simulation::hsflow_source" : [ "presence_union" ],
 					"simulation::veldim" : [ 1280, 720 ],
 					"simulation::viscosity_iterations" : [ 0 ],
 					"simulation::viscosity" : [ 0.0 ],
@@ -1477,7 +1477,7 @@
 					"simulation::bfecc_alpha" : [ 0.0 ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [  ]
+					"simulation::obstacles_threshold_low" : [ -0.01 ]
 				}
 
 			}
@@ -1508,7 +1508,7 @@
 					"simulation::temperature_dissipation" : [ 0.95 ],
 					"simulation::velocity_dissipation" : [ 1.0 ],
 					"simulation::external_velocity_texture" : [ "hsflow" ],
-					"simulation::external_pressure_texture" : [ "presence" ],
+					"simulation::external_pressure_texture" : [ "presence_union" ],
 					"simulation::external_temperature_texture" : [ "hsflow" ],
 					"simulation::external_vapor_texture" : [ "hsflow" ],
 					"simulation::external_liquid_texture" : [ "hsflow" ],
@@ -1527,7 +1527,7 @@
 					"simulation::hsflow_blur" : [ 1.0 ],
 					"simulation::obstacles_fg_motion_blur" : [ 0.0 ],
 					"simulation::obstacles_blur" : [ 2.51 ],
-					"simulation::obstacles_threshold" : [ 0.09 ],
+					"simulation::obstacles_threshold" : [ 0.0075 ],
 					"simulation::obstacles_bg_motion_blur" : [ 1.0 ],
 					"simulation::camera_obstacles" : [ 0 ],
 					"simulation::dt" : [ 0.9 ],
@@ -1541,7 +1541,7 @@
 					"simulation::enable" : [ 1 ],
 					"simulation::latent_heat" : [ 2501000.0 ],
 					"simulation::dtfl" : [ 0.9 ],
-					"simulation::hsflow_source" : [ "presence" ],
+					"simulation::hsflow_source" : [ "presence_union" ],
 					"simulation::veldim" : [ 1280, 720 ],
 					"simulation::viscosity_iterations" : [ 0 ],
 					"simulation::viscosity" : [ 0.0 ],
@@ -1551,7 +1551,7 @@
 					"simulation::bfecc_alpha" : [ 0.0 ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [  ]
+					"simulation::obstacles_threshold_low" : [ -0.01 ]
 				}
 
 			}
@@ -1582,7 +1582,7 @@
 					"simulation::temperature_dissipation" : [ 0.95 ],
 					"simulation::velocity_dissipation" : [ 0.99 ],
 					"simulation::external_velocity_texture" : [ "hsflow" ],
-					"simulation::external_pressure_texture" : [ "presence" ],
+					"simulation::external_pressure_texture" : [ "presence_union" ],
 					"simulation::external_temperature_texture" : [ "hsflow" ],
 					"simulation::external_vapor_texture" : [ "hsflow" ],
 					"simulation::external_liquid_texture" : [ "hsflow" ],
@@ -1601,7 +1601,7 @@
 					"simulation::hsflow_blur" : [ 1.0 ],
 					"simulation::obstacles_fg_motion_blur" : [ 0.0 ],
 					"simulation::obstacles_blur" : [ 2.51 ],
-					"simulation::obstacles_threshold" : [ 0.09 ],
+					"simulation::obstacles_threshold" : [ 0.0075 ],
 					"simulation::obstacles_bg_motion_blur" : [ 0.995 ],
 					"simulation::camera_obstacles" : [ 0 ],
 					"simulation::dt" : [ 0.9 ],
@@ -1615,7 +1615,7 @@
 					"simulation::enable" : [ 1 ],
 					"simulation::latent_heat" : [ 2501000.0 ],
 					"simulation::dtfl" : [ 0.9 ],
-					"simulation::hsflow_source" : [ "presence" ],
+					"simulation::hsflow_source" : [ "presence_union" ],
 					"simulation::veldim" : [ 1280, 720 ],
 					"simulation::viscosity_iterations" : [ 0 ],
 					"simulation::viscosity" : [ 0.0 ],
@@ -1625,7 +1625,7 @@
 					"simulation::bfecc_alpha" : [ 0.0 ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [  ]
+					"simulation::obstacles_threshold_low" : [ -0.01 ]
 				}
 
 			}
@@ -1675,7 +1675,7 @@
 					"simulation::hsflow_blur" : [ 1.0 ],
 					"simulation::obstacles_fg_motion_blur" : [ 0.95 ],
 					"simulation::obstacles_blur" : [ 2.2 ],
-					"simulation::obstacles_threshold" : [ 0.09 ],
+					"simulation::obstacles_threshold" : [ 0.0075 ],
 					"simulation::obstacles_bg_motion_blur" : [ 1.0 ],
 					"simulation::camera_obstacles" : [ 0 ],
 					"simulation::dt" : [ 0.9 ],
@@ -1699,7 +1699,7 @@
 					"simulation::bfecc_alpha" : [ 0.0 ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [ 0 ],
-					"simulation::obstacles_threshold_low" : [ -0.009 ]
+					"simulation::obstacles_threshold_low" : [ -0.01 ]
 				}
 
 			}
@@ -1749,7 +1749,7 @@
 					"simulation::hsflow_blur" : [ 1.0 ],
 					"simulation::obstacles_fg_motion_blur" : [ 0.0 ],
 					"simulation::obstacles_blur" : [ 2.51 ],
-					"simulation::obstacles_threshold" : [ 0.09 ],
+					"simulation::obstacles_threshold" : [ 0.0075 ],
 					"simulation::obstacles_bg_motion_blur" : [ 0.995 ],
 					"simulation::camera_obstacles" : [ 0 ],
 					"simulation::dt" : [ 0.9 ],
@@ -1763,7 +1763,7 @@
 					"simulation::enable" : [ 1 ],
 					"simulation::latent_heat" : [ 2501000.0 ],
 					"simulation::dtfl" : [ 0.9 ],
-					"simulation::hsflow_source" : [ "presence" ],
+					"simulation::hsflow_source" : [ "presence_union" ],
 					"simulation::veldim" : [ 1280, 720 ],
 					"simulation::viscosity_iterations" : [ 0 ],
 					"simulation::viscosity" : [ 0.0 ],
@@ -1773,7 +1773,7 @@
 					"simulation::bfecc_alpha" : [  ],
 					"simulation::reset" : [  ],
 					"simulation::clear" : [  ],
-					"simulation::obstacles_threshold_low" : [  ]
+					"simulation::obstacles_threshold_low" : [ -0.01 ]
 				}
 
 			}
