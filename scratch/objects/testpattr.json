@@ -1,0 +1,35 @@
+{
+	"pattrstorage" : 	{
+		"name" : "u515000348",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"blob_threshold" : [ 77 ],
+					"circle_moment" : [ 10 ],
+					"circle_threshold" : [ 0.0001 ],
+					"sc.texture.presence.absolute::bypass" : [ 0.0 ],
+					"sc.texture.presence.absolute::blur" : [ 0.0, 0.0 ],
+					"sc.texture.presence.absolute::memory" : [ 1.0 ],
+					"sc.texture.presence.absolute::lpf" : [ 1.0 ],
+					"sc.texture.presence.absolute::u441000502" : [ 3.904999971389771, 3.904999971389771 ],
+					"sc.texture.presence.absolute::thresholds" : [ -0.232, 0.31 ],
+					"sc.texture.presence.absolute::binary" : [ 1.0 ],
+					"ecs.input.movie::dim" : [ 1280, 720 ],
+					"ecs.input.movie::rate" : [ 1.0 ],
+					"ecs.input.movie::moviefile" : [ "Black Syphon - UltraStudio HD Mini 2019-01-12 at 13.57.54 (Converted)_hap.mov" ],
+					"ecs.input.movie::texture" : [ "movie_input" ],
+					"ecs.input.movie::mirror" : [ 0 ],
+					"ecs.input.movie::flip" : [ 0 ],
+					"ecs.input.movie::invert" : [ 0 ],
+					"ecs.input.movie::enable" : [ 1 ],
+					"ecs.input.movie::folder" : [ "Macintosh HD:/Users/brandon/Desktop/Objects/" ]
+				}
+
+			}
+
+		}
+
+	}
+
+}
