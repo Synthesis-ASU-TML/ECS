@@ -4,7 +4,7 @@
 		"slots" : 		{
 			"1" : 			{
 				"id" : 1,
-				"name" : "EMA paper pressure",
+				"name" : "EMA - Pressure (objects mapped to sinks)",
 				"data" : 				{
 					"floor-vis-preset" : [ 27 ],
 					"scrim-vis-preset" : [ 10 ],
@@ -52,7 +52,7 @@
 ,
 			"2" : 			{
 				"id" : 2,
-				"name" : "EMA clouds",
+				"name" : "EMA - Clouds",
 				"data" : 				{
 					"floor-vis-preset" : [ 0 ],
 					"scrim-vis-preset" : [ 10 ],
@@ -100,7 +100,7 @@
 ,
 			"3" : 			{
 				"id" : 3,
-				"name" : "EMA pressure",
+				"name" : "EMA - Pressure (heatmap colormap)",
 				"data" : 				{
 					"floor-vis-preset" : [ 3 ],
 					"scrim-vis-preset" : [ 3 ],
@@ -148,7 +148,7 @@
 ,
 			"4" : 			{
 				"id" : 4,
-				"name" : "EMA velocity obstacles",
+				"name" : "EMA - Velocity (wind + bodies as obstacles)",
 				"data" : 				{
 					"floor-vis-preset" : [ 10 ],
 					"scrim-vis-preset" : [ 1 ],
@@ -196,7 +196,7 @@
 ,
 			"5" : 			{
 				"id" : 5,
-				"name" : "EMA velocity image",
+				"name" : "EMA - Velocity (direction mapped to hue)",
 				"data" : 				{
 					"floor-vis-preset" : [ 2 ],
 					"scrim-vis-preset" : [ 2 ],
@@ -388,7 +388,7 @@
 ,
 			"9" : 			{
 				"id" : 9,
-				"name" : "EMA velocity ghosting",
+				"name" : "EMA - Velocity (bodies mapped to pressure sink)",
 				"data" : 				{
 					"floor-vis-preset" : [ 25 ],
 					"scrim-vis-preset" : [ 10 ],
@@ -436,7 +436,7 @@
 ,
 			"10" : 			{
 				"id" : 10,
-				"name" : "EMA pressure cubehelix",
+				"name" : "EMA - Pressure (cubehelix colormap)",
 				"data" : 				{
 					"floor-vis-preset" : [ 15 ],
 					"scrim-vis-preset" : [ 15 ],
@@ -484,7 +484,7 @@
 ,
 			"11" : 			{
 				"id" : 11,
-				"name" : "EMA Life Energy - Tables - 1 - Clouds",
+				"name" : "EMA - Life Energy - Tables - Clouds",
 				"data" : 				{
 					"floor-vis-preset" : [ 17 ],
 					"scrim-vis-preset" : [ 10 ],
@@ -532,7 +532,7 @@
 ,
 			"12" : 			{
 				"id" : 12,
-				"name" : "EMA Life Energy - Tables - 3 - Clouds Above",
+				"name" : "EMA - Life Energy - Tables - Clouds Above (lava lamp)",
 				"data" : 				{
 					"floor-vis-preset" : [ 19 ],
 					"scrim-vis-preset" : [ 10 ],
@@ -580,7 +580,7 @@
 ,
 			"13" : 			{
 				"id" : 13,
-				"name" : "EMA Life Energy - Tables - 4 - Pressure",
+				"name" : "EMA - Life Energy - Tables - Pressure",
 				"data" : 				{
 					"floor-vis-preset" : [ 20 ],
 					"scrim-vis-preset" : [ 10 ],
@@ -628,7 +628,7 @@
 ,
 			"14" : 			{
 				"id" : 14,
-				"name" : "EMA Life Energy - Floor - 2 - Particles Clouds",
+				"name" : "EMA - Life Energy - Floor - Particles Clouds",
 				"data" : 				{
 					"floor-vis-preset" : [ 22 ],
 					"scrim-vis-preset" : [ 1 ],
@@ -676,7 +676,7 @@
 ,
 			"15" : 			{
 				"id" : 15,
-				"name" : "EMA Life Energy - Floor - 3 - Velocity",
+				"name" : "EMA - Life Energy - Floor - Velocity",
 				"data" : 				{
 					"floor-vis-preset" : [ 23 ],
 					"scrim-vis-preset" : [ 10 ],
@@ -724,7 +724,7 @@
 ,
 			"16" : 			{
 				"id" : 16,
-				"name" : "EMA Life Energy - Floor - 4 - Pressure Map",
+				"name" : "EMA - Life Energy - Floor - Pressure Map",
 				"data" : 				{
 					"floor-vis-preset" : [ 24 ],
 					"scrim-vis-preset" : [ 10 ],
@@ -772,7 +772,7 @@
 ,
 			"17" : 			{
 				"id" : 17,
-				"name" : "EMA Life Energy - Floor - 4 - Ghosting",
+				"name" : "EMA - Life Energy - Floor - Ghosting",
 				"data" : 				{
 					"floor-vis-preset" : [ 25 ],
 					"scrim-vis-preset" : [ 10 ],
@@ -868,7 +868,7 @@
 ,
 			"19" : 			{
 				"id" : 19,
-				"name" : "Obstacles",
+				"name" : "Camera - Presence",
 				"data" : 				{
 					"floor-vis-preset" : [ 6 ],
 					"scrim-vis-preset" : [ 6 ],
@@ -916,7 +916,7 @@
 ,
 			"20" : 			{
 				"id" : 20,
-				"name" : "all lights",
+				"name" : "Lights - Stage and Entry",
 				"data" : 				{
 					"floor-vis-preset" : [ 9 ],
 					"scrim-vis-preset" : [ 9 ],
