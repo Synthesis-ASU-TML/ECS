@@ -44,7 +44,8 @@
 					"lights-scoops" : [ 0.0 ],
 					"lights-booth" : [ 0.0 ],
 					"lights_toggle_master" : [ 1 ],
-					"lights-rgb" : [ 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0 ],
+					"floor_line_opacity" : [ 0 ],
+					"lights-rgb" : [  ],
 					"lights-intensity" : [ 0.0 ]
 				}
 
@@ -72,13 +73,13 @@
 					"floor-filterbanks-volume" : [ 1.0 ],
 					"cloudsynth-preset" : [ 0 ],
 					"timelenses-opacity" : [ 1.0 ],
-					"alexia-speed" : [  ],
-					"alexia-brightness" : [  ],
-					"alexia-state" : [  ],
-					"tablesynth-volume" : [  ],
-					"atmospheres" : [  ],
+					"alexia-speed" : [ 0.0 ],
+					"alexia-brightness" : [ 0.0 ],
+					"alexia-state" : [ 0 ],
+					"tablesynth-volume" : [ 0.0 ],
+					"atmospheres" : [ 0.0 ],
 					"lights_toggle_1" : [ 0 ],
-					"lights_toggle_2" : [ 0 ],
+					"lights_toggle_2" : [ 1 ],
 					"lights_toggle_3" : [ 0 ],
 					"lights_toggle_4" : [ 0 ],
 					"lights_toggle_5" : [ 0 ],
@@ -92,7 +93,8 @@
 					"lights-scoops" : [ 0.0 ],
 					"lights-booth" : [ 0.0 ],
 					"lights_toggle_master" : [ 1 ],
-					"lights-rgb" : [ 1.0, 1.0, 1.0, 1.0, 0.0, 1.0, 1.0 ],
+					"floor_line_opacity" : [ 0 ],
+					"lights-rgb" : [  ],
 					"lights-intensity" : [ 0.0 ]
 				}
 
@@ -140,6 +142,7 @@
 					"lights-scoops" : [ 0 ],
 					"lights-booth" : [ 0.0 ],
 					"lights_toggle_master" : [ 1 ],
+					"floor_line_opacity" : [ 0 ],
 					"lights-rgb" : [  ],
 					"lights-intensity" : [ 0.0 ]
 				}
@@ -188,6 +191,7 @@
 					"lights-scoops" : [ 0 ],
 					"lights-booth" : [ 0.0 ],
 					"lights_toggle_master" : [ 1 ],
+					"floor_line_opacity" : [ 0 ],
 					"lights-rgb" : [  ],
 					"lights-intensity" : [ 0.0 ]
 				}
@@ -236,6 +240,7 @@
 					"lights-scoops" : [ 0 ],
 					"lights-booth" : [ 0.0 ],
 					"lights_toggle_master" : [ 1 ],
+					"floor_line_opacity" : [ 0 ],
 					"lights-rgb" : [  ],
 					"lights-intensity" : [ 0.0 ]
 				}
@@ -284,6 +289,7 @@
 					"lights-scoops" : [ 0 ],
 					"lights-booth" : [ 0.0 ],
 					"lights_toggle_master" : [ 1 ],
+					"floor_line_opacity" : [ 0 ],
 					"lights-rgb" : [  ],
 					"lights-intensity" : [ 0.0 ]
 				}
@@ -332,6 +338,7 @@
 					"lights-scoops" : [ 0 ],
 					"lights-booth" : [ 0.0 ],
 					"lights_toggle_master" : [ 1 ],
+					"floor_line_opacity" : [ 0 ],
 					"lights-rgb" : [  ],
 					"lights-intensity" : [ 0.0 ]
 				}
@@ -380,6 +387,7 @@
 					"lights-scoops" : [ 0 ],
 					"lights-booth" : [ 0.0 ],
 					"lights_toggle_master" : [ 1 ],
+					"floor_line_opacity" : [ 0 ],
 					"lights-rgb" : [  ],
 					"lights-intensity" : [ 0.0 ]
 				}
@@ -428,6 +436,7 @@
 					"lights-scoops" : [ 0.0 ],
 					"lights-booth" : [ 0.0 ],
 					"lights_toggle_master" : [ 1 ],
+					"floor_line_opacity" : [ 0 ],
 					"lights-rgb" : [  ],
 					"lights-intensity" : [ 0.0 ]
 				}
@@ -476,6 +485,7 @@
 					"lights-scoops" : [ 0 ],
 					"lights-booth" : [ 0.0 ],
 					"lights_toggle_master" : [ 1 ],
+					"floor_line_opacity" : [ 0 ],
 					"lights-rgb" : [  ],
 					"lights-intensity" : [ 0.0 ]
 				}
@@ -524,6 +534,7 @@
 					"lights-scoops" : [ 0 ],
 					"lights-booth" : [ 0 ],
 					"lights_toggle_master" : [ 1 ],
+					"floor_line_opacity" : [ 0 ],
 					"lights-rgb" : [  ],
 					"lights-intensity" : [ 0 ]
 				}
@@ -572,6 +583,7 @@
 					"lights-scoops" : [ 0 ],
 					"lights-booth" : [ 0 ],
 					"lights_toggle_master" : [ 1 ],
+					"floor_line_opacity" : [ 0 ],
 					"lights-rgb" : [  ],
 					"lights-intensity" : [ 0 ]
 				}
@@ -620,6 +632,7 @@
 					"lights-scoops" : [ 0 ],
 					"lights-booth" : [ 0 ],
 					"lights_toggle_master" : [ 1 ],
+					"floor_line_opacity" : [ 0 ],
 					"lights-rgb" : [  ],
 					"lights-intensity" : [ 0 ]
 				}
@@ -668,6 +681,7 @@
 					"lights-scoops" : [ 0 ],
 					"lights-booth" : [ 0 ],
 					"lights_toggle_master" : [ 1 ],
+					"floor_line_opacity" : [ 0 ],
 					"lights-rgb" : [  ],
 					"lights-intensity" : [ 0 ]
 				}
@@ -716,6 +730,7 @@
 					"lights-scoops" : [ 0 ],
 					"lights-booth" : [ 0 ],
 					"lights_toggle_master" : [ 1 ],
+					"floor_line_opacity" : [ 0 ],
 					"lights-rgb" : [  ],
 					"lights-intensity" : [ 0 ]
 				}
@@ -764,6 +779,7 @@
 					"lights-scoops" : [ 0 ],
 					"lights-booth" : [ 0 ],
 					"lights_toggle_master" : [ 1 ],
+					"floor_line_opacity" : [ 0 ],
 					"lights-rgb" : [  ],
 					"lights-intensity" : [ 0 ]
 				}
@@ -812,6 +828,7 @@
 					"lights-scoops" : [ 0 ],
 					"lights-booth" : [ 0 ],
 					"lights_toggle_master" : [ 1 ],
+					"floor_line_opacity" : [ 0 ],
 					"lights-rgb" : [  ],
 					"lights-intensity" : [ 0 ]
 				}
@@ -860,6 +877,7 @@
 					"lights-scoops" : [ 0 ],
 					"lights-booth" : [ 0 ],
 					"lights_toggle_master" : [ 1 ],
+					"floor_line_opacity" : [ 0 ],
 					"lights-rgb" : [  ],
 					"lights-intensity" : [ 0 ]
 				}
@@ -908,6 +926,7 @@
 					"lights-scoops" : [ 0.0 ],
 					"lights-booth" : [ 0 ],
 					"lights_toggle_master" : [ 1 ],
+					"floor_line_opacity" : [ 0 ],
 					"lights-rgb" : [  ],
 					"lights-intensity" : [ 0 ]
 				}
@@ -956,6 +975,7 @@
 					"lights-scoops" : [ 0.489351809300758 ],
 					"lights-booth" : [ 0.498611069801781 ],
 					"lights_toggle_master" : [ 1 ],
+					"floor_line_opacity" : [ 0 ],
 					"lights-rgb" : [ 1.0, 0.877041, 0.648611, 1.0, 0.108347, 1.0, 0.824305 ],
 					"lights-intensity" : [ 0.539841036017104 ]
 				}
@@ -1004,6 +1024,56 @@
 					"lights-scoops" : [ 0 ],
 					"lights-booth" : [ 0.0 ],
 					"lights_toggle_master" : [ 0 ],
+					"floor_line_opacity" : [ 0 ],
+					"lights-rgb" : [  ],
+					"lights-intensity" : [ 0.0 ]
+				}
+
+			}
+,
+			"22" : 			{
+				"id" : 22,
+				"name" : "Material composition - String",
+				"data" : 				{
+					"floor-vis-preset" : [ 28 ],
+					"scrim-vis-preset" : [ 2 ],
+					"floor-sim-preset" : [ 0 ],
+					"scrim-sim-preset" : [ 10 ],
+					"floor-sim-enable" : [ 1 ],
+					"scrim-sim-enable" : [ 1 ],
+					"floor-sim-opacity" : [ 1.0 ],
+					"floor-movie-city-opacity" : [ 0.0 ],
+					"floor-movie-water-opacity" : [ 0.0 ],
+					"floor-movie-wave-opacity" : [ 0 ],
+					"floor-movie-clouds-opacity" : [ 0.0 ],
+					"floor-camera-opacity" : [ 0.0 ],
+					"scrim-filterbanks-preset" : [ 3 ],
+					"scrim-filterbanks-volume" : [ 0.0 ],
+					"floor-filterbanks-preset" : [ 3 ],
+					"floor-filterbanks-volume" : [ 0.0 ],
+					"cloudsynth-preset" : [ 0 ],
+					"timelenses-opacity" : [ 1.0 ],
+					"alexia-speed" : [  ],
+					"alexia-brightness" : [  ],
+					"alexia-state" : [  ],
+					"tablesynth-volume" : [  ],
+					"atmospheres" : [  ],
+					"lights_toggle_1" : [ 0 ],
+					"lights_toggle_2" : [ 0 ],
+					"lights_toggle_3" : [ 0 ],
+					"lights_toggle_4" : [ 0 ],
+					"lights_toggle_5" : [ 0 ],
+					"lights_toggle_6" : [ 0 ],
+					"lights_toggle_7" : [ 0 ],
+					"lights_toggle_8" : [ 0 ],
+					"lights_toggle_9" : [ 0 ],
+					"lights_toggle_10" : [ 0 ],
+					"lights_toggle_11" : [ 0 ],
+					"lights_toggle_12" : [ 0 ],
+					"lights-scoops" : [ 0 ],
+					"lights-booth" : [ 0.0 ],
+					"lights_toggle_master" : [ 1 ],
+					"floor_line_opacity" : [ 1 ],
 					"lights-rgb" : [  ],
 					"lights-intensity" : [ 0.0 ]
 				}
