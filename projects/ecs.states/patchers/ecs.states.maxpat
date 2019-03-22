@@ -178,7 +178,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1434.800048828125, 761.3367919921875, 281.0, 22.0 ],
-					"restore" : [ 1.0 ],
+					"restore" : [ 0.0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -431,13 +431,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-181",
-					"linecount" : 2,
+					"linecount" : 4,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "bang", "" ],
-					"patching_rect" : [ 1081.0, 1172.0, 343.0, 35.0 ],
-					"text" : "jit.world line @enable 1 @erase_color 0 0 0 @output_texture 1 @ortho 2 @size 1280 720"
+					"patching_rect" : [ 1081.0, 1172.0, 210.0, 62.0 ],
+					"text" : "jit.world line @enable 1 @erase_color 0 0 0 @output_texture 1 @ortho 2 @size 1280 720 @visible 0"
 				}
 
 			}
@@ -794,7 +794,7 @@
 					"parameter_mappable" : 0,
 					"patching_rect" : [ 685.0, 1248.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 285.0, 1216.0, 24.0, 24.0 ],
+					"presentation_rect" : [ 287.0, 1187.0, 24.0, 24.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_mmax" : 1.0,
@@ -989,7 +989,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1434.800048828125, 713.3367919921875, 218.0, 22.0 ],
-					"restore" : [ 0.0 ],
+					"restore" : [ 0.833031674208145 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -1008,7 +1008,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1434.800048828125, 689.3367919921875, 234.0, 22.0 ],
-					"restore" : [ 0.0 ],
+					"restore" : [ 0.848476621417798 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -1046,7 +1046,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1433.800048828125, 640.9700927734375, 246.0, 22.0 ],
-					"restore" : [ 0.0 ],
+					"restore" : [ 0.574661128801002 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -1426,7 +1426,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1434.800048828125, 154.80340576171875, 343.0, 22.0 ],
-					"restore" : [ 0.0 ],
+					"restore" : [ 0.771781603228207 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -1445,7 +1445,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1434.800048828125, 130.80340576171875, 333.0, 22.0 ],
-					"restore" : [ 3 ],
+					"restore" : [ 1 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -1654,7 +1654,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1434.800048828125, -109.529899597167969, 271.0, 22.0 ],
-					"restore" : [ 2 ],
+					"restore" : [ 0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -1673,7 +1673,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1434.800048828125, -181.5299072265625, 261.0, 22.0 ],
-					"restore" : [ 0 ],
+					"restore" : [ 1 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -1692,7 +1692,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1434.800048828125, -133.529891967773438, 263.0, 22.0 ],
-					"restore" : [ 2 ],
+					"restore" : [ 15 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -1711,7 +1711,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1434.800048828125, -205.5299072265625, 253.0, 22.0 ],
-					"restore" : [ 28 ],
+					"restore" : [ 15 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -3354,7 +3354,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 177.0, 129.0, 50.0, 22.0 ],
-									"text" : "22"
+									"text" : "10"
 								}
 
 							}
@@ -3366,20 +3366,20 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 162.0, 177.0, 50.0, 22.0 ],
-									"text" : "22 22"
+									"text" : "6 10"
 								}
 
 							}
 , 							{
 								"box" : 								{
 									"id" : "obj-3",
-									"linecount" : 3,
+									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 141.0, 424.0, 51.0, 35.0 ],
-									"text" : "recall 22 22 1."
+									"text" : "recall 6 10 1."
 								}
 
 							}
@@ -3439,7 +3439,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 50.0, 373.5, 72.0, 22.0 ],
-									"text" : "recall 22 22"
+									"text" : "recall 6 10"
 								}
 
 							}
@@ -9802,6 +9802,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-93",
+									"int" : 1,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 2,
@@ -9957,6 +9958,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-279",
+									"int" : 1,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 2,
@@ -11161,7 +11163,7 @@
 						"client_rect" : [ 1488, 444, 2387, 1169 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
-						"storage_rect" : [ 323, 820, 2303, 1821 ]
+						"storage_rect" : [ 28, 1138, 2152, 2139 ]
 					}
 ,
 					"text" : "pattrstorage states",
@@ -11179,7 +11181,7 @@
 					"bgfillcolor_proportion" : 0.39,
 					"bgfillcolor_type" : "gradient",
 					"id" : "obj-68",
-					"items" : [ "laminar", ",", "clouds", ",", "laminar for pressure demo", ",", "laminar for pressure demo with wind", ",", "laminar for pressure demo with wind and accumulated pressure", ",", "disabled", ",", "pressure to vapor", ",", "velocity ghosting", ",", "velocity ghosting no vorticity", ",", "ghosting pressure", ",", "clouds above", ",", "clouds above wind", ",", "disabled", ",", "life energy - tables - 1 - clouds", ",", "life energy - tables - 2 - clouds vorticity", ",", "life energy - tables - 3 - clouds above", ",", "life energy - tables - 4 - clouds above vorticity", ",", "life energy - tables - 5 - clouds again", ",", "life energy - floor - 2 - particles clouds", ",", "life energy - floor - 3 - velocity", ",", "life energy - floor - 4 - pressure map", ",", "life energy - floor - 5 - ghosting", ",", "paper pressure", ",", "clouds chill out" ],
+					"items" : [ "laminar", ",", "clouds", ",", "laminar for pressure demo", ",", "laminar for pressure demo with wind", ",", "laminar for pressure demo with wind and accumulated pressure", ",", "disabled", ",", "pressure to vapor", ",", "velocity ghosting", ",", "velocity ghosting no vorticity", ",", "ghosting pressure", ",", "clouds above", ",", "clouds above wind", ",", "disabled", ",", "life energy - tables - 1 - clouds", ",", "life energy - tables - 2 - clouds vorticity", ",", "life energy - tables - 3 - clouds above", ",", "life energy - tables - 4 - clouds above vorticity", ",", "life energy - tables - 5 - clouds again", ",", "life energy - floor - 2 - particles clouds", ",", "life energy - floor - 3 - velocity", ",", "life energy - floor - 4 - pressure map", ",", "life energy - floor - 5 - ghosting", ",", "paper pressure", ",", "clouds chill out", ",", "constellations" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -11192,7 +11194,7 @@
 						"valueof" : 						{
 							"parameter_mmax" : 23.0,
 							"parameter_shortname" : "_floor-sim-preset",
-							"parameter_enum" : [ "laminar", "clouds", "laminar for pressure demo", "laminar for pressure demo with wind", "laminar for pressure demo with wind and accumulated pressure", "disabled", "pressure to vapor", "velocity ghosting", "velocity ghosting no vorticity", "ghosting pressure", "clouds above", "clouds above wind", "disabled", "life energy - tables - 1 - clouds", "life energy - tables - 2 - clouds vorticity", "life energy - tables - 3 - clouds above", "life energy - tables - 4 - clouds above vorticity", "life energy - tables - 5 - clouds again", "life energy - floor - 2 - particles clouds", "life energy - floor - 3 - velocity", "life energy - floor - 4 - pressure map", "life energy - floor - 5 - ghosting", "paper pressure", "clouds chill out" ],
+							"parameter_enum" : [ "laminar", "clouds", "laminar for pressure demo", "laminar for pressure demo with wind", "laminar for pressure demo with wind and accumulated pressure", "disabled", "pressure to vapor", "velocity ghosting", "velocity ghosting no vorticity", "ghosting pressure", "clouds above", "clouds above wind", "disabled", "life energy - tables - 1 - clouds", "life energy - tables - 2 - clouds vorticity", "life energy - tables - 3 - clouds above", "life energy - tables - 4 - clouds above vorticity", "life energy - tables - 5 - clouds again", "life energy - floor - 2 - particles clouds", "life energy - floor - 3 - velocity", "life energy - floor - 4 - pressure map", "life energy - floor - 5 - ghosting", "paper pressure", "clouds chill out", "constellations" ],
 							"parameter_type" : 2,
 							"parameter_longname" : "_floor-sim-preset"
 						}
@@ -11401,7 +11403,7 @@
 					"bgfillcolor_proportion" : 0.39,
 					"bgfillcolor_type" : "gradient",
 					"id" : "obj-28",
-					"items" : [ "clouds", ",", "velocity flow particles", ",", "velocity field", ",", "pressure", ",", "hsflow", ",", "camera", ",", "obstacles", ",", "background", ",", "bgsub", ",", "blackout", ",", "velocity field - wind", ",", "velocity ghosting", ",", "velocity ghosting short particles", ",", "velocity ghosting long particles", ",", "ghosting pressure", ",", "pressure cubehelix", ",", "clouds - sunset", ",", "life energy - tables - 1 - clouds", ",", "life energy - tables - 2 - clouds vorticity", ",", "life energy - tables - 3 - clouds above", ",", "life energy - tables - 4 - pressure", ",", "life energy - tables - 5 - clouds again", ",", "life energy - floor - 2 - particles clouds", ",", "life energy - floor - 3 - velocity", ",", "life energy - floor - 4 - pressure map", ",", "life energy - floor - 5 - ghosting", ",", "clouds above", ",", "paper pressure", ",", "velocity field bone" ],
+					"items" : [ "velocity field - wind", ",", "velocity ghosting", ",", "velocity ghosting short particles", ",", "velocity ghosting long particles", ",", "ghosting pressure", ",", "pressure cubehelix", ",", "clouds - sunset", ",", "life energy - tables - 1 - clouds", ",", "life energy - tables - 2 - clouds vorticity", ",", "life energy - tables - 3 - clouds above", ",", "life energy - tables - 4 - pressure", ",", "life energy - tables - 5 - clouds again", ",", "life energy - floor - 2 - particles clouds", ",", "life energy - floor - 3 - velocity", ",", "life energy - floor - 4 - pressure map", ",", "life energy - floor - 5 - ghosting", ",", "clouds above", ",", "paper pressure", ",", "velocity field bone" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -11414,7 +11416,7 @@
 						"valueof" : 						{
 							"parameter_mmax" : 28.0,
 							"parameter_shortname" : "_floor-vis-preset",
-							"parameter_enum" : [ "clouds", "velocity flow particles", "velocity field", "pressure", "hsflow", "camera", "obstacles", "background", "bgsub", "blackout", "velocity field - wind", "velocity ghosting", "velocity ghosting short particles", "velocity ghosting long particles", "ghosting pressure", "pressure cubehelix", "clouds - sunset", "life energy - tables - 1 - clouds", "life energy - tables - 2 - clouds vorticity", "life energy - tables - 3 - clouds above", "life energy - tables - 4 - pressure", "life energy - tables - 5 - clouds again", "life energy - floor - 2 - particles clouds", "life energy - floor - 3 - velocity", "life energy - floor - 4 - pressure map", "life energy - floor - 5 - ghosting", "clouds above", "paper pressure", "velocity field bone" ],
+							"parameter_enum" : [ "velocity field - wind", "velocity ghosting", "velocity ghosting short particles", "velocity ghosting long particles", "ghosting pressure", "pressure cubehelix", "clouds - sunset", "life energy - tables - 1 - clouds", "life energy - tables - 2 - clouds vorticity", "life energy - tables - 3 - clouds above", "life energy - tables - 4 - pressure", "life energy - tables - 5 - clouds again", "life energy - floor - 2 - particles clouds", "life energy - floor - 3 - velocity", "life energy - floor - 4 - pressure map", "life energy - floor - 5 - ghosting", "clouds above", "paper pressure", "velocity field bone" ],
 							"parameter_type" : 2,
 							"parameter_longname" : "_floor-vis-preset"
 						}
