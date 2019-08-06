@@ -1,11 +1,26 @@
 {
-	"pattrstorage" : {
+	"pattrstorage" : 	{
 		"name" : "states",
-		"slots" : {
-			"1" : {
+		"slots" : 		{
+			"1" : 			{
 				"id" : 1,
-				"name" : "Clouds",
-				"data" : {
+				"name" : "EMA - Pressure (objects mapped to sinks)",
+				"data" : 				{
+					"floor-vis-preset" : [ 27 ],
+					"floor-sim-preset" : [ 22 ],
+					"floor-sim-enable" : [ 0 ],
+					"floor-sim-opacity" : [ 1.0 ],
+					"floor-camera-opacity" : [ 0.0 ],
+					"floor-filterbanks-preset" : [ 8 ],
+					"floor-filterbanks-volume" : [ 1.0 ]
+				}
+
+			}
+,
+			"2" : 			{
+				"id" : 2,
+				"name" : "EMA - Clouds",
+				"data" : 				{
 					"floor-vis-preset" : [ 0 ],
 					"floor-sim-preset" : [ 2 ],
 					"floor-sim-enable" : [ 1 ],
@@ -14,11 +29,133 @@
 					"floor-filterbanks-preset" : [ 2 ],
 					"floor-filterbanks-volume" : [ 1.0 ]
 				}
-			},
-			"2" : {
-				"id" : 2,
-				"name" : "Sunset",
-				"data" : {
+
+			}
+,
+			"3" : 			{
+				"id" : 3,
+				"name" : "EMA - Pressure (heatmap colormap)",
+				"data" : 				{
+					"floor-vis-preset" : [ 3 ],
+					"floor-sim-preset" : [ 2 ],
+					"floor-sim-enable" : [ 1 ],
+					"floor-sim-opacity" : [ 1.0 ],
+					"floor-camera-opacity" : [ 0.0 ],
+					"floor-filterbanks-preset" : [ 1 ],
+					"floor-filterbanks-volume" : [ 0.75 ]
+				}
+
+			}
+,
+			"4" : 			{
+				"id" : 4,
+				"name" : "EMA - Velocity (wind + bodies as obstacles)",
+				"data" : 				{
+					"floor-vis-preset" : [ 10 ],
+					"floor-sim-preset" : [ 3 ],
+					"floor-sim-enable" : [ 1 ],
+					"floor-sim-opacity" : [ 1.0 ],
+					"floor-camera-opacity" : [ 0.0 ],
+					"floor-filterbanks-preset" : [ 10 ],
+					"floor-filterbanks-volume" : [ 0.75 ]
+				}
+
+			}
+,
+			"5" : 			{
+				"id" : 5,
+				"name" : "EMA - Velocity (direction mapped to hue)",
+				"data" : 				{
+					"floor-vis-preset" : [ 2 ],
+					"floor-sim-preset" : [ 2 ],
+					"floor-sim-enable" : [ 1 ],
+					"floor-sim-opacity" : [ 1.0 ],
+					"floor-camera-opacity" : [ 0.0 ],
+					"floor-filterbanks-preset" : [ 5 ],
+					"floor-filterbanks-volume" : [ 0.75 ]
+				}
+
+			}
+,
+			"6" : 			{
+				"id" : 6,
+				"name" : "Movie - Clouds",
+				"data" : 				{
+					"floor-vis-preset" : [ 9 ],
+					"floor-sim-preset" : [ 5 ],
+					"floor-sim-enable" : [ 0 ],
+					"floor-sim-opacity" : [ 0.0 ],
+					"floor-camera-opacity" : [ 0.0 ],
+					"floor-filterbanks-preset" : [ 0 ],
+					"floor-filterbanks-volume" : [ 0.432131 ]
+				}
+
+			}
+,
+			"7" : 			{
+				"id" : 7,
+				"name" : "Movie - Water",
+				"data" : 				{
+					"floor-vis-preset" : [ 9 ],
+					"floor-sim-preset" : [ 5 ],
+					"floor-sim-enable" : [ 0 ],
+					"floor-sim-opacity" : [ 0.0 ],
+					"floor-camera-opacity" : [ 0.0 ],
+					"floor-filterbanks-preset" : [ 6 ],
+					"floor-filterbanks-volume" : [ 0.75 ]
+				}
+
+			}
+,
+			"8" : 			{
+				"id" : 8,
+				"name" : "Movie - City",
+				"data" : 				{
+					"floor-vis-preset" : [ 9 ],
+					"floor-sim-preset" : [ 5 ],
+					"floor-sim-enable" : [ 0 ],
+					"floor-sim-opacity" : [ 0.0 ],
+					"floor-camera-opacity" : [ 0.0 ],
+					"floor-filterbanks-preset" : [ 9 ],
+					"floor-filterbanks-volume" : [ 0.285361 ]
+				}
+
+			}
+,
+			"9" : 			{
+				"id" : 9,
+				"name" : "EMA - Velocity (bodies mapped to pressure sink)",
+				"data" : 				{
+					"floor-vis-preset" : [ 25 ],
+					"floor-sim-preset" : [ 21 ],
+					"floor-sim-enable" : [ 0 ],
+					"floor-sim-opacity" : [ 1.0 ],
+					"floor-camera-opacity" : [ 0.0 ],
+					"floor-filterbanks-preset" : [ 11 ],
+					"floor-filterbanks-volume" : [ 0.803680981595092 ]
+				}
+
+			}
+,
+			"10" : 			{
+				"id" : 10,
+				"name" : "EMA - Pressure (cubehelix colormap)",
+				"data" : 				{
+					"floor-vis-preset" : [ 15 ],
+					"floor-sim-preset" : [ 2 ],
+					"floor-sim-enable" : [ 1 ],
+					"floor-sim-opacity" : [ 1.0 ],
+					"floor-camera-opacity" : [ 0.0 ],
+					"floor-filterbanks-preset" : [ 1 ],
+					"floor-filterbanks-volume" : [ 0.771781603228207 ]
+				}
+
+			}
+,
+			"11" : 			{
+				"id" : 11,
+				"name" : "EMA - Life Energy - Tables - Clouds",
+				"data" : 				{
 					"floor-vis-preset" : [ 17 ],
 					"floor-sim-preset" : [ 13 ],
 					"floor-sim-enable" : [ 1 ],
@@ -27,24 +164,103 @@
 					"floor-filterbanks-preset" : [ 2 ],
 					"floor-filterbanks-volume" : [ 0.75 ]
 				}
-			},
-			"3" : {
-				"id" : 3,
-				"name" : "Blank",
-				"data" : {
-					"floor-vis-preset" : [ 9 ],
-					"floor-sim-preset" : [ 5 ],
-					"floor-sim-enable" : [ 0 ],
-					"floor-sim-opacity" : [ 0.0 ],
+
+			}
+,
+			"12" : 			{
+				"id" : 12,
+				"name" : "EMA - Life Energy - Tables - Clouds Above (lava lamp)",
+				"data" : 				{
+					"floor-vis-preset" : [ 19 ],
+					"floor-sim-preset" : [ 15 ],
+					"floor-sim-enable" : [ 1 ],
+					"floor-sim-opacity" : [ 1.0 ],
 					"floor-camera-opacity" : [ 0.0 ],
-					"floor-filterbanks-preset" : [ 3 ],
-					"floor-filterbanks-volume" : [ 0.0 ]
+					"floor-filterbanks-preset" : [ 11 ],
+					"floor-filterbanks-volume" : [ 0.75 ]
 				}
-			},
-			"4" : {
-				"id" : 4,
+
+			}
+,
+			"13" : 			{
+				"id" : 13,
+				"name" : "EMA - Life Energy - Tables - Pressure",
+				"data" : 				{
+					"floor-vis-preset" : [ 20 ],
+					"floor-sim-preset" : [ 16 ],
+					"floor-sim-enable" : [ 1 ],
+					"floor-sim-opacity" : [ 1.0 ],
+					"floor-camera-opacity" : [ 0.0 ],
+					"floor-filterbanks-preset" : [ 11 ],
+					"floor-filterbanks-volume" : [ 0.75 ]
+				}
+
+			}
+,
+			"14" : 			{
+				"id" : 14,
+				"name" : "EMA - Life Energy - Floor - Particles Clouds",
+				"data" : 				{
+					"floor-vis-preset" : [ 22 ],
+					"floor-sim-preset" : [ 18 ],
+					"floor-sim-enable" : [ 1 ],
+					"floor-sim-opacity" : [ 1.0 ],
+					"floor-camera-opacity" : [ 0.0 ],
+					"floor-filterbanks-preset" : [ 12 ],
+					"floor-filterbanks-volume" : [ 0.75 ]
+				}
+
+			}
+,
+			"15" : 			{
+				"id" : 15,
+				"name" : "EMA - Life Energy - Floor - Velocity",
+				"data" : 				{
+					"floor-vis-preset" : [ 23 ],
+					"floor-sim-preset" : [ 19 ],
+					"floor-sim-enable" : [ 1 ],
+					"floor-sim-opacity" : [ 1.0 ],
+					"floor-camera-opacity" : [ 0.0 ],
+					"floor-filterbanks-preset" : [ 11 ],
+					"floor-filterbanks-volume" : [ 0.75 ]
+				}
+
+			}
+,
+			"16" : 			{
+				"id" : 16,
+				"name" : "EMA - Life Energy - Floor - Pressure Map",
+				"data" : 				{
+					"floor-vis-preset" : [ 24 ],
+					"floor-sim-preset" : [ 20 ],
+					"floor-sim-enable" : [ 1 ],
+					"floor-sim-opacity" : [ 1.0 ],
+					"floor-camera-opacity" : [ 0.0 ],
+					"floor-filterbanks-preset" : [ 11 ],
+					"floor-filterbanks-volume" : [ 0.75 ]
+				}
+
+			}
+,
+			"17" : 			{
+				"id" : 17,
+				"name" : "EMA - Life Energy - Floor - Ghosting",
+				"data" : 				{
+					"floor-vis-preset" : [ 25 ],
+					"floor-sim-preset" : [ 21 ],
+					"floor-sim-enable" : [ 1 ],
+					"floor-sim-opacity" : [ 1.0 ],
+					"floor-camera-opacity" : [ 0.0 ],
+					"floor-filterbanks-preset" : [ 1 ],
+					"floor-filterbanks-volume" : [ 0.770961 ]
+				}
+
+			}
+,
+			"18" : 			{
+				"id" : 18,
 				"name" : "Camera",
-				"data" : {
+				"data" : 				{
 					"floor-vis-preset" : [ 9 ],
 					"floor-sim-preset" : [ 5 ],
 					"floor-sim-enable" : [ 0 ],
@@ -53,7 +269,56 @@
 					"floor-filterbanks-preset" : [ 3 ],
 					"floor-filterbanks-volume" : [ 0.0 ]
 				}
+
 			}
+,
+			"19" : 			{
+				"id" : 19,
+				"name" : "Camera - Presence",
+				"data" : 				{
+					"floor-vis-preset" : [ 6 ],
+					"floor-sim-preset" : [ 1 ],
+					"floor-sim-enable" : [ 1 ],
+					"floor-sim-opacity" : [ 1.0 ],
+					"floor-camera-opacity" : [ 0.500046 ],
+					"floor-filterbanks-preset" : [ 3 ],
+					"floor-filterbanks-volume" : [ 0.75 ]
+				}
+
+			}
+,
+			"20" : 			{
+				"id" : 20,
+				"name" : "Lights - Stage and Entry",
+				"data" : 				{
+					"floor-vis-preset" : [ 9 ],
+					"floor-sim-preset" : [ 12 ],
+					"floor-sim-enable" : [ 12 ],
+					"floor-sim-opacity" : [ 0.0 ],
+					"floor-camera-opacity" : [ 0.0 ],
+					"floor-filterbanks-preset" : [ 3 ],
+					"floor-filterbanks-volume" : [ 0.0 ]
+				}
+
+			}
+,
+			"21" : 			{
+				"id" : 21,
+				"name" : "Movie - Wave",
+				"data" : 				{
+					"floor-vis-preset" : [ 9 ],
+					"floor-sim-preset" : [ 5 ],
+					"floor-sim-enable" : [ 0 ],
+					"floor-sim-opacity" : [ 0.0 ],
+					"floor-camera-opacity" : [ 0.0 ],
+					"floor-filterbanks-preset" : [ 9 ],
+					"floor-filterbanks-volume" : [ 0.285361 ]
+				}
+
+			}
+
 		}
+
 	}
+
 }
