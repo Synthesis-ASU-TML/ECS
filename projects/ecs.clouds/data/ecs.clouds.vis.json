@@ -1,6 +1,6 @@
 {
 	"pattrstorage" : 	{
-		"name" : "u754013487",
+		"name" : "u271000505",
 		"slots" : 		{
 			"1" : 			{
 				"id" : 1,
@@ -31,6 +31,7 @@
 					"particles::threshold" : [  ],
 					"particles::force" : [ 0.5 ],
 					"particles::attraction" : [  ],
+					"particles::reset" : [  ],
 					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 0.0 ]
 				}
 
@@ -65,6 +66,7 @@
 					"particles::threshold" : [ 0.0 ],
 					"particles::force" : [ 1.0, 1.0 ],
 					"particles::attraction" : [ 0.0 ],
+					"particles::reset" : [  ],
 					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 0.0 ]
 				}
 
@@ -99,6 +101,7 @@
 					"particles::threshold" : [ -1.0 ],
 					"particles::force" : [ 0.5 ],
 					"particles::attraction" : [  ],
+					"particles::reset" : [  ],
 					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 0.0 ]
 				}
 
@@ -116,7 +119,7 @@
 					"field::mode" : [ 2 ],
 					"field::alpha" : [ 1.0 ],
 					"field::bg" : [ "env_pressure" ],
-					"field::high" : [ 512.0, 0.002, 283.8, 1.0 ],
+					"field::high" : [ 512.0, 0.002, 283.800000000000011, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 295.0, 0.0 ],
 					"field::enable" : [ 1 ],
 					"field::colormap" : [ "1d_signed_RdBu.png" ],
@@ -133,6 +136,7 @@
 					"particles::threshold" : [ -1.0 ],
 					"particles::force" : [ 0.5, 0.5 ],
 					"particles::attraction" : [ 0.0 ],
+					"particles::reset" : [  ],
 					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 0.0 ]
 				}
 
@@ -167,6 +171,7 @@
 					"particles::threshold" : [  ],
 					"particles::force" : [ 0.1 ],
 					"particles::attraction" : [  ],
+					"particles::reset" : [  ],
 					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 0.0 ]
 				}
 
@@ -201,6 +206,7 @@
 					"particles::threshold" : [  ],
 					"particles::force" : [ 0.1 ],
 					"particles::attraction" : [  ],
+					"particles::reset" : [  ],
 					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 0.0 ]
 				}
 
@@ -235,6 +241,7 @@
 					"particles::threshold" : [  ],
 					"particles::force" : [ 0.1 ],
 					"particles::attraction" : [  ],
+					"particles::reset" : [  ],
 					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 0.0 ]
 				}
 
@@ -269,6 +276,7 @@
 					"particles::threshold" : [  ],
 					"particles::force" : [ 0.1 ],
 					"particles::attraction" : [  ],
+					"particles::reset" : [  ],
 					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 0.0 ]
 				}
 
@@ -303,6 +311,7 @@
 					"particles::threshold" : [  ],
 					"particles::force" : [ 0.1 ],
 					"particles::attraction" : [  ],
+					"particles::reset" : [  ],
 					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 0.0 ]
 				}
 
@@ -337,6 +346,7 @@
 					"particles::threshold" : [ -1.0 ],
 					"particles::force" : [ 0.1 ],
 					"particles::attraction" : [  ],
+					"particles::reset" : [  ],
 					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 0.0 ]
 				}
 
@@ -371,6 +381,7 @@
 					"particles::threshold" : [ -1.0 ],
 					"particles::force" : [ 0.5 ],
 					"particles::attraction" : [  ],
+					"particles::reset" : [  ],
 					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 0.0 ]
 				}
 
@@ -405,6 +416,7 @@
 					"particles::threshold" : [ -1.0 ],
 					"particles::force" : [ 0.5, 0.5 ],
 					"particles::attraction" : [ 1.08 ],
+					"particles::reset" : [  ],
 					"particles::ecs.colorpicker::color" : [ 0.0, 0.0, 0.0, 0.379492 ]
 				}
 
@@ -439,6 +451,7 @@
 					"particles::threshold" : [ -1.0 ],
 					"particles::force" : [ 1.0, 1.0 ],
 					"particles::attraction" : [ 0.0 ],
+					"particles::reset" : [  ],
 					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -473,6 +486,7 @@
 					"particles::threshold" : [ -1.0 ],
 					"particles::force" : [ 20.0, 15.0 ],
 					"particles::attraction" : [ 0.0 ],
+					"particles::reset" : [  ],
 					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -507,6 +521,7 @@
 					"particles::threshold" : [ -1.0 ],
 					"particles::force" : [ 0.1 ],
 					"particles::attraction" : [  ],
+					"particles::reset" : [  ],
 					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 0.0 ]
 				}
 
@@ -541,6 +556,7 @@
 					"particles::threshold" : [ -1.0 ],
 					"particles::force" : [ 0.1 ],
 					"particles::attraction" : [  ],
+					"particles::reset" : [  ],
 					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 0.0 ]
 				}
 
@@ -558,7 +574,7 @@
 					"field::mode" : [ 2 ],
 					"field::alpha" : [ 1.0 ],
 					"field::bg" : [ "env_pressure" ],
-					"field::high" : [ 0.0004, 0.002, 288.15, 1.0 ],
+					"field::high" : [ 0.0004, 0.002, 288.149999999999977, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 230.0, 0.0 ],
 					"field::enable" : [ 1 ],
 					"field::colormap" : [ "1d_unsigned_sunset.png" ],
@@ -575,6 +591,7 @@
 					"particles::threshold" : [  ],
 					"particles::force" : [ 1.0, 1.0 ],
 					"particles::attraction" : [  ],
+					"particles::reset" : [  ],
 					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 0.103653 ]
 				}
 
@@ -592,7 +609,7 @@
 					"field::mode" : [ 2 ],
 					"field::alpha" : [ 1.0 ],
 					"field::bg" : [ "env_pressure" ],
-					"field::high" : [ 0.0004, 0.002, 288.15, 1.0 ],
+					"field::high" : [ 0.0004, 0.002, 288.149999999999977, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 230.0, 0.0 ],
 					"field::enable" : [ 1 ],
 					"field::colormap" : [ "1d_unsigned_YlOrBr.png" ],
@@ -609,6 +626,7 @@
 					"particles::threshold" : [ 0.0 ],
 					"particles::force" : [ 1.0, 1.0 ],
 					"particles::attraction" : [ 0.0 ],
+					"particles::reset" : [  ],
 					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 0.0 ]
 				}
 
@@ -626,7 +644,7 @@
 					"field::mode" : [ 2 ],
 					"field::alpha" : [ 1.0 ],
 					"field::bg" : [ "env_pressure" ],
-					"field::high" : [ 0.0004, 0.002, 288.15, 1.0 ],
+					"field::high" : [ 0.0004, 0.002, 288.149999999999977, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 230.0, 0.0 ],
 					"field::enable" : [ 1 ],
 					"field::colormap" : [ "1d_unsigned_YlGnBu.png" ],
@@ -643,6 +661,7 @@
 					"particles::threshold" : [ 0.0 ],
 					"particles::force" : [ 1.0, 1.0 ],
 					"particles::attraction" : [ 0.0 ],
+					"particles::reset" : [  ],
 					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 0.0 ]
 				}
 
@@ -660,7 +679,7 @@
 					"field::mode" : [ 1 ],
 					"field::alpha" : [ 1.0 ],
 					"field::bg" : [ "env_pressure" ],
-					"field::high" : [ 0.0004, 0.002, 288.15, 1.0 ],
+					"field::high" : [ 0.0004, 0.002, 288.149999999999977, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 0.0, 0.0 ],
 					"field::enable" : [ 1 ],
 					"field::colormap" : [ "1d_unsigned_YlGnBu.png" ],
@@ -677,6 +696,7 @@
 					"particles::threshold" : [ 0.0 ],
 					"particles::force" : [ 1.0, 1.0 ],
 					"particles::attraction" : [ 0.0 ],
+					"particles::reset" : [  ],
 					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 0.0 ]
 				}
 
@@ -711,6 +731,7 @@
 					"particles::threshold" : [ 0.0 ],
 					"particles::force" : [ 1.0, 1.0 ],
 					"particles::attraction" : [ 0.0 ],
+					"particles::reset" : [  ],
 					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 0.0 ]
 				}
 
@@ -728,7 +749,7 @@
 					"field::mode" : [ 2 ],
 					"field::alpha" : [ 1.0 ],
 					"field::bg" : [ "env_pressure" ],
-					"field::high" : [ 0.0004, 0.002, 288.15, 1.0 ],
+					"field::high" : [ 0.0004, 0.002, 288.149999999999977, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 0.0, 0.0 ],
 					"field::enable" : [ 1 ],
 					"field::colormap" : [ "1d_unsigned_bone.png" ],
@@ -745,6 +766,7 @@
 					"particles::threshold" : [ 0.0 ],
 					"particles::force" : [ 1.0, 1.0 ],
 					"particles::attraction" : [ 0.0 ],
+					"particles::reset" : [  ],
 					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 0.0 ]
 				}
 
@@ -762,7 +784,7 @@
 					"field::mode" : [ 2 ],
 					"field::alpha" : [ 1.0 ],
 					"field::bg" : [ "env_pressure" ],
-					"field::high" : [ 0.0004, 0.002, 288.15, 1.0 ],
+					"field::high" : [ 0.0004, 0.002, 288.149999999999977, 1.0 ],
 					"field::low" : [ 0.0, 0.0, 230.0, 0.0 ],
 					"field::enable" : [ 1 ],
 					"field::colormap" : [ "1d_unsigned_YlGnBu.png" ],
@@ -779,6 +801,7 @@
 					"particles::threshold" : [ 0.0 ],
 					"particles::force" : [ 0.5, 0.4 ],
 					"particles::attraction" : [ 0.0 ],
+					"particles::reset" : [  ],
 					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -813,6 +836,7 @@
 					"particles::threshold" : [ 0.0 ],
 					"particles::force" : [ 0.1, 0.1 ],
 					"particles::attraction" : [ 0.0 ],
+					"particles::reset" : [  ],
 					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -847,6 +871,7 @@
 					"particles::threshold" : [ 0.0 ],
 					"particles::force" : [ 1.0, 1.0 ],
 					"particles::attraction" : [ 0.0 ],
+					"particles::reset" : [  ],
 					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 0.595346 ]
 				}
 
@@ -881,6 +906,7 @@
 					"particles::threshold" : [ 0.0 ],
 					"particles::force" : [ 1.0, 1.0 ],
 					"particles::attraction" : [ 0.0 ],
+					"particles::reset" : [  ],
 					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 0.0 ]
 				}
 
@@ -915,6 +941,7 @@
 					"particles::threshold" : [ 0.001 ],
 					"particles::force" : [ 0.5, 0.5 ],
 					"particles::attraction" : [  ],
+					"particles::reset" : [  ],
 					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 0.5 ]
 				}
 
@@ -949,41 +976,43 @@
 					"particles::threshold" : [ 0.0 ],
 					"particles::force" : [ 0.5, 0.5 ],
 					"particles::attraction" : [ 0.0 ],
+					"particles::reset" : [  ],
 					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
-			},
-			
+			}
+,
 			"29" : 			{
 				"id" : 29,
-				"name" : "velocity field bone",
+				"name" : "particles on black background",
 				"data" : 				{
 					"blend_field" : [ 7 ],
-					"blend_particles" : [ 0 ],
-					"field::source_vars" : [ 0, 1, 2, 3 ],
-					"field::contrast" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"field::texture" : [ "velocity" ],
-					"field::mode" : [ 1 ],
+					"blend_particles" : [ 6 ],
+					"field::source_vars" : [ 1.0, 1.0, 2.0, 3.0 ],
+					"field::contrast" : [ 1.0, 0.0889, 1.0, 1.0 ],
+					"field::texture" : [ "watertemp" ],
+					"field::mode" : [ 2 ],
 					"field::alpha" : [ 1.0 ],
 					"field::bg" : [ "env_pressure" ],
-					"field::high" : [ 50.0, 50.0, 1.0, 1.0 ],
-					"field::low" : [ 0.0, 0.0, 0.0, 0.0 ],
+					"field::high" : [ 0.0004, 0.002, 288.149999999999977, 1.0 ],
+					"field::low" : [ 0.0, 0.0, 230.0, 0.0 ],
 					"field::enable" : [ 1 ],
-					"field::colormap" : [ "1d_unsigned_bone.png" ],
-					"particles::duration" : [ 0.1 ],
+					"field::colormap" : [ "1d_unsigned_gray.png" ],
+					"particles::duration" : [ 2.0 ],
 					"particles::texture" : [ "velocity" ],
-					"particles::point_size" : [ 1.0 ],
-					"particles::blur" : [ 0.05 ],
+					"particles::point_size" : [ 0.1 ],
+					"particles::blur" : [ 0.1 ],
 					"particles::dim" : [ 300.0, 300.0 ],
-					"particles::slide" : [ 0.0, 0.0 ],
+					"particles::slide" : [ 0.0, 0.95 ],
 					"particles::dt" : [ 0.9 ],
-					"particles::dx" : [ 80.0 ],
-					"particles::enable" : [ 0 ],
+					"particles::dx" : [ 30.0 ],
+					"particles::enable" : [ 1 ],
 					"particles::radius" : [ -1.0 ],
-					"particles::threshold" : [ -1.0 ],
-					"particles::force" : [ 0.5 ],
-					"particles::attraction" : [  ],
-					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 0.0 ]
+					"particles::threshold" : [ 0.0 ],
+					"particles::force" : [ 0.5, 0.4 ],
+					"particles::attraction" : [ 0.0 ],
+					"particles::reset" : [ 1 ],
+					"particles::ecs.colorpicker::color" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
 			}
