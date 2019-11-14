@@ -536,7 +536,7 @@
 				"id" : 11,
 				"name" : "EMA - Life Energy - Tables - Clouds",
 				"data" : 				{
-					"floor-vis-preset" : [ 17 ],
+					"floor-vis-preset" : [ 16 ],
 					"scrim-vis-preset" : [ 10 ],
 					"floor-sim-preset" : [ 13 ],
 					"scrim-sim-preset" : [ 2 ],

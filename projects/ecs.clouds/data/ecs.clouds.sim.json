@@ -1676,6 +1676,7 @@
 					"simulation::obstacles_fg_motion_blur" : [ 0.95 ],
 					"simulation::obstacles_blur" : [ 1 ],
 					"simulation::obstacles_threshold" : [ 0.0075 ],
+					"simulation::obstacles_threshold_low" : [ -0.004 ],					
 					"simulation::obstacles_bg_motion_blur" : [ 1.0 ],
 					"simulation::camera_obstacles" : [ 0 ],
 					"simulation::dt" : [ 0.9 ],
