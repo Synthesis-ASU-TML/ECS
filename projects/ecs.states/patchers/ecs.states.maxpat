@@ -139,10 +139,10 @@
 					"presentation_rect" : [ 553.12274169921875, 386.0, 175.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "_floor-line-opacity[2]",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "_floor-line-opacity",
-							"parameter_type" : 0
+							"parameter_type" : 0,
+							"parameter_longname" : "_floor-line-opacity[2]",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -185,10 +185,10 @@
 					"presentation_rect" : [ 376.122711181640625, 386.0, 175.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "_ar_map_opacity",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "_ar_map_opacity",
-							"parameter_type" : 0
+							"parameter_type" : 0,
+							"parameter_longname" : "_ar_map_opacity",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -230,11 +230,11 @@
 					"presentation_rect" : [ 376.122711181640625, 237.611083984375, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "button[25]",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "button[18]",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "button[25]",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -287,10 +287,10 @@
 					"presentation_rect" : [ 596.2689208984375, 35.0555419921875, 129.20758056640625, 19.5 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "_map_volume",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "_map_volume",
-							"parameter_type" : 0
+							"parameter_type" : 0,
+							"parameter_longname" : "_map_volume",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -351,10 +351,10 @@
 					"presentation_rect" : [ 376.122711181640625, 327.611114501953125, 175.0, 19.999979019165039 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "_floor-map-opacity",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "_floor-map-opacity",
-							"parameter_type" : 0
+							"parameter_type" : 0,
+							"parameter_longname" : "_floor-map-opacity",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -468,11 +468,11 @@
 					"presentation_rect" : [ 376.122711181640625, 215.611083984375, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "button[26]",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "button[18]",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "button[26]",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -533,10 +533,10 @@
 					"presentation_rect" : [ 376.122711181640625, 349.0, 175.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "_floor-line-opacity",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "_floor-line-opacity",
-							"parameter_type" : 0
+							"parameter_type" : 0,
+							"parameter_longname" : "_floor-line-opacity",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -866,11 +866,11 @@
 					"presentation_rect" : [ 376.122711181640625, 507.0, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "string-set",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "string-set",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "string-set",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -1387,7 +1387,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1373.800048828125, -88.19659423828125, 341.0, 22.0 ],
-					"restore" : [ 0.0 ],
+					"restore" : [ 0.635593220338983 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -1563,11 +1563,11 @@
 					"presentation_rect" : [ 376.122711181640625, 194.69439697265625, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "button[24]",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "button[24]",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "button[24]",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -1608,10 +1608,10 @@
 					"presentation_rect" : [ 553.12274169921875, 349.611083984375, 175.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "_floor-movie-wave-opacity",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "_floor-movie-wave-opacity",
-							"parameter_type" : 0
+							"parameter_type" : 0,
+							"parameter_longname" : "_floor-movie-wave-opacity",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -1665,10 +1665,10 @@
 					"presentation_rect" : [ 461.415130615234375, 35.0555419921875, 129.20758056640625, 19.5 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "slider[1]",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "slider[1]",
-							"parameter_type" : 0
+							"parameter_type" : 0,
+							"parameter_longname" : "slider[1]",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -1709,11 +1709,11 @@
 					"presentation_rect" : [ 376.122711181640625, 34.8055419921875, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "button[23]",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "button[23]",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "button[23]",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -1765,28 +1765,16 @@
 					"presentation_rect" : [ 555.12274169921875, 237.611083984375, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "button[22]",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "button[22]",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "button[22]",
+							"parameter_mmax" : 1.0
 						}
 
 					}
 ,
 					"varname" : "button[22]"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-47",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 577.5, -99.366683959960938, 161.0, 22.0 ],
-					"text" : "o.pack /alexialights/speed"
 				}
 
 			}
@@ -1824,63 +1812,16 @@
 					"presentation_rect" : [ 461.415130615234375, 12.0, 264.122711181640625, 19.999979019165039 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "slider",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "slider",
-							"parameter_type" : 0
+							"parameter_type" : 0,
+							"parameter_longname" : "slider",
+							"parameter_mmax" : 1.0
 						}
 
 					}
 ,
 					"size" : 1.0,
 					"varname" : "slider"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-368",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 603.5, 47.9700927734375, 61.0, 22.0 ],
-					"text" : "route text"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-369",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 603.5, 71.970108032226562, 81.0, 22.0 ],
-					"text" : "prepend host"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-360",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 546.5, 23.9700927734375, 192.0, 22.0 ],
-					"text" : "o.pack /tablesynth/volume"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-352",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 546.5, 110.970108032226562, 192.0, 22.0 ],
-					"text" : "udpsend 10.152.166.230 9420"
 				}
 
 			}
@@ -1893,65 +1834,6 @@
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 815.833251953125, -220.666671752929688, 29.5, 22.0 ],
 					"text" : "!- 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-326",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 623.16668701171875, -76.203498840332031, 61.0, 22.0 ],
-					"text" : "route text"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-323",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 623.16668701171875, -53.203506469726562, 81.0, 22.0 ],
-					"text" : "prepend host"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-319",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 546.5, -14.203506469726562, 192.0, 22.0 ],
-					"text" : "udpsend 10.153.62.106 8049"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-315",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 561.5, -122.86669921875, 177.0, 22.0 ],
-					"text" : "o.pack /alexialights/brightness"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-312",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 546.5, -146.86669921875, 192.0, 22.0 ],
-					"text" : "o.pack /alexialights/state"
 				}
 
 			}
@@ -1987,10 +1869,10 @@
 					"presentation_rect" : [ 553.12274169921875, 305.611083984375, 175.0, 19.999979019165039 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "_floor-movie-water-opacity",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "_floor-movie-water-opacity",
-							"parameter_type" : 0
+							"parameter_type" : 0,
+							"parameter_longname" : "_floor-movie-water-opacity",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -2032,10 +1914,10 @@
 					"presentation_rect" : [ 553.12274169921875, 327.611083984375, 175.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "_floor-movie-city-opacity",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "_floor-movie-city-opacity",
-							"parameter_type" : 0
+							"parameter_type" : 0,
+							"parameter_longname" : "_floor-movie-city-opacity",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -2077,10 +1959,10 @@
 					"presentation_rect" : [ 553.12274169921875, 283.611083984375, 175.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "_floor-movie-clouds-opacity",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "_floor-movie-clouds-opacity",
-							"parameter_type" : 0
+							"parameter_type" : 0,
+							"parameter_longname" : "_floor-movie-clouds-opacity",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -2122,10 +2004,10 @@
 					"presentation_rect" : [ 376.122711181640625, 305.611083984375, 175.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "_floor-sim-opacity",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "_floor-sim-opacity",
-							"parameter_type" : 0
+							"parameter_type" : 0,
+							"parameter_longname" : "_floor-sim-opacity",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -2167,10 +2049,10 @@
 					"presentation_rect" : [ 376.122711181640625, 283.611083984375, 175.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "_floor-camera-opacity",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "_floor-camera-opacity",
-							"parameter_type" : 0
+							"parameter_type" : 0,
+							"parameter_longname" : "_floor-camera-opacity",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -2361,11 +2243,11 @@
 					"presentation_rect" : [ 268.74847412109375, 754.131591796875, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "toggle[12]",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "toggle[12]",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "toggle[12]",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -2390,11 +2272,11 @@
 					"presentation_rect" : [ 180.04095458984375, 754.131591796875, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "toggle[11]",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "toggle[11]",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "toggle[11]",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -2419,11 +2301,11 @@
 					"presentation_rect" : [ 90.918220520019531, 754.131591796875, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "toggle[10]",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "toggle[10]",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "toggle[10]",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -2448,11 +2330,11 @@
 					"presentation_rect" : [ 268.74847412109375, 706.131591796875, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "toggle[9]",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "toggle[9]",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "toggle[9]",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -2477,11 +2359,11 @@
 					"presentation_rect" : [ 180.04095458984375, 706.131591796875, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "toggle[8]",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "toggle[8]",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "toggle[8]",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -2506,11 +2388,11 @@
 					"presentation_rect" : [ 91.333358764648438, 706.131591796875, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "toggle[7]",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "toggle[7]",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "toggle[7]",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -2535,11 +2417,11 @@
 					"presentation_rect" : [ 268.74847412109375, 658.131591796875, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "toggle[6]",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "toggle[6]",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "toggle[6]",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -2564,11 +2446,11 @@
 					"presentation_rect" : [ 180.04095458984375, 658.131591796875, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "toggle[5]",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "toggle[5]",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "toggle[5]",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -2593,11 +2475,11 @@
 					"presentation_rect" : [ 91.333358764648438, 658.131591796875, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "toggle[4]",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "toggle[4]",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "toggle[4]",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -2622,11 +2504,11 @@
 					"presentation_rect" : [ 268.74847412109375, 608.131591796875, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "toggle[3]",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "toggle[3]",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "toggle[3]",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -2651,11 +2533,11 @@
 					"presentation_rect" : [ 180.040939331054688, 608.131591796875, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "toggle[2]",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "toggle[2]",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "toggle[2]",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -2680,11 +2562,11 @@
 					"presentation_rect" : [ 90.918220520019531, 608.131591796875, 20.415138244628906, 20.415138244628906 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "toggle[1]",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "toggle[1]",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "toggle[1]",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -5503,10 +5385,10 @@
 					"saturation" : 1.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "lights-rgb-12",
-							"parameter_invisible" : 1,
 							"parameter_shortname" : "lights-rgb-12",
-							"parameter_type" : 3
+							"parameter_type" : 3,
+							"parameter_longname" : "lights-rgb-12",
+							"parameter_invisible" : 1
 						}
 
 					}
@@ -5529,10 +5411,10 @@
 					"saturation" : 1.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "lights-rgb-9",
-							"parameter_invisible" : 1,
 							"parameter_shortname" : "lights-rgb-9",
-							"parameter_type" : 3
+							"parameter_type" : 3,
+							"parameter_longname" : "lights-rgb-9",
+							"parameter_invisible" : 1
 						}
 
 					}
@@ -5555,10 +5437,10 @@
 					"saturation" : 1.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "lights-rgb-6",
-							"parameter_invisible" : 1,
 							"parameter_shortname" : "lights-rgb-6",
-							"parameter_type" : 3
+							"parameter_type" : 3,
+							"parameter_longname" : "lights-rgb-6",
+							"parameter_invisible" : 1
 						}
 
 					}
@@ -5645,10 +5527,10 @@
 					"presentation_rect" : [ 290.74847412109375, 754.131591796875, 64.70758056640625, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "lights-intensity_12",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "lights-intensity_12",
-							"parameter_type" : 0
+							"parameter_type" : 0,
+							"parameter_longname" : "lights-intensity_12",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -5700,10 +5582,10 @@
 					"presentation_rect" : [ 202.040939331054688, 754.131591796875, 64.70758056640625, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "lights-intensity_11",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "lights-intensity_11",
-							"parameter_type" : 0
+							"parameter_type" : 0,
+							"parameter_longname" : "lights-intensity_11",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -5727,10 +5609,10 @@
 					"saturation" : 1.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "lights-rgb-11",
-							"parameter_invisible" : 1,
 							"parameter_shortname" : "lights-rgb-11",
-							"parameter_type" : 3
+							"parameter_type" : 3,
+							"parameter_longname" : "lights-rgb-11",
+							"parameter_invisible" : 1
 						}
 
 					}
@@ -5781,10 +5663,10 @@
 					"presentation_rect" : [ 116.333358764648438, 754.131591796875, 61.70758056640625, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "lights-intensity_10",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "lights-intensity_10",
-							"parameter_type" : 0
+							"parameter_type" : 0,
+							"parameter_longname" : "lights-intensity_10",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -5808,10 +5690,10 @@
 					"saturation" : 1.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "lights-rgb-10",
-							"parameter_invisible" : 1,
 							"parameter_shortname" : "lights-rgb-10",
-							"parameter_type" : 3
+							"parameter_type" : 3,
+							"parameter_longname" : "lights-rgb-10",
+							"parameter_invisible" : 1
 						}
 
 					}
@@ -5862,10 +5744,10 @@
 					"presentation_rect" : [ 290.74847412109375, 706.131591796875, 64.70758056640625, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "lights-intensity_9",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "lights-intensity_9",
-							"parameter_type" : 0
+							"parameter_type" : 0,
+							"parameter_longname" : "lights-intensity_9",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -5917,10 +5799,10 @@
 					"presentation_rect" : [ 202.040939331054688, 706.131591796875, 64.70758056640625, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "lights-intensity_8",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "lights-intensity_8",
-							"parameter_type" : 0
+							"parameter_type" : 0,
+							"parameter_longname" : "lights-intensity_8",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -5944,10 +5826,10 @@
 					"saturation" : 1.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "lights-rgb-8",
-							"parameter_invisible" : 1,
 							"parameter_shortname" : "lights-rgb-8",
-							"parameter_type" : 3
+							"parameter_type" : 3,
+							"parameter_longname" : "lights-rgb-8",
+							"parameter_invisible" : 1
 						}
 
 					}
@@ -5998,10 +5880,10 @@
 					"presentation_rect" : [ 113.333358764648438, 706.131591796875, 64.70758056640625, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "lights-intensity_7",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "lights-intensity_7",
-							"parameter_type" : 0
+							"parameter_type" : 0,
+							"parameter_longname" : "lights-intensity_7",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -6025,10 +5907,10 @@
 					"saturation" : 1.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "lights-rgb-7",
-							"parameter_invisible" : 1,
 							"parameter_shortname" : "lights-rgb-7",
-							"parameter_type" : 3
+							"parameter_type" : 3,
+							"parameter_longname" : "lights-rgb-7",
+							"parameter_invisible" : 1
 						}
 
 					}
@@ -6079,10 +5961,10 @@
 					"presentation_rect" : [ 290.74847412109375, 658.131591796875, 64.70758056640625, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "lights-intensity_6",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "lights-intensity_6",
-							"parameter_type" : 0
+							"parameter_type" : 0,
+							"parameter_longname" : "lights-intensity_6",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -6134,10 +6016,10 @@
 					"presentation_rect" : [ 202.040939331054688, 658.131591796875, 64.707572937011719, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "lights-intensity_5",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "lights-intensity_5",
-							"parameter_type" : 0
+							"parameter_type" : 0,
+							"parameter_longname" : "lights-intensity_5",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -6161,10 +6043,10 @@
 					"saturation" : 1.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "lights-rgb-5",
-							"parameter_invisible" : 1,
 							"parameter_shortname" : "lights-rgb-5",
-							"parameter_type" : 3
+							"parameter_type" : 3,
+							"parameter_longname" : "lights-rgb-5",
+							"parameter_invisible" : 1
 						}
 
 					}
@@ -6215,10 +6097,10 @@
 					"presentation_rect" : [ 113.333358764648438, 658.131591796875, 64.70758056640625, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "lights-intensity_4",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "lights-intensity_4",
-							"parameter_type" : 0
+							"parameter_type" : 0,
+							"parameter_longname" : "lights-intensity_4",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -6242,10 +6124,10 @@
 					"saturation" : 1.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "lights-rgb-4",
-							"parameter_invisible" : 1,
 							"parameter_shortname" : "lights-rgb-4",
-							"parameter_type" : 3
+							"parameter_type" : 3,
+							"parameter_longname" : "lights-rgb-4",
+							"parameter_invisible" : 1
 						}
 
 					}
@@ -6296,10 +6178,10 @@
 					"presentation_rect" : [ 290.74847412109375, 608.131591796875, 64.70758056640625, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "lights-intensity_3",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "lights-intensity_3",
-							"parameter_type" : 0
+							"parameter_type" : 0,
+							"parameter_longname" : "lights-intensity_3",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -6323,10 +6205,10 @@
 					"saturation" : 1.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "lights-rgb-3",
-							"parameter_invisible" : 1,
 							"parameter_shortname" : "lights-rgb-3",
-							"parameter_type" : 3
+							"parameter_type" : 3,
+							"parameter_longname" : "lights-rgb-3",
+							"parameter_invisible" : 1
 						}
 
 					}
@@ -6374,10 +6256,10 @@
 					"saturation" : 1.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "lights-rgb-2",
-							"parameter_invisible" : 1,
 							"parameter_shortname" : "lights-rgb-2",
-							"parameter_type" : 3
+							"parameter_type" : 3,
+							"parameter_longname" : "lights-rgb-2",
+							"parameter_invisible" : 1
 						}
 
 					}
@@ -6415,10 +6297,10 @@
 					"presentation_rect" : [ 202.040939331054688, 608.131591796875, 64.707572937011719, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "lights-intensity_2",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "lights-intensity_2",
-							"parameter_type" : 0
+							"parameter_type" : 0,
+							"parameter_longname" : "lights-intensity_2",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -6497,10 +6379,10 @@
 					"presentation_rect" : [ 5.918220520019531, 713.131591796875, 64.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "_lights-booth",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "_lights-booth",
-							"parameter_type" : 0
+							"parameter_type" : 0,
+							"parameter_longname" : "_lights-booth",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -6542,10 +6424,10 @@
 					"presentation_rect" : [ 5.918220520019531, 691.131591796875, 64.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "_lights-scoops",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "_lights-scoops",
-							"parameter_type" : 0
+							"parameter_type" : 0,
+							"parameter_longname" : "_lights-scoops",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -6588,10 +6470,10 @@
 					"presentation_rect" : [ 90.918220520019531, 558.131591796875, 264.537841796875, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "_lights-intensity",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "_lights-intensity",
-							"parameter_type" : 0
+							"parameter_type" : 0,
+							"parameter_longname" : "_lights-intensity",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -6615,10 +6497,10 @@
 					"saturation" : 1.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "_lights-rgb",
-							"parameter_invisible" : 1,
 							"parameter_shortname" : "_lights-rgb",
-							"parameter_type" : 3
+							"parameter_type" : 3,
+							"parameter_longname" : "_lights-rgb",
+							"parameter_invisible" : 1
 						}
 
 					}
@@ -6704,10 +6586,10 @@
 					"presentation_rect" : [ 113.333358764648438, 608.131591796875, 64.780685424804688, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "lights-intensity_1",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "lights-intensity_1",
-							"parameter_type" : 0
+							"parameter_type" : 0,
+							"parameter_longname" : "lights-intensity_1",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -6731,10 +6613,10 @@
 					"saturation" : 1.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "lights-rgb-1",
-							"parameter_invisible" : 1,
 							"parameter_shortname" : "lights-rgb-1",
-							"parameter_type" : 3
+							"parameter_type" : 3,
+							"parameter_longname" : "lights-rgb-1",
+							"parameter_invisible" : 1
 						}
 
 					}
@@ -6801,11 +6683,11 @@
 					"presentation_rect" : [ 5.918220520019531, 581.131591796875, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "_lights_toggle_master",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "_lights_toggle_master",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "_lights_toggle_master",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -6976,53 +6858,17 @@
 					"presentation_rect" : [ 5.918220520019531, 603.131591796875, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "_lights_toggle_1",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "_lights_toggle_1",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "_lights_toggle_1",
+							"parameter_mmax" : 1.0
 						}
 
 					}
 ,
 					"uncheckedcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"varname" : "_lights_toggle_1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-335",
-					"linecount" : 3,
-					"maxclass" : "newobj",
-					"numinlets" : 3,
-					"numoutlets" : 1,
-					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 546.5, -256.5299072265625, 192.0, 49.0 ],
-					"text" : "o.pack /timelenses_1/opacity /timelenses_2/opacity /timelenses_3/opacity"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-330",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 546.5, -205.5299072265625, 117.0, 22.0 ],
-					"text" : "o.prepend /surfaces"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-329",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 546.5, -181.5299072265625, 192.0, 22.0 ],
-					"text" : "udpsend 10.14.4.47 8010 CNMAT"
 				}
 
 			}
@@ -7058,11 +6904,11 @@
 					"presentation_rect" : [ 376.122711181640625, 12.0, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "button[21]",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "button[21]",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "button[21]",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -7265,11 +7111,11 @@
 					"presentation_rect" : [ 183.4560546875, 506.0, 22.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "button[20]",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "button[20]",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "button[20]",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -7310,11 +7156,11 @@
 					"presentation_rect" : [ 555.12274169921875, 193.611083984375, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "button[19]",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "button[19]",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "button[19]",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -7355,11 +7201,11 @@
 					"presentation_rect" : [ 555.12274169921875, 215.611083984375, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "button[18]",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "button[18]",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "button[18]",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -7544,11 +7390,11 @@
 					"presentation_rect" : [ 376.122711181640625, 106.69439697265625, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "button[17]",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "button[17]",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "button[17]",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -7589,11 +7435,11 @@
 					"presentation_rect" : [ 376.122711181640625, 84.69439697265625, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "button[16]",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "button[16]",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "button[16]",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -7634,11 +7480,11 @@
 					"presentation_rect" : [ 376.122711181640625, 62.69439697265625, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "button[15]",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "button[15]",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "button[15]",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -7688,11 +7534,11 @@
 					"presentation_rect" : [ 376.122711181640625, 150.69439697265625, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "button[14]",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "button[14]",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "button[14]",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -7718,11 +7564,11 @@
 					"presentation_rect" : [ 376.122711181640625, 128.69439697265625, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "button[13]",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "button[13]",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "button[13]",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -7748,11 +7594,11 @@
 					"presentation_rect" : [ 376.122711181640625, 172.69439697265625, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "button[12]",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "button[12]",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "button[12]",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -7768,7 +7614,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 10.0, 142.13330078125, 190.0, 22.0 ],
-					"text" : "udpsend 10.14.4.37 8010 CNMAT"
+					"text" : "udpsend 10.14.4.33 8010 CNMAT"
 				}
 
 			}
@@ -7896,11 +7742,11 @@
 					"presentation_rect" : [ 555.12274169921875, 105.611083984375, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "button[11]",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "button[11]",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "button[11]",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -7926,11 +7772,11 @@
 					"presentation_rect" : [ 555.12274169921875, 171.611083984375, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "button[10]",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "button[10]",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "button[10]",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -7970,11 +7816,11 @@
 					"presentation_rect" : [ 183.4560546875, 349.0, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "button[9]",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "button[9]",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "button[9]",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -8014,11 +7860,11 @@
 					"presentation_rect" : [ 275.9560546875, 349.0, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "button[8]",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "button[8]",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "button[8]",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -8114,11 +7960,11 @@
 					"presentation_rect" : [ 96.4560546875, 349.0, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "button[7]",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "button[7]",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "button[7]",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -8158,11 +8004,11 @@
 					"presentation_rect" : [ 4.456055164337158, 349.0, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "button[6]",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "button[6]",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "button[6]",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -8275,7 +8121,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-87",
@@ -8876,11 +8721,11 @@
 					"presentation_rect" : [ 275.9560546875, 372.0, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "button[5]",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "button[5]",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "button[5]",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -8906,11 +8751,11 @@
 					"presentation_rect" : [ 96.4560546875, 372.0, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "button[4]",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "button[4]",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "button[4]",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -8934,11 +8779,11 @@
 					"presentation_rect" : [ 183.4560546875, 372.0, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "_scrim-sim-enable",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "_scrim-sim-enable",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "_scrim-sim-enable",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -8963,11 +8808,11 @@
 					"presentation_rect" : [ 4.456055164337158, 372.0, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "_floor-sim-enable",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "_floor-sim-enable",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "_floor-sim-enable",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -9127,11 +8972,11 @@
 					"presentation_rect" : [ 4.456055164337158, 325.0, 173.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "_floor-sim-preset",
-							"parameter_mmax" : 23.0,
 							"parameter_shortname" : "_floor-sim-preset",
 							"parameter_enum" : [ "0 laminar", "1 clouds", "2 laminar for pressure demo", "3 laminar for pressure demo with wind", "4 laminar for pressure demo with wind and accumulated pressure", "5 disabled", "6 pressure to vapor", "7 velocity ghosting", "8 velocity ghosting no vorticity", "9 ghosting pressure", "10 clouds above", "11 clouds above wind", "12 disabled", "13 life energy - tables - 1 - clouds", "14 life energy - tables - 2 - clouds vorticity", "15 life energy - tables - 3 - clouds above", "16 life energy - tables - 4 - clouds above vorticity", "17 life energy - tables - 5 - clouds again", "18 life energy - floor - 2 - particles clouds", "19 life energy - floor - 3 - velocity", "20 life energy - floor - 4 - pressure map", "21 life energy - floor - 5 - ghosting", "22 paper pressure", "23 clouds chill out", "24 constellations" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "_floor-sim-preset",
+							"parameter_mmax" : 24.0
 						}
 
 					}
@@ -9162,11 +9007,11 @@
 					"presentation_rect" : [ 183.4560546875, 325.0, 173.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "_scrim-sim-preset",
-							"parameter_mmax" : 2.0,
 							"parameter_shortname" : "_scrim-sim-preset",
 							"parameter_enum" : [ "clouds above", "clouds above wind", "disabled" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "_scrim-sim-preset",
+							"parameter_mmax" : 2.0
 						}
 
 					}
@@ -9215,11 +9060,11 @@
 					"presentation_rect" : [ 49.918220520019531, 669.131591796875, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "_lights_toggle_12",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "_lights_toggle_12",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "_lights_toggle_12",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -9270,10 +9115,10 @@
 					"presentation_rect" : [ 183.4560546875, 478.0, 173.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "_scrim-filterbanks-volume",
-							"parameter_mmax" : 2.0,
 							"parameter_shortname" : "_scrim-filterbanks-volume",
-							"parameter_type" : 0
+							"parameter_type" : 0,
+							"parameter_longname" : "_scrim-filterbanks-volume",
+							"parameter_mmax" : 2.0
 						}
 
 					}
@@ -9300,10 +9145,10 @@
 					"presentation_rect" : [ 4.456055164337158, 478.0, 173.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "_floor-filterbanks-volume",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "_floor-filterbanks-volume",
-							"parameter_type" : 0
+							"parameter_type" : 0,
+							"parameter_longname" : "_floor-filterbanks-volume",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -9349,11 +9194,11 @@
 					"presentation_rect" : [ 4.456055164337158, 301.0, 173.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "_floor-vis-preset",
-							"parameter_mmax" : 57.0,
 							"parameter_shortname" : "_floor-vis-preset",
 							"parameter_enum" : [ "clouds", "velocity flow particles", "velocity field", "pressure", "hsflow", "camera", "obstacles", "background", "bgsub", "blackout", "velocity field - wind", "velocity ghosting", "velocity ghosting short particles", "velocity ghosting long particles", "ghosting pressure", "pressure cubehelix", "clouds - sunset", "life energy - tables - 1 - clouds", "life energy - tables - 2 - clouds vorticity", "life energy - tables - 3 - clouds above", "life energy - tables - 4 - pressure", "life energy - tables - 5 - clouds again", "life energy - floor - 2 - particles clouds", "life energy - floor - 3 - velocity", "life energy - floor - 4 - pressure map", "life energy - floor - 5 - ghosting", "clouds above", "paper pressure", "particles on black background", "clouds", "velocity flow particles", "velocity field", "pressure", "hsflow", "camera", "obstacles", "background", "bgsub", "blackout", "velocity field - wind", "velocity ghosting", "velocity ghosting short particles", "velocity ghosting long particles", "ghosting pressure", "pressure cubehelix", "clouds - sunset", "life energy - tables - 1 - clouds", "life energy - tables - 2 - clouds vorticity", "life energy - tables - 3 - clouds above", "life energy - tables - 4 - pressure", "life energy - tables - 5 - clouds again", "life energy - floor - 2 - particles clouds", "life energy - floor - 3 - velocity", "life energy - floor - 4 - pressure map", "life energy - floor - 5 - ghosting", "clouds above", "paper pressure", "particles on black background" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "_floor-vis-preset",
+							"parameter_mmax" : 0.0
 						}
 
 					}
@@ -9400,11 +9245,11 @@
 					"presentation_rect" : [ 183.4560546875, 301.0, 173.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "_scrim-vis-preset",
-							"parameter_mmax" : 15.0,
 							"parameter_shortname" : "_scrim-vis-preset",
 							"parameter_enum" : [ "clouds", "velocity - particle flow", "velocity - field", "pressure", "hsflow", "camera", "obstacles", "background", "bgsub", "clouds no particles", "blackout", "movie - clouds", "movie - water", "movie - city", "movie - river", "pressure cubehelix" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "_scrim-vis-preset",
+							"parameter_mmax" : 15.0
 						}
 
 					}
@@ -9465,11 +9310,11 @@
 					"presentation_rect" : [ 4.456055164337158, 454.0, 173.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "_floor-filterbanks-preset",
-							"parameter_mmax" : 27.0,
 							"parameter_shortname" : "_floor-filterbanks-preset",
 							"parameter_enum" : [ "scrim", "floor pressure", "floor clouds", "off", "scrim pressure", "floor velocity image", "ex4 vectors", "ex4 freezing", "ex4 fluids", "ex4 scatter", "floor velocity flow field", "floor xylo-pianos", "floor-magnitude", "floor-magnitude-ghosting", "scrim", "floor pressure", "floor clouds", "off", "scrim pressure", "floor velocity image", "ex4 vectors", "ex4 freezing", "ex4 fluids", "ex4 scatter", "floor velocity flow field", "floor xylo-pianos", "floor-magnitude", "floor-magnitude-ghosting" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "_floor-filterbanks-preset",
+							"parameter_mmax" : 27.0
 						}
 
 					}
@@ -9500,11 +9345,11 @@
 					"presentation_rect" : [ 183.4560546875, 454.0, 173.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "_scrim-filterbanks-preset",
-							"parameter_mmax" : 11.0,
 							"parameter_shortname" : "_scrim-filterbanks-preset",
 							"parameter_enum" : [ "Scrim clouds", "Floor pressure", "Floor clouds", "Off", "Scrim Pressure", "Floor Velocity Image", "ex4 vectors", "ex4 freezing", "ex4 fluids", "ex4 scatter gather", "floor velocity flow", "floor xylo-piano" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "_scrim-filterbanks-preset",
+							"parameter_mmax" : 11.0
 						}
 
 					}
@@ -9531,11 +9376,11 @@
 					"presentation_rect" : [ 555.12274169921875, 149.611083984375, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "button[3]",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "button[3]",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "button[3]",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -9561,11 +9406,11 @@
 					"presentation_rect" : [ 555.12274169921875, 127.611083984375, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "button[2]",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "button[2]",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "button[2]",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -9591,11 +9436,11 @@
 					"presentation_rect" : [ 555.12274169921875, 83.611083984375, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "button[1]",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "button[1]",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "button[1]",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -9621,11 +9466,11 @@
 					"presentation_rect" : [ 555.12274169921875, 62.69439697265625, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "button",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "button",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "button",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -9785,11 +9630,11 @@
 					"presentation_rect" : [ 27.918220520019531, 669.131591796875, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "_lights_toggle_11",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "_lights_toggle_11",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "_lights_toggle_11",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -9814,11 +9659,11 @@
 					"presentation_rect" : [ 5.918220520019531, 669.131591796875, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "_lights_toggle_10",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "_lights_toggle_10",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "_lights_toggle_10",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -9843,11 +9688,11 @@
 					"presentation_rect" : [ 49.918220520019531, 647.131591796875, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "_lights_toggle_9",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "_lights_toggle_9",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "_lights_toggle_9",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -9872,11 +9717,11 @@
 					"presentation_rect" : [ 27.918220520019531, 647.131591796875, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "_lights_toggle_8",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "_lights_toggle_8",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "_lights_toggle_8",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -9901,11 +9746,11 @@
 					"presentation_rect" : [ 5.918220520019531, 647.131591796875, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "_lights_toggle_7",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "_lights_toggle_7",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "_lights_toggle_7",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -9930,11 +9775,11 @@
 					"presentation_rect" : [ 49.918220520019531, 625.131591796875, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "_lights_toggle_6",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "_lights_toggle_6",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "_lights_toggle_6",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -9959,11 +9804,11 @@
 					"presentation_rect" : [ 27.918220520019531, 625.131591796875, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "_lights_toggle_5",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "_lights_toggle_5",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "_lights_toggle_5",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -9988,11 +9833,11 @@
 					"presentation_rect" : [ 5.918220520019531, 625.131591796875, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "_lights_toggle_4",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "_lights_toggle_4",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "_lights_toggle_4",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -10017,11 +9862,11 @@
 					"presentation_rect" : [ 49.918220520019531, 603.131591796875, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "_lights_toggle_3",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "_lights_toggle_3",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "_lights_toggle_3",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -10046,11 +9891,11 @@
 					"presentation_rect" : [ 27.918220520019531, 603.131591796875, 20.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "_lights_toggle_2",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "_lights_toggle_2",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "_lights_toggle_2",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -11526,13 +11371,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-319", 0 ],
-					"source" : [ "obj-312", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-318", 1 ],
 					"source" : [ "obj-313", 0 ]
 				}
@@ -11542,13 +11380,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-320", 1 ],
 					"source" : [ "obj-314", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-319", 0 ],
-					"source" : [ "obj-315", 0 ]
 				}
 
 			}
@@ -11596,37 +11427,9 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-319", 0 ],
-					"source" : [ "obj-323", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-323", 0 ],
-					"source" : [ "obj-326", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-106", 16 ],
 					"midpoints" : [ 556.0, 626.0, 187.500015258789062, 626.0 ],
 					"source" : [ "obj-33", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-329", 0 ],
-					"source" : [ "obj-330", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-330", 0 ],
-					"source" : [ "obj-335", 0 ]
 				}
 
 			}
@@ -11747,27 +11550,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-352", 0 ],
-					"source" : [ "obj-360", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-369", 0 ],
-					"source" : [ "obj-368", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-352", 0 ],
-					"source" : [ "obj-369", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-190", 0 ],
 					"source" : [ "obj-37", 1 ]
 				}
@@ -11859,13 +11641,6 @@
 					"midpoints" : [ 795.333251953125, 573.0, 846.0, 573.0, 846.0, 753.0, 855.333251953125, 753.0 ],
 					"order" : 0,
 					"source" : [ "obj-430", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-319", 0 ],
-					"source" : [ "obj-47", 0 ]
 				}
 
 			}
@@ -12094,110 +11869,110 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-231" : [ "toggle[6]", "toggle[6]", 0 ],
-			"obj-1096" : [ "lights-intensity_12", "lights-intensity_12", 0 ],
-			"obj-1049" : [ "lights-intensity_3", "lights-intensity_3", 0 ],
-			"obj-1078" : [ "_lights_toggle_9", "_lights_toggle_9", 0 ],
-			"obj-56" : [ "_floor-movie-clouds-opacity", "_floor-movie-clouds-opacity", 0 ],
-			"obj-245" : [ "toggle[12]", "toggle[12]", 0 ],
-			"obj-292" : [ "button[6]", "button[6]", 0 ],
-			"obj-1072" : [ "_lights_toggle_4", "_lights_toggle_4", 0 ],
-			"obj-230" : [ "toggle[3]", "toggle[3]", 0 ],
-			"obj-167" : [ "_floor-line-opacity", "_floor-line-opacity", 0 ],
-			"obj-1069" : [ "lights-intensity_4", "lights-intensity_4", 0 ],
-			"obj-229" : [ "toggle[2]", "toggle[2]", 0 ],
-			"obj-220" : [ "button[21]", "button[21]", 0 ],
-			"obj-210" : [ "_floor-sim-enable", "_floor-sim-enable", 0 ],
-			"obj-29" : [ "_floor-filterbanks-volume", "_floor-filterbanks-volume", 0 ],
-			"obj-1109" : [ "lights-intensity_10", "lights-intensity_10", 0 ],
-			"obj-410" : [ "_floor-map-opacity", "_floor-map-opacity", 0 ],
-			"obj-216" : [ "button[4]", "button[4]", 0 ],
-			"obj-33" : [ "button[24]", "button[24]", 0 ],
-			"obj-496" : [ "lights-intensity_1", "lights-intensity_1", 0 ],
-			"obj-1119" : [ "lights-rgb-12", "lights-rgb-12", 0 ],
-			"obj-119" : [ "button[20]", "button[20]", 0 ],
-			"obj-1090" : [ "lights-rgb-7", "lights-rgb-7", 0 ],
-			"obj-304" : [ "button[9]", "button[9]", 0 ],
-			"obj-1082" : [ "lights-intensity_8", "lights-intensity_8", 0 ],
-			"obj-732" : [ "_floor-camera-opacity", "_floor-camera-opacity", 0 ],
-			"obj-1062" : [ "lights-intensity_5", "lights-intensity_5", 0 ],
-			"obj-1105" : [ "_lights_toggle_11", "_lights_toggle_11", 0 ],
-			"obj-208" : [ "button[14]", "button[14]", 0 ],
-			"obj-1058" : [ "_lights_toggle_6", "_lights_toggle_6", 0 ],
-			"obj-241" : [ "toggle[9]", "toggle[9]", 0 ],
-			"obj-50" : [ "_ar_map_opacity", "_ar_map_opacity", 0 ],
-			"obj-240" : [ "button[2]", "button[2]", 0 ],
-			"obj-185" : [ "_floor-sim-opacity", "_floor-sim-opacity", 0 ],
-			"obj-347" : [ "_lights_toggle_1", "_lights_toggle_1", 0 ],
-			"obj-26" : [ "_scrim-vis-preset", "_scrim-vis-preset", 0 ],
-			"obj-32" : [ "_scrim-filterbanks-volume", "_scrim-filterbanks-volume", 0 ],
-			"obj-55" : [ "button[22]", "button[22]", 0 ],
-			"obj-1103" : [ "lights-rgb-11", "lights-rgb-11", 0 ],
-			"obj-1117" : [ "lights-rgb-6", "lights-rgb-6", 0 ],
-			"obj-17" : [ "_scrim-filterbanks-preset", "_scrim-filterbanks-preset", 0 ],
-			"obj-91" : [ "_lights-intensity", "_lights-intensity", 0 ],
-			"obj-1042" : [ "lights-intensity_2", "lights-intensity_2", 0 ],
-			"obj-237" : [ "toggle[5]", "toggle[5]", 0 ],
-			"obj-1085" : [ "_lights_toggle_8", "_lights_toggle_8", 0 ],
-			"obj-296" : [ "button[7]", "button[7]", 0 ],
-			"obj-246" : [ "toggle[11]", "toggle[11]", 0 ],
-			"obj-1076" : [ "lights-intensity_9", "lights-intensity_9", 0 ],
-			"obj-82" : [ "_floor-movie-city-opacity", "_floor-movie-city-opacity", 0 ],
-			"obj-1052" : [ "_lights_toggle_3", "_lights_toggle_3", 0 ],
-			"obj-15" : [ "button[16]", "button[16]", 0 ],
-			"obj-217" : [ "button[12]", "button[12]", 0 ],
 			"obj-227" : [ "toggle[1]", "toggle[1]", 0 ],
-			"obj-416" : [ "button[25]", "button[18]", 0 ],
-			"obj-1056" : [ "lights-intensity_6", "lights-intensity_6", 0 ],
-			"obj-219" : [ "button[5]", "button[5]", 0 ],
-			"obj-67" : [ "_scrim-sim-preset", "_scrim-sim-preset", 0 ],
-			"obj-18" : [ "_floor-filterbanks-preset", "_floor-filterbanks-preset", 0 ],
-			"obj-1089" : [ "lights-intensity_7", "lights-intensity_7", 0 ],
-			"obj-16" : [ "slider[1]", "slider[1]", 0 ],
-			"obj-4" : [ "button[10]", "button[10]", 0 ],
-			"obj-191" : [ "_lights-scoops", "_lights-scoops", 0 ],
-			"obj-244" : [ "toggle[7]", "toggle[7]", 0 ],
-			"obj-1112" : [ "_lights_toggle_10", "_lights_toggle_10", 0 ],
-			"obj-413" : [ "_map_volume", "_map_volume", 0 ],
-			"obj-1050" : [ "lights-rgb-3", "lights-rgb-3", 0 ],
-			"obj-1065" : [ "_lights_toggle_5", "_lights_toggle_5", 0 ],
-			"obj-242" : [ "button[3]", "button[3]", 0 ],
-			"obj-182" : [ "_floor-movie-water-opacity", "_floor-movie-water-opacity", 0 ],
-			"obj-243" : [ "toggle[8]", "toggle[8]", 0 ],
-			"obj-74" : [ "_floor-line-opacity[2]", "_floor-line-opacity", 0 ],
-			"obj-213" : [ "_scrim-sim-enable", "_scrim-sim-enable", 0 ],
-			"obj-1070" : [ "lights-rgb-4", "lights-rgb-4", 0 ],
-			"obj-28" : [ "_floor-vis-preset", "_floor-vis-preset", 0 ],
-			"obj-1110" : [ "lights-rgb-10", "lights-rgb-10", 0 ],
-			"obj-239" : [ "toggle[4]", "toggle[4]", 0 ],
-			"obj-64" : [ "string-set", "string-set", 0 ],
-			"obj-1102" : [ "lights-intensity_11", "lights-intensity_11", 0 ],
-			"obj-491" : [ "lights-rgb-1", "lights-rgb-1", 0 ],
-			"obj-235" : [ "button[19]", "button[19]", 0 ],
-			"obj-1118" : [ "lights-rgb-9", "lights-rgb-9", 0 ],
-			"obj-206" : [ "_lights-booth", "_lights-booth", 0 ],
-			"obj-8" : [ "button[15]", "button[15]", 0 ],
-			"obj-1083" : [ "lights-rgb-8", "lights-rgb-8", 0 ],
-			"obj-302" : [ "button[8]", "button[8]", 0 ],
-			"obj-1098" : [ "_lights_toggle_12", "_lights_toggle_12", 0 ],
-			"obj-46" : [ "slider", "slider", 0 ],
-			"obj-81" : [ "button[17]", "button[17]", 0 ],
-			"obj-24" : [ "_floor-movie-wave-opacity", "_floor-movie-wave-opacity", 0 ],
-			"obj-1092" : [ "_lights_toggle_7", "_lights_toggle_7", 0 ],
-			"obj-1063" : [ "lights-rgb-5", "lights-rgb-5", 0 ],
 			"obj-247" : [ "toggle[10]", "toggle[10]", 0 ],
-			"obj-212" : [ "button[13]", "button[13]", 0 ],
-			"obj-1045" : [ "_lights_toggle_2", "_lights_toggle_2", 0 ],
-			"obj-221" : [ "button[18]", "button[18]", 0 ],
-			"obj-153" : [ "button[26]", "button[18]", 0 ],
-			"obj-68" : [ "_floor-sim-preset", "_floor-sim-preset", 0 ],
-			"obj-238" : [ "button[1]", "button[1]", 0 ],
+			"obj-1056" : [ "lights-intensity_6", "lights-intensity_6", 0 ],
+			"obj-1078" : [ "_lights_toggle_9", "_lights_toggle_9", 0 ],
+			"obj-240" : [ "button[2]", "button[2]", 0 ],
+			"obj-33" : [ "button[24]", "button[24]", 0 ],
+			"obj-1063" : [ "lights-rgb-5", "lights-rgb-5", 0 ],
+			"obj-206" : [ "_lights-booth", "_lights-booth", 0 ],
+			"obj-410" : [ "_floor-map-opacity", "_floor-map-opacity", 0 ],
+			"obj-167" : [ "_floor-line-opacity", "_floor-line-opacity", 0 ],
+			"obj-81" : [ "button[17]", "button[17]", 0 ],
+			"obj-1096" : [ "lights-intensity_12", "lights-intensity_12", 0 ],
+			"obj-732" : [ "_floor-camera-opacity", "_floor-camera-opacity", 0 ],
+			"obj-1072" : [ "_lights_toggle_4", "_lights_toggle_4", 0 ],
+			"obj-91" : [ "_lights-intensity", "_lights-intensity", 0 ],
+			"obj-15" : [ "button[16]", "button[16]", 0 ],
 			"obj-21" : [ "button[11]", "button[11]", 0 ],
+			"obj-1049" : [ "lights-intensity_3", "lights-intensity_3", 0 ],
+			"obj-67" : [ "_scrim-sim-preset", "_scrim-sim-preset", 0 ],
+			"obj-1109" : [ "lights-intensity_10", "lights-intensity_10", 0 ],
+			"obj-50" : [ "_ar_map_opacity", "_ar_map_opacity", 0 ],
+			"obj-208" : [ "button[14]", "button[14]", 0 ],
+			"obj-243" : [ "toggle[8]", "toggle[8]", 0 ],
+			"obj-1085" : [ "_lights_toggle_8", "_lights_toggle_8", 0 ],
+			"obj-182" : [ "_floor-movie-water-opacity", "_floor-movie-water-opacity", 0 ],
+			"obj-32" : [ "_scrim-filterbanks-volume", "_scrim-filterbanks-volume", 0 ],
+			"obj-1090" : [ "lights-rgb-7", "lights-rgb-7", 0 ],
+			"obj-1082" : [ "lights-intensity_8", "lights-intensity_8", 0 ],
+			"obj-219" : [ "button[5]", "button[5]", 0 ],
+			"obj-231" : [ "toggle[6]", "toggle[6]", 0 ],
 			"obj-12" : [ "button[23]", "button[23]", 0 ],
-			"obj-430" : [ "_lights_toggle_master", "_lights_toggle_master", 0 ],
+			"obj-1052" : [ "_lights_toggle_3", "_lights_toggle_3", 0 ],
+			"obj-229" : [ "toggle[2]", "toggle[2]", 0 ],
+			"obj-55" : [ "button[22]", "button[22]", 0 ],
+			"obj-1098" : [ "_lights_toggle_12", "_lights_toggle_12", 0 ],
+			"obj-246" : [ "toggle[11]", "toggle[11]", 0 ],
+			"obj-68" : [ "_floor-sim-preset", "_floor-sim-preset", 0 ],
+			"obj-29" : [ "_floor-filterbanks-volume", "_floor-filterbanks-volume", 0 ],
+			"obj-242" : [ "button[3]", "button[3]", 0 ],
+			"obj-1070" : [ "lights-rgb-4", "lights-rgb-4", 0 ],
+			"obj-1062" : [ "lights-intensity_5", "lights-intensity_5", 0 ],
+			"obj-217" : [ "button[12]", "button[12]", 0 ],
+			"obj-1103" : [ "lights-rgb-11", "lights-rgb-11", 0 ],
+			"obj-1092" : [ "_lights_toggle_7", "_lights_toggle_7", 0 ],
+			"obj-1118" : [ "lights-rgb-9", "lights-rgb-9", 0 ],
+			"obj-17" : [ "_scrim-filterbanks-preset", "_scrim-filterbanks-preset", 0 ],
+			"obj-491" : [ "lights-rgb-1", "lights-rgb-1", 0 ],
 			"obj-1043" : [ "lights-rgb-2", "lights-rgb-2", 0 ],
-			"obj-160" : [ "_lights-rgb", "_lights-rgb", 0 ],
+			"obj-296" : [ "button[7]", "button[7]", 0 ],
+			"obj-185" : [ "_floor-sim-opacity", "_floor-sim-opacity", 0 ],
+			"obj-292" : [ "button[6]", "button[6]", 0 ],
+			"obj-1076" : [ "lights-intensity_9", "lights-intensity_9", 0 ],
+			"obj-1045" : [ "_lights_toggle_2", "_lights_toggle_2", 0 ],
+			"obj-416" : [ "button[25]", "button[18]", 0 ],
+			"obj-220" : [ "button[21]", "button[21]", 0 ],
+			"obj-1105" : [ "_lights_toggle_11", "_lights_toggle_11", 0 ],
+			"obj-241" : [ "toggle[9]", "toggle[9]", 0 ],
+			"obj-26" : [ "_scrim-vis-preset", "_scrim-vis-preset", 0 ],
+			"obj-24" : [ "_floor-movie-wave-opacity", "_floor-movie-wave-opacity", 0 ],
+			"obj-1089" : [ "lights-intensity_7", "lights-intensity_7", 0 ],
+			"obj-18" : [ "_floor-filterbanks-preset", "_floor-filterbanks-preset", 0 ],
+			"obj-238" : [ "button[1]", "button[1]", 0 ],
+			"obj-239" : [ "toggle[4]", "toggle[4]", 0 ],
+			"obj-74" : [ "_floor-line-opacity[2]", "_floor-line-opacity", 0 ],
+			"obj-1058" : [ "_lights_toggle_6", "_lights_toggle_6", 0 ],
+			"obj-46" : [ "slider", "slider", 0 ],
+			"obj-191" : [ "_lights-scoops", "_lights-scoops", 0 ],
+			"obj-16" : [ "slider[1]", "slider[1]", 0 ],
+			"obj-119" : [ "button[20]", "button[20]", 0 ],
+			"obj-64" : [ "string-set", "string-set", 0 ],
+			"obj-230" : [ "toggle[3]", "toggle[3]", 0 ],
+			"obj-245" : [ "toggle[12]", "toggle[12]", 0 ],
+			"obj-213" : [ "_scrim-sim-enable", "_scrim-sim-enable", 0 ],
+			"obj-56" : [ "_floor-movie-clouds-opacity", "_floor-movie-clouds-opacity", 0 ],
+			"obj-235" : [ "button[19]", "button[19]", 0 ],
+			"obj-153" : [ "button[26]", "button[18]", 0 ],
+			"obj-8" : [ "button[15]", "button[15]", 0 ],
+			"obj-1050" : [ "lights-rgb-3", "lights-rgb-3", 0 ],
+			"obj-4" : [ "button[10]", "button[10]", 0 ],
+			"obj-347" : [ "_lights_toggle_1", "_lights_toggle_1", 0 ],
+			"obj-1112" : [ "_lights_toggle_10", "_lights_toggle_10", 0 ],
+			"obj-221" : [ "button[18]", "button[18]", 0 ],
+			"obj-1069" : [ "lights-intensity_4", "lights-intensity_4", 0 ],
+			"obj-1110" : [ "lights-rgb-10", "lights-rgb-10", 0 ],
+			"obj-304" : [ "button[9]", "button[9]", 0 ],
+			"obj-1102" : [ "lights-intensity_11", "lights-intensity_11", 0 ],
+			"obj-28" : [ "_floor-vis-preset", "_floor-vis-preset", 0 ],
+			"obj-212" : [ "button[13]", "button[13]", 0 ],
+			"obj-1119" : [ "lights-rgb-12", "lights-rgb-12", 0 ],
+			"obj-430" : [ "_lights_toggle_master", "_lights_toggle_master", 0 ],
+			"obj-302" : [ "button[8]", "button[8]", 0 ],
 			"obj-236" : [ "button", "button", 0 ],
+			"obj-244" : [ "toggle[7]", "toggle[7]", 0 ],
+			"obj-82" : [ "_floor-movie-city-opacity", "_floor-movie-city-opacity", 0 ],
+			"obj-496" : [ "lights-intensity_1", "lights-intensity_1", 0 ],
+			"obj-1065" : [ "_lights_toggle_5", "_lights_toggle_5", 0 ],
+			"obj-413" : [ "_map_volume", "_map_volume", 0 ],
+			"obj-1083" : [ "lights-rgb-8", "lights-rgb-8", 0 ],
+			"obj-216" : [ "button[4]", "button[4]", 0 ],
+			"obj-160" : [ "_lights-rgb", "_lights-rgb", 0 ],
+			"obj-1117" : [ "lights-rgb-6", "lights-rgb-6", 0 ],
+			"obj-237" : [ "toggle[5]", "toggle[5]", 0 ],
+			"obj-210" : [ "_floor-sim-enable", "_floor-sim-enable", 0 ],
+			"obj-1042" : [ "lights-intensity_2", "lights-intensity_2", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -12213,14 +11988,14 @@
 			}
 , 			{
 				"name" : "ecs.states.json",
-				"bootpath" : "~/Documents/Max 8/Packages/ecs/projects/ecs.states/data",
+				"bootpath" : "~/Documents/Max 8/Packages/ecs_new/projects/ecs.states/data",
 				"patcherrelativepath" : "../data",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ecs.pattr.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/ecs/patchers/utilities",
+				"bootpath" : "~/Documents/Max 8/Packages/ecs_new/patchers/utilities",
 				"patcherrelativepath" : "../../../patchers/utilities",
 				"type" : "JSON",
 				"implicit" : 1
@@ -12240,21 +12015,21 @@
 			}
 , 			{
 				"name" : "ecs.fillslots.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/ecs/patchers/utilities",
+				"bootpath" : "~/Documents/Max 8/Packages/ecs_new/patchers/utilities",
 				"patcherrelativepath" : "../../../patchers/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ecs.states.helper.lights_out.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/ecs/projects/ecs.states/patchers",
+				"bootpath" : "~/Documents/Max 8/Packages/ecs_new/projects/ecs.states/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ecs.states.helper.lights_in.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/ecs/projects/ecs.states/patchers",
+				"bootpath" : "~/Documents/Max 8/Packages/ecs_new/projects/ecs.states/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
